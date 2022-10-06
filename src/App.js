@@ -1,3 +1,7 @@
+import { GlobalStyles } from './GlobalStyles'
+import { GlobalColorStyles } from './GlobalColorStyles'
+import { GlobalFontStyles } from './GlobalFontStyles'
+
 import { Outlet } from 'react-router-dom'
 
 import Header from './components/Header'
@@ -10,6 +14,9 @@ export default function App() {
 
     return (
         <div>
+            <GlobalStyles />
+            <GlobalColorStyles />
+            <GlobalFontStyles />
             <Header />
             <Outlet />
             <Footer />
