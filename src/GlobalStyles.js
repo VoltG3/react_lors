@@ -4,6 +4,7 @@ export const GlobalStyles = createGlobalStyle`
   
   :root {
     --page--width: 1440px;
+    --filter--img: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.7));
   }
   
   html, body {
