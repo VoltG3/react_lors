@@ -16,7 +16,17 @@ export default function App() {
         showBorders(bordersVisible)
 
     return (
-        <div>
+        <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+                maxWidth: 'var(--page--width)',
+                   width: '100vw',
+                   height: 'auto',
+            background: 'var(--clr--default--ltst)'
+        }}>
             <GlobalStyles />
             <GlobalColorStyles />
             <GlobalFontStyles />
