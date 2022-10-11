@@ -1,0 +1,11 @@
+{
+  "short_name" : "lors",
+  "name" : "www.lors.lv",
+  "icons" : [
+    {
+      "src" : "favicon_lors.ico",
+      "size" : "63x63 32x32 24x24 16x16",
+      "type" : "image/x-icon"
+    }
+  ]
+}
