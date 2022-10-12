@@ -53,5 +53,54 @@ export const stockDataTextcontentTables = [
                 part : "Paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph"
             }
         ]
+    },
+    {
+        section : "times small table",
+        stock : [
+            {
+                id : "01",
+                part : "Working hours"
+            },
+            {
+                id : "02",
+                part : "Monday"
+            },
+            {
+                id : "03",
+                part : "12.00 - 19.00"
+            },
+            {
+                id : "04",
+                part : "Tuesday"
+            },
+            {
+                id : "05",
+                part : "12.00 - 19.00"
+            },
+            {
+                id : "06",
+                part : "Wednesday"
+            },
+            {
+                id : "07",
+                part : "09.00 - 16.00"
+            },
+            {
+                id : "08",
+                part : "Thursday"
+            },
+            {
+                id : "09",
+                part : "12.00 - 19.00"
+            },
+            {
+                id : "10",
+                part : "Friday"
+            },
+            {
+                id : "11",
+                part : "09.00 - 16.00"
+            },
+        ]
     }
 ]
