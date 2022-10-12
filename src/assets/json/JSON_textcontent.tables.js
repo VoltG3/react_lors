@@ -40,5 +40,18 @@ export const stockDataTextcontentTables = [
             },
 
         ]
+    },
+    {
+        section : "contracts",
+        stock : [
+            {
+                id : "01",
+                part : "Contracts with"
+            },
+            {
+                id : "02",
+                part : "Paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph"
+            }
+        ]
     }
 ]

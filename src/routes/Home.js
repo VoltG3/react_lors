@@ -10,11 +10,15 @@ import { GetList } from '../components/Props.list'
 import { GetListDouble } from '../components/Props.list.double'
 import { GetTextcontent } from '../components/Props.textcontent'
 import TableAccessible from '../components/Tables/table.accessible'
+import TableContracts from '../components/Tables/table.contracts'
 
 export default function Home() {
     return (
         <div className={"page"}>
             <p>Page Home</p>
+
+            <TableContracts />
+            <div style={{ height: '80px' }}></div> {/* TEMPORARY SPACE */}
 
             <TableAccessible />
             <div style={{ height: '80px' }}></div> {/* TEMPORARY SPACE */}
