@@ -9,11 +9,15 @@ import { DATA_TEXTCONTENT_SECTIONS } from '../env'
 import { GetList } from '../components/Props.list'
 import { GetListDouble } from '../components/Props.list.double'
 import { GetTextcontent } from '../components/Props.textcontent'
+import TableAccessible from '../components/Tables/table.accessible'
 
 export default function Home() {
     return (
         <div className={"page"}>
             <p>Page Home</p>
+
+            <TableAccessible />
+            <div style={{ height: '80px' }}></div> {/* TEMPORARY SPACE */}
 
             <GetTextcontent
                 textcontent={ DATA_TEXTCONTENT_SECTIONS }
