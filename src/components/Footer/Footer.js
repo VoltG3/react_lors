@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-import LogoSetFooter from './Footer/footerSet.logo'
-import FooterSetInfo from './Footer/footerSet.info'
+import LogoSetFooter from './Footer.set.logo'
+import FooterSetTextcontent from './Footer.set.textcontent'
 
 const StyledFooter = styled.div`
   display: flex;
@@ -13,10 +13,10 @@ const StyledFooter = styled.div`
   color: white;
   background: var(--crl--primary--dk);
   
-  section {
+  .section {
     display: grid;
-    grid-template-columns: repeat(1fr, 3);
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
         height: auto;
     grid-template-areas:
@@ -29,14 +29,14 @@ const StyledFooter = styled.div`
 export default function Footer() {
     return (
         <StyledFooter>
-            <section>
-                <FooterSetInfo />
+            <div >
+                <FooterSetTextcontent />
                 <LogoSetFooter />
 
                 <div style={{ height: '46px'}}>
                     <p>Developed by VoltG3 © 2022</p>
                 </div>
-            </section>
+            </div>
         </StyledFooter>
     )
 }

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { GetTextcontent } from '../Props.textcontent'
+import { STDL } from '../STDCOUT.lists'
 import { DATA_TEXTCONTENT_TABLES } from '../../env'
 
 import Icon01 from '../../assets/img/icons/icon_accessible_01.svg'
@@ -40,47 +40,47 @@ const StyledContainer = styled.div`
 export default function TableAccessible() {
     return (
         <StyledContainer>
-            <p><GetTextcontent textcontent={ DATA_TEXTCONTENT_TABLES } section={"accessible"} partId={"01"}/></p>
+            <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"accessible"} partId={"01"}/></p>
 
             <div className={"accesibleTable"}>
                 <div className={"accessibleSquare"}>
                     <img className={"accessibleIcon"} src={ Icon01 } alt={"icon"} />
-                    <p><GetTextcontent textcontent={ DATA_TEXTCONTENT_TABLES } section={"accessible"} partId={"02"}/></p>
+                    <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"accessible"} partId={"02"}/></p>
                 </div>
 
                 <div className={"accessibleSquare"}>
                     <img className={"accessibleIcon"} src={ Icon02 } alt={"icon"} />
-                    <p><GetTextcontent textcontent={ DATA_TEXTCONTENT_TABLES } section={"accessible"} partId={"03"}/></p>
+                    <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"accessible"} partId={"03"}/></p>
                 </div>
 
                 <div className={"accessibleSquare"}>
                     <img className={"accessibleIcon"} src={ Icon03 } alt={"icon"} />
-                    <p><GetTextcontent textcontent={ DATA_TEXTCONTENT_TABLES } section={"accessible"} partId={"04"}/></p>
+                    <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"accessible"} partId={"04"}/></p>
                 </div>
 
                 <div className={"accessibleSquare"}>
                     <img className={"accessibleIcon"} src={ Icon04 } alt={"icon"} />
-                    <p><GetTextcontent textcontent={ DATA_TEXTCONTENT_TABLES } section={"accessible"} partId={"05"}/></p>
+                    <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"accessible"} partId={"05"}/></p>
                 </div>
 
                 <div className={"accessibleSquare"}>
                     <img className={"accessibleIcon"} src={ Icon05 } alt={"icon"} />
-                    <p><GetTextcontent textcontent={ DATA_TEXTCONTENT_TABLES } section={"accessible"} partId={"06"}/></p>
+                    <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"accessible"} partId={"06"}/></p>
                 </div>
 
                 <div className={"accessibleSquare"}>
                     <img className={"accessibleIcon"} src={ Icon06 } alt={"icon"} />
-                    <p><GetTextcontent textcontent={ DATA_TEXTCONTENT_TABLES } section={"accessible"} partId={"07"}/></p>
+                    <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"accessible"} partId={"07"}/></p>
                 </div>
 
                 <div className={"accessibleSquare"}>
                     <img className={"accessibleIcon"} src={ Icon07 } alt={"icon"} />
-                    <p><GetTextcontent textcontent={ DATA_TEXTCONTENT_TABLES } section={"accessible"} partId={"08"}/></p>
+                    <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"accessible"} partId={"08"}/></p>
                 </div>
 
                 <div className={"accessibleSquare"}>
                     <img className={"accessibleIcon"} style={{ width: '40px', height: '25px'}} src={ Icon08 } alt={"icon"} />
-                    <p><GetTextcontent textcontent={ DATA_TEXTCONTENT_TABLES } section={"accessible"} partId={"09"}/></p>
+                    <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"accessible"} partId={"09"}/></p>
                 </div>
             </div>
         </StyledContainer>

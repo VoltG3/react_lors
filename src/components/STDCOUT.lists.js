@@ -5,7 +5,7 @@ const StyledTable = styled.div`
   width: 100%;
 `
 
-export const GetTextcontent = (props) => {
+export const STDL = (props) => {
 
     const getPart = (targetStock) => {
 
@@ -23,11 +23,11 @@ export const GetTextcontent = (props) => {
         <StyledTable>
             { props.textcontent.map((data, key) => {
                 return (
-                    <div key={key}>
+                    <p key={key}>
                         {
                             props.section === data.section ? getPart(data.stock) : ""
                         }
-                    </div>
+                    </p>
                 )
             })}
         </StyledTable>

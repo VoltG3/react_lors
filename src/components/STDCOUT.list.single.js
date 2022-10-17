@@ -19,14 +19,7 @@ const StyledTable = styled.div`
   }
 `
 
-export const GetList = (props) => {
-
-    // let res = ""
-    // for(let i = 0; i < props.textcontent.length; i++) {
-    //     res = props.textcontent[i]
-    //     console.log(res)
-    // }
-
+export const STDLS = (props) => {
     return (
         <StyledTable>
             { props.textcontent.map((data, key) => {

@@ -1,26 +1,35 @@
 export const stockDataTextcontentHeaders = [
     {
-        stock : "home"
+        stock : "home",
+        part : "Home"
     },
     {
-        stock : "admission"
+        stock : "admission",
+        part : "Addmision"
     },
     {
-        stock : "services"
+        stock : "services",
+        part : "Services"
     },
     {
-        stock : "info"
+        stock : "info",
+        part : "Info"
     },
     {
-        stock : "about"
+        stock : "about",
+        part : "About"
+
     },
     {
-        stock : "contacts"
+        stock : "contacts",
+        part : "Contacts"
     },
     {
-        stock : "appointment"
+        stock : "appointment",
+        part : "Appointment"
     },
     {
-        stock : "Company name"
+        stock : "company",
+        part : "Company name company name"
     },
 ]

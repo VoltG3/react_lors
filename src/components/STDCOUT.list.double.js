@@ -39,7 +39,7 @@ const StyledTable = styled.div`
 
 const cyrrencySign = '€'
 
-export const GetListDouble = (props) => {
+export const STDLD = (props) => {
     return (
         <StyledTable>
             { props.textcontent.map((data, key) => {

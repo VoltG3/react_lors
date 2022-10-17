@@ -2,11 +2,12 @@ import styled from 'styled-components'
 
 import DefaultSlider01 from '../../assets/default_slider_01.png'
 import DefaultSlider02 from '../../assets/default_slider_02.png'
-import { GetHeader } from '../Props.header'
-import { DATA_TEXTCONTENT_HEADERS, DATA_TEXTCONTENT_SECTIONS } from '../../env'
-import { GetTextcontent } from '../Props.textcontent'
 
-const StyledContainer = styled.div`
+import { DATA_TEXTCONTENT_HEADERS, DATA_TEXTCONTENT_SECTIONS } from '../../env'
+import { STDL } from '../STDCOUT.lists'
+import { STDH } from '../STDCOUT.headers'
+
+const StyledSlider = styled.div`
   width: 100%;
   height: 381px;
 
@@ -55,19 +56,19 @@ const StyledContainer = styled.div`
 
 export default function HeaderSetSlider() {
     return (
-        <StyledContainer>
+        <StyledSlider>
             <section className="banner">
                 <div className={"textcontent"}>
                     <div style={{ margin: '47px 0 0 80px' }}>
-                        <p><GetHeader textcontent={ DATA_TEXTCONTENT_HEADERS } part={"7"} /></p>
+                        <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"company"} />
                         <div style={{ margin: '16px 0 0 25px'}}>
-                            <p><GetTextcontent textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"05"}/></p>
-                            <p><GetTextcontent textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"06"}/></p>
-                            <p><GetTextcontent textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"07"}/></p>
+                            <STDL textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"05"}/>
+                            <STDL textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"06"}/>
+                            <STDL textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"07"}/>
                         </div>
 
                         <div style={{ margin: '31px 0 0 0'}}>
-                            <p><GetTextcontent textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"08"}/></p>
+                            <STDL textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"08"}/>
                         </div>
                     </div>
 
@@ -80,6 +81,6 @@ export default function HeaderSetSlider() {
                 </div>
 
             </section>
-        </StyledContainer>
+        </StyledSlider>
     )
 }

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { GetTextcontent } from '../Props.textcontent'
+import { STDL } from '../STDCOUT.lists'
 import { DATA_TEXTCONTENT_TABLES } from '../../env'
 
 import Logo01 from '../../assets/img/logo_colored/BALTA_colored.png'
@@ -28,7 +28,7 @@ const StyledContainer = styled.div`
 export default function TableContracts() {
     return (
         <StyledContainer>
-            <p><GetTextcontent textcontent={ DATA_TEXTCONTENT_TABLES } section={"contracts"} partId={"01"}/></p>
+            <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"contracts"} partId={"01"}/></p>
 
             <div className={"logoSquare"}>
                 <img src={ Logo01 } alt={"logo"} style={{ width: '70px', height: '60px'}}/>
@@ -38,7 +38,7 @@ export default function TableContracts() {
                 <img src={ Logo05 } alt={"logo"} style={{ width: '130px', height: '65px', marginBottom: '18px'}}/>
             </div>
 
-            <p><GetTextcontent textcontent={ DATA_TEXTCONTENT_TABLES } section={"contracts"} partId={"02"}/></p>
+            <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"contracts"} partId={"02"}/></p>
         </StyledContainer>
     )
 }
