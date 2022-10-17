@@ -34,5 +34,9 @@ export const stockDataTextcontentHeaders = [
     {
         stock : "HEADER second table",
         part : "Header second table"
+    },
+    {
+        stock : "HEADER services list",
+        part : "Header services list"
     }
 ]
