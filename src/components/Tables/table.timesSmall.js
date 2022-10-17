@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { STDL } from '../STDCOUT.lists'
+import { STDS } from '../STDCOUT.sections'
 import { DATA_TEXTCONTENT_TABLES } from '../../env'
 
 const StyledContainer = styled.div`
@@ -30,50 +30,50 @@ export default function TableTimesSmall() {
     return (
         <StyledContainer>
             <div style={{ margin: '0 0 20px 0'}}>
-                <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"01"}/></p>
+                <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"01"}/>
             </div>
 
             <div className={"tableLine"}>
                 <div className={"tableCell"}>
-                    <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"02"}/></p>
+                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"02"}/>
                 </div>
 
                 <div className={"tableCell"}>
-                    <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"04"}/></p>
+                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"04"}/>
                 </div>
 
                 <div className={"tableCell"}>
-                    <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"06"}/></p>
+                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"06"}/>
                 </div>
 
                 <div className={"tableCell"}>
-                    <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"08"}/></p>
+                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"08"}/>
                 </div>
 
                 <div className={"tableCell"}>
-                    <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"10"}/></p>
+                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"10"}/>
                 </div>
             </div>
 
             <div className={"tableLine"}>
                 <div className={"tableCell"}>
-                    <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"03"}/></p>
+                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"03"}/>
                 </div>
 
                 <div className={"tableCell"}>
-                    <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"05"}/></p>
+                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"05"}/>
                 </div>
 
                 <div className={"tableCell"}>
-                    <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"07"}/></p>
+                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"07"}/>
                 </div>
 
                 <div className={"tableCell"}>
-                    <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"09"}/></p>
+                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"09"}/>
                 </div>
 
                 <div className={"tableCell"}>
-                    <p><STDL textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"11"}/></p>
+                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"11"}/>
                 </div>
             </div>
 

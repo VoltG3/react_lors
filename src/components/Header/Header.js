@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import HeaderSetNavigation from "./Header.set.navigation";
-import HeaderSetSlider from "./Header.set.slider";
+import HeaderSetNavigation from './Header.set.navigation'
+import HeaderSetSlider from './Header.set.slider'
 
 const StyledHeader = styled.div`
   display: flex;

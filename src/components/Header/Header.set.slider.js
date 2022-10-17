@@ -4,7 +4,7 @@ import DefaultSlider01 from '../../assets/default_slider_01.png'
 import DefaultSlider02 from '../../assets/default_slider_02.png'
 
 import { DATA_TEXTCONTENT_HEADERS, DATA_TEXTCONTENT_SECTIONS } from '../../env'
-import { STDL } from '../STDCOUT.lists'
+import { STDS } from '../STDCOUT.sections'
 import { STDH } from '../STDCOUT.headers'
 
 const StyledSlider = styled.div`
@@ -60,15 +60,14 @@ export default function HeaderSetSlider() {
             <section className="banner">
                 <div className={"textcontent"}>
                     <div style={{ margin: '47px 0 0 80px' }}>
-                        <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"company"} />
+                        <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"HEADER company"} />
                         <div style={{ margin: '16px 0 0 25px'}}>
-                            <STDL textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"05"}/>
-                            <STDL textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"06"}/>
-                            <STDL textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"07"}/>
+                            <STDS textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"05"}/>
+                            <STDS textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"06"}/>
                         </div>
 
                         <div style={{ margin: '31px 0 0 0'}}>
-                            <STDL textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"08"}/>
+                            <STDS textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"08"}/>
                         </div>
                     </div>
 

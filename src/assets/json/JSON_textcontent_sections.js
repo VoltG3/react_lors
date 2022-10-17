@@ -4,14 +4,18 @@ export const stockDataTextcontentSections = [
         stock : [
                     {
                         id : "01",
-                        part : "\"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...\""
+                        part : "Header header header header header header header"
                     },
                     {
                         id : "02",
-                        part : "Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok. Lorem Ipsum har tålt tidens tann usedvanlig godt, og har i tillegg til å bestå gjennom fem århundrer også tålt spranget over til elektronisk typografi uten vesentlige endringer."
+                        part : "Header header header\nheader header header header"
                     },
                     {
                         id : "03",
+                        part : "Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok. Lorem Ipsum har tålt tidens tann usedvanlig godt, og har i tillegg til å bestå gjennom fem århundrer også tålt spranget over til elektronisk typografi uten vesentlige endringer."
+                    },
+                    {
+                        id : "04",
                         part : "Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok. Lorem Ipsum har tålt tidens tann usedvanlig godt, og har i tillegg til å bestå gjennom fem århundrer også tålt spranget over til elektronisk typografi uten vesentlige endringer."
                     }
                 ]
@@ -151,14 +155,6 @@ export const stockDataTextcontentSections = [
                     },
                     {
                         id : "06",
-                        part : "paragrapg01,"
-                    },
-                    {
-                        id : "07",
-                        part : "paragraph02"
-                    },
-                    {
-                        id : "08",
                         part : "Contacts, more info her"
                     }
         ]

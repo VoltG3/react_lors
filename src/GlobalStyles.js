@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
-  
   :root {
     --page--width: 1440px;
     --list--line--height: 40px;
@@ -32,4 +31,5 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
   }
+  
 `

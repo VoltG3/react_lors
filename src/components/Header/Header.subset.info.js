@@ -4,7 +4,7 @@ import Icon01 from '../../assets/img/icons/icon_telefon.svg'
 import Icon02 from '../../assets/img/icons/icon_mail.svg'
 import Icon03 from '../../assets/img/icons/icon_appointment.svg'
 
-import { STDL } from '../STDCOUT.lists'
+import { STDS } from '../STDCOUT.sections'
 import { DATA_TEXTCONTENT_SECTIONS } from '../../env'
 
 const StyledHeaderSubSetInfo = styled.div`
@@ -27,22 +27,22 @@ export default function HeaderSubSetInfo() {
     return (
         <StyledHeaderSubSetInfo>
             <div className={"infoSquare"}>
-                <STDL textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"01"}/>
+                <STDS textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"01"}/>
             </div>
 
             <div className={"infoSquare"}>
                 <img src={ Icon01 } alt={"icon"} style={{ width: '20px', height: '20px'}}/>
-                <STDL textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"02"}/>
+                <STDS textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"02"}/>
             </div>
 
             <div className={"infoSquare"}>
                 <img src={ Icon02 } alt={"icon"} style={{ width: '24px', height: '18px'}}/>
-                <STDL textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"03"}/>
+                <STDS textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"03"}/>
             </div>
 
             <div className={"infoSquare"}>
                 <img src={ Icon03 } alt={"icon"} style={{ width: '24px', height: '22px'}}/>
-                <STDL textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"04"}/>
+                <STDS textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"04"}/>
             </div>
         </StyledHeaderSubSetInfo>
     )

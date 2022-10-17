@@ -1,5 +1,5 @@
 
-export default function Info() {
+export default function Prices() {
     return (
         <div className={"page"}>
             <p>Page Info</p>

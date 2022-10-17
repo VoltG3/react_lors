@@ -33,4 +33,5 @@ export const GlobalColorStyles = createGlobalStyle`
       --clr--default--ltst: #FFFFFF;
       --clr--default--dkst: #000000;
     }
+    
 `

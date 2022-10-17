@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { DATA_TEXTCONTENT_HEADERS } from '../../env'
 import { STDH } from '../STDCOUT.headers'
 
-const StyledSubSetNavg = styled.div`
+const StyledSubSetNavSecond = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -14,8 +14,8 @@ const StyledSubSetNavg = styled.div`
 
 export default function HeaderSubsetNav2() {
     return (
-        <StyledSubSetNavg>
-            <Link to={"contacts"}><STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"appointment"} /></Link>
-        </StyledSubSetNavg>
+        <StyledSubSetNavSecond>
+            <Link to={"contacts"}><STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"contacts"} /></Link>
+        </StyledSubSetNavSecond>
     )
 }

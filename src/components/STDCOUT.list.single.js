@@ -19,7 +19,7 @@ const StyledTable = styled.div`
   }
 `
 
-export const STDLS = (props) => {
+export const STDSS = (props) => {
     return (
         <StyledTable>
             { props.textcontent.map((data, key) => {

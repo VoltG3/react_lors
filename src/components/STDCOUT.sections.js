@@ -5,7 +5,7 @@ const StyledTable = styled.div`
   width: 100%;
 `
 
-export const STDL = (props) => {
+export const STDS = (props) => {
 
     const getPart = (targetStock) => {
 
