@@ -16,6 +16,10 @@ export const stockDataTextcontentHeaders = [
         part : "Prices"
     },
     {
+        stock : "info",
+        part : "Info"
+    },
+    {
         stock : "contacts",
         part : "Contacts"
     },

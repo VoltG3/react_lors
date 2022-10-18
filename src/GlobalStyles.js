@@ -19,17 +19,29 @@ export const GlobalStyles = createGlobalStyle`
     align-items: center;
     width: 100vw;
     height: 100vh;
+    background: cyan;
   }
   
   .page {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0
+            var(--page--side--margin)
+            0 
+            var(--page--side--margin);
+    background: green;
   } 
   
   * {
     padding: 0;
     margin: 0;
   }
+  
+  a:link {
+    text-decoration: none;
+  }
+  
+  
   
 `
