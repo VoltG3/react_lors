@@ -1,4 +1,4 @@
-import { DATA_TEXTCONTENT_SECTIONS } from "../env";
+import {DATA_TEXTCONTENT_SECTIONS, image00, image01} from "../env";
 import { STDS } from "../components/STDCOUT.sections";
 import STDIMG from "../components/STDCOUT.img";
 
@@ -55,7 +55,7 @@ export default function Home() {
 
             <Table />
 
-            <STDIMG img={ default_img } variant={"square"} width={"1017"} height={"677"} />
+            <STDIMG img={ image01 } preimg= { image00 } variant={"square"} width={"1017"} height={"677"} />
         </div>
     )
 }
