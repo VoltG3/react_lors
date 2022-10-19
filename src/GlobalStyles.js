@@ -26,6 +26,9 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     flex-direction: column;
     align-items: center;
+      max-width: var(--page--width);
+          width: 100%;
+          height: auto;
     margin: 0
             var(--page--side--margin)
             0 

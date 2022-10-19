@@ -2,13 +2,14 @@ import PreloadImage from 'react-preload-image'
 
 export default function STDIMG(props){
     return (
-        <PreloadImage src={ props.img } alt="img"
+        <img src={ props.img } alt="img"
              style={{
-                 position: 'relative',
-                 width: props.width + 'px',
-                 height: props.height === "auto"
+                 maxWidth: props.width + 'px',
+                 maxHeight: props.height === "auto"
                      ? 'auto' :
                      props.height + 'px',
+                 width: '100%',
+                 height: '100%',
                  filter: 'var(--filter--img)',
                  borderRadius: props.variant === "square"
                      ? '0 0 0 0'
