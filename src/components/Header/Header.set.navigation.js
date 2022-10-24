@@ -22,7 +22,7 @@ const StyledHeaderSetNavigation = styled.div`
    height: 94px;
    grid-template-areas: 
     "A A B B B B C"
-    "A A D D D D E";
+    "A A D D D D D";
 
    & :nth-child(1) {
      grid-area: A;
@@ -45,9 +45,9 @@ const StyledHeaderSetNavigation = styled.div`
      grid-area: D;
    }
 
-   & :nth-child(5) {
+  /* & :nth-child(5) {
      grid-area: E;
-   }
+   }*/
  }
 `
 
@@ -59,7 +59,7 @@ export default function HeaderSetNavigation() {
                 <HeaderSubSetInfo />
                 <HeaderSubSetLang />
                 <HeaderSubsetNav1 />
-                <HeaderSubsetNav2 />
+               {/* <HeaderSubsetNav2 />*/}
             </div>
         </StyledHeaderSetNavigation>
     )

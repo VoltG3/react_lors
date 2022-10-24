@@ -1,21 +1,25 @@
-import {DATA_TEXTCONTENT_HEADERS, DATA_TEXTCONTENT_SECTIONS, JSON_LIST_SERVICES} from "../env";
-import { STDS } from "../components/STDCOUT.sections";
-import { STDH } from "../components/STDCOUT.headers";
+import {
+    image00,
+    image03, image04,
+    image05, image06, image07,
 
-import default_img from '../assets/default_img.png'
+} from "../env";
+
+
 import STDIMG from "../components/STDCOUT.img";
-import {STDSS} from "../components/STDCOUT.list.single";
+
+import {useTranslation} from "react-i18next";
+import {RenderListServices} from "../Render/render.list.services";
+import i18next from "i18next";
 
 export default function About() {
+    const [t, i18next] = useTranslation(["common", "sections", "list"])
+
     return (
         <div className={"page"}>
-            <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"about"} />
+            <h1>{t("common:about")}</h1>
 
-            <STDS
-                textcontent={ DATA_TEXTCONTENT_SECTIONS }
-                section={"about"}
-                partId={"01"}
-            />
+            <p>{i18next.t("sections:stock_home." + 0 + ".part")}</p>
 
             <div style={{
                 display: 'flex',
@@ -23,13 +27,12 @@ export default function About() {
                 width: '100%',
                 justifyContent: 'space-between'
             }}>
-                <STDIMG img={ default_img } variant={"square"} width={"403"} height={"619"} />
-                <STDIMG img={ default_img } variant={"square"} width={"403"} height={"619"} />
-                <STDIMG img={ default_img } variant={"square"} width={"403"} height={"619"} />
+                <STDIMG img={ image05 } imgPreview={ image00 } variant={"square"} width={"403"} height={"619"} verticalMargin={"--image--vertical--margin"} />
+                <STDIMG img={ image03 } imgPreview={ image00 } variant={"square"} width={"403"} height={"619"} verticalMargin={"--image--vertical--margin"} />
+                <STDIMG img={ image05 } imgPreview={ image00 } variant={"square"} width={"403"} height={"619"} verticalMargin={"--image--vertical--margin"} />
             </div>
 
-            <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"HEADER services list"} />
-            <STDSS textcontent={ JSON_LIST_SERVICES } />
+            <RenderListServices />
 
             <div style={{
                 display: 'flex',
@@ -37,8 +40,8 @@ export default function About() {
                 width: '100%',
                 justifyContent: 'space-between'
             }}>
-                <STDIMG img={ default_img } variant={"square"} width={"630"} height={"620"} />
-                <STDIMG img={ default_img } variant={"square"} width={"630"} height={"620"} />
+                <STDIMG img={ image07 } imgPreview={ image00 } variant={"square"} width={"630"} height={"620"} verticalMargin={"--image--vertical--margin"} />
+                <STDIMG img={ image06 } imgPreview={ image00 } variant={"square"} width={"630"} height={"620"} verticalMargin={"--image--vertical--margin"} />
             </div>
         </div>
     )

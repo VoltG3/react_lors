@@ -7,14 +7,22 @@ const StyledHeader = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-    width: 100%;
-    height: 474px;
+    //max-width: var(--page--width);
+        width: 100%;
+        height: 474px;
 `
 
 export default function Header() {
     return (
         <StyledHeader>
-            <HeaderSetNavigation />
+           {/* <div style={{
+                width: '100%',
+                height: '340px',
+                background: 'yellow'
+            }}>
+
+            </div>*/}
+           <HeaderSetNavigation />
             <HeaderSetSlider />
         </StyledHeader>
     )

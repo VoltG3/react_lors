@@ -28,11 +28,12 @@ export const GlobalFontStyles = createGlobalStyle`
     font-family: var(--font--secondary);
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+   // font-size: 18px;
+    font-size: 14px;
     line-height: 25px;
     display: flex;
     align-items: center;
-    letter-spacing: 0.1em;
+   // letter-spacing: 0.1em;
     text-transform: uppercase;
     opacity: 0.7;
     color: var(--clr--primary--base);

@@ -1,13 +1,18 @@
-import {DATA_TEXTCONTENT_HEADERS, JSON_LIST_CATEGORIES, JSON_LIST_SERVICES} from "../env";
+import {DATA_TEXTCONTENT_HEADERS} from "../env";
 import {STDH} from "../components/STDCOUT.headers";
-import {STDSS} from "../components/STDCOUT.list.single";
+
+import '../translations/i18n'
+import {RenderListInformation} from "../Render/render.list.information";
+import {useTranslation} from "react-i18next";
 
 export default function Info() {
+    const [t] = useTranslation(["common", "list"])
+
     return (
         <div className={"page"}>
-            <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"info"} />
+            <h1>{t("common:home")}</h1>
 
-            <STDSS textcontent={ JSON_LIST_CATEGORIES } />
+            <RenderListInformation />
 
         </div>
     )

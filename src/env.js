@@ -15,6 +15,9 @@ import Img06 from './assets/img/images/06.jpg'
 import Img07 from './assets/img/images/07.jpg'
 import Img08 from './assets/img/images/08.jpg'
 import Img09 from './assets/img/images/09.jpg'
+import Img10 from './assets/img/images/10.jpg'
+import Slider01 from './assets/img/slider/slider01.png'
+import Slider02 from './assets/img/slider/slider02.png'
 
 import { stockDataTextcontentHeaders } from './assets/json/JSON_textcontent_headers'
 import { stockDataTextcontentSections } from './assets/json/JSON_textcontent_sections'
@@ -30,8 +33,11 @@ export const image06 = Img06
 export const image07 = Img07
 export const image08 = Img08
 export const image09 = Img09
+export const image10 = Img10
+export const slider01 = Slider01
+export const slider02 = Slider02
 
-export const JSON_LIST_SERVICES = stockDataListServices
+export const JSON_list_services = stockDataListServices
 export const JSON_LIST_CATEGORIES = stockDataListCategories
 export const JSON_LIST_PRICES_FIRST_TABLE = stockDataListPricesFirstTable
 export const JSON_LIST_PRICES_SECOND_TABLE = stockDataListPricesSecondTable

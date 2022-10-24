@@ -1,9 +1,6 @@
 import styled from 'styled-components'
-
 import { Link } from 'react-router-dom'
-
-import { DATA_TEXTCONTENT_HEADERS } from '../../env'
-import { STDH } from '../STDCOUT.headers'
+import { useTranslation } from "react-i18next";
 
 const StyledSubSetNavFirst = styled.div`
   display: flex;
@@ -18,28 +15,33 @@ const StyledSubSetNavFirst = styled.div`
 `
 
 export default function HeaderSubsetNav1() {
+    const [t] = useTranslation(["common"])
+
     return (
         <StyledSubSetNavFirst>
             <Link className={"textcontent--header--nav--btn--under"} to={"home"}>
-                <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"home"} />
+                <p>{t("common:home")}</p>
             </Link>
 
             <Link className={"textcontent--header--nav--btn--under"} to={"about"}>
-                <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"about"} />
+                <p>{t("common:about")}</p>
             </Link>
 
             <Link className={"textcontent--header--nav--btn--under"} to={"services"}>
-                <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"services"} />
+                <p>{t("common:services")}</p>
             </Link>
 
             <Link className={"textcontent--header--nav--btn--under"} to={"prices"}>
-                <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"prices"} />
+                <p>{t("common:prices")}</p>
             </Link>
 
             <Link className={"textcontent--header--nav--btn--under"} to={"info"}>
-                <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"info"} />
+                <p>{t("common:info")}</p>
             </Link>
 
+            <Link className={"textcontent--header--nav--btn--under"} to={"contacts"}>
+                <p>{t("common:contacts")}</p>
+            </Link>
         </StyledSubSetNavFirst>
     )
 }

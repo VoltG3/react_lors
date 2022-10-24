@@ -1,39 +1,40 @@
 import { Link } from 'react-router-dom'
-import { DATA_TEXTCONTENT_HEADERS } from '../../env'
-import { STDH } from '../STDCOUT.headers'
+import {useTranslation} from "react-i18next";
 
 export default function FooterSetNavigation() {
+    const [t] = useTranslation(["common"])
+
     return (
         <div style={{
             display: 'flex',
             flexDirection: 'column'
         }}>
             <Link className={"textcontent--footer--nav"} to={"home"}>
-                <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"home"} />
+                <p>{t("common:home")}</p>
             </Link>
 
             <Link className={"textcontent--footer--nav"} to={"about"}>
-                <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"about"} />
+                <p>{t("common:about")}</p>
             </Link>
 
             <Link className={"textcontent--footer--nav"} to={"services"}>
-                <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"services"} />
+                <p>{t("common:services")}</p>
             </Link>
 
             <Link className={"textcontent--footer--nav"} to={"prices"}>
-                <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"prices"} />
+                <p>{t("common:prices")}</p>
             </Link>
 
             <Link className={"textcontent--footer--nav"} to={"contacts"}>
-                <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"contacts"} />
+                <p>{t("common:info")}</p>
             </Link>
 
             <Link className={"textcontent--footer--nav"} to={"info"}>
-                <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"info"} />
+                <p>{t("common:contacts")}</p>
             </Link>
 
             <a className={"textcontent--footer--nav"} href={"https://google.com"} target={"_blank"} rel={"noopner noreferrer"}>
-                <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"e-appointment"} />
+                <p>{t("common:eapointment")}</p>
             </a>
         </div>
     )

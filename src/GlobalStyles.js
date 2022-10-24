@@ -5,6 +5,7 @@ export const GlobalStyles = createGlobalStyle`
     --page--width: 1440px;
     --list--line--height: 40px;
     --page--side--margin: 80px;
+    --image--vertical--margin: 100px;
     --filter--img: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.7));
   }
   
@@ -26,13 +27,9 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     flex-direction: column;
     align-items: center;
-      max-width: var(--page--width);
+      max-width: calc(var(--page--width) - calc(var(--page--side--margin) * 2));
           width: 100%;
           height: auto;
-    margin: 0
-            var(--page--side--margin)
-            0 
-            var(--page--side--margin);
     background: green;
   } 
   
@@ -44,7 +41,4 @@ export const GlobalStyles = createGlobalStyle`
   a:link {
     text-decoration: none;
   }
-  
-  
-  
 `

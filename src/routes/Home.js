@@ -1,13 +1,19 @@
-import {DATA_TEXTCONTENT_SECTIONS, image00, image01} from "../env";
+import {DATA_TEXTCONTENT_SECTIONS, image00, image01, image06, image07} from "../env";
 import { STDS } from "../components/STDCOUT.sections";
 import STDIMG from "../components/STDCOUT.img";
 
 import default_img from '../assets/default_img.png'
 import Table from "../components/Tables/Table";
+import {useTranslation} from "react-i18next";
 
 export default function Home() {
+    const [t] = useTranslation(["common"])
+
     return (
         <div className={"page"}>
+            <h1>{t("common:home")}</h1>
+
+
             <div>
                 <STDS
                     textcontent={ DATA_TEXTCONTENT_SECTIONS }
@@ -24,12 +30,8 @@ export default function Home() {
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'row'}}>
-                <STDIMG
-                    img={ default_img }
-                    width={"300"}
-                    height={"300"}
-                    variant={"eclipse"}
-                />
+
+                <STDIMG img={ image06 } imgPreview={ image00 } variant={"eclipse"} width={"250"} height={"250"} />
 
                 <STDS
                     textcontent={ DATA_TEXTCONTENT_SECTIONS }
@@ -45,17 +47,14 @@ export default function Home() {
                     section={"home"}
                     partId={"04"}
                 />
-                <STDIMG
-                    img={ default_img }
-                    width={"300"}
-                    height={"300"}
-                    variant={"eclipse"}
-                />
+
+                <STDIMG img={ image07 } imgPreview={ image00 } variant={"eclipse"}width={"250"} height={"250"} />
+
             </div>
 
             <Table />
 
-            <STDIMG img={ image01 } preimg= { image00 } variant={"square"} width={"1017"} height={"677"} />
+            <STDIMG img={ image01 } imgPreview= { image00 } variant={"square"} width={"1017"} height={"auto"} verticalMargin={"--image--vertical--margin"} />
         </div>
     )
 }
