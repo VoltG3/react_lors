@@ -7,13 +7,18 @@ const StyledTable = styled.div`
   
   & div {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    justify-content: space-between;
     min-height: var(--list--line--height);
   }
   
   .firstPart {
     max-width: 1080px;
+    
+    & p {
+      margin-left: 30px
+    }
   }
   
   .secondPart {
@@ -34,13 +39,13 @@ const StyledTable = styled.div`
   }
   
   & div:nth-child(odd) .line {
-    background: var(--crl--accent--ltr);
+    background: var(--color--list);
   }
 `
 
 const cyrrencySign = '€'
 
-export const RenderListPrices = (props) => {
+export const I18nRenderListPrices = (props) => {
 
     return (
         <StyledTable>
@@ -55,16 +60,16 @@ export const RenderListPrices = (props) => {
             { i18next.t(props.variant, { returnObjects: true }).map((list_prices, key) => (
                     <div key={ key }>
                         <div className={"line firstPart"}>
-                            <p>{ t(list_prices.item) }</p>
+                            <p className={"textcontent--list--item"}>{ t(list_prices.item) }</p>
                         </div>
 
                         <div className={"line secondPart"}>
                             <div>
-                                <p>{ t(list_prices.price) }</p>
+                                <p className={"textcontent--list--item"}>{ t(list_prices.price) }</p>
                             </div>
 
                             <div>
-                                <p>{ cyrrencySign }</p>
+                                <p className={"textcontent--list--item"}>{ cyrrencySign }</p>
                             </div>
                         </div>
                     </div>

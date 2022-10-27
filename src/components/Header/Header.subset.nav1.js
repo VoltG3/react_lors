@@ -7,7 +7,7 @@ const StyledSubSetNavFirst = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
+border: solid 1px red;
   & p:hover {
     cursor: pointer;
     color: var(--clr--accent--base);

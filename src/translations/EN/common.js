@@ -7,7 +7,9 @@ export const COMMON_EN = {
     contacts : "Contacts and working hours",
     eapointment : "E - appointment",
 
-    company : "SIA \"Jautrītes Liepiņa doctor's practice in otorhinolaryngology\"",
+    company01 : "SIA \"Jautrītes Liepiņa doctor's practice in otorhinolaryngology\"",
+    company02 : "SIA \"Jautrītes Liepiņa doctor's practice\n" +
+                "in otorhinolaryngology\"",
 
     btn_variant01 : "E - appointment",
     btn_variant02 : "see here",

@@ -4,14 +4,14 @@ import Icon01 from '../../assets/img/icons/icon_telefon.svg'
 import Icon02 from '../../assets/img/icons/icon_mail.svg'
 import Icon03 from '../../assets/img/icons/icon_appointment.svg'
 
-import { STDS } from '../STDCOUT.sections'
-import { DATA_TEXTCONTENT_SECTIONS } from '../../env'
+import { t } from "i18next";
 
 const StyledHeaderSubSetInfo = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border: solid 1px brown;
   
   .infoSquare {
     display: flex;
@@ -26,23 +26,23 @@ const StyledHeaderSubSetInfo = styled.div`
 export default function HeaderSubSetInfo() {
     return (
         <StyledHeaderSubSetInfo>
-            <div className={"infoSquare textcontent--header--nav--btn--over"}>
-                <STDS textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"01"}/>
+            <div>
+                <p className={"infoSquare textcontent--header--nav--btn--over"}>{ t("sections:section_header_part01") }</p>
             </div>
 
-            <div className={"infoSquare textcontent--header--nav--btn--over"}>
+            <div>
                 <img src={ Icon01 } alt={"icon"} style={{ width: '20px', height: '20px'}}/>
-                <STDS textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"02"}/>
+                <p className={"infoSquare textcontent--header--nav--btn--over"}>{ t("sections:section_header_part02") }</p>
             </div>
 
-            <div className={"infoSquare textcontent--header--nav--btn--over"}>
+            <div>
                 <img src={ Icon02 } alt={"icon"} style={{ width: '24px', height: '18px'}}/>
-                <STDS textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"03"}/>
+                <p className={"infoSquare textcontent--header--nav--btn--over"}>{ t("sections:section_header_part03") }</p>
             </div>
 
-            <div className={"infoSquare textcontent--header--nav--btn--over"}>
+            <div>
                 <img src={ Icon03 } alt={"icon"} style={{ width: '24px', height: '22px'}}/>
-                <STDS textcontent={ DATA_TEXTCONTENT_SECTIONS } section={"header"} partId={"04"}/>
+                <p className={"infoSquare textcontent--header--nav--btn--over"}>{ t("sections:section_header_part04") }</p>
             </div>
         </StyledHeaderSubSetInfo>
     )

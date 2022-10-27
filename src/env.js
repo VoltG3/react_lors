@@ -8,6 +8,12 @@ import {
 import Img00 from './assets/default_img.png'
 import Img01 from './assets/img/images/01.jpg'
 import Img02 from './assets/img/images/02.jpg'
+import Img03f from './assets/img/images/03f.jpg' /*figma no compressed*/
+import Img04f from './assets/img/images/04f.jpg'
+import Img05f from './assets/img/images/05f.jpg'
+import Img03a from './assets/img/images/03a.jpg' /* original */
+import Img04a from './assets/img/images/04a.jpg'
+import Img05a from './assets/img/images/05a.jpg' /* figma compressed */
 import Img03 from './assets/img/images/03.jpg'
 import Img04 from './assets/img/images/04.jpg'
 import Img05 from './assets/img/images/05.jpg'
@@ -29,6 +35,13 @@ export const image02 = Img02
 export const image03 = Img03
 export const image04 = Img04
 export const image05 = Img05
+export const image03a = Img03a
+export const image04a = Img04a
+export const image05a = Img05a
+export const image03f = Img03f
+export const image04f = Img04f
+export const image05f = Img05f
+
 export const image06 = Img06
 export const image07 = Img07
 export const image08 = Img08

@@ -1,106 +1,86 @@
 export const stockDataTextcontentTables = [
     {
-        section : "accessible",
-        stock : [
-            {
-                id : "01",
-                part : "Accessible properties"
-            },
-            {
-                id : "02",
-                part : "01 Paragraph paragraph paragraph"
-            },
-            {
-                id : "03",
-                part : "02 Paragraph paragraph paragraph"
-            },
-            {
-                id : "04",
-                part : "03 Paragraph paragraph paragraph"
-            },
-            {
-                id : "05",
-                part : "04 Paragraph paragraph paragraph"
-            },
-            {
-                id : "06",
-                part : "05 Paragraph paragraph paragraph"
-            },
-            {
-                id : "07",
-                part : "06 Paragraph paragraph paragraph"
-            },
-            {
-                id : "08",
-                part : "07 Paragraph paragraph paragraph"
-            },
-            {
-                id : "09",
-                part : "08 Paragraph paragraph paragraph"
-            },
-
-        ]
-    },
-    {
-        section : "contracts",
-        stock : [
-                    {
-                        id : "01",
-                        part : "Contracts with"
-                    },
-                    {
-                        id : "02",
-                        part : "Paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph"
-                    }
-            ]
-    },
-    {
         section : "times small table",
         stock : [
                     {
                         id : "01",
-                        part : "Working hours"
+                        part : "12.00 - 19.00"
                     },
                     {
                         id : "02",
-                        part : "Monday"
+                        part : "12.00 - 19.00"
                     },
                     {
                         id : "03",
-                        part : "12.00 - 19.00"
+                        part : "09.00 - 16.00"
                     },
                     {
                         id : "04",
-                        part : "Tuesday"
+                        part : "12.00 - 19.00"
                     },
                     {
                         id : "05",
-                        part : "12.00 - 19.00"
-                    },
-                    {
-                        id : "06",
-                        part : "Wednesday"
-                    },
-                    {
-                        id : "07",
                         part : "09.00 - 16.00"
-                    },
-                    {
-                        id : "08",
-                        part : "Thursday"
-                    },
-                    {
-                        id : "09",
-                        part : "12.00 - 19.00"
-                    },
-                    {
-                        id : "10",
-                        part : "Friday"
-                    },
-                    {
-                        id : "11",
-                        part : "09.00 - 16.00"
-                    },
+                    }
             ]
+    },
+    {
+        section : "special times",
+        stock : [
+            {
+                id : "01",
+                part : "12 - 13"
+            },
+            {
+                id : "02",
+                part : "9 - 9.40"
+            },
+            {
+                id : "03",
+                part : "15 - 16"
+            }
+        ]
+    },
+    {
+        section : "access times",
+        stock : [
+            {
+                id : "01",
+                part : "13 -19"
+            },
+            {
+                id : "02",
+                part : "9.40 - 15"
+            },
+            {
+                id : "03",
+                part : "15 - 16"
+            },
+            {
+                id : "04",
+                part : "13 - 15"
+            },
+            {
+                id : "05",
+                part : "15 - 19"
+            },
+            {
+                id : "06",
+                part : "9 - 15"
+            }
+        ]
+    },
+    {
+        section : "fName_lName",
+        stock : [
+            {
+                id : "01",
+                part : "J. Liepiņa"
+            },
+            {
+                id : "02",
+                part : "E. Eliasa - Vīgante"
+            }
+        ]
     }
 ]

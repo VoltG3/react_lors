@@ -16,9 +16,6 @@ export default function STDIMG(props){
                      ? '0'
                      : `var(${props.verticalMargin})`,
                  filter: 'var(--filter--img)',
-                 borderRadius: props.variant === "square"
-                     ? '0'
-                     : '50%',
                  background: `url(${ props.imgPreview })`,
             }}
         />

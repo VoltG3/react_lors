@@ -6,7 +6,8 @@ export default function Table() {
     return (
         <div style={{
             display: 'flex',
-            flexDirection: 'row'
+            flexDirection: 'row',
+            marginBottom: '80px'
         }}>
             <div>
                 <TableTimesSmall />

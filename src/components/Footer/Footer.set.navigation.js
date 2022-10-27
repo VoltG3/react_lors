@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import {useTranslation} from "react-i18next";
+import { useTranslation } from 'react-i18next'
 
 export default function FooterSetNavigation() {
     const [t] = useTranslation(["common"])
@@ -7,7 +7,8 @@ export default function FooterSetNavigation() {
     return (
         <div style={{
             display: 'flex',
-            flexDirection: 'column'
+            flexDirection: 'column',
+            paddingRight: '50px'
         }}>
             <Link className={"textcontent--footer--nav"} to={"home"}>
                 <p>{t("common:home")}</p>

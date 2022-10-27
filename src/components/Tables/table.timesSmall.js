@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { STDS } from '../STDCOUT.sections'
 import { DATA_TEXTCONTENT_TABLES } from '../../env'
+import {useTranslation} from "react-i18next";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -27,15 +28,47 @@ const StyledContainer = styled.div`
 `
 
 export default function TableTimesSmall() {
+    const [t, i18next] = useTranslation(["times"])
+    
     return (
         <StyledContainer>
             <div style={{ margin: '0 0 20px 0'}}>
-                <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"01"}/>
+                <p className={"textcontent--small--header"}>{ i18next.t("times:times03") }</p>
             </div>
 
             <div className={"tableLine"}>
                 <div className={"tableCell"}>
+                    <p className={"textcontent--small--item"}>{ i18next.t("times:times04") }</p>
+                </div>
+
+                <div className={"tableCell"}>
+                    <p className={"textcontent--small--item"}>{ i18next.t("times:times05") }</p>
+                </div>
+
+                <div className={"tableCell"}>
+                    <p className={"textcontent--small--item"}>{ i18next.t("times:times04") }</p>
+                </div>
+
+                <div className={"tableCell"}>
+                    <p className={"textcontent--small--item"}>{ i18next.t("times:times07") }</p>
+                </div>
+
+                <div className={"tableCell"}>
+                    <p className={"textcontent--small--item"}>{ i18next.t("times:times08") }</p>
+                </div>
+            </div>
+
+            <div className={"tableLine"}>
+                <div className={"tableCell"}>
+                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"01"}/>
+                </div>
+
+                <div className={"tableCell"}>
                     <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"02"}/>
+                </div>
+
+                <div className={"tableCell"}>
+                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"03"}/>
                 </div>
 
                 <div className={"tableCell"}>
@@ -43,37 +76,7 @@ export default function TableTimesSmall() {
                 </div>
 
                 <div className={"tableCell"}>
-                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"06"}/>
-                </div>
-
-                <div className={"tableCell"}>
-                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"08"}/>
-                </div>
-
-                <div className={"tableCell"}>
-                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"10"}/>
-                </div>
-            </div>
-
-            <div className={"tableLine"}>
-                <div className={"tableCell"}>
-                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"03"}/>
-                </div>
-
-                <div className={"tableCell"}>
                     <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"05"}/>
-                </div>
-
-                <div className={"tableCell"}>
-                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"07"}/>
-                </div>
-
-                <div className={"tableCell"}>
-                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"09"}/>
-                </div>
-
-                <div className={"tableCell"}>
-                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"11"}/>
                 </div>
             </div>
 

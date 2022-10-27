@@ -33,8 +33,14 @@ export default function Footer() {
                 <FooterSetTextcontent />
                 <LogoSetFooter />
 
-                <div style={{ height: '46px'}}>
-                    <p>Developed by VoltG3 © 2022</p>
+                <div style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '46px'}}>
+                    <p style={{
+                        color: 'var(--color--paragraph--footer)'
+                    }}>Developed by VoltG3 © 2022</p>
                 </div>
             </div>
         </StyledFooter>

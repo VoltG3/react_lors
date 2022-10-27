@@ -1,13 +1,14 @@
 import { useTranslation } from 'react-i18next'
 import '../translations/i18n'
-import {RenderListServices} from '../Render/render.list.services'
 
-import STDIMG from "../components/STDCOUT.img";
+import STDIMG from "../components/IMG";
 import {image00, image02, image09, image10} from "../env";
 import i18next from "i18next";
-import {Content} from "../components/stdout.i18n.list";
-import {RenderListInformation} from "../Render/render.list.information";
-import {RenderListPrices} from "../Render/render.list.prices";
+
+import TextcontentContacts from "../components/Textcontent.Contacts";
+import TextcontentInformationSecond from "../components/Textcontent.Information.second";
+import TextcontentContactsSecond from "../components/Textcontent.Contacts.second";
+import TimeTable from "../components/TimeTable";
 
 export default function Contacts() {
     //const { t } = useTranslation()
@@ -16,13 +17,9 @@ export default function Contacts() {
 
     return (
         <div className={"page"}>
-            <h1>{t("common:contacts")}</h1>
+          <TextcontentContacts />
 
-            <p>{i18next.t("sections:stock_home.part")}</p>
-
-            {/*<RenderListServices />*/}
-            <RenderListPrices variant={'LIST_PRICES:list_prices01'} header={'first_header'}/>
-            <RenderListPrices variant={'LIST_PRICES:list_prices02'} />
+            <TimeTable />
 
             <div style={{
                 display: 'flex',
@@ -31,6 +28,8 @@ export default function Contacts() {
                 <STDIMG img={ image10 } imgPreview={ image00 } variant={"square"} width={"770"} height={"427"} verticalMargin={"--image--vertical--margin"} />
                 <STDIMG img={ image09 } imgPreview={ image00 } variant={"square"} width={"670"} height={"427"} verticalMargin={"--image--vertical--margin"} />
             </div>
+
+            <TextcontentContactsSecond />
 
             <STDIMG img={ image02 } imgPreview={ image00 } variant={"square"} width={"1280"} height={"auto"} verticalMargin={"--image--vertical--margin"} />
         </div>

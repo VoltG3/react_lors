@@ -7,6 +7,7 @@ import Logo02 from '../../assets/img/logo_colored/BTA_colored.png'
 import Logo03 from '../../assets/img/logo_colored/ERGO_colored.jpg'
 import Logo04 from '../../assets/img/logo_colored/Gjensidige_colored.png'
 import Logo05 from '../../assets/img/logo_colored/Seesam_colored.png'
+import {useTranslation} from "react-i18next";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -26,9 +27,11 @@ const StyledContainer = styled.div`
 `
 
 export default function TableContracts() {
+    const [t] = useTranslation(["common"])
+
     return (
         <StyledContainer>
-            <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"contracts"} partId={"01"}/>
+            <p className={"textcontent--small--header"}>{ t("common:contracts01") }</p>
 
            <div className={"logoSquare"}>
                 <img src={ Logo01 } alt={"logo"} style={{ width: '70px', height: '60px'}}/>
@@ -38,7 +41,7 @@ export default function TableContracts() {
                 <img src={ Logo05 } alt={"logo"} style={{ width: '130px', height: '65px', marginBottom: '18px'}}/>
             </div>
 
-            <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"contracts"} partId={"02"}/>
+            <p className={"textcontent--small--item"}>{ t("common:contracts02")}</p>
         </StyledContainer>
     )
 }

@@ -8,26 +8,36 @@ const StyledListContainer = styled.div`
   
   & div {
     display: flex;
+    align-items: center;
     width: 100%;
     min-height: var(--list--line--height);
   }
   
   & div:nth-child(even) {
-    background: var(--clr--default--ltst);
+    background: var(--color--none);
   }
   
   & div:nth-child(odd) {
-    background: var(--crl--accent--ltr);
+    background: var(--color--list);
+  }
+  
+  & p {
+    margin-left: 30px;
   }
 `
 
-export const RenderListServices = () => {
+export const I18nRenderListServices = () => {
 
     return (
         <StyledListContainer>
+            <div style={{
+                background: 'var(--color--primary)'
+            }}>
+                <p className={"textcontent--list--header"}>{ t("common:list_header_01")}</p>
+            </div>
             { i18next.t('LIST_SERVICES:list_services', { returnObjects: true }).map((list_services, key) => (
                 <div key={ key }>
-                    <p>{ t(list_services.item) }</p>
+                    <p className={"textcontent--list--item"}>{ t(list_services.item) }</p>
                 </div>
             ))}
         </StyledListContainer>

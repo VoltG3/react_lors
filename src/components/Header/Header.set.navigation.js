@@ -5,6 +5,7 @@ import HeaderSubSetInfo from './Header.subset.info'
 import HeaderSubSetLang from './Header.subset.lang'
 import HeaderSubsetNav1 from './Header.subset.nav1'
 import HeaderSubsetNav2 from './Header.subset.nav2'
+import {useTranslation} from "react-i18next";
 
 const StyledHeaderSetNavigation = styled.div`
   display: flex;
@@ -52,6 +53,8 @@ const StyledHeaderSetNavigation = styled.div`
 `
 
 export default function HeaderSetNavigation() {
+    const [t] = useTranslation(["sections"])
+
     return (
         <StyledHeaderSetNavigation>
             <div className={"innerSetNavigation"}>

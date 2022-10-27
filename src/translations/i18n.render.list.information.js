@@ -8,6 +8,7 @@ const StyledListContainer = styled.div`
   
   & div {
     display: flex;
+    align-items: center;
     width: 100%;
     min-height: var(--list--line--height);
   }
@@ -17,17 +18,17 @@ const StyledListContainer = styled.div`
   }
   
   & div:nth-child(odd) {
-    background: var(--crl--accent--ltr);
+    background: var(--color--list);
   }
 `
 
-export const RenderListInformation = () => {
+export const I18nRenderListInformation = () => {
 
     return (
         <StyledListContainer>
             { i18next.t('LIST_INFORMATION:list_information', { returnObjects: true }).map((list_information, key) => (
                 <div key={ key }>
-                    <p>{ t(list_information.item) }</p>
+                    <p className={"textcontent--list--item"}>{ t(list_information.item) }</p>
                 </div>
             ))}
         </StyledListContainer>

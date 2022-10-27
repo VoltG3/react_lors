@@ -1,47 +1,19 @@
-import {
-    DATA_TEXTCONTENT_HEADERS,
-    DATA_TEXTCONTENT_SECTIONS, image00, image06, image07,
-    JSON_LIST_PRICES_FIRST_TABLE,
-    JSON_LIST_PRICES_SECOND_TABLE, JSON_list_services
-} from "../env";
+import { image00, image06, image07, } from "../env";
 
-import { STDH } from "../components/STDCOUT.headers";
-import { STDS } from "../components/STDCOUT.sections";
-import { STDSD } from "../components/STDCOUT.list.double";
-import default_img from "../assets/default_img.png";
-import STDIMG from "../components/STDCOUT.img";
-import {STDSS} from "../components/STDCOUT.list.single";
+import STDIMG from "../components/IMG";
+
 import {useTranslation} from "react-i18next";
+import {I18nRenderListServices} from "../translations/i18n.render.list.services";
+import TextcontentServices from "../components/Textcontent.Services";
 
 export default function Services() {
     const [t] = useTranslation(["common"])
 
     return (
         <div className={"page"}>
-            <h1>{t("common:services")}</h1>
+           <TextcontentServices />
 
-            <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"services"} />
-
-            <STDS
-                textcontent={ DATA_TEXTCONTENT_SECTIONS }
-                section={"services"}
-                partId={"01"}
-            />
-
-            <STDS
-                textcontent={ DATA_TEXTCONTENT_SECTIONS }
-                section={"services"}
-                partId={"02"}
-            />
-
-            <STDS
-                textcontent={ DATA_TEXTCONTENT_SECTIONS }
-                section={"services"}
-                partId={"03"}
-            />
-
-            <STDH textcontent={ DATA_TEXTCONTENT_HEADERS } stock={"HEADER services list"} />
-            <STDSS textcontent={ JSON_list_services } />
+            <I18nRenderListServices />
 
             <div style={{
                 display: 'flex',
