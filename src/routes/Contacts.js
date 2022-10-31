@@ -1,9 +1,7 @@
-import { useTranslation } from 'react-i18next'
 import '../translations/i18n'
 
 import GetImg from "../components/GetImg";
 import { image02, image09, image10 } from '../env'
-import i18next from "i18next";
 
 import TextcontentContactsFirst from '../components/Textcontent.Contacts.first'
 import TextcontentContactsSecond from '../components/Textcontent.Contacts.second'
@@ -11,8 +9,6 @@ import TimeTable from '../components/TimeTable'
 import GetGoogleMap from '../components/GetGoogleMap'
 
 export default function Contacts() {
-      const [t] = useTranslation(["common", "sections", "footer", "list"])
-    i18next.t('stock_home', { returnObjects: true})
 
     return (
         <div className={"page"}>

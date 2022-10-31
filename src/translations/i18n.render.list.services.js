@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import i18next, { t } from 'i18next'
+import { useTranslation } from 'react-i18next'
 
 const StyledListContainer = styled.div`
   display: flex;
@@ -26,16 +26,21 @@ const StyledListContainer = styled.div`
   }
 `
 
-export const I18nRenderListServices = () => {
+export const I18nRenderListServices = (props) => {
+    const [t] = useTranslation(["LIST_SERVICES"])
 
     return (
         <StyledListContainer>
             <div style={{
+                display: props.showHeader === "true"
+                    ? 'flex'
+                    : 'none',
+                alignItems: 'center',
                 background: 'var(--color--primary)'
             }}>
                 <p className={"textcontent--list--header"}>{ t("common:list_header_01")}</p>
             </div>
-            { i18next.t('LIST_SERVICES:list_services', { returnObjects: true }).map((list_services, key) => (
+            { t('LIST_SERVICES:list_services', { returnObjects: true }).map((list_services, key) => (
                 <div key={ key }>
                     <p className={"textcontent--list--item"}>{ t(list_services.item) }</p>
                 </div>

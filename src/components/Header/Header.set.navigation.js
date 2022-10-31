@@ -5,7 +5,7 @@ import HeaderSubSetInfo from './Header.subset.info'
 import HeaderSubSetLang from './Header.subset.lang'
 import HeaderSubsetNav from './Header.subset.nav'
 
-import {useTranslation} from "react-i18next";
+import { useTranslation } from 'react-i18next'
 
 const StyledHeaderSetNavigation = styled.div`
   display: flex;
@@ -45,10 +45,6 @@ const StyledHeaderSetNavigation = styled.div`
    & :nth-child(4) {
      grid-area: D;
    }
-
-  /* & :nth-child(5) {
-     grid-area: E;
-   }*/
  }
 `
 
@@ -62,7 +58,6 @@ export default function HeaderSetNavigation() {
                 <HeaderSubSetInfo />
                 <HeaderSubSetLang />
                 <HeaderSubsetNav />
-               {/* <HeaderSubsetNav2 />*/}
             </div>
         </StyledHeaderSetNavigation>
     )

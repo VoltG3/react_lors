@@ -7,9 +7,8 @@ export const SECTIONS_EN = {
     section_header_part06 : "We will be happy to help in the diagnosis and treatment of ear, throat and nose diseases",
     section_header_part07 : "Opening hours - more information here",
 
-    section_home_header_part01 : "Highly qualified and certified specialists\nDiagnosis and treatment\nThe most modern technologies",
-        section_home_header_part02 : "Diagnosis and treatment",
-        section_home_header_part03 : "The most modern technologies",
+    section_home_header : "Highly qualified and certified specialists\nDiagnosis and treatment\nThe most modern technologies",
+
     section_home_part01 : "A modern practice of doctors in the center of Riga, specializing in the diagnosis and treatment of ear, throat and nose diseases for children and adults.",
     section_home_part02 : "The practice employs certified and experienced otorhinolaryngology specialists who regularly update their knowledge at seminars and scientific conferences in Latvia and abroad.",
     section_home_part03 : "In the practice, all necessary examinations are carried out using the most advanced examination methods with the latest generation of high-resolution medical equipment, which are minimally invasive and painless and allow for the fastest and most accurate diagnosis of the disease, providing individually adapted and successful treatment.",
@@ -48,13 +47,13 @@ export const SECTIONS_EN = {
     section_contacts_part03 : "Address: Brīvības 68, Riga",
     section_contacts_part04 : "(entrance from Gertrude Street)",
 
-    section_footer_part01 : "SIA \"Jautrītes Liepiņa doctor's practice\n in otorhinolaryngology\"",
+    section_footer_part01 : "SIA \"Jautrītes Liepiņa doctor's practice\nin otorhinolaryngology\"",
     section_footer_part02 : "Actual address",
     section_footer_part03 : "Brīvības 68, \n" +
                             "LV-1011, Rīga\n" +
                             "Latvija ",
     section_footer_part04 : "Credentials:",
-    section_footer_part05 : "SIA \"Jautrītes Liepiņa doctor's practice\n in otorhinolaryngology\"\n" +
+    section_footer_part05 : "SIA \"Jautrītes Liepiņa doctor's practice\nin otorhinolaryngology\"\n" +
                             "Institution code reg. no. 0190-77406\n" +
                             "Reg. No. 40103743362\n" +
                             "Account no.: LV12UNLA0050021628434",

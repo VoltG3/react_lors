@@ -1,8 +1,7 @@
 import styled from 'styled-components'
-import i18next, { t } from 'i18next'
+import { useTranslation } from 'react-i18next'
 
 const StyledGetJsonData = styled.div`
-  
   width: 100%;
   
   & div {
@@ -46,18 +45,31 @@ const StyledGetJsonData = styled.div`
 const cyrrencySign = '€'
 
 export const I18nRenderListPrices = (props) => {
+    const [t] = useTranslation(["LIST_PRICES"])
 
     return (
         <StyledGetJsonData>
-           {/* { i18next.t('LIST_PRICES:list_headers', { returnObjects: true }).map((list_prices, key) => (
-                <div key={ key }>
-                    <h1>
-                        { t(list_prices.first_header)}
-                    </h1>
-                </div>
-            ))}*/}
 
-            { i18next.t(props.variant, { returnObjects: true }).map((list_prices, key) => (
+            <div style={{
+                display: props.showHeader === "firstHeader"
+                    ? 'flex'
+                    : 'none',
+                alignItems: 'center',
+                background: 'var(--color--primary)'
+            }}>
+                <p className={"textcontent--list--header"}>{ t("common:list_header_02")}</p>
+            </div>
+
+            <div style={{
+                display: props.showHeader === "secondHeader"
+                    ? 'block'
+                    : 'none',
+                background: 'var(--color--primary)'
+            }}>
+                <p className={"textcontent--list--header"}>{ t("common:list_header_03")}</p>
+            </div>
+
+            { t(props.variant, { returnObjects: true }).map((list_prices, key) => (
                     <div key={ key }>
                         <div className={"line firstPart"}>
                             <p className={"textcontent--list--item"}>{ t(list_prices.item) }</p>

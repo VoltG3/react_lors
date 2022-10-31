@@ -5,7 +5,7 @@ export default function TextcontentHome() {
 
     return (
         <div className={"sectionTextContent"}>
-            <h1 className={"textcontent--index--header"}>{ t("sections:section_home_header_part01") }</h1>
+            <h1 className={"textcontent--index--header"}>{ t("sections:section_home_header") }</h1>
 
             <div>
                 <p className={"textcontent--paragraph"}>{ t("sections:section_home_part01") }</p>

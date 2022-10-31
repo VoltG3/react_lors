@@ -4,7 +4,7 @@ import Icon01 from '../../assets/img/icons/icon_telefon.svg'
 import Icon02 from '../../assets/img/icons/icon_mail.svg'
 import Icon03 from '../../assets/img/icons/icon_appointment.svg'
 
-import { t } from 'i18next'
+import { useTranslation } from 'react-i18next'
 
 const StyledHeaderSubSetInfo = styled.div`
   display: flex;
@@ -27,6 +27,8 @@ const StyledHeaderSubSetInfo = styled.div`
 `
 
 export default function HeaderSubSetInfo() {
+    const [t] = useTranslation(["sections"])
+
     return (
         <StyledHeaderSubSetInfo>
             <div className={"infoSquare"}>

@@ -1,9 +1,9 @@
+import '../translations/i18n'
 import styled from 'styled-components'
 
 import { image03, image04, image05, image06, image07 } from '../env'
 import GetImg from '../components/GetImg'
 
-import { useTranslation } from 'react-i18next'
 import { I18nRenderListServices } from '../translations/i18n.render.list.services'
 
 import TextcontentAbout from '../components/Textcontent.About'
@@ -23,7 +23,6 @@ const ImgFrame = styled.div`
 `
 
 export default function About() {
-    const [t] = useTranslation(["common", "sections", "footer", "list"])
 
     return (
         <div className={"page"}>
@@ -41,7 +40,7 @@ export default function About() {
                 <GetImg img={ image04 } width={"402"} height={"auto"} verticalMargin={"--margin--img"} />
             </div>
 
-            <I18nRenderListServices />
+            <I18nRenderListServices showHeader={"true"} />
 
             <ImgFrame>
                 <GetImg img={ image07 } width={"625"} height={"auto"} verticalMargin={"--margin--img"} />

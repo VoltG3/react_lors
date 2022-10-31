@@ -11,31 +11,31 @@ export default function FooterSetNavigation() {
             paddingRight: '50px'
         }}>
             <Link className={"textcontent--footer--nav"} to={"home"}>
-                <p>{t("common:home")}</p>
+                <p>{ t("common:home") }</p>
             </Link>
 
             <Link className={"textcontent--footer--nav"} to={"about"}>
-                <p>{t("common:about")}</p>
+                <p>{ t("common:about") }</p>
             </Link>
 
             <Link className={"textcontent--footer--nav"} to={"services"}>
-                <p>{t("common:services")}</p>
+                <p>{ t("common:services") }</p>
             </Link>
 
             <Link className={"textcontent--footer--nav"} to={"prices"}>
-                <p>{t("common:prices")}</p>
+                <p>{ t("common:prices") }</p>
             </Link>
 
             <Link className={"textcontent--footer--nav"} to={"contacts"}>
-                <p>{t("common:info")}</p>
+                <p>{ t("common:info") }</p>
             </Link>
 
             <Link className={"textcontent--footer--nav"} to={"info"}>
-                <p>{t("common:contacts")}</p>
+                <p>{ t("common:contacts") }</p>
             </Link>
 
             <a className={"textcontent--footer--nav"} href={"https://google.com"} target={"_blank"} rel={"noopner noreferrer"}>
-                <p>{t("common:eapointment")}</p>
+                <p>{ t("common:eapointment") }</p>
             </a>
         </div>
     )

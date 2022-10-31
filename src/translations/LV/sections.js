@@ -7,9 +7,7 @@ export const SECTIONS_LV = {
     section_header_part06 : "Būsim priecīgi palīdzēt ausu, kakla un deguna slimību diagnosticēšanā un ārstēšanā",
     section_header_part07 : "Darba laiks - vairāk informācijas šeit",
 
-    section_home_header_part01 : "Augsti kvalificēti un sertificēti speciālisti\nDiagnostika un ārstēšana\nModernākās tehnoloģijas",
-        section_home_header_part02 : "Diagnostika un ārstēšana",
-        section_home_header_part03 : "Modernākās tehnoloģijas",
+    section_home_header : "Augsti kvalificēti un sertificēti speciālisti\nDiagnostika un ārstēšana\nModernākās tehnoloģijas",
     section_home_part01 : "Mūsdienīga ārstu prakse Rīgas centrā, kas specializējas ausu, kakla un deguna slimību diagnosticēšanā un ārstēšanā bērniem un pieaugušajiem.",
     section_home_part02 : "Praksē strādā sertificēti un pieredzējuši otorinolaringoloģijas speciālisti, kuri regulāri papildina savas zināšanas semināros un zinātniskajās konferencēs Latvijā un ārvalstīs.",
     section_home_part03 : "Praksē tiek veikti visi nepieciešamie izmeklējumi, izmantojot vismodernākās izmeklēšanas metodes ar jaunākās paaudzes augstas izšķirtspējas medicīniskajām iekārtām, kas ir mazinvazīvas un nesāpīgas un ļauj iespējami ātri un precīzi diagnosticēt saslimšanu, nodrošināt individuāli pielāgotu un sekmīgu ārstēšanu.",
@@ -48,13 +46,13 @@ export const SECTIONS_LV = {
     section_contacts_part04 : "Adrese: Brīvības 68, Rīga",
     section_contacts_part03 : "(ieeja no Ģertrūdes ielas)",
 
-    section_footer_part01 : "SIA \"Jautrītes Liepiņas ārsta prakse\n otorinolaringoloģijā\"",
+    section_footer_part01 : "SIA \"Jautrītes Liepiņas ārsta prakse\notorinolaringoloģijā\"",
     section_footer_part02 : "Faktiskā adrese",
     section_footer_part03 : "Brīvības 68, \n" +
                             "LV-1011, Rīga\n" +
                             "Latvija ",
     section_footer_part04 : "Rekvizīti:",
-    section_footer_part05 : "SIA \"Jautrītes Liepiņas ārsta prakse\n otorinolaringoloģijā\"\n" +
+    section_footer_part05 : "SIA \"Jautrītes Liepiņas ārsta prakse\notorinolaringoloģijā\"\n" +
                             "Iestādes koda reģ.nr. 0190-77406\n" +
                             "Reģ.Nr. 40103743362\n" +
                             "Konta nr.: LV12UNLA0050021628434",

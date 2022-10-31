@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 import { slider01, slider02 } from '../../env'
 import { useTranslation } from 'react-i18next'
-import i18next, { t } from 'i18next'
 
 const StyledSlider = styled.div`
     max-width: var(--page--width);
@@ -86,8 +85,7 @@ export default function HeaderSetSlider() {
                 <div className={"textcontent"}>
                     <div style={{ margin: '67px 0 0 77px' }}>
                         <p className={"textcontent--header--firstline"}>{ t("sections:section_header_part05") }</p>
-                        <p className={"textcontent--header--secondline"}>{ i18next.t("sections:section_header_part06") }</p>
-
+                        <p className={"textcontent--header--secondline"}>{ t("sections:section_header_part06") }</p>
 
                         <div style={{ margin: '115px 0 0 0'}}>
                             <p>BUTTON</p>
@@ -95,7 +93,6 @@ export default function HeaderSetSlider() {
                     </div>
 
                 </div>
-
 
                 <Tmp>
                     <div className={"firstDiv"}>

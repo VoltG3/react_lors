@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import { useTranslation } from "react-i18next";
 
 const StyledSubSetNavFirst = styled.div`
   display: flex;
@@ -20,27 +21,27 @@ export default function HeaderSubsetNav() {
     return (
         <StyledSubSetNavFirst>
             <Link className={"textcontent--header--nav--btn--under"} to={"home"}>
-                <p>{t("common:home")}</p>
+                <p>{ t("common:home") }</p>
             </Link>
 
             <Link className={"textcontent--header--nav--btn--under"} to={"about"}>
-                <p>{t("common:about")}</p>
+                <p>{ t("common:about") }</p>
             </Link>
 
             <Link className={"textcontent--header--nav--btn--under"} to={"services"}>
-                <p>{t("common:services")}</p>
+                <p>{ t("common:services") }</p>
             </Link>
 
             <Link className={"textcontent--header--nav--btn--under"} to={"prices"}>
-                <p>{t("common:prices")}</p>
+                <p>{ t("common:prices") }</p>
             </Link>
 
             <Link className={"textcontent--header--nav--btn--under"} to={"info"}>
-                <p>{t("common:info")}</p>
+                <p>{ t("common:info") }</p>
             </Link>
 
             <Link className={"textcontent--header--nav--btn--under"} to={"contacts"}>
-                <p>{t("common:contacts")}</p>
+                <p>{ t("common:contacts") }</p>
             </Link>
         </StyledSubSetNavFirst>
     )
