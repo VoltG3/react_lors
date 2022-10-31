@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import i18next, {t} from "i18next";
+import i18next, { t } from 'i18next'
 
-const StyledTable = styled.div`
+const StyledGetJsonData = styled.div`
   
   width: 100%;
   
@@ -48,7 +48,7 @@ const cyrrencySign = '€'
 export const I18nRenderListPrices = (props) => {
 
     return (
-        <StyledTable>
+        <StyledGetJsonData>
            {/* { i18next.t('LIST_PRICES:list_headers', { returnObjects: true }).map((list_prices, key) => (
                 <div key={ key }>
                     <h1>
@@ -75,6 +75,6 @@ export const I18nRenderListPrices = (props) => {
                     </div>
 
                 ))}
-        </StyledTable>
+        </StyledGetJsonData>
     )
 }

@@ -14,7 +14,7 @@ border: solid 1px red;
   }
 `
 
-export default function HeaderSubsetNav1() {
+export default function HeaderSubsetNav() {
     const [t] = useTranslation(["common"])
 
     return (

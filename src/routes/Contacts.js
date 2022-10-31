@@ -1,23 +1,22 @@
 import { useTranslation } from 'react-i18next'
 import '../translations/i18n'
 
-import STDIMG from "../components/IMG";
-import {image00, image02, image09, image10} from "../env";
+import GetImg from "../components/GetImg";
+import { image02, image09, image10 } from '../env'
 import i18next from "i18next";
 
-import TextcontentContacts from "../components/Textcontent.Contacts";
-import TextcontentInformationSecond from "../components/Textcontent.Information.second";
-import TextcontentContactsSecond from "../components/Textcontent.Contacts.second";
-import TimeTable from "../components/TimeTable";
+import TextcontentContactsFirst from '../components/Textcontent.Contacts.first'
+import TextcontentContactsSecond from '../components/Textcontent.Contacts.second'
+import TimeTable from '../components/TimeTable'
+import GetGoogleMap from '../components/GetGoogleMap'
 
 export default function Contacts() {
-    //const { t } = useTranslation()
       const [t] = useTranslation(["common", "sections", "footer", "list"])
     i18next.t('stock_home', { returnObjects: true})
 
     return (
         <div className={"page"}>
-          <TextcontentContacts />
+          <TextcontentContactsFirst />
 
             <TimeTable />
 
@@ -25,13 +24,15 @@ export default function Contacts() {
                 display: 'flex',
                 flexDirection: 'row'
             }}>
-                <STDIMG img={ image10 } imgPreview={ image00 } variant={"square"} width={"770"} height={"427"} verticalMargin={"--image--vertical--margin"} />
-                <STDIMG img={ image09 } imgPreview={ image00 } variant={"square"} width={"670"} height={"427"} verticalMargin={"--image--vertical--margin"} />
+                <GetImg img={ image10 } width={"770"} height={"427"} verticalMargin={"--margin--img"} />
+                <GetImg img={ image09 } width={"670"} height={"427"} verticalMargin={"--margin--img"} />
             </div>
 
             <TextcontentContactsSecond />
 
-            <STDIMG img={ image02 } imgPreview={ image00 } variant={"square"} width={"1280"} height={"auto"} verticalMargin={"--image--vertical--margin"} />
+            <GetImg img={ image02 } width={"1280"} height={"auto"} verticalMargin={"--margin--img"} />
+
+            <GetGoogleMap />
         </div>
     )
 }

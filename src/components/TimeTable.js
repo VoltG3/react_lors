@@ -1,9 +1,8 @@
 import styled from 'styled-components'
-import i18n, {t} from "i18next";
-import {useTranslation} from "react-i18next";
-import {STDS} from "./STDCOUT.sections";
-import {DATA_TEXTCONTENT_TABLES} from "../env";
-import i18next from "i18next";
+
+import { useTranslation } from 'react-i18next'
+import { GetJsonData } from './GetJsonData'
+import { DATA_TEXTCONTENT_TABLES } from '../env'
 
 const StyledTimetable = styled.div`
     display: flex;
@@ -46,81 +45,81 @@ export default function TimeTable() {
             <div className={"firstTable"}>
 
                 <div className={"cell"} style={{background: 'var(--color--primary)'}}>
-                    <p className={"textcontent--list--header"}>{ i18n.t("times:times02")}</p>
+                    <p className={"textcontent--list--header"}>{ t("times:times02")}</p>
                 </div>
 
                 <div className={"cells "}>
                     <div className={"cell rows"}>
                         <div className={"F"}>
-                            <p className={"textcontent--small--item"}>{ i18next.t("times:times04") }</p>
+                            <p className={"textcontent--small--item"}>{ t("times:times04") }</p>
                         </div>
 
                         <div className={"S"}>
-                            <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"special times"} partId={"01"}/>
+                            <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"special times"} partId={"01"}/>
                         </div>
 
                         <div className={"T"}>
-                            <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"fName_lName"} partId={"01"}/>
+                            <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"fName_lName"} partId={"01"}/>
                         </div>
                     </div>
 
                     <div className={"cell rows"}>
                         <div className={"F"}>
-                            <p className={"textcontent--small--item"}>{ i18next.t("times:times05") }</p>
+                            <p className={"textcontent--small--item"}>{ t("times:times05") }</p>
                         </div>
 
                         <div className={"S"}>
-                            <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"special times"} partId={"01"}/>
+                            <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"special times"} partId={"01"}/>
                         </div>
 
                         <div className={"T"}>
-                            <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"fName_lName"} partId={"01"}/>
+                            <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"fName_lName"} partId={"01"}/>
                         </div>
                     </div>
 
                     <div className={"cell rows"}>
                         <div className={"F"}>
-                            <p className={"textcontent--small--item"}>{ i18next.t("times:times06") }</p>
+                            <p className={"textcontent--small--item"}>{ t("times:times06") }</p>
                         </div>
 
                         <div className={"S"}>
-                            <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"access times"} partId={"02"}/>
-                            <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"access times"} partId={"03"}/>
+                            <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"access times"} partId={"02"}/>
+                            <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"access times"} partId={"03"}/>
                         </div>
 
                         <div className={"T"}>
-                            <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"fName_lName"} partId={"01"}/>
-                            <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"fName_lName"} partId={"02"}/>
+                            <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"fName_lName"} partId={"01"}/>
+                            <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"fName_lName"} partId={"02"}/>
                         </div>
                     </div>
 
                     <div className={"cell rows"}>
                         <div className={"F"}>
-                            <p className={"textcontent--small--item"}>{ i18next.t("times:times07") }</p>
+                            <p className={"textcontent--small--item"}>{ t("times:times07") }</p>
                         </div>
 
                         <div className={"S"}>
-                            <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"access times"} partId={"03"}/>
-                            <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"access times"} partId={"04"}/>
+                            <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"access times"} partId={"03"}/>
+                            <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"access times"} partId={"04"}/>
                         </div>
 
                         <div className={"T"}>
-                            <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"fName_lName"} partId={"01"}/>
-                            <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"fName_lName"} partId={"02"}/>
+                            <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"fName_lName"} partId={"01"}/>
+                            <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"fName_lName"} partId={"02"}/>
                         </div>
                     </div>
 
                     <div className={"cell rows"}>
                         <div className={"F"}>
-                            <p className={"textcontent--small--item"}>{ i18next.t("times:times08") }</p>
+                            <p className={"textcontent--small--item"}>{ t("times:times08") }</p>
                         </div>
 
                         <div className={"S"}>
-                            <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"access times"} partId={"06"}/>
+                            <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"access times"} partId={"06"}/>
                         </div>
 
                         <div className={"T"}>
-                            <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"fName_lName"} partId={"01"}/>
+                            <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"fName_lName"} partId={"01"}/>
                         </div>
                     </div>
                 </div>
@@ -130,29 +129,29 @@ export default function TimeTable() {
             <div className={"secondTable"}>
 
                 <div className={"cell"} style={{background: 'var(--color--primary)'}}>
-                    <p className={"textcontent--list--header"}>{ i18n.t("times:times03")}</p>
+                    <p className={"textcontent--list--header"}>{ t("times:times03")}</p>
                 </div>
 
                 <div className={"cells"}>
                     <div className={"cell"}>
-                        <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"special times"} partId={"01"}/>
+                        <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"special times"} partId={"01"}/>
                     </div>
 
                     <div className={"cell"}>
-                        <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"special times"} partId={"01"}/>
+                        <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"special times"} partId={"01"}/>
                     </div>
 
                     <div className={"cell"}>
-                        <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"special times"} partId={"02"}/>
-                        <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"special times"} partId={"03"}/>
+                        <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"special times"} partId={"02"}/>
+                        <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"special times"} partId={"03"}/>
                     </div>
 
                     <div className={"cell"}>
-                        <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"special times"} partId={"01"}/>
+                        <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"special times"} partId={"01"}/>
                     </div>
 
                     <div className={"cell"}>
-                        <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"special times"} partId={"03"}/>
+                        <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"special times"} partId={"03"}/>
                     </div>
 
                 </div>

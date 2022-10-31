@@ -2,27 +2,27 @@ export const stockDataTextcontentTables = [
     {
         section : "times small table",
         stock : [
-                    {
-                        id : "01",
-                        part : "12.00 - 19.00"
-                    },
-                    {
-                        id : "02",
-                        part : "12.00 - 19.00"
-                    },
-                    {
-                        id : "03",
-                        part : "09.00 - 16.00"
-                    },
-                    {
-                        id : "04",
-                        part : "12.00 - 19.00"
-                    },
-                    {
-                        id : "05",
-                        part : "09.00 - 16.00"
-                    }
-            ]
+            {
+                id : "01",
+                part : "12.00 - 19.00"
+            },
+            {
+                id : "02",
+                part : "12.00 - 19.00"
+            },
+            {
+                id : "03",
+                part : "09.00 - 16.00"
+            },
+            {
+                id : "04",
+                part : "12.00 - 19.00"
+            },
+            {
+                id : "05",
+                part : "09.00 - 16.00"
+            }
+        ]
     },
     {
         section : "special times",

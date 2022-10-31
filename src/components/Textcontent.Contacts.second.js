@@ -1,7 +1,5 @@
 import styled from 'styled-components'
-import i18next, { t } from "i18next";
-import { I18nRenderListInformation } from "../translations/i18n.render.list.information";
-import BtnVariant02 from "./BTN_variant02";
+import { useTranslation } from 'react-i18next'
 
 const StyledTExtcontentContactsSecond = styled.div`
   display: flex;
@@ -17,6 +15,8 @@ const StyledTExtcontentContactsSecond = styled.div`
 `
 
 export default function TextcontentContactsSecond() {
+    const [t] = useTranslation(["sections"])
+
     return (
         <StyledTExtcontentContactsSecond>
             <div style={{
@@ -24,14 +24,14 @@ export default function TextcontentContactsSecond() {
                 flexDirection: 'column',
                 alignItems: 'center',
             }}>
-                <p className={"textcontent--paragraph--header"}>{ i18next.t("sections:section_footer_part01") }</p>
+                <p className={"textcontent--paragraph--header"}>{ t("sections:section_footer_part01") }</p>
 
                 <div style={{
                     display: 'flex',
                     flexDirection: 'row'
                 }}>
-                    <p className={"textcontent--paragraph--header"}>{ i18next.t("sections:section_contacts_part03") }</p>
-                    <p className={"textcontent--paragraph--header--red"}>{ i18next.t("sections:section_contacts_part04") }</p>
+                    <p className={"textcontent--paragraph--header"}>{ t("sections:section_contacts_part03") }</p>
+                    <p className={"textcontent--paragraph--header--red"}>{ t("sections:section_contacts_part04") }</p>
                 </div>
             </div>
         </StyledTExtcontentContactsSecond>

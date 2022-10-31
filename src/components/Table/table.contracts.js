@@ -1,18 +1,17 @@
 import styled from 'styled-components'
-import { STDS } from '../STDCOUT.sections'
-import { DATA_TEXTCONTENT_TABLES } from '../../env'
 
 import Logo01 from '../../assets/img/logo_colored/BALTA_colored.png'
 import Logo02 from '../../assets/img/logo_colored/BTA_colored.png'
 import Logo03 from '../../assets/img/logo_colored/ERGO_colored.jpg'
 import Logo04 from '../../assets/img/logo_colored/Gjensidige_colored.png'
 import Logo05 from '../../assets/img/logo_colored/Seesam_colored.png'
-import {useTranslation} from "react-i18next";
+
+import { useTranslation } from 'react-i18next'
 
 const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
-    max-width: 696px;
+    max-width: 600px;
         width: 100%;
     max-height: 180px;
         height: 100%;
@@ -22,7 +21,7 @@ const StyledContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0 20px 0;
+    margin: 10px 0 10px 0;
   }
 `
 

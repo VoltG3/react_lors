@@ -1,14 +1,13 @@
 
-export default function STDIMG(props){
+export default function GetImg(props){
     return (
         <img src={ props.img } alt="img"
              style={{
                  maxWidth: props.width + 'px',
-                 maxHeight: props.height === "auto"
-                     ? 'auto'
-                     : props.height + 'px',
                  width: '100%',
-                 height: '100%',
+                 height: props.height === 'auto'
+                     ? '100%'
+                     : props.height + 'px',
                  marginTop: props.verticalMargin === "null"
                      ? '0'
                      : `var(${props.verticalMargin})`,

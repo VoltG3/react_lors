@@ -4,7 +4,7 @@ import Icon01 from '../../assets/img/icons/icon_telefon.svg'
 import Icon02 from '../../assets/img/icons/icon_mail.svg'
 import Icon03 from '../../assets/img/icons/icon_appointment.svg'
 
-import { t } from "i18next";
+import { t } from 'i18next'
 
 const StyledHeaderSubSetInfo = styled.div`
   display: flex;
@@ -12,9 +12,12 @@ const StyledHeaderSubSetInfo = styled.div`
   justify-content: space-between;
   align-items: center;
   border: solid 1px brown;
+ 
+  white-space: pre-wrap;
   
   .infoSquare {
     display: flex;
+    //width: 100%;
     flex-direction: row;
     
     & img {
@@ -26,23 +29,23 @@ const StyledHeaderSubSetInfo = styled.div`
 export default function HeaderSubSetInfo() {
     return (
         <StyledHeaderSubSetInfo>
-            <div>
-                <p className={"infoSquare textcontent--header--nav--btn--over"}>{ t("sections:section_header_part01") }</p>
+            <div className={"infoSquare"}>
+                <p className={"textcontent--header--nav--btn--over"}>{ t("sections:section_header_part01") }</p>
             </div>
 
-            <div>
+            <div className={"infoSquare"}>
                 <img src={ Icon01 } alt={"icon"} style={{ width: '20px', height: '20px'}}/>
-                <p className={"infoSquare textcontent--header--nav--btn--over"}>{ t("sections:section_header_part02") }</p>
+                <p className={"textcontent--header--nav--btn--over"}>{ t("sections:section_header_part02") }</p>
             </div>
 
-            <div>
+            <div className={"infoSquare"}>
                 <img src={ Icon02 } alt={"icon"} style={{ width: '24px', height: '18px'}}/>
-                <p className={"infoSquare textcontent--header--nav--btn--over"}>{ t("sections:section_header_part03") }</p>
+                <p className={"textcontent--header--nav--btn--over"}>{ t("sections:section_header_part03") }</p>
             </div>
 
-            <div>
+            <div className={"infoSquare"}>
                 <img src={ Icon03 } alt={"icon"} style={{ width: '24px', height: '22px'}}/>
-                <p className={"infoSquare textcontent--header--nav--btn--over"}>{ t("sections:section_header_part04") }</p>
+                <p className={"textcontent--header--nav--btn--over"}>{ t("sections:section_header_part04") }</p>
             </div>
         </StyledHeaderSubSetInfo>
     )

@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import HeaderSubSetLogo from './Header.subset.logo'
 import HeaderSubSetInfo from './Header.subset.info'
 import HeaderSubSetLang from './Header.subset.lang'
-import HeaderSubsetNav1 from './Header.subset.nav1'
-import HeaderSubsetNav2 from './Header.subset.nav2'
+import HeaderSubsetNav from './Header.subset.nav'
+
 import {useTranslation} from "react-i18next";
 
 const StyledHeaderSetNavigation = styled.div`
@@ -61,7 +61,7 @@ export default function HeaderSetNavigation() {
                 <HeaderSubSetLogo />
                 <HeaderSubSetInfo />
                 <HeaderSubSetLang />
-                <HeaderSubsetNav1 />
+                <HeaderSubsetNav />
                {/* <HeaderSubsetNav2 />*/}
             </div>
         </StyledHeaderSetNavigation>

@@ -1,23 +1,23 @@
 export const SECTIONS_EN = {
     section_header_part01 : "Covid safety",
-    section_header_part02 : "Telephone: at the reception: +371 67186950, in practice: +371 67223546",
+    section_header_part02 : "Telephone: at the reception: +371 67186950,\nin practice: +371 67223546",
     section_header_part03 : "Email: info@lors.lv",
     section_header_part04 : "E - appointment",
     section_header_part05 : "SIA \"Jautrītes Liepiņa doctor's practice in otorhinolaryngology\"",
     section_header_part06 : "We will be happy to help in the diagnosis and treatment of ear, throat and nose diseases",
     section_header_part07 : "Opening hours - more information here",
 
-    section_home_header_part01 : "Highly qualified and certified specialists",
-    section_home_header_part02 : "Diagnosis and treatment",
-    section_home_header_part03 : "The most modern technologies",
+    section_home_header_part01 : "Highly qualified and certified specialists\nDiagnosis and treatment\nThe most modern technologies",
+        section_home_header_part02 : "Diagnosis and treatment",
+        section_home_header_part03 : "The most modern technologies",
     section_home_part01 : "A modern practice of doctors in the center of Riga, specializing in the diagnosis and treatment of ear, throat and nose diseases for children and adults.",
     section_home_part02 : "The practice employs certified and experienced otorhinolaryngology specialists who regularly update their knowledge at seminars and scientific conferences in Latvia and abroad.",
     section_home_part03 : "In the practice, all necessary examinations are carried out using the most advanced examination methods with the latest generation of high-resolution medical equipment, which are minimally invasive and painless and allow for the fastest and most accurate diagnosis of the disease, providing individually adapted and successful treatment.",
 
-    section_about_part01 : "The doctor's practice in otorhinolaryngology was established in 2000, its head and treating doctor is Jautrīte Liepiņa. In her more than 35 years of work experience, the doctor specializes in the diagnosis and treatment of ear, throat and nose diseases of both adults and children.\n" +
-        "In 2015, dr. Elīna Elias-Vīgante and in 2017 - dr. Elīna Mežzīle, sister Dace Sidorova helps implement the practice's daily work.\n" +
-        "All practicing doctors are certified, are members of the Latvian Association of Otorhinolaryngologists, regularly improve their knowledge at local and international conferences and congresses.\n" +
-        "The practice is in contractual relations with the National Health Service.\n",
+    section_about_part01 : "The doctor's practice in otorhinolaryngology was established in 2000, its head and treating doctor is Jautrīte Liepiņa. In her more than 35 years of work experience, the doctor specializes in the diagnosis and treatment of ear, throat and nose diseases of both adults and children.",
+    section_about_part02 : "In 2015, dr. Elīna Elias-Vīgante and in 2017 - dr. Elīna Mežzīle, sister Dace Sidorova helps implement the practice's daily work.",
+    section_about_part03 : "All practicing doctors are certified, are members of the Latvian Association of Otorhinolaryngologists, regularly improve their knowledge at local and international conferences and congresses.",
+    section_about_part04 : "The practice is in contractual relations with the National Health Service.",
 
     section_services_part00 : "",
 
@@ -44,18 +44,17 @@ export const SECTIONS_EN = {
     section_info_part07 : "The following categories of Latvian residents are exempted from the patient contribution:",
 
     section_contacts_part01 : "The arrival of patients is precisely determined on time and with a face mask. Children may have one accompanying person.",
-    section_contacts_part02 : "Attendance for face-to-face or remote consultations only by appointment\n" +
-                              "sign up by phone or",
+    section_contacts_part02 : "Attendance for face-to-face or remote consultations only by appointment sign up by phone +371 67186950 or",
     section_contacts_part03 : "Address: Brīvības 68, Riga",
     section_contacts_part04 : "(entrance from Gertrude Street)",
 
-    section_footer_part01 : "SIA \"Jautrītes Liepiņa doctor's practice in otorhinolaryngology\"",
+    section_footer_part01 : "SIA \"Jautrītes Liepiņa doctor's practice\n in otorhinolaryngology\"",
     section_footer_part02 : "Actual address",
     section_footer_part03 : "Brīvības 68, \n" +
                             "LV-1011, Rīga\n" +
                             "Latvija ",
     section_footer_part04 : "Credentials:",
-    section_footer_part05 : "SIA \"Jautrītes Liepiņa doctor's practice in otorhinolaryngology\"\n" +
+    section_footer_part05 : "SIA \"Jautrītes Liepiņa doctor's practice\n in otorhinolaryngology\"\n" +
                             "Institution code reg. no. 0190-77406\n" +
                             "Reg. No. 40103743362\n" +
                             "Account no.: LV12UNLA0050021628434",

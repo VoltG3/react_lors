@@ -1,10 +1,10 @@
-import { image00, image08 } from '../env'
-import STDIMG from '../components/IMG'
-import { useTranslation } from 'react-i18next'
-import TextcontentPrices from '../components/Textcontent.Prices'
-import {I18nRenderListPrices} from "../translations/i18n.render.list.prices";
-import {t} from "i18next";
+import { image08 } from '../env'
+import GetImg from '../components/GetImg'
 
+import { useTranslation } from 'react-i18next'
+import { I18nRenderListPrices } from '../translations/i18n.render.list.prices'
+
+import TextcontentPrices from '../components/Textcontent.Prices'
 
 export default function Prices() {
     const [t] = useTranslation("common")
@@ -35,7 +35,7 @@ export default function Prices() {
             </div>
             <I18nRenderListPrices variant={'LIST_PRICES:list_prices02'} />
 
-            <STDIMG img={ image08 } imgPreview={ image00 } variant={"square"} width={"1280"} height={"auto"} verticalMargin={"--image--vertical--margin"} />
+            <GetImg img={ image08 } width={"1280"} height={"auto"} verticalMargin={"--margin--img"} />
         </div>
     )
 }

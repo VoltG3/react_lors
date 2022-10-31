@@ -5,10 +5,10 @@ export const GlobalStyles = createGlobalStyle`
     --page--width: 1440px;
     --list--line--height: 40px;
     --page--side--margin: 80px;
-    --image--vertical--margin: 100px;
-
-    --margin--var01: 70px;
-    --margin--var02: 30px;
+    
+    --margin--img: 100px;
+    --margin--h1: 70px;
+    --margin--p: 30px;
 
     --filter--img: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.7));
   }
@@ -36,6 +36,21 @@ export const GlobalStyles = createGlobalStyle`
     width: 100%;
     height: auto;
   }
+  
+  .sectionTextContent {
+    width: calc(var(--page--width) - calc(var(--page--side--margin) * 2));
+    height: auto;
+    border: solid 1px black;
+
+    & p {
+      margin-bottom: var(--margin--p);
+      border: solid 1px red;
+    }
+    
+    & p:last-child {
+      margin-bottom: 0!important;
+    }
+  }
 
   * {
     padding: 0;
@@ -45,5 +60,10 @@ export const GlobalStyles = createGlobalStyle`
 
   a:link {
     text-decoration: none;
+  }
+
+  & h1 {
+    margin-top: var(--margin--h1);
+    margin-bottom: var(--margin--h1);
   }
 `

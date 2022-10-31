@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { STDS } from '../STDCOUT.sections'
+import { GetJsonData } from '../GetJsonData'
 import { DATA_TEXTCONTENT_TABLES } from '../../env'
-import {useTranslation} from "react-i18next";
+import { useTranslation } from 'react-i18next'
 
 const StyledContainer = styled.div`
   display: flex;
@@ -27,7 +27,7 @@ const StyledContainer = styled.div`
   }
 `
 
-export default function TableTimesSmall() {
+export default function TableHours() {
     const [t, i18next] = useTranslation(["times"])
     
     return (
@@ -60,23 +60,23 @@ export default function TableTimesSmall() {
 
             <div className={"tableLine"}>
                 <div className={"tableCell"}>
-                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"01"}/>
+                    <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"01"}/>
                 </div>
 
                 <div className={"tableCell"}>
-                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"02"}/>
+                    <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"02"}/>
                 </div>
 
                 <div className={"tableCell"}>
-                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"03"}/>
+                    <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"03"}/>
                 </div>
 
                 <div className={"tableCell"}>
-                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"04"}/>
+                    <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"04"}/>
                 </div>
 
                 <div className={"tableCell"}>
-                    <STDS textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"05"}/>
+                    <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"05"}/>
                 </div>
             </div>
 

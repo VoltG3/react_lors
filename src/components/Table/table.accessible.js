@@ -1,8 +1,5 @@
 import styled from 'styled-components'
 
-import { STDS } from '../STDCOUT.sections'
-import { DATA_TEXTCONTENT_TABLES } from '../../env'
-
 import Icon01 from '../../assets/img/icons/icon_accessible_01.svg'
 import Icon02 from '../../assets/img/icons/icon_accessible_02.svg'
 import Icon03 from '../../assets/img/icons/icon_accessible_03.svg'
@@ -11,9 +8,11 @@ import Icon05 from '../../assets/img/icons/icon_accessible_05.svg'
 import Icon06 from '../../assets/img/icons/icon_accessible_06.svg'
 import Icon07 from '../../assets/img/icons/icon_accessible_07.svg'
 import Icon08 from '../../assets/img/icons/icon_accessible_08.svg'
-import {useTranslation} from "react-i18next";
+
+import { useTranslation } from 'react-i18next'
+
 const StyledContainer = styled.div`
-  max-width: 689px;
+  max-width: 500px;
       width: 100%;
   max-height: 660px;
       height: 100%;
@@ -44,7 +43,7 @@ export default function TableAccessible() {
 
     return (
         <StyledContainer>
-            <p className={"textcontent--small--header"}>{ i18next.t("accessible:accessible01") }</p>
+            <p style={{ marginBottom: '20px' }} className={"textcontent--small--header"}>{ i18next.t("accessible:accessible01") }</p>
 
             <div className={"accesibleTable"}>
                 <div className={"accessibleSquare"}>

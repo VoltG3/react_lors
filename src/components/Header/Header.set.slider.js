@@ -1,11 +1,8 @@
 import styled from 'styled-components'
 
-import DefaultSlider01 from '../../assets/default_slider_01.png'
-import DefaultSlider02 from '../../assets/default_slider_02.png'
-
-import {slider01, slider02} from '../../env'
-import {useTranslation} from "react-i18next";
-import i18next, {t} from "i18next";
+import { slider01, slider02 } from '../../env'
+import { useTranslation } from 'react-i18next'
+import i18next, { t } from 'i18next'
 
 const StyledSlider = styled.div`
     max-width: var(--page--width);

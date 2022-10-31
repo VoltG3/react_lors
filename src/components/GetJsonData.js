@@ -1,12 +1,11 @@
 import styled from 'styled-components'
 
-const StyledTable = styled.div`
+const StyledGetJsonData = styled.div`
   white-space: pre-wrap;
   width: 100%;
 `
 
-export const STDS = (props) => {
-
+export const GetJsonData = (props) => {
     const getPart = (targetStock) => {
 
         let partToReturn = ""
@@ -20,7 +19,7 @@ export const STDS = (props) => {
     }
 
     return (
-        <StyledTable>
+        <StyledGetJsonData>
             { props.textcontent.map((data, key) => {
                 return (
                     <p key={key}>
@@ -30,6 +29,6 @@ export const STDS = (props) => {
                     </p>
                 )
             })}
-        </StyledTable>
+        </StyledGetJsonData>
     )
 }

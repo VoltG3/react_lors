@@ -8,12 +8,9 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 
 import useWindowDimension from './utils/useWindowDimension'
-import showBorders from './utils/showBorders'
 
 export default function App() {
-    // console.log(useWindowDimension())
-    let bordersVisible = true
-        showBorders(bordersVisible)
+    console.log(useWindowDimension())
 
     return (
         <div style={{

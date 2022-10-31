@@ -133,7 +133,7 @@ export const GlobalFontStyles = createGlobalStyle`
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    line-height: 29px;
+    //line-height: 29px;
     color: var(--color--primary);
   }
   
@@ -153,7 +153,7 @@ export const GlobalFontStyles = createGlobalStyle`
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
-    letter-spacing: 0.08em;
+    //letter-spacing: 0.08em;
     color: var(--color--paragraph--footer);
   }
 
@@ -163,7 +163,7 @@ export const GlobalFontStyles = createGlobalStyle`
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
-    letter-spacing: 0.08em;
+    //letter-spacing: 0.08em;
     color: var(--color--none);
   }
 
@@ -177,7 +177,7 @@ export const GlobalFontStyles = createGlobalStyle`
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    //letter-spacing: 0.08em;
 
     color: var(--font--secondary);
 
