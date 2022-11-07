@@ -16,7 +16,7 @@ const StyledLogo = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-      width: calc(var(--page--width) / 2);
+      width: calc(calc(var(--page--width) / 2) - 2px);
     
     & img {
       margin-right: 28px;
@@ -31,6 +31,10 @@ const StyledLogo = styled.div`
       width: calc(var(--page--width) / 2);
     margin: 24px 0 24px 0;
     
+    & :nth-child(1) {
+      margin-left: 20px;
+    }
+    
     & :nth-child(5) {
       margin-bottom: 8px;
     }
@@ -40,7 +44,9 @@ const StyledLogo = styled.div`
 export default function FooterSetLogo() {
     return (
         <StyledLogo>
-           <div>
+           <div style={{
+               borderRight: 'solid 1px var(--color--list)'
+           }}>
                <img src={ LogoTransparent00 } alt={"icon"} style={{ width: '70px', height: '70px' }}/>
            </div>
 

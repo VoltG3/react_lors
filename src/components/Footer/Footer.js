@@ -1,7 +1,10 @@
 import styled from 'styled-components'
 
-import LogoSetFooter from './Footer.set.logo'
+import FooterSetNavigation from './Footer.set.navigation'
+import FooterSetLang from './Footer.set.lang'
 import FooterSetTextcontent from './Footer.set.textcontent'
+import FooterSetLogo from './Footer.set.logo'
+import FooterSetDev from './Footer.set.dev'
 
 const StyledFooter = styled.div`
   display: flex;
@@ -12,35 +15,44 @@ const StyledFooter = styled.div`
       height: auto;
   color: white;
   background: var(--crl--primary--dk);
-  
-  .section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-        width: 100%;
-        height: auto;
-    grid-template-areas:
-    "."
-    "."
-    ".";
+
+  .footerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 47px 
+            var(--page--side--margin) 
+            47px 
+            var(--page--side--margin);
+    white-space: pre-wrap;
+
+    .pMarginBottom {
+      margin-bottom: 7px;
+    }
   }
 `
 
 export default function Footer() {
     return (
         <StyledFooter>
-            <div >
-                <FooterSetTextcontent />
-                <LogoSetFooter />
+            <div>
+                <div className={"footerContent"}>
+                    <div>
+                        <FooterSetNavigation />
+                        <FooterSetLang />
+                    </div>
+                   
+                    <FooterSetTextcontent />
+                </div>
 
-                <div style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    height: '46px'}}>
-                    <p style={{
-                        color: 'var(--color--paragraph--footer)'
-                    }}>Developed by VoltG3 © 2022</p>
+                <div style={{ boxShadow : '-0px -4px 4px rgba(0, 0, 0, 0.25)' }}>
+                    <div style={{ boxShadow : '0 4px 4px rgba(0, 0, 0, 0.25)' }}>
+                        <FooterSetLogo />
+                    </div>
+                </div>
+
+                <div >
+                    <FooterSetDev />
                 </div>
             </div>
         </StyledFooter>

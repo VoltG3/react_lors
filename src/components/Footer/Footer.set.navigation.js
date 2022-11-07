@@ -7,8 +7,7 @@ export default function FooterSetNavigation() {
     return (
         <div style={{
             display: 'flex',
-            flexDirection: 'column',
-            paddingRight: '50px'
+            flexDirection: 'column'
         }}>
             <Link className={"textcontent--footer--nav"} to={"home"}>
                 <p>{ t("common:home") }</p>
