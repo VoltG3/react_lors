@@ -4,9 +4,10 @@ export const GlobalStyles = createGlobalStyle`
   :root {
     --page--width: 1440px;
     --list--line--height: 40px;
-    --page--side--margin: 80px;
+    --page--side--margin: 80px; // min(max(5.556vw, 30px), 80px);
     
-    --margin--img: 100px;
+    --margin--img--vertical: min(max(6.944vw, 40px), 100px); //100px;
+    --margin--img--horisontal: min(max(6.944vw, 40px), 100px); //100px; !!!!!!!!!
     --margin--h1: 70px;
     --margin--p: 30px;
 
@@ -33,6 +34,9 @@ export const GlobalStyles = createGlobalStyle`
     white-space: pre-wrap; // !
     align-items: center;
     max-width: calc(var(--page--width) - calc(var(--page--side--margin) * 2));
+  //margin: var(--page--side--margin) 0 var(--page--side--margin) 0;
+   // margin-left: 40px;
+   // margin-right: 40px;
     width: 100%;
     height: auto;
   }

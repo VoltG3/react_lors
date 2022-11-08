@@ -14,7 +14,7 @@ export default function Prices() {
             <TextcontentPrices />
             <I18nRenderListPrices variant={'LIST_PRICES:list_prices01'} showHeader={'firstHeader'} />
             <I18nRenderListPrices variant={'LIST_PRICES:list_prices02'} showHeader={'secondHeader'} />
-            <GetImg img={ image08 } width={"1280"} height={"auto"} verticalMargin={"--margin--img"} />
+            <GetImg img={ image08 } width={"1280"} height={"auto"} verticalMargin={"--margin--img--vertical"} />
         </div>
     )
 }

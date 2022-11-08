@@ -20,13 +20,13 @@ export default function Contacts() {
                 display: 'flex',
                 flexDirection: 'row'
             }}>
-                <GetImg img={ image10 } width={"770"} height={"427"} verticalMargin={"--margin--img"} />
-                <GetImg img={ image09 } width={"670"} height={"427"} verticalMargin={"--margin--img"} />
+                <GetImg img={ image10 } width={"770"} height={"427"} verticalMargin={"--margin--img--vertical"} />
+                <GetImg img={ image09 } width={"670"} height={"427"} verticalMargin={"--margin--img--vertical"} />
             </div>
 
             <TextcontentContactsSecond />
 
-            <GetImg img={ image02 } width={"1280"} height={"auto"} verticalMargin={"--margin--img"} />
+            <GetImg img={ image02 } width={"1280"} height={"auto"} verticalMargin={"--margin--img--vertical"} />
 
             <GetGoogleMap />
         </div>

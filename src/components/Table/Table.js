@@ -9,7 +9,7 @@ export default function Table() {
             display: 'flex',
             flexDirection: 'row',
             width: '100%',
-            marginBottom: 'var(--margin--img)'
+            marginBottom: 'var(--margin--img--vertical)'
         }}>
             <div style={{
                 display: 'flex',

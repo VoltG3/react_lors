@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <div className={"page"}>
             <TextcontentHome />
-            <GetImg img={ image01 } width={"1017"} height={"auto"} verticalMargin={"--margin--img"}/>
+            <GetImg img={ image01 } width={"1017"} height={"auto"} verticalMargin={"--margin--img--vertical"}/>
             <Table />
         </div>
     )

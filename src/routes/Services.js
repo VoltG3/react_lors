@@ -21,8 +21,8 @@ export default function Services() {
                 width: '100%',
                 justifyContent: 'space-between'
             }}>
-                <GetImg img={ image07 } width={"625"} height={"620"} verticalMargin={"--margin--img"} />
-                <GetImg img={ image06 } width={"625"} height={"620"} verticalMargin={"--margin--img"} />
+                <GetImg img={ image07 } width={"625"} height={"620"} verticalMargin={"--margin--img--vertical"} />
+                <GetImg img={ image06 } width={"625"} height={"620"} verticalMargin={"--margin--img--vertical"} />
 
             </div>
 
