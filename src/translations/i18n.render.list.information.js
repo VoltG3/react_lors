@@ -6,19 +6,31 @@ const StyledListContainer = styled.div`
   flex-direction: column;
   width: 100%;
   
+  margin-bottom: 80px;
+
   & div {
     display: flex;
     align-items: center;
     width: 100%;
     min-height: var(--list--line--height);
+
+    @media only screen and (max-width: 600px) {
+
+    }
   }
-  
+
   & div:nth-child(even) {
-    background: var(--clr--default--ltst);
+    background: var(--color--none);
   }
-  
+
   & div:nth-child(odd) {
     background: var(--color--list);
+  }
+
+  & p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 30px;
   }
 `
 

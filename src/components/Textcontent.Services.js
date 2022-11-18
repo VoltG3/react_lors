@@ -4,7 +4,7 @@ export default function TextcontentServices() {
     const [t] = useTranslation(["common"])
 
     return (
-        <div className={"sectionTextContent"}>
+        <div className={"textcontent"}>
             <h1 className={"textcontent--index--header"}>{ t("common:services") }</h1>
         </div>
     )

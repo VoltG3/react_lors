@@ -2,7 +2,7 @@ import '../translations/i18n'
 
 import { I18nRenderListServices } from '../translations/i18n.render.list.services'
 
-import ImgSetTwo from '../components/Table/ImgSetTwo'
+import ImgSetTwo from '../components/ImgSetTwo'
 import ImgSetTre from '../components/ImgSetTre'
 import TextcontentAbout from '../components/Textcontent.About'
 

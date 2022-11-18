@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-import GetImg from '../GetImg'
-import { image06, image07 } from '../../env'
+import GetImg from './GetImg'
+import { image06, image07 } from '../env'
 
 const StyledImgSetTwo = styled.div`
   display: flex;
@@ -23,7 +23,7 @@ const StyledImgSetTwo = styled.div`
 
 export default function ImgSetTwo() {
    return (
-       <StyledImgSetTwo>
+       <StyledImgSetTwo className={"box"}>
            <GetImg img={ image07 } width={"625"} height={"auto"} />
            <GetImg img={ image06 } width={"625"} height={"auto"} />
        </StyledImgSetTwo>

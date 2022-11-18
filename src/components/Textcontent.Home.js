@@ -4,7 +4,7 @@ export default function TextcontentHome() {
     const [t] = useTranslation(["sections"])
 
     return (
-        <div className={"sectionTextContent"}>
+        <div className={"box textcontent"}>
             <h1 className={"textcontent--index--header"}>{ t("sections:section_home_header") }</h1>
 
             <div>

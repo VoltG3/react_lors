@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import {Link01} from "../../env";
 
 export default function FooterSetNavigation() {
     const [t] = useTranslation(["common"])
@@ -33,7 +34,7 @@ export default function FooterSetNavigation() {
                 <p>{ t("common:contacts") }</p>
             </Link>
 
-            <a className={"textcontent--footer--nav"} href={"https://google.com"} target={"_blank"} rel={"noopner noreferrer"}>
+            <a className={"textcontent--footer--nav"} href={ Link01 } target={"_blank"} rel={"noopner noreferrer"}>
                 <p>{ t("common:eapointment") }</p>
             </a>
         </div>

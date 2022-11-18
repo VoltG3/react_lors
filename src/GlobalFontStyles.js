@@ -7,38 +7,27 @@ export const GlobalFontStyles = createGlobalStyle`
     --font--third: "Crimson Text", serif; // var(--font--third)
     --font--opacity: 0.7;
   }
-  
-  .textcontent--header--firstline {
-    font-family: var(--font--third);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 52px;
-    display: flex;
-    align-items: center;
-    opacity: var(--font--opacity);
-    color: var(--color--headercolor);
-  }
-  
-  .textcontent--header--secondline {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    opacity: var(--font--opacity);
-    color: var(--color--headercolor);
+
+  .textcontent {
+
+    & p {
+      margin-bottom: var(--margin--p);
+    }
+
+    & p:last-child {
+      margin-bottom: 0!important;
+    }
   }
   
   .textcontent--index--header {
     font-family: var(--font--primary);
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 44px;
-    text-transform: uppercase;
-    opacity: var(--font--opacity);
-    color: var(--color--secondary);
+    font-size: min(max(2.5vw, 18px), 36px);
+    line-height: min(max(3.056vw, 22px), 44px);
+        text-transform: uppercase;
+        opacity: var(--font--opacity);
+        color: var(--color--secondary);
   }
   
   .textcontent--section--header {
@@ -75,10 +64,10 @@ export const GlobalFontStyles = createGlobalStyle`
     font-family: var(--font--primary);
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 26px;
-    opacity: var(--font--opacity);
-    color: var(--color--default);
+    font-size: min(max(1.458vw, 18px), 21px);
+    line-height: min(max(1.806vw, 20px), 26px);
+        opacity: var(--font--opacity);
+        color: var(--color--default);
   }
 
   .textcontent--paragraph--highlight {
@@ -91,13 +80,14 @@ export const GlobalFontStyles = createGlobalStyle`
   }
   
   .textcontent--paragraph--bold {
+    // rm
     font-family: var(--font--primary);
     font-style: normal;
     font-weight: 500;
-    font-size: 21px;
-    line-height: 26px;
-    opacity: var(--font--opacity);
-    color: var(--color--default);
+    font-size: min(max(1.458vw, 18px), 21px);
+    line-height: min(max(1.806vw, 20px), 26px);
+        opacity: var(--font--opacity);
+        color: var(--color--default);
   }
   
   .textcontent--paragraph--2 {
@@ -112,8 +102,8 @@ export const GlobalFontStyles = createGlobalStyle`
     font-family: var(--font--primary);
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 29px;
+    font-size: min(max(1.389vw, 16px), 20px);
+    //line-height: 29px;
     text-transform: uppercase;
     color: var(--color--none);
   }
@@ -133,8 +123,14 @@ export const GlobalFontStyles = createGlobalStyle`
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    //line-height: 29px;
-    color: var(--color--primary);
+        opacity: var(--font--opacity);
+        color: var(--color--primary);
+
+    @media only screen and (max-width: 700px) {
+      font-weight: 400;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
   }
   
   .textcontent--small--item {
@@ -143,16 +139,37 @@ export const GlobalFontStyles = createGlobalStyle`
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    opacity: var(--font--opacity);
-    color: var(--color--primary);
+        opacity: var(--font--opacity);
+        color: var(--color--primary);
   }
   
-  //
-  // HEADER
-  //
+  // // // // //
+  //  HEADER  //
+  // // // // //
+
+  .textcontent--header--firstline {
+    font-family: var(--font--third);
+    font-style: normal;
+    font-weight: 400;
+    font-size: min(max(2.778vw, 25px), 40px);
+    //line-height: 52px;
+    display: flex;
+    align-items: center;
+    opacity: var(--font--opacity);
+    color: var(--color--headercolor);
+  }
+
+  .textcontent--header--secondline {
+    font-family: var(--font--secondary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: min(max(1.389vw, 18px), 20px);
+    //line-height: 27px;
+    opacity: var(--font--opacity);
+    color: var(--color--headercolor);
+  }
   
   .textcontent--header--nav--btn--over {
-    /* Lors --> nav btn over */
     font-family: var(--font--secondary);
     font-style: normal;
     font-weight: 300;
@@ -165,15 +182,14 @@ export const GlobalFontStyles = createGlobalStyle`
   }
   
   .textcontent--header--nav--btn--under {
-    /* Lors --> nav btn under */
     font-family: var(--font--secondary);
     font-style: normal;
     font-weight: 400;
    // font-size: 18px;
     font-size: 14px;
-    line-height: 25px;
-    display: flex;
-    align-items: center;
+    //line-height: 25px;
+   // display: flex;
+    //align-items: center;
    // letter-spacing: 0.1em;
     text-transform: uppercase;
     opacity: 0.7;
@@ -181,12 +197,11 @@ export const GlobalFontStyles = createGlobalStyle`
   }
   
   .textcontent--header--nav--lang {
-    /* L - btn lang */
     font-family: var(--font--secondary);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 22px;
+    //line-height: 22px;
     display: flex;
     align-items: center;
     text-align: center;

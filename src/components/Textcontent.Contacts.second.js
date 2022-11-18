@@ -14,26 +14,41 @@ const StyledTExtcontentContactsSecond = styled.div`
   }
 `
 
+const StyledthisDivBefore = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media only screen and (max-width: 600px) {
+   margin-left: 20px;
+  }
+`
+
+const StyledThisDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @media only screen and (max-width: 600px) {
+    & {
+      flex-direction: column;
+    }
+  }
+`
+
 export default function TextcontentContactsSecond() {
     const [t] = useTranslation(["sections"])
 
     return (
-        <StyledTExtcontentContactsSecond>
-            <div style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-            }}>
-                <p className={"textcontent--paragraph--header"}>{ t("sections:section_footer_part01") }</p>
 
-                <div style={{
-                    display: 'flex',
-                    flexDirection: 'row'
-                }}>
-                    <p className={"textcontent--paragraph--header"}>{ t("sections:section_contacts_part03") }</p>
-                    <p className={"textcontent--paragraph--header--red"}>{ t("sections:section_contacts_part04") }</p>
-                </div>
-            </div>
-        </StyledTExtcontentContactsSecond>
+            <StyledthisDivBefore>
+                <p className={"textcontent--small--header"}>{ t("sections:section_footer_part01") }</p>
+
+                <StyledThisDiv>
+                    <p style={{  color: 'var(--color--highlight)' }} className={"textcontent--small--header"}>{ t("sections:section_contacts_part03") }</p>
+                    <p style={{ paddingLeft: '5px'}} className={"textcontent--small--header"}>{ t("sections:section_contacts_part04") }</p>
+                </StyledThisDiv>
+            </StyledthisDivBefore>
+
     )
 }

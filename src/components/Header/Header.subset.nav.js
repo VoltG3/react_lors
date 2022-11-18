@@ -8,10 +8,33 @@ const StyledSubSetNavFirst = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-border: solid 1px red;
+  
+  @media only screen and (max-width: 600px) {
+    
+      flex-direction: column;
+    
+  }
+  //
+  // border: solid 1px red;
+  //
+  
+  @media only screen and (max-width: 881px) {
+    justify-content: center;
+  
+    p {
+      margin-right: 20px;
+    }
+  }
+  
   & p:hover {
     cursor: pointer;
     color: var(--clr--accent--base);
+  }
+  
+  p {
+    //
+    // border: solid 1px red;
+    //
   }
 `
 

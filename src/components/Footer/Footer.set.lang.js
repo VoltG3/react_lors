@@ -8,6 +8,10 @@ const StyledSubSetLang = styled.div`
       width: 100%;
     margin-top: 10px;
 
+  @media only screen and (max-width: 730px) {
+    justify-content: flex-start;
+  }
+  
   & div {
     padding: 2px 3px 2px 3px;
     border-radius: 3px;

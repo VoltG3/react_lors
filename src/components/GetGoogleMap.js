@@ -5,15 +5,20 @@ export default function GetGoogleMap() {
             width: '1440px'
         }}>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613507864!3d-6.194741395493371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e67356080477!2sPT%20Kulkul%20Teknologi%20Internasional!5e0!3m2!1sen!2sid!4v1601138221085!5m2!1sen!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.505411906656!2d24.121452116138993!3d56.9572745808926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfcc14b436fd%3A0xea14f5292519a800!2sBr%C4%ABv%C4%ABbas%20iela%2068%2C%20Centra%20rajons%2C%20R%C4%ABga%2C%20LV-1011%2C%20Latvija!5e0!3m2!1slv!2sno!4v1668710681607!5m2!1slv!2sno"
+
                 width="100%"
                 height="500"
                 frameBorder="0"
                 style={{ border: 0 }}
+               /* style="border:0;"*/
                 allowFullScreen=""
                 aria-hidden="false"
                 tabIndex="0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
             />
         </div>
     )
 }
+

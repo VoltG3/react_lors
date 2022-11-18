@@ -9,14 +9,17 @@ const StyledGetJsonData = styled.div`
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    min-height: var(--list--line--height);
+    //min-height: var(--list--line--height);
   }
   
   .firstPart {
     max-width: 1080px;
+    width: 100%;
     
     & p {
-      margin-left: 30px
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-left: 30px;
     }
   }
   
@@ -31,6 +34,14 @@ const StyledGetJsonData = styled.div`
     & :nth-child(2) {
       max-width: 74px;
     }
+  }
+ 
+  @media only screen and (max-width: 1205px) {
+   
+  }
+  
+  .line {
+    min-height: var(--list--line--height);
   }
   
   & div:nth-child(even) .line {
@@ -57,16 +68,26 @@ export const I18nRenderListPrices = (props) => {
                 alignItems: 'center',
                 background: 'var(--color--primary)'
             }}>
-                <p className={"textcontent--list--header"}>{ t("common:list_header_02")}</p>
+                <p style={{
+                    marginTop: '15px',
+                    marginBottom: '15px',
+                    marginLeft: '30px'
+                }}
+                   className={"textcontent--list--header"}>{ t("common:list_header_02")}</p>
             </div>
 
             <div style={{
                 display: props.showHeader === "secondHeader"
-                    ? 'block'
+                    ? 'flex'
                     : 'none',
                 background: 'var(--color--primary)'
             }}>
-                <p className={"textcontent--list--header"}>{ t("common:list_header_03")}</p>
+                <p style={{
+                    marginTop: '15px',
+                    marginBottom: '15px',
+                    marginLeft: '30px'
+                }}
+                   className={"textcontent--list--header"}>{ t("common:list_header_03")}</p>
             </div>
 
             { t(props.variant, { returnObjects: true }).map((list_prices, key) => (

@@ -22,6 +22,12 @@ const StyledContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     margin: 10px 0 10px 0;
+    
+    & img {
+      width: 100%;
+      height: auto;
+      margin-right: 20px;
+    }
   }
 `
 
@@ -33,11 +39,11 @@ export default function TableContracts() {
             <p className={"textcontent--small--header"}>{ t("common:contracts01") }</p>
 
            <div className={"logoSquare"}>
-                <img src={ Logo01 } alt={"logo"} style={{ width: '70px', height: '60px'}}/>
-                <img src={ Logo02 } alt={"logo"} style={{ width: '70px', height: '40px'}}/>
-                <img src={ Logo03 } alt={"logo"} style={{ width: '90px', height: '30px'}}/>
-                <img src={ Logo04 } alt={"logo"} style={{ width: '150px', height: '40px'}}/>
-                <img src={ Logo05 } alt={"logo"} style={{ width: '130px', height: '65px', marginBottom: '18px'}}/>
+                <img src={ Logo01 } alt={"logo"} style={{ maxWidth: '55px', minWidth: '35px' }}/>
+                <img src={ Logo02 } alt={"logo"} style={{ maxWidth: '70px', minWidth: '35px' }}/>
+                <img src={ Logo03 } alt={"logo"} style={{ maxWidth: '80px', minWidth: '35px' }}/>
+                <img src={ Logo04 } alt={"logo"} style={{ maxWidth: '150px', minWidth: '70px' }}/>
+                <img src={ Logo05 } alt={"logo"} style={{ maxWidth: '120px', minWidth: '70px', marginBottom: '18px'}}/>
             </div>
 
             <p className={"textcontent--small--item"}>{ t("common:contracts02")}</p>

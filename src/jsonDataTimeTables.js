@@ -4,23 +4,23 @@ export const stockDataTextcontentTables = [
         stock : [
             {
                 id : "01",
-                part : "12.00 - 19.00"
+                part : "12 - 19"
             },
             {
                 id : "02",
-                part : "12.00 - 19.00"
+                part : "12 - 19"
             },
             {
                 id : "03",
-                part : "09.00 - 16.00"
+                part : "9 - 16"
             },
             {
                 id : "04",
-                part : "12.00 - 19.00"
+                part : "12 - 19"
             },
             {
                 id : "05",
-                part : "09.00 - 16.00"
+                part : "9 - 16"
             }
         ]
     },

@@ -14,14 +14,12 @@ export default function Info() {
         <div className={"page"}>
           <TextcontentInformationFirst />
 
-          <GetImg img={ image02 } width={"934"} height={"620"} verticalMargin={"--margin--img--vertical"} />
+          <GetImg img={ image02 } width={"934"} height={"auto"} verticalMargin={"--margin--img--vertical"} />
 
-            <div style={{
-                marginBottom: '80px'
-            }}>
+
                 <TextcontentInformationSecond />
                 <I18nRenderListInformation />
-            </div>
+
 
         </div>
     )

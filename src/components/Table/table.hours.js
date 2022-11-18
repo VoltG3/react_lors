@@ -19,7 +19,6 @@ const StyledContainer = styled.div`
   
   .tableCell {
     display: flex;
-    justify-content: center;
     align-items: center;
       max-width: 120px;
           width: 100%;
@@ -28,38 +27,38 @@ const StyledContainer = styled.div`
 `
 
 export default function TableHours() {
-    const [t, i18next] = useTranslation(["times"])
+    const [t] = useTranslation(["times"])
     
     return (
         <StyledContainer>
             <div style={{ margin: '0 0 20px 0'}}>
-                <p className={"textcontent--small--header"}>{ i18next.t("times:times03") }</p>
+                <p className={"textcontent--small--header"}>{ t("times:times03") }</p>
             </div>
 
             <div className={"tableLine"}>
                 <div className={"tableCell"}>
-                    <p className={"textcontent--small--item"}>{ i18next.t("times:times04") }</p>
+                    <p className={"textcontent--small--item"}>{ t("times:times04") }</p>
                 </div>
 
                 <div className={"tableCell"}>
-                    <p className={"textcontent--small--item"}>{ i18next.t("times:times05") }</p>
+                    <p className={"textcontent--small--item"}>{ t("times:times05") }</p>
                 </div>
 
                 <div className={"tableCell"}>
-                    <p className={"textcontent--small--item"}>{ i18next.t("times:times04") }</p>
+                    <p className={"textcontent--small--item"}>{ t("times:times04") }</p>
                 </div>
 
                 <div className={"tableCell"}>
-                    <p className={"textcontent--small--item"}>{ i18next.t("times:times07") }</p>
+                    <p className={"textcontent--small--item"}>{ t("times:times07") }</p>
                 </div>
 
                 <div className={"tableCell"}>
-                    <p className={"textcontent--small--item"}>{ i18next.t("times:times08") }</p>
+                    <p className={"textcontent--small--item"}>{ t("times:times08") }</p>
                 </div>
             </div>
 
             <div className={"tableLine"}>
-                <div className={"tableCell"}>
+                <div className={"tableCell l"}>
                     <GetJsonData textcontent={ DATA_TEXTCONTENT_TABLES } section={"times small table"} partId={"01"}/>
                 </div>
 

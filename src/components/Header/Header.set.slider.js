@@ -13,7 +13,7 @@ const StyledSlider = styled.div`
     height: 380px;
     position: absolute;
     z-index: 2;
-    border: solid 1px red;
+    //border: solid 1px red;
   }
   
   .slide {
@@ -54,7 +54,7 @@ const StyledSlider = styled.div`
   }
 `
 const Tmp = styled.div`
-
+  max-width: var(--page--width);
   width: 100%;
   height: 100%;
   
@@ -83,7 +83,8 @@ export default function HeaderSetSlider() {
         <StyledSlider>
             <section className="banner">
                 <div className={"textcontent"}>
-                    <div style={{ margin: '67px 0 0 77px' }}>
+
+                   <div style={{ margin: '67px 0 0 var(--margin--v1)' }}>
                         <p className={"textcontent--header--firstline"}>{ t("sections:section_header_part05") }</p>
                         <p className={"textcontent--header--secondline"}>{ t("sections:section_header_part06") }</p>
 

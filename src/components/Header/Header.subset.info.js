@@ -11,8 +11,13 @@ const StyledHeaderSubSetInfo = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: solid 1px brown;
- 
+    width: 100%;
+    height: auto;
+  
+  //
+  //border: solid 1px brown;
+  //
+  
   white-space: pre-wrap;
   
   .infoSquare {
@@ -22,6 +27,12 @@ const StyledHeaderSubSetInfo = styled.div`
     
     & img {
       margin-right: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      & {
+        flex-direction: column;
+      }
     }
   }
 `

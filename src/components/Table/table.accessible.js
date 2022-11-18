@@ -63,7 +63,7 @@ export default function TableAccessible() {
 
                 <div className={"accessibleSquare"}>
                     <img className={"accessibleIcon"} src={ Icon04 } alt={"icon"} />
-                    <p className={"textcontent--small--item"}>{ i18next.t("accessible:accessible051") }</p>
+                    <p className={"textcontent--small--item"}>{ i18next.t("accessible:accessible05") }</p>
                 </div>
 
                 <div className={"accessibleSquare"}>
