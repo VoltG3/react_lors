@@ -9,10 +9,16 @@ const StyledHeaderSetNavigation = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-    max-width: calc(var(--page--width) - calc(var(--page--side--margin) + var(--page--side--margin)));
-        width: 100%;
+    //max-width: calc(var(--page--width) - calc(var(--page--side--margin) + var(--page--side--margin)));
+  max-width: 1440px;
+        width: calc(100% - calc(var(--page--side--margin) + var(--page--side--margin)));
         height: 94px;
- 
+ //border: solid 1px red;
+
+  @media only screen and (max-width: 1440px) {
+    width: calc(100% - min(max(1.458vw, 18px), 21px)); // error!!
+  }
+  
  .navigationDesktop {
    display: grid;
    grid-template-rows: 1fr 1fr;
@@ -29,7 +35,7 @@ const StyledHeaderSetNavigation = styled.div`
       "A D D D D D D";
     }
    
-   & :nth-child(1) {       // Logo
+   & :nth-child(1) {       // Logo  padding: 0 40px 0 40px;
      grid-area: A;
       display: flex;
       align-self: center;

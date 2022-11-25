@@ -10,6 +10,8 @@ import TextcontentContactsSecond from '../components/Textcontent.Contacts.second
 import TimeTable from '../components/TimeTable'
 import GetGoogleMap from '../components/GetGoogleMap'
 import ImgSetTwoContacts from "../components/ImgSetTwoContacts";
+import TimeTableTmp from "../components/TimeTableTmp";
+import TimesTable from "../components/TimesTable/TimesTable";
 
 const StyledImg = styled.div`
   display: flex;
@@ -30,7 +32,10 @@ export default function Contacts() {
         <div className={"page"}>
           <TextcontentContactsFirst />
 
-            <TimeTable />
+            <TimesTable />
+
+            {/*<TimeTableTmp />*/}
+           {/* <TimeTable />*/}
 
             <StyledImg>
                 <div>

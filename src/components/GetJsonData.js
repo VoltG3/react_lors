@@ -22,7 +22,7 @@ export const GetJsonData = (props) => {
         <StyledGetJsonData>
             { props.textcontent.map((data, key) => {
                 return (
-                    <p key={key}>
+                    <p key={key} className={"textcontent--timeTable"}>
                         {
                             props.section === data.section ? getPart(data.stock) : ""
                         }

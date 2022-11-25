@@ -23,6 +23,9 @@ import { LIST_PRICES_RU } from './RU/list_prices'
 import { TIMES_LV} from './LV/week'
 import { TIMES_EN} from './EN/week'
 import { TIMES_RU} from './RU/week'
+import { COOKIE_LV } from './LV/cookie'
+import { COOKIE_EN } from './EN/cookie'
+import { COOKIE_RU } from './RU/cookie'
 
 i18n
     .use(LanguageDetector)
@@ -36,7 +39,8 @@ i18n
                 LIST_SERVICES: LIST_SERVICES_LV,
                 LIST_INFORMATION: LIST_INFORMATION_LV,
                 LIST_PRICES: LIST_PRICES_LV,
-                times: TIMES_LV
+                times: TIMES_LV,
+                cookies: COOKIE_LV
             },
             en: {
                 common: COMMON_EN,
@@ -45,7 +49,8 @@ i18n
                 LIST_SERVICES: LIST_SERVICES_EN,
                 LIST_INFORMATION: LIST_INFORMATION_EN,
                 LIST_PRICES: LIST_PRICES_EN,
-                times: TIMES_EN
+                times: TIMES_EN,
+                cookies: COOKIE_EN
             },
             ru: {
                 common: COMMON_RU,
@@ -54,7 +59,8 @@ i18n
                 LIST_SERVICES: LIST_SERVICES_RU,
                 LIST_INFORMATION: LIST_INFORMATION_RU,
                 LIST_PRICES: LIST_PRICES_RU,
-                times: TIMES_RU
+                times: TIMES_RU,
+                cookies: COOKIE_RU
             }
         }
     });

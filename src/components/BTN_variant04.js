@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 import { useTranslation } from 'react-i18next'
-import {Link01} from "../env";
+import {Link} from "react-router-dom";
 
-const StyledBtnVariant01 = styled.div`
+const StyledBtnVariant04 = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-    max-width: 223px;
+    max-width: 350px;
     max-height: 31px;
       width: 100%;
       height: 100%;
@@ -25,14 +25,15 @@ const StyledBtnVariant01 = styled.div`
   }
 `
 
-export default function BtnVariant01() {
+export default function BtnVariant04() {
     const [t] = useTranslation(["common"])
 
     return (
-        <StyledBtnVariant01>
-            <a href={ Link01 } target={"_blank"} rel={"noopner noreferrer"}>
-                <p className={"textcontent--paragraph"}>{ t("btn_variant01") }</p>
-            </a>
-        </StyledBtnVariant01>
+        <StyledBtnVariant04>
+            <Link to={"contacts"}>
+                <p className={"textcontent--paragraph"}>{ t("btn_variant04") }</p>
+            </Link>
+        </StyledBtnVariant04>
     )
 }
+

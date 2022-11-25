@@ -142,6 +142,16 @@ export const GlobalFontStyles = createGlobalStyle`
         opacity: var(--font--opacity);
         color: var(--color--primary);
   }
+
+  .textcontent--timeTable {
+    font-family: var(--font--primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: var(--font--opacity);
+    color: var(--color--primary);
+  }
   
   // // // // //
   //  HEADER  //

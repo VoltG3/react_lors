@@ -8,6 +8,7 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 
 import useWindowDimension from './utils/useWindowDimension'
+import Cookie from "./Cookie";
 
 export default function App() {
     console.log(useWindowDimension())
@@ -30,6 +31,7 @@ export default function App() {
                 <Header />
                 <Outlet />
                 <Footer />
+            <Cookie />
         </div>
   )
 }
