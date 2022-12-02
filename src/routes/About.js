@@ -1,5 +1,4 @@
 import '../translations/i18n'
-
 import { I18nRenderListServices } from '../translations/i18n.render.list.services'
 
 import ImgSetTwo from '../components/ImgSetTwo'

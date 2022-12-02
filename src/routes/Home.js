@@ -2,9 +2,11 @@ import '../translations/i18n'
 
 import TextcontentHome from '../components/Textcontent.Home'
 import Table from '../components/Table/Table'
-import ImgSetHover from "../components/ImgSetHover";
-import {image01} from "../env";
-import GetImg from "../components/GetImg";
+
+import ImgSetHover from '../components/ImgSetHover'
+import { image01 } from '../env'
+
+import GetImg from '../components/GetImg'
 
 export default function Home() {
 

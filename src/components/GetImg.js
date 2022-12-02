@@ -1,5 +1,6 @@
 
 export default function GetImg(props){
+
     return (
         <img src={ props.img } alt="img"
              style={{

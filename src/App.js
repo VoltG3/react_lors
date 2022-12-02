@@ -7,8 +7,8 @@ import { Outlet } from 'react-router-dom'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 
+import Cookie from './Cookie'
 import useWindowDimension from './utils/useWindowDimension'
-import Cookie from "./Cookie";
 
 export default function App() {
     console.log(useWindowDimension())
@@ -23,7 +23,7 @@ export default function App() {
                 maxWidth: 'var(--page--width)',
                    width: '100vw',
                    height: 'auto',
-            background: 'var(--clr--default--ltst)'
+            background: 'var(--color--none)'
         }}>
             <GlobalStyles />
             <GlobalColorStyles />

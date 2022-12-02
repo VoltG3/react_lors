@@ -21,7 +21,8 @@ const StyledImgSetTwo = styled.div`
   }
 `
 
-export default function ImgSetTwo() {
+export default function ImgSetTwo(props) {
+
    return (
        <StyledImgSetTwo className={"box"}>
            <GetImg img={ image07 } width={"625"} height={"auto"} />

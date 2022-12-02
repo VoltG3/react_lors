@@ -1,4 +1,4 @@
-import Hamburger from "./Hamburer";
+import Hamburger from "../materials/Hamburer";
 import styled from "styled-components";
 
 const StyledMobilMeny = styled.div`

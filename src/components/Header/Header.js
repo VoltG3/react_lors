@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-import HeaderSetNavigation from './Header.set.navigation'
+import HeaderNavigationDesktop from './Header.navigation.desktop'
 import HeaderSetSlider from './Header.set.slider'
-import HeaderSetMobile from "./mobile/Header.set.mobile";
+import HeaderNavigationMobile from "./Header.navigation.mobile";
 
 const StyledHeader = styled.div`
   display: flex;
@@ -33,7 +33,7 @@ export default function Header() {
                 justifyContent: 'center',
                 width: 'inherit'
             }} className={"navDesktop"}>
-                <HeaderSetNavigation />
+                <HeaderNavigationDesktop />
             </div>
 
             <div style={{
@@ -41,7 +41,7 @@ export default function Header() {
                 justifyContent: 'center',
                 width: 'inherit'
             }} className={"navMobile"}>
-                <HeaderSetMobile />
+                <HeaderNavigationMobile />
             </div>
 
            <HeaderSetSlider />

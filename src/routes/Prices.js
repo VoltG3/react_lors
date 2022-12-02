@@ -1,13 +1,9 @@
 import '../translations/i18n'
+import { I18nRenderListPrices } from '../translations/i18n.render.list.prices'
 
 import { image08 } from '../env'
 import GetImg from '../components/GetImg'
-
-import { I18nRenderListPrices } from '../translations/i18n.render.list.prices'
-
 import TextcontentPrices from '../components/Textcontent.Prices'
-import BtnVariant02 from "../components/BTN_variant02";
-import {Link} from "react-router-dom";
 
 export default function Prices() {
 

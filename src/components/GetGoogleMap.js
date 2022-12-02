@@ -9,9 +9,7 @@ export default function GetGoogleMap() {
 
                 width="100%"
                 height="500"
-                frameBorder="0"
                 style={{ border: 0 }}
-               /* style="border:0;"*/
                 allowFullScreen=""
                 aria-hidden="false"
                 tabIndex="0"
@@ -21,4 +19,3 @@ export default function GetGoogleMap() {
         </div>
     )
 }
-

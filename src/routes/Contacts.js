@@ -7,11 +7,8 @@ import { image02, image09, image10 } from '../env'
 
 import TextcontentContactsFirst from '../components/Textcontent.Contacts.first'
 import TextcontentContactsSecond from '../components/Textcontent.Contacts.second'
-import TimeTable from '../components/TimeTable'
+import TimesTable from '../components/TimesTable/TimesTable'
 import GetGoogleMap from '../components/GetGoogleMap'
-import ImgSetTwoContacts from "../components/ImgSetTwoContacts";
-import TimeTableTmp from "../components/TimeTableTmp";
-import TimesTable from "../components/TimesTable/TimesTable";
 
 const StyledImg = styled.div`
   display: flex;
@@ -30,12 +27,8 @@ export default function Contacts() {
 
     return (
         <div className={"page"}>
-          <TextcontentContactsFirst />
-
+            <TextcontentContactsFirst />
             <TimesTable />
-
-            {/*<TimeTableTmp />*/}
-           {/* <TimeTable />*/}
 
             <StyledImg>
                 <div>
@@ -47,11 +40,8 @@ export default function Contacts() {
                 </div>
             </StyledImg>
 
-           {/* <ImgSetTwoContacts />*/}
             <TextcontentContactsSecond />
-
             <GetImg img={ image02 } width={"1280"} height={"auto"} verticalMargin={"--margin--img--vertical"} />
-
             <GetGoogleMap />
         </div>
     )

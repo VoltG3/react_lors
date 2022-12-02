@@ -33,7 +33,7 @@ const StyledSubSetNavFirst = styled.div`
   
   p {
     //
-    // border: solid 1px red;
+    // border: solid 1px red;1
     //
   }
 `

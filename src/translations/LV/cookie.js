@@ -1,4 +1,4 @@
 export const COOKIE_LV = {
-    cookie_text: "Šī vietne izmanto sīkfailus, lai uzlabotu lietotāja pieredzi.",
-    cookie_btn: "Es saprotu"
+    text: "Šī vietne izmanto sīkfailus, lai uzlabotu lietotāja pieredzi.",
+    btn: "Es saprotu"
 }
