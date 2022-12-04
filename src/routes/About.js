@@ -1,15 +1,24 @@
 import '../translations/i18n'
+import { useTranslation } from 'react-i18next'
 import { I18nRenderListServices } from '../translations/i18n.render.list.services'
 
 import ImgSetTwo from '../components/ImgSetTwo'
 import ImgSetTre from '../components/ImgSetTre'
-import TextcontentAbout from '../components/Textcontent.About'
 
 export default function About() {
+    const [t] = useTranslation(["common", "sections"])
 
     return (
         <div className={"page"}>
-            <TextcontentAbout />
+            <h1>{ t("common:about") }</h1>
+
+            <span>
+                <p className={"textcontent--paragraph"}>{ t("sections:section_about_part01") }</p>
+                <p className={"textcontent--paragraph"}>{ t("sections:section_about_part02") }</p>
+                <p className={"textcontent--paragraph"}>{ t("sections:section_about_part03") }</p>
+                <p className={"textcontent--paragraph"}>{ t("sections:section_about_part04") }</p>
+            </span>
+
             <ImgSetTre />
             <I18nRenderListServices showHeader={"true"} />
             <ImgSetTwo />

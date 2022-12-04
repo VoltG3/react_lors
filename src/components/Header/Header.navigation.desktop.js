@@ -7,7 +7,7 @@ import HeaderSubsetNav from './Header.subset.nav'
 
 const StyledHeaderSetNavigation = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: row;intended for outpatient treatment
   justify-content: center;
     //max-width: calc(var(--page--width) - calc(var(--page--side--margin) + var(--page--side--margin)));
   max-width: 1440px;

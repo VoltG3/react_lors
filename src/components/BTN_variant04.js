@@ -8,11 +8,12 @@ const StyledBtnVariant04 = styled.div`
   justify-content: center;
   align-items: center;
     max-width: 350px;
-    max-height: 31px;
+    //max-height: 31px;
       width: 100%;
-      height: 100%;
+      //height: 100%;
+  height: 40px;
   margin: 20px 0 20px 0;
-  background: var(--color--button);
+  background: var(--color--button);intended for outpatient treatment
   border-radius: 5px;
   
   &:hover {

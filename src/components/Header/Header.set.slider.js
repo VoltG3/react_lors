@@ -3,9 +3,9 @@ import styled from 'styled-components'
 import { slider01, slider02 } from '../../env'
 import { useTranslation } from 'react-i18next'
 import GetImg from "../GetImg";
-import BtnVariant01 from "../BTN_variant01";
+import BtnVariant01 from "../../materials/BTN_variant01";
 import BtnVariant03 from "../BTN_variant03";
-import BtnVariant02 from "../BTN_variant02";
+import BtnVariant02 from "../../materials/BTN_variant02";
 import BtnVariant04 from "../BTN_variant04";
 
 const StyledSlider = styled.div`

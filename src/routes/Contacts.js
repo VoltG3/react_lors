@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
 import '../translations/i18n'
+import { useTranslation } from 'react-i18next'
 
 import GetImg from "../components/GetImg";
 import { image02, image09, image10 } from '../env'
 
-import TextcontentContactsFirst from '../components/Textcontent.Contacts.first'
-import TextcontentContactsSecond from '../components/Textcontent.Contacts.second'
 import TimesTable from '../components/TimesTable/TimesTable'
-import GetGoogleMap from '../components/GetGoogleMap'
+import GoogleMap from '../materials/GoogleMap'
+import Get_BTN from "../materials/Get_BTN";
 
 const StyledImg = styled.div`
   display: flex;
@@ -24,10 +24,20 @@ const StyledImg = styled.div`
 `
 
 export default function Contacts() {
+    const [t] = useTranslation(["common", "sections"])
 
     return (
         <div className={"page"}>
-            <TextcontentContactsFirst />
+            <h1>{ t("common:contacts") }</h1>
+
+           <span>
+               <p style={{ color: 'var(--color--highlight)' }} className={"textcontent--paragraph"}>{t("sections:section_contacts_part01")}</p>
+
+               <Get_BTN
+                   text={ t("sections:section_contacts_part02") }
+                   btn={"hrefLink01"} />
+           </span>
+
             <TimesTable />
 
             <StyledImg>
@@ -40,9 +50,19 @@ export default function Contacts() {
                 </div>
             </StyledImg>
 
-            <TextcontentContactsSecond />
+            <span className={"rmBottomMargin center"} >
+                <p style={{
+                    paddingBottom: '15px'
+                }} className={"textcontent--small--header"}>{ t("sections:section_footer_part01") }</p>
+
+                <div>
+                    <p style={{ color: 'var(--color--highlight)' }} className={"textcontent--small--header"}>{ t("sections:section_contacts_part03") }</p>
+                    <p style={{ }} className={"textcontent--small--header"}>{ t("sections:section_contacts_part04") }</p>
+                </div>
+            </span>
+
             <GetImg img={ image02 } width={"1280"} height={"auto"} verticalMargin={"--margin--img--vertical"} />
-            <GetGoogleMap />
+            <GoogleMap />
         </div>
     )
 }

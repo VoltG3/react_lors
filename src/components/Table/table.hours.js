@@ -10,6 +10,7 @@ const StyledContainer = styled.div`
         width: 100%;
     max-height: 113px;
         height: 100%;
+  //white-space: pre-wrap;
   
   .tableLine {
     display: flex;
@@ -19,10 +20,17 @@ const StyledContainer = styled.div`
   
   .tableCell {
     display: flex;
+    flex-direction: row;
     align-items: center;
       max-width: 120px;
           width: 100%;
           height: auto;
+    
+  }
+  
+  .l {
+    display: inline-block;
+    border: solid 1px red;
   }
 `
 

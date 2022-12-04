@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { useTranslation } from 'react-i18next'
-import {Link01} from "../env";
+
 
 const StyledBtnVariant01 = styled.div`
   display: flex;
@@ -11,7 +11,7 @@ const StyledBtnVariant01 = styled.div`
     max-height: 31px;
       width: 100%;
       height: 100%;
-  margin: 20px 0 20px 0;
+  //margin: 20px 0 20px 0;
   background: var(--color--button);
   border-radius: 5px;
   
@@ -30,9 +30,7 @@ export default function BtnVariant01() {
 
     return (
         <StyledBtnVariant01>
-            <a href={ Link01 } target={"_blank"} rel={"noopner noreferrer"}>
-                <p className={"textcontent--paragraph"}>{ t("btn_variant01") }</p>
-            </a>
+            <p className={"textcontent--paragraph"}>{ t("btn_variant01") }</p>
         </StyledBtnVariant01>
     )
 }

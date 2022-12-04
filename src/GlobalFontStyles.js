@@ -7,19 +7,8 @@ export const GlobalFontStyles = createGlobalStyle`
     --font--third: "Crimson Text", serif; // var(--font--third)
     --font--opacity: 0.7;
   }
-
-  .textcontent {
-
-    & p {
-      margin-bottom: var(--margin--p);
-    }
-
-    & p:last-child {
-      margin-bottom: 0!important;
-    }
-  }
   
-  .textcontent--index--header {
+  h1 {
     font-family: var(--font--primary);
     font-style: normal;
     font-weight: 400;
@@ -29,6 +18,50 @@ export const GlobalFontStyles = createGlobalStyle`
         opacity: var(--font--opacity);
         color: var(--color--secondary);
   }
+
+  .textcontent--paragraph {
+    font-family: var(--font--primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: min(max(1.458vw, 18px), 21px);
+    line-height: min(max(1.806vw, 20px), 26px);
+        opacity: var(--font--opacity);
+        color: var(--color--default);
+  }
+
+  .textcontent--small--header {
+    font-family: var(--font--primary);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    opacity: var(--font--opacity);
+    color: var(--color--primary);
+
+    @media only screen and (max-width: 700px) {
+      font-weight: 400;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+  }
+
+  .textcontent--small--item {
+    font-family: var(--font--primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: var(--font--opacity);
+    color: var(--color--primary);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   .textcontent--section--header {
     font-family: var(--font--primary);
@@ -40,15 +73,7 @@ export const GlobalFontStyles = createGlobalStyle`
     color: var(--color--secondary);
   }
   
-  .textcontent--paragraph--header {
-    font-family: var(--font--primary);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 39px;
-    opacity: var(--font--opacity);
-    color: var(--color--primary);
-  }
+
 
   .textcontent--paragraph--header--red {
     font-family: var(--font--primary);
@@ -60,15 +85,7 @@ export const GlobalFontStyles = createGlobalStyle`
     color: var(--color--highlight);
   }
   
-  .textcontent--paragraph {
-    font-family: var(--font--primary);
-    font-style: normal;
-    font-weight: 400;
-    font-size: min(max(1.458vw, 18px), 21px);
-    line-height: min(max(1.806vw, 20px), 26px);
-        opacity: var(--font--opacity);
-        color: var(--color--default);
-  }
+  
 
   .textcontent--paragraph--highlight {
     font-family: var(--font--primary);
@@ -118,30 +135,7 @@ export const GlobalFontStyles = createGlobalStyle`
     color: var(--color--secondary);
   }
 
-  .textcontent--small--header {
-    font-family: var(--font--primary);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-        opacity: var(--font--opacity);
-        color: var(--color--primary);
-
-    @media only screen and (max-width: 700px) {
-      font-weight: 400;
-      font-size: 18px;
-      text-transform: uppercase;
-    }
-  }
   
-  .textcontent--small--item {
-    font-family: var(--font--primary);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-        opacity: var(--font--opacity);
-        color: var(--color--primary);
-  }
 
   .textcontent--timeTable {
     font-family: var(--font--primary);

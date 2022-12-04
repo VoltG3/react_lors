@@ -5,6 +5,7 @@ export const GlobalStyles = createGlobalStyle`
     --page--width: 1440px;
     --list--line--height: 40px;
     --page--side--margin: 80px; // min(max(5.556vw, 30px), 80px);
+    --page--sideInner--margin: 40px;
     
     --margin--img--vertical: min(max(6.944vw, 40px), 100px); //100px;
     --margin--img--horisontal: min(max(6.944vw, 40px), 100px); //100px; !!!!!!!!!
@@ -28,8 +29,8 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+      width: 100vw;
+      height: 100vh;
     background: #e8e8e8;
   }
 
@@ -40,7 +41,40 @@ export const GlobalStyles = createGlobalStyle`
       max-width: calc(var(--page--width) - calc(var(--page--side--margin) * 2));
           width: 100%;
           height: auto;
-  } .box {
+    
+        & h1 {
+          align-self: flex-start;
+          margin-top: var(--margin--h1--top);
+          margin-bottom: var(--margin--h1--bottom);
+        }  
+    
+        & p, h1 { 
+          padding-left: var(--page--sideInner--margin);
+          padding-right: var(--page--sideInner--margin);
+        }
+    
+        & span {
+          & p { margin-bottom: var(--margin--p); }
+          & p:last-child { margin-bottom: 0!important; }
+        }
+    
+          .rmBottomMargin {
+            display: inline-block;
+            margin-bottom: var(--margin--p);
+      
+            & * { margin-bottom: 0px!important; }
+          }
+    
+          .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 80px;
+          }
+          
+  } 
+  
+  .box {
         width: 100%;
         height: auto;
         padding: 0 40px 0 40px;
@@ -54,10 +88,5 @@ export const GlobalStyles = createGlobalStyle`
 
   a:link {
     text-decoration: none;
-  }
-
-  & h1 {
-    margin-top: var(--margin--h1--top);
-    margin-bottom: var(--margin--h1--bottom);
   }
 `

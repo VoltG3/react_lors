@@ -20,8 +20,8 @@ const StyledBtnVariant02 = styled.div`
   }
 
   @media only screen and (max-width: 563px) {
+    min-width: min(max(39.097vw, 360px), 563px);
     max-width: 563px;
-    min-width: min(max(39.097vw, 360px), 563px)
   }
 
   &:hover {

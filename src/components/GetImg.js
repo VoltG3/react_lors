@@ -15,13 +15,8 @@ export default function GetImg(props){
                  marginBottom: props.verticalMargin === "null"
                      ? '0'
                      : `var(${props.verticalMargin})`,
-
-                 /*marginLeft: 'var(--margin--img--horisontal)',
-                 marginRight: 'var(--margin--img--horisontal)',*/
-                 filter: 'var(--filter--img)',
-              /*   background: `url(${ props.imgPreview })`,*/
+                 filter: 'var(--filter--img)'
             }}
         />
-
     )
 }
