@@ -6,11 +6,12 @@ import ImgSetTwo from '../components/ImgSetTwo'
 import ImgSetTre from '../components/ImgSetTre'
 
 export default function About() {
-    const [t] = useTranslation(["common", "sections"])
+    const [t] = useTranslation(["common", "sections", "temporary"])
 
     return (
         <div className={"page"}>
             <h1>{ t("common:about") }</h1>
+            <h1>{ t("temporary:tempHeader.tempLogo.tempPart") }</h1>
 
             <span>
                 <p className={"textcontent--paragraph"}>{ t("sections:section_about_part01") }</p>

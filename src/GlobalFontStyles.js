@@ -58,11 +58,6 @@ export const GlobalFontStyles = createGlobalStyle`
   
   
   
-  
-  
-  
-  
-  
   .textcontent--section--header {
     font-family: var(--font--primary);
     font-style: normal;
@@ -82,7 +77,7 @@ export const GlobalFontStyles = createGlobalStyle`
     font-size: 32px;
     line-height: 39px;
     opacity: var(--font--opacity);
-    color: var(--color--highlight);
+    colo#e8e8e8r: var(--color--highlight);
   }
   
   

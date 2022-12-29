@@ -2,18 +2,15 @@ import styled from 'styled-components'
 
 import HeaderNavigationDesktop from './Header.navigation.desktop'
 import HeaderSetSlider from './Header.set.slider'
-import HeaderNavigationMobile from "./Header.navigation.mobile";
+import MenyMobile from './dropdown/mobile'
 
 const StyledHeader = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-              max-width: 1440px;
-    width: 100%;
-  //max-height: 474px;
-  height: auto;
-    //height: 474px;
-  //border: solid 1px red;
+    max-width: 1440px;
+        width: 100%;
+        height: auto;
   
   .navDesktop { visibility: visible; }
   .navMobile { visibility: collapse; }
@@ -41,7 +38,7 @@ export default function Header() {
                 justifyContent: 'center',
                 width: 'inherit'
             }} className={"navMobile"}>
-                <HeaderNavigationMobile />
+                <MenyMobile />
             </div>
 
            <HeaderSetSlider />

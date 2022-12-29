@@ -14,9 +14,9 @@ const StyledSubSetNavFirst = styled.div`
       flex-direction: column;
     
   }
-  //
+  //common
   // border: solid 1px red;
-  //
+  //common
   
   @media only screen and (max-width: 881px) {
     justify-content: center;

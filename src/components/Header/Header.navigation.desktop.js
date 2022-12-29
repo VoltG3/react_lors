@@ -7,13 +7,11 @@ import HeaderSubsetNav from './Header.subset.nav'
 
 const StyledHeaderSetNavigation = styled.div`
   display: flex;
-  flex-direction: row;intended for outpatient treatment
+  flex-direction: row;
   justify-content: center;
-    //max-width: calc(var(--page--width) - calc(var(--page--side--margin) + var(--page--side--margin)));
   max-width: 1440px;
         width: calc(100% - calc(var(--page--side--margin) + var(--page--side--margin)));
         height: 94px;
- //border: solid 1px red;
 
   @media only screen and (max-width: 1440px) {
     width: calc(100% - min(max(1.458vw, 18px), 21px)); // error!!
