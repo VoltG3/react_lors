@@ -1,47 +1,55 @@
-import styled from 'styled-components'
+import { StyledHeader, StyledInnerHeader } from './Header.styles'
 
-import HeaderNavigationDesktop from './Header.navigation.desktop'
-import HeaderSetSlider from './Header.set.slider'
-import MenyMobile from './dropdown/mobile'
+import React, { useEffect, useRef } from 'react'
 
-const StyledHeader = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-    max-width: 1440px;
-        width: 100%;
-        height: auto;
-  
-  .navDesktop { visibility: visible; }
-  .navMobile { visibility: collapse; }
+import NavigationDesktop from './navigationDesktop/Header.navigation.desktop'
+import HeaderSetSlider from './slider/Header.set.slider'
+import NavigationMobile from './navigationMobile/navigationMobile'
 
-  
-  @media only screen and (max-width: 922px) {
-    .navDesktop { visibility: collapse; }
-    .navMobile { visibility: visible; }
-  }
-`
+function Header() {
+    const menuRef = useRef(null)
+    let previousScrollPosition = 0
 
-export default function Header() {
+    useEffect(() => {
+        function handleScroll() {
+            const currentScrollPosition = window.pageYOffset
+
+            if (currentScrollPosition > previousScrollPosition) {
+                // scrolling down
+                menuRef.current.style.display = 'none'
+            } else {
+                // scrolling up
+                menuRef.current.style.display = 'block'
+            }
+
+            previousScrollPosition = currentScrollPosition
+        }
+
+        window.addEventListener('scroll', handleScroll)
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+
     return (
         <StyledHeader>
-            <div style={{
-                display: 'flex',
-                justifyContent: 'center',
-                width: 'inherit'
-            }} className={"navDesktop"}>
-                <HeaderNavigationDesktop />
-            </div>
+            <StyledInnerHeader
+                className={"navDesktop"}
+            >
+                <NavigationDesktop />
+            </StyledInnerHeader>
 
-            <div style={{
-                display: 'flex',
-                justifyContent: 'center',
-                width: 'inherit'
-            }} className={"navMobile"}>
-                <MenyMobile />
-            </div>
+            <StyledInnerHeader
+                className={"navMobile"}
+                ref={ menuRef }
+            >
+                <NavigationMobile />
+            </StyledInnerHeader>
 
            <HeaderSetSlider />
         </StyledHeader>
     )
 }
+
+export default Header

@@ -56,7 +56,7 @@ const StyledHeaderSetNavigation = styled.div`
  }
 `
 
-export default function HeaderNavigationDesktop() {
+export default function NavigationDesktop() {
 
     return (
         <StyledHeaderSetNavigation>

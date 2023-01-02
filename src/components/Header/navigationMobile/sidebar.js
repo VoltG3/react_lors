@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { slide as Menu } from "react-burger-menu";
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
-import HeaderSubSetLang from "../Header.subset.lang";
+import HeaderSubSetLang from "../navigationDesktop/Header.subset.lang";
 
 export default props => {
     const [t] = useTranslation(["common"])

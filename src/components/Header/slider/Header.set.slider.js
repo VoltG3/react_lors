@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-import { slider01, slider02 } from '../../env'
+import { slider01, slider02 } from '../../../env'
 import { useTranslation } from 'react-i18next'
-import GetImg from '../GetImg'
-import BtnVariant04 from '../BTN_variant04'
+import GetImg from '../../GetImg'
+import BtnVariant04 from '../../BTN_variant04'
 
 const StyledSlider = styled.div`
     max-width: var(--page--width);

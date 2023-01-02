@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-import Icon01 from '../../assets/img/icons/icon_telefon.svg'
-import Icon02 from '../../assets/img/icons/icon_mail.svg'
-import Icon03 from '../../assets/img/icons/icon_appointment.svg'
+import Icon01 from '../../../assets/img/icons/icon_telefon.svg'
+import Icon02 from '../../../assets/img/icons/icon_mail.svg'
+import Icon03 from '../../../assets/img/icons/icon_appointment.svg'
 
 import { useTranslation } from 'react-i18next'
 
