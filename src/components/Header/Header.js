@@ -1,8 +1,7 @@
-import { StyledHeader, StyledInnerHeader } from './Header.styles'
-
+import styled from 'styled-components'
 import React, { useEffect, useRef } from 'react'
 
-import NavigationDesktop from './navigationDesktop/Header.navigation.desktop'
+import NavigationDesktop from './navigationDesktop/navigationDesktop'
 import HeaderSetSlider from './slider/Header.set.slider'
 import NavigationMobile from './navigationMobile/navigationMobile'
 
@@ -34,22 +33,41 @@ function Header() {
 
     return (
         <StyledHeader>
-            <StyledInnerHeader
-                className={"navDesktop"}
-            >
+            <div className={"navigation desktop"}>
                 <NavigationDesktop />
-            </StyledInnerHeader>
+            </div>
 
-            <StyledInnerHeader
-                className={"navMobile"}
-                ref={ menuRef }
-            >
+            <div className={"navigation mobile"}
+                 ref={ menuRef } >
                 <NavigationMobile />
-            </StyledInnerHeader>
+            </div>
 
            <HeaderSetSlider />
         </StyledHeader>
     )
 }
+
+const StyledHeader = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    max-width: 100vw;
+        width: 100%;
+        height: auto;
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+      width: inherit;
+      height: inherit;
+  }
+    .desktop { visibility: visible; }
+    .mobile { visibility: collapse; }
+  
+  @media only screen and (max-width: 922px) {
+    .desktop { visibility: collapse; }
+    .mobile { visibility: visible; }
+  }
+`
 
 export default Header

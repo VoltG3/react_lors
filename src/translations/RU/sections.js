@@ -1,6 +1,6 @@
 export const SECTIONS_RU = {
     section_header_part01 : "Ковидная безопасность",
-    section_header_part02 : "Телефон: на рецепции: +371 67186950,\nна практике: +371 67223546",
+    section_header_part02 : "Телефон: на рецепции: +371 67186950, на практике: +371 67223546",
     section_header_part03 : "Электронная почта: info@lors.lv",
     section_header_part04 : "Е - запись",
     section_header_part05 : "SIA \"Jautrītes Liepiņa врачебная практика в области оториноларингологии\"",

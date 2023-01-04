@@ -7,6 +7,52 @@ export const GlobalFontStyles = createGlobalStyle`
     --font--third: "Crimson Text", serif; // var(--font--third)
     --font--opacity: 0.7;
   }
+
+  // // // // //
+  //  HEADER  //
+  // // // // //
+  
+  .textcontent--header--desktop--infoline {
+    font-family: var(--font--secondary);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+    color: var(--clr--default--dkst);
+  }
+
+  .textcontent--header--desktop--navigation {
+    font-family: var(--font--secondary);
+    font-style: normal;
+    font-weight: 400;
+    // font-size: 18px;
+    font-size: 16px;
+    //line-height: 25px;
+    // display: flex;
+    //align-items: center;
+    // letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    color: var(--clr--primary--base);
+  }
+
+  .textcontent--header--desktop--languages {
+    font-family: var(--font--secondary);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    //line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--clr--primary--base);
+  }
+  
+  // ------------------------------------------------
+  
   
   h1 {
     font-family: var(--font--primary);
@@ -168,44 +214,7 @@ export const GlobalFontStyles = createGlobalStyle`
     color: var(--color--headercolor);
   }
   
-  .textcontent--header--nav--btn--over {
-    font-family: var(--font--secondary);
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
-    opacity: 0.7;
-    color: var(--clr--default--dkst);
-  }
-  
-  .textcontent--header--nav--btn--under {
-    font-family: var(--font--secondary);
-    font-style: normal;
-    font-weight: 400;
-   // font-size: 18px;
-    font-size: 14px;
-    //line-height: 25px;
-   // display: flex;
-    //align-items: center;
-   // letter-spacing: 0.1em;
-    text-transform: uppercase;
-    opacity: 0.7;
-    color: var(--clr--primary--base);
-  }
-  
-  .textcontent--header--nav--lang {
-    font-family: var(--font--secondary);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    //line-height: 22px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: var(--clr--primary--base);
-  }
+
   
   //
   // FOOTER

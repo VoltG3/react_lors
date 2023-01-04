@@ -1,6 +1,6 @@
 export const SECTIONS_EN = {
     section_header_part01 : "Covid safety",
-    section_header_part02 : "Telephone: at the reception: +371 67186950,\nin practice: +371 67223546",
+    section_header_part02 : "Telephone: at the reception: +371 67186950, in practice: +371 67223546",
     section_header_part03 : "Email: info@lors.lv",
     section_header_part04 : "E - appointment",
     section_header_part05 : "SIA \"Jautrītes Liepiņa doctor's practice in otorhinolaryngology\"",

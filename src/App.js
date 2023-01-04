@@ -11,7 +11,7 @@ import Cookie from './Cookie'
 import useWindowDimension from './utils/useWindowDimension'
 
 export default function App() {
-   // console.log(useWindowDimension())
+    //console.log(useWindowDimension())
 
     return (
         <div style={{
@@ -20,7 +20,7 @@ export default function App() {
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
-                maxWidth: 'var(--page--width)',
+               /* maxWidth: 'var(--page--width)',*/
                    width: '100vw',
                    height: 'auto',
             background: 'var(--color--none)'

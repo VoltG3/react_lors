@@ -1,6 +1,6 @@
 export const SECTIONS_LV = {
     section_header_part01 : "Covid drošība",
-    section_header_part02 : "Telefons: reģistratūrā: +371 67186950,\npraksē: +371 67223546 ",
+    section_header_part02 : "Telefons: reģistratūrā: +371 67186950, praksē: +371 67223546 ",
     section_header_part03 : "E - pasts: info@lors.lv",
     section_header_part04 : "E - pieraksts",
     section_header_part05 : "\"SIA \"Jautrītes Liepiņas ārsta prakse otorinolaringoloģijā\"",

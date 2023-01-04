@@ -21,6 +21,7 @@ export default props => {
             pageWrapId={"page-wrap"}
             isOpen={isMenuOpen}
             onStateChange={handleStateChange}
+            width={ '100%' }
         >
 
             <Link onClick={() => handleCloseMenu()} className={"menu-item"} to={"home"}>

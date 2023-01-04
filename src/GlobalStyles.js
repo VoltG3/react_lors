@@ -3,6 +3,25 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyles = createGlobalStyle`
   :root {
     --page--width: 1440px;
+    --page--width100: 100%;
+    --desktop--navigation--height: 75px;
+    --page--side--margin20: 20px;
+    --page--side--margin40: 40px;
+    --page--side--margin80: 80px;
+    
+    @media only screen and (max-width: 1440px) {
+      :root {
+        --page--width100: calc(100% - calc(var(--page--side--margin40) * 2));
+      }
+    }
+
+    @media only screen and (max-width: 922px) {
+      :root {
+        --page--width100: calc(100% - calc(var(--page--side--margin20) * 2));
+      }
+    }
+   
+    
     --list--line--height: 40px;
     --page--side--margin: 80px; // min(max(5.556vw, 30px), 80px);
     --page--sideInner--margin: 40px;

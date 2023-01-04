@@ -4,6 +4,7 @@ import { slider01, slider02 } from '../../../env'
 import { useTranslation } from 'react-i18next'
 import GetImg from '../../GetImg'
 import BtnVariant04 from '../../BTN_variant04'
+import BTN from "../../../materials/BTN";
 
 const StyledSlider = styled.div`
     max-width: var(--page--width);
@@ -110,6 +111,7 @@ export default function HeaderSetSlider() {
                     <div style={{ margin: '67px 0 0 var(--margin--v1)' }}>
                         <p className={"textcontent--header--firstline"}>{ t("sections:section_header_part05") }</p>
                         <p className={"textcontent--header--secondline"}>{ t("sections:section_header_part06") }</p>
+                        <BTN />
 
                         <div style={{ margin: '115px 0 0 0'}}>
                             <BtnVariant04 />
