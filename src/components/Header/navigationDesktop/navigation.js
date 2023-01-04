@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
-function HeaderSubsetNav() {
+function Navigation() {
     const [t] = useTranslation(["common"])
 
     return (
@@ -54,4 +54,4 @@ const StyledSubSetNavFirst = styled.div`
   }
 `
 
-export default HeaderSubsetNav
+export default Navigation

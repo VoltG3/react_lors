@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { slide as Menu } from "react-burger-menu";
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
-import HeaderSubSetLang from "../navigationDesktop/Header.subset.lang";
+import Languages from "../navigationDesktop/languages";
 
 export default props => {
     const [t] = useTranslation(["common"])
@@ -48,7 +48,7 @@ export default props => {
                 <p>{ t("common:contacts") }</p>
             </Link>
 
-            <HeaderSubSetLang />
+            <Languages />
         </Menu>
     );
 };

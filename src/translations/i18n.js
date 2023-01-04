@@ -29,6 +29,9 @@ import { COOKIE_RU } from './RU/cookie'
 import { TEMP_LV } from "./LV/temp";
 import { TEMP_EN } from "./EN/temp";
 import { TEMP_RU } from "./RU/temp";
+import { COVID_LV } from './LV/covid'
+import { COVID_EN } from './EN/covid'
+import { COVID_RU } from './RU/covid'
 
 i18n
     .use(LanguageDetector)
@@ -44,7 +47,8 @@ i18n
                 LIST_PRICES: LIST_PRICES_LV,
                 times: TIMES_LV,
                 cookies: COOKIE_LV,
-                temporary: TEMP_LV
+                temporary: TEMP_LV,
+                covid: COVID_LV
             },
             en: {
                 common: COMMON_EN,
@@ -55,7 +59,8 @@ i18n
                 LIST_PRICES: LIST_PRICES_EN,
                 times: TIMES_EN,
                 cookies: COOKIE_EN,
-                temporary: TEMP_EN
+                temporary: TEMP_EN,
+                covid: COVID_EN
             },
             ru: {
                 common: COMMON_RU,
@@ -66,7 +71,8 @@ i18n
                 LIST_PRICES: LIST_PRICES_RU,
                 times: TIMES_RU,
                 cookies: COOKIE_RU,
-                temporary: TEMP_RU
+                temporary: TEMP_RU,
+                covid: COVID_RU
             }
         }
     });

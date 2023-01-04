@@ -42,8 +42,8 @@ export const GlobalFontStyles = createGlobalStyle`
   .textcontent--header--desktop--languages {
     font-family: var(--font--secondary);
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: 200;
+    font-size: 18px;
     //line-height: 22px;
     display: flex;
     align-items: center;

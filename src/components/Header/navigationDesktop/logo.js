@@ -1,7 +1,7 @@
 import LogoColored00 from '../../../assets/img/logo_colored/Lors_colored.svg'
 import LogoTransparent from '../../../assets/img/logo_transparent/Lors_transparent.svg'
 
-export default function HeaderSubSetLogo(props) {
+export default function Logo(props) {
     console.log("--->", props.variant)
 
     const colored = LogoColored00

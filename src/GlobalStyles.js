@@ -9,6 +9,8 @@ export const GlobalStyles = createGlobalStyle`
     --page--side--margin40: 40px;
     --page--side--margin80: 80px;
     
+    --layer--covid: 2;
+    
     @media only screen and (max-width: 1440px) {
       :root {
         --page--width100: calc(100% - calc(var(--page--side--margin40) * 2));

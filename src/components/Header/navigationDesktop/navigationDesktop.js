@@ -1,19 +1,27 @@
 import styled from 'styled-components'
 
-import HeaderSubSetLogo from './Header.subset.logo'
-import HeaderSubSetInfo from './Header.subset.info'
-import HeaderSubSetLang from './Header.subset.lang'
-import HeaderSubsetNav from './Header.subset.nav'
+import Logo from './logo'
+import Info from './info'
+import Languages from './languages'
+import Navigation from './navigation'
 
 function NavigationDesktop() {
 
     return (
         <StyledNavigationDesktop>
             <div className={"navigationDesktop"}>
-                <div className={"A"}><HeaderSubSetLogo /></div>
-                <div className={"B"}><HeaderSubSetInfo /></div>
-                <div className={"C"}><HeaderSubSetLang /></div>
-                <div className={"D"}><HeaderSubsetNav /></div>
+                <div className={"A"}>
+                    <Logo />
+                </div>
+
+                <div className={"B"}>
+                    <Info />
+                    <Languages />
+                </div>
+
+                <div className={"D"}>
+                    <Navigation />
+                </div>
             </div>
         </StyledNavigationDesktop>
     )
@@ -34,7 +42,7 @@ const StyledNavigationDesktop = styled.div`
     width: 100%;
     height: auto;
    grid-template-areas: 
-    "A B B B B B C"
+    "A B B B B B B"
     "A D D D D D D";
    
    .A { // Logo 
@@ -43,22 +51,11 @@ const StyledNavigationDesktop = styled.div`
       align-self: center;
    }
 
-   .B { // Info 
+   .B { // Info & Lang
      grid-area: B;
       display: flex;
-background-color: #d1d1d1;
    }
-
-   .C { // Lang
-     grid-area: C;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-start;
-      padding-top: 5px;
-     background-color: orange;
-     border: 1px red;
-   }
-
+   
    .D { // Nav
      grid-area: D;
       display: flex;

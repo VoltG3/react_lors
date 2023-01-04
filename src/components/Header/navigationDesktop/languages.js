@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import i18n from 'i18next'
 
-function HeaderSubSetLang() {
+function Languages() {
     return (
         <div>
             <StyledSubSetLang>
@@ -10,10 +10,14 @@ function HeaderSubSetLang() {
                    onClick={() => i18n.changeLanguage('lv') }>LV
                 </p>
 
+                <p className={"textcontent--header--desktop--languages"}>/</p>
+
                 <p className={"textcontent--header--desktop--languages"}
                    value={"EN"}
                    onClick={() => i18n.changeLanguage('en') }>EN
                 </p>
+
+                <p className={"textcontent--header--desktop--languages"}>/</p>
 
                 <p className={"textcontent--header--desktop--languages"}
                    value={"RU"}
@@ -30,6 +34,7 @@ const StyledSubSetLang = styled.div`
     justify-content: space-between;
       width: 100px;
       height: 20px;
+  padding-top: 5px;
   
   & p:hover {
     cursor: pointer;
@@ -37,4 +42,4 @@ const StyledSubSetLang = styled.div`
   }
 `
 
-export default HeaderSubSetLang
+export default Languages
