@@ -54,6 +54,7 @@ const StyledHeader = styled.div`
     max-width: 100vw;
         width: 100%;
         height: auto;
+  background-color: var(--frame);
 
   .navigation {
     display: flex;

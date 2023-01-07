@@ -15,6 +15,8 @@ export const GlobalColorStyles = createGlobalStyle`
       --color--headercolor: #112734;
       --color--button: #EDAE0E;
       
+      --frame: orange;
+      
       --crl--primary--dkr: #010B17;
       --crl--primary--dk: #07162C;
       --clr--primary--base: #132743;

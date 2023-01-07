@@ -43,7 +43,7 @@ export const GlobalStyles = createGlobalStyle`
   html, body {
     margin: 0 auto;
     height: 100%;
-   grid-template-rows: 1fr 1fr;
+   //grid-template-rows: 1fr 1fr;
   }
 
   body {
@@ -62,6 +62,7 @@ export const GlobalStyles = createGlobalStyle`
       max-width: calc(var(--page--width) - calc(var(--page--side--margin) * 2));
           width: 100%;
           height: auto;
+    background-color: var(--color--none);
     
         & h1 {
           align-self: flex-start;

@@ -20,10 +20,10 @@ export default function App() {
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
-               /* maxWidth: 'var(--page--width)',*/
-                   width: '100vw',
+               maxWidth: '100vw',
+                   width: '100%',
                    height: 'auto',
-            background: 'var(--color--none)'
+            background: 'var(--frame)'
         }}>
             <GlobalStyles />
             <GlobalColorStyles />
