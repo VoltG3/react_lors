@@ -22,6 +22,7 @@ root.render(
                 <Route path={"prices"} element={<Prices />} />
                 <Route path={"contacts"} element={<Contacts />} />
                 <Route path={"info"} element={<Info />} />
+                <Route path={"*"} element={<Home />} />
                 <Route path={"/"} element={<Navigate replace to={"home"} />} />
             </Route>
         </Routes>
