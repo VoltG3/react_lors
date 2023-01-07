@@ -59,10 +59,12 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     flex-direction: column;
     align-items: center;
-      max-width: calc(var(--page--width) - calc(var(--page--side--margin) * 2));
+      //max-width: calc(var(--page--width) - calc(var(--page--side--margin) * 2));
+      max-width: 1440px;
           width: 100%;
           height: auto;
     background-color: var(--color--none);
+    border: solid 5px red;
     
         & h1 {
           align-self: flex-start;
