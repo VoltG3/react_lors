@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from 'react'
 import NavigationDesktop from './navigationDesktop/navigationDesktop'
 import HeaderSetSlider from './slider/Header.set.slider'
 import NavigationMobile from './navigationMobile/navigationMobile'
+import Slider from "./slider/slider";
 
 function Header() {
     const menuRef = useRef(null)
@@ -42,7 +43,8 @@ function Header() {
                 <NavigationMobile />
             </div>
 
-           <HeaderSetSlider />
+           {/*<HeaderSetSlider />*/}
+            <Slider />
         </StyledHeader>
     )
 }
