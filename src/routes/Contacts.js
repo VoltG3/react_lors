@@ -10,6 +10,8 @@ import TimesTable from '../components/TimesTable/TimesTable'
 import GoogleMap from '../materials/GoogleMap'
 import Get_BTN from "../materials/Get_BTN";
 
+import Gmap from '../materials/Gmap'
+
 const StyledImg = styled.div`
   display: flex;
   flex-direction: row;
@@ -62,7 +64,8 @@ export default function Contacts() {
             </span>
 
             <GetImg img={ image02 } width={"1280"} height={"auto"} verticalMargin={"--margin--img--vertical"} />
-            <GoogleMap />
+        <GoogleMap />
+            {/*<Gmap />*/}
         </div>
     )
 }
