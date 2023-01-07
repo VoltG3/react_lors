@@ -5,6 +5,7 @@ import { image01 } from '../env'
 import GetImg from '../components/GetImg'
 
 import Table from '../components/Table/Table'
+import ImgHover from "../materials/ImgHover";
 
 export default function Home() {
     const [t] = useTranslation(["sections"])
@@ -19,7 +20,9 @@ export default function Home() {
                 <p className={"textcontent--paragraph"}>{ t("sections:section_home_part02") }</p>
             </span>
 
-            <GetImg img={ image01 } width={"1017"} height={"auto"} verticalMargin={"--margin--img--vertical"} />
+            <ImgHover />
+
+            {/*<GetImg img={ image01 } width={"1017"} height={"auto"} verticalMargin={"--margin--img--vertical"} />*/}
             <Table />
         </div>
     )
