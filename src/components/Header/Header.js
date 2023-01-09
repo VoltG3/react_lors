@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import React, { useEffect, useRef } from 'react'
 
 import NavigationDesktop from './navigationDesktop/navigationDesktop'
-import HeaderSetSlider from './slider/Header.set.slider'
 import NavigationMobile from './navigationMobile/navigationMobile'
 import Slider from "./slider/slider";
 
@@ -43,7 +42,7 @@ function Header() {
                 <NavigationMobile />
             </div>
 
-           {/*<HeaderSetSlider />*/}
+            {/*<Slider />*/}
             <Slider />
         </StyledHeader>
     )
@@ -56,7 +55,6 @@ const StyledHeader = styled.div`
     max-width: 100vw;
         width: 100%;
         height: auto;
-  background-color: var(--frame);
 
   .navigation {
     display: flex;

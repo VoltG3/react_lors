@@ -9,7 +9,7 @@ export default function FooterDev() {
             <p style={{
                 fontSize: '12px',
                 color: 'var(--color--paragraph--footer)'
-            }}>Developed by VoltG3 © 2022</p>
+            }}>Developed by VoltG3 © 2023</p>
         </div>
     )
 }

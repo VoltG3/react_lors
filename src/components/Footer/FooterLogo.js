@@ -7,12 +7,12 @@ import LogoTransparent03 from '../../assets/img/logo_transparent/ERGO_transparen
 import LogoTransparent04 from '../../assets/img/logo_transparent/Gjensidige_transparent.png'
 import LogoTransparent05 from '../../assets/img/logo_transparent/Seesam_transpareent.png'*/
 
-import LogoTransparent00 from '../../assets/img/logo_transparent/Lors_transparent.svg'
-import LogoTransparent01 from '../../assets/img/logo_transparent/Balta_transaprent.svg'
-import LogoTransparent02 from '../../assets/img/logo_transparent/BTA_transsparent.svg'
-import LogoTransparent03 from '../../assets/img/logo_transparent/ERGO_transparent.svg'
-import LogoTransparent04 from '../../assets/img/logo_transparent/Gjensidige_transparent.svg'
-import LogoTransparent05 from '../../assets/img/logo_transparent/Seesam_transpareent.svg'
+import LogoTransparent00 from '../../assets/logo_transparent/Lors_transparent.svg'
+import LogoTransparent01 from '../../assets/logo_transparent/Balta_transaprent.svg'
+import LogoTransparent02 from '../../assets/logo_transparent/BTA_transsparent.svg'
+import LogoTransparent03 from '../../assets/logo_transparent/ERGO_transparent.svg'
+import LogoTransparent04 from '../../assets/logo_transparent/Gjensidige_transparent.svg'
+import LogoTransparent05 from '../../assets/logo_transparent/Seesam_transpareent.svg'
 
 function FooterLogo() {
     return(

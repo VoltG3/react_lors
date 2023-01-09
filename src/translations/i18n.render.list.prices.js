@@ -13,7 +13,7 @@ const StyledGetJsonData = styled.div`
   }
   
   .firstPart {
-    max-width: 1080px;
+    //max-width: 1080px;
     width: 100%;
     
     & p {

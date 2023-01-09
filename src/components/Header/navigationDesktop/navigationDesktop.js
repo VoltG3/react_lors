@@ -34,7 +34,7 @@ const StyledNavigationDesktop = styled.div`
     max-width: 1440px;
       width: var(--page--width100);
       height: var(--desktop--navigation--height);
-  background-color: var(--color--none);
+  //background-color: var(--color--none);
   
  .navigationDesktop {
    display: grid;

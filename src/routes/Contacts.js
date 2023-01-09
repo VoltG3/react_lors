@@ -3,14 +3,15 @@ import styled from 'styled-components'
 import '../translations/i18n'
 import { useTranslation } from 'react-i18next'
 
-import GetImg from "../components/GetImg";
+import Img from "../components/Image/Img";
 import { image02, image09, image10 } from '../env'
 
-import TimesTable from '../components/TimesTable/TimesTable'
-import GoogleMap from '../materials/GoogleMap'
-import Get_BTN from "../materials/Get_BTN";
-
-import Gmap from '../materials/Gmap'
+import GoogleMap from '../components/GoogleMap'
+import i18n from "i18next";
+import LineLang from "../components/lineLang";
+import TimesTable from "../components/Times/TimesTable";
+import BTNSmall from "../components/Button/BTNSmall";
+import BTNSmallNext from "../components/Button/BTNSmallNext";
 
 const StyledImg = styled.div`
   display: flex;
@@ -27,45 +28,66 @@ const StyledImg = styled.div`
 
 export default function Contacts() {
     const [t] = useTranslation(["common", "sections"])
+    const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
+    const h1 = i18n.language === 'ru' ? 'textcontent--header1--rus' : 'textcontent--header1'
 
     return (
-        <div className={"page"}>
-            <h1>{ t("common:contacts") }</h1>
+        <>
+            <div className={"page"}>
+                <h1 className={ h1 }>{ t("common:contacts") }</h1>
 
-           <span>
-               <p style={{ color: 'var(--color--highlight)' }} className={"textcontent--paragraph"}>{t("sections:section_contacts_part01")}</p>
+                <LineLang />
 
-               <Get_BTN
-                   text={ t("sections:section_contacts_part02") }
-                   btn={"hrefLink01"} />
-           </span>
+                <span style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    width: '100%',
+                    height: 'auto'
+                }}>
+                   <p style={{ color: 'var(--color--highlight)', paddingBottom: '0' }} className={ paragraph }>{t("sections:section_contacts_part01")}</p>
 
-            <TimesTable />
+                    <div className={"BTNSmallComponent"}>
+                        <p className={ paragraph } style={{ }}>{ t("sections:section_contacts_part02") }</p>
 
-            <StyledImg>
-                <div>
-                    <GetImg img={ image10 } width={"770"} height={"auto"} />
+                        <BTNSmallNext />
+                    </div>
+                </span>
+
+                <div style={{ width: '100%', height: '1px', paddingBottom: '30px'}}>
+
                 </div>
 
-                <div>
-                    <GetImg img={ image09 } width={"670"} height={"auto"} />
-                </div>
-            </StyledImg>
+                <TimesTable />
 
-            <span className={"rmBottomMargin center"} >
-                <p style={{
-                    paddingBottom: '15px'
-                }} className={"textcontent--small--header"}>{ t("sections:section_footer_part01") }</p>
+                <StyledImg>
+                    <div>
+                        <Img img={ image10 } width={"770"} height={"auto"} />
+                    </div>
 
-                <div>
-                    <p style={{ color: 'var(--color--highlight)' }} className={"textcontent--small--header"}>{ t("sections:section_contacts_part03") }</p>
-                    <p style={{ }} className={"textcontent--small--header"}>{ t("sections:section_contacts_part04") }</p>
-                </div>
-            </span>
+                    <div>
+                        <Img img={ image09 } width={"670"} height={"auto"} />
+                    </div>
+                </StyledImg>
 
-            <GetImg img={ image02 } width={"1280"} height={"auto"} verticalMargin={"--margin--img--vertical"} />
-        <GoogleMap />
-            {/*<Gmap />*/}
-        </div>
+                <span style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    width: '100%',
+                    height: 'auto'
+                }}>
+                    <p style={{ paddingBottom: '8px'}} className={"textcontent--small--header1"}>{ t("sections:section_footer_part01") }</p>
+
+                    <div style={{ display: 'flex', flexDirection: 'row' }}>
+                        <p style={{ paddingBottom: '0px', paddingRight: '5px'}} className={"textcontent--small--header1"}>{ t("sections:section_contacts_part03") }</p>
+                        <p style={{ color: 'var(--color--highlight)' }} className={"textcontent--small--header1"}>{ t("sections:section_contacts_part04") }</p>
+                    </div>
+                </span>
+
+                <Img img={ image02 } width={"1280"} height={"auto"} verticalMargin={"--margin--img--vertical"} />
+            </div>
+
+            <GoogleMap />
+        </>
     )
 }

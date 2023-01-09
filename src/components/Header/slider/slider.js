@@ -1,73 +1,71 @@
 import styled from 'styled-components'
-import React, { useState, useEffect } from 'react'
 import { slider01, slider02 } from '../../../env'
-import SliderTextcontent from "./sliderTextcontent";
-function Slider() {
-    const [currentImageIndex, setCurrentImageIndex] = useState(0)
-    const images = [slider01, slider02]
-    const interval = 5000; // interval at which images will change (in milliseconds)
+import SliderTextcontent from './sliderTextcontent'
 
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setCurrentImageIndex(currentImageIndex === images.length - 1 ? 0 : currentImageIndex + 1)
-        }, interval);
-        return () => clearInterval(intervalId)
-    }, [currentImageIndex, images.length, interval])
+const Slider = () => {
 
     return (
-        <StyledSlider>
+        <SliderContainer>
+            <SliderTextcontent />
 
-
-            <div className={"mask"}>
-                <img src={images[currentImageIndex]} alt="header image" />
+            <div className={"slide"}>
+                <div><img src={ slider01 } width={"100%"} height={"auto"} alt={"slider"} /></div>
+                <div><img src={ slider01 } width={"100%"} height={"auto"} alt={"slider"} /></div>
+                <div><img src={ slider02 } width={"100%"} height={"auto"} alt={"slider"} /></div>
             </div>
-
-            <div className="header-text"><SliderTextcontent /></div>
-        </StyledSlider>
+        </SliderContainer>
     )
 }
 
-const StyledSlider = styled.div`
+const SliderContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100vw;
-  height: auto;
-  border: solid 1px red;
-  background-color: var(--color--none);
-  
-  .innerSlider {
-    position: relative;
-    z-index: 0;
-    display: flex;
-    justify-content: center;
-    width: inherit;
-    height: inherit;
-  }
-  
-  .header-text {
-    position: absolute;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
     width: 100vw;
     height: auto;
+  //border: solid 1px red;
+  
+  & img {
+    width: 100%;
+    height: 100%;
   }
   
-  .mask {
+  .slide {
+        width: 100vw;
+    min-height: 481px;
+    max-height: 500px;
+        height: 100%;
+    overflow: hidden;
     position: relative;
-    z-index: 2;
-    width: 100vw;
-    height: 100%;
     opacity: 0.4;
   }
   
-  & img {
-    position: relative;
-    z-index: 1;
+  .slide > div {
     width: 100vw;
-    height: auto;
-    //object-fit: cover;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    animation: slide 9s infinite;
+    opacity: 0;
+  }
+  .slide > div:nth-child(3) {
+    animation-delay: 3s;
+  }
+
+  .slide > div:nth-child(2) {
+    animation-delay: 6s;
+  }
+  
+  @keyframes slide {
+    10% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 1;
+    }
   }
 `
 

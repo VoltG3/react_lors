@@ -7,7 +7,7 @@ import { Outlet } from 'react-router-dom'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 
-import Cookie from './Cookie'
+import Cookie from './components/Cookie'
 import useWindowDimension from './utils/useWindowDimension'
 
 export default function App() {
@@ -20,10 +20,8 @@ export default function App() {
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
-               maxWidth: '100vw',
-                   width: '100%',
-                   height: 'auto',
-            background: 'var(--frame)'
+                width: '100vw',
+                height: 'auto'
         }}>
             <GlobalStyles />
             <GlobalColorStyles />

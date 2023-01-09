@@ -2,6 +2,17 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
   :root {
+
+    --size--padding20:  20px;
+    --size--padding30:  30px;
+    --size--padding50:  50px;
+    --size--padding70:  70px;
+    --size--padding80:  80px;
+   
+    --box--shadow:      rgba(176, 176, 176, 0.3) 0px 2px 15px 0px;
+    --box--hover:       0 2px 15px 0 hsla(0,0%,69%,.5);
+    
+    /* ----------------------------------------------- */
     --page--width: 1440px;
     --page--width100: 100%;
     --desktop--navigation--height: 75px;
@@ -28,66 +39,81 @@ export const GlobalStyles = createGlobalStyle`
     --page--side--margin: 80px; // min(max(5.556vw, 30px), 80px);
     --page--sideInner--margin: 40px;
     
-    --margin--img--vertical: min(max(6.944vw, 40px), 100px); //100px;
+    --margin--img--vertical: min(max(5.5vw, 40px), 80px); 
+    
     --margin--img--horisontal: min(max(6.944vw, 40px), 100px); //100px; !!!!!!!!!
     --margin--h1--top: min(max(5.861vw, 30px), 70px);
     --margin--h1--bottom: 30px;
     --margin--p: 15px;
 
-    --filter--img: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.7));
+    --filter--img: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.7));
+
     
     --margin--minimal: 20px;
     --margin--v1: min(max(5.347vw, var(--margin--minimal)), 77px);
   }
-
-  html, body {
-    margin: 0 auto;
-    height: 100%;
-   //grid-template-rows: 1fr 1fr;
-  }
-
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-      width: 100vw;
-      height: 100vh;
-    background: #e8e8e8;
-  }
-
+  
+  /* ------------------------------------------------------- */
+  
+  
+  
+  /* ------------------------- ------------------------------ */
+  
   .page {
     display: flex;
     flex-direction: column;
     align-items: center;
-      //max-width: calc(var(--page--width) - calc(var(--page--side--margin) * 2));
       max-width: 1440px;
           width: 100%;
           height: auto;
-    background-color: var(--color--none);
-    border: solid 5px red;
+    box-sizing: border-box;
+    padding: 
+            var(--size--padding70)  // Top
+            var(--size--padding20)  // Right
+            var(--size--padding80)  // Bottom
+            var(--size--padding20); // Left
+    //background-color: var(--color--background);
     
-        & h1 {
-          align-self: flex-start;
-          margin-top: var(--margin--h1--top);
-          margin-bottom: var(--margin--h1--bottom);
-        }  
+      & h1 {
+        align-self: flex-start;
+        padding-bottom: var(--size--padding30);
+      } 
     
-        & p, h1 { 
-          padding-left: var(--page--sideInner--margin);
-          padding-right: var(--page--sideInner--margin);
+      & span {
+        & p { padding-bottom: var(--size--padding20); }
+        & p:last-child { padding-bottom: 0!important; }
+      }
+    
+      .BTNSmallComponent {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        
+        & p {
+          padding-bottom: 0!important;
         }
-    
-        & span {
-          & p { margin-bottom: var(--margin--p); }
-          & p:last-child { margin-bottom: 0!important; }
+
+        @media only screen and (max-width: 563px) {
+          flex-direction: column;
         }
+      }
+
+      .rmBottomMargin {
+        display: inline-block;
+        margin-bottom: var(--margin--p);
+        
+        & * { margin-bottom: 0px!important; }
+      }
     
-          .rmBottomMargin {
-            display: inline-block;
-            margin-bottom: var(--margin--p);
-      
-            & * { margin-bottom: 0px!important; }
-          }
+    .noBottomPadding {
+      padding-bottom: 0!important;
+    }
+    
+    /*
+          
     
           .center {
             display: flex;
@@ -95,7 +121,8 @@ export const GlobalStyles = createGlobalStyle`
             align-items: center;
             padding-bottom: 80px;
           }
-          
+   
+        */  
   } 
   
   .box {
@@ -105,12 +132,4 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
   
-  * {
-    padding: 0;
-    margin: 0;
-  }
-
-  a:link {
-    text-decoration: none;
-  }
 `

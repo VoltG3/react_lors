@@ -1,32 +1,32 @@
-import styled from "styled-components";
 import { useTranslation } from 'react-i18next'
-import BTN from "../../../materials/BTN";
-import BtnVariant04 from "../../BTN_variant04";
+import BTN_header from '../../Button/BTN_header'
+import i18n from "i18next";
+
 function SliderTextcontent() {
     const [t] = useTranslation(["sections"])
+    const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
+    const h1 = i18n.language === 'ru' ? 'textcontent--header1--rus' : 'textcontent--header1'
 
     return (
-      <StyledSliderTextcontent>
+      <div style={{
+          position: 'absolute',
+          zIndex: '3',
+          display: 'flex',
+          flexDirection: 'column',
+          maxWidth: '1440px',
+          width: '100%',
+          height: 'inherit'
+      }}>
           <div style={{ margin: '67px 0 0 var(--margin--v1)' }}>
-              <p className={"textcontent--header--firstline"}>{ t("sections:section_header_part05") }</p>
-              <p className={"textcontent--header--secondline"}>{ t("sections:section_header_part06") }</p>
-              <BTN />
+              <p className={ h1 }>{ t("sections:section_header_part05") }</p>
+              <p className={ paragraph }>{ t("sections:section_header_part06") }</p>
 
               <div style={{ margin: '115px 0 0 0'}}>
-                  <BtnVariant04 />
+                  <BTN_header />
               </div>
           </div>
-      </StyledSliderTextcontent>
+      </div>
     )
 }
-
-const StyledSliderTextcontent = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 1440px;
-      width: 100%;
-      height: inherit;
-  border: solid 1px green;
-`
 
 export default SliderTextcontent

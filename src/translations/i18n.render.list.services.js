@@ -4,7 +4,10 @@ import { useTranslation } from 'react-i18next'
 const StyledListContainer = styled.div`
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: 100%;
+  //padding: 60px 40px 60px 40px;
+  background-color: var(--color--none);
   
   & div {
     display: flex;

@@ -7,13 +7,14 @@ export const GlobalColorStyles = createGlobalStyle`
       --color--secondary: #152F3F;
       --color--list: #FBF9F9;
       --color--highlight: #F31850;
-      --color--hover: #EF5DA8;
+      --color--palevioletred: #EF5DA8;
       --color--default: #030303;
       --color--none: #FFFFFF;
       --color--temp: #112734;
       --color--paragraph--footer: #828181;
       --color--headercolor: #112734;
-      --color--button: #EDAE0E;
+      --color--yellow: #EDAE0E;
+      --color--background: rgb(214, 214, 214);
       
       --frame: orange;
       

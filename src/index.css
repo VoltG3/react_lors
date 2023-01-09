@@ -1,0 +1,51 @@
+
+@font-face { font-family: "GTWalsheimBold";
+    src: url("./fonts/GTWalsheimBold.eot"); /* IE9*/
+    src: url("./fonts/GTWalsheimBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/GTWalsheimBold.woff2") format("woff2"), /* chrome、firefox */
+    url("./fonts/GTWalsheimBold.woff") format("woff"), /* chrome、firefox */
+    url("./fonts/GTWalsheimBold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("./fonts/GTWalsheimBold.svg#GTWalsheimBold") format("svg"); /* iOS 4.1- */
+}
+
+@font-face { font-family: "GTWalsheimMedium";
+    src: url("./fonts/GTWalsheimMedium.eot"); /* IE9*/
+    src: url("./fonts/GTWalsheimMedium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/GTWalsheimMedium.woff2") format("woff2"), /* chrome、firefox */
+    url("./fonts/GTWalsheimMedium.woff") format("woff"), /* chrome、firefox */
+    url("./fonts/GTWalsheimMedium.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("./fonts/GTWalsheimMedium.svg#GTWalsheimMedium") format("svg"); /* iOS 4.1- */
+}
+
+@font-face { font-family: "GTWalsheimLight";
+    src: url("./fonts/GTWalsheimLight.eot"); /* IE9*/
+    src: url("./fonts/GTWalsheimLight.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/GTWalsheimLight.woff2") format("woff2"), /* chrome、firefox */
+    url("./fonts/GTWalsheimLight.woff") format("woff"), /* chrome、firefox */
+    url("./fonts/GTWalsheimLight.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("./fonts/GTWalsheimLight.svg#GT Walsheim Light") format("svg"); /* iOS 4.1- */
+}
+
+html {
+    /* margin: 0 auto; */
+    /* height: 100%; */
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+    background: rgb(244, 244, 244);
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1.6rem; /* 1.6rem = 16px */
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a:link {
+    text-decoration: none;
+}

@@ -1,5 +1,5 @@
-import LogoColored00 from '../../../assets/img/logo_colored/Lors_colored.svg'
-import LogoTransparent from '../../../assets/img/logo_transparent/Lors_transparent.svg'
+import LogoColored00 from '../../../assets/logo_colored/Lors_colored.svg'
+import LogoTransparent from '../../../assets/logo_transparent/Lors_transparent.svg'
 
 export default function Logo(props) {
     console.log("--->", props.variant)
