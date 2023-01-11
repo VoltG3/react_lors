@@ -10,11 +10,11 @@ function TimesTable() {
 
     return (
         <StyledTimesTable>
-            <div className={"thisTable timesTableDirection timesTableDesktop"}>
+            <div className={"tableSection timesTableDirection timesTableDesktop"}>
                 <TimesDesktop />
             </div>
 
-            <div className={"thisTable timesTableDirection timesTableMobile"}>
+            <div className={"tableSection timesTableDirection timesTableMobile"}>
                 <TimesMobile />
             </div>
         </StyledTimesTable>
@@ -23,6 +23,7 @@ function TimesTable() {
 
 const StyledTimesTable = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
     max-width: 1440px;
         width: 100%;
@@ -31,24 +32,26 @@ const StyledTimesTable = styled.div`
   margin-bottom: 50px;
   //border: solid 1px red;
   
-  .thisTable {
+  .tableSection {
     display: flex;
-      max-width: 1440px;
-          width: 100%;
-          height: auto;
-    //border: solid 3px yellow;
+    width: 100%;
+    height: auto;
+  }
+  
+  @media only screen and (max-width: 922px) {
+    max-width: 900px;
   }
   
   .timesTableDirection { flex-direction: row; }
-  .timesTableDesktop { visibility: visible; }
-  .timesTableMobile { visibility: collapse; }
+  .timesTableDesktop { display: block!important; }
+  .timesTableMobile { display: none!important; }
 }
   
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 992px) {
     & {
       .timesTableDirection { flex-direction: column; }
-      .timesTableDesktop { visibility: collapse; }
-      .timesTableMobile { visibility: visible; }
+      .timesTableDesktop { display: none!important; }
+      .timesTableMobile { display: block!important; }
     }
 `
 

@@ -37,14 +37,16 @@ html {
 body {
     box-sizing: border-box;
     font-size: 1.6rem; /* 1.6rem = 16px */
-    margin: 0;
-    padding: 0;
+   /* overflow-x: hidden;*/
+    /*width: 100vw;
+    height: auto;*/
 }
 
 * {
     padding: 0;
     margin: 0;
 }
+
 
 a:link {
     text-decoration: none;

@@ -11,7 +11,7 @@ import Cookie from './components/Cookie'
 import useWindowDimension from './utils/useWindowDimension'
 
 export default function App() {
-    //console.log(useWindowDimension())
+    console.log(useWindowDimension())
 
     return (
         <div style={{

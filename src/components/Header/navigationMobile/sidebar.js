@@ -2,10 +2,14 @@ import React, {useState} from "react";
 import { slide as Menu } from "react-burger-menu";
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
-import Languages from "../navigationDesktop/languages";
+import LanguagesMobile from "./languages.mobile";
+import i18n from "i18next";
+import {Link04} from "../../../env";
+import BTNSmallMobile from "../../Button/BTNSmallMobile";
 
-export default props => {
-    const [t] = useTranslation(["common"])
+const SideBar = (props) => {
+    const [t] = useTranslation(["common", "covid"])
+    const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
 
     const [isMenuOpen, handleMenu] = useState(false);
     const handleCloseMenu = () => {
@@ -48,7 +52,24 @@ export default props => {
                 <p>{ t("common:contacts") }</p>
             </Link>
 
-            <Languages />
+            <div style={{ width: '100%', height: '1px', backgroundColor: 'white', marginBotom: '20px', marginTop: '20px'}}></div>
+
+            <LanguagesMobile />
+
+            <div style={{ width: '100%', height: '1px', backgroundColor: 'white', marginBotom: '20px', marginTop: '20px'}}></div>
+
+            <div style={{ paddingTop: '5px'}}>
+                <p style={{ color: 'white', letterSpacing: '2px'}} className={ paragraph }>{ t("covid:covid")}</p>
+
+                <div style={{ display: 'flex', justifyContent: 'flex-end', width: '100%'}}>
+                    <a href={ Link04 } target="_blank" rel="noopener noreferrer">
+                        <BTNSmallMobile />
+                    </a>
+                </div>
+            </div>
+
         </Menu>
     );
 };
+
+export default SideBar

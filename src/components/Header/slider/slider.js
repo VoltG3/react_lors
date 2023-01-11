@@ -38,6 +38,10 @@ const SliderContainer = styled.div`
     overflow: hidden;
     position: relative;
     opacity: 0.4;
+
+    @media only screen and (max-width: 922px) {
+      min-height: 281px;
+    }
   }
   
   .slide > div {

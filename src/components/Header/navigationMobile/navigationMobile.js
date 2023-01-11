@@ -10,7 +10,7 @@ function NavigationMobile() {
 
             <div id="page-wrap">
                 <div className={"d"}>
-                    <h1 className={"tmp"}>Logo</h1>
+                    <h1>Logo</h1>
                 </div>
             </div>
         </>

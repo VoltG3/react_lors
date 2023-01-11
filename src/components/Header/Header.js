@@ -34,16 +34,15 @@ function Header() {
     return (
         <StyledHeader>
             <div className={"navigation desktop"}>
-                <NavigationDesktop />
+               <NavigationDesktop />
             </div>
 
             <div className={"navigation mobile"}
                  ref={ menuRef } >
-                <NavigationMobile />
+               <NavigationMobile />
             </div>
 
-            {/*<Slider />*/}
-            <Slider />
+           <Slider />
         </StyledHeader>
     )
 }
@@ -52,7 +51,8 @@ const StyledHeader = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-    max-width: 100vw;
+  box-sizing: border-box;
+  /*  max-width: 100vw;*/
         width: 100%;
         height: auto;
 
@@ -62,12 +62,12 @@ const StyledHeader = styled.div`
       width: inherit;
       height: inherit;
   }
-    .desktop { visibility: visible; }
-    .mobile { visibility: collapse; }
+    .desktop { display: block!important; }
+    .mobile { display: none!important; }
   
   @media only screen and (max-width: 922px) {
-    .desktop { visibility: collapse; }
-    .mobile { visibility: visible; }
+    .desktop { display: none!important; }
+    .mobile { display: block!important; }
   }
 `
 

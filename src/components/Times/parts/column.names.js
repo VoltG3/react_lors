@@ -52,10 +52,17 @@ const StyledColumnNames = styled.div`
     display: flex;
     flex-direction: column;
     max-width: 270px;
-    min-width: 270px;
+    min-width: 100px;
     width: 100%;
     height: auto;
     //border: solid 1px red;
+
+    @media only screen and (max-width: 922px) {
+    
+      & p {
+        font-size: 12px!important;
+      }
+    }
     
     .innerThisName {
       display: flex;

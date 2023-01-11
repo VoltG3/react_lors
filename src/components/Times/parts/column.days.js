@@ -49,9 +49,16 @@ const StyledColumnDays = styled.div`
     display: flex;
     flex-direction: column;
     max-width: 160px;
-    min-width: 160px;
+    min-width: 100px;
     width: 100%;
-    height: auto;from "../times.styles";
+    height: auto;
+
+    @media only screen and (max-width: 922px) {
+      
+      & p {
+        font-size: 12px!important;
+      }
+    }
 
     .innerThisWeek {
       display: flex;

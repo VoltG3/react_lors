@@ -10,7 +10,7 @@ function ColumnPublic() {
 
     return (
         <StyledColumnPublic>
-            <div className={"thisHoursSecondPublic"}>
+            <div className={"thisHoursPublic"}>
                 <StyledThisCell className={"thisCell_odd"}>
                     <div style={{ display: 'flex', flexDirection: 'column'}}>
                         <JsonData textcontent={ languageDataType  } section={"public access"} partId={"10"}/>
@@ -54,15 +54,23 @@ function ColumnPublic() {
 
 const StyledColumnPublic = styled.div`
   
-  .thisHoursSecondPublic {
+  .thisHoursPublic {
     display: flex;
     flex-direction: column;
     //justify-content: center!important;
     align-items: center;
     max-width: 270px;
-    min-width: 270px;
+    min-width: 100px;
     width: 100%;
     height: auto;
+
+    @media only screen and (max-width: 922px) {
+  
+      min-width: auto;
+      & p {
+        font-size: 12px!important;
+      }
+    }
 
     .innerThisHoursPublic {
       display: flex;

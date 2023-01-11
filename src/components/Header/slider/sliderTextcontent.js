@@ -21,7 +21,7 @@ function SliderTextcontent() {
               <p className={ h1 }>{ t("sections:section_header_part05") }</p>
               <p className={ paragraph }>{ t("sections:section_header_part06") }</p>
 
-              <div style={{ margin: '115px 0 0 0'}}>
+              <div style={{ margin: '80px 0 0 0'}}>
                   <BTN_header />
               </div>
           </div>

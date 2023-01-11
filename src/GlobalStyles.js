@@ -64,6 +64,7 @@ export const GlobalStyles = createGlobalStyle`
     flex-direction: column;
     align-items: center;
       max-width: 1440px;
+      min-width: auto;
           width: 100%;
           height: auto;
     box-sizing: border-box;
@@ -73,7 +74,7 @@ export const GlobalStyles = createGlobalStyle`
             var(--size--padding80)  // Bottom
             var(--size--padding20); // Left
     //background-color: var(--color--background);
-    
+ 
       & h1 {
         align-self: flex-start;
         padding-bottom: var(--size--padding30);
@@ -111,6 +112,7 @@ export const GlobalStyles = createGlobalStyle`
     .noBottomPadding {
       padding-bottom: 0!important;
     }
+
     
     /*
           

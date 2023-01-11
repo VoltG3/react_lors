@@ -14,6 +14,11 @@ export const StyledTimesSection = styled.div`
   .thisCell_even {
     background: var(--color--none);
   }
+
+  @media only screen and (max-width: 922px) {
+    
+  }
+  
 `
 
 export const StyledTimesHeader = styled.div`

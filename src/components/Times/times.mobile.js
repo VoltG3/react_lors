@@ -12,7 +12,7 @@ export default function TimesMobile () {
             <StyledTimesSection>
                 <HeaderPublic />
 
-                <div className={"thisSection"}>
+                <div style={{ display: 'flex', flexDirection: 'row' }}>
                     <ColumnDays />
                     <ColumnPublic />
                     <ColumnNames />
@@ -22,7 +22,7 @@ export default function TimesMobile () {
             <StyledTimesSection>
                 <HeaderPrivat />
 
-                <div className={"thisSection"}>
+                <div style={{ display: 'flex', flexDirection: 'row' }}>
                     <ColumnDays />
                     <ColumnPrivat />
                     <ColumnNames />
