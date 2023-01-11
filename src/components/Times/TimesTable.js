@@ -23,6 +23,7 @@ function TimesTable() {
 
 const StyledTimesTable = styled.div`
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
     max-width: 1440px;
@@ -39,17 +40,18 @@ const StyledTimesTable = styled.div`
   }
   
   @media only screen and (max-width: 922px) {
-    max-width: 900px;
+    //max-width: 900px;
+    flex-direction: column;
   }
   
-  .timesTableDirection { flex-direction: row; }
+  .timesTableDirection { flex-direction: row!important; }
   .timesTableDesktop { display: block!important; }
   .timesTableMobile { display: none!important; }
 }
   
   @media only screen and (max-width: 992px) {
     & {
-      .timesTableDirection { flex-direction: column; }
+      .timesTableDirection { flex-direction: column!important; }
       .timesTableDesktop { display: none!important; }
       .timesTableMobile { display: block!important; }
     }

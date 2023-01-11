@@ -12,6 +12,7 @@ import LineLang from "../components/lineLang";
 import TimesTable from "../components/Times/TimesTable";
 import BTNSmall from "../components/Button/BTNSmall";
 import BTNSmallNext from "../components/Button/BTNSmallNext";
+import OpeningHours from "../OpeninHours/OpeningHours";
 
 const StyledImg = styled.div`
   display: flex;
@@ -57,7 +58,8 @@ export default function Contacts() {
 
                 </div>
 
-                <TimesTable />
+              {/*  <TimesTable />*/}
+                <OpeningHours />
 
                 <StyledImg>
                     <div>
