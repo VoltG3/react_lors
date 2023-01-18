@@ -13,6 +13,7 @@ import TimesTable from "../components/Times/TimesTable";
 import BTNSmall from "../components/Button/BTNSmall";
 import BTNSmallNext from "../components/Button/BTNSmallNext";
 import OpeningHours from "../OpeninHours/OpeningHours";
+import ImgSetTwoContacts from "../components/Image/ImgSetTwoContacts";
 
 const StyledImg = styled.div`
   display: flex;
@@ -61,7 +62,9 @@ export default function Contacts() {
               {/*  <TimesTable />*/}
                 <OpeningHours />
 
-                <StyledImg>
+                <ImgSetTwoContacts />
+
+                {/*<StyledImg>
                     <div>
                         <Img img={ image10 } width={"770"} height={"auto"} />
                     </div>
@@ -69,7 +72,7 @@ export default function Contacts() {
                     <div>
                         <Img img={ image09 } width={"670"} height={"auto"} />
                     </div>
-                </StyledImg>
+                </StyledImg>*/}
 
                 <span style={{
                     display: 'flex',

@@ -5,9 +5,15 @@ const StyledListContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  
   margin-bottom: 80px;
 
+  box-shadow: var(--box--shadow);
+
+  &:hover {
+    transition: box-shadow .3s linear;
+    box-shadow: var(--box--hover);
+  }
+  
   & div {
     display: flex;
     align-items: center;
@@ -29,6 +35,7 @@ const StyledListContainer = styled.div`
 
   & p {
     margin-top: 5px;
+    margin-right: 30px;
     margin-bottom: 5px;
     margin-left: 30px;
   }

@@ -12,3 +12,11 @@ export default function Line() {
         </>
     )
 }
+
+/*
+*
+* &:hover {
+      transition: box-shadow .3s linear;
+      box-shadow: var(--box--hover);
+    }
+* */

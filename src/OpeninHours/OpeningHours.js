@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 import { useTranslation } from 'react-i18next'
 import ColumnDays from "./column.days";
+import ColumnName from "./column.name";
+import ColumnPublic from "./column.public";
+import ColumnPrivat from "./column.privat";
 
 const OpeningHours = () => {
     const [t] = useTranslation(["times"])
@@ -26,8 +29,8 @@ const OpeningHours = () => {
 
                     <StyledOpeningHoursColumns>
                         { DataColumnDays }
-                        {/*<ColumnDays />*/}
-                        {/*<ColumnDays />*/}
+                        <ColumnPublic />
+                        <ColumnName />
                     </StyledOpeningHoursColumns>
                 </div>
 
@@ -35,9 +38,9 @@ const OpeningHours = () => {
                     { HeaderPrivat }
 
                     <StyledOpeningHoursColumns>
-                        <p>Column 1</p>
-                        <p>Column 2</p>
-                        <p>Column 3</p>
+                        {/*<p>Column 1</p>*/}
+                        <ColumnPrivat />
+                        {/*<p>Column 3</p>*/}
                     </StyledOpeningHoursColumns>
                 </div>
             </div>
@@ -47,9 +50,9 @@ const OpeningHours = () => {
                     { HeaderPublic }
 
                     <StyledOpeningHoursColumns>
-                        <p>Column 1</p>
-                        <p>Column 2</p>
-                        <p>Column 3</p>
+                        { DataColumnDays }
+                        <ColumnPublic />
+                        <ColumnName />
                     </StyledOpeningHoursColumns>
                 </div>
 
@@ -57,9 +60,9 @@ const OpeningHours = () => {
                     { HeaderPrivat }
 
                     <StyledOpeningHoursColumns>
-                        <p>Column 1</p>
-                        <p>Column 2</p>
-                        <p>Column 3</p>
+                        { DataColumnDays }
+                        <ColumnPrivat />
+                        <ColumnName />
                     </StyledOpeningHoursColumns>
                 </div>
             </div>
@@ -109,7 +112,9 @@ const StyledOpeningHoursColumns = styled.div`
   .column {
     display: flex;
     flex-direction: column;
-      width: 33%;
+    max-width: 100%;
+    min-width: 33%;
+      width: 100%;
       height: auto;
     border: solid 1px blue;
     
@@ -119,6 +124,27 @@ const StyledOpeningHoursColumns = styled.div`
       align-items: center;
         width: 100%;
         height: 40px;
+      border: solid 2px red;
+    }
+    
+    .cell--dobbel {
+      display: flex;
+      flex-direction: column;
+      //padding-left: 10px;
+      //background-color: burlywood;
+    }
+    
+    .cell--tripple {
+      
+      display: flex;
+      flex-direction: row;
+        width: 100%;
+        height: auto;
+      
+        & div { display: flex; }
+        & div:nth-child(1) { display: flex; width: 45%; justify-content: flex-end; }
+        & div:nth-child(2) { display: flex; width: 30px; justify-content: center!important;  border: solid 1px red; }
+        & div:nth-child(3) { display: flex; width: 45%;}
     }
     
     & div:nth-child(odd).cell {

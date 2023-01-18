@@ -26,6 +26,8 @@
     url("./fonts/GTWalsheimLight.svg#GT Walsheim Light") format("svg"); /* iOS 4.1- */
 }
 
+/* https://codesandbox.io/s/qw4x9?file=/src/components/App.js */
+
 html {
     /* margin: 0 auto; */
     /* height: 100%; */

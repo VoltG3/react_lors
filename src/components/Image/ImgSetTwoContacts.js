@@ -1,38 +1,42 @@
 import styled from 'styled-components'
 
 import Img from './Img'
-import {image06, image07, image09, image10} from '../../env'
+import { image09, image10 } from '../../env'
 
-const StyledImgSetTwo = styled.div`
+const ImgSetTwoContacts = () => {
+
+    return (
+        <StyledImgSetC>
+            <Img img={ image10 } maxWidth={'770'} verticalMargin={"--margin--img--vertical"} />
+            <Img img={ image09 } maxWidth={'670'} verticalMargin={"--margin--img--vertical"} />
+        </StyledImgSetC>
+    )
+}
+
+const StyledImgSetC = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
     width: 100%;
     height: auto;
-  gap: 30px;
-  margin: var(--margin--img--vertical)
-          var(--margin--img--horisontal) // !!!!!!!!
-          var(--margin--img--vertical)
-          var(--margin--img--horisontal); // !!!!!!!!!
-  
-  .thisBox {
-    display: flex;
-    flex-direction: row;
+  //gap: 30px;
+  padding-top: 25px;
 
-    @media only screen and (max-width: 600px) {
-      & {
-        flex-direction: column;
-      }
+    :root {
+      --first--img--maxWidth: 770;
+      --second--img--maxWidth: 367;
+    }
+  
+  & img {
+    background-size: cover;
+  }
+
+  @media only screen and (max-width: 700px) {
+    & {
+      flex-direction: column;
     }
   }
 `
 
-export default function ImgSetTwoContacts() {
-    return (
-        <StyledImgSetTwo className={"box"}>
-            <div className={"thisBox"}>
-                <Img img={ image10 } width={"770"} height={"auto"} verticalMargin={"--margin--img--vertical"} />
-                <Img img={ image09 } width={"670"} height={"auto"} verticalMargin={"--margin--img--vertical"} />
-            </div>
-        </StyledImgSetTwo>
-    )
-}
+export default ImgSetTwoContacts

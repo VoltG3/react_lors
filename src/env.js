@@ -1,6 +1,7 @@
 import { stockDataOther } from './components/JSON/dataOther'
 import { stockDataLVRU } from './components/JSON/dataLVRU'
 import { stockDataEN } from './components/JSON/dataEN'
+
 import Img01 from './assets/images/01.jpg'
 import Img02 from './assets/images/02.jpg'
 import Img03 from './assets/images/03.jpg'
@@ -17,6 +18,7 @@ import Slider02 from './assets/slider/slider02.png'
 export const DATA_OTHER = stockDataOther
 export const DATA_LVRU = stockDataLVRU
 export const DATA_EN = stockDataEN
+
 export const image01 = Img01
 export const image02 = Img02
 export const image03 = Img03

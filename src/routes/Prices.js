@@ -44,8 +44,9 @@ export default function Prices() {
                 </div>
             </span>
 
-            <I18nRenderListPrices variant={'LIST_PRICES:list_prices01'} showHeader={'firstHeader'} />
-            <I18nRenderListPrices variant={'LIST_PRICES:list_prices02'} showHeader={'secondHeader'} />
+            <I18nRenderListPrices variant={'LIST_PRICES:list_prices01'} headerOf={'listWithoutReference'} />
+            <div style={{ width: '100%', height: '1px', paddingBottom: '30px'}}></div>
+            <I18nRenderListPrices variant={'LIST_PRICES:list_prices02'} headerOf={'listWithReference'} />
             <Img img={ image08 } width={"1280"} height={"auto"} verticalMargin={"--margin--img--vertical"} />
         </div>
     )

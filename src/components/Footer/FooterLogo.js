@@ -49,8 +49,9 @@ const StyledFooterLogo = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
       max-width: 1440px;
-      width: 100%;
+      width: calc(100% - 40px);
       height: auto;
     //border: solid 1px red;
     

@@ -4,7 +4,9 @@ export default function Img(props){
     return (
         <img src={ props.img } alt="img"
              style={{
-                 maxWidth: props.width + 'px',
+                 maxWidth: props.maxWidth != null
+                     ? props.maxWidth + 'px'
+                     : 'auto',
                  width: '100%',
                  height: props.height === 'auto'
                      ? '100%'

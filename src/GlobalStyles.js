@@ -80,6 +80,8 @@ export const GlobalStyles = createGlobalStyle`
         padding-bottom: var(--size--padding30);
       } 
     
+      //& p { word-break: break-all; }
+    
       & span {
         & p { padding-bottom: var(--size--padding20); }
         & p:last-child { padding-bottom: 0!important; }
@@ -114,24 +116,41 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     
-    /*
-          
+   .shadow {
+     box-shadow: var(--box--shadow);
+
+     &:hover {
+       transition: box-shadow .3s linear;
+       box-shadow: var(--box--hover);
+     }
+   }
     
-          .center {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 80px;
-          }
-   
-        */  
-  } 
+  }
+
+/*  .img--set--to {
+    width: 100%;
+    height: auto;
+    padding-top: 25px;
+    //padding: 0 40px 0 40px;
+    box-sizing: border-box;
+    border: solid 1px red;
+
+    & img {
+      background-size: cover;
+    }
+  }
   
   .box {
         width: 100%;
         height: auto;
-        padding: 0 40px 0 40px;
+        padding-top: 25px;
+        //padding: 0 40px 0 40px;
         box-sizing: border-box;
+      border: solid 1px red;
+    
+    & img {
+      background-size: cover;
     }
+    }*/
   
 `

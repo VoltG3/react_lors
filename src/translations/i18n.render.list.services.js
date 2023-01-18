@@ -8,6 +8,13 @@ const StyledListContainer = styled.div`
   width: 100%;
   //padding: 60px 40px 60px 40px;
   background-color: var(--color--none);
+  box-shadow: var(--box--shadow);
+
+  &:hover {
+    transition: box-shadow .3s linear;
+    box-shadow: var(--box--hover);
+  }
+  
   
   & div {
     display: flex;

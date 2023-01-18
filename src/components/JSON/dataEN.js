@@ -8,7 +8,7 @@ export const stockDataEN = [
             },
             {
                 id : "02",
-                part : "12:00am - 7:pm"
+                part : "12:00am - 7:00pm"
             },
             {
                 id : "03",

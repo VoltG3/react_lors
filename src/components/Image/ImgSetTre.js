@@ -3,46 +3,36 @@ import styled from 'styled-components'
 import Img from './Img'
 import { image03, image04, image05 } from '../../env'
 
+const ImgSetTre = () => {
 
-function ImgSetTre() {
     return (
-        <StyledImgSetTree>
-            <div className={"firstImg"}>
-                <Img img={ image05 } width={"402"} height={"auto"} />
-            </div>
-
-            <div className={"firstImg"}>
-                <Img img={ image03 } width={"402"} height={"auto"} />
-            </div>
-
-            <div className={"firstImg"}>
-                <Img img={ image04 } width={"402"} height={"auto"} />
-            </div>
-        </StyledImgSetTree>
+        <StyledImgSetTre>
+            <Img img={ image05 } width={"100%"} height={"auto"} />
+            <Img img={ image03 } width={"100%"} height={"auto"} />
+            <Img img={ image04 } width={"100%"} height={"auto"} />
+        </StyledImgSetTre>
     )
 }
 
-const StyledImgSetTree = styled.div`
+const StyledImgSetTre = styled.div`
   display: flex;
-  justify-content: center;
   flex-direction: row;
-      width: 100%;
-      height: auto;
+  justify-content: center;
+  box-sizing: border-box;
+    width: 100%;
+    height: auto;
   gap: 30px;
-  margin: var(--margin--img--vertical)
-          0
-          var(--margin--img--vertical)
-          0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  & img {
+    width: 33%;
+    background-size: cover;
+  }
+
   @media only screen and (max-width: 600px) {
     & {
-      align-items: center;
       flex-direction: column;
-    }
-    
-    .firstImg {
-      max-width: 300px;
-          width: 100%;
-          height: auto;
     }
   }
 `
