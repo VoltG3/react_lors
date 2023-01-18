@@ -6,6 +6,7 @@ import Img from '../components/Image/Img'
 
 import Tables from '../components/Tables/Tables'
 import LineLang from '../components/lineLang'
+import GetData from "../components/JSON/getData";
 
 export default function Home() {
     const [t] = useTranslation(["sections"])
@@ -17,6 +18,8 @@ export default function Home() {
             <h1 className={ h1 }>{ t("sections:section_home_header") }</h1>
 
             <LineLang />
+
+            <GetData />
 
             <span>
                  <p className={ paragraph }>{ t("sections:section_home_part03") }</p>
