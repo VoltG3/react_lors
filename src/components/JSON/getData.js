@@ -1,11 +1,31 @@
+import React, { useEffect } from "react";
+import axios from "axios";
+
 import styled from 'styled-components'
+
 import { localData } from "./data/localData";
 import localJsonData from './data/loacalJsonData.json'
 
 function GetData() {
+    const [tempData, setTempData] = React.useState([]);
+
+    useEffect(() => {
+        axios.get("./data.json").then((res) => setTempData(res.data));
+    });
 
     return (
         <StyledDataContainer>
+            <div>
+                <h3>public data.json</h3>
+                <hr />
+                {tempData &&
+                    tempData.map(({ name, id }) => (
+                        <div key={id} className="col">
+                            <strong>{name}</strong>
+                        </div>
+                    ))}
+                <hr />
+            </div>
 
             <div>
                 <h3>SRC localJsonData.json</h3>
