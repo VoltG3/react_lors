@@ -1,10 +1,23 @@
 import styled from 'styled-components'
 import { localData } from "./data/localData";
+import localJsonData from './data/loacalJsonData.json'
 
 function GetData() {
 
     return (
         <StyledDataContainer>
+
+            <div>
+                <h3>SRC localJsonData.json</h3>
+                <hr />
+                {localJsonData &&
+                    localJsonData.map(({ name, id }) => (
+                        <div key={id} className="col">
+                            <strong>{name}</strong>
+                        </div>
+                    ))}
+            </div>
+
             <div>
                 <h3>SRC localData.js</h3>
                 <hr />
