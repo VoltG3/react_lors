@@ -1,7 +1,7 @@
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
 
-import { JsonData } from '../JSON/JsonData'
+import { JsonData } from '../JSON/data/JsonData'
 import {DATA_LVRU, DATA_EN } from '../../env'
 
 import TableHoursItem from './table.hours.item'

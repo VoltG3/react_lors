@@ -59,29 +59,29 @@ export const stockDataLVRU = [
                     to : "19"
                 },
                 public : {
-                    staff_1 : {
+                    line_01 : {
                         from : "12",
                         to : "13"
                     },
-                    staff_2 : {
+                    line_02 : {
                         from : "13",
                         to : "15"
                     },
-                    staff_3 : {
+                    personal_3 : {
                         from : "",
                         to : ""
                     }
                 },
                 privat : {
-                    staff_1 : {
+                    line_01 : {
                         from : "15",
                         to : "17"
                     },
-                    staff_2 : {
+                    line_02 : {
                         from : "18",
                         to : "19"
                     },
-                    staff_3: {
+                    personal_3: {
                         from : "",
                         to : ""
                     }

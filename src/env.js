@@ -1,6 +1,6 @@
-import { stockDataOther } from './components/JSON/dataOther'
-import { stockDataLVRU } from './components/JSON/dataLVRU'
-import { stockDataEN } from './components/JSON/dataEN'
+import { stockDataOther } from './components/JSON/data/dataOther'
+import { stockDataLVRU } from './components/JSON/data/dataLVRU'
+import { stockDataEN } from './components/JSON/data/dataEN'
 
 import Img01 from './assets/images/01.jpg'
 import Img02 from './assets/images/02.jpg'

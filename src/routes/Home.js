@@ -7,6 +7,7 @@ import Img from '../components/Image/Img'
 import Tables from '../components/Tables/Tables'
 import LineLang from '../components/lineLang'
 import GetData from "../components/JSON/getData";
+import GetOpeningHours from "../components/JSON/getOpeningHours";
 
 export default function Home() {
     const [t] = useTranslation(["sections"])
@@ -19,7 +20,7 @@ export default function Home() {
 
             <LineLang />
 
-            <GetData />
+            <GetOpeningHours />
 
             <span>
                  <p className={ paragraph }>{ t("sections:section_home_part03") }</p>

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { StyledThisCell }from "../times.styles";
 
-import { JsonData } from '../../JSON/JsonData'
+import { JsonData } from '../../JSON/data/JsonData'
 import { DATA_LVRU, DATA_EN } from '../../../env'
 import i18n from "i18next";
 

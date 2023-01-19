@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { JsonData } from '../../JSON/JsonData'
+import { JsonData } from '../../JSON/data/JsonData'
 import { DATA_OTHER } from '../../../env'
 import {StyledThisCell} from "../times.styles";
 

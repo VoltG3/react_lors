@@ -1,53 +1,43 @@
-import React, { useEffect } from "react";
-import axios from "axios";
-
 import styled from 'styled-components'
-
-import { localData } from "./data/localData";
-import localJsonData from './data/loacalJsonData.json'
+import { FetchData } from './fetchData'
+import TransformData from './transformData'
 
 function GetData() {
-    const [tempData, setTempData] = React.useState([]);
+    const tempData = FetchData()
 
-    useEffect(() => {
-        axios.get("./data.json").then((res) => setTempData(res.data));
-    });
+
 
     return (
         <StyledDataContainer>
             <div>
-                <h3>public data.json</h3>
-                <hr />
                 {tempData &&
-                    tempData.map(({ name, id }) => (
-                        <div key={id} className="col">
-                            <strong>{name}</strong>
+                    tempData.map(({ privat_appointment, public_appointment, opening_hours, id }) => (
+                        <div key={ id } className="col">
+                            <p>id : { id }</p>
+                            <p>opening : { TransformData( opening_hours ) }</p>
+
+                            {
+                                tempData && privat_appointment.map((item, i) => (
+                                   <div key={i}>
+                                       <p>{item.line_01}</p>
+                                       <p>{item.line_02}</p>
+                                   </div>
+                               ))
+                            }
+
+                            {
+                                tempData && public_appointment.map((item, i) => (
+                                    <div key={i}>
+                                        <p>{item.line_01}</p>
+                                        <p>{item.line_02}</p>
+                                    </div>
+                                ))
+                            }
                         </div>
                     ))}
                 <hr />
             </div>
 
-            <div>
-                <h3>SRC localJsonData.json</h3>
-                <hr />
-                {localJsonData &&
-                    localJsonData.map(({ name, id }) => (
-                        <div key={id} className="col">
-                            <strong>{name}</strong>
-                        </div>
-                    ))}
-            </div>
-
-            <div>
-                <h3>SRC localData.js</h3>
-                <hr />
-                {localData &&
-                    localData.map(({ name, id }) => (
-                        <div key={id} className="col">
-                            <strong>{name}</strong>
-                        </div>
-                    ))}
-            </div>
         </StyledDataContainer>
     )
 }

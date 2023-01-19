@@ -59,7 +59,7 @@ export default function Contacts() {
 
                 </div>
 
-              {/*  <TimesTable />*/}
+             <TimesTable />
                 <OpeningHours />
 
                 <ImgSetTwoContacts />
