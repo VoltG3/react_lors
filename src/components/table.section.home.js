@@ -1,15 +1,15 @@
 import styled from 'styled-components'
 
-import TableHoursController from './table.hours.controller'
-import TableContracts from './table.contracts'
-import TableAccessible from './table.accessible'
+import TableHours from './TableHome/table.hours'
+import TableContracts from './TableHome/table.contracts'
+import TableAccessible from './TableHome/table.accessible'
 
-const Tables = () => {
+const TableSectionHome = () => {
 
     return (
         <StyledTablesHome>
-            <div className={"tableContentContainer"}><TableHoursController /></div>
-            <div className={"tableContentContainer"}> <TableContracts /></div>
+            <div className={"tableContentContainer"}><TableHours /></div>
+            <div className={"tableContentContainer"}><TableContracts /></div>
             <div className={"tableContentContainer"}><TableAccessible /></div>
         </StyledTablesHome>
     )
@@ -51,4 +51,4 @@ const StyledTablesHome = styled.div`
   }
 `
 
-export default Tables
+export default TableSectionHome

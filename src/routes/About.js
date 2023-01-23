@@ -4,7 +4,7 @@ import { I18nRenderListServices } from '../translations/i18n.render.list.service
 
 import ImgSetTwo from '../components/Image/ImgSetTwo'
 import ImgSetTre from '../components/Image/ImgSetTre'
-import LineLang from "../components/lineLang";
+import LineLang from "../components/line.lang";
 
 export default function About() {
     const [t] = useTranslation(["common", "sections"])

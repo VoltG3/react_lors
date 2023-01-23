@@ -9,7 +9,7 @@ export const FetchData = () => {
             .get("./data.json")
             .then((res) => setData(res.data))
             .catch(err => console.error("[ CERR ]", err))
-    }, []); console.log("[   JSON ]", data)
+    }, []); //console.log("[   JSON ]", data)
 
     return data
 }

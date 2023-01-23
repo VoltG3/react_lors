@@ -9,7 +9,7 @@ import Logo05 from '../../assets/logo_colored/Seesam_colored.png'
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
 
-import Line from './table.line'
+import LineShort from '../line.short'
 
 function TableContracts() {
     const [t] = useTranslation(["common"])
@@ -20,7 +20,7 @@ function TableContracts() {
         <StyledContainer>
            <p className={ tableHeader }>{ t("common:contracts01") }</p>
 
-           <Line />
+           <LineShort />
 
            <p className={ paragraphTableItem }>{ t("common:contracts02")}</p>
 
@@ -39,10 +39,6 @@ function TableContracts() {
 const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
-    //max-width: 600px;
-    //    width: 100%;
-    //max-height: 180px;
-    //    height: 100%;
   
   .logoSquare {
     display: flex;

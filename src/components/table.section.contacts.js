@@ -1,25 +1,16 @@
 import styled from 'styled-components'
 import { useTranslation } from 'react-i18next'
-import ColumnDays from "./column.days";
-import ColumnName from "./column.name";
-import ColumnPublic from "./column.public";
-import ColumnPrivat from "./column.privat";
 
-const OpeningHours = () => {
+import DataColumnNames from './TableContacts/Columns/DataColumnNames'
+import DataColumnPublic from './TableContacts/Columns/DataColumnPublic'
+import DataColumnPrivat from './TableContacts/Columns/DataColumnPrivat'
+import { DataColumnDays } from './TableContacts/Columns/DataColumnDays'
+
+const TableSectionContacts = () => {
     const [t] = useTranslation(["times"])
 
-    const HeaderPublic = <StyledOpeningHoursHeader><p className={"textcontent--list--header"}>{ t("times:times02")}</p></StyledOpeningHoursHeader>
-    const HeaderPrivat = <StyledOpeningHoursHeader><p className={"textcontent--list--header"}>{ t("times:times03")}</p></StyledOpeningHoursHeader>
-
-    const DataColumnDays = <ColumnDays
-        days={[
-            `${ t("times:times04") }`,
-            `${ t("times:times05") }`,
-            `${ t("times:times06") }`,
-            `${ t("times:times07") }`,
-            `${ t("times:times08") }`
-        ]}
-    />
+    const HeaderPublic = <StyledOpeningHoursHeader><p className={"textcontent--list--header"}>{ t("times:times01")}</p></StyledOpeningHoursHeader>
+    const HeaderPrivat = <StyledOpeningHoursHeader><p className={"textcontent--list--header"}>{ t("times:times02")}</p></StyledOpeningHoursHeader>
 
     return (
         <StyledOpeningHoursContainer>
@@ -28,9 +19,9 @@ const OpeningHours = () => {
                     { HeaderPublic }
 
                     <StyledOpeningHoursColumns>
-                        { DataColumnDays }
-                        <ColumnPublic />
-                        <ColumnName />
+                        <DataColumnDays />
+                        <DataColumnPublic />
+                        <DataColumnNames />
                     </StyledOpeningHoursColumns>
                 </div>
 
@@ -38,9 +29,7 @@ const OpeningHours = () => {
                     { HeaderPrivat }
 
                     <StyledOpeningHoursColumns>
-                        {/*<p>Column 1</p>*/}
-                        <ColumnPrivat />
-                        {/*<p>Column 3</p>*/}
+                        <DataColumnPrivat />
                     </StyledOpeningHoursColumns>
                 </div>
             </div>
@@ -50,9 +39,9 @@ const OpeningHours = () => {
                     { HeaderPublic }
 
                     <StyledOpeningHoursColumns>
-                        { DataColumnDays }
-                        <ColumnPublic />
-                        <ColumnName />
+                        <DataColumnDays />
+                        <DataColumnPublic />
+                        <DataColumnNames />
                     </StyledOpeningHoursColumns>
                 </div>
 
@@ -60,9 +49,9 @@ const OpeningHours = () => {
                     { HeaderPrivat }
 
                     <StyledOpeningHoursColumns>
-                        { DataColumnDays }
-                        <ColumnPrivat />
-                        <ColumnName />
+                        <DataColumnDays />
+                        <DataColumnPrivat />
+                        <DataColumnNames />
                     </StyledOpeningHoursColumns>
                 </div>
             </div>
@@ -141,10 +130,10 @@ const StyledOpeningHoursColumns = styled.div`
         width: 100%;
         height: auto;
       
-        & div { display: flex; }
-        & div:nth-child(1) { display: flex; width: 45%; justify-content: flex-end; }
+        & div { display: flex; border: solid 1px red; }
+        & div:nth-child(1) { display: flex; width: 70px; justify-content: flex-end; }
         & div:nth-child(2) { display: flex; width: 30px; justify-content: center!important;  border: solid 1px red; }
-        & div:nth-child(3) { display: flex; width: 45%;}
+        & div:nth-child(3) { display: flex; width: 70px; justify-content: flex-end; }
     }
     
     & div:nth-child(odd).cell {
@@ -157,4 +146,4 @@ const StyledOpeningHoursColumns = styled.div`
   }
 `
 
-export default OpeningHours
+export default TableSectionContacts

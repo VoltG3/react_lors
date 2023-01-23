@@ -4,7 +4,7 @@ import { I18nRenderListInformation } from '../translations/i18n.render.list.info
 
 import {image02, Link03} from '../env'
 import Img from '../components/Image/Img'
-import LineLang from "../components/lineLang";
+import LineLang from "../components/line.lang";
 import {Link} from "react-router-dom";
 import BTNSmall from "../components/Button/BTNSmall";
 

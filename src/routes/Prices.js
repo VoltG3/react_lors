@@ -7,7 +7,7 @@ import Img from '../components/Image/Img'
 
 import { Link } from 'react-router-dom'
 import BTNSmall from '../components/Button/BTNSmall'
-import LineLang from "../components/lineLang";
+import LineLang from "../components/line.lang";
 
 
 

@@ -4,29 +4,18 @@ import '../translations/i18n'
 import { useTranslation } from 'react-i18next'
 
 import Img from "../components/Image/Img";
-import { image02, image09, image10 } from '../env'
+import { image02 } from '../env'
 
 import GoogleMap from '../components/GoogleMap'
 import i18n from "i18next";
-import LineLang from "../components/lineLang";
-import TimesTable from "../components/Times/TimesTable";
-import BTNSmall from "../components/Button/BTNSmall";
+import LineLang from "../components/line.lang";
+
+
 import BTNSmallNext from "../components/Button/BTNSmallNext";
-import OpeningHours from "../OpeninHours/OpeningHours";
+import TableSectionContacts from "../components/table.section.contacts";
 import ImgSetTwoContacts from "../components/Image/ImgSetTwoContacts";
 
-const StyledImg = styled.div`
-  display: flex;
-  flex-direction: row;
-    margin-bottom: 80px;
 
-  @media only screen and (max-width: 1260px) {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    margin-top: 40px;
-  }
-`
 
 export default function Contacts() {
     const [t] = useTranslation(["common", "sections"])
@@ -59,20 +48,10 @@ export default function Contacts() {
 
                 </div>
 
-             <TimesTable />
-                <OpeningHours />
+
+                <TableSectionContacts />
 
                 <ImgSetTwoContacts />
-
-                {/*<StyledImg>
-                    <div>
-                        <Img img={ image10 } width={"770"} height={"auto"} />
-                    </div>
-
-                    <div>
-                        <Img img={ image09 } width={"670"} height={"auto"} />
-                    </div>
-                </StyledImg>*/}
 
                 <span style={{
                     display: 'flex',

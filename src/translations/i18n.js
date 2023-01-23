@@ -30,6 +30,10 @@ import { COVID_LV } from './LV/covid'
 import { COVID_EN } from './EN/covid'
 import { COVID_RU } from './RU/covid'
 
+import { DAYS_LV } from "./LV/days";
+import {DAYS_EN} from "./EN/days";
+import {DAYS_RU} from "./RU/days";
+
 i18n
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -44,7 +48,8 @@ i18n
                 LIST_PRICES: LIST_PRICES_LV,
                 times: TIMES_LV,
                 cookies: COOKIE_LV,
-                covid: COVID_LV
+                covid: COVID_LV,
+                DAYS: DAYS_LV
             },
             en: {
                 common: COMMON_EN,
@@ -55,7 +60,8 @@ i18n
                 LIST_PRICES: LIST_PRICES_EN,
                 times: TIMES_EN,
                 cookies: COOKIE_EN,
-                covid: COVID_EN
+                covid: COVID_EN,
+                DAYS: DAYS_EN
             },
             ru: {
                 common: COMMON_RU,
@@ -66,7 +72,8 @@ i18n
                 LIST_PRICES: LIST_PRICES_RU,
                 times: TIMES_RU,
                 cookies: COOKIE_RU,
-                covid: COVID_RU
+                covid: COVID_RU,
+                DAYS: DAYS_RU
             }
         }
     });

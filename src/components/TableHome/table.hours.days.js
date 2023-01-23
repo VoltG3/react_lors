@@ -1,13 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const TableHoursItem = ({ days, hours }) => (
+const TableHoursDays = ({ days }) => (
     <Wrapper>
-        {days.map((day, index) => (
+        { days.map((day, index) => (
             <OpeningHoursHomeContainer>
                 <div className={"innerHoursContainer"}>
-                    <Day key={ day }>{ day }</Day>
-                    <Hours key={ hours[index] }>{ hours[index] }</Hours>
+                    <Day key={ index }>{ day }</Day>
                 </div>
             </OpeningHoursHomeContainer>
         ))}
@@ -39,7 +38,7 @@ const Day = styled.div`
   //flex: 0 0 14.28%;
   
   max-width: 100px;
-      width: 100%;
+      width: 40px;
   text-align: center;
   font-size: 14px;
   font-weight: bold;
@@ -59,4 +58,4 @@ const Hours = styled.div`
   //border: solid 1px blue;
 `
 
-export default TableHoursItem;
+export default TableHoursDays;

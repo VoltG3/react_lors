@@ -4,10 +4,8 @@ import { useTranslation } from 'react-i18next'
 import { image01 } from '../env'
 import Img from '../components/Image/Img'
 
-import Tables from '../components/Tables/Tables'
-import LineLang from '../components/lineLang'
-import GetData from "../components/JSON/getData";
-import GetOpeningHours from "../components/JSON/getOpeningHours";
+import TableSectionHome from '../components/table.section.home'
+import LineLang from "../components/line.lang";
 
 export default function Home() {
     const [t] = useTranslation(["sections"])
@@ -20,8 +18,6 @@ export default function Home() {
 
             <LineLang />
 
-            <GetOpeningHours />
-
             <span>
                  <p className={ paragraph }>{ t("sections:section_home_part03") }</p>
                  <p className={ paragraph }>{ t("sections:section_home_part01") }</p>
@@ -30,7 +26,7 @@ export default function Home() {
 
             <Img img={ image01 } width={"1017"} height={"auto"} verticalMargin={"--size--padding80"} />
 
-            <Tables />
+            <TableSectionHome />
         </div>
     )
 }

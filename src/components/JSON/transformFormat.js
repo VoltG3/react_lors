@@ -29,37 +29,42 @@ function TransformFormat(target) {
     }
 
         for(let i = 0; i < target.length; i++) {
-        for(let j = 0; j < target[i].length; j++) {
-            target[i][j] = target[i][j].replace(' ', '')
-            target[i][j] = target[i][j].replace(':', '.')
-            target[i][j] = target[i][j].replace(',', '.')
+            for(let j = 0; j < target[i].length; j++) {
 
-            let tmp = Number(target[i][j])
+                if(target[i][j] === "") {
+                    target[i][j] = ""
+                } else {
+                    target[i][j] = target[i][j].replace(' ', '')
+                    target[i][j] = target[i][j].replace(':', '.')
+                    target[i][j] = target[i][j].replace(',', '.')
 
-            console.log("-----------------------------------")
-            console.log("[    REM ] - [", target[i][j], "]")
-            console.log("[  isINT ] - [", isInt(tmp), "]")
-            console.log("[  isNOT ] - [", isFloat(tmp), "]")
+                    let tmp = Number(target[i][j])
 
-            if(isInt(tmp)) {
-                target[i][j] = TransformINT(tmp)
-                console.log("[    NEW ] - [", TransformINT(tmp), "]")
-            }
+                    // console.log("-----------------------------------")
+                    // console.log("[    REM ] - [", target[i][j], "]")
+                    // console.log("[  isINT ] - [", isInt(tmp), "]")
+                    // console.log("[  isNOT ] - [", isFloat(tmp), "]")
 
-            if(isFloat(tmp)) {
-                let temp = ""; temp += tmp
-                let before = "", after = ""
-                    for(let i = 0; i < temp.indexOf('.'); i++) {
-                        before += "" + temp[i]
+                    if(isInt(tmp)) {
+                        target[i][j] = TransformINT(tmp)
+                        // console.log("[    NEW ] - [", TransformINT(tmp), "]")
                     }
 
-                    for(let i = temp.indexOf('.'); i < temp.length; i++) {
-                        after += "" + temp[i]
-                    } console.log("[ UPDATE ] - [ before:: [", before, "] after:: [", after , "]]")
+                    if(isFloat(tmp)) {
+                        let temp = ""; temp += tmp
+                        let before = "", after = ""
+                        for(let i = 0; i < temp.indexOf('.'); i++) {
+                            before += "" + temp[i]
+                        }
 
-                before = Number(before)
-                target[i][j] = TransformFLOAT(before, after)
-                console.log("[    NEW ] - [", TransformFLOAT(before, after), "]")
+                        for(let i = temp.indexOf('.'); i < temp.length; i++) {
+                            after += "" + temp[i]
+                        } // console.log("[ UPDATE ] - [ before:: [", before, "] after:: [", after , "]]")
+
+                        before = Number(before)
+                        target[i][j] = TransformFLOAT(before, after)
+                        // console.log("[    NEW ] - [", TransformFLOAT(before, after), "]")
+                }
             }
         }
     }

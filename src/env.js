@@ -1,6 +1,3 @@
-import { stockDataOther } from './components/JSON/data/dataOther'
-import { stockDataLVRU } from './components/JSON/data/dataLVRU'
-import { stockDataEN } from './components/JSON/data/dataEN'
 
 import Img01 from './assets/images/01.jpg'
 import Img02 from './assets/images/02.jpg'
@@ -14,10 +11,6 @@ import Img09 from './assets/images/09.jpg'
 import Img10 from './assets/images/10.jpg'
 import Slider01 from './assets/slider/slider01.png'
 import Slider02 from './assets/slider/slider02.png'
-
-export const DATA_OTHER = stockDataOther
-export const DATA_LVRU = stockDataLVRU
-export const DATA_EN = stockDataEN
 
 export const image01 = Img01
 export const image02 = Img02

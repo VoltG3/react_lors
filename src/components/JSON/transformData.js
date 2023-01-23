@@ -15,7 +15,7 @@ function TransformData(target) {
                 num += "" + target[i]
             }
         } arr.push(num)
-    console.log("[  ARRAY ] - ", arr)
+    //console.log("[  ARRAY ] - ", arr)
 
     return arr
 }

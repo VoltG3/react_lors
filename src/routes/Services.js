@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { I18nRenderListServices } from '../translations/i18n.render.list.services'
 
 import ImgSetTwo from '../components/Image/ImgSetTwo'
-import LineLang from "../components/lineLang";
+import LineLang from "../components/line.lang";
 
 export default function Services() {
     const [t] = useTranslation(["common"])

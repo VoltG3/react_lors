@@ -1,5 +1,5 @@
 
-export default function LineLang() {
+function LineLang() {
 
     return (
         <>
@@ -13,3 +13,5 @@ export default function LineLang() {
         </>
     )
 }
+
+export default LineLang
