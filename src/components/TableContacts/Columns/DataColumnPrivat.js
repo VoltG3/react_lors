@@ -1,7 +1,7 @@
 import i18n from 'i18next'
-import { FetchData } from '../../JSON/fetchData'
-import TransformFormat from '../../JSON/transformFormat'
-import { TransformArray } from '../../JSON/transformArray'
+import { FetchData } from '../../../JSON/fetchData'
+import TransformFormat from '../../../JSON/transformFormat'
+import { TransformArray } from '../../../JSON/transformArray'
 
 const DataColumnPrivat = () => {
     const jsonData = FetchData()

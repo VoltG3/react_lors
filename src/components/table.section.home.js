@@ -18,7 +18,7 @@ const TableSectionHome = () => {
 const StyledTablesHome = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: var(--size--padding30);
     width: 100%;
     height: auto;
   box-sizing: border-box;

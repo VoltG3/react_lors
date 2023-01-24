@@ -1,12 +1,14 @@
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
-import { I18nRenderListInformation } from '../translations/i18n.render.list.information'
+import { PageContainer as StyledPageContainer } from './Styles'
 
-import {image02, Link03} from '../env'
-import Img from '../components/Image/Img'
+import { LISTInformation } from '../components/TextContent/Lists/LIST.information'
+
+import {Link03} from '../env'
 import LineLang from "../components/line.lang";
 import {Link} from "react-router-dom";
 import BTNSmall from "../components/Button/BTNSmall";
+import ImgCollective3 from "../components/Image/IMG.collective3";
 
 export default function Info() {
     const [t] = useTranslation(["common","sections"])
@@ -15,7 +17,7 @@ export default function Info() {
     const semiheader = i18n.language === 'ru' ? 'textcontent--semiheader--rus' : 'textcontent--semiheader'
 
     return (
-        <div className={"page"}>
+        <StyledPageContainer>
             <h1 className={ h1 }>{ t("common:info") }</h1>
 
             <LineLang />
@@ -55,7 +57,7 @@ export default function Info() {
                 </span>
             </span>
 
-            <Img img={ image02 } width={"934"} height={"auto"} verticalMargin={"--margin--img--vertical"} />
+            <ImgCollective3 />
 
             <span style={{
                 display: 'flex',
@@ -72,7 +74,7 @@ export default function Info() {
                 <p style={{ paddingBottom: '0' }} className={"textcontent--small--item1"}>{ t("sections:section_info_part07") }</p>
             </span>
 
-            <I18nRenderListInformation />
-        </div>
+            <LISTInformation showHeader={"true"} />
+        </StyledPageContainer>
     )
 }

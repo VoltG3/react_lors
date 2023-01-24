@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { FetchData } from '../JSON/fetchData'
-import TransformData from "../JSON/transformData";
-import TransformFormat from "../JSON/transformFormat";
+import { FetchData } from '../../JSON/fetchData'
+import TransformData from "../../JSON/transformData";
+import TransformFormat from "../../JSON/transformFormat";
 import i18n from "i18next";
 
 const TableHoursList = () => {

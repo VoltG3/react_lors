@@ -5,7 +5,8 @@ export default function FooterDev() {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            height: '46px'}}>
+            height: '46px' }}>
+
             <p style={{
                 fontSize: '12px',
                 color: 'var(--color--paragraph--footer)'

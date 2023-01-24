@@ -9,7 +9,7 @@ export const TransformArray = (target) => {
 
             toReturn = obj1.concat(obj2)
 
-            console.log("[  ARRAY ] - TransformArray", toReturn)
+            //console.log("[  ARRAY ] - TransformArray", toReturn)
             return toReturn
         })
 

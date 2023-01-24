@@ -1,12 +1,5 @@
 import styled from "styled-components";
 
-/*import LogoTransparent00 from '../../assets/img/logo_transparent/Lors_transparent.svg'
-import LogoTransparent01 from '../../assets/img/logo_transparent/Balta_transaprent.png'
-import LogoTransparent02 from '../../assets/img/logo_transparent/BTA_transsparent.png'
-import LogoTransparent03 from '../../assets/img/logo_transparent/ERGO_transparent.png'
-import LogoTransparent04 from '../../assets/img/logo_transparent/Gjensidige_transparent.png'
-import LogoTransparent05 from '../../assets/img/logo_transparent/Seesam_transpareent.png'*/
-
 import LogoTransparent00 from '../../assets/logo_transparent/Lors_transparent.svg'
 import LogoTransparent01 from '../../assets/logo_transparent/Balta_transaprent.svg'
 import LogoTransparent02 from '../../assets/logo_transparent/BTA_transsparent.svg'

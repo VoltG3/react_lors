@@ -1,11 +1,10 @@
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
+import { PageContainer as StyledPageContainer } from './Styles'
 
-import { image01 } from '../env'
-import Img from '../components/Image/Img'
-
+import LineLang from '../components/line.lang'
+import ImgCollective4 from '../components/Image/IMG.collective4'
 import TableSectionHome from '../components/table.section.home'
-import LineLang from "../components/line.lang";
 
 export default function Home() {
     const [t] = useTranslation(["sections"])
@@ -13,7 +12,7 @@ export default function Home() {
     const h1 = i18n.language === 'ru' ? 'textcontent--header1--rus' : 'textcontent--header1'
 
     return (
-        <div className={"page"}>
+        <StyledPageContainer>
             <h1 className={ h1 }>{ t("sections:section_home_header") }</h1>
 
             <LineLang />
@@ -24,9 +23,8 @@ export default function Home() {
                  <p className={ paragraph }>{ t("sections:section_home_part02") }</p>
             </span>
 
-            <Img img={ image01 } width={"1017"} height={"auto"} verticalMargin={"--size--padding80"} />
-
+            <ImgCollective4 />
             <TableSectionHome />
-        </div>
+        </StyledPageContainer>
     )
 }

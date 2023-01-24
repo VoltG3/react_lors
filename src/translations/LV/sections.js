@@ -36,7 +36,9 @@ export const SECTIONS_LV = {
     section_info_list02_part01 : "jāuzrāda apliecinošs dokuments",
     section_info_list02_part02 : "jāierodas sejas aizsargmaskā (iespējams iegādāties 1.stāva aptiekā)",
     section_info_list02_part03 : "virsdrēbes jānodod garderobē 2.stāvā",
+
     section_info_part04 : "No pacientu iemaksas atbrīvotās iedzīvotāju kategorijas",
+
     section_info_part05 : "Saskaņā ar LR Mini stru kabineta 2018. gada 28. augusta noteikumumiem",
     section_info_part06 :  "Nr. 555 \"Veselības aprūpes pakalpojumu organizēšanas un samaksas kārtība\"",
     section_info_part07 :  "no pacientu iemaksas atbrīvotas šādas Latvijas iedzīvotāju kategorijas:",

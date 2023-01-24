@@ -1,19 +1,21 @@
-import styled from 'styled-components'
+
+
 
 import '../translations/i18n'
+import i18n from "i18next";
 import { useTranslation } from 'react-i18next'
+import { PageContainer as StyledPageContainer } from './Styles'
 
-import Img from "../components/Image/Img";
-import { image02 } from '../env'
 
 import GoogleMap from '../components/GoogleMap'
-import i18n from "i18next";
+
 import LineLang from "../components/line.lang";
 
 
 import BTNSmallNext from "../components/Button/BTNSmallNext";
 import TableSectionContacts from "../components/table.section.contacts";
-import ImgSetTwoContacts from "../components/Image/ImgSetTwoContacts";
+import ImgContacts from "../components/Image/IMG.contacts";
+import ImgCollective3 from "../components/Image/IMG.collective3";
 
 
 
@@ -24,7 +26,7 @@ export default function Contacts() {
 
     return (
         <>
-            <div className={"page"}>
+            <StyledPageContainer>
                 <h1 className={ h1 }>{ t("common:contacts") }</h1>
 
                 <LineLang />
@@ -51,7 +53,7 @@ export default function Contacts() {
 
                 <TableSectionContacts />
 
-                <ImgSetTwoContacts />
+                <ImgContacts />
 
                 <span style={{
                     display: 'flex',
@@ -68,8 +70,8 @@ export default function Contacts() {
                     </div>
                 </span>
 
-                <Img img={ image02 } width={"1280"} height={"auto"} verticalMargin={"--margin--img--vertical"} />
-            </div>
+                <ImgCollective3 />
+            </StyledPageContainer>
 
             <GoogleMap />
         </>

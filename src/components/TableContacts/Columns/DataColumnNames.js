@@ -1,4 +1,4 @@
-import { FetchData } from '../../JSON/fetchData'
+import { FetchData } from '../../../JSON/fetchData'
 
 const DataColumnNames = () => {
     const jsonData = FetchData()

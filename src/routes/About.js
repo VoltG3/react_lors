@@ -1,10 +1,12 @@
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
-import { I18nRenderListServices } from '../translations/i18n.render.list.services'
+import { PageContainer as StyledPageContainer } from './Styles'
 
-import ImgSetTwo from '../components/Image/ImgSetTwo'
-import ImgSetTre from '../components/Image/ImgSetTre'
-import LineLang from "../components/line.lang";
+import { LISTServices } from '../components/TextContent/Lists/LIST.services'
+
+import LineLang from '../components/line.lang'
+import ImgEachPerson from '../components/Image/IMG.eachPerson'
+import ImgEquipement from '../components/Image/IMG.equipement'
 
 export default function About() {
     const [t] = useTranslation(["common", "sections"])
@@ -12,7 +14,7 @@ export default function About() {
     const h1 = i18n.language === 'ru' ? 'textcontent--header1--rus' : 'textcontent--header1'
 
     return (
-        <div className={"page"}>
+        <StyledPageContainer>
             <h1 className={ h1 }>{ t("common:about") }</h1>
 
             <LineLang />
@@ -24,9 +26,9 @@ export default function About() {
                 <p className={ paragraph }>{ t("sections:section_about_part04") }</p>
             </span>
 
-            <ImgSetTre />
-            <I18nRenderListServices showHeader={"true"} />
-            <ImgSetTwo />
-        </div>
+            <ImgEachPerson />
+            <LISTServices showHeader={"true"} />
+            <ImgEquipement />
+        </StyledPageContainer>
     )
 }

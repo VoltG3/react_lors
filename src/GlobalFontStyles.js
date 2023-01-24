@@ -48,7 +48,9 @@ export const GlobalFontStyles = createGlobalStyle`
     white-space: pre-wrap;
     opacity: var(--font--opacity);
     color: var(--color--secondary);
-  }
+  }  h1, p {
+      padding-left: 0!important;
+    }
 
           .textcontent--header1--rus {
             font-family: var(--font--Montserrat);
@@ -60,7 +62,9 @@ export const GlobalFontStyles = createGlobalStyle`
             //white-space: pre-wrap;
             opacity: var(--font--opacity);
             color: var(--color--secondary);
-          }
+          }  h1, p {
+      padding-left: 0!important;
+    }
 
   .textcontent--semiheader {
     font-family: var( --font--GTWalsheimMedium);
