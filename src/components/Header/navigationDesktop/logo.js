@@ -2,7 +2,6 @@ import LogoColored00 from '../../../assets/logo_colored/Lors_colored.svg'
 import LogoTransparent from '../../../assets/logo_transparent/Lors_transparent.svg'
 
 export default function Logo(props) {
-    console.log("--->", props.variant)
 
     const colored = LogoColored00
     const transparent = LogoTransparent

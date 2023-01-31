@@ -9,7 +9,7 @@ const ImgCollective4 = () => {
             paddingTop: 'var(--size--padding60)',
             paddingBottom: 'var(--size--padding30)'
         }}>
-            <img src={ image01 } width={"50%"} height={"auto"} alt={"img"} />
+            <img src={ image01 } width={"100%"} height={"auto"} alt={"img"} />
         </StyledImgContainer>
     )
 }

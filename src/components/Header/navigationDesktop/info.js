@@ -6,16 +6,13 @@ import Icon03 from '../../../assets/icons/icon_appointment.svg'
 
 import { useTranslation } from 'react-i18next'
 import { Link01 } from '../../../env'
-import Covid from "./covid";
+import Covid from './covid'
 
 function Info() {
     const [t] = useTranslation(["sections"])
 
     return (
         <StyledHeaderSubSetInfo>
-            {/*<div className={"infoSquare"}>*/}
-            {/*    <p className={"textcontent--header--desktop--infoline hoverLink"}>{ t("sections:section_header_part01") }</p>*/}
-            {/*</div>*/}
 
             <Covid />
 

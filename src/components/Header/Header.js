@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react'
 
 import NavigationDesktop from './navigationDesktop/navigationDesktop'
 import NavigationMobile from './navigationMobile/navigationMobile'
-import Slider from "./slider/slider";
+import Slider from './slider/slider'
 
 function Header() {
     const menuRef = useRef(null)
@@ -14,11 +14,9 @@ function Header() {
             const currentScrollPosition = window.pageYOffset
 
             if (currentScrollPosition > previousScrollPosition) {
-                // scrolling down
-                menuRef.current.style.display = 'none'
+                menuRef.current.style.display = 'none' // scrolling down
             } else {
-                // scrolling up
-                menuRef.current.style.display = 'block'
+                menuRef.current.style.display = 'block' // scrolling up
             }
 
             previousScrollPosition = currentScrollPosition
@@ -52,15 +50,15 @@ const StyledHeader = styled.div`
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  /*  max-width: 100vw;*/
-        width: 100%;
-        height: auto;
+    width: 100vw;
+    height: auto;
 
   .navigation {
     display: flex;
     justify-content: center;
-      width: inherit;
-      height: inherit;
+      max-width: var(--page--width);
+          width: 100%;
+          height: auto;
   }
     .desktop { display: block!important; }
     .mobile { display: none!important; }

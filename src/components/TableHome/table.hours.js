@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import TableHoursDays from './table.hours.days'
 import LineShort from '../line.short'
 import BTN_variant01 from '../Button/BTN_variant01'
-import TableHoursList from "./table.hours.hours";
+import TableHoursHours from "./table.hours.hours";
 
 const TableHours = () => {
     const [t] = useTranslation(["times", "sections", "common"])
@@ -21,6 +21,7 @@ const TableHours = () => {
             <div style={{
                 display: 'flex',
                 flexDirection: 'row'
+
             }}>
             <TableHoursDays
                 days={[
@@ -32,7 +33,7 @@ const TableHours = () => {
                 ]}
             />
 
-            <TableHoursList />
+            <TableHoursHours />
             </div>
             <p className={ paragraphTableItem } style={{ paddingTop: '20px'}}>{ t("sections:section_contacts_part02") }</p>
 

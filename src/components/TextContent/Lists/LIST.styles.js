@@ -8,7 +8,10 @@ export const ListHeader = styled.div`
   }}
   
   align-items: center;
-  background-color: var(--color--primary) !important;
+  //background-color: var(--color--primary) !important;
+  background-color: var(--color--list--header) !important;
+  border-top-left-radius: var(--border--radius);
+  border-top-right-radius: var(--border--radius);
   
   & p {
     margin-top: 15px!important;
@@ -20,8 +23,9 @@ const ListContainer = css`
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+  border-radius: var(--border--radius);
   box-shadow: var(--box--shadow);
 
   &:hover {
@@ -38,10 +42,17 @@ const ListContainer = css`
 
   & div:nth-child(even) {
     background: var(--color--none);
+    //background: var(--color--list--even);
   }
 
   & div:nth-child(odd) {
     background: var(--color--list);
+    //background: var(--color--lsit--odd);
+  }
+
+  & div:nth-last-child(-n + 1) {
+    border-bottom-left-radius: var(--border--radius);
+    border-bottom-right-radius: var(--border--radius);
   }
 
   & p {

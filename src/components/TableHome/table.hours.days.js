@@ -23,7 +23,7 @@ const OpeningHoursHomeContainer = styled.div`
   flex-direction: column;
       width: 100%;
       height: auto;
-  //border: solid 1px red;
+  border: solid 1px red;
   
   .innerHoursContainer {
     display: flex;

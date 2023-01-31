@@ -3,6 +3,8 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyles = createGlobalStyle`
   :root {
 
+    --page--width: 1440px;
+    
     --size--padding20: 20px;
     --size--padding30: 30px;
     --size--padding40: 40px;
@@ -11,10 +13,16 @@ export const GlobalStyles = createGlobalStyle`
     --size--padding70: 70px;
     --size--padding80: 80px;
    
+    --border--radius: 7px;
+
+    //--filter--img: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.7));
+    
+    --filter--img: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.7));
+    
     --box--shadow:      rgba(176, 176, 176, 0.3) 0px 2px 15px 0px;
     --box--hover:       0 2px 15px 0 hsla(0,0%,69%,.5);
     
-    --page--width: 1440px;
+   
     --page--width100: 100%;
     --desktop--navigation--height: 75px;
     --page--side--margin20: 20px;
@@ -43,7 +51,7 @@ export const GlobalStyles = createGlobalStyle`
     --margin--h1--top: min(max(5.861vw, 30px), 70px);
 --margin--h1--bottom: 30px;
     --margin--p: 15px;
-    --filter--img: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.7));
+    
     --margin--minimal: 20px;
     --margin--v1: min(max(5.347vw, var(--margin--minimal)), 77px);
   }

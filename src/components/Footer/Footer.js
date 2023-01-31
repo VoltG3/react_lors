@@ -1,12 +1,11 @@
 import styled from 'styled-components'
-import FooterDev from "./FooterDev";
-import FooterLogo from "./FooterLogo";
-import FooterTextcontent01 from "./FooterTextcontent01";
-import FooterTextcontent02 from "./FooterTextcontent02";
-import FooterTextcontent03 from "./FooterTextcontent03";
-import FooterNav from "./FooterNav";
-import FooterLang from "./FooterLang";
-/*import {StyledFooter} from '../../GlobalStyles'*/
+import FooterDev from './FooterDev'
+import FooterLogo from './FooterLogo'
+import FooterTextcontent01 from './FooterTextcontent01'
+import FooterTextcontent02 from './FooterTextcontent02'
+import FooterTextcontent03 from './FooterTextcontent03'
+import FooterNav from './FooterNav'
+import FooterLang from './FooterLang'
 
 function Footer() {
     return (
@@ -40,7 +39,7 @@ const StyledFooter = styled.div`
   justify-content: center;
   align-items: center;
     width: 100vw;
-  color: white;
+    color: white;
   /*background: var(--color--primary);*/
   background: var(--crl--primary--dk);
   
@@ -49,14 +48,12 @@ const StyledFooter = styled.div`
 
   
   .innerFooter {
-    //position: relative;
-    //z-index: 3000;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
       max-width: 1440px;
-          width: var(--page--width100);
+          width: 100%;
           height: auto;
     padding-top: 50px;
     padding-bottom: 50px;

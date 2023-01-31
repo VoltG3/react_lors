@@ -6,7 +6,7 @@ function Navigation() {
     const [t] = useTranslation(["common"])
 
     return (
-        <StyledSubSetNavFirst>
+        <StyledNavigationHeader>
             <Link className={"textcontent--header--desktop--navigation"} to={"home"}>
                 <p>{ t("common:home") }</p>
             </Link>
@@ -30,11 +30,11 @@ function Navigation() {
             <Link className={"textcontent--header--desktop--navigation"} to={"contacts"}>
                 <p className={"lastParagraph"}>{ t("common:contacts") }</p>
             </Link>
-        </StyledSubSetNavFirst>
+        </StyledNavigationHeader>
     )
 }
 
-const StyledSubSetNavFirst = styled.div`
+const StyledNavigationHeader = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;

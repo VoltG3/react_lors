@@ -23,7 +23,6 @@ const SliderContainer = styled.div`
   justify-content: center;
     width: 100vw;
     height: auto;
-  //border: solid 1px red;
   
   & img {
     width: 100%;

@@ -47,7 +47,7 @@ const StyledCovid = styled.div`
     background: white;
     transition: top 0.5s ease-in-out;
     box-sizing: border-box;
-    
+ 
     .innerCovid {
       display: flex;
       flex-direction: row;

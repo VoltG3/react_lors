@@ -29,17 +29,16 @@ function NavigationDesktop() {
 
 const StyledNavigationDesktop = styled.div`
   display: flex;
-  flex-direction: row;
+  flex: 1 100%;
   justify-content: center;
-    max-width: 1440px;
-      width: var(--page--width100);
+  max-width: var(--page--width);
+      width: 100%;
       height: var(--desktop--navigation--height);
-  //background-color: var(--color--none);
   
  .navigationDesktop {
    display: grid;
-   grid-template-rows: 1fr 1fr;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: repeat(2, 1fr);
+   grid-template-columns: repeat(7, 1fr);
     width: 100%;
     height: auto;
    grid-template-areas: 

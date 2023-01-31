@@ -16,7 +16,7 @@ function BTN_header() {
 
 const Button = styled.button`
   background: palevioletred;
-  margin: 1em;
+ // margin: 1em;
   padding: 0.35em 2em;
   border: 2px solid var(--color--palevioletred);
   border-radius: 3px;

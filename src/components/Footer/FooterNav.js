@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import {Link01} from "../../env";
+import { Link01 } from '../../env'
 
 export default function FooterNav() {
     const [t] = useTranslation(["common"])

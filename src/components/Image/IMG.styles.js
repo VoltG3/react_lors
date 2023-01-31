@@ -10,8 +10,28 @@ const ImgContainer = css`
     height: auto;
   
   & img {
-    border-radius: 3px;
-    filter: var(--filter--img);
+    border-radius: var(--border--radius);
+    //box-shadow: var(--box--shadow);
+   // padding: 10px;
+    
+    //filter: var(--filter--img);
+    
+    /*
+    --filter--img: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.7));
+    
+    --box--shadow:      rgba(176, 176, 176, 0.3) 0px 2px 15px 0px;
+    --box--hover:       0 2px 15px 0 hsla(0,0%,69%,.5);
+    */
+    //box-shadow: rgba(176, 176, 176, 0.9) 0px 2px 15px 0px;
+    
+    filter:
+        drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.9))
+        opacity(80%);
+    
+    &:hover {
+      transition: box-shadow .3s linear;
+      box-shadow: var(--box--hover);
+    }
   }
 `
 

@@ -3,8 +3,11 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalColorStyles = createGlobalStyle`
     :root {
 
+      --color--list--header: #2d3436;
+      --color--list--even: #ffffff;
+      --color--list--odd: #dfe6e9;
+      
       --color--line--lang: rgb(214, 214, 214);
-
       --color--primary: #112734;
       --color--secondary: #152F3F;
       --color--list: #FBF9F9;

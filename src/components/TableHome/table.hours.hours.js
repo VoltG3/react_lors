@@ -4,7 +4,7 @@ import TransformData from "../../JSON/transformData";
 import TransformFormat from "../../JSON/transformFormat";
 import i18n from "i18next";
 
-const TableHoursList = () => {
+const TableHoursHours = () => {
     const jsonData = FetchData()
     const arrayOpeningHoursEU = []
     const arrayOpeningHoursUS = []
@@ -68,4 +68,4 @@ const StyledHoursList = styled.div`
   }
 `
 
-export default TableHoursList
+export default TableHoursHours
