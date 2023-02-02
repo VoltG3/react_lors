@@ -10,25 +10,26 @@ const DataColumnPrivat = () => {
           jsonData.forEach(function(obj) { arrayPrivateHoursEU.push( TransformArray(obj.private))})
           jsonData.forEach(function(obj) { arrayPrivateHoursUS.push( TransformArray(obj.private))}); void TransformFormat(arrayPrivateHoursUS)
     const arrayPrivateHours = i18n.language === 'en' ? arrayPrivateHoursUS : arrayPrivateHoursEU
-    console.table(arrayPrivateHoursEU)
+    //console.table(arrayPrivateHoursEU)
+
+    const isPrivateArrayEmpty = (target_1, target_2) => {
+
+        return (
+            <div style={{ display: target_1 === "" ? 'none' : 'flex' }} className={"cell--tripple"}>
+                <div><p className={"textcontent--opening--hours"}>{ target_1 }</p></div>
+                <div><p className={"textcontent--opening--hours"}>-</p></div>
+                <div><p className={"textcontent--opening--hours"}>{ target_2 }</p></div>
+            </div>
+        )
+    }
 
     return (
-        <div className={"column"}>
+        <div className={"column roundedBorderRight"}>
             { arrayPrivateHours.map(( array, index ) => (
-                <div key={ index } className={"column"}>
-                    <div className={"cell"}>
-                        <div className={"cell--dobbel"}>
-                            <div className={"cell--tripple"}>
-                                <div><p>{ array[0] }</p></div>
-                                <div><p>-</p></div>
-                                <div><p>{ array[1] }</p></div>
-                            </div>
-                            <div className={"cell--tripple"}>
-                                <div><p>{ array[2] }</p></div>
-                                <div><p>-</p></div>
-                                <div><p>{ array[3] }</p></div>
-                            </div>
-                        </div>
+                <div key={ index } className={"cell"}>
+                    <div className={"cell--dobble"}>
+                        { isPrivateArrayEmpty(array[0], array[1]) }
+                        { isPrivateArrayEmpty(array[2], array[3]) }
                     </div>
                 </div>
             ))}

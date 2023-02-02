@@ -5,21 +5,21 @@ function Languages() {
     return (
         <div>
             <StyledSubSetLang>
-                <p className={"textcontent--header--desktop--languages"}
+                <p className={"textcontent--header--navigation--languages"}
                    value={"LV"}
                    onClick={() => i18n.changeLanguage('lv') }>LV
                 </p>
 
-                <p className={"textcontent--header--desktop--languages"}>/</p>
+                <p className={"textcontent--header--navigation--languages"}>/</p>
 
-                <p className={"textcontent--header--desktop--languages"}
+                <p className={"textcontent--header--navigation--languages"}
                    value={"EN"}
                    onClick={() => i18n.changeLanguage('en') }>EN
                 </p>
 
-                <p className={"textcontent--header--desktop--languages"}>/</p>
+                <p className={"textcontent--header--navigation--languages"}>/</p>
 
-                <p className={"textcontent--header--desktop--languages"}
+                <p className={"textcontent--header--navigation--languages"}
                    value={"RU"}
                    onClick={() => i18n.changeLanguage('ru') }>RU
                 </p>

@@ -8,13 +8,14 @@ import {Link03} from '../env'
 import LineLang from "../components/line.lang";
 import {Link} from "react-router-dom";
 import BTNSmall from "../components/Button/BTNSmall";
-import ImgCollective3 from "../components/Image/IMG.collective3";
+
+import ImgCollective3Desktop from "../components/Image/IMG.collective3.desktop";
 
 export default function Info() {
     const [t] = useTranslation(["common","sections"])
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
-    const h1 = i18n.language === 'ru' ? 'textcontent--header1--rus' : 'textcontent--header1'
-    const semiheader = i18n.language === 'ru' ? 'textcontent--semiheader--rus' : 'textcontent--semiheader'
+    const h1 = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
+    const semiheader = i18n.language === 'ru' ? 'textcontent--h2--rus' : 'textcontent--h2'
 
     return (
         <StyledPageContainer>
@@ -40,7 +41,7 @@ export default function Info() {
                     <p style={{ paddingBottom: '0' }} className={ paragraph }>- { t("sections:section_info_list01_part05") }</p>
                 </span>
 
-                <p style={{ fontWeight: '500' }} className={"textcontent--paragraph_older"}>{ t("sections:section_info_part02") }</p>
+                <p style={{ fontWeight: '600'}} className={paragraph}>{ t("sections:section_info_part02") }</p>
 
                 <div className={"BTNSmallComponent"}>
                     <p className={ paragraph }>{ t("sections:section_info_part03") }</p>
@@ -57,7 +58,7 @@ export default function Info() {
                 </span>
             </span>
 
-            <ImgCollective3 />
+            <ImgCollective3Desktop />
 
             <span style={{
                 display: 'flex',

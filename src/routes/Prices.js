@@ -14,8 +14,8 @@ import ImgOffice from '../components/Image/IMG.office'
 export default function Prices() {
     const [t] = useTranslation(["common", "sections"])
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
-    const h1 = i18n.language === 'ru' ? 'textcontent--header1--rus' : 'textcontent--header1'
-    const semiheader = i18n.language === 'ru' ? 'textcontent--semiheader--rus' : 'textcontent--semiheader'
+    const h1 = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
+    const semiheader = i18n.language === 'ru' ? 'textcontent--h2--rus' : 'textcontent--h2'
 
     return (
         <StyledPageContainer>

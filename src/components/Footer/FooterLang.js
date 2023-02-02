@@ -5,21 +5,21 @@ function FooterLang() {
     return (
         <StyledSubSetLang>
             <div>
-                <p className={"textcontent--footer--nav"}
+                <p className={"textcontent--footer--navigation"}
                    value={"LV"}
                    onClick={() => i18n.changeLanguage('lv') }>LV
                 </p>
             </div>
 
             <div>
-                <p className={"textcontent--footer--nav"}
+                <p className={"textcontent--footer--navigation"}
                    value={"EN"}
                    onClick={() => i18n.changeLanguage('en') }>EN
                 </p>
             </div>
 
             <div>
-                <p className={"textcontent--footer--nav"}
+                <p className={"textcontent--footer--navigation"}
                    value={"RU"}
                    onClick={() => i18n.changeLanguage('ru') }>RU
                 </p>
@@ -32,8 +32,11 @@ const StyledSubSetLang = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+  
     width: 100%;
     margin-top: 10px;
+  
+
 
   @media only screen and (max-width: 730px) {
     justify-content: flex-start;

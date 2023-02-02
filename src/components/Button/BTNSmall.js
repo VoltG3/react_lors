@@ -40,7 +40,7 @@ function BTNSmall() {
 
     return (
         <StyledBtnSmall>
-                <p className={"textcontent--paragraph_older"}>{ t("btn_variant02") }</p>
+                <p className={"textcontent--button--v2"}>{ t("btn_variant02") }</p>
         </StyledBtnSmall>
     )
 }

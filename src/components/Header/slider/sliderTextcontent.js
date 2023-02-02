@@ -1,13 +1,15 @@
 import { useTranslation } from 'react-i18next'
 import i18n from 'i18next'
 
-import BTN_header from '../../Button/BTN_header'
+import {introHeader} from "../../../env";
+import BUTTON_v1 from "../../Button/BUTTON_v1";
+import React from "react";
+import {Link} from "react-router-dom";
 
 function SliderTextcontent() {
-    const [t] = useTranslation(["sections"])
+    const [t] = useTranslation(["sections", "common"])
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
-    const h1 = i18n.language === 'ru' ? 'textcontent--header1--rus' : 'textcontent--header1'
-    const introHeader = 'SIA "Jautrītes Liepiņas ārsta prakse otorinolaringoloģijā"'
+    const h1 = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
 
     return (
       <div style={{
@@ -15,17 +17,24 @@ function SliderTextcontent() {
           zIndex: '3',
           display: 'flex',
           flexDirection: 'column',
-          maxWidth: '1440px',
-          width: '100%',
+          maxWidth: 'var(--page--width)',
+          width: 'var(--page--width100)',
           height: 'inherit'
       }}>
           <div style={{ margin: '80px 0 0 0' }}>
               <p className={ h1 }>{ introHeader }</p>
-              <p className={ paragraph }>{ t("sections:section_header_part06") }</p>
+              <p className={ paragraph }  style={{ paddingBottom: '120px'}}>{ t("sections:section_header_part06") }</p>
 
-              <div style={{ margin: '80px 0 0 0'}}>
-                  <BTN_header />
-              </div>
+              <Link to={"contacts"}>
+                  <BUTTON_v1
+                      label={"btn_appointment_x"}
+                      minWidth={"390px"}
+                      paragraphMarginLeft={"-20%"}
+                      paddingVertical={"10px"}
+                      justifyContent={"flex-start"}
+                  />
+              </Link>
+
           </div>
       </div>
     )

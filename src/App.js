@@ -1,6 +1,6 @@
-import { GlobalStyles } from './GlobalStyles'
-import { GlobalColorStyles } from './GlobalColorStyles'
-import { GlobalFontStyles } from './GlobalFontStyles'
+import { GlobalStyles2 } from './GlobalStyles2'
+import { GlobalColorStyles2 } from './GlobalColorStyles2'
+
 
 import { Outlet } from 'react-router-dom'
 
@@ -9,9 +9,12 @@ import Footer from './components/Footer/Footer'
 
 import Cookie from './components/Cookie'
 import useWindowDimension from './utils/useWindowDimension'
+import {GlobalFontStyles} from "./GlobalFontStyles";
+import {GlobalColorStyles} from "./GlobalColorStyles";
+import {GlobalSizeStyles} from "./GlobalSizeStyles";
 
 export default function App() {
-    //console.log(useWindowDimension())
+    console.log(useWindowDimension())
 
     return (
         <div style={{
@@ -23,7 +26,10 @@ export default function App() {
                 width: '100vw',
                 height: 'auto'
         }}>
-            <GlobalStyles />
+            <GlobalStyles2 />
+            <GlobalColorStyles2 />
+
+            <GlobalSizeStyles />
             <GlobalColorStyles />
             <GlobalFontStyles />
                 <Header />

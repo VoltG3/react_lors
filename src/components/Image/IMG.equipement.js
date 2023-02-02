@@ -8,8 +8,8 @@ const ImgEquipement = () => {
             gap: 'var(--size--padding30)',
             paddingTop: 'var(--size--padding30)'
         }}>
-            <img src={ image07 } width={"100%"} height={"auto"} alt={"img"} />
-            <img src={ image06 } width={"100%"} height={"auto"} alt={"img"} />
+            <div><img src={ image07 } width={"100%"} height={"auto"} alt={"img"} /></div>
+            <div><img src={ image06 } width={"100%"} height={"auto"} alt={"img"} /></div>
         </StyledImgContainer>
    )
 }

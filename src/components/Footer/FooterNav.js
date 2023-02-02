@@ -10,31 +10,31 @@ export default function FooterNav() {
             display: 'flex',
             flexDirection: 'column'
         }}>
-            <Link className={"textcontent--footer--nav"} to={"home"}>
+            <Link className={"textcontent--footer--navigation"} to={"home"}>
                 <p>{ t("common:home") }</p>
             </Link>
 
-            <Link className={"textcontent--footer--nav"} to={"about"}>
+            <Link className={"textcontent--footer--navigation"} to={"about"}>
                 <p>{ t("common:about") }</p>
             </Link>
 
-            <Link className={"textcontent--footer--nav"} to={"services"}>
+            <Link className={"textcontent--footer--navigation"} to={"services"}>
                 <p>{ t("common:services") }</p>
             </Link>
 
-            <Link className={"textcontent--footer--nav"} to={"prices"}>
+            <Link className={"textcontent--footer--navigation"} to={"prices"}>
                 <p>{ t("common:prices") }</p>
             </Link>
 
-            <Link className={"textcontent--footer--nav"} to={"contacts"}>
+            <Link className={"textcontent--footer--navigation"} to={"contacts"}>
                 <p>{ t("common:info") }</p>
             </Link>
 
-            <Link className={"textcontent--footer--nav"} to={"info"}>
+            <Link className={"textcontent--footer--navigation"} to={"info"}>
                 <p>{ t("common:contacts") }</p>
             </Link>
 
-            <a className={"textcontent--footer--nav"} href={ Link01 } target={"_blank"} rel={"noopner noreferrer"}>
+            <a className={"textcontent--footer--navigation"} href={ Link01 } target={"_blank"} rel={"noopner noreferrer"}>
                 <p>{ t("common:eapointment") }</p>
             </a>
         </div>

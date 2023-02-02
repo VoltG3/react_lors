@@ -8,7 +8,7 @@ function BTN_header() {
     return (
         <Button>
             <Link to={"contacts"}>
-                <p className={"textcontent--paragraph_older"}>{ t("btn_variant04") }</p>
+                <p className={"textcontent--button--v2"}>{ t("btn_variant04") }</p>
             </Link>
         </Button>
     )

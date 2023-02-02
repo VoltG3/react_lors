@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import { useTranslation } from 'react-i18next'
 
-import DataColumnNames from './TableContacts/Columns/DataColumnNames'
-import DataColumnPublic from './TableContacts/Columns/DataColumnPublic'
-import DataColumnPrivat from './TableContacts/Columns/DataColumnPrivat'
-import { DataColumnDays } from './TableContacts/Columns/DataColumnDays'
+import DataColumnPublicNames from './Columns/DataColumnPublicNames'
+import DataColumnPublic from './Columns/DataColumnPublic'
+import DataColumnPrivat from './Columns/DataColumnPrivat'
+import { DataColumnDays } from './Columns/DataColumnDays'
+import DataColumnPrivateNames from "./Columns/DataColumnPrivateNames";
 
 const TableSectionContacts = () => {
     const [t] = useTranslation(["times"])
@@ -16,19 +17,22 @@ const TableSectionContacts = () => {
         <StyledOpeningHoursContainer>
             <div className={"openingHoursDesktop"}>
                 <div className={"openingHours"}>
+
                     { HeaderPublic }
 
                     <StyledOpeningHoursColumns>
                         <DataColumnDays />
                         <DataColumnPublic />
-                        <DataColumnNames />
+                        <DataColumnPublicNames />
                     </StyledOpeningHoursColumns>
                 </div>
 
                 <div className={"openingHours"}>
+
                     { HeaderPrivat }
 
                     <StyledOpeningHoursColumns>
+                        <DataColumnPrivateNames />
                         <DataColumnPrivat />
                     </StyledOpeningHoursColumns>
                 </div>
@@ -36,22 +40,24 @@ const TableSectionContacts = () => {
 
             <div className={"openingHoursMobile"}>
                 <div className={"openingHours"}>
+
                     { HeaderPublic }
 
                     <StyledOpeningHoursColumns>
                         <DataColumnDays />
                         <DataColumnPublic />
-                        <DataColumnNames />
+                        <DataColumnPublicNames />
                     </StyledOpeningHoursColumns>
                 </div>
 
                 <div className={"openingHours"}>
+
                     { HeaderPrivat }
 
                     <StyledOpeningHoursColumns>
                         <DataColumnDays />
                         <DataColumnPrivat />
-                        <DataColumnNames />
+                        <DataColumnPrivateNames />
                     </StyledOpeningHoursColumns>
                 </div>
             </div>
@@ -65,7 +71,10 @@ const StyledOpeningHoursContainer = styled.div`
   box-sizing: border-box;
     width: 100%;
     height: 100%;
-  border: solid 1px red;
+  padding-top: var(--size--padding30);
+  padding-bottom: var(--size--padding30);
+  border-radius: var(--border--radius);
+  //border: solid 1px red;
   
   .openingHours {
     display: flex;
@@ -73,15 +82,21 @@ const StyledOpeningHoursContainer = styled.div`
     box-sizing: border-box;
       width: 100%;
       height: auto;
-    border: solid 1px green;
+    box-shadow: var(--box--shadow);
+    border-radius: var(--border--radius);
+    
+    &:hover {
+      transition: box-shadow .3s linear;
+      box-shadow: var(--box--hover);
+    }
   }
   
-  .openingHoursDesktop { display: flex!important; flex-direction: row; }
+  .openingHoursDesktop { display: flex!important; flex-direction: row; gap: var(--size--padding30);}
   .openingHoursMobile { display: none!important; }
 
   @media only screen and (max-width: 922px) {
     .openingHoursDesktop { display: none!important; }
-    .openingHoursMobile { display: flex!important; flex-direction: column; }
+    .openingHoursMobile { display: flex!important; flex-direction: column; gap: var(--size--padding30);}
   }
 `
 
@@ -91,59 +106,71 @@ const StyledOpeningHoursHeader = styled.div`
   align-items: center;
     width: 100%;
     height: 40px;
-  background-color: var(--color--primary);
+  border-top-left-radius: var(--border--radius);
+  border-top-right-radius: var(--border--radius);
+  background-color: var(--color--list--header);
 `
 
 const StyledOpeningHoursColumns = styled.div`
   display: flex;
   flex-direction: row;
+    width: 100%;
+    height: auto; 
   
   .column {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    min-width: 33%;
-      width: 100%;
-      height: auto;
-    border: solid 1px blue;
+        max-width: 100%;
+        min-width: 33%;
+          width: 100%;
+          height: auto;
+    //border: solid 1px red;
+    
+    & div:nth-child(odd) { background: var(--color--list--odd);
+      & div {
+        background: inherit;
+      }
+    }
+
+    & div:nth-child(even) { background: var(--color--list--even);
+      & div {
+        background: inherit;
+      }
+    }
     
     .cell {
       display: flex;
       justify-content: center;
       align-items: center;
         width: 100%;
-        height: 40px;
-      border: solid 2px red;
+        height: 60px;
     }
     
-    .cell--dobbel {
+    .cell--dobble {
       display: flex;
       flex-direction: column;
-      //padding-left: 10px;
-      //background-color: burlywood;
     }
     
     .cell--tripple {
-      
       display: flex;
       flex-direction: row;
         width: 100%;
         height: auto;
       
-        & div { display: flex; border: solid 1px red; }
-        & div:nth-child(1) { display: flex; width: 70px; justify-content: flex-end; }
-        & div:nth-child(2) { display: flex; width: 30px; justify-content: center!important;  border: solid 1px red; }
-        & div:nth-child(3) { display: flex; width: 70px; justify-content: flex-end; }
-    }
-    
-    & div:nth-child(odd).cell {
-      background: var(--color--list);
-    }
-    
-    & div:nth-child(even).cell {
-      background: var(--color--none);
+        & div { display: flex; }
+        & div:nth-child(1) { display: flex; width: 80px; justify-content: flex-end; }
+        & div:nth-child(2) { display: flex; width: 30px; justify-content: center; }
+        & div:nth-child(3) { display: flex; width: 80px; justify-content: flex-start; }
     }
   }
+
+  .roundedBorderLeft { & div:nth-child(5) {
+    border-bottom-left-radius: var(--border--radius);
+  }}
+
+  .roundedBorderRight { & div:nth-child(5) {
+      border-bottom-right-radius: var(--border--radius);
+  }}
 `
 
 export default TableSectionContacts

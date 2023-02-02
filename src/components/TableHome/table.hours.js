@@ -5,6 +5,9 @@ import TableHoursDays from './table.hours.days'
 import LineShort from '../line.short'
 import BTN_variant01 from '../Button/BTN_variant01'
 import TableHoursHours from "./table.hours.hours";
+import BUTTON_v1 from "../Button/BUTTON_v1";
+import React from "react";
+import {Link01} from "../../env";
 
 const TableHours = () => {
     const [t] = useTranslation(["times", "sections", "common"])
@@ -37,7 +40,21 @@ const TableHours = () => {
             </div>
             <p className={ paragraphTableItem } style={{ paddingTop: '20px'}}>{ t("sections:section_contacts_part02") }</p>
 
-            <BTN_variant01 />
+            <BTN_variant01 style={{ paddingLeft: '0'}}/>
+
+
+            <a href={ Link01 } target="_blank" rel="noopener noreferrer">
+                <BUTTON_v1
+                    label={"btn_appointment_l"}
+                    minWidth={"218px"}
+                    paragraphMarginLeft={"-25%"}
+                    paddingVertical={"8px"}
+                    justifyContent={"flex-end"}
+                />
+            </a>
+
+
+
         </>
     )
 }

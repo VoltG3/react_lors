@@ -1,409 +1,293 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalFontStyles = createGlobalStyle`
-  :root {
-    --font--primary: "Montserrat", sans-serif; // var(--font--primary)
-    --font--secondary: "Open Sans", sans-serif; // var(--font--secondary)
-    --font--third: "Crimson Text", serif; // var(--font--third)
+    :root {
 
-    --font--Montserrat: "Montserrat", sans-serif; 
-    
-    --font--GTWalsheimBold: "GTWalsheimBold", sans-serif;
-    --font--GTWalsheimMedium: "GTWalsheimMedium", sans-serif;
-    --font--GTWalsheimLight: "GTWalsheimLight", sans-serif;
-    --font--opacity: 0.7;
-  }
+      --font--Montserrat: "Montserrat", sans-serif;
+      --font--OpenSans: "Open Sans", sans-serif;
+      //--font--CrimsonText: "Crimson Text", serif;
+      --font--Roboto: "Roboto", sans-serif;
 
-  // // /// //
-  //  PAGE  //
-  // //  // //
-  
-  .textcontent--paragraph {
-    font-family: var(--font--GTWalsheimLight);
-    font-style: normal;
-    font-weight: 400;
-    font-size: min(max(1.458vw, 18px), 21px);
-    line-height: min(max(1.806vw, 20px), 26px);
-    opacity: var(--font--opacity);
-    color: var(--color--default);
-  }
+      //--font--GTWalsheimBold: "GTWalsheimBold", sans-serif;
+      //--font--GTWalsheimMedium: "GTWalsheimMedium", sans-serif;
+      --font--GTWalsheimLight: "GTWalsheimLight", sans-serif;
+      --font--opacity: 0.7;
+      
+      // common
+      --textcontent--h1--fontsize: min(max(2.5vw, 18px), 36px);
+      --textcontent--h1--lineheight: min(max(3.056vw, 22px), 44px);
+      --textcontent--h1--rus--fontsize: min(max(2.5vw, 18px), 36px);
+      --textcontent--h1--rus--lineheight: min(max(3.056vw, 22px), 44px);
+      --textcontent--h2--fontsize: 24px;
+      --textcontent--h2--lineheight: min(max(3.056vw, 22px), 44px);
+      --textcontent--h2--rus--fontsize: 24px;
+      --textcontent--h2--rus--lineheight: min(max(3.056vw, 22px), 44px);
+      --textcontent--h3--fontsize: 20px;
+      --textcontent--paragraph--fontsize: min(max(1.458vw, 18px), 21px);
+      --textcontent--paragraph--lineheight: min(max(1.806vw, 20px), 26px);
+      --textcontent--paragraph--rus--fontsize: min(max(1.458vw, 18px), 21px);
+      --textcontent--paragraph--rus--lineheight: min(max(1.806vw, 20px), 26px);
+      // lists
+      --textcontent--list--header--fontsize: min(max(1.389vw, 16px), 20px);
+      --textcontent--list--item--fontsize: 18px;
+      // header
+      --textcontent--header--navigation--languages--fontsize: 16px;
+      --textcontent--header--navigation--infoline--fontsize: 14px;
+      --textcontent--header--desktop--navigation--fontsize: 16px;
+      // footer
+      --textcontent--footer--navigation--fontsize: 14px;
+      --textcontent--footer--navigation--lineheight: 19px;
+      --textcontent--footer--header--fontsize: 14px;
+      --textcontent--footer--header--lineheight: 20px;
+      --textcontent--footer--item--fontsize: 14px;
+      --textcontent--footer--item--lineheight: 20px;
+      // tabledata
+      --textcontent--table--header--fontsize: 28px;
+      --textcontent--table--header--rus--fontsie: 20px;
+      --textcontent--table--item--fontsize: 18px;
+      --textcontent--table--item--lineheight: 20px;
+      --textcontent--table--item--rus--fontsize: 16px;
+      --textcontent--table--item--rus--lineheight: 20px;
+      
+      
+      .textcontent--button {
+        font-family: var(--font--Roboto);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.5;
+       // text-align: start;
+        color: var(--color--button--v1);
+        //border: solid 1px red;
+      }
+      
+      .textcontent--opening--hours {
+        font-family: var(--font--Montserrat);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+          letter-spacing: 2px;
+        line-height: 22px;
+       // opacity: var(--font--opacity);
+        color: var(--color--default);
+      }
+      
+      // [ BUTTONS ] -----------------------------------------------
 
-          .textcontent--paragraph--rus {
-            font-family: var(--font--Montserrat);
-            font-style: normal;
-            font-weight: 400;
-            font-size: min(max(1.458vw, 18px), 21px);
-            line-height: min(max(1.806vw, 20px), 26px);
-            opacity: var(--font--opacity);
-            color: var(--color--default);
-          }
-  
-  .textcontent--header1 {
-    font-family: var( --font--GTWalsheimMedium);
-    font-style: normal;
-    font-weight: 400;
-    font-size: min(max(2.5vw, 18px), 36px);
-    line-height: min(max(3.056vw, 22px), 44px);
-    //text-transform: uppercase;
-    white-space: pre-wrap;
-    opacity: var(--font--opacity);
-    color: var(--color--secondary);
-  }  h1, p {
-      padding-left: 0!important;
-    }
-
-          .textcontent--header1--rus {
-            font-family: var(--font--Montserrat);
-            font-style: normal;
-            font-weight: 400;
-            font-size: min(max(2.5vw, 18px), 36px);
-            line-height: min(max(3.056vw, 22px), 44px);
-            text-transform: uppercase;
-            //white-space: pre-wrap;
-            opacity: var(--font--opacity);
-            color: var(--color--secondary);
-          }  h1, p {
-      padding-left: 0!important;
-    }
-
-  .textcontent--semiheader {
-    font-family: var( --font--GTWalsheimMedium);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    //font-size: min(max(2.5vw, 18px), 36px);
-    line-height: min(max(3.056vw, 22px), 44px);
-    text-transform: uppercase;
-    //text-transform: uppercase;
-    white-space: pre-wrap;
-    opacity: var(--font--opacity);
-    color: var(--color--secondary);
-  }
-
-  .textcontent--semiheader--rus {
-    font-family: var(--font--Montserrat);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    //font-size: min(max(2.5vw, 18px), 36px);
-    line-height: min(max(3.056vw, 22px), 44px);
-    text-transform: uppercase;
-    //white-space: pre-wrap;
-    opacity: var(--font--opacity);
-    color: var(--color--secondary);
-  }
-  
-  // // // // //
-  //  TABLES  //
-  // // // // //
-  
-  .textcontent--table--item {
-    font-family: var(--font--GTWalsheimLight);
-    font-style: normal;
-    //font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
-    opacity: var(--font--opacity);
-    color: var(--color--primary);
-  }
-
-          .textcontent--table--item--rus {
-            font-family: var(--font--Montserrat);
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            opacity: var(--font--opacity);
-            color: var(--color--primary);
-          }
-
-  .textcontent--table--header {
-    font-family: var(--font--GTWalsheimMedium);
-    font-style: normal;
-    //font-weight: 600;
-    //text-transform: uppercase;
-    font-size: 28px;
-    opacity: var(--font--opacity);
-    color: var(--color--primary);
-
-    @media only screen and (max-width: 700px) {
-      //font-weight: 400;
-      font-size: 18px;
-      text-transform: uppercase;
-    }
-  }
-
-          .textcontent--table--header--rus {
-            font-family: var(--font--Montserrat);
-            font-style: normal;
-            font-weight: 600;
-            font-size: 20px;
-            opacity: var(--font--opacity);
-            color: var(--color--primary);
-        
-            @media only screen and (max-width: 700px) {
-              font-weight: 400;
-              font-size: 18px;
-              text-transform: uppercase;
-            }
-          }
-
-  // // /// // //
-  //  BUTTONS  //
-  // // /// // //
-
-  .textcontent--buttonV1 {
-    font-family: var(--font--secondary);
-    font-style: normal;
-    font-weight: 400;
-    font-size: min(max(1.458vw, 18px), 18px);
-    line-height: min(max(1.806vw, 20px), 26px);
-    opacity: var(--font--opacity);
-    color: var(--color--default);
-  }
-  
-  
-  /* ---------------------------------------------- */
-  .textcontent--header--desktop--infoline {
-    font-family: var(--font--secondary);
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
-    opacity: 0.7;
-    color: var(--clr--default--dkst);
-  }
-
-  .textcontent--header--desktop--navigation {
-    font-family: var(--font--secondary);
-    font-style: normal;
-    font-weight: 400;
-    // font-size: 18px;
-    font-size: 16px;
-    //line-height: 25px;
-    // display: flex;
-    //align-items: center;
-    // letter-spacing: 0.1em;
-    text-transform: uppercase;
-    opacity: 0.7;
-    color: var(--clr--primary--base);
-  }
-
-  .textcontent--header--desktop--languages {
-    font-family: var(--font--secondary);
-    font-style: normal;
-    font-weight: 200;
-    font-size: 18px;
-    //line-height: 22px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: var(--clr--primary--base);
-  }
-  
-  // ------------------------------------------------
-  
-  
-  //h1 {
-  //  font-family: var(--font--primary);
-  //  font-style: normal;
-  //  font-weight: 400;
-  //  font-size: min(max(2.5vw, 18px), 36px);
-  //  line-height: min(max(3.056vw, 22px), 44px);
-  //      text-transform: uppercase;
-  //      opacity: var(--font--opacity);
-  //      color: var(--color--secondary);
- // }
-
-  .textcontent--paragraph_older {
-    font-family: var(--font--primary);
-    font-style: normal;
-    font-weight: 400;
-    font-size: min(max(1.458vw, 18px), 21px);
-    line-height: min(max(1.806vw, 20px), 26px);
+      .textcontent--button--v1 {
+        font-family: var(--font--secondary);
+        font-style: normal;
+        font-weight: 400;
+        font-size: min(max(1.458vw, 18px), 18px);
+        line-height: min(max(1.806vw, 20px), 26px);
         opacity: var(--font--opacity);
         color: var(--color--default);
-  }
+      }
 
-  .textcontent--small--header1 {
-    font-family: var(--font--primary);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    opacity: var(--font--opacity);
-    color: var(--color--primary);
-
-    @media only screen and (max-width: 700px) {
-      font-weight: 400;
-      font-size: 18px;
-      text-transform: uppercase;
-    }
-  }
-
-  .textcontent--small--item1 {
-    font-family: var(--font--primary);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    opacity: var(--font--opacity);
-    color: var(--color--primary);
-  }
-  
-  .textcontent--section--header {
-    font-family: var(--font--primary);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 59px;
-    opacity: var(--font--opacity);
-    color: var(--color--secondary);
-  }
-  
-
-
-  .textcontent--paragraph_older--header--red {
-    font-family: var(--font--primary);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 39px;
-    opacity: var(--font--opacity);
-    color: var(--color--highlight);
-  }
-  
-  
-
-  .textcontent--paragraph_older--highlight {
-    font-family: var(--font--primary);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    opacity: var(--font--opacity);
-    color: var(--color--highlight);
-  }
-  
-  .textcontent--paragraph_older--bold {
-    // rm
-    font-family: var(--font--primary);
-    font-style: normal;
-    font-weight: 500;
-    font-size: min(max(1.458vw, 18px), 21px);
-    line-height: min(max(1.806vw, 20px), 26px);
+      .textcontent--button--v2 {
+        font-family: var(--font--primary);
+        font-style: normal;
+        font-weight: 400;
+        font-size: min(max(1.458vw, 18px), 21px);
+        line-height: min(max(1.806vw, 20px), 26px);
         opacity: var(--font--opacity);
         color: var(--color--default);
-  }
-  
-  .textcontent--paragraph_older--2 {
-    font-family: var(--font--secondary);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-  }
-  
-  .textcontent--list--header {
-    font-family: var(--font--primary);
-    font-style: normal;
-    font-weight: 600;
-    font-size: min(max(1.389vw, 16px), 20px);
-    //line-height: 29px;
-    text-transform: uppercase;
-    color: var(--color--none);
-  }
-  
-  .textcontent--list--item {
-    font-family: var(--font--primary);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    opacity: var(--font--opacity);
-    color: var(--color--secondary);
-  }
+      }
+      
+      // [ COMMON ] ------------------------------------------------
+      
+      .textcontent--h1 {
+        font-family: var(--font--GTWalsheimMedium);
+        font-style: normal;
+        font-weight: 400;
+        font-size: var(--textcontent--h1--fontsize);
+        line-height: var(--textcontent--h1--lineheight);
+          white-space: pre-wrap;
+        opacity: var(--font--opacity);
+        color: var(--color--secondary);
+      }
 
-  
+      .textcontent--h1--rus {
+        font-family: var(--font--Montserrat);
+        font-style: normal;
+        font-weight: 400;
+        font-size: var(--textcontent--h1--rus--fontsize);
+        line-height: var(--textcontent--h1--rus--lineheight);
+          text-transform: uppercase;
+        opacity: var(--font--opacity);
+        color: var(--color--secondary);
+      }
 
-  .textcontent--timeTable {
-    font-family: var(--font--primary);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    opacity: var(--font--opacity);
-    color: var(--color--primary);
-  }
-  
-  // // // // //
-  //  HEADER  //
-  // // // // //
+      .textcontent--paragraph {
+        font-family: var(--font--GTWalsheimLight);
+        font-style: normal;
+        font-weight: 400;
+        font-size: var(--textcontent--paragraph--fontsize);
+        line-height: var(--textcontent--paragraph--lineheight);
+        opacity: var(--font--opacity);
+        color: var(--color--default);
+      }
 
-  .textcontent--header--firstline {
-    font-family: var(--font--third);
-    font-style: normal;
-    font-weight: 400;
-    font-size: min(max(2.778vw, 25px), 40px);
-    //line-height: 52px;
-    display: flex;
-    align-items: center;
-    opacity: var(--font--opacity);
-    color: var(--color--headercolor);
-  }
+      .textcontent--paragraph--rus {
+        font-family: var(--font--Montserrat);
+        font-style: normal;
+        font-weight: 400;
+        font-size: var(--textcontent--paragraph--rus--fontsize);
+        line-height: var(--textcontent--paragraph--rus--lineheight);
+        opacity: var(--font--opacity);
+        color: var(--color--default);
+      }
 
-  .textcontent--header--secondline {
-    font-family: var(--font--secondary);
-    font-style: normal;
-    font-weight: 400;
-    font-size: min(max(1.389vw, 18px), 20px);
-    //line-height: 27px;
-    opacity: var(--font--opacity);
-    color: var(--color--headercolor);
-  }
-  
+      .textcontent--h2 {
+        font-family: var( --font--GTWalsheimMedium);
+        font-style: normal;
+        font-weight: 400;
+        font-size: var(--textcontent--h2--fontsize);
+        line-height: var(--textcontent--h2--lineheight);
+        text-transform: uppercase;
+        opacity: var(--font--opacity);
+        color: var(--color--secondary);
+      }
 
-  
-  //
-  // FOOTER
-  //
+      .textcontent--h2--rus {
+        font-family: var(--font--Montserrat);
+        font-style: normal;
+        font-weight: 400;
+        font-size: var(--textcontent--h2--rus--fontsize);
+        line-height: var(--textcontent--h2--rus--lineheight);
+        text-transform: uppercase;
+        opacity: var(--font--opacity);
+        color: var(--color--secondary);
+      }
 
-  .textcontent--paragraph_older--footer {
-    font-family: var(--font--secondary);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 19px;
-    //letter-spacing: 0.08em;
-    color: var(--color--paragraph--footer);
-  }
+      .textcontent--h3 {
+        font-family: var(--font--Montserrat);
+        font-style: normal;
+        font-weight: 600;
+        font-size: var(--textcontent--h3--fontsize);
+        opacity: var(--font--opacity);
+        color: var(--color--primary);
+      }
 
-  .textcontent--header--footer {
-    font-family: var(--font--secondary);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 19px;
-    //letter-spacing: 0.08em;
-    color: var(--color--none);
-  }
+      // [ LISTS ] -------------------------------------------------
 
-  .textcontent--footer--nav {
-    /* Lors --> f paragraph */
-    font-family: var(--font--secondary);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 19px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    //letter-spacing: 0.08em;
-    color: var(--color--paragraph--footer);
-    
-    & :hover {
-      color: var(--color--none);
+      .textcontent--list--header {
+        font-family: var(--font--Montserrat);
+        font-style: normal;
+        font-weight: 600;
+        font-size: var(--textcontent--list--header--fontsize);
+        text-transform: uppercase;
+        color: var(--color--none);
+      }
+
+      .textcontent--list--item {
+        font-family: var(--font--Montserrat);
+        font-style: normal;
+        font-weight: 400;
+        font-size: var(--textcontent--list--item--fontsize);
+        opacity: var(--font--opacity);
+        color: var(--color--secondary);
+      }
+
+      // [ HEADER ] ------------------------------------------------
+
+      .textcontent--header--navigation--languages {
+        font-family: var(--font--OpenSans);
+        font-style: normal;
+        font-weight: 300;
+        font-size: var(--textcontent--header--navigation--languages--fontsize);
+        color: var(--color--default);
+      }
+
+      .textcontent--header--desktop--infoline {
+        font-family: var(--font--OpenSans);
+        font-style: normal;
+        font-weight: 300;
+        font-size: var(--textcontent--header--navigation--infoline--fontsize);
+        color: var(--color--default);
+      }
+
+      .textcontent--header--desktop--navigation {
+        font-family: var(--font--OpenSans);
+        font-style: normal;
+        font-weight: 400;
+        font-size: var(--textcontent--header--desktop--navigation--fontsize);
+        text-transform: uppercase;
+        opacity: var(--font--opacity);
+        color: var(--clr--primary--base);
+      }
+
+      // [ FOOTER ] ------------------------------------------------
+
+      .textcontent--footer--navigation {
+        font-family: var(--font--OpenSans);
+        font-style: normal;
+        font-weight: 600;
+        font-size: var(--textcontent--footer--navigation--fontsize);
+        line-height: var(--textcontent--footer--navigation--lineheight);
+        text-transform: uppercase;
+        color: var(--color--paragraph--footer);
+
+        & :hover {
+          color: var(--color--none);
+        }
+      }
+      
+      .textcontent--footer--header {
+        font-family: var(--font--OpenSans);
+        font-style: normal;
+        font-weight: 600;
+        font-size: var(--textcontent--footer--header--fontsize);
+        line-height: var(--textcontent--footer--header--lineheight);
+        color: var(--color--none);
+      }
+
+      .textcontent--footer--item {
+        font-family: var(--font--OpenSans);
+        font-style: normal;
+        font-weight: 600;
+        font-size: var(--textcontent--footer--item--fontsize);
+        line-height: var(--textcontent--footer--item--lineheight);
+        color: var(--color--paragraph--footer);
+      }
+
+      // [ TABLEDATA ] ---------------------------------------------
+
+      .textcontent--table--header {
+        font-family: var(--font--GTWalsheimMedium);
+        font-style: normal;
+        font-weight: 600;
+        font-size: var(--textcontent--table--header--fontsize);
+        opacity: var(--font--opacity);
+        color: var(--color--primary);
+      }
+
+      .textcontent--table--header--rus {
+        font-family: var(--font--Montserrat);
+        font-style: normal;
+        font-weight: 600;
+        font-size: var(--textcontent--table--header--rus--fontsize);
+        opacity: var(--font--opacity);
+        color: var(--color--primary);
+      }
+
+      .textcontent--table--item {
+        font-family: var(--font--GTWalsheimLight);
+        font-style: normal;
+        font-weight: 400;
+        font-size: var(--textcontent--table--item--fontsize);
+        line-height: var(--textcontent--table--item--lineheight);
+        opacity: var(--font--opacity);
+        color: var(--color--primary);
+      }
+
+      .textcontent--table--item--rus {
+        font-family: var(--font--Montserrat);
+        font-style: normal;
+        font-weight: 400;
+        font-size: var(--textcontent--table--item--rus--fontsize);
+        line-height: var(--textcontent--table--item--rus--lineheight);
+        opacity: var(--font--opacity);
+        color: var(--color--primary);
+      }
     }
-  }
-  
 `

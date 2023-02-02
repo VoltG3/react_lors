@@ -9,7 +9,7 @@ function BTN_variant01() {
         <BTN01Container>
             <StyledButtonV01>
                 <a href={ Link01 } target="_blank" rel="noopener noreferrer">
-                    <p className={"textcontent--buttonV1"}>{ t("common:eapointment") }</p>
+                    <p className={"textcontent--button--v1"}>{ t("common:eapointment") }</p>
                 </a>
             </StyledButtonV01>
         </BTN01Container>

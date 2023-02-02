@@ -8,8 +8,7 @@ export const ListHeader = styled.div`
   }}
   
   align-items: center;
-  //background-color: var(--color--primary) !important;
-  background-color: var(--color--list--header) !important;
+  background: var(--color--list--header)!important;
   border-top-left-radius: var(--border--radius);
   border-top-right-radius: var(--border--radius);
   
@@ -41,13 +40,11 @@ const ListContainer = css`
   }
 
   & div:nth-child(even) {
-    background: var(--color--none);
-    //background: var(--color--list--even);
+    background: var(--color--list--even);
   }
 
   & div:nth-child(odd) {
-    background: var(--color--list);
-    //background: var(--color--lsit--odd);
+    background: var(--color--list--odd);
   }
 
   & div:nth-last-child(-n + 1) {
@@ -109,11 +106,11 @@ const InnerPrices = css`
   }
 
     & div:nth-child(even) .line {
-      background: var(--clr--default--ltst);
+      background: var(--color--list--even);
     }
   
     & div:nth-child(odd) .line {
-      background: var(--color--list);
+      background: var(--color--list--odd);
     }
 `
 

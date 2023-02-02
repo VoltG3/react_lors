@@ -40,7 +40,7 @@ function BTNSmallNext() {
 
     return (
         <StyledBtnSmallNext>
-            <p className={"textcontent--paragraph_older"}>{ t("common:eapointment") }</p>
+            <p className={"textcontent--button--v2"}>{ t("common:eapointment") }</p>
         </StyledBtnSmallNext>
     )
 }

@@ -9,7 +9,7 @@ import TableSectionHome from '../components/table.section.home'
 export default function Home() {
     const [t] = useTranslation(["sections"])
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
-    const h1 = i18n.language === 'ru' ? 'textcontent--header1--rus' : 'textcontent--header1'
+    const h1 = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
 
     return (
         <StyledPageContainer>

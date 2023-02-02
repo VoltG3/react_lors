@@ -5,10 +5,10 @@ export default function FooterTextcontent03() {
 
     return (
         <div>
-            <p className={"pMarginBottom textcontent--header--footer"}>{ t("sections:section_footer_part06") }</p>
-            <p className={"pMarginBottom textcontent--paragraph_older--footer"}>{ t("sections:section_footer_part07") }</p>
-            <p className={"pMarginBottom textcontent--header--footer"}>{ t("sections:section_footer_part08") }</p>
-            <p className={"              textcontent--paragraph_older--footer"}>{ t("sections:section_footer_part09") }</p>
+            <p className={"textcontent--footer--header"}>{ t("sections:section_footer_part06") }</p>
+            <p className={"textcontent--footer--item"}>{ t("sections:section_footer_part07") }</p>
+            <p className={"textcontent--footer--header"}>{ t("sections:section_footer_part08") }</p>
+            <p className={"textcontent--footer--item"}>{ t("sections:section_footer_part09") }</p>
         </div>
     )
 }

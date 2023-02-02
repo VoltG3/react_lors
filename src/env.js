@@ -25,6 +25,8 @@ export const image10 = Img10
 export const slider01 = Slider01
 export const slider02 = Slider02
 
+export const introHeader = 'SIA "Jautrītes Liepiņas ārsta prakse otorinolaringoloģijā"'
+
 export const Link01 = 'https://www.piearsta.lv/lv/'
 export const Link02 = 'https://m.likumi.lv/doc.php?id=301399'
 export const Link03 = 'https://www.vmnvd.gov.lv/lv/no-pacienta-lidzmaksajumiem-atbrivotas-iedzivotaju-grupas?utm_source=https%3A%2F%2Fwww.google.com%2F'
