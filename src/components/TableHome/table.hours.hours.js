@@ -11,14 +11,21 @@ const TableHoursHours = () => {
           jsonData.forEach(function(obj) { arrayOpeningHoursEU.push( TransformData(obj.open))})
           jsonData.forEach(function(obj) { arrayOpeningHoursUS.push( TransformData(obj.open))}); void TransformFormat(arrayOpeningHoursUS)
     const arrayOpeningHours = i18n.language === 'en' ? arrayOpeningHoursUS : arrayOpeningHoursEU
-console.table(arrayOpeningHours)
+    //console.table(arrayOpeningHours)
+
+    const tItem = "textcontent--tabledata--item"
+    const tItemSmal = "textcontent--tabledata--item--small"
+
     return (
         <StyledHoursList>
             { arrayOpeningHours.map(( array, index ) => (
-                <div key={ index } className={"innerHoursList"}>
-                    <div><p>{ array[0] }</p></div>
-                    <div><p>-</p></div>
-                    <div><p>{ array[1] }</p></div>
+                <div key={ index } className={"cell"}>
+                    <div className={"cellD line"}>
+                        <div><p className={tItem}>{ array[0] }</p></div>
+                        <div><p className={tItem}>-</p></div>
+                        <div><p className={tItem}>{ array[1] }</p></div>
+                    </div>
+
                 </div>
             ))}
         </StyledHoursList>
@@ -33,38 +40,62 @@ const StyledHoursList = styled.div`
     height: auto;
   //border: solid 1px red;
   
-  .innerHoursList {
+  .cellD {
     display: flex;
+ 
     width: 100%;
-    height: 30px;
+    height: 40px;
     flex-direction: row;
-    
+   
     & div:nth-child(1) {
       display: flex;
+      align-items: center;
       justify-content: flex-end;
-      width: 70px;
+      width: 90px;
+      
       //border: solid 1px red;
+      
     }
     
     & div:nth-child(2) {
       display: flex;
+      align-items: center;
       justify-content: center;
       width: 20px;
      // border: solid 1px red;
     }
 
-    & div:nth-child(3) {
-      display: flex;
-      justify-content: flex-start;
-      width: 70px;
-     // border: solid 1px red;
-    }
-
-    & p {
+    & div:nth-child(3) { 
+      /*& p {
       font-size: 14px;
       font-weight: bold;
       color: #333;
+    }*/
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 90px;
+     // border: solid 1px red;
     }
+
+   /* & p {
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+    }*/
+  }
+
+  .line {
+   // height: auto;
+    //min-height: var(--list--line--height);
+  }
+
+  & div:nth-child(even) .line {
+    background: var(--color--list--even);
+  }
+
+  & div:nth-child(odd) .line {
+    background: var(--color--list--odd);
   }
 `
 

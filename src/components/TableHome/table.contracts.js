@@ -13,21 +13,24 @@ import LineShort from '../line.short'
 
 function TableContracts() {
     const [t] = useTranslation(["common"])
-    const paragraphTableItem = i18n.language === 'ru' ? 'textcontent--table--item--rus' : 'textcontent--table--item'
-    const tableHeader = i18n.language === 'ru' ? 'textcontent--table--header--rus' : 'textcontent--table--header'
+    //const paragraphTableItem = i18n.language === 'ru' ? 'textcontent--table--item--rus' : 'textcontent--table--item'
+    //const tableHeader = i18n.language === 'ru' ? 'textcontent--table--header--rus' : 'textcontent--table--header'
+    const tHeader = "textcontent--tabledata--header"
+    const tItem = "textcontent--tabledata--item"
 
     return (
         <StyledContainer>
             <div className={"stInner"}>
-                <p className={ tableHeader }>{ t("common:contracts01") }</p>
+                <p className={ tHeader }>{ t("common:contracts01") }</p>
+                {/*<p className={ tHeader }>Business Lines</p>*/}
 
                 <LineShort color={"colorSecond"}/>
 
-                <p className={ paragraphTableItem }>{ t("common:contracts02")}</p>
+                <p className={ tItem }>{ t("common:contracts02")}</p>
 
                 <div className={"logoSquare"}>
                     <img src={ Logo01 } alt={"logo"} style={{ maxWidth: '55px', minWidth: '35px' }}/>
-                    <img src={ Logo02 } alt={"logo"} style={{ maxWidth: '70px', minWidth: '35px' }}/>
+                    <img src={ Logo02 } alt={"logo"} style={{ maxWidth: '90px', minWidth: '35px' }}/>
                     <img src={ Logo03 } alt={"logo"} style={{ maxWidth: '80px', minWidth: '35px' }}/>
                     <img src={ Logo04 } alt={"logo"} style={{ maxWidth: '150px', minWidth: '70px' }}/>
                     <img src={ Logo05 } alt={"logo"} style={{ maxWidth: '120px', minWidth: '70px', marginBottom: '12px'}}/>
@@ -52,8 +55,9 @@ const StyledContainer = styled.div`
     width: auto;
     height: 100%;
     box-sizing: border-box;
-    margin: 40px 40px 40px 40px;
-    border: dotted 1px blue;
+    margin: 60px 40px 40px 40px;
+    //border: dotted 1px blue;
+    border-bottom: solid 1px var(--color--tabledata--border);
   }
   
   .logoSquare {
@@ -61,8 +65,10 @@ const StyledContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
-    margin: 10px 0 10px 0;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    
+    
     
     & img {
       width: 100%;

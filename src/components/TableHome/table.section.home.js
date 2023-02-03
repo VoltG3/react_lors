@@ -41,12 +41,14 @@ const StyledTablesHome = styled.div`
     //padding: 50px 40px 40px 40px;
     box-shadow: var(--box--shadow);
     background-color: var(--color--none);
+    border-radius: var(--border--radius);
     
-    border: dotted 1px blue;
+    //border: dotted 1px blue;
 
     @media only screen and (max-width: 992px) {
-      max-width: 100%;
-          width: 100%;
+      max-width: var(--page--width);
+      width: var(--page--width100);
+      height: auto;
     }
 
     &:hover {

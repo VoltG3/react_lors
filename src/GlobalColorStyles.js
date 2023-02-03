@@ -23,6 +23,9 @@ export const GlobalColorStyles = createGlobalStyle`
     --color--line--variant--v2: #EF5DA8;
     --color--line--variant--v3: #C20031;
 
+    --color--tabledata: #373A36;
+    --color--tabledata--border: #7f817e;
+
     --color--default: #030303;
     --color--none: #FFFFFF;
   }

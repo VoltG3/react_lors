@@ -3,17 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyles2 = createGlobalStyle`
   :root {
     
-    --page--width: 1440px;
-    --page--width100: 100%;
-    
-    --size--padding20: 20px;
-    --size--padding30: 30px;
-    --size--padding40: 40px;
-    --size--padding50: 50px;
-    --size--padding60: 60px;
-    --size--padding70: 70px;
-    --size--padding80: 80px;
-   
+  
   
 
     --space--between--footer--tiles: 131px;

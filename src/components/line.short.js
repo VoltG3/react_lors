@@ -4,10 +4,10 @@ function LineShort(props) {
     return (
         <>
             <div style={{
-                width: '63px',
+                width: '43px',
                 height: '4px',
-                marginTop: '20px',
-                marginBottom: '40px',
+                marginTop: '22px',
+                marginBottom: '44px',
                 background: props.color === "colorFirst"
                     ? 'var(--color--line--variant--v1)'
                     : props.color === "colorSecond"

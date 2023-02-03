@@ -26,8 +26,8 @@ function Footer() {
                 </div>
             </div>
 
-            <div style={{ boxShadow : '-0px -4px 4px rgba(0, 0, 0, 0.25)' }}>
-                <div style={{ boxShadow : '0 4px 4px rgba(0, 0, 0, 0.25)' }}>
+            <div style={{ boxShadow : '-0px -4px 4px rgba(0, 0, 0, 0.35)' }}>
+                <div style={{ boxShadow : '0 4px 4px rgba(0, 0, 0, 0.35)' }}>
                     <FooterLogo />
                 </div>
             </div>
@@ -46,16 +46,22 @@ const StyledFooter = styled.div`
   white-space: pre-wrap;
   width: 100vw;
   color: white;
-  background: var(--crl--primary--dk);
+  background:#021928;//var(--crl--primary--dk);
 
   .innerFooter {
     display: flex;
     flex-direction: row;
-    max-width: 1440px;
+    max-width: var(--page--width);
     width: var(--page--width100);
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
+
+    @media only screen and (max-width: 1170px) {
+      gap: 30px;
+      flex-direction: column;
+      
+    }
   }
 
   .footerFirstSet {
@@ -84,7 +90,7 @@ const StyledFooter = styled.div`
       width: 100%;
     }
 
-    & div {
+    & div {021928FF
       display: flex;
       flex-direction: column;
       min-width: 270px;
@@ -98,7 +104,8 @@ const StyledFooter = styled.div`
     @media only screen and (max-width: 1170px) {
       gap: 30px;
       flex-direction: column;
-
+      
+      
       .space {
         display: none;
       }

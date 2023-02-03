@@ -72,6 +72,13 @@ export const PageContainer = styled.div`
 
     @media only screen and (max-width: 700px) {
       flex-direction: column;
+      & div:nth-child(2) {
+        display: flex;
+        justify-content: flex-start;
+          width: 100%;
+        height:auto;
+       // border: solid 1px red;
+      }
     }
   }
   

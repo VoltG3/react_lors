@@ -3,23 +3,23 @@ import i18n from 'i18next'
 
 function LanguagesMobile() {
     return (
-        <div>
+        <div style={{ display: 'flex', justifyContent: 'flex-end'}}>
             <StyledSubSetLangMob>
-                <p className={"textcontent--header--navigation--languages"}
+                <p className={"textcontent--header--mobile--languages"}
                    value={"LV"}
                    onClick={() => i18n.changeLanguage('lv') }>LV
                 </p>
 
-                <p className={"textcontent--header--navigation--languages"}>/</p>
+                <p className={"textcontent--header--mobile--languages"}>/</p>
 
-                <p className={"textcontent--header--navigation--languages"}
+                <p className={"textcontent--header--mobile--languages"}
                    value={"EN"}
                    onClick={() => i18n.changeLanguage('en') }>EN
                 </p>
 
-                <p className={"textcontent--header--navigation--languages"}>/</p>
+                <p className={"textcontent--header--mobile--languages"}>/</p>
 
-                <p className={"textcontent--header--navigation--languages"}
+                <p className={"textcontent--header--mobile--languages"}
                    value={"RU"}
                    onClick={() => i18n.changeLanguage('ru') }>RU
                 </p>
@@ -32,9 +32,9 @@ const StyledSubSetLangMob = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-      width: 100px;
+      width: 140px;
       height: 20px;
-  padding-top: 5px;
+ // padding-top: 5px;
 
   & p {
     color: white;

@@ -14,6 +14,11 @@ export const GlobalFontStyles = createGlobalStyle`
       --font--opacity: 0.7;
       
       // common
+      --textcontent--h0--fontsize: min(max(2.5vw, 28px), 36px);
+      --textcontent--h0--lineheight: min(max(3.056vw, 28px), 44px);
+      --textcontent--h0--rus--fontsize: min(max(2.5vw, 28px), 36px);
+      --textcontent--h0--rus--lineheight: min(max(3.056vw, 22px), 44px);
+      
       --textcontent--h1--fontsize: min(max(2.5vw, 18px), 36px);
       --textcontent--h1--lineheight: min(max(3.056vw, 22px), 44px);
       --textcontent--h1--rus--fontsize: min(max(2.5vw, 18px), 36px);
@@ -94,7 +99,31 @@ export const GlobalFontStyles = createGlobalStyle`
       }
       
       // [ COMMON ] ------------------------------------------------
-      
+      // [ NEW ] ---------------------------------------------------
+      .textcontent--h0 {
+        font-family: var(--font--GTWalsheimMedium);
+        font-style: normal;
+        font-weight: 400;
+        font-size: var(--textcontent--h0--fontsize);
+        line-height: var(--textcontent--h0--lineheight);
+        white-space: pre-wrap;
+        opacity: var(--font--opacity);
+        color: var(--color--secondary);
+        
+       // margin-bottom: .5em;
+      }
+
+      .textcontent--h0--rus {
+        font-family: var(--font--Montserrat);
+        font-style: normal;
+        font-weight: 400;
+        font-size: var(--textcontent--h0--rus--fontsize);
+        line-height: var(--textcontent--h0--rus--lineheight);
+        text-transform: uppercase;
+        opacity: var(--font--opacity);
+        color: var(--color--secondary);
+      }
+      // [ NEW ] ---------------------------------------------------
       .textcontent--h1 {
         font-family: var(--font--GTWalsheimMedium);
         font-style: normal;
@@ -216,6 +245,27 @@ export const GlobalFontStyles = createGlobalStyle`
         color: var(--clr--primary--base);
       }
 
+      .textcontent--header--mobile--navigation {
+        font-family: var(--font--OpenSans);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        text-transform: uppercase;
+        //opacity: var(--font--opacity);
+        //color: var(--color--none);
+      }
+
+      .textcontent--header--mobile--languages {
+        font-family: var(--font--OpenSans);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 23px;
+        text-transform: uppercase;
+        //opacity: var(--font--opacity);
+        //color: var(--color--none);
+
+      }
+
       // [ FOOTER ] ------------------------------------------------
 
       .textcontent--footer--navigation {
@@ -251,7 +301,42 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       // [ TABLEDATA ] ---------------------------------------------
+      // [ NEW ] ---------------------------------------------------
 
+      .textcontent--tabledata--header {
+        font-family: var(--font--Roboto);
+        font-size: 26px;
+        font-weight: 300;
+        
+        color: var(--color--tabledata);
+        //line-height: 1.5;
+        // text-align: start;
+        //color: var(--color--button--v1);
+        //border: solid 1px red;
+      }
+
+      .textcontent--tabledata--item {
+        font-family: var(--font--Roboto);
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.5;
+        // text-align: start;
+        color: var(--color--button--v1);
+        //border: solid 1px red;
+      }
+
+      .textcontent--tabledata--item--small {
+        font-family: var(--font--Roboto);
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.5;
+        // text-align: start;
+        color: var(--color--button--v1);
+        //border: solid 1px red;
+      }
+
+      // [ NEW ] ---------------------------------------------------
+      
       .textcontent--table--header {
         font-family: var(--font--GTWalsheimMedium);
         font-style: normal;

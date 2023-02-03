@@ -23,8 +23,10 @@
         height: 70px; /* root */
     box-sizing: border-box;
     /*border: solid 1px red;*/
+    padding-right: 30px;
+    padding-left: 30px;
     opacity: 0.7;
-    background: white; /* root */
+    background: rgb(244, 244, 244); /* root */
     box-shadow: rgba(176, 176, 176, 0.3) 0px 2px 15px 0px;
 }
 
@@ -77,7 +79,7 @@
 .bm-morph-shape {
     fill: #373a47;
 }
-
+navigation
 /* Wrapper for item list */
 .bm-item-list {
     color: #b8b7ad;

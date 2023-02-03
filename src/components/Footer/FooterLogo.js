@@ -34,7 +34,9 @@ const StyledFooterLogo = styled.div`
   align-items: center;
     width: 100vw;
     height: auto;
-  background: var(--clr--primary--base);
+  background: #112734; //var(--clr--primary--base);
+  
+ //box-shadow: inset 0 10px 5px black;//#021928;
   
   .innerFooterLogo {
     display: flex;

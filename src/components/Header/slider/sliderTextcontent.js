@@ -1,3 +1,4 @@
+import styled from 'styled-components'
 import { useTranslation } from 'react-i18next'
 import i18n from 'i18next'
 
@@ -9,7 +10,7 @@ import {Link} from "react-router-dom";
 function SliderTextcontent() {
     const [t] = useTranslation(["sections", "common"])
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
-    const h1 = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
+    const h1 = i18n.language === 'ru' ? 'textcontent--h0--rus' : 'textcontent--h0'
 
     return (
       <div style={{
@@ -20,10 +21,11 @@ function SliderTextcontent() {
           maxWidth: 'var(--page--width)',
           width: 'var(--page--width100)',
           height: 'inherit'
+
       }}>
-          <div style={{ margin: '80px 0 0 0' }}>
+          <Temporary>
               <p className={ h1 }>{ introHeader }</p>
-              <p className={ paragraph }  style={{ paddingBottom: '120px'}}>{ t("sections:section_header_part06") }</p>
+              <p className={ paragraph }>{ t("sections:section_header_part06") }</p>
 
               <Link to={"contacts"}>
                   <BTNPrimary
@@ -35,9 +37,36 @@ function SliderTextcontent() {
                   />
               </Link>
 
-          </div>
+          </Temporary>
       </div>
     )
 }
+
+const Temporary = styled.div`
+  display: flex;
+  flex-direction: column;
+    width: 100%;
+    height: 100%;
+  //margin-top: min(max(5.55vh, 18px), 80px);
+    //border: solid 1px black;
+  margin-top: 80px;
+  
+  & div:first-child {
+    margin-top: 80px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    margin-top: 40px;
+    
+    
+    & p:first-child {
+      padding-bottom: 10px;
+    }
+
+    & div:first-child {
+      margin-top: 20px;
+    }
+  }
+`
 
 export default SliderTextcontent

@@ -16,8 +16,11 @@ import LineShort from '../line.short'
 
 function TableAccessible() {
     const [t] = useTranslation(["accessible"])
-    const paragraphTableItem = i18n.language === 'ru' ? 'textcontent--table--item--rus' : 'textcontent--table--item'
-    const tableHeader = i18n.language === 'ru' ? 'textcontent--table--header--rus' : 'textcontent--table--header'
+    // const paragraphTableItem = i18n.language === 'ru' ? 'textcontent--table--item--rus' : 'textcontent--table--item'
+    // const tableHeader = i18n.language === 'ru' ? 'textcontent--table--header--rus' : 'textcontent--table--header'
+
+    const tableHeader = "textcontent--tabledata--header"
+    const paragraphTableItem = "textcontent--tabledata--item--small"
 
     return (
         <StyledAccessibleContainer>
@@ -63,7 +66,7 @@ function TableAccessible() {
                     </div>
 
                     <div className={"accessibleSquare"}>
-                        <img className={"accessibleIcon"} style={{ width: '35px', height: '25px'}} src={ Icon08 } alt={"icon"} />
+                        <img className={"accessibleIcon"} style={{ width: '28px', height: '25px'}} src={ Icon08 } alt={"icon"} />
                         <p className={ paragraphTableItem }>{ t("accessible:accessible09") }</p>
                     </div>
                 </div>
@@ -90,13 +93,16 @@ const StyledAccessibleContainer = styled.div`
     width: auto;
     height: 100%;
     box-sizing: border-box;
-    margin: 40px 40px 40px 40px;
-    border: dotted 1px blue;
+    margin: 60px 40px 40px 40px;
+    //border: dotted 1px blue;
+    border-bottom: solid 1px var(--color--tabledata--border);
+    padding-bottom: 44px;
   }
   
   .accessibleTable {
     display: flex;
     flex-direction: column;
+  border: solid 1px red;5
   }
   
   .accessibleSquare {
@@ -105,12 +111,12 @@ const StyledAccessibleContainer = styled.div`
       height: auto;
     flex-direction: row;
     align-items: center;
-    margin: 10px 0 0 0;
+    margin: 12px 0 0 0;
   }
   
   .accessibleIcon {
-      width: 35px;
-      height: 35px;
+      width: 28px;
+      height: 28px;
     margin: 0 15px 0 0;
   }
 `
