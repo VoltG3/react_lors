@@ -4,7 +4,7 @@ import { PageContainer as StyledPageContainer } from './Styles'
 
 import LineLang from '../components/line.lang'
 import ImgCollective4 from '../components/Image/IMG.collective4'
-import TableSectionHome from '../components/table.section.home'
+import TableSectionHome from '../components/TableHome/table.section.home'
 
 export default function Home() {
     const [t] = useTranslation(["sections"])

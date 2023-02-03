@@ -5,7 +5,7 @@ import {useTranslation} from "react-i18next";
 import LanguagesMobile from "./languages.mobile";
 import i18n from "i18next";
 import {Link04} from "../../../env";
-import BTNSmallMobile from "../../Button/BTNSmallMobile";
+import BTNSmallMobile from "../../Button/temp/BTNSmallMobile";
 
 const SideBar = (props) => {
     const [t] = useTranslation(["common", "covid"])

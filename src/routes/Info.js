@@ -7,9 +7,11 @@ import { LISTInformation } from '../components/TextContent/Lists/LIST.informatio
 import {Link03} from '../env'
 import LineLang from "../components/line.lang";
 import {Link} from "react-router-dom";
-import BTNSmall from "../components/Button/BTNSmall";
+import BTNSmall from "../components/Button/temp/BTNSmall";
 
 import ImgCollective3Desktop from "../components/Image/IMG.collective3.desktop";
+import BTNSecondary from "../components/Button/BTN.secondary";
+import ImgCollective3Mobile from "../components/Image/IMG.collective3.mobile";
 
 export default function Info() {
     const [t] = useTranslation(["common","sections"])
@@ -23,58 +25,46 @@ export default function Info() {
 
             <LineLang />
 
-            <span>
-                <p style={{ paddingBottom: '0' }} className={ semiheader }>{ t("sections:section_info_part01") }</p>
+            <div style={{
+                display: 'flex',
+                flexDirection: 'row',
+                paddingBottom: 'var(--size--padding30)',
+                width: '100%',
+                /*border: 'solid 1px red'*/ }}>
 
-                <span className={"rmBottomMargin"}>
-                    <div className={"BTNSmallComponent"}>
-                        <p className={ paragraph }>- { t("sections:section_info_list01_part01") }</p>
+                <span>
+                    <p style={{ paddingBottom: '0' }} className={ semiheader }>{ t("sections:section_info_part01") }</p>
 
-                        <Link to={"/contacts"}>
-                            <BTNSmall />
-                        </Link>
+                    <ul>
+                        <li>
+                            <div style={{display: 'flex', flexDirection: 'row'}}>
+                                <div><p style={{ marginRight: '10px'}} className={ paragraph }>{ t("sections:section_info_list01_part01") } - </p></div>
+                                <Link to={"/contacts"}><BTNSecondary /></Link>
+                            </div>
+                        </li>
+                        <li><p className={ paragraph }>{ t("sections:section_info_list01_part02") }</p></li>
+                        <li><p className={ paragraph }>{ t("sections:section_info_list01_part03") }</p></li>
+                        <li><p className={ paragraph }>{ t("sections:section_info_list01_part04") }</p></li>
+                        <li><p className={ paragraph }>{ t("sections:section_info_list01_part05") }</p></li>
+                    </ul>
+
+                    <p style={{ fontWeight: '600' }} className={ paragraph }>{ t("sections:section_info_part02") }</p>
+
+                    <div className={"inlineSpanWithBtn"}>
+                        <div><p className={ paragraph }>{ t("sections:section_info_part03") }</p></div>
+                        <div><a href={ Link03 } target="_blank" rel="noopener noreferrer"><BTNSecondary /></a></div>
                     </div>
 
-                    <p style={{ paddingBottom: '0' }} className={ paragraph }>- { t("sections:section_info_list01_part02") }</p>
-                    <p style={{ paddingBottom: '0' }} className={ paragraph }>- { t("sections:section_info_list01_part03") }</p>
-                    <p style={{ paddingBottom: '0' }} className={ paragraph }>- { t("sections:section_info_list01_part04") }</p>
-                    <p style={{ paddingBottom: '0' }} className={ paragraph }>- { t("sections:section_info_list01_part05") }</p>
+                    <ul style={{ paddingTop: '0'}}>
+                        <li><p className={ paragraph }>{ t("sections:section_info_list02_part01") }</p></li>
+                        <li><p className={ paragraph }>{ t("sections:section_info_list02_part02") }</p></li>
+                        <li><p className={ paragraph }>{ t("sections:section_info_list02_part03") }</p></li>
+                    </ul>
                 </span>
-
-                <p style={{ fontWeight: '600'}} className={paragraph}>{ t("sections:section_info_part02") }</p>
-
-                <div className={"BTNSmallComponent"}>
-                    <p className={ paragraph }>{ t("sections:section_info_part03") }</p>
-
-                    <a href={ Link03 } target="_blank" rel="noopener noreferrer">
-                        <BTNSmall />
-                    </a>
-                </div>
-
-                <span className={"rmBottomMargin"}>
-                     <p style={{ paddingBottom: '0' }} className={ paragraph }>- { t("sections:section_info_list02_part01") }</p>
-                     <p style={{ paddingBottom: '0' }} className={ paragraph }>- { t("sections:section_info_list02_part02") }</p>
-                     <p style={{ paddingBottom: '0' }} className={ paragraph }>- { t("sections:section_info_list02_part03") }</p>
-                </span>
-            </span>
+            </div>
 
             <ImgCollective3Desktop />
-
-            <span style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                width: '100%',
-                height: 'auto',
-                paddingBottom: '30px'
-            }}>
-                <p style={{ paddingBottom: '10px' }} className={"textcontent--small--header1"}>{ t("sections:section_info_part04") }</p>
-
-                <p style={{ paddingBottom: '0' }} className={"textcontent--small--item1"}>{ t("sections:section_info_part05") }</p>
-                <p style={{ paddingBottom: '0' }} className={"textcontent--small--item1"}>{ t("sections:section_info_part06") }</p>
-                <p style={{ paddingBottom: '0' }} className={"textcontent--small--item1"}>{ t("sections:section_info_part07") }</p>
-            </span>
-
+            <ImgCollective3Mobile />
             <LISTInformation showHeader={"true"} />
         </StyledPageContainer>
     )

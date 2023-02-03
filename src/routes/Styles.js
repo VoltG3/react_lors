@@ -55,29 +55,37 @@ export const PageContainer = styled.div`
     }
   }
 
+  .inlineSpanWithBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    //justify-content: center;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    //border: solid 1px blue;
+    
+    & div:first-child {
+      padding-right: 10px;
+      padding-bottom: 20px;
+    }
+
+    @media only screen and (max-width: 700px) {
+      flex-direction: column;
+    }
+  }
   
-
-
-
-
 .BTNSmallComponent {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  box-sizing: border-box;
+ 
 
   & p {
-    padding-bottom: 0 !important;
-    border: solid 1px red;
-    padding-left: 30px;
-    padding-right: 30px;
+    //padding-bottom: 0 !important;
+    //border: solid 1px red;
+    //padding-left: 30px;
+    //padding-right: 30px;
   }
 
-  @media only screen and (max-width: 563px) {
-    flex-direction: column;
-  }
+ 
 }
 
 .rmBottomMargin {

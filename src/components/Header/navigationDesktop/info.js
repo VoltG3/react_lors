@@ -46,6 +46,13 @@ const StyledHeaderSubSetInfo = styled.div`
     height: auto;
   padding-top: 5px;
   
+  & div:first-child {
+    & p:hover {
+      cursor: pointer;
+      color: var(--clr--accent--base);
+    }
+  }
+  
   & div {
     padding-right: 30px;
   }

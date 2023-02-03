@@ -21,56 +21,78 @@ function TableAccessible() {
 
     return (
         <StyledAccessibleContainer>
-            <p className={ tableHeader }>{ t("accessible:accessible01") }</p>
+            <div className={"stInner"}>
+                <p className={ tableHeader }>{ t("accessible:accessible01") }</p>
 
-            <LineShort />
+                <LineShort color={"colorThird"}/>
 
-            <div className={"accesibleTable"}>
-                <div className={"accessibleSquare"}>
-                    <img className={"accessibleIcon"} src={ Icon01 } alt={"icon"} />
-                    <p className={ paragraphTableItem }>{ t("accessible:accessible02") }</p>
-                </div>
+                <div className={"accesibleTable"}>
+                    <div className={"accessibleSquare"}>
+                        <img className={"accessibleIcon"} src={ Icon01 } alt={"icon"} />
+                        <p className={ paragraphTableItem }>{ t("accessible:accessible02") }</p>
+                    </div>
 
-                <div className={"accessibleSquare"}>
-                    <img className={"accessibleIcon"} src={ Icon02 } alt={"icon"} />
-                    <p className={ paragraphTableItem }>{ t("accessible:accessible03") }</p>
-                </div>
+                    <div className={"accessibleSquare"}>
+                        <img className={"accessibleIcon"} src={ Icon02 } alt={"icon"} />
+                        <p className={ paragraphTableItem }>{ t("accessible:accessible03") }</p>
+                    </div>
 
-                <div className={"accessibleSquare"}>
-                    <img className={"accessibleIcon"} src={ Icon03 } alt={"icon"} />
-                    <p className={ paragraphTableItem }>{ t("accessible:accessible04") }</p>
-                </div>
+                    <div className={"accessibleSquare"}>
+                        <img className={"accessibleIcon"} src={ Icon03 } alt={"icon"} />
+                        <p className={ paragraphTableItem }>{ t("accessible:accessible04") }</p>
+                    </div>
 
-                <div className={"accessibleSquare"}>
-                    <img className={"accessibleIcon"} src={ Icon04 } alt={"icon"} />
-                    <p className={ paragraphTableItem }>{ t("accessible:accessible05") }</p>
-                </div>
+                    <div className={"accessibleSquare"}>
+                        <img className={"accessibleIcon"} src={ Icon04 } alt={"icon"} />
+                        <p className={ paragraphTableItem }>{ t("accessible:accessible05") }</p>
+                    </div>
 
-                <div className={"accessibleSquare"}>
-                    <img className={"accessibleIcon"} src={ Icon05 } alt={"icon"} />
-                    <p className={ paragraphTableItem }>{ t("accessible:accessible06") }</p>
-                </div>
+                    <div className={"accessibleSquare"}>
+                        <img className={"accessibleIcon"} src={ Icon05 } alt={"icon"} />
+                        <p className={ paragraphTableItem }>{ t("accessible:accessible06") }</p>
+                    </div>
 
-                <div className={"accessibleSquare"}>
-                    <img className={"accessibleIcon"} src={ Icon06 } alt={"icon"} />
-                    <p className={ paragraphTableItem }>{ t("accessible:accessible07") }</p>
-                </div>
+                    <div className={"accessibleSquare"}>
+                        <img className={"accessibleIcon"} src={ Icon06 } alt={"icon"} />
+                        <p className={ paragraphTableItem }>{ t("accessible:accessible07") }</p>
+                    </div>
 
-                <div className={"accessibleSquare"}>
-                    <img className={"accessibleIcon"} src={ Icon07 } alt={"icon"} />
-                    <p className={ paragraphTableItem }>{ t("accessible:accessible08") }</p>
-                </div>
+                    <div className={"accessibleSquare"}>
+                        <img className={"accessibleIcon"} src={ Icon07 } alt={"icon"} />
+                        <p className={ paragraphTableItem }>{ t("accessible:accessible08") }</p>
+                    </div>
 
-                <div className={"accessibleSquare"}>
-                    <img className={"accessibleIcon"} style={{ width: '35px', height: '25px'}} src={ Icon08 } alt={"icon"} />
-                    <p className={ paragraphTableItem }>{ t("accessible:accessible09") }</p>
+                    <div className={"accessibleSquare"}>
+                        <img className={"accessibleIcon"} style={{ width: '35px', height: '25px'}} src={ Icon08 } alt={"icon"} />
+                        <p className={ paragraphTableItem }>{ t("accessible:accessible09") }</p>
+                    </div>
                 </div>
             </div>
+
+
         </StyledAccessibleContainer>
     )
 }
 
 const StyledAccessibleContainer = styled.div`
+
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+  box-sizing: border-box;
+  //margin: 40px 40px 40px 40px;
+  //border: dotted 1px blue;
+
+  .stInner {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 40px 40px 40px 40px;
+    border: dotted 1px blue;
+  }
   
   .accessibleTable {
     display: flex;

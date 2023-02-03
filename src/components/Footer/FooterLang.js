@@ -35,8 +35,10 @@ const StyledSubSetLang = styled.div`
   
     width: 100%;
     margin-top: 10px;
-  
 
+  & :hover {
+    color: var(--color--none);
+  }
 
   @media only screen and (max-width: 730px) {
     justify-content: flex-start;
@@ -52,9 +54,7 @@ const StyledSubSetLang = styled.div`
       margin-right: 10px;
     }
   
-  & :hover {
-    color: var(--color--none);
-  }
+  
 `
 
 export default FooterLang

@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-import TableHours from './TableHome/table.hours'
-import TableContracts from './TableHome/table.contracts'
-import TableAccessible from './TableHome/table.accessible'
+import TableHours from './table.hours'
+import TableContracts from './table.contracts'
+import TableAccessible from './table.accessible'
 
 const TableSectionHome = () => {
 
@@ -19,8 +19,7 @@ const StyledTablesHome = styled.div`
   display: flex;
   flex-direction: row;
   gap: var(--size--padding30);
-    width: 100%;
-    height: auto;
+   
   box-sizing: border-box;
 
   @media only screen and (max-width: 992px) {
@@ -34,10 +33,16 @@ const StyledTablesHome = styled.div`
   .tableContentContainer {
       max-width: calc(var(--page--width) / 3);
           width: 100%;
-          height: auto;
-    padding: 50px 30px 70px 30px;
+         /* min-height: 579px;*/
+         /* max-height: 597px;*/
+            height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    //padding: 50px 40px 40px 40px;
     box-shadow: var(--box--shadow);
     background-color: var(--color--none);
+    
+    border: dotted 1px blue;
 
     @media only screen and (max-width: 992px) {
       max-width: 100%;

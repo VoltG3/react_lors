@@ -3,11 +3,12 @@ import { useTranslation } from 'react-i18next'
 
 import TableHoursDays from './table.hours.days'
 import LineShort from '../line.short'
-import BTN_variant01 from '../Button/BTN_variant01'
+import BTN_variant01 from '../Button/temp/BTN_variant01'
 import TableHoursHours from "./table.hours.hours";
-import BUTTON_v1 from "../Button/BUTTON_v1";
+import BTNPrimary from "../Button/BTN.primary";
 import React from "react";
 import {Link01} from "../../env";
+import styled from "styled-components";
 
 const TableHours = () => {
     const [t] = useTranslation(["times", "sections", "common"])
@@ -16,47 +17,70 @@ const TableHours = () => {
 
 
     return (
-        <>
-            <p className={ tableHeader }>{ t("times:times03") }</p>
+        <StyledContainer>
+            <div className={"stInner"}>
+                <p className={ tableHeader }>{ t("times:times03") }</p>
 
-            <LineShort />
+                <LineShort color={"colorFirst"}/>
 
-            <div style={{
-                display: 'flex',
-                flexDirection: 'row'
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'row'
 
-            }}>
-            <TableHoursDays
-                days={[
-                    `${ t("times:times04") }`,
-                    `${ t("times:times05") }`,
-                    `${ t("times:times06") }`,
-                    `${ t("times:times07") }`,
-                    `${ t("times:times08") }`
-                ]}
-            />
+                }}>
+                    <TableHoursDays
+                        days={[
+                            `${ t("times:times04") }`,
+                            `${ t("times:times05") }`,
+                            `${ t("times:times06") }`,
+                            `${ t("times:times07") }`,
+                            `${ t("times:times08") }`
+                        ]}
+                    />
 
-            <TableHoursHours />
+                    <TableHoursHours />
+                </div>
+                <p className={ paragraphTableItem } style={{ paddingTop: '20px', paddingBottom: '20px'}}>{ t("sections:section_contacts_part02") }</p>
+
+              {/*  <BTN_variant01 style={{ paddingLeft: '0'}}/>*/}
+
+
+                <a href={ Link01 } target="_blank" rel="noopener noreferrer">
+                    <BTNPrimary
+                        label={"btn_appointment_l"}
+                        minWidth={"218px"}
+                        paragraphMarginLeft={"-25%"}
+                        paddingVertical={"8px"}
+                        justifyContent={"flex-end"}
+                    />
+                </a>
+
             </div>
-            <p className={ paragraphTableItem } style={{ paddingTop: '20px'}}>{ t("sections:section_contacts_part02") }</p>
-
-            <BTN_variant01 style={{ paddingLeft: '0'}}/>
-
-
-            <a href={ Link01 } target="_blank" rel="noopener noreferrer">
-                <BUTTON_v1
-                    label={"btn_appointment_l"}
-                    minWidth={"218px"}
-                    paragraphMarginLeft={"-25%"}
-                    paddingVertical={"8px"}
-                    justifyContent={"flex-end"}
-                />
-            </a>
 
 
 
-        </>
+        </StyledContainer>
     )
 }
+
+const StyledContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+    width: auto;
+    height: 100%;
+  box-sizing: border-box;
+  //margin: 40px 40px 40px 40px;
+  //border: dotted 1px blue;
+  
+  .stInner {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 40px 40px 40px 40px;
+    border: dotted 1px blue;
+  }
+`
 
 export default TableHours

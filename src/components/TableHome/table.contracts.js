@@ -18,20 +18,21 @@ function TableContracts() {
 
     return (
         <StyledContainer>
-           <p className={ tableHeader }>{ t("common:contracts01") }</p>
+            <div className={"stInner"}>
+                <p className={ tableHeader }>{ t("common:contracts01") }</p>
 
-           <LineShort />
+                <LineShort color={"colorSecond"}/>
 
-           <p className={ paragraphTableItem }>{ t("common:contracts02")}</p>
+                <p className={ paragraphTableItem }>{ t("common:contracts02")}</p>
 
-           <div className={"logoSquare"}>
-                <img src={ Logo01 } alt={"logo"} style={{ maxWidth: '55px', minWidth: '35px' }}/>
-                <img src={ Logo02 } alt={"logo"} style={{ maxWidth: '70px', minWidth: '35px' }}/>
-                <img src={ Logo03 } alt={"logo"} style={{ maxWidth: '80px', minWidth: '35px' }}/>
-                <img src={ Logo04 } alt={"logo"} style={{ maxWidth: '150px', minWidth: '70px' }}/>
-                <img src={ Logo05 } alt={"logo"} style={{ maxWidth: '120px', minWidth: '70px', marginBottom: '18px'}}/>
+                <div className={"logoSquare"}>
+                    <img src={ Logo01 } alt={"logo"} style={{ maxWidth: '55px', minWidth: '35px' }}/>
+                    <img src={ Logo02 } alt={"logo"} style={{ maxWidth: '70px', minWidth: '35px' }}/>
+                    <img src={ Logo03 } alt={"logo"} style={{ maxWidth: '80px', minWidth: '35px' }}/>
+                    <img src={ Logo04 } alt={"logo"} style={{ maxWidth: '150px', minWidth: '70px' }}/>
+                    <img src={ Logo05 } alt={"logo"} style={{ maxWidth: '120px', minWidth: '70px', marginBottom: '12px'}}/>
+                </div>
             </div>
-
         </StyledContainer>
     )
 }
@@ -39,6 +40,21 @@ function TableContracts() {
 const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
+    width: auto;
+    height: 100%;
+  box-sizing: border-box;
+  //margin: 40px 40px 40px 40px;
+  //border: dotted 1px blue;
+  
+  .stInner {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 40px 40px 40px 40px;
+    border: dotted 1px blue;
+  }
   
   .logoSquare {
     display: flex;

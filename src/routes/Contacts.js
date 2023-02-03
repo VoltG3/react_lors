@@ -11,7 +11,7 @@ import TableSectionContacts from "../components/TableContacts/table.section.cont
 import ImgContacts from "../components/Image/IMG.contacts";
 import ImgCollective3Desktop from "../components/Image/IMG.collective3.desktop";
 
-import BUTTON_v1 from "../components/Button/BUTTON_v1";
+import BTNPrimary from "../components/Button/BTN.primary";
 import ImgCollective3Mobile from "../components/Image/IMG.collective3.mobile";
 
 export default function Contacts() {
@@ -31,7 +31,7 @@ export default function Contacts() {
                         <p className={ paragraph }>{ t("sections:section_contacts_part02") }</p>
 
                         <a href={ Link01 } target={"_blank"} rel={"noopner noreferrer"}>
-                            <BUTTON_v1
+                            <BTNPrimary
                                 label={"btn_appointment_m"}
                                 minWidth={"218px"}
                                 paragraphMarginLeft={"-25%"}

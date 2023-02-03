@@ -5,9 +5,9 @@ const ImgOffice = () => {
 
     return (
         <StyledImgContainer style={{
-            paddingTop: 'var(--size--padding60)'
+            paddingTop: 'var(--size--padding30)'
         }}>
-            <img src={ image08 } width={"50%"} height={"auto"} alt={"img"}/>
+            <img src={ image08 } width={"100%"} height={"auto"} alt={"img"}/>
         </StyledImgContainer>
     )
 }

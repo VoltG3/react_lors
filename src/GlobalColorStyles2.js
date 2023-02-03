@@ -7,14 +7,14 @@ export const GlobalColorStyles2 = createGlobalStyle`
     --color--line--lang: rgb(214, 214, 214);
 
 
-    --color--palevioletred: #EF5DA8;
-    --c: #ef7fb9;
+        --color--palevioletred: #EF5DA8;
+        --c: #ef7fb9;
 
 
     --color--temp: #112734;
 
     --color--headercolor: #112734;
-    --color--yellow: #EDAE0E;
+        --color--yellow: #EDAE0E;
     --color--background: rgb(214, 214, 214);
 
     --frame: orange;

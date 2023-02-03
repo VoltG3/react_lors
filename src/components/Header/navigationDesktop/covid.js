@@ -3,7 +3,8 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import i18n from "i18next";
 import {Link03, Link04} from "../../../env";
-import BTNSmall from "../../Button/BTNSmall";
+import BTNSmall from "../../Button/temp/BTNSmall";
+import BTNcovid from "../../Button/BTN.covid";
 
 function Covid() {
     const [t] = useTranslation(["sections", "covid"])
@@ -19,11 +20,9 @@ function Covid() {
 
             <div className={`covidbar ${covidBarVisible ? 'visible' : 'hidden'}`}>
                 <div className={"innerCovid"}>
-                    <p className={ paragraph }>{ t("covid:covid")}</p>
-
-                    <a href={ Link04 } target="_blank" rel="noopener noreferrer">
-                        <BTNSmall />
-                    </a>
+                    <div><p className={ paragraph }>{ t("covid:covid")}</p></div>
+                    <div><a href={ Link04 } target="_blank" rel="noopener noreferrer"><BTNcovid /></a></div>
+                   {/* <div><p>x</p></div>*/}
                 </div>
             </div>
 
@@ -51,13 +50,25 @@ const StyledCovid = styled.div`
     .innerCovid {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
         max-width: var(--page--width);
-            width: 100%;
+            width: var(--page--width100);
             height: var(--desktop--navigation--height);
       box-sizing: border-box;
       //background-color: aquamarine;
+      
+      /*& div:nth-child(3) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: auto;
+        height: auto;
+      }*/
+      
+      & div {
+        //border: dotted 1px blue;
+      }
     }
   }
 

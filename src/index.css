@@ -43,11 +43,17 @@ body {
         scrollbar-width: none;  !* Firefox *!
   }*/
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
+* { padding: 0; margin: 0; }
 a { text-decoration: none; }
-
 button { border: none; }
+
+ul {
+    list-style: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    /*border: solid 1px red;*/
+} li { padding-bottom: 10px; }
+  li:last-child { padding-bottom: 0; }
+
+

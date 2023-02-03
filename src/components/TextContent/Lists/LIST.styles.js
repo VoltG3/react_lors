@@ -24,6 +24,7 @@ const ListContainer = css`
   box-sizing: border-box;
   width: 100%;
   height: auto;
+  white-space: pre-wrap;
   border-radius: var(--border--radius);
   box-shadow: var(--box--shadow);
 
@@ -63,7 +64,9 @@ const ListContainer = css`
 /* MediaListPrices */
 
 const InnerServices = css``
-const InnerInformation = css``
+const InnerInformation = css`
+  padding-top: var(--size--padding30);
+`
 
 const InnerPrices = css`
   #productItemDescribe {
@@ -90,7 +93,7 @@ const InnerPrices = css`
 
     & div:nth-child(2) {
       display: flex;
-      justify-content: flex-start;
+      justify-content: flex-start;/>
       max-width: 74px;
       width: 100%;
 

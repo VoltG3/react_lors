@@ -1,6 +1,9 @@
 export const LIST_INFORMATION_EN = {
     list_information: [
         {
+            item : "According to the regulations of the LR Cabinet of Ministers of August 28, 2018\nNo. 555 \"Organization and payment procedure for health care services\"\nThe following categories of Latvian residents are exempted from the patient contribution:"
+        },
+        {
             item : "children under the age of 18"
         },
         {

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link01 } from '../../env'
+import { Link01 } from '../../../env'
 import { useTranslation } from 'react-i18next'
 
 function BTN_variant01() {

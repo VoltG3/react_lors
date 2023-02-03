@@ -1,6 +1,9 @@
 export const LIST_INFORMATION_LV = {
     list_information: [
         {
+            item : "Saskaņā ar LR Mini stru kabineta 2018. gada 28. augusta noteikumumiem\nNr. 555 \"Veselības aprūpes pakalpojumu organizēšanas un samaksas kārtība\"\nno pacientu iemaksas atbrīvotas šādas Latvijas iedzīvotāju kategorijas:"
+        },
+        {
             item : "bērni vecumā līdz  18 gadiem"
         },
         {

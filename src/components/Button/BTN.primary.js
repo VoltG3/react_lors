@@ -3,7 +3,7 @@ import React from "react";
 
 import { useTranslation } from 'react-i18next'
 
-function BUTTON_v1(props) {
+function BTNPrimary(props) {
     const [t] = useTranslation(["common", "sections"])
     const paragraphMargin = props.paragraphMarginLeft
     const btn_appointment_x = <p style={{ marginLeft: paragraphMargin }} className={"textcontent--button--v2"}>{ t("btn_variant04") }</p>
@@ -53,6 +53,8 @@ const StyledButtonV1 = styled.div`
     width: inherit;
     box-sizing: border-box;
     //padding: 15px 0 15px 0;
+
+    border-radius: 5px;
     
     border: 1px solid var(--color--button--v1--background);
     background: var(--color--button--v1--background);
@@ -64,6 +66,7 @@ const StyledButtonV1 = styled.div`
       display: inline-block;
       //margin-left: -25%;
       //border: solid 1px red;
+      
     }
 
     &:hover {
@@ -127,4 +130,4 @@ const StyledButtonV1 = styled.div`
   }
 `
 
-export default BUTTON_v1
+export default BTNPrimary

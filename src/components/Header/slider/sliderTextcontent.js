@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 import i18n from 'i18next'
 
 import {introHeader} from "../../../env";
-import BUTTON_v1 from "../../Button/BUTTON_v1";
+import BTNPrimary from "../../Button/BTN.primary";
 import React from "react";
 import {Link} from "react-router-dom";
 
@@ -26,7 +26,7 @@ function SliderTextcontent() {
               <p className={ paragraph }  style={{ paddingBottom: '120px'}}>{ t("sections:section_header_part06") }</p>
 
               <Link to={"contacts"}>
-                  <BUTTON_v1
+                  <BTNPrimary
                       label={"btn_appointment_x"}
                       minWidth={"390px"}
                       paragraphMarginLeft={"-20%"}
