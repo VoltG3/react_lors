@@ -7,6 +7,7 @@ import i18n from "i18next";
 import {Link01, Link04} from "../../../env";
 import BTNSmallMobile from "../../Button/temp/BTNSmallMobile";
 import BTNmobile from "../../Button/BTN.mobile";
+import LogoTransparent00 from "../../../assets/logo_transparent/Lors1_transparent.svg";
 
 const SideBar = (props) => {
     const [t] = useTranslation(["common", "covid"])
@@ -72,6 +73,11 @@ const SideBar = (props) => {
                     </a>
                 </div>
             </div>
+
+            <div style={{ display: 'flex', justifyContent: 'flex-end', width: '100%', height: 'auto'}}>
+                <img src={ LogoTransparent00 } alt={"icon"} style={{ maxWidth: '150px', minWidth: '95px', paddingBottom: '15px' }}/>
+            </div>
+
 
         </Menu>
     );

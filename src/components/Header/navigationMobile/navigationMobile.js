@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import "./styles.css";
 import SideBar from "./sidebar";
+import Logo from "../navigationDesktop/logo";
 
 function NavigationMobile() {
     return (
@@ -10,7 +11,7 @@ function NavigationMobile() {
 
             <div id="page-wrap">
                 <div className={"d"}>
-                    <h1>Logo</h1>
+                    <Logo variant={"colored"} />
                 </div>
             </div>
         </>

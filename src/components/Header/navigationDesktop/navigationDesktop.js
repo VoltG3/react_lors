@@ -11,7 +11,7 @@ function NavigationDesktop() {
         <StyledNavigationDesktop>
             <div className={"navigationDesktop"}>
                 <div className={"A"}>
-                    <Logo />
+                    <Logo variant={"colored"}/>
                 </div>
 
                 <div className={"B"}>

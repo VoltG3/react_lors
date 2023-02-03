@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import LogoTransparent00 from '../../assets/logo_transparent/Lors_transparent.svg'
+import LogoTransparent00 from '../../assets/logo_transparent/Lors1_transparent.svg'
 import LogoTransparent01 from '../../assets/logo_transparent/Balta_transaprent.svg'
 import LogoTransparent02 from '../../assets/logo_transparent/BTA_transsparent.svg'
 import LogoTransparent03 from '../../assets/logo_transparent/ERGO_transparent.svg'
@@ -12,7 +12,7 @@ function FooterLogo() {
         <StyledFooterLogo>
             <div className={"innerFooterLogo"}>
                 <div className={"firstLogo"}>
-                    <img src={ LogoTransparent00 } alt={"icon"} style={{ maxWidth: '70px', minWidth: '35px' }}/>
+                    <img src={ LogoTransparent00 } alt={"icon"} style={{ maxWidth: '150px', minWidth: '95px', paddingBottom: '15px' }}/>
                 </div>
 
                 <div className={"secondLogo"}>
@@ -51,10 +51,11 @@ const StyledFooterLogo = styled.div`
     .firstLogo {
       display: flex;
       justify-content: center;
+      align-items: center;
         height: 140px;
         width: auto;
-      border-right: solid 1px var( --color--list);
-      
+      border-right: solid 1px var( --color--none);
+      //border: solid 1px white;
       & img {
         width: 100%;
         height: auto;
@@ -67,6 +68,7 @@ const StyledFooterLogo = styled.div`
       flex-direction: row;
         height: 140px;
         width: auto;
+      //border: solid 1px white;
       
       & img {
         display: flex;
