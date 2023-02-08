@@ -15,7 +15,8 @@ export default function About() {
 
     return (
         <StyledPageContainer>
-            <h1 className={ h1 }>{ t("common:about") }</h1>
+
+            <h2 className={ h1 }>{ t("common:about") }</h2>
 
             <LineLang />
 

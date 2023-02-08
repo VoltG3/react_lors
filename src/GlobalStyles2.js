@@ -22,12 +22,7 @@ export const GlobalStyles2 = createGlobalStyle`
     
     --layer--covid: 2;
 
-    @media only screen and (max-width: 1500px) {
-      :root {   
-        --page--width100: calc(100% - calc(var(--size--padding40) * 2));
-        --space--between--footer--tiles: calc(min(max(9.097, 30px), 131px));
-      }
-    }
+   
     
     /*@media only screen and (max-width: 1440px) {
       :root {

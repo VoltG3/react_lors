@@ -10,7 +10,7 @@ function BTNPrimary(props) {
     const btn_appointment = <p style={{ marginLeft: paragraphMargin }} className={"textcontent--button"}>{ t("common:eapointment") }</p>
 
     return (
-        <StyledButtonV1 style={{ justifyContent: props.justifyContent }}>
+        <StyledButtonV1 style={{ justifyContent: props.justifyContent}}>
             <div className={"innerButton"} style={{ width: props.minWidth }}>
                 <button style={{
                     paddingTop: props.paddingVertical,

@@ -40,7 +40,7 @@ function Header() {
                <NavigationMobile />
             </div>
 
-           <Slider />
+            <Slider />
         </StyledHeader>
     )
 }

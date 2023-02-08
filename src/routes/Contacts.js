@@ -22,7 +22,7 @@ export default function Contacts() {
     return (
         <>
             <StyledPageContainer style={{ paddingBottom: '0'}}>
-                <h1 className={ h1 }>{ t("common:contacts") }</h1>
+                <h2 className={ h1 }>{ t("common:contacts") }</h2>
                 <LineLang />
 
                 <div style={{ display: 'flex', flexDirection: 'row'}}>

@@ -20,7 +20,7 @@ export default function Prices() {
 
     return (
         <StyledPageContainer>
-            <h1 className={ h1 }>{ t("common:prices") }</h1>
+            <h2 className={ h1 }>{ t("common:prices") }</h2>
 
             <LineLang />
 

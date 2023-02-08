@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import LogoTransparent00 from '../../assets/logo_transparent/Lors1_transparent.svg'
+import LogoTransparent00 from '../../assets/logo_transparent/Lors2_transparent.svg'
 import LogoTransparent01 from '../../assets/logo_transparent/Balta_transaprent.svg'
 import LogoTransparent02 from '../../assets/logo_transparent/BTA_transsparent.svg'
 import LogoTransparent03 from '../../assets/logo_transparent/ERGO_transparent.svg'
@@ -34,9 +34,7 @@ const StyledFooterLogo = styled.div`
   align-items: center;
     width: 100vw;
     height: auto;
-  background: #112734; //var(--clr--primary--base);
-  
- //box-shadow: inset 0 10px 5px black;//#021928;
+  background: #112734; 
   
   .innerFooterLogo {
     display: flex;
@@ -45,7 +43,7 @@ const StyledFooterLogo = styled.div`
     align-items: center;
     box-sizing: border-box;
       max-width: 1440px;
-      width: calc(100% - 40px);
+      width: var(--page--width100);
       height: auto;
     
     .firstLogo {
@@ -54,8 +52,8 @@ const StyledFooterLogo = styled.div`
       align-items: center;
         height: 140px;
         width: auto;
-      border-right: solid 1px var( --color--none);
-      //border: solid 1px white;
+      border-right: solid 1px var(--color--none);
+     
       & img {
         width: 100%;
         height: auto;
@@ -68,7 +66,6 @@ const StyledFooterLogo = styled.div`
       flex-direction: row;
         height: 140px;
         width: auto;
-      //border: solid 1px white;
       
       & img {
         display: flex;

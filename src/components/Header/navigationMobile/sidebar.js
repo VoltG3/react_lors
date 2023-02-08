@@ -38,7 +38,7 @@ const SideBar = (props) => {
             <div style={{ width: '100%', height: '1px', backgroundColor: 'white', marginBottom: '30px', marginTop: '30px'}}></div>
 
             <Link onClick={() => handleCloseMenu()} className={"menu-item"} to={"home"}>
-                <p style={{paddingLeft: '10px'}} className={"textcontent--header--mobile--navigation"}>{ t("common:home") }</p>
+                <p style={{paddingLeft: '10px' }} className={"textcontent--header--mobile--navigation"}>{ t("common:home") }</p>
             </Link>
 
             <Link onClick={() => handleCloseMenu()} className={"menu-item"} to={"about"}>

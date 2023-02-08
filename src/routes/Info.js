@@ -21,7 +21,7 @@ export default function Info() {
 
     return (
         <StyledPageContainer>
-            <h1 className={ h1 }>{ t("common:info") }</h1>
+            <h2 className={ h1 }>{ t("common:info") }</h2>
 
             <LineLang />
 

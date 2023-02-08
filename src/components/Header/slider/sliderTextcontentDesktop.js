@@ -7,7 +7,7 @@ import BTNPrimary from "../../Button/BTN.primary";
 import React from "react";
 import {Link} from "react-router-dom";
 
-function SliderTextcontent() {
+function SliderTextcontentDesktop(props) {
     const [t] = useTranslation(["sections", "common"])
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
     const h1 = i18n.language === 'ru' ? 'textcontent--h0--rus' : 'textcontent--h0'
@@ -16,7 +16,7 @@ function SliderTextcontent() {
       <div style={{
           position: 'absolute',
           zIndex: '3',
-          display: 'flex',
+          display: props.media,
           flexDirection: 'column',
           maxWidth: 'var(--page--width)',
           width: 'var(--page--width100)',
@@ -42,12 +42,11 @@ function SliderTextcontent() {
 }
 
 const Temporary = styled.div`
+  
   display: flex;
   flex-direction: column;
     width: 100%;
     height: 100%;
-  //margin-top: min(max(5.55vh, 18px), 80px);
-    //border: solid 1px black;
   margin-top: 80px;
   padding-bottom: 10%;
   
@@ -57,7 +56,6 @@ const Temporary = styled.div`
 
   @media only screen and (max-width: 900px) {
     margin-top: 40px;
-    
     
     & p:first-child {
       padding-bottom: 10px;
@@ -69,4 +67,4 @@ const Temporary = styled.div`
   }
 `
 
-export default SliderTextcontent
+export default SliderTextcontentDesktop

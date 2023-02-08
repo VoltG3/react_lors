@@ -9,13 +9,15 @@ export const PageContainer = styled.div`
         width: var(--page--width100);
         height: auto;
   box-sizing: border-box;
-  padding-top: var(--size--padding70);
-  padding-bottom: var(--size--padding80);
+  padding-top: var(--page--paddingTop);
+  padding-bottom: var(--page--paddingBottom);
 
-  & h1 {
+  & h1, h2 {
     align-self: flex-start;
     padding-bottom: var(--size--padding30);
   }
+  
+  & h2 { display: var(--media--desktop); }
 
   & span {
     & p {

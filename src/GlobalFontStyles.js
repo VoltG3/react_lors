@@ -244,7 +244,8 @@ export const GlobalFontStyles = createGlobalStyle`
         font-family: var(--font--OpenSans);
         font-style: normal;
         font-weight: 400;
-        font-size: 23px;
+        font-size: 21px;
+        line-height: 33px;
         text-transform: uppercase;
         //opacity: var(--font--opacity);
         //color: var(--color--none);

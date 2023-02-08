@@ -14,7 +14,7 @@ const TileContainer  = css`
       width: auto;
       height: 100%;
     box-sizing: border-box;
-    margin: 60px 40px 40px 40px;
+    margin: 60px var(--tile--margin) 40px var(--tile--margin);
     border-bottom: solid 1px var(--color--tabledata--border);
     padding-bottom: 44px;
   }
@@ -69,7 +69,7 @@ const Contracts = css`
     padding-top: 44px;
     padding-bottom: 44px;
 
-    @media only screen and (max-width: 700px) {  flex-direction: column; }
+    /*@media only screen and (max-width: 700px) {  flex-direction: column; }*/
     
     .r1c1 { max-width: 40px; & img { max-width: 40px; }}
     .r1c2 { max-width: 55px; & img { max-width: 55px; }}

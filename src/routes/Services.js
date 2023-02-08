@@ -13,7 +13,7 @@ export default function Services() {
 
     return (
         <StyledPageContainer>
-           <h1 className={ h1 }>{ t("common:services") }</h1>
+           <h2 className={ h1 }>{ t("common:services") }</h2>
 
             <LineLang />
 

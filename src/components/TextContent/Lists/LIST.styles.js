@@ -54,7 +54,7 @@ const ListContainer = css`
   }
 
   & p {
-    margin: 5px 30px;
+    margin: 5px var(--list--margin);
   }
 `
 
@@ -76,8 +76,11 @@ const InnerPrices = css`
     display: flex;
     flex-direction: row;
       max-width: 180px;
-          width: 100%;
+          width: auto; /* 100% */
           height: auto;
+    margin-right: var(--list--margin);
+    //border: solid 1px black;
+    
     @media only screen and (max-width: 700px) { max-width: 90px; }
     
     & div:nth-child(1) {
