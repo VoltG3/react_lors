@@ -2,6 +2,7 @@ import { FetchData } from '../../../JSON/fetchData'
 
 const DataColumnPrivateNames = () => {
     const jsonData = FetchData()
+    const paragraph = "textcontent--tabledata--item--small"
 
     const isNameArrayEmpty = (target) => {
         let toReturn;
@@ -17,8 +18,8 @@ const DataColumnPrivateNames = () => {
                         {
                             jsonData && personal_private.map((item, i) => (
                                 <div key={ i } className={"cell--dobble"} style={{ width: '100%', paddingLeft: '20px'}}>
-                                    <p className={"textcontent--opening--hours"}>{ isNameArrayEmpty(item.line_01) }</p>
-                                    <p className={"textcontent--opening--hours"}>{ isNameArrayEmpty(item.line_02) }</p>
+                                    <p className={ paragraph }>{ isNameArrayEmpty(item.line_01) }</p>
+                                    <p className={ paragraph }>{ isNameArrayEmpty(item.line_02) }</p>
                                 </div>
                             ))
                         }

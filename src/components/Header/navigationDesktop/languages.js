@@ -32,9 +32,13 @@ const StyledSubSetLang = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  align-items: center;
       width: 100px;
-      height: 20px;
+      height: auto;
   padding-top: 5px;
+
+  @media only screen and (max-width: 1500px){  width: 80px;  }
+  @media only screen and (max-width: 1220px){  width: 60px;  }
   
   & p:hover {
     cursor: pointer;

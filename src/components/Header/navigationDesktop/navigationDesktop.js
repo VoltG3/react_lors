@@ -39,7 +39,8 @@ const StyledNavigationDesktop = styled.div`
    display: grid;
    grid-template-rows: repeat(2, 1fr);
    grid-template-columns: repeat(7, 1fr);
-    width: 100%;
+   max-width: var(--page--width);
+   width: var(--page--width100);
     height: auto;
    grid-template-areas: 
     "A B B B B B B"

@@ -22,9 +22,9 @@ const ListContainer = css`
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  width: 100%;
-  height: auto;
-  white-space: pre-wrap;
+    width: 100%;
+    height: auto;
+    white-space: pre-wrap;
   border-radius: var(--border--radius);
   box-shadow: var(--box--shadow);
 
@@ -36,7 +36,7 @@ const ListContainer = css`
   & div {
     display: flex;
     align-items: center;
-    width: 100%;
+        width: 100%;
     min-height: var(--list--line--height);
   }
 
@@ -54,7 +54,6 @@ const ListContainer = css`
   }
 
   & p {
-    word-break: break-all;
     margin: 5px 30px;
   }
 `
@@ -69,23 +68,25 @@ const InnerInformation = css`
 `
 
 const InnerPrices = css`
-  #productItemDescribe {
+  .productItemDescribe {
     width: 100%;
   }
 
-  #productItemPrice {
+  .productItemPrice {
     display: flex;
     flex-direction: row;
-    max-width: 181px;
-    width: 100%;
-    height: auto;
+      max-width: 180px;
+          width: 100%;
+          height: auto;
+    @media only screen and (max-width: 700px) { max-width: 90px; }
     
     & div:nth-child(1) {
       display: flex;
       justify-content: flex-end;
-      max-width: 96px;
-      width: 100%;
-
+        max-width: 90px;
+            width: 100%;
+      @media only screen and (max-width: 700px) { max-width: 45px; }
+      
       & p {
         margin: 0 10px 0 0;
       }
@@ -93,10 +94,11 @@ const InnerPrices = css`
 
     & div:nth-child(2) {
       display: flex;
-      justify-content: flex-start;/>
-      max-width: 74px;
-      width: 100%;
-
+      justify-content: flex-start;
+        max-width: 90px;
+            width: 100%;
+      @media only screen and (max-width: 700px) { max-width: 45px; }
+      
       & p {
         margin: 0;
       }

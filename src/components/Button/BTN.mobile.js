@@ -85,8 +85,8 @@ const StyledButtonV4 = styled.div`
     border-left: 0;
     border-bottom: 0;
     top: -1px;
-    right: -1px;
-    bottom: 0;
+    right: 1px;
+    bottom: 1px;
     width: 40px;
     background: #112734;
     -webkit-transform-origin: bottom left;

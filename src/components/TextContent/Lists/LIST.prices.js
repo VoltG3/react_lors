@@ -17,11 +17,11 @@ export const LISTPrices = (props) => {
 
             { t(props.variant, { returnObjects: true }).map((list_prices, key) => (
                 <div key={ key }>
-                    <span id={"productItemDescribe"}>
+                    <span className={"productItemDescribe"}>
                         <p className={"textcontent--list--item"}>{ t(list_prices.item) }</p>
                     </span>
 
-                    <span id={"productItemPrice"}>
+                    <span className={"productItemPrice"}>
                         <div className={"line"}>
                             <p className={"textcontent--list--item"}>{ t(list_prices.price) }</p>
                         </div>

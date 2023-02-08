@@ -12,13 +12,15 @@ const DataColumnPrivat = () => {
     const arrayPrivateHours = i18n.language === 'en' ? arrayPrivateHoursUS : arrayPrivateHoursEU
     //console.table(arrayPrivateHoursEU)
 
+    const paragraph = "textcontent--tabledata--item--small"
+
     const isPrivateArrayEmpty = (target_1, target_2) => {
 
         return (
             <div style={{ display: target_1 === "" ? 'none' : 'flex' }} className={"cell--tripple"}>
-                <div><p className={"textcontent--opening--hours"}>{ target_1 }</p></div>
-                <div><p className={"textcontent--opening--hours"}>-</p></div>
-                <div><p className={"textcontent--opening--hours"}>{ target_2 }</p></div>
+                <div><p className={ paragraph }>{ target_1 }</p></div>
+                <div><p className={ paragraph }>-</p></div>
+                <div><p className={ paragraph }>{ target_2 }</p></div>
             </div>
         )
     }

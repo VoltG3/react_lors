@@ -1,5 +1,5 @@
 
-function LineShort(props) {
+function LineTiny(props) {
 
     return (
         <>
@@ -20,4 +20,4 @@ function LineShort(props) {
     )
 }
 
-export default LineShort
+export default LineTiny

@@ -14,9 +14,9 @@ export const GlobalFontStyles = createGlobalStyle`
       --font--opacity: 0.7;
       
       // common
-      --textcontent--h0--fontsize: min(max(2.5vw, 28px), 36px);
-      --textcontent--h0--lineheight: min(max(3.056vw, 28px), 44px);
-      --textcontent--h0--rus--fontsize: min(max(2.5vw, 28px), 36px);
+      --textcontent--h0--fontsize: min(max(2.5vw, 22px), 36px);
+      --textcontent--h0--lineheight: min(max(3.056vw, 22px), 44px);
+      --textcontent--h0--rus--fontsize: min(max(2.5vw, 22px), 36px);
       --textcontent--h0--rus--lineheight: min(max(3.056vw, 22px), 44px);
       
       --textcontent--h1--fontsize: min(max(2.5vw, 18px), 36px);
@@ -34,11 +34,11 @@ export const GlobalFontStyles = createGlobalStyle`
       --textcontent--paragraph--rus--lineheight: min(max(1.806vw, 20px), 26px);
       // lists
       --textcontent--list--header--fontsize: min(max(1.389vw, 16px), 20px);
-      --textcontent--list--item--fontsize: 18px;
+      --textcontent--list--item--fontsize: min(max(1.250vw, 14px), 18px);
       // header
-      --textcontent--header--navigation--languages--fontsize: 16px;
-      --textcontent--header--navigation--infoline--fontsize: 14px;
-      --textcontent--header--desktop--navigation--fontsize: 16px;
+      --textcontent--header--navigation--languages--fontsize: min(max(0.972vw, 10px), 16px);
+      --textcontent--header--navigation--infoline--fontsize: min(max(0.972vw, 10px), 14px);
+      --textcontent--header--desktop--navigation--fontsize: min(max(0.972vw, 10px), 16px);
       // footer
       --textcontent--footer--navigation--fontsize: 14px;
       --textcontent--footer--navigation--lineheight: 19px;
@@ -55,48 +55,39 @@ export const GlobalFontStyles = createGlobalStyle`
       --textcontent--table--item--rus--lineheight: 20px;
       
       
-      .textcontent--button {
-        font-family: var(--font--Roboto);
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 1.5;
-       // text-align: start;
-        color: var(--color--button--v1);
-        //border: solid 1px red;
-      }
       
-      .textcontent--opening--hours {
-        font-family: var(--font--Montserrat);
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-          letter-spacing: 2px;
-        line-height: 22px;
-       // opacity: var(--font--opacity);
-        color: var(--color--default);
-      }
       
       // [ BUTTONS ] -----------------------------------------------
 
-      .textcontent--button--v1 {
-        font-family: var(--font--secondary);
+      .textcontent--button {
+        font-family: var(--font--Roboto);
         font-style: normal;
         font-weight: 400;
-        font-size: min(max(1.458vw, 18px), 18px);
-        line-height: min(max(1.806vw, 20px), 26px);
-        opacity: var(--font--opacity);
-        color: var(--color--default);
+        font-size: 15px;
+        line-height: 1.5;
+        //opacity: var(--font--opacity);
+        color: var(--color--button--v1);
       }
-
-      .textcontent--button--v2 {
-        font-family: var(--font--primary);
-        font-style: normal;
-        font-weight: 400;
-        font-size: min(max(1.458vw, 18px), 21px);
-        line-height: min(max(1.806vw, 20px), 26px);
-        opacity: var(--font--opacity);
-        color: var(--color--default);
-      }
+      
+          .textcontent--button--contacts {
+            font-family: var(--font--Roboto);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            //opacity: var(--font--opacity);
+            color: var(--color--button--v1);
+          }
+    
+          .textcontent--button--appointment {
+            font-family: var(--font--Roboto);
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.5;
+            // text-align: start;
+            color: var(--color--button--v1);
+            //border: solid 1px red;
+          }
       
       // [ COMMON ] ------------------------------------------------
       // [ NEW ] ---------------------------------------------------
@@ -206,6 +197,10 @@ export const GlobalFontStyles = createGlobalStyle`
         font-size: var(--textcontent--list--header--fontsize);
         text-transform: uppercase;
         color: var(--color--none);
+
+        @media only screen and (max-width: 700px) {
+          font-weight: 400;
+        }
       }
 
       .textcontent--list--item {
@@ -307,12 +302,11 @@ export const GlobalFontStyles = createGlobalStyle`
         font-family: var(--font--Roboto);
         font-size: 26px;
         font-weight: 300;
-        
         color: var(--color--tabledata);
-        //line-height: 1.5;
-        // text-align: start;
-        //color: var(--color--button--v1);
-        //border: solid 1px red;
+
+        @media only screen and (max-width: 700px) {
+          font-size: 20px;
+        }
       }
 
       .textcontent--tabledata--item {
@@ -320,9 +314,12 @@ export const GlobalFontStyles = createGlobalStyle`
         font-size: 18px;
         font-weight: 300;
         line-height: 1.5;
-        // text-align: start;
         color: var(--color--button--v1);
-        //border: solid 1px red;
+
+        @media only screen and (max-width: 700px) {
+          line-height: 1.3;
+          font-size: 16px;
+        }
       }
 
       .textcontent--tabledata--item--small {
@@ -330,9 +327,24 @@ export const GlobalFontStyles = createGlobalStyle`
         font-size: 14px;
         font-weight: 300;
         line-height: 1.5;
-        // text-align: start;
         color: var(--color--button--v1);
-        //border: solid 1px red;
+        
+        @media only screen and (max-width: 700px) {
+          line-height: 1.3;
+          font-size: 14px;
+        }
+      }
+
+      .textcontent--tabledata--item--names {
+        font-family: var(--font--OpenSans);
+        font-size: 12px;
+        font-weight: 600;
+        opacity: var(--font--opacity);
+        color: var(--color--button--v1);
+      
+        @media only screen and (max-width: 700px) {
+          font-size: 10px;
+        }
       }
 
       // [ NEW ] ---------------------------------------------------

@@ -35,11 +35,7 @@ const StyledSubSetLang = styled.div`
   
     width: 100%;
     margin-top: 10px;
-
-  & :hover {
-    color: var(--color--none);
-  }
-
+  
   @media only screen and (max-width: 730px) {
     justify-content: flex-start;
   }
@@ -48,13 +44,15 @@ const StyledSubSetLang = styled.div`
     padding: 2px 3px 2px 3px;
     border-radius: var(--border--radius);
     border: solid 1px var(--color--paragraph--footer);
+
+    & :hover {
+      color: var(--color--none);
+    }
     
   } & div:nth-child(2) {
       margin-left: 10px;
       margin-right: 10px;
     }
-  
-  
 `
 
 export default FooterLang

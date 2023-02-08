@@ -36,7 +36,59 @@ const ImgResponsiveVertical = css`
   }
 `
 
-/* MediaCollective4 */
+const ImgCollective4Hiddenelements = css`
+  .hiddenContainer {
+    position: relative;
+    z-index: 1;
+    display: flex;
+      width: 100%;
+      height: auto;
+  }
+
+  .hiddenItem {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+      width: 100%;
+      height: 100%;
+    
+    & div {
+      display: flex;
+        width: 25%;
+        height: auto;
+    }
+
+    .hiddenParagraph {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        width: 100%;
+        height: 20%;
+      overflow: hidden;
+      
+      .hiddenParagraphContainer {
+        display: flex;
+          width: auto;
+          height: auto;
+        background: var(--color--none);
+        padding: 5px 10px 5px 10px;
+        box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.3);
+        border-radius: var(--border--radius);
+      }
+    }
+  }
+`
+
+const MediaCollective4 = css`
+  @media only screen and (max-width: 700px) {
+    .hiddenItem {
+      visibility: hidden;
+    }
+  }
+`
 
 const MediaCollective3_Desktop = css`
  // max-width: 500px;
@@ -90,6 +142,8 @@ const MediaContacts = css`
 
 export const StyledCollective4 = styled.div`
   ${ ImgContainer }
+  ${ ImgCollective4Hiddenelements }
+  ${ MediaCollective4 }
 `
 
 export const StyledCollective3_Desktop = styled.div`

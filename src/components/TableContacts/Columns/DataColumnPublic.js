@@ -12,13 +12,15 @@ const DataColumnPublic = () => {
     const arrayPublicHours = i18n.language === 'en' ? arrayPublicHoursUS : arrayPublicHoursEU
     // console.table(arrayPublicHoursEU)
 
+    const paragraph = "textcontent--tabledata--item--small"
+
     const isPublicArrayEmpty = (target_1, target_2) => {
 
         return (
             <div style={{ display: target_1 === "" ? 'none' : 'flex' }} className={"cell--tripple"}>
-                <div><p className={"textcontent--opening--hours"}>{ target_1 }</p></div>
-                <div><p className={"textcontent--opening--hours"}>-</p></div>
-                <div><p className={"textcontent--opening--hours"}>{ target_2 }</p></div>
+                <div><p className={ paragraph }>{ target_1 }</p></div>
+                <div><p className={ paragraph }>-</p></div>
+                <div><p className={ paragraph }>{ target_2 }</p></div>
             </div>
         )
     }

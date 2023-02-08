@@ -6,9 +6,8 @@ import { useTranslation } from 'react-i18next'
 function BTNPrimary(props) {
     const [t] = useTranslation(["common", "sections"])
     const paragraphMargin = props.paragraphMarginLeft
-    const btn_appointment_x = <p style={{ marginLeft: paragraphMargin }} className={"textcontent--button--v2"}>{ t("btn_variant04") }</p>
-    const btn_appointment_m = <p style={{ marginLeft: paragraphMargin }} className={"textcontent--button"}>{ t("common:eapointment") }</p>
-    const btn_appointment_l = <p style={{ marginLeft: paragraphMargin }} className={"textcontent--button--v1"}>{ t("common:eapointment") }</p>
+    const btn_contacts = <p style={{ marginLeft: paragraphMargin }} className={"textcontent--button"}>{ t("btn_variant04") }</p>
+    const btn_appointment = <p style={{ marginLeft: paragraphMargin }} className={"textcontent--button"}>{ t("common:eapointment") }</p>
 
     return (
         <StyledButtonV1 style={{ justifyContent: props.justifyContent }}>
@@ -17,30 +16,36 @@ function BTNPrimary(props) {
                     paddingTop: props.paddingVertical,
                     paddingBottom: props.paddingVertical
                 }} className={"button"}>{
-                    props.label === "btn_appointment_x"
-                        ? btn_appointment_x
-                        : props.label === "btn_appointment_m"
-                            ? btn_appointment_m
-                            : props.label === "btn_appointment_l"
-                                ? btn_appointment_l
-                                : "button"
+                    props.label === "btn_contacts"
+                        ? btn_contacts
+                        : btn_appointment
                 }</button>
             </div>
         </StyledButtonV1>
     )
 }
+/*
+*   <BTNPrimary
+                label={"btn_appointment"}
+                minWidth={"190px"}
+                paragraphMarginLeft={"-25%"}
+                paddingVertical={"5px"}
+                justifyContent={"flex-start"}
+            />
+* */
 
 const StyledButtonV1 = styled.div`
   display: flex;
   //justify-content: flex-end;
-  width: 100%;
-  height: auto;
-  //border: solid 1px red;
-
-
+    width: 100%;
+    height: auto;
+  overflow: hidden;
+ // border: solid 1px red;
+  
   .innerButton {
     display: flex;
     //width: 100%!important;
+    @media only screen and (max-width: 700px) { min-width: 190px; }
     height: auto;
     margin-right: var(--size--padding30);
   }
@@ -53,7 +58,7 @@ const StyledButtonV1 = styled.div`
     width: inherit;
     box-sizing: border-box;
     //padding: 15px 0 15px 0;
-
+  
     border-radius: 5px;
     
     border: 1px solid var(--color--button--v1--background);

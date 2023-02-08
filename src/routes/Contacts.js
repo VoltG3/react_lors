@@ -32,7 +32,7 @@ export default function Contacts() {
 
                         <a href={ Link01 } target={"_blank"} rel={"noopner noreferrer"}>
                             <BTNPrimary
-                                label={"btn_appointment_m"}
+                                label={"btn_appointment"}
                                 minWidth={"218px"}
                                 paragraphMarginLeft={"-25%"}
                                 paddingVertical={"15px"}

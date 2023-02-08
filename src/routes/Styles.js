@@ -4,10 +4,10 @@ export const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1440px;
-  min-width: auto;
-  width: var(--page--width100);
-  height: auto;
+    max-width: 1440px;
+    min-width: auto;
+        width: var(--page--width100);
+        height: auto;
   box-sizing: border-box;
   padding-top: var(--size--padding70);
   padding-bottom: var(--size--padding80);
@@ -26,9 +26,6 @@ export const PageContainer = styled.div`
       padding-bottom: 0 !important;
     }
   }
-
-  
-  
   
   .inlineSpan {
     display: flex;
@@ -59,11 +56,9 @@ export const PageContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    //justify-content: center;
-    width: 100%;
-    height: auto;
+      width: 100%;
+      height: auto;
     box-sizing: border-box;
-    //border: solid 1px blue;
     
     & div:first-child {
       padding-right: 10px;
@@ -77,44 +72,30 @@ export const PageContainer = styled.div`
         justify-content: flex-start;
           width: 100%;
         height:auto;
-       // border: solid 1px red;
       }
     }
   }
   
-.BTNSmallComponent {
- 
-
-  & p {
-    //padding-bottom: 0 !important;
-    //border: solid 1px red;
-    //padding-left: 30px;
-    //padding-right: 30px;
-  }
-
- 
-}
-
-.rmBottomMargin {
-  display: inline-block;
-  margin-bottom: var(--margin--p);
-
-  & * {
-    margin-bottom: 0px !important;
-  }
-}
-
-.noBottomPadding {
-  padding-bottom: 0 !important;
-}
-
-.shadow {
-  box-shadow: var(--box--shadow);
-
-  &:hover {
-    transition: box-shadow .3s linear;
-    box-shadow: var(--box--hover);
-  }
-}
+    .rmBottomMargin {
+      display: inline-block;
+      margin-bottom: var(--margin--p);
+    
+      & * {
+        margin-bottom: 0px !important;
+      }
+    }
+    
+    .noBottomPadding {
+      padding-bottom: 0 !important;
+    }
+    
+    .shadow {
+      box-shadow: var(--box--shadow);
+    
+      &:hover {
+        transition: box-shadow .3s linear;
+        box-shadow: var(--box--hover);
+      }
+    }
 `
 

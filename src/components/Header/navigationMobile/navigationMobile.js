@@ -11,6 +11,7 @@ function NavigationMobile() {
 
             <div id="page-wrap">
                 <div className={"d"}>
+                    {/*<div className={"s"}></div>*/}
                     <Logo variant={"colored"} />
                 </div>
             </div>

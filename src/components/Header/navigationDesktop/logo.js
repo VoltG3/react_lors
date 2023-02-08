@@ -1,5 +1,5 @@
-import LogoColored00 from '../../../assets/logo_colored/Lors4_colored.svg'
-import LogoTransparent from '../../../assets/logo_transparent/Lors1_transparent.svg'
+import LogoColored00 from '../../../assets/logo_colored/Lors6_colored.svg'
+import LogoTransparent from '../../../assets/logo_transparent/Lors2_transparent.svg'
 
 export default function Logo(props) {
 
@@ -17,7 +17,7 @@ export default function Logo(props) {
     return (
         <img src={ getVariant() }
              alt={"icon"}
-             width="auto" height="60px"
+             width="auto" height="45px"
              />
     )
 }

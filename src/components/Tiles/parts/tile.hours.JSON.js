@@ -1,10 +1,11 @@
 import styled from 'styled-components'
-import { FetchData } from '../../JSON/fetchData'
-import TransformData from "../../JSON/transformData";
-import TransformFormat from "../../JSON/transformFormat";
-import i18n from "i18next";
+import i18n from 'i18next'
 
-const TableHoursHours = () => {
+import { FetchData } from '../../../JSON/fetchData'
+import TransformData from '../../../JSON/transformData'
+import TransformFormat from '../../../JSON/transformFormat'
+
+const TileHoursJSON = () => {
     const jsonData = FetchData()
     const arrayOpeningHoursEU = []
     const arrayOpeningHoursUS = []
@@ -13,19 +14,17 @@ const TableHoursHours = () => {
     const arrayOpeningHours = i18n.language === 'en' ? arrayOpeningHoursUS : arrayOpeningHoursEU
     //console.table(arrayOpeningHours)
 
-    const tItem = "textcontent--tabledata--item"
-    const tItemSmal = "textcontent--tabledata--item--small"
+    const tableParagraph = "textcontent--tabledata--item--small"
 
     return (
         <StyledHoursList>
             { arrayOpeningHours.map(( array, index ) => (
                 <div key={ index } className={"cell"}>
-                    <div className={"cellD line"}>
-                        <div><p className={tItem}>{ array[0] }</p></div>
-                        <div><p className={tItem}>-</p></div>
-                        <div><p className={tItem}>{ array[1] }</p></div>
+                    <div className={"cellHours line"}>
+                        <div><p className={ tableParagraph }>{ array[0] }</p></div>
+                        <div><p className={ tableParagraph }>-</p></div>
+                        <div><p className={ tableParagraph }>{ array[1] }</p></div>
                     </div>
-
                 </div>
             ))}
         </StyledHoursList>
@@ -38,58 +37,41 @@ const StyledHoursList = styled.div`
   flex-direction: column;
     width: 100%;
     height: auto;
-  //border: solid 1px red;
   
-  .cellD {
+  .cellHours {
     display: flex;
- 
-    width: 100%;
-    height: 40px;
+      width: 100%;
+      height: 40px;
     flex-direction: row;
-   
+
     & div:nth-child(1) {
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      width: 90px;
-      
-      //border: solid 1px red;
-      
+        width: 90px;
     }
     
     & div:nth-child(2) {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 20px;
-     // border: solid 1px red;
+        width: 20px;
     }
 
-    & div:nth-child(3) { 
-      /*& p {
-      font-size: 14px;
-      font-weight: bold;
-      color: #333;
-    }*/
+    & div:nth-child(3) {
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      width: 90px;
-     // border: solid 1px red;
+       width: 90px;
     }
 
-   /* & p {
-      font-size: 14px;
-      font-weight: bold;
-      color: #333;
-    }*/
+    @media only screen and (max-width: 700px) {
+      & div:nth-child(1) { width: 60px; }
+      & div:nth-child(2) {}
+      & div:nth-child(3) { width: 60px; }
+    }
   }
-
-  .line {
-   // height: auto;
-    //min-height: var(--list--line--height);
-  }
-
+  
   & div:nth-child(even) .line {
     background: var(--color--list--even);
   }
@@ -99,4 +81,4 @@ const StyledHoursList = styled.div`
   }
 `
 
-export default TableHoursHours
+export default TileHoursJSON

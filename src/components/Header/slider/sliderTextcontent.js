@@ -26,18 +26,17 @@ function SliderTextcontent() {
           <Temporary>
               <p className={ h1 }>{ introHeader }</p>
               <p className={ paragraph }>{ t("sections:section_header_part06") }</p>
-
-              <Link to={"contacts"}>
-                  <BTNPrimary
-                      label={"btn_appointment_x"}
-                      minWidth={"390px"}
-                      paragraphMarginLeft={"-20%"}
-                      paddingVertical={"10px"}
-                      justifyContent={"flex-start"}
-                  />
-              </Link>
-
           </Temporary>
+
+          <Link to={"contacts"}>
+              <BTNPrimary
+                  label={"btn_contacts"}
+                  minWidth={"390px"}
+                  paragraphMarginLeft={"-20%"}
+                  paddingVertical={"10px"}
+                  justifyContent={"flex-start"}
+              />
+          </Link>
       </div>
     )
 }
@@ -50,6 +49,7 @@ const Temporary = styled.div`
   //margin-top: min(max(5.55vh, 18px), 80px);
     //border: solid 1px black;
   margin-top: 80px;
+  padding-bottom: 10%;
   
   & div:first-child {
     margin-top: 80px;

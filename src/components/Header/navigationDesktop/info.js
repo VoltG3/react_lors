@@ -45,7 +45,7 @@ const StyledHeaderSubSetInfo = styled.div`
     width: 100%;
     height: auto;
   padding-top: 5px;
-  
+  //border: solid 1px red;
   & div:first-child {
     & p:hover {
       cursor: pointer;
@@ -56,7 +56,18 @@ const StyledHeaderSubSetInfo = styled.div`
   & div {
     padding-right: 30px;
   }
-  
+
+  @media only screen and (max-width: 1500px) {
+   & div {
+     padding-right: 10px;
+   }
+  }
+
+  @media only screen and (max-width: 1220px) {
+    & div {
+      padding-right: 5px;
+    }
+  }
   .infoSquare {
     display: flex;
     flex-direction: row;
