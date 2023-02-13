@@ -9,9 +9,16 @@ export const PageContainer = styled.div`
         width: var(--page--width100);
         height: auto;
   box-sizing: border-box;
-  padding-top: var(--page--paddingTop);
-  padding-bottom: var(--page--paddingBottom);
+  padding-top: var(--size--padding70);
+  padding-bottom: var(--size--padding80);
+  //padding-top: var(--page--paddingTop);
+  //padding-bottom: var(--page--paddingBottom);
 
+  @media only screen and (max-width: 700px) {
+    padding-top: var(--size--padding30);
+    padding-bottom: var(--size--padding30);
+  }
+  
   & h1, h2 {
     align-self: flex-start;
     padding-bottom: var(--size--padding30);
@@ -39,7 +46,7 @@ export const PageContainer = styled.div`
     padding-bottom: var(--size--padding30);
 
     & p:nth-last-child(-n +1) {
-      color: var(--color--highlight);
+      color: var(--color--paragraph--highlight);
     }
 
     & p:nth-last-child(-n +2) {

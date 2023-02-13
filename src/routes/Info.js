@@ -2,26 +2,26 @@ import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { PageContainer as StyledPageContainer } from './Styles'
 
+import { Link03 } from '../env'
+import { Link } from 'react-router-dom'
+
 import { LISTInformation } from '../components/TextContent/Lists/LIST.information'
 
-import {Link03} from '../env'
-import LineLang from "../components/line.lang";
-import {Link} from "react-router-dom";
-import BTNSmall from "../components/Button/temp/BTNSmall";
+import ImgCollective3Desktop from '../components/Image/IMG.collective3.desktop'
+import ImgCollective3Mobile from '../components/Image/IMG.collective3.mobile'
 
-import ImgCollective3Desktop from "../components/Image/IMG.collective3.desktop";
-import BTNSecondary from "../components/Button/BTN.secondary";
-import ImgCollective3Mobile from "../components/Image/IMG.collective3.mobile";
+import BTNSecondary from "../components/Button/temp/BTN.secondary";
+import LineLang from "../components/line.lang";
 
 export default function Info() {
     const [t] = useTranslation(["common","sections"])
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
-    const h1 = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
+    const h = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
     const semiheader = i18n.language === 'ru' ? 'textcontent--h2--rus' : 'textcontent--h2'
 
     return (
         <StyledPageContainer>
-            <h2 className={ h1 }>{ t("common:info") }</h2>
+            <h2 className={ h }>{ t("common:info") }</h2>
 
             <LineLang />
 

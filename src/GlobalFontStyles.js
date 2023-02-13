@@ -13,21 +13,26 @@ export const GlobalFontStyles = createGlobalStyle`
       --font--GTWalsheimLight: "GTWalsheimLight", sans-serif;
       --font--opacity: 0.7;
       
-      // common
+      // intro
       --textcontent--h0--fontsize: min(max(2.5vw, 22px), 36px);
-      --textcontent--h0--lineheight: min(max(3.056vw, 22px), 44px);
+      --textcontent--h0--lineheight: min(max(3.056vw, 24px), 44px);
       --textcontent--h0--rus--fontsize: min(max(2.5vw, 22px), 36px);
-      --textcontent--h0--rus--lineheight: min(max(3.056vw, 22px), 44px);
+      --textcontent--h0--rus--lineheight: min(max(3.056vw, 24px), 44px);
       
       --textcontent--h1--fontsize: min(max(2.5vw, 18px), 36px);
-      --textcontent--h1--lineheight: min(max(3.056vw, 22px), 44px);
-      --textcontent--h1--rus--fontsize: min(max(2.5vw, 18px), 36px);
-      --textcontent--h1--rus--lineheight: min(max(3.056vw, 22px), 44px);
-      --textcontent--h2--fontsize: 24px;
+      --textcontent--h1--lineheight: min(max(3.056vw, 24px), 44px);
+      --textcontent--h1--rus--fontsize: min(max(1.944vw, 18px), 28px);
+      --textcontent--h1--rus--lineheight: min(max(3.056vw, 24px), 44px);
+      
+      // semiheader
+      --textcontent--h2--fontsize: min(max(1.389vw, 18px), 20px);                                    
       --textcontent--h2--lineheight: min(max(3.056vw, 22px), 44px);
-      --textcontent--h2--rus--fontsize: 24px;
+      --textcontent--h2--rus--fontsize: min(max(1.389vw, 18px), 20px);
       --textcontent--h2--rus--lineheight: min(max(3.056vw, 22px), 44px);
+      
+      // h3 to delete
       --textcontent--h3--fontsize: 20px;
+      
       --textcontent--paragraph--fontsize: min(max(1.458vw, 18px), 21px);
       --textcontent--paragraph--lineheight: min(max(1.806vw, 20px), 26px);
       --textcontent--paragraph--rus--fontsize: min(max(1.458vw, 18px), 21px);
@@ -96,7 +101,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-style: normal;
         font-weight: 400;
         font-size: var(--textcontent--h0--fontsize);
-        line-height: var(--textcontent--h0--lineheight);
+        line-height: var(--textcontent--h0--lineheight);!important;
         white-space: pre-wrap;
         opacity: var(--font--opacity);
         color: var(--color--secondary);
@@ -109,7 +114,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-style: normal;
         font-weight: 400;
         font-size: var(--textcontent--h0--rus--fontsize);
-        line-height: var(--textcontent--h0--rus--lineheight);
+        line-height: var(--textcontent--h0--rus--lineheight);!important;
         text-transform: uppercase;
         opacity: var(--font--opacity);
         color: var(--color--secondary);
@@ -120,7 +125,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-style: normal;
         font-weight: 400;
         font-size: var(--textcontent--h1--fontsize);
-        line-height: var(--textcontent--h1--lineheight);
+        line-height: var(--textcontent--h1--lineheight)!important;
           white-space: pre-wrap;
         opacity: var(--font--opacity);
         color: var(--color--secondary);
@@ -131,7 +136,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-style: normal;
         font-weight: 400;
         font-size: var(--textcontent--h1--rus--fontsize);
-        line-height: var(--textcontent--h1--rus--lineheight);
+        line-height: var(--textcontent--h1--rus--lineheight);!important;
           text-transform: uppercase;
         opacity: var(--font--opacity);
         color: var(--color--secondary);
@@ -180,7 +185,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textcontent--h3 {
-        font-family: var(--font--Montserrat);
+        font-family: var(--font--OpenSans);
         font-style: normal;
         font-weight: 600;
         font-size: var(--textcontent--h3--fontsize);

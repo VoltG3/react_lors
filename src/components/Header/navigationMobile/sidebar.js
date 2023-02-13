@@ -1,4 +1,3 @@
-
 import React, {useState} from "react";
 import { slide as Menu } from "react-burger-menu";
 import {Link} from "react-router-dom";
@@ -6,8 +5,8 @@ import {useTranslation} from "react-i18next";
 import LanguagesMobile from "./languages.mobile";
 import i18n from "i18next";
 import {Link01, Link04} from "../../../env";
-import BTNSmallMobile from "../../Button/temp/BTNSmallMobile";
-import BTNmobile from "../../Button/BTN.mobile";
+
+import BTNmobile from "../../Button/temp/BTN.mobile";
 import LogoTransparent00 from "../../../assets/logo_transparent/Lors2_transparent.svg";
             import "./styles.css";
 const SideBar = (props) => {

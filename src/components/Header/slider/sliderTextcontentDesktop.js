@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import i18n from 'i18next'
 
 import {introHeader} from "../../../env";
-import BTNPrimary from "../../Button/BTN.primary";
+import BTNPrimary from "../../Button/temp/BTN.primary";
 import React from "react";
 import {Link} from "react-router-dom";
 

@@ -3,11 +3,11 @@ import { useTranslation } from 'react-i18next'
 import i18n from 'i18next'
 
 import {introHeader} from "../../../env";
-import BTNPrimary from "../../Button/BTN.primary";
+import BTNPrimary from "../../Button/temp/BTN.primary";
 import React from "react";
 import {Link} from "react-router-dom";
-import BTNSecondary from "../../Button/BTN.secondary";
-import BTNSecondaryMobile from "../../Button/BTN.secondaryMobile";
+import BTNSecondary from "../../Button/temp/BTN.secondary";
+import BTNSecondaryMobile from "../../Button/temp/BTN.secondaryMobile";
 
 function SliderTextcontentMobile(props) {
     const [t] = useTranslation(["sections", "common"])
@@ -23,10 +23,10 @@ function SliderTextcontentMobile(props) {
             width: 'var(--page--width100)',
             height: 'auto'
         }}>
-            <Temporary2>
+            <Temporary3>
                 <p className={ h1 }>{ introHeader }</p>
-                <p className={ paragraph }>{ t("sections:section_header_part06") }</p>
-            </Temporary2>
+                <p style={{ paddingTop: '7px'}} className={ paragraph }>{ t("sections:section_header_part06") }</p>
+            </Temporary3>
 
            <Link to={"contacts"}>
                <BTNSecondaryMobile />
@@ -35,16 +35,14 @@ function SliderTextcontentMobile(props) {
     )
 }
 
-const Temporary2 = styled.div`
-  display: flex;
+const Temporary3 = styled.div`
+  display:flex;
   flex-direction: column;
     width: 100%;
     height: auto;
   margin-top: 20px;
   padding-bottom: 20px;
- 
   
-
 
   @media only screen and (max-width: 900px) {
    

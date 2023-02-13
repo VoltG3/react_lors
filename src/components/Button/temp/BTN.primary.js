@@ -8,7 +8,8 @@ function BTNPrimary(props) {
     const paragraphMargin = props.paragraphMarginLeft
     const btn_contacts = <p style={{ marginLeft: paragraphMargin }} className={"textcontent--button"}>{ t("btn_variant04") }</p>
     const btn_appointment = <p style={{ marginLeft: paragraphMargin }} className={"textcontent--button"}>{ t("common:eapointment") }</p>
-
+/*    const btn_contacts = <p style={{ marginLeft: paragraphMargin }} className={"textcontent--button"}>{ props.label }</p>
+    const btn_appointment = <p style={{ marginLeft: paragraphMargin }} className={"textcontent--button"}>{ props.label }</p>*/
     return (
         <StyledButtonV1 style={{ justifyContent: props.justifyContent}}>
             <div className={"innerButton"} style={{ width: props.minWidth }}>

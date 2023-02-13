@@ -3,8 +3,8 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import i18n from "i18next";
 import {Link03, Link04} from "../../../env";
-import BTNSmall from "../../Button/temp/BTNSmall";
-import BTNcovid from "../../Button/BTN.covid";
+
+import BTNcovid from "../../Button/temp/BTN.covid";
 
 function Covid() {
     const [t] = useTranslation(["sections", "covid"])
@@ -35,7 +35,7 @@ const StyledCovid = styled.div`
   
   .covidbar {
     position: absolute;
-    z-index: var(--layer--covid);
+    z-index: 2;
       top: -100%;
       left: 0;
       right: 0;

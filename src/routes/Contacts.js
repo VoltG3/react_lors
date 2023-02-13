@@ -1,33 +1,34 @@
 import '../translations/i18n'
-import i18n from "i18next";
+import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
+
 import { PageContainer as StyledPageContainer } from './Styles'
-import {introHeader, Link01} from "../env";
-import React from 'react';
+import { introHeader, Link01 } from '../env'
+
+import ImgContacts from '../components/Image/IMG.contacts'
+import ImgCollective3Desktop from '../components/Image/IMG.collective3.desktop'
+import ImgCollective3Mobile from '../components/Image/IMG.collective3.mobile'
+
+import TableSectionContacts from '../components/TableContacts/table.section.contacts'
+
 import GoogleMap from '../components/GoogleMap'
-import LineLang from "../components/line.lang";
-
-import TableSectionContacts from "../components/TableContacts/table.section.contacts";
-import ImgContacts from "../components/Image/IMG.contacts";
-import ImgCollective3Desktop from "../components/Image/IMG.collective3.desktop";
-
-import BTNPrimary from "../components/Button/BTN.primary";
-import ImgCollective3Mobile from "../components/Image/IMG.collective3.mobile";
+import LineLang from '../components/line.lang'
+import BTNPrimary from '../components/Button/temp/BTN.primary'
 
 export default function Contacts() {
     const [t] = useTranslation(["common", "sections"])
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
-    const h1 = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
+    const h = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
 
     return (
         <>
             <StyledPageContainer style={{ paddingBottom: '0'}}>
-                <h2 className={ h1 }>{ t("common:contacts") }</h2>
+                <h2 className={ h }>{ t("common:contacts") }</h2>
                 <LineLang />
 
                 <div style={{ display: 'flex', flexDirection: 'row'}}>
                     <span>
-                        <p style={{ color: 'var(--color--highlight)'}} className={ paragraph }>{ t("sections:section_contacts_part01") }</p>
+                        <p style={{ color: 'var(--color--paragraph--highlight)'}} className={ paragraph }>{ t("sections:section_contacts_part01") }</p>
                         <p className={ paragraph }>{ t("sections:section_contacts_part02") }</p>
 
                         <a href={ Link01 } target={"_blank"} rel={"noopner noreferrer"}>
@@ -40,10 +41,7 @@ export default function Contacts() {
                             />
                         </a>
                     </span>
-
-
-
-
+                    
                     <ImgCollective3Desktop />
                 </div>
 

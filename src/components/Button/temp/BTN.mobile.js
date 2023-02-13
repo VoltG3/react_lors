@@ -34,7 +34,7 @@ const StyledButtonV4 = styled.div`
     border-radius: 5px;
     
     border: 1px solid white;
-    background: #112734;
+    background: var(--color--m);
     transition:
             background .5s linear,
             border-color ease-in .5s,

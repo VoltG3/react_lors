@@ -4,7 +4,7 @@ import { Link01 } from '../../../env'
 import { useTranslation } from 'react-i18next'
 
 import LineTiny from '../../line.short'
-import BTNPrimary from '../../Button/BTN.primary'
+import BTNPrimary from '../../Button/temp/BTN.primary'
 import TileHoursJSON from './tile.hours.JSON'
 
 const TileHours = () => {

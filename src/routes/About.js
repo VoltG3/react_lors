@@ -11,12 +11,12 @@ import ImgEquipement from '../components/Image/IMG.equipement'
 export default function About() {
     const [t] = useTranslation(["common", "sections"])
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
-    const h1 = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
+    const h = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
 
     return (
         <StyledPageContainer>
 
-            <h2 className={ h1 }>{ t("common:about") }</h2>
+            <h2 className={ h }>{ t("common:about") }</h2>
 
             <LineLang />
 
