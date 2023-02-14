@@ -79,6 +79,10 @@ i18n
     });
 
 async function initI18n() {
+    await i18n.init({
+        lng: 'en',
+    })
+
     await i18n.use(LanguageDetector).init({
         fallbackLng: 'en',
 
