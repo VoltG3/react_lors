@@ -78,4 +78,30 @@ i18n
         }
     });
 
-i18n.changeLanguage("en")
+async function initI18n() {
+    await i18n.use(LanguageDetector).init({
+        fallbackLng: 'en',
+
+    })
+
+    const detectedLanguage = i18n.language;
+    const language = detectedLanguage === 'lv' ? 'lv' : detectedLanguage === 'ru' ? 'ru' : 'en'
+    try {
+        await i18n.changeLanguage(language)
+        console.log(`Language set to ${language}`)
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+function handleInit() {
+    initI18n()
+        .then(() => {
+            console.log('i18n initialized successfully')
+        })
+        .catch(error => {
+            console.error(error)
+        })
+}
+
+handleInit()
