@@ -5,7 +5,7 @@ import { PageContainer as StyledPageContainer } from './Styles'
 import LineLang from '../components/line.lang'
 import ImgCollective4 from '../components/Image/IMG.collective4'
 import Tiles from '../components/Tiles/tiles'
-import {Button} from "../components/Button/Button";
+/*import {Button} from "../components/Button/Button";*/
 
 export default function Home() {
     const [t] = useTranslation(["sections"])
