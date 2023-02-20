@@ -1,22 +1,22 @@
+import React from 'react'
 import styled from 'styled-components'
-import { useTranslation } from 'react-i18next'
-import i18n from 'i18next'
+import { Link } from 'react-router-dom'
+import config from '../../../config'
 
-import {introHeader} from "../../../env";
-import BTNPrimary from "../../Button/temp/BTN.primary";
-import React from "react";
-import {Link} from "react-router-dom";
-import BTNSecondary from "../../Button/temp/BTN.secondary";
-import BTNSecondaryMobile from "../../Button/temp/BTN.secondaryMobile";
+import i18n from 'i18next'
+import { useTranslation } from 'react-i18next'
+
+import { ButtonController } from '../../Button/Button.controller'
 
 function SliderTextcontentMobile(props) {
     const [t] = useTranslation(["sections", "common"])
+    const introHeader = config.common.introHeader
+
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
     const h1 = i18n.language === 'ru' ? 'textcontent--h0--rus' : 'textcontent--h0'
 
     return (
         <div style={{
-
             display: props.media,
             flexDirection: 'column',
             maxWidth: 'var(--page--width)',
@@ -29,7 +29,7 @@ function SliderTextcontentMobile(props) {
             </Temporary3>
 
            <Link to={"contacts"}>
-               <BTNSecondaryMobile />
+               <ButtonController variant={"sliderMobile"} />
             </Link>
         </div>
     )
@@ -42,11 +42,6 @@ const Temporary3 = styled.div`
     height: auto;
   margin-top: 20px;
   padding-bottom: 20px;
-  
-
-  @media only screen and (max-width: 900px) {
-   
-  }
 `
 
 export default SliderTextcontentMobile

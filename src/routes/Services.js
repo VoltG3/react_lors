@@ -1,10 +1,11 @@
-import i18n from 'i18next'
-import { useTranslation } from 'react-i18next'
+import React from 'react'
 import { PageContainer as StyledPageContainer } from './Styles'
 
+import i18n from 'i18next'
+import { useTranslation } from 'react-i18next'
 import { LISTServices } from '../components/TextContent/Lists/LIST.services'
+import { ImageController } from '../components/Image/image.controller'
 
-import ImgEquipement from '../components/Image/IMG.equipement'
 import LineLang from '../components/line.lang'
 
 export default function Services() {
@@ -18,7 +19,7 @@ export default function Services() {
             <LineLang />
 
            <LISTServices showHeader={"true"} />
-           <ImgEquipement />
+           <ImageController variant={"equipment"} />
         </StyledPageContainer>
     )
 }

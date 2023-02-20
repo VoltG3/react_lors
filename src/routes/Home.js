@@ -1,11 +1,13 @@
-import i18n from 'i18next'
-import { useTranslation } from 'react-i18next'
+import React from 'react'
 import { PageContainer as StyledPageContainer } from './Styles'
 
+import i18n from 'i18next'
+import { useTranslation } from 'react-i18next'
+import { ImageController } from '../components/Image/image.controller'
+
 import LineLang from '../components/line.lang'
-import ImgCollective4 from '../components/Image/IMG.collective4'
 import Tiles from '../components/Tiles/tiles'
-/*import {Button} from "../components/Button/Button";*/
+/*import {LineController} from "../components/Button/Line.controller";*/
 
 export default function Home() {
     const [t] = useTranslation(["sections"])
@@ -18,14 +20,12 @@ export default function Home() {
 
             <LineLang />
 
-           {/* <Button variant={"covid"} />
-            <Button variant={"mobile"} />
-            <Button variant={"sliderDesktop"} />
-            <Button variant={"sliderMobile"} />
-            <Button variant={"appointment"} />
-            <Button variant={"contacts"} />
-            <Button variant={"info"} />*/}
-
+            {/*<p>-----------</p>
+            <LineController variant={"lienHR"} />
+            <LineController varaint={"line01"} />
+            <LineController variant={"line02"} />
+            <LineController varaint={"line03"} />
+            <p>-----------</p>*/}
 
             <span>
                  <p className={ paragraph }>{ t("sections:section_home_part03") }</p>
@@ -33,7 +33,7 @@ export default function Home() {
                  <p className={ paragraph }>{ t("sections:section_home_part02") }</p>
             </span>
 
-            <ImgCollective4 />
+            <ImageController variant={"collective4"} />
             <Tiles />
         </StyledPageContainer>
     )

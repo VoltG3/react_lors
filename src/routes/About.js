@@ -1,12 +1,12 @@
-import i18n from 'i18next'
-import { useTranslation } from 'react-i18next'
+import React from 'react'
 import { PageContainer as StyledPageContainer } from './Styles'
 
+import i18n from 'i18next'
+import { useTranslation } from 'react-i18next'
 import { LISTServices } from '../components/TextContent/Lists/LIST.services'
+import { ImageController } from '../components/Image/image.controller'
 
 import LineLang from '../components/line.lang'
-import ImgEachPerson from '../components/Image/IMG.eachPerson'
-import ImgEquipement from '../components/Image/IMG.equipement'
 
 export default function About() {
     const [t] = useTranslation(["common", "sections"])
@@ -15,7 +15,6 @@ export default function About() {
 
     return (
         <StyledPageContainer>
-
             <h2 className={ h }>{ t("common:about") }</h2>
 
             <LineLang />
@@ -27,9 +26,9 @@ export default function About() {
                 <p className={ paragraph }>{ t("sections:section_about_part04") }</p>
             </span>
 
-            <ImgEachPerson />
+            <ImageController variant={"eachPerson"} />
             <LISTServices showHeader={"true"} />
-            <ImgEquipement />
+            <ImageController variant={"equipment"} />
         </StyledPageContainer>
     )
 }

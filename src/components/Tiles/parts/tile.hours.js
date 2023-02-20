@@ -1,14 +1,18 @@
+import React from 'react'
 import { TileHours as StyledTileHours } from './styles'
-import { Link01 } from '../../../env'
+import config from '../../../config'
 
 import { useTranslation } from 'react-i18next'
 
 import LineTiny from '../../line.short'
-import BTNPrimary from '../../Button/temp/BTN.primary'
 import TileHoursJSON from './tile.hours.JSON'
+
+import { ButtonController } from '../../Button/Button.controller'
+
 
 const TileHours = () => {
     const [t] = useTranslation(["times", "sections", "common"])
+    const URL_01 = config.external_url.URL_01
     const header = "textcontent--tabledata--header"
     const paragraph = "textcontent--tabledata--item"
     const tableParagraph = "textcontent--tabledata--item--small"
@@ -36,14 +40,8 @@ const TileHours = () => {
 
                 <p className={ paragraph } style={{ paddingTop: '44px', paddingBottom: '22px'}}>{ t("sections:section_contacts_part02") }</p>
 
-                <a  style={{ paddingBottom: '22px' }} href={ Link01 } target="_blank" rel="noopener noreferrer">
-                    <BTNPrimary
-                        label={"btn_appointment"}
-                        minWidth={"190px"}
-                        paragraphMarginLeft={"-25%"}
-                        paddingVertical={"5px"}
-                        justifyContent={"flex-end"}
-                    />
+                <a  style={{ paddingBottom: '22px' }} href={ `${URL_01}` } target="_blank" rel="noopener noreferrer">
+                    <ButtonController variant={"appointment"} />
                 </a>
 
             </div>

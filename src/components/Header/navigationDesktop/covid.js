@@ -1,18 +1,22 @@
+import React from 'react'
 import styled from 'styled-components'
-import { useState } from 'react'
-import { useTranslation } from 'react-i18next'
-import i18n from "i18next";
-import {Link03, Link04} from "../../../env";
+import config from '../../../config'
 
-import BTNcovid from "../../Button/temp/BTN.covid";
+import i18n from 'i18next'
+import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
+
+import { ButtonController } from '../../Button/Button.controller'
 
 function Covid() {
     const [t] = useTranslation(["sections", "covid"])
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
+
     const [covidBarVisible, setCovidbarVisible] = useState(false);
+    const URL_04 = config.external_url.URL_04
 
     const toggleInfobar = () => {
-        setCovidbarVisible(!covidBarVisible);
+        setCovidbarVisible(!covidBarVisible)
     }
 
     return (
@@ -21,8 +25,7 @@ function Covid() {
             <div className={`covidbar ${covidBarVisible ? 'visible' : 'hidden'}`}>
                 <div className={"innerCovid"}>
                     <div><p className={ paragraph }>{ t("covid:covid")}</p></div>
-                    <div><a href={ Link04 } target="_blank" rel="noopener noreferrer"><BTNcovid /></a></div>
-                   {/* <div><p>x</p></div>*/}
+                    <div><a href={ `${URL_04}` } target="_blank" rel="noopener noreferrer"> <ButtonController variant={"covid"} /></a></div>
                 </div>
             </div>
 

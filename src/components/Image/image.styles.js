@@ -90,16 +90,11 @@ const MediaCollective4 = css`
   }
 `
 
-const MediaCollective3_Desktop = css`
- // max-width: 500px;
+const MediaCollective3 = css`
   @media only screen and (max-width: 700px) {
-    display: none;
-  }
-`
-
-const MediaCollective3_Mobile = css`
-  @media only screen and (min-width: 700px) {
-    display: none;
+    & {
+      padding-top: var(--size--padding30);
+    }
   }
 `
 
@@ -115,7 +110,6 @@ const MediaEquipment = css`
   @media only screen and (max-width: 600px) {
     & {
       flex-direction: column;
-      padding-bottom: var(--sie--padding30);
     }
   }
 `
@@ -123,7 +117,6 @@ const MediaEquipment = css`
 /* MediaOffice */
 
 const MediaContacts = css`
-  //justify-content: space-between;
   gap: 30px;
   
   & img:nth-child(1) { max-width: calc( 55% - calc(var(--size--padding30) / 2)); }
@@ -145,15 +138,9 @@ export const StyledCollective4 = styled.div`
   ${ ImgCollective4Hiddenelements }
   ${ MediaCollective4 }
 `
-
-export const StyledCollective3_Desktop = styled.div`
+export const StyledCollective3 = styled.div`
   ${ ImgContainer }
-  ${ MediaCollective3_Desktop }
-`
-
-export const StyledCollective3_Mobile = styled.div`
-  ${ ImgContainer }
-  ${ MediaCollective3_Mobile }
+  ${ MediaCollective3 }
 `
 
 export const StylesEachPerson = styled.div`

@@ -1,14 +1,17 @@
+import React from 'react'
 import styled from 'styled-components'
-import { useTranslation } from 'react-i18next'
-import i18n from 'i18next'
+import { Link } from 'react-router-dom'
+import config from '../../../config'
 
-import {introHeader} from "../../../env";
-import BTNPrimary from "../../Button/temp/BTN.primary";
-import React from "react";
-import {Link} from "react-router-dom";
+import i18n from 'i18next'
+import { useTranslation } from 'react-i18next'
+
+import { ButtonController } from '../../Button/Button.controller'
 
 function SliderTextcontentDesktop(props) {
     const [t] = useTranslation(["sections", "common"])
+    const introHeader = config.common.introHeader
+
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
     const h1 = i18n.language === 'ru' ? 'textcontent--h0--rus' : 'textcontent--h0'
 
@@ -29,13 +32,7 @@ function SliderTextcontentDesktop(props) {
           </Temporary>
 
           <Link to={"contacts"}>
-              <BTNPrimary
-                  label={"btn_contacts"}
-                  minWidth={"390px"}
-                  paragraphMarginLeft={"-20%"}
-                  paddingVertical={"10px"}
-                  justifyContent={"flex-start"}
-              />
+              <ButtonController variant={"sliderDesktop"} />
           </Link>
       </div>
     )

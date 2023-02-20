@@ -1,26 +1,23 @@
+import React from 'react'
 import styled from 'styled-components'
-
-import LogoTransparent00 from '../../assets/logo_transparent/Lors2_transparent.svg'
-import LogoTransparent01 from '../../assets/logo_transparent/Balta_transaprent.svg'
-import LogoTransparent02 from '../../assets/logo_transparent/BTA_transsparent.svg'
-import LogoTransparent03 from '../../assets/logo_transparent/ERGO_transparent.svg'
-import LogoTransparent04 from '../../assets/logo_transparent/Gjensidige_transparent.svg'
-import LogoTransparent05 from '../../assets/logo_transparent/Seesam_transpareent.svg'
+import config from '../../config'
 
 function FooterLogo() {
+    const { logo_transparent } = config
+
     return(
         <StyledFooterLogo>
             <div className={"innerFooterLogo"}>
                 <div className={"firstLogo"}>
-                    <img src={ LogoTransparent00 } alt={"icon"} style={{ maxWidth: '150px', minWidth: '95px', paddingBottom: '15px' }}/>
+                    <img src={ logo_transparent.logoTransparent00 } alt={"icon"} style={{ maxWidth: '150px', minWidth: '95px', paddingBottom: '15px' }}/>
                 </div>
 
                 <div className={"secondLogo"}>
-                    <img src={ LogoTransparent01 } alt={"icon"} style={{ maxWidth: '40px', minWidth: '25px' }}/>
-                    <img src={ LogoTransparent02 } alt={"icon"} style={{ maxWidth: '60px', minWidth: '30px' }}/>
-                    <img src={ LogoTransparent03 } alt={"icon"} style={{ maxWidth: '53px', minWidth: '25px' }}/>
-                    <img src={ LogoTransparent04 } alt={"icon"} style={{ maxWidth: '99px', minWidth: '45px' }}/>
-                    <img src={ LogoTransparent05 } alt={"icon"} style={{ maxWidth: '95px', minWidth: '45px', paddingBottom: '12px' }}/>
+                    <img src={ logo_transparent.logoTransparent01 } alt={"icon"} style={{ maxWidth: '40px', minWidth: '25px' }}/>
+                    <img src={ logo_transparent.logoTransparent02 } alt={"icon"} style={{ maxWidth: '60px', minWidth: '30px' }}/>
+                    <img src={ logo_transparent.logoTransparent03 } alt={"icon"} style={{ maxWidth: '53px', minWidth: '25px' }}/>
+                    <img src={ logo_transparent.logoTransparent04 } alt={"icon"} style={{ maxWidth: '99px', minWidth: '45px' }}/>
+                    <img src={ logo_transparent.logoTransparent05 } alt={"icon"} style={{ maxWidth: '95px', minWidth: '45px', paddingBottom: '12px' }}/>
                 </div>
             </div>
         </StyledFooterLogo>

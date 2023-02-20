@@ -1,16 +1,16 @@
 import styled from 'styled-components'
-import React, { useEffect, useRef } from 'react'
+/*import React, { useEffect, useRef } from 'react'*/
 
 import NavigationDesktop from './navigationDesktop/navigationDesktop'
 import NavigationMobile from './navigationMobile/navigationMobile'
 import Slider from './slider/slider'
 
 function Header() {
-    const menuRef = useRef(null)
+  /*  const menuRef = useRef(null)
     let previousScrollPosition = 0
 
-    useEffect(() => {
-        function handleScroll() {
+    useEffect(() => {*/
+        /*function handleScroll() {
             const currentScrollPosition = window.pageYOffset
 
             if (currentScrollPosition > previousScrollPosition) {
@@ -27,7 +27,7 @@ function Header() {
         return () => {
             window.removeEventListener('scroll', handleScroll)
         }
-    }, [])
+    }, [])*/
 
     return (
         <StyledHeader>
@@ -36,7 +36,7 @@ function Header() {
             </div>
 
             <div className={"navigation mobile"}
-                 ref={ menuRef } >
+                 /*ref={ menuRef }*/ >
                <NavigationMobile />
             </div>
 

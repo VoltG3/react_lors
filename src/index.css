@@ -30,7 +30,6 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; /* 1rem = 10px */
     background: rgb(244, 244, 244);
-
 }
 
 body {
@@ -57,16 +56,5 @@ ul {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
-    /*border: solid 1px red;*/
 } li { padding-bottom: 10px; }
   li:last-child { padding-bottom: 0; }
-
-
-/*#MediaDesktop { display: block!important; }
-#MediaMobile { display: none!important; }
-
-@media only screen and (max-width: 922px) {
-    #MediaDesktop { display: none!important; }
-    #MediaMobile { display: block!important; }
-}*/
-

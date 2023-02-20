@@ -1,16 +1,21 @@
-import React, {useState} from "react";
-import { slide as Menu } from "react-burger-menu";
-import {Link} from "react-router-dom";
-import {useTranslation} from "react-i18next";
-import LanguagesMobile from "./languages.mobile";
-import i18n from "i18next";
-import {Link01, Link04} from "../../../env";
+import React, { useState } from 'react'
+import { slide as Menu } from 'react-burger-menu'
+import { Link } from 'react-router-dom'
+import config from '../../../config'
 
-import BTNmobile from "../../Button/temp/BTN.mobile";
-import LogoTransparent00 from "../../../assets/logo_transparent/Lors2_transparent.svg";
-            import "./styles.css";
+import i18n from 'i18next'
+import { useTranslation } from 'react-i18next'
+
+import LanguagesMobile from './languages.mobile'
+import { ButtonController } from '../../Button/Button.controller'
+
+import "./styles.css";
+
 const SideBar = (props) => {
     const [t] = useTranslation(["common", "covid"])
+    const logoTransparent00 = config.logo_transparent.logoTransparent00
+    const URL_01 = config.external_url.URL_01
+    const URL_04 = config.external_url.URL_04
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
 
     const [isMenuOpen, handleMenu] = useState(false);
@@ -31,7 +36,7 @@ const SideBar = (props) => {
         >
 
             <div style={{ display: 'flex', justifyContent: 'flex-end', width: '100%', height: 'auto'}}>
-                <img src={ LogoTransparent00 } alt={"icon"} style={{ maxWidth: '150px', minWidth: '95px', paddingBottom: '15px' }}/>
+                <img src={ logoTransparent00 } alt={"icon"} style={{ maxWidth: '150px', minWidth: '95px', paddingBottom: '15px' }}/>
             </div>
 
             <div style={{ width: '100%', height: '1px', backgroundColor: 'white', marginBottom: '30px', marginTop: '30px'}}></div>
@@ -60,7 +65,7 @@ const SideBar = (props) => {
                 <p style={{paddingLeft: '10px'}} className={"textcontent--header--mobile--navigation"}>{ t("common:contacts") }</p>
             </Link>
 
-            <a className={"textcontent--header--mobile--navigation"} href={ Link01 } target={"_blank"} rel={"noopner noreferrer"}>
+            <a className={"textcontent--header--mobile--navigation"} href={ `${URL_01}` } target={"_blank"} rel={"noopener noreferrer"}>
                 <p style={{paddingLeft: '10px'}}>{ t("common:eapointment") }</p>
             </a>
 
@@ -74,8 +79,8 @@ const SideBar = (props) => {
                 <p style={{ color: 'white', letterSpacing: '2px', paddingBottom: '30px', paddingLeft: '10px'}} className={ paragraph }>{ t("covid:covid")}</p>
 
                 <div style={{ display: 'flex', justifyContent: 'flex-start', width: '100%', paddingLeft: '10px'}}>
-                    <a href={ Link04 } target="_blank" rel="noopener noreferrer">
-                        <BTNmobile />
+                    <a href={ `${URL_04}` } target="_blank" rel="noopener noreferrer">
+                        <ButtonController variant={"mobile"} />
                     </a>
                 </div>
             </div>

@@ -9,22 +9,22 @@ export const GlobalColorStyles = createGlobalStyle`
 
     --color--primary: #112734;
     --color--secondary: #152F3F;
-
+    --c: #ffffff;
     --color--paragraph--footer: #828181;
     --color--paragraph--highlight: #F31850;
 
     --color--button--v1--background: #ffb81c;
     --color--button--v1--hover: rgb(255, 208, 105);
- /*   --color--button--v1: #262626;*/
+    /*   --color--button--v1: #262626;*/
     --color--button--v2--background: #EF5DA8;
     --color--button--v2--hover: #f587bf;
---color--m: #112734;
+    --color--m: #112734;
 
     --color--line--variant--v1: #EDAE0E;
     --color--line--variant--v2: #EF5DA8;
     --color--line--variant--v3: #C20031;
     --color--line--lang: rgb(214, 214, 214);
-    
+
     --color--tabledata: #373A36;
     --color--tabledata--border: #7f817e;
 
@@ -32,7 +32,7 @@ export const GlobalColorStyles = createGlobalStyle`
     --color--none: #FFFFFF;
 
     /* color set */
-    
+
     --crl--primary--dkr: #010B17;
     --crl--primary--dk: #07162C;
     --clr--primary--base: #132743;

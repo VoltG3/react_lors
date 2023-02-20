@@ -1,13 +1,17 @@
 import React, { useState } from 'react'
-import { StyledCollective4 as StyledImgContainer } from './IMG.styles'
-import { image01 } from '../../env'
+import config from '../../config'
 
-const ImgCollective4 = () => {
+import { StyledCollective4 as StyledImgContainer } from './image.styles'
+
+
+const ImgCollective4 = (props) => {
     const [showHidden1, setShowHidden1] = useState(false);
     const [showHidden2, setShowHidden2] = useState(false);
     const [showHidden3, setShowHidden3] = useState(false);
-    const [showHidden4, setShowHidden4] = useState(false);
+    const [showHidden4, setShowHidden4] = useState(false)
+
     const paragraph = "textcontent--tabledata--item--names"
+    const { name_01, name_02, name_03, name_04 } = config.names
 
     return (
         <StyledImgContainer style={{
@@ -16,8 +20,7 @@ const ImgCollective4 = () => {
             paddingBottom: 'var(--size--padding30)'
         }}>
             <div className={"hiddenContainer"}>
-                {/*<img src={ process.env.PUBLIC_URL + '/assets/images/01.jpg' } width={"100%"} height={"auto"} alt={"img"} />*/}
-                <img src={ image01 } width={"100%"} height={"auto"} alt={"img"} />
+                <img src={ props.variant } width={"100%"} height={"auto"} alt={"img"} loading="lazy" />
                 <div className={"hiddenItem"}>
                     <div
                         onMouseEnter={() => setShowHidden1(true)}
@@ -25,7 +28,7 @@ const ImgCollective4 = () => {
                         { showHidden1 && (
                             <div className="hiddenParagraph">
                                 <div className={"hiddenParagraphContainer"}>
-                                    <p className={ paragraph }>Dace Sidorova</p>
+                                    <p className={ paragraph }>{ name_01 }</p>
                                 </div>
                             </div>
                         )}
@@ -37,7 +40,7 @@ const ImgCollective4 = () => {
                         { showHidden2 && (
                             <div className="hiddenParagraph">
                                 <div className={"hiddenParagraphContainer"}>
-                                    <p className={ paragraph }>Elīna Mežzīle</p>
+                                    <p className={ paragraph }>{ name_02 }</p>
                                 </div>
                             </div>
                         )}
@@ -49,7 +52,7 @@ const ImgCollective4 = () => {
                         { showHidden3 && (
                             <div className="hiddenParagraph">
                                 <div className={"hiddenParagraphContainer"}>
-                                    <p className={ paragraph }>Jautrīte Liepiņa</p>
+                                    <p className={ paragraph }>{ name_03 }</p>
                                 </div>
                             </div>
                         )}
@@ -61,7 +64,7 @@ const ImgCollective4 = () => {
                         { showHidden4 && (
                             <div className="hiddenParagraph">
                                 <div className={"hiddenParagraphContainer"}>
-                                    <p className={ paragraph }>Elīna Eliasa-Vīgante</p>
+                                    <p className={ paragraph }>{ name_04 }</p>
                                 </div>
                             </div>
                         )}

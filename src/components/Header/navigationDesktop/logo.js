@@ -1,16 +1,17 @@
-import LogoColored00 from '../../../assets/logo_colored/Lors6_colored.svg'
-import LogoTransparent from '../../../assets/logo_transparent/Lors2_transparent.svg'
+
+import config from "../../../config";
+
 
 export default function Logo(props) {
 
-    const colored = LogoColored00
-    const transparent = LogoTransparent
+    const logoColored00 = config.logo_colored.logoColored00
+    const logoTransparent00 = config.logo_transparent.logoTransparent00
 
     function getVariant() {
         if(props.variant === "colored") {
-            return colored
+            return logoColored00
         } else {
-            return transparent
+            return logoTransparent00
         }
     }
 

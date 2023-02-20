@@ -1,10 +1,15 @@
 import styled from 'styled-components'
-import { slider01, slider02 } from '../../../env'
+
 import SliderTextcontentDesktop from './sliderTextcontentDesktop'
-import {MediaDesktop} from "../../../media";
+/*import {MediaDesktop} from "../../../media";*/
 import SliderTextcontentMobile from "./sliderTextcontentMobile";
+import config from "../../../config";
+
+
 
 const Slider = () => {
+    const URL_slider01 = config.slider.URL_slider01
+    const URL_slider02 = config.slider.URL_slider02
 
     return (
         <>
@@ -12,9 +17,9 @@ const Slider = () => {
                 <SliderTextcontentDesktop media={"var(--media--desktop)"}/>
 
                 <div className={"slide"}>
-                    <div><img src={ slider01 } width={"100%"} height={"auto"} alt={"slider"} /></div>
-                    <div><img src={ slider01 } width={"100%"} height={"auto"} alt={"slider"} /></div>
-                    <div><img src={ slider02 } width={"100%"} height={"auto"} alt={"slider"} /></div>
+                    <div><img src={ URL_slider01 } width={"100%"} height={"auto"} alt={"slider"} loading="lazy" /></div>
+                    <div><img src={ URL_slider01 } width={"100%"} height={"auto"} alt={"slider"} loading="lazy" /></div>
+                    <div><img src={ URL_slider02 } width={"100%"} height={"auto"} alt={"slider"} loading="lazy" /></div>
                 </div>
             </SliderContainer>
 

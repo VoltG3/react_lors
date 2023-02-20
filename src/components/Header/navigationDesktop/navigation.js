@@ -4,30 +4,31 @@ import { Link } from 'react-router-dom'
 
 function Navigation() {
     const [t] = useTranslation(["common"])
+    const p = 'textcontent--header--desktop--navigation'
 
     return (
         <StyledNavigationHeader>
-            <Link className={"textcontent--header--desktop--navigation"} to={"home"}>
+            <Link className={ p } to={"home"}>
                 <p>{ t("common:home") }</p>
             </Link>
 
-            <Link className={"textcontent--header--desktop--navigation"} to={"about"}>
+            <Link className={ p } to={"about"}>
                 <p>{ t("common:about") }</p>
             </Link>
 
-            <Link className={"textcontent--header--desktop--navigation"} to={"services"}>
+            <Link className={ p } to={"services"}>
                 <p>{ t("common:services") }</p>
             </Link>
 
-            <Link className={"textcontent--header--desktop--navigation"} to={"prices"}>
+            <Link className={ p } to={"prices"}>
                 <p>{ t("common:prices") }</p>
             </Link>
 
-            <Link className={"textcontent--header--desktop--navigation"} to={"info"}>
+            <Link className={ p } to={"info"}>
                 <p>{ t("common:info") }</p>
             </Link>
 
-            <Link className={"textcontent--header--desktop--navigation"} to={"contacts"}>
+            <Link className={ p } to={"contacts"}>
                 <p className={"lastParagraph"}>{ t("common:contacts") }</p>
             </Link>
         </StyledNavigationHeader>

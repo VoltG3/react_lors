@@ -2,24 +2,26 @@ import styled from 'styled-components'
 import i18n from 'i18next'
 
 function FooterLang() {
+    const p = 'textcontent--footer--navigation'
+
     return (
         <StyledSubSetLang>
             <div>
-                <p className={"textcontent--footer--navigation"}
+                <p className={ p }
                    value={"LV"}
                    onClick={() => i18n.changeLanguage('lv') }>LV
                 </p>
             </div>
 
             <div>
-                <p className={"textcontent--footer--navigation"}
+                <p className={ p }
                    value={"EN"}
                    onClick={() => i18n.changeLanguage('en') }>EN
                 </p>
             </div>
 
             <div>
-                <p className={"textcontent--footer--navigation"}
+                <p className={ p }
                    value={"RU"}
                    onClick={() => i18n.changeLanguage('ru') }>RU
                 </p>

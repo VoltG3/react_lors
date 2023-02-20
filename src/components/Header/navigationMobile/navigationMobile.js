@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import React from 'react'
+import './styles.css'
 
-import "./styles.css";
-import SideBar from "./sidebar";
+import SideBar from './sidebar'
 import Logo from "../navigationDesktop/logo";
 
 function NavigationMobile() {
@@ -11,17 +11,11 @@ function NavigationMobile() {
 
             <div id="page-wrap">
                 <div className={"d"}>
-                    {/*<div className={"s"}></div>*/}
                     <Logo variant={"colored"} />
                 </div>
             </div>
         </>
     )
 }
-
-const StyledNavigationMobile = styled.div`
-  Position: fixed;
-  z-index: 9;
-`
 
 export default NavigationMobile

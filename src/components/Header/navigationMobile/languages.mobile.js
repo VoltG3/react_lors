@@ -2,24 +2,26 @@ import styled from 'styled-components'
 import i18n from 'i18next'
 
 function LanguagesMobile() {
+    const p = 'textcontent--header--mobile--languages'
+
     return (
         <div style={{ display: 'flex', justifyContent: 'flex-end'}}>
             <StyledSubSetLangMob>
-                <p className={"textcontent--header--mobile--languages"}
+                <p className={ p }
                    value={"LV"}
                    onClick={() => i18n.changeLanguage('lv') }>LV
                 </p>
 
-                <p className={"textcontent--header--mobile--languages"}>/</p>
+                <p className={ p }>/</p>
 
-                <p className={"textcontent--header--mobile--languages"}
+                <p className={ p }
                    value={"EN"}
                    onClick={() => i18n.changeLanguage('en') }>EN
                 </p>
 
-                <p className={"textcontent--header--mobile--languages"}>/</p>
+                <p className={ p }>/</p>
 
-                <p className={"textcontent--header--mobile--languages"}
+                <p className={ p }
                    value={"RU"}
                    onClick={() => i18n.changeLanguage('ru') }>RU
                 </p>

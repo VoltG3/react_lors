@@ -78,6 +78,11 @@ i18n
         }
     });
 
+        export default i18n;
+
+        /*initReactI18next.init(i18n);
+        i18n.changeLanguage('en')*/
+
 async function initI18n() {
     await i18n.init({
         lng: 'en',

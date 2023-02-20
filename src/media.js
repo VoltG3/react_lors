@@ -1,14 +1,11 @@
 import styled from 'styled-components'
-import { css } from 'styled-components'
 
-export const MediaDesktop = styled.span`
-  display: flex;
-  width: inherit;
-  height: inherit;
-  @media only screen and (max-width: 922px) { display: none!important; }
+export const MediaDesktop = styled.div`
+  width: 100%;
+  
+  @media only screen and (max-width: 700px) { display: none!important; }
 `
 
 export const MediaMobile = styled.span`
-  display: block;
-  @media only screen and (max-width: 922px) { display: none!important; }
+  @media only screen and (min-width: 700px) { display: none!important; }
 `
