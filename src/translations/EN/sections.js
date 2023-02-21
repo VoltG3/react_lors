@@ -22,8 +22,8 @@ export const SECTIONS_EN = {
 
     section_prices_part01 : "For information:",
     section_prices_part02 : "Visit without a referral or in the case of the patient's free choice, preventive examination (also for children), chauffeur's commission are paid services.",
-    section_prices_part03 : "Categories of population exempted from patient co-payments -",
-    section_prices_part04 : "Procedure for organization and payment of health care services (MK regulations No. 555) -",
+    section_prices_part03 : "Categories of population exempted from patient co-payments",
+    section_prices_part04 : "Procedure for organization and payment of health care services (MK regulations No. 555)",
 
     section_info_part01 : "In practice, patients are admitted according to the following procedure:",
     section_info_list01_part01 : "by appointment",
@@ -33,7 +33,7 @@ export const SECTIONS_EN = {
     section_info_list01_part05 : "children must come accompanied by their parents or other legal representatives",
     section_info_list01_part01_link : "(see section Contacts)",
     section_info_part02 : "(the legal representative of the child must prove his/her legal status in relation to a minor child, parents for this purpose should have an appropriate entry in the father's or mother's passport or the child's birth certificate with the names of the parents indicated, dependent persons, including grandparents, brothers, sisters, other relatives need to prepare notarized power of attorney to represent the legal rights and interests of the child)",
-    section_info_part03 : "Categories of population exempted from patient co-payments -",
+    section_info_part03 : "Categories of population exempted from patient co-payments",
     section_info_list02_part01 : "a supporting document must be presented",
     section_info_list02_part02 : "must arrive in a protective face mask (can be purchased at the pharmacy on the 1st floor)",
     section_info_list02_part03 : "outerwear must be handed over to the cloakroom on the 2nd floor",

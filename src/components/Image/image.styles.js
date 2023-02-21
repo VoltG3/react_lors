@@ -19,6 +19,10 @@ const ImgContainer = css`
       transition: box-shadow .3s linear;
       box-shadow: var(--box--hover);
     }
+
+    @media only screen and (max-width: 922px) {
+      filter: opacity(95%);
+    }
   }
 `
 
@@ -163,4 +167,8 @@ export const StyledContacts = styled.div`
   ${ ImgContainer }
   ${ ImgResponsiveVertical }
   ${ MediaContacts }
+`
+
+export const StyledBuilding = styled.div`
+  ${ ImgContainer }
 `

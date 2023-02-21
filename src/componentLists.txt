@@ -13,3 +13,4 @@
 <ImageController variant={"equipment"} />
 <ImageController variant={"office"} />
 <ImageController variant={"contacts"} />
+<ImageController variant={"building"} />

@@ -1,5 +1,5 @@
 import React from 'react'
-import { PageContainer as StyledPageContainer } from './Styles'
+import { StyledPageContainer as Page } from './styles/styled.page'
 
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
@@ -15,7 +15,7 @@ export default function Home() {
     const h = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
 
     return (
-        <StyledPageContainer>
+        <Page>
             <h1 className={ h }>{ t("sections:section_home_header") }</h1>
 
             <LineLang />
@@ -35,6 +35,6 @@ export default function Home() {
 
             <ImageController variant={"collective4"} />
             <Tiles />
-        </StyledPageContainer>
+        </Page>
     )
 }

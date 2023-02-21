@@ -11,7 +11,8 @@ export const Tcovid = {
     colors: {
         color: 'var(--color--none)',
         arrowColor: 'var(--color--default)',
-        background: 'var(--color--button--v2--background)',
+        borderColor: 'var(--color--button--v2--background)',
+        backgroundColor: 'var(--color--button--v2--background)',
         backgroundHover: 'var(--color--button--v2--hover)'
     },
 
@@ -29,7 +30,8 @@ export const Tmobile = {
     colors: {
         color: 'var(--color--none)',
         arrowColor: 'var(--color--none)',
-        background: 'var(--color--m)',
+        borderColor: 'var(--color--none)',
+        backgroundColor: 'var(--color--m)',
         backgroundHover: 'var(--color--button--v2--hover)'
     }
 }
@@ -46,7 +48,8 @@ export const TsliderDesktop = {
     colors: {
         color: 'var(--color--none)',
         arrowColor: 'var(--color--default)',
-        background: 'var(--color--button--v1--background)',
+        borderColor: 'var(--color--button--v1--background)',
+        backgroundColor: 'var(--color--button--v1--background)',
         backgroundHover: 'var(--color--button--v1--hover)'
     }
 }
@@ -63,7 +66,8 @@ export const TsliderMobile = {
     colors: {
         color: 'var(--color--none)',
         arrowColor: 'var(--color--default)',
-        background: 'var(--color--button--v2--background)',
+        borderColor:  'var(--color--none)',
+        backgroundColor: 'var(--color--button--v2--background)',
         backgroundHover: 'var(--color--button--v2--hover)'
     }
 }
@@ -80,7 +84,8 @@ export const Tappointment = {
     colors: {
         color: 'var(--color--none)',
         arrowColor: 'var(--color--default)',
-        background: 'var(--color--button--v1--background)',
+        borderColor: 'var(--color--button--v1--background)',
+        backgroundColor: 'var(--color--button--v1--background)',
         backgroundHover: 'var(--color--button--v1--hover)'
     }
 }
@@ -97,7 +102,8 @@ export const Tcontacts = {
     colors: {
         color: 'var(--color--none)',
         arrowColor: 'var(--color--default)',
-        background: 'var(--color--button--v1--background)',
+        borderColor: 'var(--color--button--v1--background)',
+        backgroundColor: 'var(--color--button--v1--background)',
         backgroundHover: 'var(--color--button--v1--hover)'
 
     }
@@ -115,11 +121,14 @@ export const Tinfo = {
     colors: {
         color: 'var(--color--none)',
         arrowColor: 'var(--color--default)',
-        background: 'var(--color--button--v2--background)',
+        borderColor: 'var(--color--button--v2--background)',
+        backgroundColor: 'var(--color--button--v2--background)',
         backgroundHover: 'var(--color--button--v2--hover)'
     }
 }
 
+
+// - issues
 export const Tdefault = {
     position: {
         justifyContent: 'flex-start'

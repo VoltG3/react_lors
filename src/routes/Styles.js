@@ -11,8 +11,6 @@ export const PageContainer = styled.div`
   box-sizing: border-box;
   padding-top: var(--size--padding70);
   padding-bottom: var(--size--padding80);
-  //padding-top: var(--page--paddingTop);
-  //padding-bottom: var(--page--paddingBottom);
 
   @media only screen and (max-width: 700px) {
     padding-top: var(--size--padding30);
@@ -27,6 +25,9 @@ export const PageContainer = styled.div`
   & h2 { display: var(--media--desktop); }
 
   & span {
+    width: 100%;
+    height: auto;
+    
     & p {
       padding-bottom: var(--size--padding20);
     }
@@ -36,7 +37,7 @@ export const PageContainer = styled.div`
     }
   }
   
-  .inlineSpan {
+  /*.inlineSpan {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -61,7 +62,41 @@ export const PageContainer = styled.div`
     }
   }
 
-  .inlineSpanWithBtn {
+  .textWithBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    //border: solid 1px red;
+    
+    & div {
+      display: flex;
+      justify-content: flex-start;
+      width: auto;
+      height: auto;
+      //border: solid 1px blue;
+    }
+    
+    & div:first-child {
+      padding-right: 10px;
+      border: solid 1px red;
+    }
+
+    @media only screen and (max-width: 700px) { 
+     flex-direction: column;
+
+      & div {
+        width: 100%;
+      }
+      
+      & div:first-child {
+        padding-right: 0;
+       
+      }
+    }
+  }*/
+  
+  // - issues
+  /*.inlineSpanWithBtn {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -83,7 +118,7 @@ export const PageContainer = styled.div`
         height:auto;
       }
     }
-  }
+  }*/
   
     .rmBottomMargin {
       display: inline-block;
@@ -107,4 +142,5 @@ export const PageContainer = styled.div`
       }
     }
 `
+
 

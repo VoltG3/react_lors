@@ -21,8 +21,8 @@ export const SECTIONS_LV = {
 
     section_prices_part01 : "Informācijai:",
     section_prices_part02 : "Apmeklējums bez nosūtījuma vai pacienta brīvas izvēles gadījumā, profilaktiskās apskates (arī bērniem), šoferu komisija ir maksas pakalpojumi.",
-    section_prices_part03 : "No pacientu līdzmaksājumiem atbrīvotās iedzīvotāju kategorijas -",
-    section_prices_part04 : "Veselības aprūpes pakalpojumu organizēšanas un samaksas kārtība (MK noteikumi Nr. 555) -",
+    section_prices_part03 : "No pacientu līdzmaksājumiem atbrīvotās iedzīvotāju kategorijas",
+    section_prices_part04 : "Veselības aprūpes pakalpojumu organizēšanas un samaksas kārtība (MK noteikumi Nr. 555)",
 
     section_info_part01 : "Praksē pacientu pieņemšana notiek atbilstoši šādai kārtībai:",
     section_info_list01_part01 : "ar iepriekšēju pierakstu",
@@ -32,7 +32,7 @@ export const SECTIONS_LV = {
     section_info_list01_part05 : "bērniem jāierodas vecāku vai citu tā likumisko pārstāvju pavadībā",
     section_info_list01_part01_link : "(sk. sadaļu Kontakti)",
     section_info_part02 : "(bērna likumiskajam pārstāvim jāpierāda tā juridiskais statuss attiecībā pret nepilngadīgu bērnu, vecākiem šim mērķim der atbilstošs ieraksts tēva vai mātes pasē vai bērna dzimšanas apliecība ar norādītiem vecāku vārdiem, vitām personām, t.sk. vecvecākiem, brāļiem, māsām, citiem tuviniekiem ir nepieciešams sagatavot notariāli apstiprinātu pilnvaru pārstāvēt bērna likumiskās tiesības un intereses)",
-    section_info_part03 : "No pacientu līdzmaksājumiem atbrīvotās iedzīvotāju kategorijas -",
+    section_info_part03 : "No pacientu līdzmaksājumiem atbrīvotās iedzīvotāju kategorijas",
     section_info_list02_part01 : "jāuzrāda apliecinošs dokuments",
     section_info_list02_part02 : "jāierodas sejas aizsargmaskā (iespējams iegādāties 1.stāva aptiekā)",
     section_info_list02_part03 : "virsdrēbes jānodod garderobē 2.stāvā",

@@ -51,7 +51,7 @@ const SliderContainer = styled.div`
 
     @media only screen and (max-width: 922px) {
       //min-height: 241px;
-      object-fit: contain;
+     // object-fit: contain;
       height: auto;
     }
   }
@@ -64,10 +64,14 @@ const SliderContainer = styled.div`
     overflow: hidden;
     position: relative;
     opacity: 0.4;
+    //border: solid 2px red;
     
     @media only screen and (max-width: 922px) {
-      min-height: 95px;
-      max-height: 243px;
+      opacity: 0.7;
+      //min-height: 95px;
+      //max-height: 243px; 
+      min-height: 150px;
+      max-height: 150px;
       height: auto!important;
     }
     

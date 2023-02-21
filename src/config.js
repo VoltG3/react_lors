@@ -54,7 +54,8 @@ const config = {
         name_04: 'Elīna Eliasa-Vīgante'
     },
     common : {
-        introHeader : 'SIA "Jautrītes Liepiņas ārsta prakse otorinolaringoloģijā"'
+        introHeader : 'SIA "Jautrītes Liepiņas ārsta prakse otorinolaringoloģijā"',
+        repeatSign : '-'
     },
     external_url : {
         URL_01: 'https://www.piearsta.lv/lv/',

@@ -11,7 +11,7 @@ function TransformFormat(target) {
 
     function TransformINT(t) {
         let result = ""
-            if(t > 12) { t -= 10; result = t + ":00 pm"}
+            if(t > 12) { t -= 12; result = t + ":00 pm"}
             else if(t === 12) { result = t + ":00 am"}
             else if(t < 12) { result = t + ":00 am"}
         return result

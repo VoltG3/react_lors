@@ -32,8 +32,8 @@ const Container = css`
     //padding: 15px 0 15px 0;
   
     border-radius: 5px;
-    border: 1px solid ${({ theme }) => theme.colors.background };
-    background: ${({ theme }) => theme.colors.background };
+    border: 1px solid ${({ theme }) => theme.colors.borderColor };
+    background: ${({ theme }) => theme.colors.backgroundColor };
     
     transition:
             background .5s linear,
@@ -82,14 +82,14 @@ const Before = css`
 
 const After = css`
   .button:after {
-    border: 1px solid ${({ theme }) => theme.colors.background};
+    border: 1px solid ${({ theme }) => theme.colors.borderColor};
     border-left: 0;
     border-bottom: 0;
     top: -1px;
     right: -1px;
     bottom: 0;
     width: 40px;
-    background: ${({ theme }) => theme.colors.background};
+    background: ${({ theme }) => theme.colors.backgroundColor};
     -webkit-transform-origin: bottom left;
     -moz-transform-origin: bottom left;
     transform-origin: bottom left;

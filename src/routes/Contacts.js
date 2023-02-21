@@ -1,6 +1,9 @@
 import React, { lazy, Suspense } from 'react'
-import { PageContainer as StyledPageContainer } from './Styles'
+import { StyledPageContainer as Page } from './styles/styled.page'
+import { StyledInlineParagraphContainer as InlineParagraph } from './styles/styled.inline.paragraph'
+import { StyledInlineParagraphWithImageContainer as InlineParagraphWithImage } from "./styles/styled.inline.paragraph.image";
 import { MediaDesktop, MediaMobile } from '../media'
+
 import config from '../config'
 
 import '../translations/i18n'
@@ -25,11 +28,12 @@ export default function Contacts() {
 
     return (
         <>
-            <StyledPageContainer style={{ paddingBottom: '0'}}>
+            <Page style={{ paddingBottom: '0'}}>
                 <h2 className={ h }>{ t("common:contacts") }</h2>
+
                 <LineLang />
 
-                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                <InlineParagraphWithImage>
                     <span>
                         <p style={{ color: 'var(--color--paragraph--highlight)'}} className={ paragraph }>{ t("sections:section_contacts_part01") }</p>
                         <p className={ paragraph }>{ t("sections:section_contacts_part02") }</p>
@@ -39,27 +43,21 @@ export default function Contacts() {
                         </a>
                     </span>
 
-                    <MediaDesktop>
-                        <ImageController variant={"collective3"} />
-                    </MediaDesktop>
-
-                </div>
+                    <div className={"inlineParagraphWithImage"}>
+                        <ImageController variant={"building"} />
+                    </div>
+                </InlineParagraphWithImage>
 
                 <TableSectionContacts />
-
                 <ImageController variant={"contacts"} />
 
-                <MediaMobile>
-                    <ImageController variant={"collective3"} />
-                </MediaMobile>
-
-                <div className={"inlineSpan"}>
+                <InlineParagraph>
                     <p className={"textcontent--h3"}>{ introHeader }</p>
                     <p className={"textcontent--h3"}>{ t("sections:section_contacts_part03") }</p>
                     <p className={"textcontent--h3"}>{ t("sections:section_contacts_part04") }</p>
-                </div>
+                </InlineParagraph>
 
-            </StyledPageContainer>
+            </Page>
 
             <Suspense fallback={<div>Loading...</div>}>
                 <GoogleMap />
