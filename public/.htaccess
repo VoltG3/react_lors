@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^test\.html$ - [L]
+
+<Files main.8506ab1d.js>
+  # Serve the corresponding source map file
+  Header set X-SourceMap "main.8506ab1d.js.map"
+</Files>
