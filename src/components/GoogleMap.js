@@ -10,6 +10,7 @@ export default function GoogleMap() {
             height: 'auto'
         }}>
             <iframe
+                title="map"
                 style={{ border: 0, margin: 0, padding: 0}}
                 src={ googleMapsUrl }
                 width="100%"
