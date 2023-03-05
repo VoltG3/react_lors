@@ -15,6 +15,7 @@ export const SECTIONS_LV = {
     section_about_part01 : "Ārsta prakse otorinolaringoloģijā izveidota 2000.gadā, tās vadītaja un ārstējošā ārste ir Jautrīte Liepiņa. Ārste savā vairāk nekā 35 gadu ilgajā darba pieredzē specializējusies gan pieaugušo, gan bērnu ausu, kakla un degunu slimību diagnostikā un ārstēšanā, praksē pielieto modernāko medicīnisko aparatūru, kas ļauj uzstādīt maksimāli precīzu diagnostiku un piemērot individuālu ārstēšanu.",
     section_about_part02 : "2015.gadā prakses kolektīvam pievienojas dr. Elīna Eliasa-Vīgante un 2017.gadā - dr. Elīna Mežzīle, prakses ikdienas darbu palīdz īstenot māsiņa Dace Sidorova.",
     section_about_part03 : "Visi prakses ārsti ir sertificēti, ir Latvijas Otorinolaringologu asociācijas biedri, regulāri pilnveido zināšanas vietējās un starptautiskās konferencēs un kongresos.",
+    section_about_part31 : "Martā komandai pievienojas sertificēta otorinolaringoloģe -  Beatrise Rozenfelde.",
     section_about_part04 : "Prakse ir līgumattiecībās ar Nacionālo veselības dienestu.",
 
     section_services_part00 : "",

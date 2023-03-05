@@ -78,10 +78,12 @@ i18n
         }
     });
 
-        export default i18n;
+    i18n.changeLanguage('lv')
 
-        /*initReactI18next.init(i18n);
-        i18n.changeLanguage('en')*/
+     /*   export default i18n;
+
+                    initReactI18next.init(i18n);
+
 
 async function initI18n() {
     await i18n.init({
@@ -114,3 +116,4 @@ function handleInit() {
 }
 
 handleInit()
+*/

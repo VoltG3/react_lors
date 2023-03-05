@@ -23,6 +23,7 @@ export default function About() {
                 <p className={ paragraph }>{ t("sections:section_about_part01") }</p>
                 <p className={ paragraph }>{ t("sections:section_about_part02") }</p>
                 <p className={ paragraph }>{ t("sections:section_about_part03") }</p>
+                <p className={ paragraph }>{ t("sections:section_about_part31") }</p>
                 <p className={ paragraph }>{ t("sections:section_about_part04") }</p>
             </span>
 

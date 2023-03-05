@@ -16,6 +16,7 @@ export const SECTIONS_EN = {
     section_about_part01 : "The doctor's practice in otorhinolaryngology was established in 2000, its head and treating doctor is Jautrīte Liepiņa. In her more than 35 years of work experience, the doctor specializes in the diagnosis and treatment of ear, throat and nose diseases of both adults and children.",
     section_about_part02 : "In 2015, dr. Elīna Elias-Vīgante and in 2017 - dr. Elīna Mežzīle, sister Dace Sidorova helps implement the practice's daily work.",
     section_about_part03 : "All practicing doctors are certified, are members of the Latvian Association of Otorhinolaryngologists, regularly improve their knowledge at local and international conferences and congresses.",
+    section_about_part31 : "In March, a certified otorhinolaryngologist - Beatrice Rozenfelde - joins the team.",
     section_about_part04 : "The practice is in contractual relations with the National Health Service.",
 
     section_services_part00 : "",

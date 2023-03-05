@@ -14,7 +14,8 @@ const config = {
         URL_img07: process.env.PUBLIC_URL + '/assets/images/07.jpg',
         URL_img08: process.env.PUBLIC_URL + '/assets/images/08.jpg',
         URL_img09: process.env.PUBLIC_URL + '/assets/images/09.jpg',
-        URL_img10: process.env.PUBLIC_URL + '/assets/images/10.jpg'
+        URL_img10: process.env.PUBLIC_URL + '/assets/images/10.jpg',
+        URL_img11: process.env.PUBLIC_URL + '/assets/images/11.jpg'
     },
     logo_transparent: {
         logoTransparent00: process.env.PUBLIC_URL + '/assets/logo_transparent/Lors_transparent.svg',
