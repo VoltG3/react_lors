@@ -66,6 +66,10 @@ import Prices from './routes/Prices'
 import Info from './routes/Info'
 import Contacts from './routes/Contacts'
 
+// sdfsfsdf
+// asdasads
+// asdasdsd
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
     <BrowserRouter>

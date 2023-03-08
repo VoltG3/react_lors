@@ -32,6 +32,7 @@ export default function Contacts() {
                 <h2 className={ h }>{ t("common:contacts") }</h2>
 
                 <LineLang />
+                <LineLang />
 
                 <InlineParagraphWithImage>
                     <span>

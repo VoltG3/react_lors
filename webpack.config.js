@@ -5,10 +5,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const AssetRevisionPlugin = require('asset-revision-webpack-plugin')
 
 module.exports = {
+    mode: 'development',
     entry: './src/index.js',
     output: {
         filename: '[name].[contenthash].js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'build'),
     },
     module: {
         rules: [
@@ -39,7 +40,7 @@ module.exports = {
             favicon: 'public/favicon.ico',
         }),
         new AssetRevisionPlugin({
-            path: path.join(__dirname, 'dist'),
+            path: path.join(__dirname, 'build'),
             format: 'json',
             property: 'manifest',
             filename: 'manifest.json',
