@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 import Covid from './covid'
 
 function Info() {
-    const [t] = useTranslation(["sections"])
+    const [t] = useTranslation(["navigation"])
     const { icons_navigation } = config
     const URL_01 = config.external_url.URL_01
     const p = 'textcontent--header--desktop--infoline'
@@ -19,18 +19,18 @@ function Info() {
 
             <div className={"infoSquare"}>
                 <img src={ icons_navigation.icon_T } alt={"icon"} style={{ width: '20px', height: '18px'}}/>
-                <p className={ p }>{ t("sections:section_header_part02") }</p>
+                <p className={ p }>{ t("navigation_secondary.telephone") }</p>
             </div>
 
             <div className={"infoSquare"}>
                 <img src={ icons_navigation.icon_M } alt={"icon"} style={{ width: '20px', height: '18px'}}/>
-                <p className={ p }>{ t("sections:section_header_part03") }</p>
+                <p className={ p }>{ t("navigation_secondary.email") }</p>
             </div>
 
             <a className={""} href={ `${URL_01}`} target={"_blank"} rel={"noopener noreferrer"}>
                 <div className={"infoSquare"}>
                     <img src={ icons_navigation.icon_A } alt={"icon"} style={{ width: '20px', height: '18px'}}/>
-                    <p className={ p }>{ t("sections:section_header_part04") }</p>
+                    <p className={ p }>{ t("navigation_secondary.e_appointment") }</p>
                 </div>
             </a>
 

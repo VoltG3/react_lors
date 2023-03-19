@@ -31,8 +31,6 @@ export default function App() {
                 <Footer />
             <Cookie />
             {/* <MovableBlock />*/}
-            {/* <MovableBlock />*/}
-           {/* <MovableBlock />*/}
         </div>
   )
 }

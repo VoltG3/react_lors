@@ -8,14 +8,15 @@ import config from '../config'
 
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
-import { LISTPrices } from '../components/TextContent/Lists/LIST.prices'
 
 import { ImageController } from '../components/Image/image.controller'
 import { ButtonController } from '../components/Button/Button.controller'
 import LineLang from '../components/line.lang'
+import {ListPricesWithReference} from "../components/TextContent/ListPricesWithReference";
+import {ListPricesWithoutReference} from "../components/TextContent/ListPricesWithoutReference";
 
 export default function Prices() {
-    const [t] = useTranslation(["common", "sections"])
+    const [t] = useTranslation(["chapter_pages", "chapters"])
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
     const h = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
     const semiHeader = i18n.language === 'ru' ? 'textcontent--h2--rus' : 'textcontent--h2'
@@ -25,17 +26,17 @@ export default function Prices() {
 
     return (
         <Page>
-            <h2 className={ h }>{ t("common:prices") }</h2>
+            <h2 className={ h }>{ t("chapters:prices") }</h2>
 
             <LineLang />
 
             <span style={{ paddingBottom: '30px' }}>
-                <p className={ semiHeader }>{ t("sections:section_prices_part01") }</p>
-                <p className={ paragraph }>{ t("sections:section_prices_part02") }</p>
+                <p className={ semiHeader }>{ t("chapter_prices.part_01") }</p>
+                <p className={ paragraph }>{ t("chapter_prices.part_02") }</p>
 
                 <InlineParagraphWithButton>
                     <div className={"inlineParagraphWithButton"}>
-                        <p className={ paragraph }>{ t("sections:section_prices_part03") }</p>
+                        <p className={ paragraph }>{ t("chapter_prices.part_03") }</p>
                         <p className={ paragraph }>{ repeatSign }</p>
                     </div>
 
@@ -44,7 +45,7 @@ export default function Prices() {
 
                 <InlineParagraphWithButton>
                     <div className={"inlineParagraphWithButton"}>
-                        <p className={ paragraph }>{ t("sections:section_prices_part04") }</p>
+                        <p className={ paragraph }>{ t("chapter_prices.part_04") }</p>
                         <p className={ paragraph }>{ repeatSign }</p>
                     </div>
 
@@ -52,9 +53,8 @@ export default function Prices() {
                 </InlineParagraphWithButton>
             </span>
 
-            <LISTPrices variant={'LIST_PRICES:list_prices01'} isReference={ true } />
-            <div style={{ paddingBottom: 'var(--size--padding30)'}} />
-            <LISTPrices variant={'LIST_PRICES:list_prices02'} isReference={ false } />
+            <ListPricesWithReference />
+            <ListPricesWithoutReference />
             <ImageController variant={"office"} />
         </Page>
     )

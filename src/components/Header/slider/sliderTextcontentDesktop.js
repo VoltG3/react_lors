@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next'
 import { ButtonController } from '../../Button/Button.controller'
 
 function SliderTextcontentDesktop(props) {
-    const [t] = useTranslation(["sections", "common"])
+    const [t] = useTranslation(["chapter_header", "common"])
     const introHeader = config.common.introHeader
 
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
@@ -28,7 +28,7 @@ function SliderTextcontentDesktop(props) {
       }}>
           <Temporary>
               <p className={ h1 }>{ introHeader }</p>
-              <p className={ paragraph }>{ t("sections:section_header_part06") }</p>
+              <p className={ paragraph }>{ t("part_01") }</p>
           </Temporary>
 
           <Link to={"contacts"}>

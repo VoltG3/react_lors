@@ -56,7 +56,8 @@ const config = {
     },
     common : {
         introHeader : 'SIA "Jautrītes Liepiņas ārsta prakse otorinolaringoloģijā"',
-        repeatSign : '-'
+        repeatSign : '-',
+        currencySign : '€'
     },
     external_url : {
         URL_01: 'https://www.piearsta.lv/lv/',

@@ -9,7 +9,7 @@ import { useState } from 'react'
 import { ButtonController } from '../../Button/Button.controller'
 
 function Covid() {
-    const [t] = useTranslation(["sections", "covid"])
+    const [t] = useTranslation(["navigation", "covid"])
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
 
     const [covidBarVisible, setCovidbarVisible] = useState(false);
@@ -29,7 +29,7 @@ function Covid() {
                 </div>
             </div>
 
-            <p className={"textcontent--header--desktop--infoline hoverLink"}>{ t("sections:section_header_part01") }</p>
+            <p className={"textcontent--header--desktop--infoline hoverLink"}>{ t("navigation_secondary.covid") }</p>
         </StyledCovid>
     )
 }

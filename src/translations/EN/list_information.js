@@ -1,5 +1,6 @@
 export const LIST_INFORMATION_EN = {
-    list_information: [
+    list_information : "Categories of the population exempted from the patient contribution",
+    list_items : [
         {
             item : "According to the regulations of the LR Cabinet of Ministers of August 28, 2018\nNo. 555 \"Organization and payment procedure for health care services\"\nThe following categories of Latvian residents are exempted from the patient contribution:"
         },

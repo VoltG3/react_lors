@@ -33,7 +33,7 @@ export const ImageController = (props) => {
             { (() => {
                 switch (props.variant) {
                     case 'collective4': return collective4
-                    case  'collective3': return collective3
+                    case 'collective3': return collective3
                     case 'eachPerson': return eachPerson
                     case 'equipment': return equipment
                     case 'office': return office

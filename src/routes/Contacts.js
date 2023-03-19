@@ -19,7 +19,7 @@ import { ButtonController } from '../components/Button/Button.controller'
 const GoogleMap = lazy(() => import('../components/GoogleMap'));
 
 export default function Contacts() {
-    const [t] = useTranslation(["common", "sections"])
+    const [t] = useTranslation(["chapter_pages", "chapters"])
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
     const h = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
 
@@ -29,15 +29,14 @@ export default function Contacts() {
     return (
         <>
             <Page style={{ paddingBottom: '0'}}>
-                <h2 className={ h }>{ t("common:contacts") }</h2>
+                <h2 className={ h }>{ t("chapters:contacts") }</h2>
 
-                <LineLang />
                 <LineLang />
 
                 <InlineParagraphWithImage>
                     <span>
-                        <p style={{ color: 'var(--color--paragraph--highlight)'}} className={ paragraph }>{ t("sections:section_contacts_part01") }</p>
-                        <p className={ paragraph }>{ t("sections:section_contacts_part02") }</p>
+                        <p style={{ color: 'var(--color--paragraph--highlight)'}} className={ paragraph }>{ t("chapter_contacts.part_01") }</p>
+                        <p className={ paragraph }>{ t("chapter_contacts.part_02") }</p>
 
                         <a href={ `${URL_01}` } target={"_blank"} rel={"noopener noreferrer"}>
                            <ButtonController variant={"contacts"} />
@@ -54,8 +53,8 @@ export default function Contacts() {
 
                 <InlineParagraph>
                     <p className={"textcontent--h3"}>{ introHeader }</p>
-                    <p className={"textcontent--h3"}>{ t("sections:section_contacts_part03") }</p>
-                    <p className={"textcontent--h3"}>{ t("sections:section_contacts_part04") }</p>
+                    <p className={"textcontent--h3"}>{ t("chapter_contacts.part_03") }</p>
+                    <p className={"textcontent--h3"}>{ t("chapter_contacts.part_04") }</p>
                 </InlineParagraph>
 
             </Page>

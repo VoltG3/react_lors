@@ -1,29 +1,29 @@
 
-@font-face { font-family: "GTWalsheimBold";
-    src: url("./fonts/GTWalsheimBold.eot"); /* IE9*/
-    src: url("./fonts/GTWalsheimBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("./fonts/GTWalsheimBold.woff2") format("woff2"), /* chrome、firefox */
-    url("./fonts/GTWalsheimBold.woff") format("woff"), /* chrome、firefox */
-    url("./fonts/GTWalsheimBold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url("./fonts/GTWalsheimBold.svg#GTWalsheimBold") format("svg"); /* iOS 4.1- */
+/*@font-face { font-family: "GTWalsheimBold";
+    src: url("public/assets/fonts/GTWalsheimBold.eot"); !* IE9*!
+    src: url("public/assets/fonts/GTWalsheimBold.eot?#iefix") format("embedded-opentype"), !* IE6-IE8 *!
+    url("public/assets/fonts/GTWalsheimBold.woff2") format("woff2"), !* chrome、firefox *!
+    url("public/assets/fonts/GTWalsheimBold.woff") format("woff"), !* chrome、firefox *!
+    url("public/assets/fonts/GTWalsheimBold.ttf") format("truetype"), !* chrome、firefox、opera、Safari, Android, iOS 4.2+*!
+    url("public/assets/fonts/GTWalsheimBold.svg#GTWalsheimBold") format("svg"); !* iOS 4.1- *!
 }
 
 @font-face { font-family: "GTWalsheimMedium";
-    src: url("./fonts/GTWalsheimMedium.eot"); /* IE9*/
-    src: url("./fonts/GTWalsheimMedium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("./fonts/GTWalsheimMedium.woff2") format("woff2"), /* chrome、firefox */
-    url("./fonts/GTWalsheimMedium.woff") format("woff"), /* chrome、firefox */
-    url("./fonts/GTWalsheimMedium.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url("./fonts/GTWalsheimMedium.svg#GTWalsheimMedium") format("svg"); /* iOS 4.1- */
-}
+    src: url("public/assets/fonts/GTWalsheimMedium.eot"); !* IE9*!
+    src: url("public/assets/fonts/GTWalsheimMedium.eot?#iefix") format("embedded-opentype"), !* IE6-IE8 *!
+    url("public/assets/fonts/GTWalsheimMedium.woff2") format("woff2"), !* chrome、firefox *!
+    url("public/assets/fonts/GTWalsheimMedium.woff") format("woff"), !* chrome、firefox *!
+    url("public/assets/fonts/GTWalsheimMedium.ttf") format("truetype"), !* chrome、firefox、opera、Safari, Android, iOS 4.2+*!
+    url("public/assets/fonts/GTWalsheimMedium.svg#GTWalsheimMedium") format("svg"); !* iOS 4.1- *!
+}*/
 
 @font-face { font-family: "GTWalsheimLight";
-    src: url("./fonts/GTWalsheimLight.eot"); /* IE9*/
-    src: url("./fonts/GTWalsheimLight.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("./fonts/GTWalsheimLight.woff2") format("woff2"), /* chrome、firefox */
-    url("./fonts/GTWalsheimLight.woff") format("woff"), /* chrome、firefox */
-    url("./fonts/GTWalsheimLight.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url("./fonts/GTWalsheimLight.svg#GT Walsheim Light") format("svg"); /* iOS 4.1- */
+    src: url("/public/assets/fonts/GTWalsheimLight.eot"); /* IE9*/
+    src: url("/public/assets/fonts/GTWalsheimLight.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/public/assets/fonts/GTWalsheimLight.woff2") format("woff2"), /* chrome、firefox */
+    url("/public/assets/fonts/GTWalsheimLight.woff") format("woff"), /* chrome、firefox */
+    url("/public/assets/fonts/GTWalsheimLight.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("/public/assets/fonts/GTWalsheimLight.svg#GT Walsheim Light") format("svg"); /* iOS 4.1- */
 }
 
 html {
@@ -58,3 +58,7 @@ ul {
     padding-left: 30px;
 } li { padding-bottom: 10px; }
   li:last-child { padding-bottom: 0; }
+
+  .cerr {
+      display: none;
+  }

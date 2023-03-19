@@ -3,32 +3,32 @@ import { StyledPageContainer as Page } from './styles/styled.page'
 
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
-import { LISTServices } from '../components/TextContent/Lists/LIST.services'
+import { ListServices } from '../components/TextContent/ListServices'
 import { ImageController } from '../components/Image/image.controller'
 
 import LineLang from '../components/line.lang'
 
 export default function About() {
-    const [t] = useTranslation(["common", "sections"])
+    const [t] = useTranslation(["chapter_pages", "chapters"])
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
     const h = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
 
     return (
         <Page>
-            <h2 className={ h }>{ t("common:about") }</h2>
+            <h2 className={ h }>{ t("chapters:about") }</h2>
 
             <LineLang />
 
             <span>
-                <p className={ paragraph }>{ t("sections:section_about_part01") }</p>
-                <p className={ paragraph }>{ t("sections:section_about_part02") }</p>
-                <p className={ paragraph }>{ t("sections:section_about_part03") }</p>
-                <p className={ paragraph }>{ t("sections:section_about_part31") }</p>
-                <p className={ paragraph }>{ t("sections:section_about_part04") }</p>
+                <p className={ paragraph }>{ t("chapter_about.part_01") }</p>
+                <p className={ paragraph }>{ t("chapter_about.part_01") }</p>
+                <p className={ paragraph }>{ t("chapter_about.part_03") }</p>
+                <p className={ paragraph }>{ t("chapter_about.part_04") }</p>
+                <p className={ paragraph }>{ t("chapter_about.part_05") }</p>
             </span>
 
             <ImageController variant={"eachPerson"} />
-            <LISTServices showHeader={"true"} />
+            <ListServices  />
             <ImageController variant={"equipment"} />
         </Page>
     )

@@ -16,9 +16,7 @@ export const COMMON_EN = {
     btn_variant03: "(see section Contacts)",
     btn_variant04: "Contacts and working hours",
 
-    list_header_01 : "All necessary examinations and surgical manipulations are performed in the practice",
-    list_header_02 : "With a referral from a family doctor:",
-    list_header_03 : "Without a referral from a family doctor:",
+
 
     contracts01 : "Contractual obligations",
     contracts02 : "We accept Balta, BTA, Ergo, Gjensidige, Seesam health insurance policies, including contractual obligations with the state.",
