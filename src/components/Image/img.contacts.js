@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledContacts as StyledContainer} from './image.styles'
+import { StyledContacts as Container} from './image.styles'
 
 const ImgContacts = (props) => {
     const { variant } = props
@@ -7,10 +7,10 @@ const ImgContacts = (props) => {
     const URL_img02 = variant[1]
 
     return (
-        <StyledContainer>
+        <Container>
             <img src={ URL_img02 } width={"auto"} height={"auto"} alt={"img"} loading="lazy" />
             <img src={ URL_img09 } width={"auto"} height={"auto"} alt={"img"} loading="lazy" />
-        </StyledContainer>
+        </Container>
     )
 }
 

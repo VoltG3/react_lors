@@ -1,14 +1,16 @@
 import { useTranslation } from 'react-i18next'
+import config from '../../config'
 
 export default function FooterTextcontent01() {
-    const [t] = useTranslation(["sections"])
-    const introFooter = 'SIA "Jautrītes Liepiņas ārsta prakse \notorinolaringoloģijā"'
+    const [t] = useTranslation(["chapter_footer"])
+    const introFooter = config.common.introFooter
+    const object = "footer_tile_01."
 
     return (
         <div>
-            <p className={"textcontent--footer--header"}>{ introFooter }</p>
-            <p className={"textcontent--footer--header"}>{ t("sections:section_footer_part02") }</p>
-            <p className={"textcontent--footer--item"}>{ t("sections:section_footer_part03") }</p>
+            <p className={"textcontent--footer--head"}>{ introFooter }</p>
+            <p className={"textcontent--footer--head"}>{ t(object + "part_01") }</p>
+            <p className={"textcontent--footer--item"}>{ t(object + "part_02") }</p>
         </div>
     )
 }

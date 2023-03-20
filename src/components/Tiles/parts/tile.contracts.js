@@ -3,10 +3,10 @@ import { TileContracts as StyledTileContracts } from './styles'
 import { useTranslation } from 'react-i18next'
 
 import LineTiny from '../../line.short'
-import config from "../../../config";
+import config from '../../../config'
 
 function TileContracts() {
-    const [t] = useTranslation(["common"])
+    const [t] = useTranslation(["tiles"])
     const { logo_colored } = config
     const header = "textcontent--tabledata--header"
     const paragraph = "textcontent--tabledata--item"
@@ -14,11 +14,11 @@ function TileContracts() {
     return (
         <StyledTileContracts>
             <div className={"innerTile"}>
-                <p className={ header }>{ t("common:contracts01") }</p>
+                <p className={ header }>{ t("contracts.head") }</p>
 
                 <LineTiny color={"colorSecond"}/>
 
-                <p className={ paragraph }>{ t("common:contracts02")}</p>
+                <p className={ paragraph }>{ t("contracts.text") }</p>
 
                 <div className={"logoSquare"}>
                     <div className={"logoSquareRow"}>

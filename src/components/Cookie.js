@@ -2,14 +2,14 @@ import CookieConsent from 'react-cookie-consent'
 import { useTranslation } from 'react-i18next'
 
 export default function Cookie() {
-    const [t] = useTranslation(['cookies'])
+    const [t] = useTranslation(['modules'])
 
     return (
         <CookieConsent
-            buttonText={ t('cookies:btn')}
+            buttonText={ t('cookie.btn')}
             style={{ width: '100%'}}
         >
-            <p>{ t('cookies:text')}</p>
+            <p>{ t('cookie.text')}</p>
         </CookieConsent>
     )
 }

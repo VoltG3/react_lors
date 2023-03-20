@@ -9,7 +9,9 @@ import { useState } from 'react'
 import { ButtonController } from '../../Button/Button.controller'
 
 function Covid() {
-    const [t] = useTranslation(["navigation", "covid"])
+    const [t] = useTranslation(["navigation"])
+    const [m] = useTranslation(["modules"])
+
     const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
 
     const [covidBarVisible, setCovidbarVisible] = useState(false);
@@ -24,7 +26,7 @@ function Covid() {
 
             <div className={`covidbar ${covidBarVisible ? 'visible' : 'hidden'}`}>
                 <div className={"innerCovid"}>
-                    <div><p className={ paragraph }>{ t("covid:covid")}</p></div>
+                    <div><p className={ paragraph }>{ m("covid.text")}</p></div>
                     <div><a href={ `${URL_04}` } target="_blank" rel="noopener noreferrer"> <ButtonController variant={"covid"} /></a></div>
                 </div>
             </div>

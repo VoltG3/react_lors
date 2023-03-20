@@ -12,8 +12,8 @@ import { useTranslation } from 'react-i18next'
 import { ImageController } from '../components/Image/image.controller'
 import { ButtonController } from '../components/Button/Button.controller'
 import LineLang from '../components/line.lang'
-import {ListPricesWithReference} from "../components/TextContent/ListPricesWithReference";
-import {ListPricesWithoutReference} from "../components/TextContent/ListPricesWithoutReference";
+import {ListPricesWithReference} from "../components/Lists/ListPricesWithReference";
+import {ListPricesWithoutReference} from "../components/Lists/ListPricesWithoutReference";
 
 export default function Prices() {
     const [t] = useTranslation(["chapter_pages", "chapters"])

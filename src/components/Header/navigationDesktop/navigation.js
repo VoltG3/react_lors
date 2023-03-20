@@ -3,33 +3,34 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
 function Navigation() {
-    const [t] = useTranslation(["common"])
+    const [t] = useTranslation(["navigation"])
     const p = 'textcontent--header--desktop--navigation'
+    const object = "navigation_primary."
 
     return (
         <StyledNavigationHeader>
             <Link className={ p } to={"home"}>
-                <p>{ t("common:home") }</p>
+                <p>{ t(object + "home") }</p>
             </Link>
 
             <Link className={ p } to={"about"}>
-                <p>{ t("common:about") }</p>
+                <p>{ t(object + "about") }</p>
             </Link>
 
             <Link className={ p } to={"services"}>
-                <p>{ t("common:services") }</p>
+                <p>{ t(object + "services") }</p>
             </Link>
 
             <Link className={ p } to={"prices"}>
-                <p>{ t("common:prices") }</p>
+                <p>{ t(object + "prices") }</p>
             </Link>
 
             <Link className={ p } to={"info"}>
-                <p>{ t("common:info") }</p>
+                <p>{ t(object + "info") }</p>
             </Link>
 
             <Link className={ p } to={"contacts"}>
-                <p className={"lastParagraph"}>{ t("common:contacts") }</p>
+                <p className={"lastParagraph"}>{ t(object + "contacts") }</p>
             </Link>
         </StyledNavigationHeader>
     )

@@ -5,9 +5,10 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 export default function FooterNav() {
-    const [t] = useTranslation(["common"])
+    const [t] = useTranslation(["navigation"])
     const URL_01 = config.external_url.URL_01
     const p = 'textcontent--footer--navigation'
+    const object = "navigation_primary."
 
     return (
         <div style={{
@@ -15,31 +16,31 @@ export default function FooterNav() {
             flexDirection: 'column'
         }}>
             <Link className={ p } to={"home"}>
-                <p>{ t("common:home") }</p>
+                <p>{ t(object + "home") }</p>
             </Link>
 
             <Link className={ p } to={"about"}>
-                <p>{ t("common:about") }</p>
+                <p>{ t(object + "about") }</p>
             </Link>
 
             <Link className={ p } to={"services"}>
-                <p>{ t("common:services") }</p>
+                <p>{ t(object + "services") }</p>
             </Link>
 
             <Link className={ p } to={"prices"}>
-                <p>{ t("common:prices") }</p>
+                <p>{ t(object + "prices") }</p>
             </Link>
 
             <Link className={ p } to={"contacts"}>
-                <p>{ t("common:info") }</p>
+                <p>{ t(object + "contacts") }</p>
             </Link>
 
             <Link className={ p } to={"info"}>
-                <p>{ t("common:contacts") }</p>
+                <p>{ t(object + "info") }</p>
             </Link>
 
             <a className={ p } href={ `${URL_01}` } target={"_blank"} rel={"noopener noreferrer"}>
-                <p>{ t("common:eapointment") }</p>
+                <p>{ t(object + "e_appointment") }</p>
             </a>
         </div>
     )

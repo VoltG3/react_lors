@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import config from '../../config'
 
-import { StyledCollective4 as StyledImgContainer } from './image.styles'
+import { StyledCollective4 as Container } from './image.styles'
 
 
 const ImgCollective4 = (props) => {
@@ -14,7 +14,7 @@ const ImgCollective4 = (props) => {
     const { name_01, name_02, name_03, name_04 } = config.names
 
     return (
-        <StyledImgContainer style={{
+        <Container style={{
             gap: 'var(--size--padding30)',
             paddingTop: 'var(--size--padding60)',
             paddingBottom: 'var(--size--padding30)'
@@ -71,7 +71,7 @@ const ImgCollective4 = (props) => {
                     </div>
                 </div>
             </div>
-        </StyledImgContainer>
+        </Container>
     )
 }
 

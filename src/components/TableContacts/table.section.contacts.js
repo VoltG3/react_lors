@@ -8,10 +8,10 @@ import { DataColumnDays } from './Columns/DataColumnDays'
 import DataColumnPrivateNames from "./Columns/DataColumnPrivateNames";
 
 const TableSectionContacts = () => {
-    const [t] = useTranslation(["times"])
+    const [t] = useTranslation(["tiles"])
 
-    const HeaderPublic = <StyledOpeningHoursHeader><p className={"textcontent--list--header"}>{ t("times:times01")}</p></StyledOpeningHoursHeader>
-    const HeaderPrivat = <StyledOpeningHoursHeader><p className={"textcontent--list--header"}>{ t("times:times02")}</p></StyledOpeningHoursHeader>
+    const HeaderPublic = <StyledOpeningHoursHeader><p className={"textcontent--list--header"}>{ t("admissionTimes")}</p></StyledOpeningHoursHeader>
+    const HeaderPrivat = <StyledOpeningHoursHeader><p className={"textcontent--list--header"}>{ t("payingTimes")}</p></StyledOpeningHoursHeader>
 
     return (
         <StyledOpeningHoursContainer>

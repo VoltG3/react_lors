@@ -1,12 +1,12 @@
 import React from 'react'
-import { StyledCollective3 as StyledImgContainer } from './image.styles'
+import { StyledCollective3 as Container } from './image.styles'
 
 const ImgCollective3 = (props) => {
 
     return (
-        <StyledImgContainer>
+        <Container>
             <img src={ props.variant } width={"100%"} height={"auto"} alt={"img"} loading="lazy" />
-        </StyledImgContainer>
+        </Container>
     )
 }
 

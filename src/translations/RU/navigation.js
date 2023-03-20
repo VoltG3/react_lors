@@ -2,10 +2,10 @@ import { CHAPTERS_RU } from './chapters'
 
 function createNavigation() {
     const buttons = {
-        btn_variant01 : "Е - запись",
-        btn_variant02 : "глянь сюда",
-        btn_variant03 : "(см. раздел Контакты)",
-        btn_variant04 : "Контакты и время работ",
+        btn__01 : "Е - запись",
+        btn__02 : "глянь сюда",
+        btn__03 : "(см. раздел Контакты)",
+        btn__04 : "Контакты и время работ",
     }
 
     return {
@@ -16,12 +16,19 @@ function createNavigation() {
             prices : CHAPTERS_RU.prices,
             info : CHAPTERS_RU.info,
             contacts : CHAPTERS_RU.contacts,
+            e_appointment : buttons.btn__01,
         },
         navigation_secondary: {
             covid : "Ковидная безопасность",
             telephone : "Телефон: на рецепции: +371 67186950, на практике: +371 67223546",
             email : "Электронная почта: info@lors.lv",
-            e_appointment : buttons.btn_variant_01,
+            e_appointment : buttons.btn__01,
+        },
+        navigation_buttons : {
+            btn_variant_01 : buttons.btn__01,
+            btn_variant_02 : buttons.btn__02,
+            btn_variant_03 : buttons.btn__03,
+            btn_variant_04 : buttons.btn__04,
         },
         buttons,
     }

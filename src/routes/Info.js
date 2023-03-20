@@ -11,7 +11,7 @@ import { ImageController } from '../components/Image/image.controller'
 
 import LineLang from '../components/line.lang'
 import { ButtonController } from '../components/Button/Button.controller'
-import { ListInformation } from '../components/TextContent/ListInformation'
+import { ListInformation } from '../components/Lists/ListInformation'
 
 export default function Info() {
     const [t] = useTranslation(["chapter_pages", "chapters"])
