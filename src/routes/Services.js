@@ -10,7 +10,7 @@ import LineLang from '../components/line.lang'
 
 export default function Services() {
     const [t] = useTranslation(["chapters"])
-    const h = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
+    const h = i18n.language === 'ru' ? 'textContent--h1--rus' : 'textContent--h1'
 
     return (
         <Page>

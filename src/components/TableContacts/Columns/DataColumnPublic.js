@@ -12,7 +12,7 @@ const DataColumnPublic = () => {
     const arrayPublicHours = i18n.language === 'en' ? arrayPublicHoursUS : arrayPublicHoursEU
     // console.table(arrayPublicHoursEU)
 
-    const paragraph = "textcontent--tabledata--item--small"
+    const paragraph = "textContent--tabledata--item--small"
 
     const isPublicArrayEmpty = (target_1, target_2) => {
 

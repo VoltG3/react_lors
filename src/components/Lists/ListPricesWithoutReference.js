@@ -11,22 +11,22 @@ export const ListPricesWithoutReference = () => {
     return (
         <Container>
             <Header>
-                <p className={"textcontent--list--header"}>{ t("list_prices_without_reference.list_header") }</p>
+                <p className={"textContent--list--header"}>{ t("list_prices_without_reference.list_header") }</p>
             </Header>
 
             { t("list_prices_without_reference.list_items", { returnObjects: true }).map((listItem, key) => (
                 <div key={ key }>
                     <span className={"productItemDescribe"}>
-                        <p className={"textcontent--list--item"}>{ t(listItem.item) }</p>
+                        <p className={"textContent--list--item"}>{ t(listItem.item) }</p>
                     </span>
 
                     <span className={"productItemPrice"}>
                         <div className={"line"}>
-                            <p className={"textcontent--list--item"}>{ t(listItem.price) }</p>
+                            <p className={"textContent--list--item"}>{ t(listItem.price) }</p>
                         </div>
 
                         <div className={"line"}>
-                            <p className={"textcontent--list--item"}>{ currencySign }</p>
+                            <p className={"textContent--list--item"}>{ currencySign }</p>
                         </div>
                     </span>
 

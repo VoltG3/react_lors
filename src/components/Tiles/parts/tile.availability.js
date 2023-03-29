@@ -7,8 +7,8 @@ import LineTiny from '../../line.short'
 
 function TileAvailability() {
     const [t] = useTranslation(["tiles"])
-    const header = "textcontent--tabledata--header"
-    const paragraph = "textcontent--tabledata--item--small"
+    const header = "textContent--tabledata--header"
+    const paragraph = "textContent--tabledata--item--small"
     const object_head = "availability."
     const object_item = "availability.item."
 

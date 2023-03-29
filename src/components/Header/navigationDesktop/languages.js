@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import i18n from 'i18next'
 
 function Languages() {
-    const p = 'textcontent--header--navigation--languages'
+    const p = 'textContent--header--navigation--languages'
 
     return (
         <div>

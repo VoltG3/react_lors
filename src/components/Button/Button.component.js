@@ -8,9 +8,9 @@ import { useTranslation } from 'react-i18next'
 export const ButtonComponent = (props) => {
     const [t] = useTranslation(["navigation", "common", "sections"])
 
-    const btn_contacts = <p className={"textcontent--button"}>{ t("navigation_buttons.btn_variant_04") }</p>
-    const btn_appointment = <p className={"textcontent--button"}>{ t("navigation_buttons.btn_variant_01") }</p>
-    const btn_seher = <p className={"textcontent--button"}>{ t("navigation_buttons.btn_variant_02") }</p>
+    const btn_contacts = <p className={"textContent--button"}>{ t("navigation_buttons.btn_variant_04") }</p>
+    const btn_appointment = <p className={"textContent--button"}>{ t("navigation_buttons.btn_variant_01") }</p>
+    const btn_seher = <p className={"textContent--button"}>{ t("navigation_buttons.btn_variant_02") }</p>
 
     const theme = props.label === 'covid' ? Tcovid
                 : props.label === 'mobile' ? Tmobile

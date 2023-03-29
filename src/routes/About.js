@@ -10,8 +10,8 @@ import LineLang from '../components/line.lang'
 
 export default function About() {
     const [t] = useTranslation(["chapter_pages", "chapters"])
-    const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
-    const h = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
+    const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
+    const h = i18n.language === 'ru' ? 'textContent--h1--rus' : 'textContent--h1'
 
     return (
         <Page>

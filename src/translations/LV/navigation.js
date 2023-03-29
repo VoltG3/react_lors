@@ -6,6 +6,7 @@ function createNavigation() {
         btn__02 : "skatīt šeit",
         btn__03 : "(sk. sadaļu Kontakti)",
         btn__04 : "Kontakti un darba laiks",
+        btn__05 : "Es sapratu"
     }
 
     return {

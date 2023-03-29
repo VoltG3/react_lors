@@ -14,57 +14,57 @@ export const GlobalFontStyles = createGlobalStyle`
       --font--opacity: 0.7;
       
       // intro
-      --textcontent--h0--fontsize: min(max(2.5vw, 22px), 36px);
-      --textcontent--h0--lineheight: min(max(3.056vw, 24px), 44px);
-      --textcontent--h0--rus--fontsize: min(max(2.5vw, 22px), 36px);
-      --textcontent--h0--rus--lineheight: min(max(3.056vw, 24px), 44px);
+      --textContent--h0--fontsize: min(max(2.5vw, 22px), 36px);
+      --textContent--h0--lineheight: min(max(3.056vw, 24px), 44px);
+      --textContent--h0--rus--fontsize: min(max(2.5vw, 22px), 36px);
+      --textContent--h0--rus--lineheight: min(max(3.056vw, 24px), 44px);
       
-      --textcontent--h1--fontsize: min(max(2.5vw, 18px), 36px);
-      --textcontent--h1--lineheight: min(max(3.056vw, 24px), 44px);
-      --textcontent--h1--rus--fontsize: min(max(1.944vw, 18px), 28px);
-      --textcontent--h1--rus--lineheight: min(max(3.056vw, 24px), 44px);
+      --textContent--h1--fontsize: min(max(2.5vw, 18px), 36px);
+      --textContent--h1--lineheight: min(max(3.056vw, 24px), 44px);
+      --textContent--h1--rus--fontsize: min(max(1.944vw, 18px), 28px);
+      --textContent--h1--rus--lineheight: min(max(3.056vw, 24px), 44px);
       
       // semiheader
-      --textcontent--h2--fontsize: min(max(1.389vw, 18px), 20px);                                    
-      --textcontent--h2--lineheight: min(max(3.056vw, 22px), 44px);
-      --textcontent--h2--rus--fontsize: min(max(1.389vw, 18px), 20px);
-      --textcontent--h2--rus--lineheight: min(max(3.056vw, 22px), 44px);
+      --textContent--h2--fontsize: min(max(1.389vw, 18px), 20px);                                    
+      --textContent--h2--lineheight: min(max(3.056vw, 22px), 44px);
+      --textContent--h2--rus--fontsize: min(max(1.389vw, 18px), 20px);
+      --textContent--h2--rus--lineheight: min(max(3.056vw, 22px), 44px);
       
       // h3 to delete
-      --textcontent--h3--fontsize: 20px;
+      --textContent--h3--fontsize: 20px;
       
-      --textcontent--paragraph--fontsize: min(max(1.458vw, 18px), 21px);
-      --textcontent--paragraph--lineheight: min(max(1.806vw, 20px), 26px);
-      --textcontent--paragraph--rus--fontsize: min(max(1.458vw, 18px), 21px);
-      --textcontent--paragraph--rus--lineheight: min(max(1.806vw, 20px), 26px);
+      --textContent--paragraph--fontsize: min(max(1.458vw, 18px), 21px);
+      --textContent--paragraph--lineheight: min(max(1.806vw, 20px), 26px);
+      --textContent--paragraph--rus--fontsize: min(max(1.458vw, 18px), 21px);
+      --textContent--paragraph--rus--lineheight: min(max(1.806vw, 20px), 26px);
       // lists
-      --textcontent--list--header--fontsize: min(max(1.389vw, 16px), 20px);
-      --textcontent--list--item--fontsize: min(max(1.250vw, 14px), 18px);
+      --textContent--list--header--fontsize: min(max(1.389vw, 16px), 20px);
+      --textContent--list--item--fontsize: min(max(1.250vw, 14px), 18px);
       // header
-      --textcontent--header--navigation--languages--fontsize: min(max(0.972vw, 10px), 16px);
-      --textcontent--header--navigation--infoline--fontsize: min(max(0.972vw, 10px), 14px);
-      --textcontent--header--desktop--navigation--fontsize: min(max(0.972vw, 10px), 16px);
+      --textContent--header--navigation--languages--fontsize: min(max(0.972vw, 10px), 16px);
+      --textContent--header--navigation--infoline--fontsize: min(max(0.972vw, 10px), 14px);
+      --textContent--header--desktop--navigation--fontsize: min(max(0.972vw, 10px), 16px);
       // footer
-      --textcontent--footer--navigation--fontsize: 14px;
-      --textcontent--footer--navigation--lineheight: 19px;
-      --textcontent--footer--header--fontsize: 14px;
-      --textcontent--footer--header--lineheight: 20px;
-      --textcontent--footer--item--fontsize: 14px;
-      --textcontent--footer--item--lineheight: 20px;
+      --textContent--footer--navigation--fontsize: 14px;
+      --textContent--footer--navigation--lineheight: 19px;
+      --textContent--footer--header--fontsize: 14px;
+      --textContent--footer--header--lineheight: 20px;
+      --textContent--footer--item--fontsize: 14px;
+      --textContent--footer--item--lineheight: 20px;
       // tabledata
-      --textcontent--table--header--fontsize: 28px;
-      --textcontent--table--header--rus--fontsie: 20px;
-      --textcontent--table--item--fontsize: 18px;
-      --textcontent--table--item--lineheight: 20px;
-      --textcontent--table--item--rus--fontsize: 16px;
-      --textcontent--table--item--rus--lineheight: 20px;
+      --textContent--table--header--fontsize: 28px;
+      --textContent--table--header--rus--fontsie: 20px;
+      --textContent--table--item--fontsize: 18px;
+      --textContent--table--item--lineheight: 20px;
+      --textContent--table--item--rus--fontsize: 16px;
+      --textContent--table--item--rus--lineheight: 20px;
       
       
       
       
       // [ BUTTONS ] -----------------------------------------------
 
-      .textcontent--button {
+      .textContent--button {
         font-family: var(--font--Roboto);
         font-style: normal;
         font-weight: 400;
@@ -74,7 +74,7 @@ export const GlobalFontStyles = createGlobalStyle`
         color: var(--color--button--v1);
       }
       
-          .textcontent--button--contacts {
+          .textContent--button--contacts {
             font-family: var(--font--Roboto);
             font-style: normal;
             font-weight: 400;
@@ -84,7 +84,7 @@ export const GlobalFontStyles = createGlobalStyle`
             color: var(--color--button--v1);
           }
     
-          .textcontent--button--appointment {
+          .textContent--button--appointment {
             font-family: var(--font--Roboto);
             font-size: 15px;
             font-weight: 400;
@@ -96,12 +96,12 @@ export const GlobalFontStyles = createGlobalStyle`
       
       // [ COMMON ] ------------------------------------------------
       // [ NEW ] ---------------------------------------------------
-      .textcontent--h0 {
+      .textContent--h0 {
         font-family: var(--font--GTWalsheimMedium);
         font-style: normal;
         font-weight: 400;
-        font-size: var(--textcontent--h0--fontsize);
-        line-height: var(--textcontent--h0--lineheight);!important;
+        font-size: var(--textContent--h0--fontsize);
+        line-height: var(--textContent--h0--lineheight);!important;
         white-space: pre-wrap;
         opacity: var(--font--opacity);
         color: var(--color--secondary);
@@ -109,97 +109,97 @@ export const GlobalFontStyles = createGlobalStyle`
        // margin-bottom: .5em;
       }
 
-      .textcontent--h0--rus {
+      .textContent--h0--rus {
         font-family: var(--font--Montserrat);
         font-style: normal;
         font-weight: 400;
-        font-size: var(--textcontent--h0--rus--fontsize);
-        line-height: var(--textcontent--h0--rus--lineheight);!important;
+        font-size: var(--textContent--h0--rus--fontsize);
+        line-height: var(--textContent--h0--rus--lineheight);!important;
         text-transform: uppercase;
         opacity: var(--font--opacity);
         color: var(--color--secondary);
       }
       // [ NEW ] ---------------------------------------------------
-      .textcontent--h1 {
+      .textContent--h1 {
         font-family: var(--font--GTWalsheimMedium);
         font-style: normal;
         font-weight: 400;
-        font-size: var(--textcontent--h1--fontsize);
-        line-height: var(--textcontent--h1--lineheight)!important;
+        font-size: var(--textContent--h1--fontsize);
+        line-height: var(--textContent--h1--lineheight)!important;
           white-space: pre-wrap;
         opacity: var(--font--opacity);
         color: var(--color--secondary);
       }
 
-      .textcontent--h1--rus {
+      .textContent--h1--rus {
         font-family: var(--font--Montserrat);
         font-style: normal;
         font-weight: 400;
-        font-size: var(--textcontent--h1--rus--fontsize);
-        line-height: var(--textcontent--h1--rus--lineheight);!important;
+        font-size: var(--textContent--h1--rus--fontsize);
+        line-height: var(--textContent--h1--rus--lineheight);!important;
           text-transform: uppercase;
         opacity: var(--font--opacity);
         color: var(--color--secondary);
       }
 
-      .textcontent--paragraph {
+      .textContent--paragraph {
         font-family: var(--font--GTWalsheimLight);
         font-style: normal;
         font-weight: 400;
-        font-size: var(--textcontent--paragraph--fontsize);
-        line-height: var(--textcontent--paragraph--lineheight);
+        font-size: var(--textContent--paragraph--fontsize);
+        line-height: var(--textContent--paragraph--lineheight);
         opacity: var(--font--opacity);
         color: var(--color--default);
       }
 
-      .textcontent--paragraph--rus {
+      .textContent--paragraph--rus {
         font-family: var(--font--Montserrat);
         font-style: normal;
         font-weight: 400;
-        font-size: var(--textcontent--paragraph--rus--fontsize);
-        line-height: var(--textcontent--paragraph--rus--lineheight);
+        font-size: var(--textContent--paragraph--rus--fontsize);
+        line-height: var(--textContent--paragraph--rus--lineheight);
         opacity: var(--font--opacity);
         color: var(--color--default);
       }
 
-      .textcontent--h2 {
+      .textContent--h2 {
         font-family: var( --font--GTWalsheimMedium);
         font-style: normal;
         font-weight: 400;
-        font-size: var(--textcontent--h2--fontsize);
-        line-height: var(--textcontent--h2--lineheight);
+        font-size: var(--textContent--h2--fontsize);
+        line-height: var(--textContent--h2--lineheight);
         text-transform: uppercase;
         opacity: var(--font--opacity);
         color: var(--color--secondary);
       }
 
-      .textcontent--h2--rus {
+      .textContent--h2--rus {
         font-family: var(--font--Montserrat);
         font-style: normal;
         font-weight: 400;
-        font-size: var(--textcontent--h2--rus--fontsize);
-        line-height: var(--textcontent--h2--rus--lineheight);
+        font-size: var(--textContent--h2--rus--fontsize);
+        line-height: var(--textContent--h2--rus--lineheight);
         text-transform: uppercase;
         opacity: var(--font--opacity);
         color: var(--color--secondary);
       }
 
-      .textcontent--h3 {
+      .textContent--h3 {
         font-family: var(--font--OpenSans);
         font-style: normal;
         font-weight: 600;
-        font-size: var(--textcontent--h3--fontsize);
+        font-size: var(--textContent--h3--fontsize);
         opacity: var(--font--opacity);
         color: var(--color--primary);
       }
 
       // [ LISTS ] -------------------------------------------------
 
-      .textcontent--list--header {
+      .textContent--list--header {
         font-family: var(--font--Montserrat);
         font-style: normal;
         font-weight: 600;
-        font-size: var(--textcontent--list--header--fontsize);
+        font-size: var(--textContent--list--header--fontsize);
         text-transform: uppercase;
         color: var(--color--none);
 
@@ -208,44 +208,44 @@ export const GlobalFontStyles = createGlobalStyle`
         }
       }
 
-      .textcontent--list--item {
+      .textContent--list--item {
         font-family: var(--font--Montserrat);
         font-style: normal;
         font-weight: 400;
-        font-size: var(--textcontent--list--item--fontsize);
+        font-size: var(--textContent--list--item--fontsize);
         opacity: var(--font--opacity);
         color: var(--color--secondary);
       }
 
       // [ HEADER ] ------------------------------------------------
 
-      .textcontent--header--navigation--languages {
+      .textContent--header--navigation--languages {
         font-family: var(--font--OpenSans);
         font-style: normal;
         font-weight: 300;
-        font-size: var(--textcontent--header--navigation--languages--fontsize);
+        font-size: var(--textContent--header--navigation--languages--fontsize);
         color: var(--color--default);
       }
 
-      .textcontent--header--desktop--infoline {
+      .textContent--header--desktop--infoline {
         font-family: var(--font--OpenSans);
         font-style: normal;
         font-weight: 300;
-        font-size: var(--textcontent--header--navigation--infoline--fontsize);
+        font-size: var(--textContent--header--navigation--infoline--fontsize);
         color: var(--color--default);
       }
 
-      .textcontent--header--desktop--navigation {
+      .textContent--header--desktop--navigation {
         font-family: var(--font--OpenSans);
         font-style: normal;
         font-weight: 400;
-        font-size: var(--textcontent--header--desktop--navigation--fontsize);
+        font-size: var(--textContent--header--desktop--navigation--fontsize);
         text-transform: uppercase;
         opacity: var(--font--opacity);
         color: var(--clr--primary--base);
       }
 
-      .textcontent--header--mobile--navigation {
+      .textContent--header--mobile--navigation {
         font-family: var(--font--OpenSans);
         font-style: normal;
         font-weight: 400;
@@ -256,7 +256,7 @@ export const GlobalFontStyles = createGlobalStyle`
         //color: var(--color--none);
       }
 
-      .textcontent--header--mobile--languages {
+      .textContent--header--mobile--languages {
         font-family: var(--font--OpenSans);
         font-style: normal;
         font-weight: 300;
@@ -269,12 +269,12 @@ export const GlobalFontStyles = createGlobalStyle`
 
       // [ FOOTER ] ------------------------------------------------
 
-      .textcontent--footer--navigation {
+      .textContent--footer--navigation {
         font-family: var(--font--OpenSans);
         font-style: normal;
         font-weight: 600;
-        font-size: var(--textcontent--footer--navigation--fontsize);
-        line-height: var(--textcontent--footer--navigation--lineheight);
+        font-size: var(--textContent--footer--navigation--fontsize);
+        line-height: var(--textContent--footer--navigation--lineheight);
         text-transform: uppercase;
         color: var(--color--paragraph--footer);
 
@@ -283,28 +283,28 @@ export const GlobalFontStyles = createGlobalStyle`
         }
       }
       
-      .textcontent--footer--header {
+      .textContent--footer--header {
         font-family: var(--font--OpenSans);
         font-style: normal;
         font-weight: 600;
-        font-size: var(--textcontent--footer--header--fontsize);
-        line-height: var(--textcontent--footer--header--lineheight);
+        font-size: var(--textContent--footer--header--fontsize);
+        line-height: var(--textContent--footer--header--lineheight);
         color: var(--color--none);
       }
 
-      .textcontent--footer--item {
+      .textContent--footer--item {
         font-family: var(--font--OpenSans);
         font-style: normal;
         font-weight: 600;
-        font-size: var(--textcontent--footer--item--fontsize);
-        line-height: var(--textcontent--footer--item--lineheight);
+        font-size: var(--textContent--footer--item--fontsize);
+        line-height: var(--textContent--footer--item--lineheight);
         color: var(--color--paragraph--footer);
       }
 
       // [ TABLEDATA ] ---------------------------------------------
       // [ NEW ] ---------------------------------------------------
 
-      .textcontent--tabledata--header {
+      .textContent--tabledata--header {
         font-family: var(--font--Roboto);
         font-size: 26px;
         font-weight: 300;
@@ -315,7 +315,7 @@ export const GlobalFontStyles = createGlobalStyle`
         }
       }
 
-      .textcontent--tabledata--item {
+      .textContent--tabledata--item {
         font-family: var(--font--Roboto);
         font-size: 18px;
         font-weight: 300;
@@ -328,7 +328,7 @@ export const GlobalFontStyles = createGlobalStyle`
         }
       }
 
-      .textcontent--tabledata--item--small {
+      .textContent--tabledata--item--small {
         font-family: var(--font--Roboto);
         font-size: 14px;
         font-weight: 300;
@@ -341,7 +341,7 @@ export const GlobalFontStyles = createGlobalStyle`
         }
       }
 
-      .textcontent--tabledata--item--names {
+      .textContent--tabledata--item--names {
         font-family: var(--font--OpenSans);
         font-size: 12px;
         font-weight: 600;
@@ -355,40 +355,40 @@ export const GlobalFontStyles = createGlobalStyle`
 
       // [ NEW ] ---------------------------------------------------
       
-      .textcontent--table--header {
+      .textContent--table--header {
         font-family: var(--font--GTWalsheimMedium);
         font-style: normal;
         font-weight: 600;
-        font-size: var(--textcontent--table--header--fontsize);
+        font-size: var(--textContent--table--header--fontsize);
         opacity: var(--font--opacity);
         color: var(--color--primary);
       }
 
-      .textcontent--table--header--rus {
+      .textContent--table--header--rus {
         font-family: var(--font--Montserrat);
         font-style: normal;
         font-weight: 600;
-        font-size: var(--textcontent--table--header--rus--fontsize);
+        font-size: var(--textContent--table--header--rus--fontsize);
         opacity: var(--font--opacity);
         color: var(--color--primary);
       }
 
-      .textcontent--table--item {
+      .textContent--table--item {
         font-family: var(--font--GTWalsheimLight);
         font-style: normal;
         font-weight: 400;
-        font-size: var(--textcontent--table--item--fontsize);
-        line-height: var(--textcontent--table--item--lineheight);
+        font-size: var(--textContent--table--item--fontsize);
+        line-height: var(--textContent--table--item--lineheight);
         opacity: var(--font--opacity);
         color: var(--color--primary);
       }
 
-      .textcontent--table--item--rus {
+      .textContent--table--item--rus {
         font-family: var(--font--Montserrat);
         font-style: normal;
         font-weight: 400;
-        font-size: var(--textcontent--table--item--rus--fontsize);
-        line-height: var(--textcontent--table--item--rus--lineheight);
+        font-size: var(--textContent--table--item--rus--fontsize);
+        line-height: var(--textContent--table--item--rus--lineheight);
         opacity: var(--font--opacity);
         color: var(--color--primary);
       }

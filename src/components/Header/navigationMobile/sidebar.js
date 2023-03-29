@@ -16,7 +16,7 @@ const SideBar = (props) => {
     const logoTransparent00 = config.logo_transparent.logoTransparent00
     const URL_01 = config.external_url.URL_01
     const URL_04 = config.external_url.URL_04
-    const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
+    const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
 
     const [isMenuOpen, handleMenu] = useState(false);
     const handleCloseMenu = () => {
@@ -42,30 +42,30 @@ const SideBar = (props) => {
             <div style={{ width: '100%', height: '1px', backgroundColor: 'white', marginBottom: '30px', marginTop: '30px'}}></div>
 
             <Link onClick={() => handleCloseMenu()} className={"menu-item"} to={"home"}>
-                <p style={{paddingLeft: '10px' }} className={"textcontent--header--mobile--navigation"}>{ t("common:home") }</p>
+                <p style={{paddingLeft: '10px' }} className={"textContent--header--mobile--navigation"}>{ t("common:home") }</p>
             </Link>
 
             <Link onClick={() => handleCloseMenu()} className={"menu-item"} to={"about"}>
-                <p style={{paddingLeft: '10px'}} className={"textcontent--header--mobile--navigation"}>{ t("common:about") }</p>
+                <p style={{paddingLeft: '10px'}} className={"textContent--header--mobile--navigation"}>{ t("common:about") }</p>
             </Link>
 
             <Link onClick={() => handleCloseMenu()} className={"menu-item"} to={"services"}>
-                <p style={{paddingLeft: '10px'}} className={"textcontent--header--mobile--navigation"}>{ t("common:services") }</p>
+                <p style={{paddingLeft: '10px'}} className={"textContent--header--mobile--navigation"}>{ t("common:services") }</p>
             </Link>
 
             <Link onClick={() => handleCloseMenu()} className={"menu-item"} to={"prices"}>
-                <p style={{paddingLeft: '10px'}} className={"textcontent--header--mobile--navigation"}>{ t("common:prices") }</p>
+                <p style={{paddingLeft: '10px'}} className={"textContent--header--mobile--navigation"}>{ t("common:prices") }</p>
             </Link>
 
             <Link onClick={() => handleCloseMenu()} className={"menu-item"} to={"info"}>
-                <p style={{paddingLeft: '10px'}} className={"textcontent--header--mobile--navigation"}>{ t("common:info") }</p>
+                <p style={{paddingLeft: '10px'}} className={"textContent--header--mobile--navigation"}>{ t("common:info") }</p>
             </Link>
 
             <Link onClick={() => handleCloseMenu()} className={"menu-item"} to={"contacts"}>
-                <p style={{paddingLeft: '10px'}} className={"textcontent--header--mobile--navigation"}>{ t("common:contacts") }</p>
+                <p style={{paddingLeft: '10px'}} className={"textContent--header--mobile--navigation"}>{ t("common:contacts") }</p>
             </Link>
 
-            <a className={"textcontent--header--mobile--navigation"} href={ `${URL_01}` } target={"_blank"} rel={"noopener noreferrer"}>
+            <a className={"textContent--header--mobile--navigation"} href={ `${URL_01}` } target={"_blank"} rel={"noopener noreferrer"}>
                 <p style={{paddingLeft: '10px'}}>{ t("common:eapointment") }</p>
             </a>
 

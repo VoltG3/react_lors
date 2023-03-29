@@ -8,12 +8,12 @@ import { useTranslation } from 'react-i18next'
 
 import { ButtonController } from '../../Button/Button.controller'
 
-function SliderTextcontentDesktop(props) {
+function SliderTextContentDesktop(props) {
     const [t] = useTranslation(["chapter_header", "common"])
     const introHeader = config.common.introHeader
 
-    const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
-    const h1 = i18n.language === 'ru' ? 'textcontent--h0--rus' : 'textcontent--h0'
+    const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
+    const h1 = i18n.language === 'ru' ? 'textContent--h0--rus' : 'textContent--h0'
 
     return (
       <div style={{
@@ -64,4 +64,4 @@ const Temporary = styled.div`
   }
 `
 
-export default SliderTextcontentDesktop
+export default SliderTextContentDesktop

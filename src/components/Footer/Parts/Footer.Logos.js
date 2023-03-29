@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import config from '../../config'
+import config from '../../../config'
 
-function FooterLogo() {
+function FooterLogos() {
     const { logo_transparent } = config
 
     return(
@@ -74,4 +74,4 @@ const StyledFooterLogo = styled.div`
   }
 `
 
-export default FooterLogo
+export default FooterLogos

@@ -9,12 +9,12 @@ export const ListInformation = (props) => {
     return (
         <Container>
             <Header>
-                <p className={"textcontent--list--header"}>{ t("list_information.list_header")}</p>
+                <p className={"textContent--list--header"}>{ t("list_information.list_header")}</p>
             </Header>
 
             { t('list_information.list_items', { returnObjects: true }).map((listItem, key) => (
                 <div key={ key }>
-                    <p className={"textcontent--list--item"}>{ t(listItem.item) }</p>
+                    <p className={"textContent--list--item"}>{ t(listItem.item) }</p>
                 </div>
             ))}
 

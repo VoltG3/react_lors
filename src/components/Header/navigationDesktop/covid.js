@@ -12,7 +12,7 @@ function Covid() {
     const [t] = useTranslation(["navigation"])
     const [m] = useTranslation(["modules"])
 
-    const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
+    const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
 
     const [covidBarVisible, setCovidbarVisible] = useState(false);
     const URL_04 = config.external_url.URL_04
@@ -31,7 +31,7 @@ function Covid() {
                 </div>
             </div>
 
-            <p className={"textcontent--header--desktop--infoline hoverLink"}>{ t("navigation_secondary.covid") }</p>
+            <p className={"textContent--header--desktop--infoline hoverLink"}>{ t("navigation_secondary.covid") }</p>
         </StyledCovid>
     )
 }

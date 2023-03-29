@@ -10,8 +10,8 @@ import DataColumnPrivateNames from "./Columns/DataColumnPrivateNames";
 const TableSectionContacts = () => {
     const [t] = useTranslation(["tiles"])
 
-    const HeaderPublic = <StyledOpeningHoursHeader><p className={"textcontent--list--header"}>{ t("admissionTimes")}</p></StyledOpeningHoursHeader>
-    const HeaderPrivat = <StyledOpeningHoursHeader><p className={"textcontent--list--header"}>{ t("payingTimes")}</p></StyledOpeningHoursHeader>
+    const HeaderPublic = <StyledOpeningHoursHeader><p className={"textContent--list--header"}>{ t("admissionTimes")}</p></StyledOpeningHoursHeader>
+    const HeaderPrivat = <StyledOpeningHoursHeader><p className={"textContent--list--header"}>{ t("payingTimes")}</p></StyledOpeningHoursHeader>
 
     return (
         <StyledOpeningHoursContainer>

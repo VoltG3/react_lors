@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
-import SliderTextcontentDesktop from './sliderTextcontentDesktop'
+import SliderTextContentDesktop from './sliderTextContentDesktop'
 /*import {MediaDesktop} from "../../../media";*/
-import SliderTextcontentMobile from "./sliderTextcontentMobile";
+
 import config from "../../../config";
+import SliderTextContentMobile from "./sliderTextContentMobile";
 
 
 
@@ -14,7 +15,7 @@ const Slider = () => {
     return (
         <>
             <SliderContainer>
-                <SliderTextcontentDesktop media={"var(--media--desktop)"}/>
+                <SliderTextContentDesktop media={"var(--media--desktop)"}/>
 
                 <div className={"slide"}>
                     <div><img src={ URL_slider01 } width={"100%"} height={"auto"} alt={"slider"} loading="lazy" /></div>
@@ -23,7 +24,7 @@ const Slider = () => {
                 </div>
             </SliderContainer>
 
-            <SliderTextcontentMobile media={"var(--media--mobile)"}/>
+            <SliderTextContentMobile media={"var(--media--mobile)"}/>
         </>
 
     )

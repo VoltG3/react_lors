@@ -13,9 +13,9 @@ import { ButtonController } from '../../Button/Button.controller'
 const TileHours = () => {
     const [t] = useTranslation(["tiles"])
     const URL_01 = config.external_url.URL_01
-    const header = "textcontent--tabledata--header"
-    const paragraph = "textcontent--tabledata--item"
-    const tableParagraph = "textcontent--tabledata--item--small"
+    const header = "textContent--tabledata--header"
+    const paragraph = "textContent--tabledata--item"
+    const tableParagraph = "textContent--tabledata--item--small"
 
     return (
         <StyledTileHours>

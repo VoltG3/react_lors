@@ -1,38 +1,39 @@
 import styled from 'styled-components'
-import FooterDev from './FooterDev'
-import FooterLogo from './FooterLogo'
-import FooterTextcontent01 from './FooterTextcontent01'
-import FooterTextcontent02 from './FooterTextcontent02'
-import FooterTextcontent03 from './FooterTextcontent03'
-import FooterNav from './FooterNav'
-import FooterLang from './FooterLang'
+
+import FooterTextContent01 from './TextContent/Footer.TextContent01'
+import FooterTextContent02 from './TextContent/Footer.TextContent02'
+import FooterTextContent03 from './TextContent/Footer.TextContent03'
+import FooterNavigation from './Parts/Footer.Navigation'
+import FooterLanguages from './Parts/Footer.Languages'
+import FooterLogos from './Parts/Footer.Logos'
+import FooterDeveloper from './Parts/Footer.Developer'
 
 function Footer() {
     return (
         <StyledFooter>
             <div className={"innerFooter"}>
                 <div className={"footerFirstSet"}>
-                    <FooterNav />
-                    <FooterLang />
+                    <FooterNavigation />
+                    <FooterLanguages />
                 </div>
 
                 <div className={"footerSecondSet"}>
                     <span className={"space"} />
-                    <FooterTextcontent01 />
+                    <FooterTextContent01 />
                     <span className={"space"} />
-                    <FooterTextcontent02 />
+                    <FooterTextContent02 />
                     <span className={"space"} />
-                    <FooterTextcontent03 />
+                    <FooterTextContent03 />
                 </div>
             </div>
 
             <div style={{ boxShadow : '-0px -4px 4px rgba(0, 0, 0, 0.35)' }}>
                 <div style={{ boxShadow : '0 4px 4px rgba(0, 0, 0, 0.35)' }}>
-                    <FooterLogo />
+                    <FooterLogos />
                 </div>
             </div>
 
-            <FooterDev />
+            <FooterDeveloper />
         </StyledFooter>
     )
 }
@@ -90,7 +91,7 @@ const StyledFooter = styled.div`
       width: 100%;
     }
 
-    & div {021928FF
+    & div {
       display: flex;
       flex-direction: column;
       min-width: 270px;

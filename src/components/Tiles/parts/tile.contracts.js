@@ -8,8 +8,8 @@ import config from '../../../config'
 function TileContracts() {
     const [t] = useTranslation(["tiles"])
     const { logo_colored } = config
-    const header = "textcontent--tabledata--header"
-    const paragraph = "textcontent--tabledata--item"
+    const header = "textContent--tabledata--header"
+    const paragraph = "textContent--tabledata--item"
 
     return (
         <StyledTileContracts>

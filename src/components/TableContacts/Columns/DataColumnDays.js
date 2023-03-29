@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 
 export const DataColumnDays = () => {
     const [t] = useTranslation(["days"])
-    const paragraph = "textcontent--tabledata--item--small"
+    const paragraph = "textContent--tabledata--item--small"
 
     return (
         <div className={"column roundedBorderLeft"}>

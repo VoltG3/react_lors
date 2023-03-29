@@ -6,6 +6,7 @@ function createNavigation() {
         btn__02 : "see here",
         btn__03 : "(see section Contacts)",
         btn__04 : "Contacts and working hours",
+        btn__05 : "I understand",
     }
 
     return {

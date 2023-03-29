@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function Navigation() {
     const [t] = useTranslation(["navigation"])
-    const p = 'textcontent--header--desktop--navigation'
+    const p = 'textContent--header--desktop--navigation'
     const object = "navigation_primary."
 
     return (

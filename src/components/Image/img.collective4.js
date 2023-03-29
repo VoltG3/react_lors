@@ -10,7 +10,7 @@ const ImgCollective4 = (props) => {
     const [showHidden3, setShowHidden3] = useState(false);
     const [showHidden4, setShowHidden4] = useState(false)
 
-    const paragraph = "textcontent--tabledata--item--names"
+    const paragraph = "textContent--tabledata--item--names"
     const { name_01, name_02, name_03, name_04 } = config.names
 
     return (

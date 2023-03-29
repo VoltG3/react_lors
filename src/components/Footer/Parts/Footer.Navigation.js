@@ -1,13 +1,13 @@
 import React from 'react'
-import config from '../../config'
+import config from '../../../config'
 
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
-export default function FooterNav() {
+export default function FooterNavigation() {
     const [t] = useTranslation(["navigation"])
     const URL_01 = config.external_url.URL_01
-    const p = 'textcontent--footer--navigation'
+    const p = 'textContent--footer--navigation'
     const object = "navigation_primary."
 
     return (

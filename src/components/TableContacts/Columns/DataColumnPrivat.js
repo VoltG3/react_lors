@@ -12,7 +12,7 @@ const DataColumnPrivat = () => {
     const arrayPrivateHours = i18n.language === 'en' ? arrayPrivateHoursUS : arrayPrivateHoursEU
     //console.table(arrayPrivateHoursEU)
 
-    const paragraph = "textcontent--tabledata--item--small"
+    const paragraph = "textContent--tabledata--item--small"
 
     const isPrivateArrayEmpty = (target_1, target_2) => {
 

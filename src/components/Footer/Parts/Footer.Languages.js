@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import i18n from 'i18next'
 
-function FooterLang() {
-    const p = 'textcontent--footer--navigation'
+function FooterLanguages() {
+    const p = 'textContent--footer--navigation'
 
     return (
         <StyledSubSetLang>
@@ -57,4 +57,4 @@ const StyledSubSetLang = styled.div`
     }
 `
 
-export default FooterLang
+export default FooterLanguages

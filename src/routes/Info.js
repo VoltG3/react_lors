@@ -15,9 +15,9 @@ import { ListInformation } from '../components/Lists/ListInformation'
 
 export default function Info() {
     const [t] = useTranslation(["chapter_pages", "chapters"])
-    const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
-    const h = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
-    const semiHeader = i18n.language === 'ru' ? 'textcontent--h2--rus' : 'textcontent--h2'
+    const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
+    const h = i18n.language === 'ru' ? 'textContent--h1--rus' : 'textContent--h1'
+    const semiHeader = i18n.language === 'ru' ? 'textContent--h2--rus' : 'textContent--h2'
 
     const URL_03 = config.external_url.URL_03
     const repeatSign = config.common.repeatSign

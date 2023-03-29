@@ -2,7 +2,7 @@ import { FetchData } from '../../../JSON/fetchData'
 
 const DataColumnPrivateNames = () => {
     const jsonData = FetchData()
-    const paragraph = "textcontent--tabledata--item--small"
+    const paragraph = "textContent--tabledata--item--small"
 
     const isNameArrayEmpty = (target) => {
         let toReturn;

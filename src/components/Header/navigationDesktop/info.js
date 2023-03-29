@@ -10,7 +10,7 @@ function Info() {
     const [t] = useTranslation(["navigation"])
     const { icons_navigation } = config
     const URL_01 = config.external_url.URL_01
-    const p = 'textcontent--header--desktop--infoline'
+    const p = 'textContent--header--desktop--infoline'
 
     return (
         <StyledHeaderSubSetInfo>

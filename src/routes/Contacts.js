@@ -20,8 +20,8 @@ const GoogleMap = lazy(() => import('../components/GoogleMap'));
 
 export default function Contacts() {
     const [t] = useTranslation(["chapter_pages", "chapters"])
-    const paragraph = i18n.language === 'ru' ? 'textcontent--paragraph--rus' : 'textcontent--paragraph'
-    const h = i18n.language === 'ru' ? 'textcontent--h1--rus' : 'textcontent--h1'
+    const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
+    const h = i18n.language === 'ru' ? 'textContent--h1--rus' : 'textContent--h1'
 
     const introHeader = config.common.introHeader
     const URL_01 = config.external_url.URL_01
@@ -52,9 +52,9 @@ export default function Contacts() {
                 <ImageController variant={"contacts"} />
 
                 <InlineParagraph>
-                    <p className={"textcontent--h3"}>{ introHeader }</p>
-                    <p className={"textcontent--h3"}>{ t("chapter_contacts.part_03") }</p>
-                    <p className={"textcontent--h3"}>{ t("chapter_contacts.part_04") }</p>
+                    <p className={"textContent--h3"}>{ introHeader }</p>
+                    <p className={"textContent--h3"}>{ t("chapter_contacts.part_03") }</p>
+                    <p className={"textContent--h3"}>{ t("chapter_contacts.part_04") }</p>
                 </InlineParagraph>
 
             </Page>

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import i18n from 'i18next'
 
 function LanguagesMobile() {
-    const p = 'textcontent--header--mobile--languages'
+    const p = 'textContent--header--mobile--languages'
 
     return (
         <div style={{ display: 'flex', justifyContent: 'flex-end'}}>

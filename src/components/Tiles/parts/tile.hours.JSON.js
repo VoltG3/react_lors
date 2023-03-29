@@ -14,7 +14,7 @@ const TileHoursJSON = () => {
     const arrayOpeningHours = i18n.language === 'en' ? arrayOpeningHoursUS : arrayOpeningHoursEU
     //console.table(arrayOpeningHours)
 
-    const tableParagraph = "textcontent--tabledata--item--small"
+    const tableParagraph = "textContent--tabledata--item--small"
 
     return (
         <StyledHoursList>
