@@ -11,20 +11,25 @@ import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { ImageController } from '../components/Image/image.controller'
 
-import TableSectionContacts from '../components/TableContacts/table.section.contacts'
+import OpeningHoursController from '../components/OpeningHours/OpeningHours.controller'
 import LineLang from '../components/line.lang'
 
 import { ButtonController } from '../components/Button/Button.controller'
+import {ShowData} from "../JSON/showData";
 
 const GoogleMap = lazy(() => import('../components/GoogleMap'));
 
 export default function Contacts() {
     const [t] = useTranslation(["chapter_pages", "chapters"])
+    const jsonShowData = ShowData()
     const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
     const h = i18n.language === 'ru' ? 'textContent--h1--rus' : 'textContent--h1'
 
     const introHeader = config.common.introHeader
     const URL_01 = config.external_url.URL_01
+
+    const ShowDataWithoutReference = jsonShowData[1]
+    const ShowDataWithoutReferenceContent = <p style={{ color: 'var(--color--paragraph--highlight)'}} className={ paragraph }>{ t("chapter_contacts.part_03") }</p>
 
     return (
         <>
@@ -37,10 +42,12 @@ export default function Contacts() {
                     <span>
                         <p style={{ color: 'var(--color--paragraph--highlight)'}} className={ paragraph }>{ t("chapter_contacts.part_01") }</p>
                         <p className={ paragraph }>{ t("chapter_contacts.part_02") }</p>
+                        { ShowDataWithoutReference === false ? ShowDataWithoutReferenceContent : '' }
 
                         <a href={ `${URL_01}` } target={"_blank"} rel={"noopener noreferrer"}>
                            <ButtonController variant={"contacts"} />
                         </a>
+
                     </span>
 
                     <div className={"inlineParagraphWithImage"}>
@@ -48,13 +55,13 @@ export default function Contacts() {
                     </div>
                 </InlineParagraphWithImage>
 
-                <TableSectionContacts />
+                <OpeningHoursController />
                 <ImageController variant={"contacts"} />
 
                 <InlineParagraph>
                     <p className={"textContent--h3"}>{ introHeader }</p>
-                    <p className={"textContent--h3"}>{ t("chapter_contacts.part_03") }</p>
                     <p className={"textContent--h3"}>{ t("chapter_contacts.part_04") }</p>
+                    <p className={"textContent--h3"}>{ t("chapter_contacts.part_05") }</p>
                 </InlineParagraph>
 
             </Page>

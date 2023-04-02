@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 
-export const DataColumnDays = () => {
+const DataColumnDays = () => {
     const [t] = useTranslation(["days"])
     const paragraph = "textContent--tabledata--item--small"
 
@@ -14,3 +14,5 @@ export const DataColumnDays = () => {
         </div>
     )
 }
+
+export default DataColumnDays

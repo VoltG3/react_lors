@@ -41,7 +41,8 @@ export const CHAPTER_PAGES_EN = {
     chapter_contacts : {
         part_01 : "The arrival of patients is precisely determined on time and with a face mask. Children may have one accompanying person.",
         part_02 : "Attendance for face-to-face or remote consultations only by appointment sign up by phone +371 67186950 or",
-        part_03 : "Address: Brīvības 68, Riga",
-        part_04 : "(entrance from Gertrude Street)",
+        part_03 : "Currently, \"paid consultation\" times are not available",
+        part_04 : "Address: Brīvības 68, Riga",
+        part_05 : "(entrance from Gertrude Street)",
     }
 }

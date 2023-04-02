@@ -3,18 +3,18 @@ import { FetchData } from '../../../JSON/fetchData'
 import TransformFormat from '../../../JSON/transformFormat'
 import { TransformArray } from '../../../JSON/transformArray'
 
-const DataColumnPrivat = () => {
+const DataColumnPublicHours = () => {
     const jsonData = FetchData()
-    const arrayPrivateHoursEU = []
-    const arrayPrivateHoursUS = []
-          jsonData.forEach(function(obj) { arrayPrivateHoursEU.push( TransformArray(obj.private))})
-          jsonData.forEach(function(obj) { arrayPrivateHoursUS.push( TransformArray(obj.private))}); void TransformFormat(arrayPrivateHoursUS)
-    const arrayPrivateHours = i18n.language === 'en' ? arrayPrivateHoursUS : arrayPrivateHoursEU
-    //console.table(arrayPrivateHoursEU)
+    const arrayPublicHoursEU = []
+    const arrayPublicHoursUS = []
+          jsonData.forEach(function(obj) { arrayPublicHoursEU.push( TransformArray(obj.public))})
+          jsonData.forEach(function(obj) { arrayPublicHoursUS.push( TransformArray(obj.public))}); void TransformFormat(arrayPublicHoursUS)
+    const arrayPublicHours = i18n.language === 'en' ? arrayPublicHoursUS : arrayPublicHoursEU
+    // console.table(arrayPublicHoursEU)
 
     const paragraph = "textContent--tabledata--item--small"
 
-    const isPrivateArrayEmpty = (target_1, target_2) => {
+    const isPublicArrayEmpty = (target_1, target_2) => {
 
         return (
             <div style={{ display: target_1 === "" ? 'none' : 'flex' }} className={"cell--tripple"}>
@@ -26,12 +26,12 @@ const DataColumnPrivat = () => {
     }
 
     return (
-        <div className={"column roundedBorderRight"}>
-            { arrayPrivateHours.map(( array, index ) => (
+        <div className={"column"}>
+            { arrayPublicHours.map(( array, index ) => (
                 <div key={ index } className={"cell"}>
                     <div className={"cell--dobble"}>
-                        { isPrivateArrayEmpty(array[0], array[1]) }
-                        { isPrivateArrayEmpty(array[2], array[3]) }
+                        { isPublicArrayEmpty(array[0], array[1]) }
+                        { isPublicArrayEmpty(array[2], array[3]) }
                     </div>
                 </div>
             ))}
@@ -39,4 +39,4 @@ const DataColumnPrivat = () => {
     )
 }
 
-export default DataColumnPrivat
+export default DataColumnPublicHours
