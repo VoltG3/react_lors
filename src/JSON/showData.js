@@ -13,9 +13,11 @@ export const ShowData = () => {
 
     const withReference = data.find(item => item.withReference);
     const withoutReference = data.find(item => item.withoutReference);
+    const bothFalse = data.find(item => item.bothFalse);
 
     const withReferenceValue = withReference ? withReference.withReference[0].showContent : null;
     const withoutReferenceValue = withoutReference ? withoutReference.withoutReference[0].showContent : null;
+    const bothFalseValue = bothFalse ? bothFalse.bothFalse[0].isOpening : null;
 
-    return [withReferenceValue, withoutReferenceValue];
+    return [withReferenceValue, withoutReferenceValue, bothFalseValue];
 }

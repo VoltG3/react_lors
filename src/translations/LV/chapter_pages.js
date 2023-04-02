@@ -42,7 +42,8 @@ export const CHAPTER_PAGES_LV = {
         part_01 : "Pacientu ierašanās precīzi noteik tā laikā un ar sejas masku. Bērniem drīkst būt viena pavadošā persona.",
         part_02 : "Apmeklējums klātienes vai attālinātajām konsultācijām tikai pēc iepriekšēja pieraksta pa telefonu +371 67186950 vai",
         part_03 : "Šobrīd \"maksas konsultāciju\" laiki nav pieejami",
-        part_04 : "Adrese: Brīvības 68, Rīga",
-        part_05 : "(ieeja no Ģertrūdes ielas)",
+        part_04 : "Šobrīd ārsta praksē pieņemšanas laiki nav pieejami līdz ",
+        part_05 : "Adrese: Brīvības 68, Rīga",
+        part_06 : "(ieeja no Ģertrūdes ielas)",
     }
 }

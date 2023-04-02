@@ -1,0 +1,26 @@
+[
+  {
+    "id" : "1",
+    "withReference" : [
+      {
+        "showContent" : true
+      }
+    ]
+  },
+  {
+    "id" : "2",
+    "withoutReference" : [
+      {
+        "showContent" : false
+      }
+    ]
+  },
+  {
+    "id" : "3",
+    "bothFalse" : [
+      {
+        "isOpening" : "22.12.1980"
+      }
+    ]
+  }
+]
