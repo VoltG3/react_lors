@@ -43,6 +43,10 @@
     $content .= "  Header set Cache-Control \"max-age=31536000, public\"\n";
     $content .= "</FilesMatch>\n";
 
+// Serve index.html for all requests
+    $content .= "\n# Serve index.html for all requests\n";
+    $content .= "FallbackResource /index.html\n";
+
     var_dump($manifest);
 
 // Write the content to the .htaccess file
