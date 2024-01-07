@@ -175,12 +175,12 @@ export const LIST_PRICES_LV = {
             {
                 id : "28",
                 item : "Radiofrekvences elektrokoagulācija deguna gliemēznīcām",
-                price : "200"
+                price : "175"
             },
             {
                 id : "29",
                 item : "Radiofrekveces elektorokoagulācija mandelēm",
-                price : "200"
+                price : "175"
             },
             {
                 id : "30",
