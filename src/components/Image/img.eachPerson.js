@@ -6,7 +6,7 @@ const ImgEachPerson = (props) => {
     const URL_img03 = variant[0]
     const URL_img04 = variant[1]
     const URL_img05 = variant[2]
-    const URL_img10 = variant[3]
+    // const URL_img10 = variant[3]
 
     return (
         <Container style={{
@@ -17,7 +17,7 @@ const ImgEachPerson = (props) => {
             <div><img src={ URL_img05 } width={"100%"} height={"auto"} alt={"img"} loading="lazy" /></div>
             <div><img src={ URL_img03 } width={"100%"} height={"auto"} alt={"img"} loading="lazy" /></div>
             <div><img src={ URL_img04 } width={"100%"} height={"auto"} alt={"img"} loading="lazy" /></div>
-            <div><img src={ URL_img10 } width={"100%"} height={"auto"} alt={"img"} loading="lazy" /></div>
+            {/*<div><img src={ URL_img10 } width={"100%"} height={"auto"} alt={"img"} loading="lazy" /></div>*/}
         </Container>
     )
 }
