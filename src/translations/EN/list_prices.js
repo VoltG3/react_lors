@@ -40,22 +40,22 @@ export const LIST_PRICES_EN = {
             {
                 id : "1",
                 item : "First doctor's appointment",
-                price : "35"
+                price : "45"
             },
             {
                 id : "2",
                 item : "Revisited",
-                price : "30"
+                price : "35"
             },
             {
                 id : "3",
                 item : "Nasal irrigation (vacuum suction)",
-                price : "5"
+                price : "10"
             },
             {
                 id : "4",
                 item : "Stop epistaxis with anterior tamponade or with silver nitrate",
-                price : "7"
+                price : "10"
             },
             {
                 id : "5",
@@ -65,17 +65,17 @@ export const LIST_PRICES_EN = {
             {
                 id : "6",
                 item : "Highmore cavity puncture",
-                price : "10"
+                price : "15"
             },
             {
                 id : "7",
                 item : "Removing foreign bodies from the nose, throat or ear",
-                price : "10"
+                price : "15"
             },
             {
                 id : "8",
                 item : "Anesthesia",
-                price : "5"
+                price : "7"
             },
             {
                 id : "9",
@@ -90,27 +90,27 @@ export const LIST_PRICES_EN = {
             {
                 id : "11",
                 item : "Reopening of the abscess",
-                price : "8"
+                price : "12"
             },
             {
                 id : "12",
                 item : "Mandeļu lakūnu skalošana",
-                price : "7"
+                price : "14"
             },
             {
                 id : "13",
                 item : "Administering medication into the larynx or external ear canal, nose, or mucous membrane anemization",
-                price : "5"
+                price : "7"
             },
             {
                 id : "14",
                 item : "Removal and/or rinsing of sulfur plugs",
-                price : "7"
+                price : "10"
             },
             {
                 id : "15",
                 item : "Paracentesis",
-                price : "14"
+                price : "15"
             },
             {
                 id : "16",
@@ -120,17 +120,17 @@ export const LIST_PRICES_EN = {
             {
                 id : "17",
                 item : "Fibrorhinopharyngolaryngoscopy",
-                price : "17"
+                price : "20"
             },
             {
                 id : "18",
                 item : "Eustachian tube blowout",
-                price : "4"
+                price : "6"
             },
             {
                 id : "19",
                 item : "Eardrum massage",
-                price : "4"
+                price : "7"
             },
             {
                 id : "20",
@@ -145,12 +145,12 @@ export const LIST_PRICES_EN = {
             {
                 id : "22",
                 item : "Rinsing of the nasal cavities / sinuses, administration of medication in the postoperative period",
-                price : "7"
+                price : "10"
             },
             {
                 id : "23",
                 item : "Rhinomanometry of 4 phases before and after anemization",
-                price : "14"
+                price : "20"
             },
             {
                 id : "24",
@@ -165,7 +165,7 @@ export const LIST_PRICES_EN = {
             {
                 id : "26",
                 item : "Taking blood from a vein",
-                price : "3"
+                price : "5"
             },
             {
                 id : "27",
@@ -185,7 +185,7 @@ export const LIST_PRICES_EN = {
             {
                 id : "30",
                 item : "Tympanometry with impedance measurement",
-                price : "5"
+                price : "12"
             },
             {
                 id : "31",
@@ -195,12 +195,12 @@ export const LIST_PRICES_EN = {
             {
                 id : "32",
                 item : "Examination of the tympanic membrane and/or tympanic cavity with a binocular microscope",
-                price : "6"
+                price : "10"
             },
             {
                 id : "33",
                 item : "Audiometry",
-                price : "11"
+                price : "18"
             },
             {
                 id : "34",
@@ -210,7 +210,7 @@ export const LIST_PRICES_EN = {
             {
                 id : "35",
                 item : "Sonographic examination of the paranasal sinuses",
-                price : "5"
+                price : "7"
             }
         ]
     }

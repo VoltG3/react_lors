@@ -40,22 +40,22 @@ export const LIST_PRICES_LV = {
             {
                 id : "1",
                 item : "Pirmreizēja ārsta pieņemšana",
-                price : "35"
+                price : "45"
             },
             {
                 id : "2",
                 item : "Atkārtota apskate",
-                price : "30"
+                price : "35"
             },
             {
                 id : "3",
                 item : "Deguna blakusdobumu skalošana (vakuuma atsūkšana)",
-                price : "5"
+                price : "10"
             },
             {
                 id : "4",
                 item : "Deguna asiņošanas apturēšana ar priekšējo tamponādi vai ar sudraba nitrātu",
-                price : "7"
+                price : "10"
             },
             {
                 id : "5",
@@ -65,17 +65,17 @@ export const LIST_PRICES_LV = {
             {
                 id : "6",
                 item : "Haimora dobuma punkcija",
-                price : "10"
+                price : "15"
             },
             {
                 id : "7",
                 item : "Svešķermeņu iznemšana no deguna, rīkles vai auss",
-                price : "10"
+                price : "15"
             },
             {
                 id : "8",
                 item : "Anestēzija",
-                price : "5"
+                price : "7"
             },
             {
                 id : "9",
@@ -90,27 +90,27 @@ export const LIST_PRICES_LV = {
             {
                 id : "11",
                 item : "Atkārtota abscessa atvēršana",
-                price : "8"
+                price : "12"
             },
             {
                 id : "12",
                 item : "Mandeļu lakūnu skalošana",
-                price : "7"
+                price : "14"
             },
             {
                 id : "13",
                 item : "Medikamentu ievadīšana balsenē vai ārējā auss ejā, degunā vai gļotādu anemizācija",
-                price : "5"
+                price : "7"
             },
             {
                 id : "14",
                 item : "Sēra korķu izņemsana un / vai skalošana",
-                price : "7"
+                price : "10"
             },
             {
                 id : "15",
                 item : "Paracentēze",
-                price : "14"
+                price : "15"
             },
             {
                 id : "16",
@@ -120,17 +120,17 @@ export const LIST_PRICES_LV = {
             {
                 id : "17",
                 item : "Fibrorinofaringolaringoskopija",
-                price : "17"
+                price : "20"
             },
             {
                 id : "18",
                 item : "Eistahija kanāla izpūšana",
-                price : "4"
+                price : "6"
             },
             {
                 id : "19",
                 item : "Bungplēvītes masāža",
-                price : "4"
+                price : "7"
             },
             {
                 id : "20",
@@ -145,12 +145,12 @@ export const LIST_PRICES_LV = {
             {
                 id : "22",
                 item : "Deguna dobumu / blakusdobumu skalošana, medikamentu ievadīšana pēcoperācijas periodā",
-                price : "7"
+                price : "10"
             },
             {
                 id : "23",
                 item : "Rinomanometrija 4 fāžu pirms un pēc anemizācijas",
-                price : "14"
+                price : "20"
             },
             {
                 id : "24",
@@ -165,7 +165,7 @@ export const LIST_PRICES_LV = {
             {
                 id : "26",
                 item : "Asins paņemšana no vēnas",
-                price : "3"
+                price : "5"
             },
             {
                 id : "27",
@@ -185,7 +185,7 @@ export const LIST_PRICES_LV = {
             {
                 id : "30",
                 item : "Timpanometrija ar impedances mērīšanu",
-                price : "5"
+                price : "12"
             },
             {
                 id : "31",
@@ -195,12 +195,12 @@ export const LIST_PRICES_LV = {
             {
                 id : "32",
                 item : "Bungādiņas un / vai bungu dobuma izmeklēšana ar binokulāro mikroskopu",
-                price : "6"
+                price : "10"
             },
             {
                 id : "33",
                 item : "Audiometrija",
-                price : "11"
+                price : "18"
             },
             {
                 id : "34",
@@ -210,7 +210,7 @@ export const LIST_PRICES_LV = {
             {
                 id : "35",
                 item : "Deguna blakus dobumu sonogrāfiska izmeklēšana",
-                price : "5"
+                price : "7"
             }
         ]
     }
