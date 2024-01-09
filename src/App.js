@@ -7,8 +7,6 @@ import { Outlet } from 'react-router-dom'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Cookie from './components/Cookie'
-/*import MovableBlock from './utils/movableBlock'
-import DeleteCookies from './utils/DeleteCookies'*/
 
 export default function App() {
 

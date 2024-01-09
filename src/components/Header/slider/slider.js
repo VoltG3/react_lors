@@ -1,12 +1,9 @@
 import styled from 'styled-components'
 
 import SliderTextContentDesktop from './sliderTextContentDesktop'
-/*import {MediaDesktop} from "../../../media";*/
 
-import config from "../../../config";
-import SliderTextContentMobile from "./sliderTextContentMobile";
-
-
+import config from '../../../config'
+import SliderTextContentMobile from './sliderTextContentMobile'
 
 const Slider = () => {
     const URL_slider01 = config.slider.URL_slider01

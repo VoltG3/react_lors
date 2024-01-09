@@ -1,5 +1,5 @@
 
-import config from "../../../config";
+import config from '../../../config'
 
 
 export default function Logo(props) {

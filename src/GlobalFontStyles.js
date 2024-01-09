@@ -65,7 +65,7 @@ export const GlobalFontStyles = createGlobalStyle`
       // [ BUTTONS ] -----------------------------------------------
 
       .textContent--button {
-        font-family: var(--font--Roboto);
+        font-family: var(--font--Roboto),sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
@@ -75,7 +75,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
       
           .textContent--button--contacts {
-            font-family: var(--font--Roboto);
+            font-family: var(--font--Roboto),sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -85,7 +85,7 @@ export const GlobalFontStyles = createGlobalStyle`
           }
     
           .textContent--button--appointment {
-            font-family: var(--font--Roboto);
+            font-family: var(--font--Roboto),sans-serif;
             font-size: 15px;
             font-weight: 400;
             line-height: 1.5;
@@ -97,7 +97,7 @@ export const GlobalFontStyles = createGlobalStyle`
       // [ COMMON ] ------------------------------------------------
       // [ NEW ] ---------------------------------------------------
       .textContent--h0 {
-        font-family: var(--font--GTWalsheimMedium);
+        font-family: var(--font--GTWalsheimMedium),sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--h0--fontsize);
@@ -110,7 +110,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--h0--rus {
-        font-family: var(--font--Montserrat);
+        font-family: var(--font--Montserrat),sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--h0--rus--fontsize);
@@ -121,7 +121,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
       // [ NEW ] ---------------------------------------------------
       .textContent--h1 {
-        font-family: var(--font--GTWalsheimMedium);
+        font-family: var(--font--GTWalsheimMedium),sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--h1--fontsize);
@@ -132,7 +132,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--h1--rus {
-        font-family: var(--font--Montserrat);
+        font-family: var(--font--Montserrat),sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--h1--rus--fontsize);
@@ -143,7 +143,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--paragraph {
-        font-family: var(--font--GTWalsheimLight);
+        font-family: var(--font--GTWalsheimLight),sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--paragraph--fontsize);
@@ -153,7 +153,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--paragraph--rus {
-        font-family: var(--font--Montserrat);
+        font-family: var(--font--Montserrat),sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--paragraph--rus--fontsize);
@@ -163,7 +163,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--h2 {
-        font-family: var( --font--GTWalsheimMedium);
+        font-family: var( --font--GTWalsheimMedium),sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--h2--fontsize);
@@ -174,7 +174,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--h2--rus {
-        font-family: var(--font--Montserrat);
+        font-family: var(--font--Montserrat),sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--h2--rus--fontsize);
@@ -185,7 +185,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--h3 {
-        font-family: var(--font--OpenSans);
+        font-family: var(--font--OpenSans),sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: var(--textContent--h3--fontsize);
@@ -196,7 +196,7 @@ export const GlobalFontStyles = createGlobalStyle`
       // [ LISTS ] -------------------------------------------------
 
       .textContent--list--header {
-        font-family: var(--font--Montserrat);
+        font-family: var(--font--Montserrat),sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: var(--textContent--list--header--fontsize);
@@ -209,7 +209,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--list--item {
-        font-family: var(--font--Montserrat);
+        font-family: var(--font--Montserrat),sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--list--item--fontsize);
@@ -220,7 +220,7 @@ export const GlobalFontStyles = createGlobalStyle`
       // [ HEADER ] ------------------------------------------------
 
       .textContent--header--navigation--languages {
-        font-family: var(--font--OpenSans);
+        font-family: var(--font--OpenSans),sans-serif;
         font-style: normal;
         font-weight: 300;
         font-size: var(--textContent--header--navigation--languages--fontsize);
@@ -228,7 +228,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--header--desktop--infoline {
-        font-family: var(--font--OpenSans);
+        font-family: var(--font--OpenSans),sans-serif;
         font-style: normal;
         font-weight: 300;
         font-size: var(--textContent--header--navigation--infoline--fontsize);
@@ -236,7 +236,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--header--desktop--navigation {
-        font-family: var(--font--OpenSans);
+        font-family: var(--font--OpenSans),sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--header--desktop--navigation--fontsize);
@@ -246,7 +246,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--header--mobile--navigation {
-        font-family: var(--font--OpenSans);
+        font-family: var(--font--OpenSans),sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 21px;
@@ -257,7 +257,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--header--mobile--languages {
-        font-family: var(--font--OpenSans);
+        font-family: var(--font--OpenSans),sans-serif;
         font-style: normal;
         font-weight: 300;
         font-size: 23px;
@@ -270,7 +270,7 @@ export const GlobalFontStyles = createGlobalStyle`
       // [ FOOTER ] ------------------------------------------------
 
       .textContent--footer--navigation {
-        font-family: var(--font--OpenSans);
+        font-family: var(--font--OpenSans),sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: var(--textContent--footer--navigation--fontsize);
@@ -284,7 +284,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
       
       .textContent--footer--header {
-        font-family: var(--font--OpenSans);
+        font-family: var(--font--OpenSans),sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: var(--textContent--footer--header--fontsize);
@@ -293,7 +293,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--footer--item {
-        font-family: var(--font--OpenSans);
+        font-family: var(--font--OpenSans),sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: var(--textContent--footer--item--fontsize);
@@ -305,7 +305,7 @@ export const GlobalFontStyles = createGlobalStyle`
       // [ NEW ] ---------------------------------------------------
 
       .textContent--tabledata--header {
-        font-family: var(--font--Roboto);
+        font-family: var(--font--Roboto),sans-serif;
         font-size: 26px;
         font-weight: 300;
         color: var(--color--tabledata);
@@ -316,7 +316,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--tabledata--item {
-        font-family: var(--font--Roboto);
+        font-family: var(--font--Roboto),sans-serif;
         font-size: 18px;
         font-weight: 300;
         line-height: 1.5;
@@ -329,7 +329,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--tabledata--item--small {
-        font-family: var(--font--Roboto);
+        font-family: var(--font--Roboto),sans-serif;
         font-size: 14px;
         font-weight: 300;
         line-height: 1.5;
@@ -342,7 +342,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--tabledata--item--names {
-        font-family: var(--font--OpenSans);
+        font-family: var(--font--OpenSans),sans-serif;
         font-size: 12px;
         font-weight: 600;
         opacity: var(--font--opacity);
@@ -356,7 +356,7 @@ export const GlobalFontStyles = createGlobalStyle`
       // [ NEW ] ---------------------------------------------------
       
       .textContent--table--header {
-        font-family: var(--font--GTWalsheimMedium);
+        font-family: var(--font--GTWalsheimMedium),sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: var(--textContent--table--header--fontsize);
@@ -365,7 +365,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--table--header--rus {
-        font-family: var(--font--Montserrat);
+        font-family: var(--font--Montserrat),sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: var(--textContent--table--header--rus--fontsize);
@@ -374,7 +374,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--table--item {
-        font-family: var(--font--GTWalsheimLight);
+        font-family: var(--font--GTWalsheimLight),sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--table--item--fontsize);
@@ -384,7 +384,7 @@ export const GlobalFontStyles = createGlobalStyle`
       }
 
       .textContent--table--item--rus {
-        font-family: var(--font--Montserrat);
+        font-family: var(--font--Montserrat),sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--table--item--rus--fontsize);

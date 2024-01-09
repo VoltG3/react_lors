@@ -5,4 +5,6 @@ export const CHAPTERS_EN = {
     prices : "Price lists",
     info : "Information for patients",
     contacts : "Contacts and working hours",
+    appointment : "E - appointment",
+    covid : "Covid safety",
 }

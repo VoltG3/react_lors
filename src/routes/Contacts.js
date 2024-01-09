@@ -1,8 +1,7 @@
 import React, { lazy, Suspense } from 'react'
 import { StyledPageContainer as Page } from './styles/styled.page'
 import { StyledInlineParagraphContainer as InlineParagraph } from './styles/styled.inline.paragraph'
-import { StyledInlineParagraphWithImageContainer as InlineParagraphWithImage } from "./styles/styled.inline.paragraph.image";
-/*import { MediaDesktop, MediaMobile } from '../media'*/
+import { StyledInlineParagraphWithImageContainer as InlineParagraphWithImage } from './styles/styled.inline.paragraph.image'
 
 import config from '../config'
 

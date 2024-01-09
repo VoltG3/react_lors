@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next'
 import { ButtonController } from '../../Button/Button.controller'
 
 function SliderTextContentMobile(props) {
-    const [t] = useTranslation(["sections", "common"])
+    const [t] = useTranslation(["chapter_header", "common"])
     const introHeader = config.common.introHeader
 
     const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
@@ -24,12 +24,13 @@ function SliderTextContentMobile(props) {
             height: 'auto'
         }}>
             <Temporary3>
-                <p className={ h1 }>{ introHeader }</p>
-                <p style={{ paddingTop: '7px'}} className={ paragraph }>{ t("sections:section_header_part06") }</p>
+                <p className={h1}>{introHeader}</p>
+                <p style={{paddingTop: '7px'}} className={paragraph}>{t("part_01")}</p>
+                {/*<p style={{paddingTop: '7px'}} className={paragraph}>{t("sections:section_header_part06")}</p>*/}
             </Temporary3>
 
-           <Link to={"contacts"}>
-               <ButtonController variant={"sliderMobile"} />
+            <Link to={"contacts"}>
+                <ButtonController variant={"sliderMobile"}/>
             </Link>
         </div>
     )

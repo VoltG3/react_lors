@@ -9,10 +9,10 @@ import { useTranslation } from 'react-i18next'
 import LanguagesMobile from './languages.mobile'
 import { ButtonController } from '../../Button/Button.controller'
 
-import "./styles.css";
+import './styles.css'
 
 const SideBar = (props) => {
-    const [t] = useTranslation(["common", "covid"])
+    const [t] = useTranslation(["chapters", "covid"])
     const logoTransparent00 = config.logo_transparent.logoTransparent00
     const URL_01 = config.external_url.URL_01
     const URL_04 = config.external_url.URL_04
@@ -42,31 +42,31 @@ const SideBar = (props) => {
             <div style={{ width: '100%', height: '1px', backgroundColor: 'white', marginBottom: '30px', marginTop: '30px'}}></div>
 
             <Link onClick={() => handleCloseMenu()} className={"menu-item"} to={"home"}>
-                <p style={{paddingLeft: '10px' }} className={"textContent--header--mobile--navigation"}>{ t("common:home") }</p>
+                <p style={{paddingLeft: '10px' }} className={"textContent--header--mobile--navigation"}>{ t("chapters:home") }</p>
             </Link>
 
             <Link onClick={() => handleCloseMenu()} className={"menu-item"} to={"about"}>
-                <p style={{paddingLeft: '10px'}} className={"textContent--header--mobile--navigation"}>{ t("common:about") }</p>
+                <p style={{paddingLeft: '10px'}} className={"textContent--header--mobile--navigation"}>{ t("chapters:about") }</p>
             </Link>
 
             <Link onClick={() => handleCloseMenu()} className={"menu-item"} to={"services"}>
-                <p style={{paddingLeft: '10px'}} className={"textContent--header--mobile--navigation"}>{ t("common:services") }</p>
+                <p style={{paddingLeft: '10px'}} className={"textContent--header--mobile--navigation"}>{ t("chapters:services") }</p>
             </Link>
 
             <Link onClick={() => handleCloseMenu()} className={"menu-item"} to={"prices"}>
-                <p style={{paddingLeft: '10px'}} className={"textContent--header--mobile--navigation"}>{ t("common:prices") }</p>
+                <p style={{paddingLeft: '10px'}} className={"textContent--header--mobile--navigation"}>{ t("chapters:prices") }</p>
             </Link>
 
             <Link onClick={() => handleCloseMenu()} className={"menu-item"} to={"info"}>
-                <p style={{paddingLeft: '10px'}} className={"textContent--header--mobile--navigation"}>{ t("common:info") }</p>
+                <p style={{paddingLeft: '10px'}} className={"textContent--header--mobile--navigation"}>{ t("chapters:info") }</p>
             </Link>
 
             <Link onClick={() => handleCloseMenu()} className={"menu-item"} to={"contacts"}>
-                <p style={{paddingLeft: '10px'}} className={"textContent--header--mobile--navigation"}>{ t("common:contacts") }</p>
+                <p style={{paddingLeft: '10px'}} className={"textContent--header--mobile--navigation"}>{ t("chapters:contacts") }</p>
             </Link>
 
             <a className={"textContent--header--mobile--navigation"} href={ `${URL_01}` } target={"_blank"} rel={"noopener noreferrer"}>
-                <p style={{paddingLeft: '10px'}}>{ t("common:eapointment") }</p>
+                <p style={{paddingLeft: '10px'}}>{ t("chapters:appointment") }</p>
             </a>
 
             <div style={{ width: '100%', height: '1px', backgroundColor: 'white', marginBottom: '10px', marginTop: '30px'}}></div>
@@ -76,7 +76,7 @@ const SideBar = (props) => {
             <div style={{ width: '100%', height: '1px', backgroundColor: 'white', marginBottom: '30px', marginTop: '10px'}}></div>
 
             <div style={{ paddingTop: '20px', paddingBottom: '20px' }}>
-                <p style={{ color: 'white', letterSpacing: '2px', paddingBottom: '30px', paddingLeft: '10px'}} className={ paragraph }>{ t("covid:covid")}</p>
+                <p style={{ color: 'white', letterSpacing: '2px', paddingBottom: '30px', paddingLeft: '10px'}} className={ paragraph }>{ t("chapters:covid")}</p>
 
                 <div style={{ display: 'flex', justifyContent: 'flex-start', width: '100%', paddingLeft: '10px'}}>
                     <a href={ `${URL_04}` } target="_blank" rel="noopener noreferrer">

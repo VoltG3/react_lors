@@ -4,7 +4,7 @@ export const LIST_PRICES_EN = {
         list_items : [
             {
                 id : "1",
-                item : "For childre",
+                item : "For children",
                 price : "0"
             },
             {
