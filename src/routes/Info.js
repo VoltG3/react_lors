@@ -1,14 +1,11 @@
 import React from 'react'
 import { StyledPageContainer as Page } from './styles/styled.page'
 import { StyledInlineParagraphWithButtonContainer as InlineParagraphWithButton } from './styles/styled.inline.paragraph.button'
-
 import config from '../config'
-
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { ImageController } from '../components/Image/image.controller'
-
 import LineLang from '../components/line.lang'
 import { ButtonController } from '../components/Button/Button.controller'
 import { ListInformation } from '../components/Lists/ListInformation'

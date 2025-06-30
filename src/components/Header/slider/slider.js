@@ -26,16 +26,7 @@ const Slider = () => {
 
     )
 }
-/*
 
-.desktop { display: block!important; }
-    .mobile { display: none!important; }
-
-  @media only screen and (max-width: 922px) {
-    .desktop { display: none!important; }
-    .mobile { display: block!important; }
-  }
- */
 const SliderContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -48,8 +39,6 @@ const SliderContainer = styled.div`
     height: 100%;
 
     @media only screen and (max-width: 922px) {
-      //min-height: 241px;
-     // object-fit: contain;
       height: auto;
     }
   }
@@ -62,18 +51,13 @@ const SliderContainer = styled.div`
     overflow: hidden;
     position: relative;
     opacity: 0.4;
-    //border: solid 2px red;
     
     @media only screen and (max-width: 922px) {
       opacity: 0.7;
-      //min-height: 95px;
-      //max-height: 243px; 
       min-height: 150px;
       max-height: 150px;
       height: auto!important;
     }
-    
-    //border: solid 1px black;
   }
   
   .slide > div {

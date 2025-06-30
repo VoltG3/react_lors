@@ -46,7 +46,7 @@ const StyledHeaderSubSetInfo = styled.div`
     width: 100%;
     height: auto;
   padding-top: 5px;
-  //border: solid 1px red;
+
   & div:first-child {
     & p:hover {
       cursor: pointer;

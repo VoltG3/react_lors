@@ -6,56 +6,29 @@ const Container = css`
   justify-content: ${({ theme }) => theme.position.justifyContent }
     width: 100%;
     height: auto;
-  overflow: hidden;
+    overflow: hidden;
 
-  #button {
-    display: flex;
-    width: ${({ theme }) => theme.sizes.minWidth };
-    height: auto;
-    margin-right: var(--size--padding30);
-
-    @media only screen and (max-width: 700px) { min-width: 190px; }
-  }
+    button {
+        padding-top: ${({ theme }) => theme.sizes.paddingVertical };
+        padding-bottom: ${({ theme }) => theme.sizes.paddingVertical };
+    }
   
-   button {
-    padding-top: ${({ theme }) => theme.sizes.paddingVertical };
-    padding-bottom: ${({ theme }) => theme.sizes.paddingVertical };
-  }
-  
-  .button {
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    min-width: inherit;
-    width: inherit;
-    box-sizing: border-box;
-    //padding: 15px 0 15px 0;
-  
-    border-radius: 5px;
-    border: 1px solid ${({ theme }) => theme.colors.borderColor };
-    background: ${({ theme }) => theme.colors.backgroundColor };
-    
-    transition:
-            background .5s linear,
-            border-color ease-in .5s,
-            padding-left ease-in .5s;
     & p {
-      display: inline-block;
-      margin-left: ${({ theme }) => theme.sizes.paragraphMarginLeft };
-      color: ${({ theme }) => theme.colors.color }!important; /**/
+        display: inline-block;
+        margin-left: ${({ theme }) => theme.sizes.paragraphMarginLeft };
+        color: ${({ theme }) => theme.colors.color }!important; /**/
     }
 
     &:hover {
-      cursor: pointer;
-      background-color: ${({ theme }) => theme.colors.backgroundHover };
-      border-color: ${({ theme }) => theme.colors.backgroundHover };
-      padding-left: 30px;
-      transition:
-              background .2s linear,
-              border-color ease-out .2s,
-              padding-left ease-out .2s;
+        cursor: pointer;
+        background-color: ${({ theme }) => theme.colors.backgroundHover };
+        border-color: ${({ theme }) => theme.colors.backgroundHover };
+        padding-left: 30px;
+        transition:
+            background .2s linear,
+            border-color ease-out .2s,
+            padding-left ease-out .2s;
     }
-  }
 `
 
 const AfterBefore = css`
@@ -100,14 +73,6 @@ const After = css`
     transition:
             background .5s linear,
             border-color ease-in .5s;
-  }
-
-  .button:hover::after {
-    background: ${({ theme }) => theme.colors.backgroundHover };
-    border-color: ${({ theme }) => theme.colors.backgroundHover };
-    transition:
-            background .2s linear,
-            border-color ease-out .2s;
   }
 `
 

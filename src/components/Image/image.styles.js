@@ -118,8 +118,6 @@ const MediaEquipment = css`
   }
 `
 
-/* MediaOffice */
-
 const MediaContacts = css`
   gap: 30px;
   

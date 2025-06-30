@@ -1,33 +1,9 @@
 import styled from 'styled-components'
-/*import React, { useEffect, useRef } from 'react'*/
-
 import NavigationDesktop from './navigationDesktop/navigationDesktop'
 import NavigationMobile from './navigationMobile/navigationMobile'
 import Slider from './slider/slider'
 
 function Header() {
-  /*  const menuRef = useRef(null)
-    let previousScrollPosition = 0
-
-    useEffect(() => {*/
-        /*function handleScroll() {
-            const currentScrollPosition = window.pageYOffset
-
-            if (currentScrollPosition > previousScrollPosition) {
-                menuRef.current.style.display = 'none' // scrolling down
-            } else {
-                menuRef.current.style.display = 'block' // scrolling up
-            }
-
-            previousScrollPosition = currentScrollPosition
-        }
-
-        window.addEventListener('scroll', handleScroll)
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll)
-        }
-    }, [])*/
 
     return (
         <StyledHeader>
@@ -35,8 +11,7 @@ function Header() {
                <NavigationDesktop />
             </div>
 
-            <div className={"navigation mobile"}
-                 /*ref={ menuRef }*/ >
+            <div className={"navigation mobile"}>
                <NavigationMobile />
             </div>
 

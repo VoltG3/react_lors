@@ -1,14 +1,10 @@
 import React from 'react'
 import { TileHours as StyledTileHours } from './styles'
 import config from '../../../config'
-
 import { useTranslation } from 'react-i18next'
-
 import LineTiny from '../../line.short'
 import TileHoursJSON from './tile.hours.JSON'
-
 import { ButtonController } from '../../Button/Button.controller'
-
 
 const TileHours = () => {
     const [t] = useTranslation(["tiles"])

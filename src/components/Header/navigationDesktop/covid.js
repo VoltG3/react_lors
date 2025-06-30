@@ -61,19 +61,6 @@ const StyledCovid = styled.div`
             width: var(--page--width100);
             height: var(--desktop--navigation--height);
       box-sizing: border-box;
-      //background-color: aquamarine;
-      
-      /*& div:nth-child(3) {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        width: auto;
-        height: auto;
-      }*/
-      
-      & div {
-        //border: dotted 1px blue;
-      }
     }
   }
 

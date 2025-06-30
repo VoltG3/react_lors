@@ -6,7 +6,6 @@ export const StyledInlineParagraphWithImageContainer = styled.div`
   
   & span {
     margin-right: 30px;
-    //border: solid 1px red;  // - issue
   }
   
   .inlineParagraphWithImage {
@@ -18,8 +17,6 @@ export const StyledInlineParagraphWithImageContainer = styled.div`
 
     & span {
       width: 100%;
-      //margin-right: auto;
-      //border: solid 1px red; // - issue
     }
 
     .inlineParagraphWithImage {

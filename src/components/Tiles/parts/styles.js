@@ -46,7 +46,6 @@ const Hours = css`
     max-width: 200px;
       width: 100%;
       height: auto;
-    // tile.hours.JSON.js
   }
 
   .cell {
@@ -68,9 +67,7 @@ const Contracts = css`
       height: auto;
     padding-top: 44px;
     padding-bottom: 44px;
-
-    /*@media only screen and (max-width: 700px) {  flex-direction: column; }*/
-    
+      
     .r1c1 { max-width: 40px; & img { max-width: 40px; }}
     .r1c2 { max-width: 55px; & img { max-width: 55px; }}
     .r1c3 { max-width: 55px; & img { max-width: 55px; }}

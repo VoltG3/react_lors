@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import TileHours from './parts/tile.hours'
 import TileContracts from './parts/tile.contracts'
 import TileAvailability from './parts/tile.availability'

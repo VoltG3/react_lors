@@ -1,7 +1,6 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
-
 import { MODULES_LV } from './LV/modules'
 import { MODULES_EN } from './EN/modules'
 import { MODULES_RU } from './RU/modules'
@@ -84,41 +83,3 @@ i18n
     });
 
     i18n.changeLanguage('lv')
-
-     /*   export default i18n;
-
-                    initReactI18next.init(i18n);
-
-
-async function initI18n() {
-    await i18n.init({
-        lng: 'en',
-    })
-
-    await i18n.use(LanguageDetector).init({
-        fallbackLng: 'en',
-
-    })
-
-    const detectedLanguage = i18n.language;
-    const language = detectedLanguage === 'lv' ? 'lv' : detectedLanguage === 'ru' ? 'ru' : 'en'
-    try {
-        await i18n.changeLanguage(language)
-        console.log(`Language set to ${language}`)
-    } catch (error) {
-        console.error(error)
-    }
-}
-
-function handleInit() {
-    initI18n()
-        .then(() => {
-            console.log('i18n initialized successfully')
-        })
-        .catch(error => {
-            console.error(error)
-        })
-}
-
-handleInit()
-*/

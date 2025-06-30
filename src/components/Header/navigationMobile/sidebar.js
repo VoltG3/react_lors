@@ -27,7 +27,7 @@ const SideBar = (props) => {
     };
 
     return (
-        // Pass on our props
+
         <Menu
             pageWrapId={"page-wrap"}
             isOpen={isMenuOpen}
@@ -87,7 +87,7 @@ const SideBar = (props) => {
 
 
         </Menu>
-    );
-};
+    )
+}
 
 export default SideBar

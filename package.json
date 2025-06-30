@@ -27,6 +27,7 @@
     "webpack": "^5.99.9"
   },
   "scripts": {
+    "start": "react-scripts start",
     "clean": "rm -rf ./build",
     "build": "webpack --config webpack.config.js && react-scripts build --source-map",
     "postbuild": "chmod -R 755 ./build && php build/generate-htaccess.php && rm -f build/generate-htaccess.php",

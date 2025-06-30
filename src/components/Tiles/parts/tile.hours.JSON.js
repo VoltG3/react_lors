@@ -12,7 +12,6 @@ const TileHoursJSON = () => {
           jsonData.forEach(function(obj) { arrayOpeningHoursEU.push( TransformData(obj.open))})
           jsonData.forEach(function(obj) { arrayOpeningHoursUS.push( TransformData(obj.open))}); void TransformFormat(arrayOpeningHoursUS)
     const arrayOpeningHours = i18n.language === 'en' ? arrayOpeningHoursUS : arrayOpeningHoursEU
-    //console.table(arrayOpeningHours)
 
     const tableParagraph = "textContent--tabledata--item--small"
 

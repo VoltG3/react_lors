@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import config from '../../config'
-
 import { StyledCollective4 as Container } from './image.styles'
-
 
 const ImgCollective4 = (props) => {
     const [showHidden1, setShowHidden1] = useState(false);

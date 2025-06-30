@@ -20,7 +20,6 @@ export default function App() {
                 width: '100vw',
                 height: 'auto'
         }}>
-   {/*         <DeleteCookies />*/}
             <GlobalSizeStyles />
             <GlobalColorStyles />
             <GlobalFontStyles />
@@ -28,7 +27,6 @@ export default function App() {
                 <Outlet />
                 <Footer />
             <Cookie />
-            {/* <MovableBlock />*/}
         </div>
   )
 }

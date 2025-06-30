@@ -37,9 +37,7 @@ const StyledSubSetLangMob = styled.div`
       width: 140px;
       height: auto;
   padding-right: 10px;
-  //border: solid 1px white;
- // padding-top: 5px;
-
+    
   & p {
     color: white;
   }

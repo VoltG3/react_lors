@@ -47,7 +47,7 @@ const StyledFooter = styled.div`
   white-space: pre-wrap;
   width: 100vw;
   color: white;
-  background:#021928;//var(--crl--primary--dk);
+  background:#021928;
 
   .innerFooter {
     display: flex;
@@ -81,7 +81,6 @@ const StyledFooter = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    // max-width: 1203px;
     width: 100%;
     height: auto;
 

@@ -10,7 +10,6 @@ const DataColumnPublicHours = () => {
           jsonData.forEach(function(obj) { arrayPublicHoursEU.push( TransformArray(obj.public))})
           jsonData.forEach(function(obj) { arrayPublicHoursUS.push( TransformArray(obj.public))}); void TransformFormat(arrayPublicHoursUS)
     const arrayPublicHours = i18n.language === 'en' ? arrayPublicHoursUS : arrayPublicHoursEU
-    // console.table(arrayPublicHoursEU)
 
     const paragraph = "textContent--tabledata--item--small"
 

@@ -10,7 +10,6 @@ const DataColumnPrivateHours = () => {
           jsonData.forEach(function(obj) { arrayPrivateHoursEU.push( TransformArray(obj.private))})
           jsonData.forEach(function(obj) { arrayPrivateHoursUS.push( TransformArray(obj.private))}); void TransformFormat(arrayPrivateHoursUS)
     const arrayPrivateHours = i18n.language === 'en' ? arrayPrivateHoursUS : arrayPrivateHoursEU
-    //console.table(arrayPrivateHoursEU)
 
     const paragraph = "textContent--tabledata--item--small"
 

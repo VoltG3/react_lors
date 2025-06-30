@@ -18,7 +18,6 @@ export default function GoogleMap() {
                 allowFullScreen=""
                 aria-hidden="false"
                 tabIndex="0"
-               /* loading="lazy"*/
                 referrerPolicy="no-referrer-when-downgrade"
             />
         </div>
