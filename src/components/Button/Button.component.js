@@ -13,13 +13,13 @@ export const ButtonComponent = (props) => {
     const btn_seher = <p className={"textContent--button"}>{ t("navigation_buttons.btn_variant_02") }</p>
 
     const theme = props.label === 'covid' ? Tcovid
-                : props.label === 'mobile' ? Tmobile
-                : props.label === 'sliderDesktop' ? TsliderDesktop
+        : props.label === 'mobile' ? Tmobile
+            : props.label === 'sliderDesktop' ? TsliderDesktop
                 : props.label === 'sliderMobile' ? TsliderMobile
-                : props.label === 'appointment' ? Tappointment
-                : props.label === 'contacts' ? Tcontacts
-                : props.label === 'info' ? Tinfo
-                : Tdefault
+                    : props.label === 'appointment' ? Tappointment
+                        : props.label === 'contacts' ? Tcontacts
+                            : props.label === 'info' ? Tinfo
+                                : Tdefault
     return (
         <ThemeProvider theme={ theme }>
             <StyledButton>
