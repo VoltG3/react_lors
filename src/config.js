@@ -33,21 +33,6 @@ const config = {
         logoColored04: process.env.PUBLIC_URL + '/assets/logo_colored/Gjensidige_colored.png',
         logoColored05: process.env.PUBLIC_URL + '/assets/logo_colored/Seesam_colored.png'
     },
-    icons_navigation : {
-        icon_T: process.env.PUBLIC_URL + '/assets/icons/icon_navigation_telefon.svg',
-        icon_M: process.env.PUBLIC_URL + '/assets/icons/icon_navigation_mail.svg',
-        icon_A: process.env.PUBLIC_URL + '/assets/icons/icon_navigation_appointment.svg'
-    },
-    icons_availability: {
-        icon01: process.env.PUBLIC_URL + '/assets/icons/icon_availability_01.svg',
-        icon02: process.env.PUBLIC_URL + '/assets/icons/icon_availability_02.svg',
-        icon03: process.env.PUBLIC_URL + '/assets/icons/icon_availability_03.svg',
-        icon04: process.env.PUBLIC_URL + '/assets/icons/icon_availability_04.svg',
-        icon05: process.env.PUBLIC_URL + '/assets/icons/icon_availability_05.svg',
-        icon06: process.env.PUBLIC_URL + '/assets/icons/icon_availability_06.svg',
-        icon07: process.env.PUBLIC_URL + '/assets/icons/icon_availability_07.svg',
-        icon08: process.env.PUBLIC_URL + '/assets/icons/icon_availability_08.svg'
-    },
     names: {
         name_01: 'Dace Sidorova',
         name_02: 'Elīna Mežzīle',

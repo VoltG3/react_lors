@@ -5,14 +5,23 @@ import config from '../../../config'
 import { useTranslation } from 'react-i18next'
 import LineTiny from '../../line.short'
 
+import {
+    IconAvailability01,
+    IconAvailability02,
+    IconAvailability03,
+    IconAvailability04,
+    IconAvailability05,
+    IconAvailability06,
+    IconAvailability07,
+    IconAvailability08
+} from '../../../assets/icons'
+
 function TileAvailability() {
     const [t] = useTranslation(["tiles"])
     const header = "textContent--tabledata--header"
     const paragraph = "textContent--tabledata--item--small"
     const object_head = "availability."
     const object_item = "availability.item."
-
-    const { icons_availability } = config
 
     return (
         <StyledTileAvailability>
@@ -23,42 +32,42 @@ function TileAvailability() {
 
                 <div className={"availabilitySquare"}>
                     <div>
-                        <img src={ icons_availability.icon01 } alt={"icon"} />
+                        <IconAvailability01 size={28} />
                         <p className={ paragraph }>{ t(object_item + "part_01") }</p>
                     </div>
 
                     <div>
-                        <img src={ icons_availability.icon02 } alt={"icon"} />
+                        <IconAvailability02 size={28} />
                         <p className={ paragraph }>{ t(object_item + "part_02") }</p>
                     </div>
 
                     <div>
-                        <img src={ icons_availability.icon03 } alt={"icon"} />
+                        <IconAvailability03 size={42} />
                         <p className={ paragraph }>{ t(object_item + "part_03") }</p>
                     </div>
 
                     <div>
-                        <img src={ icons_availability.icon04 } alt={"icon"} />
+                        <IconAvailability04 size={30} />
                         <p className={ paragraph }>{ t(object_item + "part_04") }</p>
                     </div>
 
                     <div>
-                        <img src={ icons_availability.icon05 } alt={"icon"} />
+                        <IconAvailability05 size={30} />
                         <p className={ paragraph }>{ t(object_item + "part_05") }</p>
                     </div>
 
                     <div>
-                        <img src={ icons_availability.icon06 } alt={"icon"} />
+                        <IconAvailability06 size={30} />
                         <p className={ paragraph }>{ t(object_item + "part_06") }</p>
                     </div>
 
                     <div>
-                        <img src={ icons_availability.icon07 } alt={"icon"} />
+                        <IconAvailability07 size={30} />
                         <p className={ paragraph }>{ t(object_item + "part_07") }</p>
                     </div>
 
                     <div>
-                        <img style={{ width: '28px', height: '25px'}} src={ icons_availability.icon08 } alt={"icon"} />
+                        <IconAvailability08 size={30} />
                         <p className={ paragraph }>{ t(object_item + "part_08") }</p>
                     </div>
                 </div>

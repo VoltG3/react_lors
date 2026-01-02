@@ -4,27 +4,32 @@ import config from '../../../config'
 
 import { useTranslation } from 'react-i18next'
 
+import {
+    IconNavigation01,
+    IconNavigation02,
+    IconNavigation03
+} from '../../../assets/icons'
+
 function Info() {
     const [t] = useTranslation(["navigation"])
-    const { icons_navigation } = config
     const URL_01 = config.external_url.URL_01
     const p = 'textContent--header--desktop--infoline'
 
     return (
         <StyledHeaderSubSetInfo>
             <div className={"infoSquare"}>
-                <img src={ icons_navigation.icon_T } alt={"icon"} style={{ width: '20px', height: '18px'}}/>
+                <IconNavigation01 size={16} />
                 <p className={ p }>{ t("navigation_secondary.telephone") }</p>
             </div>
 
             <div className={"infoSquare"}>
-                <img src={ icons_navigation.icon_M } alt={"icon"} style={{ width: '20px', height: '18px'}}/>
+                <IconNavigation02 size={20} />
                 <p className={ p }>{ t("navigation_secondary.email") }</p>
             </div>
 
             <a className={""} href={ `${URL_01}`} target={"_blank"} rel={"noopener noreferrer"}>
                 <div className={"infoSquare"}>
-                    <img src={ icons_navigation.icon_A } alt={"icon"} style={{ width: '20px', height: '18px'}}/>
+                    <IconNavigation03 size={20} />
                     <p className={ p }>{ t("navigation_secondary.e_appointment") }</p>
                 </div>
             </a>
