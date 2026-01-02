@@ -20,7 +20,6 @@ function createNavigation() {
             e_appointment : buttons.btn__01,
         },
         navigation_secondary: {
-            covid : "Ковидная безопасность",
             telephone : "Телефон: на рецепции: +371 67186950, на практике: +371 67223546",
             email : "Электронная почта: info@lors.lv",
             e_appointment : buttons.btn__01,

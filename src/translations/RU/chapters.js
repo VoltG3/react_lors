@@ -5,6 +5,5 @@ export const CHAPTERS_RU = {
     prices : "Прайс-лист",
     info : "Информация для пациентов",
     contacts : "Контакты и время работы",
-    appointment : "Е - запись",
-    covid : "Ковидная безопасность",
+    appointment : "Е - запись"
 }

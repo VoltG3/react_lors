@@ -4,8 +4,6 @@ import config from '../../../config'
 
 import { useTranslation } from 'react-i18next'
 
-import Covid from './covid'
-
 function Info() {
     const [t] = useTranslation(["navigation"])
     const { icons_navigation } = config
@@ -14,9 +12,6 @@ function Info() {
 
     return (
         <StyledHeaderSubSetInfo>
-
-
-
             <div className={"infoSquare"}>
                 <img src={ icons_navigation.icon_T } alt={"icon"} style={{ width: '20px', height: '18px'}}/>
                 <p className={ p }>{ t("navigation_secondary.telephone") }</p>
@@ -84,7 +79,3 @@ const StyledHeaderSubSetInfo = styled.div`
 `
 
 export default Info
-
-/*
- <Covid />
-* */
