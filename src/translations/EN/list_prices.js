@@ -94,7 +94,7 @@ export const LIST_PRICES_EN = {
             },
             {
                 id : "12",
-                item : "Mandeļu lakūnu skalošana",
+                item : "Washing of tonsil lacunae",
                 price : "14"
             },
             {
@@ -174,7 +174,7 @@ export const LIST_PRICES_EN = {
             },
             {
                 id : "28",
-                item : "Radiofrekvences elektrokoagulācija deguna gliemēznīcām",
+                item : "Radiofrequency electrocoagulation of the nasal turbinates",
                 price : "175"
             },
             {

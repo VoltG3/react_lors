@@ -14,7 +14,7 @@ export const ListInformation = (props) => {
 
             { t('list_information.list_items', { returnObjects: true }).map((listItem, key) => (
                 <div key={ key }>
-                    <p className={"textContent--list--item"}>{ t(listItem.item) }</p>
+                    <p className={"textContent--list--item"}>{ listItem.item }</p>
                 </div>
             ))}
 
