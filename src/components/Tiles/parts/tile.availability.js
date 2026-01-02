@@ -1,6 +1,5 @@
 import React from 'react'
 import { TileAvailability as StyledTileAvailability } from './styles'
-import config from '../../../config'
 
 import { useTranslation } from 'react-i18next'
 import LineTiny from '../../line.short'
