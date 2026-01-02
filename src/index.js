@@ -16,15 +16,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
     <BrowserRouter>
         <Routes>
-            <Route exact path={"/"} element={<App />} >
-                <Route path={"home"} element={<Home />} />
-                <Route path={"about"} element={<About />} />
-                <Route path={"services"} element={<Services />} />
-                <Route path={"prices"} element={<Prices />} />
-                <Route path={"contacts"} element={<Contacts />} />
-                <Route path={"info"} element={<Info />} />
-                <Route path={"*"} element={<Home />} />
-                <Route path={"/"} element={<Navigate replace to={"home"} />} />
+            <Route path="/" element={<App />}>
+                <Route index element={<Home />} />
+                <Route path="home" element={<Home />} />
+                <Route path="about" element={<About />} />
+                <Route path="services" element={<Services />} />
+                <Route path="prices" element={<Prices />} />
+                <Route path="contacts" element={<Contacts />} />
+                <Route path="info" element={<Info />} />
+                <Route path="*" element={<Navigate to="/" replace />} />
             </Route>
         </Routes>
     </BrowserRouter>

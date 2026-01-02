@@ -43,9 +43,17 @@
     $content .= "  Header set Cache-Control \"max-age=31536000, public\"\n";
     $content .= "</FilesMatch>\n";
 
-// Serve index.html for all requests
-    $content .= "\n# Serve index.html for all requests\n";
-    $content .= "FallbackResource /index.html\n";
+// Serve index.html for all requests (React Router support)
+    $content .= "\n# Serve index.html for all requests (React Router support)\n";
+    $content .= "<IfModule mod_rewrite.c>\n";
+    $content .= "  RewriteEngine On\n";
+    $content .= "  RewriteBase /\n";
+    $content .= "  RewriteRule ^index\.html$ - [L]\n";
+    $content .= "  RewriteCond %{REQUEST_FILENAME} !-f\n";
+    $content .= "  RewriteCond %{REQUEST_FILENAME} !-d\n";
+    $content .= "  RewriteCond %{REQUEST_FILENAME} !-l\n";
+    $content .= "  RewriteRule . /index.html [L]\n";
+    $content .= "</IfModule>\n";
 
     var_dump($manifest);
 
