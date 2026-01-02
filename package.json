@@ -30,7 +30,7 @@
     "start": "react-scripts start",
     "clean": "rm -rf ./build",
     "build": "webpack --config webpack.config.js && react-scripts build --source-map",
-    "postbuild": "chmod -R 755 ./build && php build/generate-htaccess.php && rm -f build/generate-htaccess.php",
+    "postbuild": "chmod -R 755 ./build && php build/generate-htaccess.php && rm -f build/generate-htaccess.php && echo '\n\u001b[33m⚠️  WARNING: When archiving the build folder, make sure to enable \"Show hidden files\"\u001b[0m' && echo '\u001b[33m   otherwise the .htaccess file will not be included in the archive!\u001b[0m\n'",
     "deploy": "dotenv -e .env -- yarn run deploy:raw",
     "deploy:raw": "yarn build && scp -P $DEPLOY_PORT -r ./build/. $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH && echo 'Deploy successful' || echo 'Deploy failed'",
     "test": "react-scripts test",
