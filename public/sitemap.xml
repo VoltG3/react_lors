@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://lors.lv/</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lors.lv/?lng=lv"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lors.lv/?lng=en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lors.lv/?lng=ru"/>
+  </url>
+
+  <!-- Home -->
+  <url>
+    <loc>https://lors.lv/home</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lors.lv/home?lng=lv"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lors.lv/home?lng=en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lors.lv/home?lng=ru"/>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://lors.lv/about</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lors.lv/about?lng=lv"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lors.lv/about?lng=en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lors.lv/about?lng=ru"/>
+  </url>
+
+  <!-- Services -->
+  <url>
+    <loc>https://lors.lv/services</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lors.lv/services?lng=lv"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lors.lv/services?lng=en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lors.lv/services?lng=ru"/>
+  </url>
+
+  <!-- Prices -->
+  <url>
+    <loc>https://lors.lv/prices</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lors.lv/prices?lng=lv"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lors.lv/prices?lng=en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lors.lv/prices?lng=ru"/>
+  </url>
+
+  <!-- Info -->
+  <url>
+    <loc>https://lors.lv/info</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lors.lv/info?lng=lv"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lors.lv/info?lng=en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lors.lv/info?lng=ru"/>
+  </url>
+
+  <!-- Contacts -->
+  <url>
+    <loc>https://lors.lv/contacts</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://lors.lv/contacts?lng=lv"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lors.lv/contacts?lng=en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://lors.lv/contacts?lng=ru"/>
+  </url>
+
+</urlset>

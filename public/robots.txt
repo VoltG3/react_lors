@@ -1,2 +1,10 @@
+# Lors.lv robots.txt
 User-agent: *
-Disallow: /
+Allow: /
+
+# Sitemap
+Sitemap: https://lors.lv/sitemap.xml
+
+# Block assets
+Disallow: /static/
+Disallow: /assets/fonts/
