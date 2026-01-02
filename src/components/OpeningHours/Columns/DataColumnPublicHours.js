@@ -1,14 +1,16 @@
 import i18n from 'i18next'
-import { FetchData } from '../../../JSON/fetchData'
+import { useFetchData } from '../../../JSON/fetchData'
 import TransformFormat from '../../../JSON/transformFormat'
 import { TransformArray } from '../../../JSON/transformArray'
 
 const DataColumnPublicHours = () => {
-    const jsonData = FetchData()
-    const arrayPublicHoursEU = []
-    const arrayPublicHoursUS = []
-          jsonData.forEach(function(obj) { arrayPublicHoursEU.push( TransformArray(obj.public))})
-          jsonData.forEach(function(obj) { arrayPublicHoursUS.push( TransformArray(obj.public))}); void TransformFormat(arrayPublicHoursUS)
+    const { data: jsonData, loading, error } = useFetchData()
+
+    if (loading) return <div>Loading...</div>
+    if (error) return <div>Error loading data</div>
+
+    const arrayPublicHoursEU = jsonData.map(obj => TransformArray(obj.public)).flat()
+    const arrayPublicHoursUS = TransformFormat(jsonData.map(obj => TransformArray(obj.public)).flat())
     const arrayPublicHours = i18n.language === 'en' ? arrayPublicHoursUS : arrayPublicHoursEU
 
     const paragraph = "textContent--tabledata--item--small"

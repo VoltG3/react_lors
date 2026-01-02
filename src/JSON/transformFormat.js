@@ -1,73 +1,63 @@
+/**
+ * Converts 24-hour time format to 12-hour format with am/pm
+ * @param {string} time - Time string in format "HH:MM" or "HH"
+ * @returns {string} Time in 12-hour format, e.g., "9:30 am" or "5:00 pm"
+ */
+function convertTo12HourFormat(time) {
+    if (!time) return ''
 
+    // Parse hours and minutes
+    const [hoursStr, minutesStr = '00'] = time.split(':')
+    let hours = parseInt(hoursStr, 10)
+    const minutes = minutesStr.padStart(2, '0')
+
+    // Determine am/pm
+    const period = hours >= 12 ? 'pm' : 'am'
+
+    // Convert to 12-hour format
+    if (hours === 0) {
+        hours = 12 // Midnight
+    } else if (hours > 12) {
+        hours -= 12
+    }
+
+    return `${hours}:${minutes} ${period}`
+}
+
+/**
+ * Transforms a 2D array of time strings from 24-hour to 12-hour format
+ * @param {string[][]} target - 2D array of time strings
+ * @returns {string[][]} Transformed array with 12-hour format times
+ */
 function TransformFormat(target) {
-
-    function isInt(n) {
-        return Number(n) === n && n % 1 === 0
+    if (!Array.isArray(target)) {
+        return []
     }
 
-    function isFloat(n) {
-        return Number(n) === n && n % 1 !==0
-    }
+    return target.map(row => {
+        if (!Array.isArray(row)) return []
 
-    function TransformINT(t) {
-        let result = ""
-            if(t > 12) { t -= 12; result = t + ":00 pm"}
-            else if(t === 12) { result = t + ":00 am"}
-            else if(t < 12) { result = t + ":00 am"}
-        return result
-    }
+        return row.map(timeStr => {
+            if (!timeStr || timeStr === '') return ''
 
-    function TransformFLOAT(b, a) {
-        a = a.replace('.', ':')
+            // Clean the string
+            const cleaned = timeStr.replace(/\s/g, '').replace(/[,:]/g, '.')
+            const num = parseFloat(cleaned)
 
-        let result = ""
-            if(b > 12) { b -= 10; result = b + "" + a + " pm"}
-            else if(b === 12) { result = b + "" + a + " am"}
-            else if(b < 12) { result = b + "" + a + " am"}
+            if (isNaN(num)) return timeStr
 
-        return result
-    }
-
-        for(let i = 0; i < target.length; i++) {
-            for(let j = 0; j < target[i].length; j++) {
-
-                if(target[i][j] === "") {
-                    target[i][j] = ""
-                } else {
-                    target[i][j] = target[i][j].replace(' ', '')
-                    target[i][j] = target[i][j].replace(':', '.')
-                    target[i][j] = target[i][j].replace(',', '.')
-
-                    let tmp = Number(target[i][j])
-
-                    // console.log("-----------------------------------")
-                    // console.log("[    REM ] - [", target[i][j], "]")
-                    // console.log("[  isINT ] - [", isInt(tmp), "]")
-                    // console.log("[  isNOT ] - [", isFloat(tmp), "]")
-
-                    if(isInt(tmp)) {
-                        target[i][j] = TransformINT(tmp)
-                        // console.log("[    NEW ] - [", TransformINT(tmp), "]")
-                    }
-
-                    if(isFloat(tmp)) {
-                        let temp = ""; temp += tmp
-                        let before = "", after = ""
-                        for(let i = 0; i < temp.indexOf('.'); i++) {
-                            before += "" + temp[i]
-                        }
-
-                        for(let i = temp.indexOf('.'); i < temp.length; i++) {
-                            after += "" + temp[i]
-                        } // console.log("[ UPDATE ] - [ before:: [", before, "] after:: [", after , "]]")
-
-                        before = Number(before)
-                        target[i][j] = TransformFLOAT(before, after)
-                        // console.log("[    NEW ] - [", TransformFLOAT(before, after), "]")
-                }
+            // Handle integer hours (e.g., 9 -> 9:00)
+            if (Number.isInteger(num)) {
+                return convertTo12HourFormat(`${num}:00`)
             }
-        }
-    }
+
+            // Handle decimal format (e.g., 9.5 -> 9:30)
+            const [hoursStr, decimals] = cleaned.split('.')
+            const minutes = decimals ? decimals.padEnd(2, '0') : '00'
+
+            return convertTo12HourFormat(`${hoursStr}:${minutes}`)
+        })
+    })
 }
 
 export default TransformFormat

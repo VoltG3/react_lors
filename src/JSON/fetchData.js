@@ -1,15 +1,28 @@
-import React, { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-export const FetchData = () => {
-    const [data, setData] = React.useState([]);
+export const useFetchData = () => {
+    const [data, setData] = useState([])
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState(null)
 
     useEffect(() => {
-        axios
-            .get("./data.json")
-            .then((res) => setData(res.data))
-            .catch(err => console.error("[ CERR ]", err))
-    }, []); //console.log("[   JSON ]", data)
+        const fetchData = async () => {
+            try {
+                setLoading(true)
+                const response = await axios.get("./data.json")
+                setData(response.data)
+                setError(null)
+            } catch (err) {
+                console.error("[ ERROR ] Failed to fetch data.json:", err)
+                setError(err.message)
+            } finally {
+                setLoading(false)
+            }
+        }
 
-    return data
+        fetchData()
+    }, [])
+
+    return { data, loading, error }
 }

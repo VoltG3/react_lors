@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { ShowData } from '../../JSON/showData'
+import { useShowData } from '../../JSON/showData'
 
 import { StyledOpeningHoursContainer as Container } from './styled.container'
 import { StyledOpeningHoursHeader as Header} from './styled.header'
@@ -16,13 +16,14 @@ import DataColumnPrivateHours from './Columns/DataColumnPrivateHours'
 
 const OpeningHoursController = () => {
     const [t] = useTranslation(["tiles"])
-    const jsonShowData = ShowData()
+    const { showWithReference, showWithoutReference, loading } = useShowData()
     const HeaderPublic = <Header><p className={"textContent--list--header"}>{ t("admissionTimes")}</p></Header>
     const HeaderPrivate = <Header><p className={"textContent--list--header"}>{ t("payingTimes")}</p></Header>
 
-    const ShowDataWithReference = jsonShowData[0]
-    const ShowDataWithoutReference = jsonShowData[1]
-    console.log(ShowDataWithReference, ShowDataWithoutReference)
+    if (loading) return <div>Loading...</div>
+
+    const ShowDataWithReference = showWithReference
+    const ShowDataWithoutReference = showWithoutReference
 
     const OpeningHoursDesktop = () => {
         return (

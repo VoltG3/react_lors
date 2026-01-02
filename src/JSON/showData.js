@@ -1,23 +1,38 @@
-import React, { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-export const ShowData = () => {
-    const [data, setData] = React.useState([]);
+export const useShowData = () => {
+    const [data, setData] = useState(null)
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState(null)
 
     useEffect(() => {
-        axios
-            .get("./showData.json")
-            .then((res) => setData(res.data))
-            .catch(err => console.error("[ CERR ]", err))
-    }, []); //console.log("[   JSON ]", data)
+        const fetchData = async () => {
+            try {
+                setLoading(true)
+                const response = await axios.get("./showData.json")
+                setData(response.data)
+                setError(null)
+            } catch (err) {
+                console.error("[ ERROR ] Failed to fetch showData.json:", err)
+                setError(err.message)
+            } finally {
+                setLoading(false)
+            }
+        }
 
-    const withReference = data.find(item => item.withReference);
-    const withoutReference = data.find(item => item.withoutReference);
-    const bothFalse = data.find(item => item.bothFalse);
+        fetchData()
+    }, [])
 
-    const withReferenceValue = withReference ? withReference.withReference[0].showContent : null;
-    const withoutReferenceValue = withoutReference ? withoutReference.withoutReference[0].showContent : null;
-    const bothFalseValue = bothFalse ? bothFalse.bothFalse[0].isOpening : null;
+    const showWithReference = data?.showWithReference ?? null
+    const showWithoutReference = data?.showWithoutReference ?? null
+    const openingDate = data?.openingDate ?? null
 
-    return [withReferenceValue, withoutReferenceValue, bothFalseValue];
+    return {
+        showWithReference,
+        showWithoutReference,
+        openingDate,
+        loading,
+        error
+    }
 }

@@ -1,13 +1,14 @@
-import { FetchData } from '../../../JSON/fetchData'
+import { useFetchData } from '../../../JSON/fetchData'
 
 const DataColumnPublicNames = () => {
-    const jsonData = FetchData()
+    const { data: jsonData, loading, error } = useFetchData()
     const paragraph = "textContent--tabledata--item--small"
 
+    if (loading) return <div>Loading...</div>
+    if (error) return <div>Error loading data</div>
+
     const isNameArrayEmpty = (target) => {
-        let toReturn;
-        target === "" ? toReturn = "" : toReturn = target
-        return toReturn
+        return target === "" ? "" : target
     }
 
     return (

@@ -1,16 +1,18 @@
 import styled from 'styled-components'
 import i18n from 'i18next'
 
-import { FetchData } from '../../../JSON/fetchData'
+import { useFetchData } from '../../../JSON/fetchData'
 import TransformData from '../../../JSON/transformData'
 import TransformFormat from '../../../JSON/transformFormat'
 
 const TileHoursJSON = () => {
-    const jsonData = FetchData()
-    const arrayOpeningHoursEU = []
-    const arrayOpeningHoursUS = []
-          jsonData.forEach(function(obj) { arrayOpeningHoursEU.push( TransformData(obj.open))})
-          jsonData.forEach(function(obj) { arrayOpeningHoursUS.push( TransformData(obj.open))}); void TransformFormat(arrayOpeningHoursUS)
+    const { data: jsonData, loading, error } = useFetchData()
+
+    if (loading) return <div>Loading...</div>
+    if (error) return <div>Error loading data</div>
+
+    const arrayOpeningHoursEU = jsonData.map(obj => TransformData(obj.open))
+    const arrayOpeningHoursUS = TransformFormat(jsonData.map(obj => TransformData(obj.open)))
     const arrayOpeningHours = i18n.language === 'en' ? arrayOpeningHoursUS : arrayOpeningHoursEU
 
     const tableParagraph = "textContent--tabledata--item--small"

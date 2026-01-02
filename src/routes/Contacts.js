@@ -10,22 +10,22 @@ import { ImageController } from '../components/Image/image.controller'
 import OpeningHoursController from '../components/OpeningHours/OpeningHours.controller'
 import LineLang from '../components/line.lang'
 import { ButtonController } from '../components/Button/Button.controller'
-import {ShowData} from "../JSON/showData";
+import { useShowData } from "../JSON/showData";
 
 const GoogleMap = lazy(() => import('../components/GoogleMap'));
 
 export default function Contacts() {
     const [t] = useTranslation(["chapter_pages", "chapters"])
-    const jsonShowData = ShowData()
+    const { showWithReference, showWithoutReference, openingDate, loading } = useShowData()
     const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
     const h = i18n.language === 'ru' ? 'textContent--h1--rus' : 'textContent--h1'
 
     const introHeader = config.common.introHeader
     const URL_01 = config.external_url.URL_01
 
-    const ShowDataWithtReference = jsonShowData[0]
-    const ShowDataWithoutReference = jsonShowData[1]
-    const IfBothFalseContent = jsonShowData[2]
+    const ShowDataWithtReference = showWithReference
+    const ShowDataWithoutReference = showWithoutReference
+    const IfBothFalseContent = openingDate
 
     function isBothFalse() {
         if(ShowDataWithtReference === false && ShowDataWithoutReference === false) {
