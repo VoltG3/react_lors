@@ -15,7 +15,7 @@ function Info() {
     return (
         <StyledHeaderSubSetInfo>
 
-            <Covid />
+
 
             <div className={"infoSquare"}>
                 <img src={ icons_navigation.icon_T } alt={"icon"} style={{ width: '20px', height: '18px'}}/>
@@ -84,3 +84,7 @@ const StyledHeaderSubSetInfo = styled.div`
 `
 
 export default Info
+
+/*
+ <Covid />
+* */

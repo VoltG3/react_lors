@@ -62,9 +62,12 @@ export default function Info() {
                     <li><p className={ paragraph }>{ t(list_02 + "part_04") }</p></li>
                 </ul>
             </span>
+            <ImageController variant={"eachPerson"} />
 
-            <ImageController variant={"collective3"} />
             <ListInformation />
         </Page>
     )
 }
+/*
+ <ImageController variant={"collective3"} />
+* */

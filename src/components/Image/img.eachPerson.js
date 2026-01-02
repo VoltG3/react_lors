@@ -13,7 +13,7 @@ const ImgEachPerson = (props) => {
             paddingTop: 'var(--size--padding60)',
             paddingBottom: 'var(--size--padding30)'
         }}>
-            <div><img src={ URL_img05 } width={"100%"} height={"auto"} alt={"img"} loading="lazy" /></div>
+
             <div><img src={ URL_img03 } width={"100%"} height={"auto"} alt={"img"} loading="lazy" /></div>
             <div><img src={ URL_img04 } width={"100%"} height={"auto"} alt={"img"} loading="lazy" /></div>
         </Container>
@@ -21,3 +21,7 @@ const ImgEachPerson = (props) => {
 }
 
 export default ImgEachPerson
+
+/*
+<div><img src={ URL_img05 } width={"100%"} height={"auto"} alt={"img"} loading="lazy" /></div>
+* */

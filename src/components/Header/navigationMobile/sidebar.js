@@ -75,7 +75,17 @@ const SideBar = (props) => {
 
             <div style={{ width: '100%', height: '1px', backgroundColor: 'white', marginBottom: '30px', marginTop: '10px'}}></div>
 
-            <div style={{ paddingTop: '20px', paddingBottom: '20px' }}>
+
+
+
+        </Menu>
+    )
+}
+
+export default SideBar
+
+/*
+ <div style={{ paddingTop: '20px', paddingBottom: '20px' }}>
                 <p style={{ color: 'white', letterSpacing: '2px', paddingBottom: '30px', paddingLeft: '10px'}} className={ paragraph }>{ t("chapters:covid")}</p>
 
                 <div style={{ display: 'flex', justifyContent: 'flex-start', width: '100%', paddingLeft: '10px'}}>
@@ -84,10 +94,4 @@ const SideBar = (props) => {
                     </a>
                 </div>
             </div>
-
-
-        </Menu>
-    )
-}
-
-export default SideBar
+* */

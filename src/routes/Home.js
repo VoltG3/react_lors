@@ -23,8 +23,13 @@ export default function Home() {
                  <p className={ paragraph }>{ t("chapter_home.part_04") }</p>
             </span>
 
-            <ImageController variant={"collective4"} />
+            <ImageController variant={"eachPerson"} />
+
             <Tiles />
         </Page>
     )
 }
+
+/*
+ <ImageController variant={"collective4"} />
+* */
