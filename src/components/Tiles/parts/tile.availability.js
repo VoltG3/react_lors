@@ -31,42 +31,42 @@ function TileAvailability() {
 
                 <div className={"availabilitySquare"}>
                     <div>
-                        <IconAvailability01 size={28} />
+                        <IconAvailability01 size={32} />
                         <p className={ paragraph }>{ t(object_item + "part_01") }</p>
                     </div>
 
                     <div>
-                        <IconAvailability02 size={28} />
+                        <IconAvailability02 size={32} />
                         <p className={ paragraph }>{ t(object_item + "part_02") }</p>
                     </div>
 
                     <div>
-                        <IconAvailability03 size={42} />
+                        <IconAvailability03 size={32} />
                         <p className={ paragraph }>{ t(object_item + "part_03") }</p>
                     </div>
 
                     <div>
-                        <IconAvailability04 size={30} />
+                        <IconAvailability04 size={32} />
                         <p className={ paragraph }>{ t(object_item + "part_04") }</p>
                     </div>
 
                     <div>
-                        <IconAvailability05 size={30} />
+                        <IconAvailability05 size={32} />
                         <p className={ paragraph }>{ t(object_item + "part_05") }</p>
                     </div>
 
                     <div>
-                        <IconAvailability06 size={30} />
+                        <IconAvailability06 size={32} />
                         <p className={ paragraph }>{ t(object_item + "part_06") }</p>
                     </div>
 
                     <div>
-                        <IconAvailability07 size={30} />
+                        <IconAvailability07 size={32} />
                         <p className={ paragraph }>{ t(object_item + "part_07") }</p>
                     </div>
 
                     <div>
-                        <IconAvailability08 size={30} />
+                        <IconAvailability08 size={32} />
                         <p className={ paragraph }>{ t(object_item + "part_08") }</p>
                     </div>
                 </div>

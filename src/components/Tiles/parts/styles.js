@@ -1,22 +1,29 @@
 import styled from 'styled-components'
 import { css } from 'styled-components'
 
-const TileContainer  = css`
+const TileContainer = css`
   display: flex;
   flex-direction: column;
-    width: auto;
-    height: 100%;
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
-  
+
   .innerTile {
     display: flex;
     flex-direction: column;
-      width: auto;
-      height: 100%;
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
-    margin: 60px var(--tile--margin) 40px var(--tile--margin);
+    padding: 60px 40px 44px;
     border-bottom: solid 1px var(--color--tabledata--border);
-    padding-bottom: 44px;
+
+    @media (max-width: 922px) {
+      padding: 40px 30px 30px;
+    }
+
+    @media (max-width: 480px) {
+      padding: 30px 20px 25px;
+    }
   }
 `
 
@@ -58,61 +65,113 @@ const Hours = css`
 `
 
 const Contracts = css`
-  
+
   .logoSquare {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-      width: 100%;
-      height: auto;
+    gap: 30px 40px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
     padding-top: 44px;
     padding-bottom: 44px;
-      
-    .r1c1 { max-width: 40px; & img { max-width: 40px; }}
-    .r1c2 { max-width: 55px; & img { max-width: 55px; }}
-    .r1c3 { max-width: 55px; & img { max-width: 55px; }}
-    .r2c1 { max-width: 99px; & img { max-width: 99px; }}
-    .r2c2 { max-width: 81px; & img { max-width: 81px; padding-bottom: 14px; }}
-    
-    .logoSquareRow {
-      display: flex;
-      flex-direction: row;
-        width: auto;
-        height: auto;
 
-         & div:nth-child(1) { margin-right: 10px; }
-         & div:nth-child(2) { margin-right: 10px; }
-         & div:nth-child(3) { margin-right: 10px; }
-         & div:nth-child(4) { margin-right: 10px; }
-    } 
-    
-        .logoSquareCell{
-          display: flex;
-          align-items: center;
-            width: 100%;
-            height: auto;
-        }
+    @media (max-width: 768px) {
+      gap: 25px 30px;
+      max-width: 100%;
+    }
+
+    .logoSquareRow {
+      display: contents;
+    }
+
+    .logoSquareCell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .r1c1 {
+      width: 80px;
+      @media (max-width: 768px) { width: 60px; }
+    }
+    .r1c2 {
+      width: 100px;
+      @media (max-width: 768px) { width: 80px; }
+    }
+    .r1c3 {
+      width: 100px;
+      @media (max-width: 768px) { width: 80px; }
+    }
+    .r2c1 {
+      width: 140px;
+      @media (max-width: 768px) { width: 110px; }
+    }
+    .r2c2 {
+      width: 120px;
+      @media (max-width: 768px) { width: 90px; }
+    }
   }
 `
 
 const Availability = css`
-  
+
   .availabilitySquare {
     display: flex;
     flex-direction: column;
-    
-    & div {
+    gap: 20px;
+    padding-top: 30px;
+
+    @media (max-width: 768px) {
+      gap: 18px;
+      padding-top: 20px;
+    }
+
+    & > div {
       display: flex;
       flex-direction: row;
       align-items: center;
-        width: auto;
-        height: auto;
-      margin: 12px 0 0 0;
-      
+      gap: 20px;
+      width: 100%;
+
+      @media (max-width: 768px) {
+        gap: 15px;
+      }
+
+      & svg {
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+
+        @media (max-width: 768px) {
+          width: 28px;
+          height: 28px;
+        }
+      }
+
       & img {
-        width: 28px;
-        height: 28px;
-        margin: 0 15px 0 0;
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+
+        @media (max-width: 768px) {
+          width: 28px;
+          height: 28px;
+        }
+      }
+
+      & p {
+        flex: 1;
+        margin: 0;
       }
     }
   }
