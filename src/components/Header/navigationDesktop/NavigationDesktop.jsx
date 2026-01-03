@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Logo from './logo'
 import Info from './info'
 import Languages from './languages'
-import Navigation from './navigation'
 import DesktopMenu from './DesktopMenu'
 
 function NavigationDesktop() {
@@ -17,12 +16,9 @@ function NavigationDesktop() {
         <InfoSection>
           <Info />
           <Languages />
+          <DesktopMenu />
         </InfoSection>
 
-        <NavSection>
-          <Navigation />
-          <DesktopMenu />
-        </NavSection>
       </Grid>
     </Container>
   )
@@ -95,6 +91,7 @@ const NavSection = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  border: solid 1px red;
 
   @media (max-width: 922px) {
     display: none;

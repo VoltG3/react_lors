@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import NavigationDesktop from './navigationDesktop/NavigationDesktop'
 import NavigationMobile from './navigationMobile/navigationMobile'
 import Slider from './slider/slider'
+import NavigationDesktop2 from "./navigationDesktop/NavigationDesktop2";
 
 function Header() {
     return (
@@ -15,6 +16,10 @@ function Header() {
             </NavigationWrapper>
 
             <Slider />
+
+            <NavigationWrapper className="desktop">
+                <NavigationDesktop2 />
+            </NavigationWrapper>
         </StyledHeader>
     )
 }
