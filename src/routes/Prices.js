@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledPageContainer as Page } from './styles/styled.page'
+import { StyledPageContainer as PageContainer } from './styles/StyledPageContainer'
 import { StyledInlineParagraphWithButtonContainer as InlineParagraphWithButton } from './styles/styled.inline.paragraph.button'
 import { Link } from 'react-router-dom'
 import config from '../config'
@@ -21,7 +21,7 @@ export default function Prices() {
     const repeatSign = config.common.repeatSign
 
     return (
-        <Page>
+        <PageContainer>
             <h2 className={ h }>{ t("chapters:prices") }</h2>
 
             <LineLang />
@@ -52,6 +52,6 @@ export default function Prices() {
             <ListPricesWithReference />
             <ListPricesWithoutReference />
             <ImageController variant={"office"} />
-        </Page>
+        </PageContainer>
     )
 }

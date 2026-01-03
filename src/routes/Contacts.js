@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react'
-import { StyledPageContainer as Page } from './styles/styled.page'
+import { StyledPageContainer as PageContainer } from './styles/StyledPageContainer'
 import { StyledInlineParagraphContainer as InlineParagraph } from './styles/styled.inline.paragraph'
 import { StyledInlineParagraphWithImageContainer as InlineParagraphWithImage } from './styles/styled.inline.paragraph.image'
 import config from '../config'
@@ -40,7 +40,7 @@ export default function Contacts() {
 
     return (
         <>
-            <Page style={{ paddingBottom: '0'}}>
+            <PageContainer style={{ paddingBottom: '0'}}>
                 <h2 className={ h }>{ t("chapters:contacts") }</h2>
 
                 <LineLang />
@@ -76,7 +76,7 @@ export default function Contacts() {
                     <p className={"textContent--h3"}>{ t("chapter_contacts.part_06") }</p>
                 </InlineParagraph>
 
-            </Page>
+            </PageContainer>
 
             <Suspense fallback={<div>Loading...</div>}>
                 <GoogleMap />

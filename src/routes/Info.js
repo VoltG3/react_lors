@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledPageContainer as Page } from './styles/styled.page'
+import { StyledPageContainer as PageContainer } from './styles/StyledPageContainer'
 import { StyledInlineParagraphWithButtonContainer as InlineParagraphWithButton } from './styles/styled.inline.paragraph.button'
 import config from '../config'
 import i18n from 'i18next'
@@ -24,7 +24,7 @@ export default function Info() {
     const list_02 = "chapter_info.info_list_02."
 
     return (
-        <Page>
+        <PageContainer>
             <h2 className={ h }>{ t("chapters:info") }</h2>
 
             <LineLang />
@@ -65,7 +65,7 @@ export default function Info() {
             <ImageController variant={"eachPerson"} />
 
             <ListInformation />
-        </Page>
+        </PageContainer>
     )
 }
 /*

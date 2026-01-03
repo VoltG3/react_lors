@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledPageContainer as Page } from './styles/styled.page'
+import { StyledPageContainer as PageContainer } from './styles/StyledPageContainer'
 
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
@@ -13,13 +13,13 @@ export default function Services() {
     const h = i18n.language === 'ru' ? 'textContent--h1--rus' : 'textContent--h1'
 
     return (
-        <Page>
+        <PageContainer>
            <h2 className={ h }>{ t("chapters:services") }</h2>
 
             <LineLang />
 
            <ListServices />
            <ImageController variant={"equipment"} />
-        </Page>
+        </PageContainer>
     )
 }

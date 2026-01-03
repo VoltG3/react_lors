@@ -19,19 +19,11 @@ const config = {
     },
     logo_transparent: {
         logoTransparent00: process.env.PUBLIC_URL + '/assets/logo_transparent/Lors_transparent.svg',
-        logoTransparent01: process.env.PUBLIC_URL + '/assets/logo_transparent/Balta_transaprent.svg',
-        logoTransparent02: process.env.PUBLIC_URL + '/assets/logo_transparent/BTA_transsparent.svg',
-        logoTransparent03: process.env.PUBLIC_URL + '/assets/logo_transparent/ERGO_transparent.svg',
-        logoTransparent04: process.env.PUBLIC_URL + '/assets/logo_transparent/Gjensidige_transparent.svg',
-        logoTransparent05: process.env.PUBLIC_URL + '/assets/logo_transparent/Seesam_transpareent.svg'
+
     },
     logo_colored: {
         logoColored00: process.env.PUBLIC_URL + '/assets/logo_colored/Lors_colored.svg',
-        logoColored01: process.env.PUBLIC_URL + '/assets/logo_colored/BALTA_colored.png',
-        logoColored02: process.env.PUBLIC_URL + '/assets/logo_colored/BTA_colored.png',
-        logoColored03: process.env.PUBLIC_URL + '/assets/logo_colored/ERGO_colored.jpg',
-        logoColored04: process.env.PUBLIC_URL + '/assets/logo_colored/Gjensidige_colored.png',
-        logoColored05: process.env.PUBLIC_URL + '/assets/logo_colored/Seesam_colored.png'
+
     },
     names: {
         name_01: 'Dace Sidorova',
