@@ -1,13 +1,18 @@
 import React from 'react'
-import { LogoColoredLors, LogoTransparentLors } from '../../../assets/logo/index'
+import ResponsiveLogo from '../../ResponsiveLogo/responsiveLogo'
+import logoColoredLors from '../../../assets/logo/colored_logo_00.svg'
+import logoTransparentLors from '../../../assets/logo/transparent_logo_00.svg'
 
 export default function Logo({ variant }) {
 
     const isColored = variant === "colored"
+    const logoSrc = isColored ? logoColoredLors : logoTransparentLors
 
-    return isColored ? (
-        <LogoColoredLors maxHeight="45px" />
-    ) : (
-        <LogoTransparentLors maxHeight="45px" />
+    return (
+        <ResponsiveLogo
+            src={logoSrc}
+            alt="Lors"
+            maxHeight="45px"
+        />
     )
 }

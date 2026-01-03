@@ -1,20 +1,18 @@
 import React from "react"
 import { useTranslation } from 'react-i18next'
 
-import config from '../../config'
-
 import { StyledFooterContainer as FooterContainer } from './Styles/StyledFooterContainer'
 import { StyledFooterCredentials as FooterCredentials } from './Styles/StyledFooterCredentials'
 import { StyledFooterLogo as FooterLogo } from './Styles/StyledFooterLogo'
 import { StyledFooterDeveloper as FooterDeveloper } from './Styles/StyledFooterDeveloper'
-import {
-    LogoTransparentLors,
-    LogoTransparentBalta,
-    LogoTransparentBTA,
-    LogoTransparentErgo,
-    LogoTransparentGjensidige,
-    LogoTransparentSeesam
-} from "../../assets/logo";
+import ResponsiveLogo from "../ResponsiveLogo/responsiveLogo"
+
+// Import logo sources
+import logoTransparentBalta from '../../assets/logo/transparent_logo_01.svg'
+import logoTransparentBTA from '../../assets/logo/transparent_logo_02.svg'
+import logoTransparentErgo from '../../assets/logo/transparent_logo_03.svg'
+import logoTransparentGjensidige from '../../assets/logo/transparent_logo_04.svg'
+import logoTransparentSeesam from '../../assets/logo/transparent_logo_05.svg'
 
 function Footer() {
     const [t] = useTranslation(["section_footer"])
@@ -57,25 +55,35 @@ function Footer() {
                 <div className={"inner-footer-logo"}>
                     <div className={"inner-footer-logo-logo-container"}>
                         <div className={"inner-footer-logo-logo-row"}>
-                            <LogoTransparentBalta
-                                maxHeight={"40px"}
-                                mobileMaxHeight={"25px"}
+                            <ResponsiveLogo
+                                src={logoTransparentBalta}
+                                alt="Balta"
+                                maxHeight="40px"
+                                mobileMaxHeight="25px"
                             />
-                            <LogoTransparentBTA
-                                maxHeight={"40px"}
-                                mobileMaxHeight={"25px"}
+                            <ResponsiveLogo
+                                src={logoTransparentBTA}
+                                alt="BTA"
+                                maxHeight="40px"
+                                mobileMaxHeight="25px"
                             />
-                            <LogoTransparentErgo
-                                maxHeight={"40px"}
-                                mobileMaxHeight={"25px"}
+                            <ResponsiveLogo
+                                src={logoTransparentErgo}
+                                alt="ERGO"
+                                maxHeight="40px"
+                                mobileMaxHeight="25px"
                             />
-                            <LogoTransparentGjensidige
-                                maxHeight={"40px"}
-                                mobileMaxHeight={"25px"}
+                            <ResponsiveLogo
+                                src={logoTransparentGjensidige}
+                                alt="Gjensidige"
+                                maxHeight="40px"
+                                mobileMaxHeight="25px"
                             />
-                            <LogoTransparentSeesam
-                                maxHeight={"40px"}
-                                mobileMaxHeight={"25px"}
+                            <ResponsiveLogo
+                                src={logoTransparentSeesam}
+                                alt="Seesam"
+                                maxHeight="40px"
+                                mobileMaxHeight="25px"
                             />
                         </div>
                     </div>

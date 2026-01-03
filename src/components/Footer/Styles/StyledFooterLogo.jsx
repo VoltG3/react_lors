@@ -37,7 +37,7 @@ export const StyledFooterLogo = styled.div`
         gap: 40px;
         flex-wrap: wrap;
         filter: brightness(0) invert(1);
-        border: solid 1px white;
+       // border: solid 1px white;
 
         @media (max-width: 768px) {
             flex-direction: row;

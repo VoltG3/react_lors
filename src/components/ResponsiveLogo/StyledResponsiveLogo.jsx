@@ -7,7 +7,6 @@ export const StyledResponsiveLogo = styled.img`
     height: auto;
     display: block;
     object-fit: contain;
-    border: solid 1px yellow;
 
     /* === TABLET === */
     @media (max-width: 1200px) {
