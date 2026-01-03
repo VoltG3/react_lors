@@ -16,16 +16,7 @@ function SliderTextContentDesktop(props) {
     const h1 = i18n.language === 'ru' ? 'textContent--h0--rus' : 'textContent--h0'
 
     return (
-      <div style={{
-          position: 'absolute',
-          zIndex: '3',
-          display: props.media,
-          flexDirection: 'column',
-          maxWidth: 'var(--page--width)',
-          width: 'var(--page--width100)',
-          height: 'inherit'
-
-      }}>
+      <SliderContentWrapper $media={props.media}>
           <Temporary>
               <p className={ h1 }>{ introHeader }</p>
               <p className={ paragraph }>{ t("part_01") }</p>
@@ -34,26 +25,45 @@ function SliderTextContentDesktop(props) {
           <Link to={"contacts"}>
               <ButtonController variant={"sliderDesktop"} />
           </Link>
-      </div>
+      </SliderContentWrapper>
     )
 }
 
+const SliderContentWrapper = styled.div`
+  position: absolute;
+  z-index: 3;
+  display: ${props => props.$media};
+  flex-direction: column;
+  max-width: 1440px;
+  width: 100%;
+  height: inherit;
+  padding: 0 40px;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: 1220px) {
+    padding: 0 30px;
+  }
+
+  @media only screen and (max-width: 700px) {
+    padding: 0 20px;
+  }
+`
+
 const Temporary = styled.div`
-  
   display: flex;
   flex-direction: column;
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
   margin-top: 140px;
   padding-bottom: 10%;
-  
+
   & div:first-child {
     margin-top: 80px;
   }
 
   @media only screen and (max-width: 900px) {
     margin-top: 40px;
-    
+
     & p:first-child {
       padding-bottom: 10px;
     }

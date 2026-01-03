@@ -7,7 +7,7 @@ function NavigationMobile() {
     return (
         <Container>
             <TopBar>
-                <Logo variant="colored" />
+                <Logo variant="colored" maxHeight="70px" />
                 <MobileMenu />
             </TopBar>
         </Container>
@@ -15,7 +15,7 @@ function NavigationMobile() {
 }
 
 const Container = styled.div`
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -24,7 +24,9 @@ const Container = styled.div`
   display: none;
 
   @media only screen and (max-width: 922px) {
-    display: block;
+    display: flex;
+    justify-content: center;
+    background: rgb(244, 244, 244);
   }
 `
 
@@ -33,14 +35,30 @@ const TopBar = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 70px;
-  padding: 0 30px;
+  max-width: 1440px;
+  height: 90px;
+  padding: 0 40px;
   box-sizing: border-box;
   background: transparent;
   transition: all 0.3s ease;
 
-  @media (max-width: 480px) {
+  & > div:first-child {
+    max-width: 250px;
+    min-width: 220px;
+  }
+
+  @media only screen and (max-width: 1220px) {
+    padding: 0 30px;
+  }
+
+  @media only screen and (max-width: 700px) {
     padding: 0 20px;
+    height: 85px;
+
+    & > div:first-child {
+      max-width: 240px;
+      min-width: 210px;
+    }
   }
 `
 

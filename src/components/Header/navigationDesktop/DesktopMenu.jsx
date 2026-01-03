@@ -142,32 +142,45 @@ const MenuButton = styled.button`
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 50px;
+  height: 45px;
   background: transparent;
-  border: none;
+  border: 1px solid ${props => props.$isOpen ? 'white' : '#4a5568'};
   cursor: pointer;
-  padding: 0;
+  padding: 10px;
   z-index: 101;
+  border-radius: 0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: ${props => props.$isOpen ? 'white' : '#2c3e50'};
+    background: ${props => props.$isOpen ? 'transparent' : 'rgba(0, 0, 0, 0.08)'};
+  }
 
   &:focus-visible {
-    outline: 2px solid var(--clr--accent--base, #007bff);
-    outline-offset: 4px;
+    outline: 2px solid ${props => props.$isOpen ? 'white' : '#2c3e50'};
+    outline-offset: 2px;
+  }
+
+  @media only screen and (max-width: 922px) {
+    display: flex;
   }
 `
 
 const BurgerLine = styled.span`
   display: block;
-  width: 100%;
-  height: 3px;
-  background: ${props => props.$isOpen ? 'white' : '#373a47'};
-  border-radius: 2px;
+  width: 28px;
+  height: 2px;
+  background: ${props => props.$isOpen ? 'white' : '#4a5568'};
+  border-radius: 0;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: center;
 
   ${props => props.$isOpen && props.$index === 0 && `
-    transform: translateY(8.5px) rotate(45deg);
+    transform: translateY(7px) rotate(45deg);
   `}
 
   ${props => props.$isOpen && props.$index === 1 && `
@@ -176,7 +189,7 @@ const BurgerLine = styled.span`
   `}
 
   ${props => props.$isOpen && props.$index === 2 && `
-    transform: translateY(-8.5px) rotate(-45deg);
+    transform: translateY(-7px) rotate(-45deg);
   `}
 `
 

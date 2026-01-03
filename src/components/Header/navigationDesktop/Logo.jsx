@@ -3,7 +3,7 @@ import ResponsiveLogo from '../../ResponsiveLogo/responsiveLogo'
 import logoColoredLors from '../../../assets/logo/colored_logo_00.svg'
 import logoTransparentLors from '../../../assets/logo/transparent_logo_00.svg'
 
-export default function Logo({ variant }) {
+export default function Logo({ variant, maxHeight }) {
 
     const isColored = variant === "colored"
     const logoSrc = isColored ? logoColoredLors : logoTransparentLors
@@ -12,7 +12,7 @@ export default function Logo({ variant }) {
         <ResponsiveLogo
             src={logoSrc}
             alt="Lors"
-            maxHeight="45px"
+            maxHeight={maxHeight || "45px"}
         />
     )
 }

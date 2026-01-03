@@ -1,51 +1,74 @@
+import React from 'react'
 import styled from 'styled-components'
 import i18n from 'i18next'
 
 function Languages() {
-    const p = 'textContent--header--navigation--languages'
+    const [currentLang, setCurrentLang] = React.useState(i18n.language)
+
+    const changeLanguage = (lang) => {
+        i18n.changeLanguage(lang)
+        setCurrentLang(lang)
+    }
 
     return (
-        <div>
-            <StyledSubSetLang>
-                <p className={ p }
-                   value={"LV"}
-                   onClick={() => i18n.changeLanguage('lv') }>LV
-                </p>
+        <LanguageContainer>
+            <LanguageButton
+                $isActive={currentLang === 'lv'}
+                onClick={() => changeLanguage('lv')}
+            >
+                LV
+            </LanguageButton>
 
-                <p className={ p }>/</p>
+            <LanguageButton
+                $isActive={currentLang === 'en'}
+                onClick={() => changeLanguage('en')}
+            >
+                EN
+            </LanguageButton>
 
-                <p className={ p }
-                   value={"EN"}
-                   onClick={() => i18n.changeLanguage('en') }>EN
-                </p>
-
-                <p className={ p }>/</p>
-
-                <p className={ p }
-                   value={"RU"}
-                   onClick={() => i18n.changeLanguage('ru') }>RU
-                </p>
-            </StyledSubSetLang>
-        </div>
+            <LanguageButton
+                $isActive={currentLang === 'ru'}
+                onClick={() => changeLanguage('ru')}
+            >
+                RU
+            </LanguageButton>
+        </LanguageContainer>
     )
 }
 
-const StyledSubSetLang = styled.div`
+const LanguageContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-  align-items: center;
-      width: 100px;
-      height: auto;
-  padding-top: 5px;
+    align-items: center;
+    gap: 0;
+`
 
-  @media only screen and (max-width: 1500px){  width: 80px;  }
-  @media only screen and (max-width: 1220px){  width: 60px;  }
-  
-  & p:hover {
+const LanguageButton = styled.button`
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: ${props => props.$isActive ? '#2c3e50' : '#4a5568'};
+    background: ${props => props.$isActive ? 'rgba(0, 0, 0, 0.15)' : 'transparent'};
+    border: 1px solid #4a5568;
+    border-radius: 0;
     cursor: pointer;
-    color: var(--clr--accent--base);
-  }
+    transition: all 0.3s ease;
+    font-family: inherit;
+    min-width: 55px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    &:hover {
+        color: #2c3e50;
+        background: rgba(0, 0, 0, 0.08);
+        border-color: #2c3e50;
+    }
+
+    @media only screen and (max-width: 1220px) {
+        padding: 8px 16px;
+        font-size: 13px;
+        min-width: 50px;
+    }
 `
 
 export default Languages

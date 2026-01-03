@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Logo from './Logo'
-import Info from './Info'
+import TopBar from './TopBar'
 import Languages from './Languages'
 import DesktopMenu from './DesktopMenu'
 
@@ -14,7 +14,7 @@ function NavigationDesktop() {
         </LogoSection>
 
         <InfoSection>
-          <Info />
+          <TopBar />
           <Languages />
           <DesktopMenu />
         </InfoSection>
@@ -46,14 +46,14 @@ const Grid = styled.nav`
   grid-template-columns: auto 1fr;
   gap: 20px;
   width: 100%;
-  max-width: 1440px;
-  padding: 20px 40px;
+  max-width: 100%;
+  padding: 15px 20px;
   box-sizing: border-box;
 
   grid-template-areas: 'logo info';
 
   @media (max-width: 1220px) {
-    padding: 15px 30px;
+    padding: 12px 16px;
     gap: 15px;
   }
 `
@@ -71,10 +71,10 @@ const InfoSection = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  gap: 30px;
+  gap: 16px;
 
   @media (max-width: 1220px) {
-    gap: 20px;
+    gap: 12px;
   }
 `
 

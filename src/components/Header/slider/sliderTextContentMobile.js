@@ -34,10 +34,14 @@ const Container = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1440px;
-  padding: 0 30px;
+  padding: 0 40px;
   box-sizing: border-box;
 
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 1220px) {
+    padding: 0 30px;
+  }
+
+  @media only screen and (max-width: 700px) {
     padding: 0 20px;
   }
 `

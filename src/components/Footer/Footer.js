@@ -1,10 +1,14 @@
 import React from "react"
 import { useTranslation } from 'react-i18next'
+import '../../translations/i18n'
+import i18n from 'i18next'
+import config from '../../config'
 
 import { StyledFooterContainer as FooterContainer } from './Styles/StyledFooterContainer'
 import { StyledFooterCredentials as FooterCredentials } from './Styles/StyledFooterCredentials'
 import { StyledFooterLogo as FooterLogo } from './Styles/StyledFooterLogo'
 import { StyledFooterDeveloper as FooterDeveloper } from './Styles/StyledFooterDeveloper'
+import { StyledFooterButton as FooterButton } from './Styles/StyledFooterButton'
 import ResponsiveLogo from "../ResponsiveLogo/responsiveLogo"
 
 // Import logo sources
@@ -15,39 +19,51 @@ import logoTransparentGjensidige from '../../assets/logo/transparent_logo_04.svg
 import logoTransparentSeesam from '../../assets/logo/transparent_logo_05.svg'
 
 function Footer() {
-    const [t] = useTranslation(["section_footer"])
+    const [t] = useTranslation(["navigation", "section_footer"])
     const object01 = "footer_tile_01."
     const object02 = "footer_tile_02."
     const object03 = "footer_tile_03."
+
+    const appointmentUrl = i18n.language === 'lv'
+        ? config.external_url.URL_01
+        : config.external_url.URL_00
+
+    const buttonText = t("navigation_secondary.e_appointment")
+    console.log("Button text:", buttonText)
+    console.log("Language:", i18n.language)
 
     return (
         <FooterContainer>
             <FooterCredentials>
                 <div className={"footer-column"}>
-                    <p className={"textContent--footer--head"}>{ t(object01 + "part_01") }</p>
-                    <p className={"textContent--footer--item"}>{ t(object01 + "part_02") }</p>
-                    <p className={"textContent--footer--item"}>{ t(object01 + "part_03") }</p>
-                    <p className={"textContent--footer--item"}>{ t(object01 + "part_04") }</p>
-                    <p className={"textContent--footer--item"}>{ t(object01 + "part_05") }</p>
+                    <p className={"textContent--footer--head"}>{ t("section_footer:" + object01 + "part_01") }</p>
+                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object01 + "part_02") }</p>
+                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object01 + "part_03") }</p>
+                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object01 + "part_04") }</p>
+                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object01 + "part_05") }</p>
                 </div>
 
                 <div className={"footer-column"}>
-                    <p className={"textContent--footer--head"}>{ t(object02 + "part_01") }</p>
-                    <p className={"textContent--footer--item"}>{ t(object02 + "part_02") }</p>
-                    <p className={"textContent--footer--item"}>{ t(object02 + "part_03") }</p>
-                    <p className={"textContent--footer--item"}>{ t(object02 + "part_04") }</p>
-                    <p className={"textContent--footer--item"}>{ t(object02 + "part_05") }</p>
+                    <p className={"textContent--footer--head"}>{ t("section_footer:" + object02 + "part_01") }</p>
+                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object02 + "part_02") }</p>
+                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object02 + "part_03") }</p>
+                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object02 + "part_04") }</p>
+                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object02 + "part_05") }</p>
                 </div>
 
                 <div className={"footer-column"}>
-                    <p className={"textContent--footer--head"}>{ t(object03 + "part_01") }</p>
-                    <p className={"textContent--footer--item"}>{ t(object03 + "part_02") }</p>
+                    <p className={"textContent--footer--head"}>{ t("section_footer:" + object03 + "part_01") }</p>
+                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object03 + "part_02") }</p>
                 </div>
 
                 <div className={"footer-column"}>
-                    <p className={"textContent--footer--head"}>{ t(object03 + "part_03") }</p>
-                    <p className={"textContent--footer--item"}>{ t(object03 + "part_04") }</p>
-                    <p className={"textContent--footer--item"}>{ t(object03 + "part_05") }</p>
+                    <p className={"textContent--footer--head"}>{ t("section_footer:" + object03 + "part_03") }</p>
+                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object03 + "part_04") }</p>
+                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object03 + "part_05") }</p>
+
+                    <FooterButton href={appointmentUrl} target="_blank" rel="noopener noreferrer">
+                        { buttonText }
+                    </FooterButton>
                 </div>
             </FooterCredentials>
 
@@ -85,6 +101,10 @@ function Footer() {
                                 maxHeight="40px"
                                 mobileMaxHeight="25px"
                             />
+                        </div>
+
+                        <div className={"text/block"}>
+
                         </div>
                     </div>
                 </div>

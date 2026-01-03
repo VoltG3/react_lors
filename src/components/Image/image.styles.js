@@ -8,20 +8,20 @@ const ImgContainer = css`
   box-sizing: border-box;
     width: 100%;
     height: auto;
-  
+
   & img {
     border-radius: var(--border--radius);
-    filter:
-        drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.9))
-        opacity(80%);
-    
+    box-shadow: var(--box--shadow);
+    opacity: 0.95;
+
     &:hover {
       transition: box-shadow .3s linear;
       box-shadow: var(--box--hover);
     }
 
     @media only screen and (max-width: 922px) {
-      filter: opacity(95%);
+      box-shadow: var(--box--shadow);
+      opacity: 0.95;
     }
   }
 `
@@ -40,56 +40,14 @@ const ImgResponsiveVertical = css`
   }
 `
 
-const ImgCollective4Hiddenelements = css`
-  .hiddenContainer {
-    position: relative;
-    z-index: 1;
-    display: flex;
-      width: 100%;
-      height: auto;
-  }
-
-  .hiddenItem {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: row;
-      width: 100%;
-      height: 100%;
-    
-    & div {
-      display: flex;
-        width: 25%;
-        height: auto;
-    }
-
-    .hiddenParagraph {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-        width: 100%;
-        height: 20%;
-      overflow: hidden;
-      
-      .hiddenParagraphContainer {
-        display: flex;
-          width: auto;
-          height: auto;
-        background: var(--color--none);
-        padding: 5px 10px 5px 10px;
-        box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.3);
-        border-radius: var(--border--radius);
-      }
-    }
-  }
-`
-
 const MediaCollective4 = css`
+  padding-top: var(--size--padding30);
+  padding-bottom: var(--size--padding30);
+
   @media only screen and (max-width: 700px) {
-    .hiddenItem {
-      visibility: hidden;
+    & {
+      padding-top: var(--size--padding30);
+      padding-bottom: var(--size--padding30);
     }
   }
 `
@@ -137,7 +95,6 @@ const MediaContacts = css`
 
 export const StyledCollective4 = styled.div`
   ${ ImgContainer }
-  ${ ImgCollective4Hiddenelements }
   ${ MediaCollective4 }
 `
 export const StyledCollective3 = styled.div`

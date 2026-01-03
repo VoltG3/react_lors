@@ -2,7 +2,13 @@ import styled from "styled-components"
 
 export const StyledFooterLogo = styled.div`
     background: #21232e;
-    padding: 56px 24px;
+    padding: 72px 32px 64px;
+    box-sizing: border-box;
+
+    @media (max-width: 768px) {
+        gap: 32px;
+        padding: 56px 24px 48px;
+    }
 
     .inner-footer-logo {
         display: flex;

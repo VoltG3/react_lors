@@ -15,7 +15,6 @@ const TileContainer = css`
     height: 100%;
     box-sizing: border-box;
     padding: 60px 40px 44px;
-    border-bottom: solid 1px var(--color--tabledata--border);
 
     @media (max-width: 922px) {
       padding: 40px 30px 30px;

@@ -49,17 +49,16 @@ const MobileMenu = () => {
 
   return (
     <>
-      {!isOpen && (
-        <BurgerButton
-          onClick={toggleMenu}
-          aria-label="Open menu"
-          aria-expanded={isOpen}
-        >
-          <BurgerLine />
-          <BurgerLine />
-          <BurgerLine />
-        </BurgerButton>
-      )}
+      <BurgerButton
+        onClick={toggleMenu}
+        aria-label={isOpen ? "Close menu" : "Open menu"}
+        aria-expanded={isOpen}
+        $isOpen={isOpen}
+      >
+        <BurgerLine $isOpen={isOpen} $index={0} />
+        <BurgerLine $isOpen={isOpen} $index={1} />
+        <BurgerLine $isOpen={isOpen} $index={2} />
+      </BurgerButton>
 
       <AnimatePresence>
         {isOpen && (
@@ -79,15 +78,7 @@ const MobileMenu = () => {
               variants={menuVariants}
             >
               <MenuHeader>
-                <LogoWrapper>
-                  <Logo variant="transparent" />
-                </LogoWrapper>
-                <CloseButton
-                  onClick={closeMenu}
-                  aria-label="Close menu"
-                >
-                  <CloseIcon>×</CloseIcon>
-                </CloseButton>
+                <MenuTitle>Menu</MenuTitle>
               </MenuHeader>
 
               <Divider />
@@ -151,26 +142,51 @@ const MobileMenu = () => {
 const BurgerButton = styled.button`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 50px;
+  height: 45px;
   background: transparent;
-  border: none;
+  border: 1px solid ${props => props.$isOpen ? 'white' : '#4a5568'};
+  border-radius: 0;
   cursor: pointer;
-  padding: 0;
+  padding: 10px;
+  z-index: 101;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: ${props => props.$isOpen ? 'white' : '#2c3e50'};
+    background: ${props => props.$isOpen ? 'transparent' : 'rgba(0, 0, 0, 0.08)'};
+  }
 
   &:focus-visible {
-    outline: 2px solid var(--clr--accent--base, #007bff);
-    outline-offset: 4px;
+    outline: 2px solid ${props => props.$isOpen ? 'white' : '#2c3e50'};
+    outline-offset: 2px;
   }
 `
 
 const BurgerLine = styled.span`
-  width: 100%;
-  height: 3px;
-  background: #373a47;
-  border-radius: 2px;
-  transition: all 0.3s ease;
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: ${props => props.$isOpen ? 'white' : '#4a5568'};
+  border-radius: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+
+  ${props => props.$isOpen && props.$index === 0 && `
+    transform: translateY(7px) rotate(45deg);
+  `}
+
+  ${props => props.$isOpen && props.$index === 1 && `
+    opacity: 0;
+    transform: translateX(-10px);
+  `}
+
+  ${props => props.$isOpen && props.$index === 2 && `
+    transform: translateY(-7px) rotate(-45deg);
+  `}
 `
 
 const Overlay = styled(motion.div)`
@@ -209,39 +225,30 @@ const MenuHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  gap: 20px;
+`
+
+const MenuTitle = styled.h2`
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 1px;
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
 `
 
 const LogoWrapper = styled.div`
-  max-width: 150px;
-  min-width: 95px;
+  max-width: 200px;
+  min-width: 150px;
   height: auto;
 
   @media (max-width: 480px) {
-    max-width: 120px;
+    max-width: 180px;
+    min-width: 140px;
   }
-`
-
-const CloseButton = styled.button`
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
-  color: #bdc3c7;
-  transition: color 0.2s;
-
-  &:hover {
-    color: white;
-  }
-
-  &:focus-visible {
-    outline: 2px solid var(--clr--accent--base, #007bff);
-    outline-offset: 2px;
-  }
-`
-
-const CloseIcon = styled.span`
-  font-size: 36px;
-  line-height: 1;
 `
 
 const Divider = styled.div`
