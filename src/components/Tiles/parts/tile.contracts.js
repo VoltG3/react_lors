@@ -3,11 +3,17 @@ import { TileContracts as StyledTileContracts } from './styles'
 import { useTranslation } from 'react-i18next'
 
 import LineTiny from '../../line.short'
-import config from '../../../config'
+
+import {
+    LogoColoredBalta,
+    LogoColoredBTA,
+    LogoColoredErgo,
+    LogoColoredGjensidige,
+    LogoColoredSeesam
+} from "../../../assets/logo/index"
 
 function TileContracts() {
     const [t] = useTranslation(["tiles"])
-    const { logo_colored } = config
     const header = "textContent--tabledata--header"
     const paragraph = "textContent--tabledata--item"
 
@@ -22,14 +28,14 @@ function TileContracts() {
 
                 <div className={"logoSquare"}>
                     <div className={"logoSquareRow"}>
-                        <div className={"logoSquareCell r1c1"}><img src={ logo_colored.logoColored01 } alt={"logo"} style={{ width: '100%', height: 'auto' }} /></div>
-                        <div className={"logoSquareCell r1c2"}><img src={ logo_colored.logoColored02 } alt={"logo"} style={{ width: '100%', height: 'auto' }} /></div>
-                        <div className={"logoSquareCell r1c3"}><img src={ logo_colored.logoColored03 } alt={"logo"} style={{ width: '100%', height: 'auto' }} /></div>
+                        <div className={"logoSquareCell r1c1"}><LogoColoredBalta size={200} /></div>
+                        <div className={"logoSquareCell r1c2"}><LogoColoredBTA size={200} /></div>
+                        <div className={"logoSquareCell r1c3"}><LogoColoredErgo size={200} /></div>
                     </div>
 
                     <div className={"logoSquareRow"}>
-                        <div className={"logoSquareCell r2c1"}><img src={ logo_colored.logoColored04 } alt={"logo"} style={{ width: '100%', height: 'auto' }} /></div>
-                        <div className={"logoSquareCell r2c2"}><img src={ logo_colored.logoColored05 } alt={"logo"} style={{ width: '100%', height: 'auto' }} /></div>
+                        <div className={"logoSquareCell r2c1"}><LogoColoredGjensidige size={200} /></div>
+                        <div className={"logoSquareCell r2c2"}><LogoColoredSeesam size={200} /></div>
                     </div>
                 </div>
 

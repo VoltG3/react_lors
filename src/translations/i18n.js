@@ -13,9 +13,9 @@ import { CHAPTER_HEADER_RU } from './RU/chapter_header'
 import { CHAPTER_PAGES_LV } from './LV/chapter_pages'
 import { CHAPTER_PAGES_EN } from './EN/chapter_pages'
 import { CHAPTER_PAGES_RU } from './RU/chapter_pages'
-import { CHAPTER_FOOTER_LV } from './LV/chapter_footer'
-import { CHAPTER_FOOTER_EN } from './EN/chapter_footer'
-import { CHAPTER_FOOTER_RU } from './RU/chapter_footer'
+import { SECTION_FOOTER_LV } from './LV/section_footer'
+import { SECTION_FOOTER_EN } from './EN/section_footer'
+import { SECTION_FOOTER_RU } from './RU/section_footer'
 import { CHAPTERS_LV } from './LV/chapters'
 import { CHAPTERS_EN } from './EN/chapters'
 import { CHAPTERS_RU } from './RU/chapters'
@@ -45,7 +45,7 @@ i18n
                 navigation: NAVIGATION_LV,
                 chapter_header: CHAPTER_HEADER_LV,
                 chapter_pages: CHAPTER_PAGES_LV,
-                chapter_footer: CHAPTER_FOOTER_LV,
+                section_footer: SECTION_FOOTER_LV,
                 chapters : CHAPTERS_LV,
                 days: DAYS_LV,
                 tiles: TILES_LV,
@@ -58,7 +58,7 @@ i18n
                 navigation: NAVIGATION_EN,
                 chapter_header: CHAPTER_HEADER_EN,
                 chapter_pages : CHAPTER_PAGES_EN,
-                chapter_footer: CHAPTER_FOOTER_EN,
+                section_footer: SECTION_FOOTER_EN,
                 chapters : CHAPTERS_EN,
                 days: DAYS_EN,
                 tiles: TILES_EN,
@@ -71,7 +71,7 @@ i18n
                 navigation: NAVIGATION_RU,
                 chapter_header: CHAPTER_HEADER_RU,
                 chapter_pages : CHAPTER_PAGES_RU,
-                chapter_footer: CHAPTER_FOOTER_RU,
+                section_footer: SECTION_FOOTER_RU,
                 chapters : CHAPTERS_RU,
                 days: DAYS_RU,
                 tiles : TILES_RU,

@@ -1,22 +1,13 @@
-import config from '../../../config'
+import React from 'react'
+import { LogoColoredLors, LogoTransparentLors } from '../../../assets/logo/index'
 
-export default function Logo(props) {
+export default function Logo({ variant }) {
 
-    const logoColored00 = config.logo_colored.logoColored00
-    const logoTransparent00 = config.logo_transparent.logoTransparent00
+    const isColored = variant === "colored"
 
-    function getVariant() {
-        if(props.variant === "colored") {
-            return logoColored00
-        } else {
-            return logoTransparent00
-        }
-    }
-
-    return (
-        <img src={ getVariant() }
-             alt={"icon"}
-             width="auto" height="45px"
-             />
+    return isColored ? (
+        <LogoColoredLors maxHeight="45px" />
+    ) : (
+        <LogoTransparentLors maxHeight="45px" />
     )
 }
