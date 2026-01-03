@@ -7,20 +7,14 @@ import Slider from './slider/slider'
 function Header() {
     return (
         <StyledHeader>
-            {/* Fixed transparent navigation over slider */}
-            <NavigationDesktop />
-
-            {/* Mobile navigation */}
-            <MobileWrapper>
-               <NavigationMobile />
-            </MobileWrapper>
-
-            {/* Slider with padding-top for fixed nav */}
+            {/* Slider with navigation over it (both desktop & mobile) */}
             <SliderWrapper>
+                <NavigationDesktop />
+                <NavigationMobile />
                 <Slider />
             </SliderWrapper>
 
-            {/* Secondary navigation below slider */}
+            {/* Secondary navigation below slider (desktop only) */}
             <SecondaryNavWrapper>
                 <SecondaryNav />
             </SecondaryNavWrapper>
@@ -36,25 +30,9 @@ const StyledHeader = styled.header`
   box-sizing: border-box;
 `
 
-const MobileWrapper = styled.div`
-  display: none;
-
-  @media only screen and (max-width: 922px) {
-    display: block;
-    width: 100%;
-  }
-`
-
 const SliderWrapper = styled.div`
+  position: relative;
   width: 100%;
-
-  @media only screen and (min-width: 923px) {
-    padding-top: 100px;
-  }
-
-  @media only screen and (max-width: 922px) {
-    padding-top: 70px;
-  }
 `
 
 const SecondaryNavWrapper = styled.div`

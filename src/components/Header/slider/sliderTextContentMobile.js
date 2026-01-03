@@ -16,33 +16,45 @@ function SliderTextContentMobile(props) {
     const h1 = i18n.language === 'ru' ? 'textContent--h0--rus' : 'textContent--h0'
 
     return (
-        <div style={{
-            display: props.media,
-            flexDirection: 'column',
-            maxWidth: 'var(--page--width)',
-            width: 'var(--page--width100)',
-            height: 'auto'
-        }}>
-            <Temporary3>
+        <Container $display={props.media}>
+            <ContentWrapper>
                 <p className={h1}>{introHeader}</p>
-                <p style={{paddingTop: '7px'}} className={paragraph}>{t("part_01")}</p>
-                {/*<p style={{paddingTop: '7px'}} className={paragraph}>{t("sections:section_header_part06")}</p>*/}
-            </Temporary3>
+                <p className={paragraph}>{t("part_01")}</p>
+            </ContentWrapper>
 
             <Link to={"contacts"}>
                 <ButtonController variant={"sliderMobile"}/>
             </Link>
-        </div>
+        </Container>
     )
 }
 
-const Temporary3 = styled.div`
-  display:flex;
+const Container = styled.div`
+  display: ${props => props.$display || 'flex'};
   flex-direction: column;
-    width: 100%;
-    height: auto;
-  margin-top: 20px;
-  padding-bottom: 20px;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 30px;
+  box-sizing: border-box;
+
+  @media (max-width: 480px) {
+    padding: 0 20px;
+  }
+`
+
+const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 25px;
+
+  @media (max-width: 480px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
 `
 
 export default SliderTextContentMobile

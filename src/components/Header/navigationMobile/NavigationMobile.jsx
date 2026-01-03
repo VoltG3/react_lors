@@ -15,15 +15,20 @@ function NavigationMobile() {
 }
 
 const Container = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 90;
   width: 100%;
-  height: auto;
+  display: none;
+
+  @media only screen and (max-width: 922px) {
+    display: block;
+  }
 `
 
 const TopBar = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 90;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,8 +36,8 @@ const TopBar = styled.div`
   height: 70px;
   padding: 0 30px;
   box-sizing: border-box;
-  background: rgb(244, 244, 244);
-  box-shadow: rgba(176, 176, 176, 0.3) 0px 2px 15px 0px;
+  background: transparent;
+  transition: all 0.3s ease;
 
   @media (max-width: 480px) {
     padding: 0 20px;

@@ -24,18 +24,16 @@ function NavigationDesktop() {
 }
 
 const Container = styled.div`
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
   display: flex;
   justify-content: center;
-  width: 100vw;
-  background: rgba(244, 244, 244, 0.95);
-  backdrop-filter: blur(10px);
-  box-shadow: rgba(176, 176, 176, 0.2) 0px 2px 15px 0px;
-  transition: background 0.3s ease;
+  width: 100%;
+  background: transparent;
+  transition: all 0.3s ease;
 
   @media (max-width: 922px) {
     display: none;

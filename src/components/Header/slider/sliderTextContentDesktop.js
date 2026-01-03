@@ -44,7 +44,7 @@ const Temporary = styled.div`
   flex-direction: column;
     width: 100%;
     height: 100%;
-  margin-top: 80px;
+  margin-top: 140px;
   padding-bottom: 10%;
   
   & div:first-child {
