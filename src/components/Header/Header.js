@@ -1,46 +1,54 @@
 import styled from 'styled-components'
-import NavigationDesktop from './navigationDesktop/navigationDesktop'
+import NavigationDesktop from './navigationDesktop/NavigationDesktop'
 import NavigationMobile from './navigationMobile/navigationMobile'
 import Slider from './slider/slider'
 
 function Header() {
-
     return (
         <StyledHeader>
-            <div className={"navigation desktop"}>
+            <NavigationWrapper className="desktop">
                <NavigationDesktop />
-            </div>
+            </NavigationWrapper>
 
-            <div className={"navigation mobile"}>
+            <NavigationWrapper className="mobile">
                <NavigationMobile />
-            </div>
+            </NavigationWrapper>
 
             <Slider />
         </StyledHeader>
     )
 }
 
-const StyledHeader = styled.div`
+const StyledHeader = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
   box-sizing: border-box;
-    width: 100vw;
-    height: auto;
+`
 
-  .navigation {
-    display: flex;
-    justify-content: center;
-      max-width: var(--page--width);
-          width: 100%;
-          height: auto;
-  }
-    .desktop { display: block!important; }
-    .mobile { display: none!important; }
+const NavigationWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
   
+border: solid 1px red;
+  &.desktop {
+    display: flex;
+  }
+
+  &.mobile {
+    display: none;
+  }
+
   @media only screen and (max-width: 922px) {
-    .desktop { display: none!important; }
-    .mobile { display: block!important; }
+    &.desktop {
+      display: none;
+    }
+
+    &.mobile {
+      display: block;
+    }
   }
 `
 
