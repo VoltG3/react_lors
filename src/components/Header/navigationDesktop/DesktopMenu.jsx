@@ -83,22 +83,22 @@ const DesktopMenu = () => {
               <Divider />
 
               <MenuNav>
-                <MenuItem to="/home" onClick={closeMenu}>
+                <MenuItem to="home" onClick={closeMenu}>
                   {t('chapters:home')}
                 </MenuItem>
-                <MenuItem to="/about" onClick={closeMenu}>
+                <MenuItem to="about" onClick={closeMenu}>
                   {t('chapters:about')}
                 </MenuItem>
-                <MenuItem to="/services" onClick={closeMenu}>
+                <MenuItem to="services" onClick={closeMenu}>
                   {t('chapters:services')}
                 </MenuItem>
-                <MenuItem to="/prices" onClick={closeMenu}>
+                <MenuItem to="prices" onClick={closeMenu}>
                   {t('chapters:prices')}
                 </MenuItem>
-                <MenuItem to="/info" onClick={closeMenu}>
+                <MenuItem to="info" onClick={closeMenu}>
                   {t('chapters:info')}
                 </MenuItem>
-                <MenuItem to="/contacts" onClick={closeMenu}>
+                <MenuItem to="contacts" onClick={closeMenu}>
                   {t('chapters:contacts')}
                 </MenuItem>
               </MenuNav>

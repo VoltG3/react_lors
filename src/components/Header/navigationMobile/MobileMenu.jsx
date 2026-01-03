@@ -4,12 +4,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 import styled from 'styled-components'
 import { useTranslation } from 'react-i18next'
 import i18n from 'i18next'
-import config from '../../../config'
+import Logo from '../navigationDesktop/Logo'
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
   const { t } = useTranslation(['chapters'])
-  const logoTransparent = config.logo_transparent.logoTransparent00
 
   const toggleMenu = () => setIsOpen(!isOpen)
   const closeMenu = () => setIsOpen(false)
@@ -50,15 +49,17 @@ const MobileMenu = () => {
 
   return (
     <>
-      <BurgerButton
-        onClick={toggleMenu}
-        aria-label="Open menu"
-        aria-expanded={isOpen}
-      >
-        <BurgerLine />
-        <BurgerLine />
-        <BurgerLine />
-      </BurgerButton>
+      {!isOpen && (
+        <BurgerButton
+          onClick={toggleMenu}
+          aria-label="Open menu"
+          aria-expanded={isOpen}
+        >
+          <BurgerLine />
+          <BurgerLine />
+          <BurgerLine />
+        </BurgerButton>
+      )}
 
       <AnimatePresence>
         {isOpen && (
@@ -78,7 +79,9 @@ const MobileMenu = () => {
               variants={menuVariants}
             >
               <MenuHeader>
-                <Logo src={logoTransparent} alt="Logo" />
+                <LogoWrapper>
+                  <Logo variant="transparent" />
+                </LogoWrapper>
                 <CloseButton
                   onClick={closeMenu}
                   aria-label="Close menu"
@@ -90,22 +93,22 @@ const MobileMenu = () => {
               <Divider />
 
               <MenuNav>
-                <MenuItem to="/home" onClick={closeMenu}>
+                <MenuItem to="home" onClick={closeMenu}>
                   {t('chapters:home')}
                 </MenuItem>
-                <MenuItem to="/about" onClick={closeMenu}>
+                <MenuItem to="about" onClick={closeMenu}>
                   {t('chapters:about')}
                 </MenuItem>
-                <MenuItem to="/services" onClick={closeMenu}>
+                <MenuItem to="services" onClick={closeMenu}>
                   {t('chapters:services')}
                 </MenuItem>
-                <MenuItem to="/prices" onClick={closeMenu}>
+                <MenuItem to="prices" onClick={closeMenu}>
                   {t('chapters:prices')}
                 </MenuItem>
-                <MenuItem to="/info" onClick={closeMenu}>
+                <MenuItem to="info" onClick={closeMenu}>
                   {t('chapters:info')}
                 </MenuItem>
-                <MenuItem to="/contacts" onClick={closeMenu}>
+                <MenuItem to="contacts" onClick={closeMenu}>
                   {t('chapters:contacts')}
                 </MenuItem>
               </MenuNav>
@@ -115,21 +118,21 @@ const MobileMenu = () => {
               <LanguageSelector>
                 <LangButton
                   onClick={() => changeLanguage('lv')}
-                  active={i18n.language === 'lv'}
+                  $active={i18n.language === 'lv'}
                 >
                   LV
                 </LangButton>
                 <LangSeparator>/</LangSeparator>
                 <LangButton
                   onClick={() => changeLanguage('en')}
-                  active={i18n.language === 'en'}
+                  $active={i18n.language === 'en'}
                 >
                   EN
                 </LangButton>
                 <LangSeparator>/</LangSeparator>
                 <LangButton
                   onClick={() => changeLanguage('ru')}
-                  active={i18n.language === 'ru'}
+                  $active={i18n.language === 'ru'}
                 >
                   RU
                 </LangButton>
@@ -146,10 +149,6 @@ const MobileMenu = () => {
 
 // Styled Components
 const BurgerButton = styled.button`
-  position: fixed;
-  top: 25px;
-  right: 30px;
-  z-index: 100;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -212,7 +211,7 @@ const MenuHeader = styled.div`
   margin-bottom: 20px;
 `
 
-const Logo = styled.img`
+const LogoWrapper = styled.div`
   max-width: 150px;
   min-width: 95px;
   height: auto;
@@ -289,10 +288,10 @@ const LanguageSelector = styled.div`
 const LangButton = styled.button`
   background: transparent;
   border: none;
-  color: ${props => props.active ? 'var(--clr--accent--base, #007bff)' : 'white'};
+  color: ${props => props.$active ? 'var(--clr--accent--base, #007bff)' : 'white'};
   cursor: pointer;
   font-size: 16px;
-  font-weight: ${props => props.active ? 'bold' : 'normal'};
+  font-weight: ${props => props.$active ? 'bold' : 'normal'};
   padding: 8px 12px;
   transition: all 0.2s;
   border-radius: 4px;

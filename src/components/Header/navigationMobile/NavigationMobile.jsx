@@ -1,15 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-import Logo from '../navigationDesktop/logo'
+import Logo from '../navigationDesktop/Logo'
 import MobileMenu from './MobileMenu'
 
 function NavigationMobile() {
     return (
         <Container>
             <TopBar>
-                <Logo variant={"colored"} />
+                <Logo variant="colored" />
+                <MobileMenu />
             </TopBar>
-            <MobileMenu />
         </Container>
     )
 }
@@ -26,6 +26,7 @@ const TopBar = styled.div`
   z-index: 90;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 70px;
   padding: 0 30px;

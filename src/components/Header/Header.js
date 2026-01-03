@@ -1,25 +1,29 @@
 import styled from 'styled-components'
 import NavigationDesktop from './navigationDesktop/NavigationDesktop'
-import NavigationMobile from './navigationMobile/navigationMobile'
+import NavigationMobile from './navigationMobile/NavigationMobile'
+import SecondaryNav from './navigationDesktop/SecondaryNav'
 import Slider from './slider/slider'
-import NavigationDesktop2 from "./navigationDesktop/NavigationDesktop2";
 
 function Header() {
     return (
         <StyledHeader>
-            <NavigationWrapper className="desktop">
-               <NavigationDesktop />
-            </NavigationWrapper>
+            {/* Fixed transparent navigation over slider */}
+            <NavigationDesktop />
 
-            <NavigationWrapper className="mobile">
+            {/* Mobile navigation */}
+            <MobileWrapper>
                <NavigationMobile />
-            </NavigationWrapper>
+            </MobileWrapper>
 
-            <Slider />
+            {/* Slider with padding-top for fixed nav */}
+            <SliderWrapper>
+                <Slider />
+            </SliderWrapper>
 
-            <NavigationWrapper className="desktop">
-                <NavigationDesktop2 />
-            </NavigationWrapper>
+            {/* Secondary navigation below slider */}
+            <SecondaryNavWrapper>
+                <SecondaryNav />
+            </SecondaryNavWrapper>
         </StyledHeader>
     )
 }
@@ -28,32 +32,37 @@ const StyledHeader = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   box-sizing: border-box;
 `
 
-const NavigationWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  
-border: solid 1px red;
-  &.desktop {
-    display: flex;
-  }
+const MobileWrapper = styled.div`
+  display: none;
 
-  &.mobile {
-    display: none;
+  @media only screen and (max-width: 922px) {
+    display: block;
+    width: 100%;
+  }
+`
+
+const SliderWrapper = styled.div`
+  width: 100%;
+
+  @media only screen and (min-width: 923px) {
+    padding-top: 100px;
   }
 
   @media only screen and (max-width: 922px) {
-    &.desktop {
-      display: none;
-    }
+    padding-top: 70px;
+  }
+`
 
-    &.mobile {
-      display: block;
-    }
+const SecondaryNavWrapper = styled.div`
+  display: block;
+  width: 100%;
+
+  @media only screen and (max-width: 922px) {
+    display: none;
   }
 `
 

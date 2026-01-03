@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import Logo from './logo'
-import Info from './info'
-import Languages from './languages'
+import Logo from './Logo'
+import Info from './Info'
+import Languages from './Languages'
 import DesktopMenu from './DesktopMenu'
 
 function NavigationDesktop() {
@@ -18,46 +18,45 @@ function NavigationDesktop() {
           <Languages />
           <DesktopMenu />
         </InfoSection>
-
       </Grid>
     </Container>
   )
 }
 
 const Container = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   display: flex;
   justify-content: center;
-  width: 100%;
-  max-width: var(--page--width, 1440px);
-  height: auto;
+  width: 100vw;
+  background: rgba(244, 244, 244, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(176, 176, 176, 0.2) 0px 2px 15px 0px;
+  transition: background 0.3s ease;
+
+  @media (max-width: 922px) {
+    display: none;
+  }
 `
 
 const Grid = styled.nav`
   display: grid;
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: auto;
   grid-template-columns: auto 1fr;
   gap: 20px;
   width: 100%;
-  max-width: var(--page--width, 1440px);
+  max-width: 1440px;
   padding: 20px 40px;
   box-sizing: border-box;
-  background: rgb(244, 244, 244);
-  box-shadow: rgba(176, 176, 176, 0.3) 0px 2px 15px 0px;
 
-  grid-template-areas:
-    'logo info'
-    'logo nav';
+  grid-template-areas: 'logo info';
 
   @media (max-width: 1220px) {
     padding: 15px 30px;
     gap: 15px;
-  }
-
-  @media (max-width: 922px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 'logo';
-    padding: 15px 20px;
   }
 `
 
@@ -72,29 +71,12 @@ const InfoSection = styled.div`
   grid-area: info;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-end;
   gap: 30px;
 
   @media (max-width: 1220px) {
     gap: 20px;
-  }
-
-  @media (max-width: 922px) {
-    display: none;
-  }
-`
-
-const NavSection = styled.div`
-  grid-area: nav;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  border: solid 1px red;
-
-  @media (max-width: 922px) {
-    display: none;
   }
 `
 
