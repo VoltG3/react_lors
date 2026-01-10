@@ -100,19 +100,19 @@ export const GlobalFontStyles = createGlobalStyle`
 
     // [ TEXTCONTENT ] -------------------------------------------
 
-   --textContent--h1--fontsize: min(max(2.5vw, 18px), 36px);
-   --textContent--h1--lineheight: min(max(3.056vw, 24px), 44px);
-   --textContent--h1--rus--fontsize: min(max(1.944vw, 18px), 28px);
-   --textContent--h1--rus--lineheight: min(max(3.056vw, 24px), 44px);
-   --textContent--h2--fontsize: min(max(1.389vw, 18px), 20px);
-   --textContent--h2--lineheight: min(max(3.056vw, 22px), 44px);
-   --textContent--h2--rus--fontsize: min(max(1.389vw, 18px), 20px);
-   --textContent--h2--rus--lineheight: min(max(3.056vw, 22px), 44px);
+   --textContent--h1--fontsize: min(max(2.5vw, 20px), 36px);
+   --textContent--h1--lineheight: 1.4;
+   --textContent--h1--rus--fontsize: min(max(2.5vw, 20px), 36px);
+   --textContent--h1--rus--lineheight: 1.4;
+   --textContent--h2--fontsize: min(max(1.8vw, 18px), 24px);
+   --textContent--h2--lineheight: 1.5;
+   --textContent--h2--rus--fontsize: min(max(1.8vw, 18px), 24px);
+   --textContent--h2--rus--lineheight: 1.5;
    --textContent--h3--fontsize: 20px;
-   --textContent--paragraph--fontsize: min(max(1.458vw, 18px), 21px);
-   --textContent--paragraph--lineheight: min(max(1.806vw, 20px), 26px);
-   --textContent--paragraph--rus--fontsize: min(max(1.458vw, 18px), 21px);
-   --textContent--paragraph--rus--lineheight: min(max(1.806vw, 20px), 26px);
+   --textContent--paragraph--fontsize: min(max(1.2vw, 16px), 18px);
+   --textContent--paragraph--lineheight: 1.6;
+   --textContent--paragraph--rus--fontsize: min(max(1.2vw, 16px), 18px);
+   --textContent--paragraph--rus--lineheight: 1.6;
         
     .textContent--h1 {
         font-family: var(--font--GTWalsheimMedium),sans-serif;
@@ -141,7 +141,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--paragraph--fontsize);
-        line-height: 1.6;
+        line-height: var(--textContent--paragraph--lineheight);
         opacity: var(--font--opacity);
         color: var(--color--default);
     }
@@ -151,7 +151,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--paragraph--rus--fontsize);
-        line-height: 1.6;
+        line-height: var(--textContent--paragraph--rus--lineheight);
         opacity: var(--font--opacity);
         color: var(--color--default);
     }
@@ -183,31 +183,33 @@ export const GlobalFontStyles = createGlobalStyle`
         font-style: normal;
         font-weight: 600;
         font-size: var(--textContent--h3--fontsize);
+        line-height: 1.5;
         opacity: var(--font--opacity);
     }
         
     // [ TABLEDATA ] ---------------------------------------------
 
     .textContent--tabledata--header {
-        font-family: var(--font--Roboto),sans-serif;
-        font-size: 26px;
-        font-weight: 300;
+        font-family: var(--font--GTWalsheimMedium),sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1.4;
+        text-transform: uppercase;
         color: var(--color--tabledata);
 
         @media only screen and (max-width: 700px) {
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 
     .textContent--tabledata--item--small {
-        font-family: var(--font--Roboto),sans-serif;
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 1.5;
+        font-family: var(--font--GTWalsheimLight),sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.6;
         color: var(--color--button--v1);
 
         @media only screen and (max-width: 700px) {  
-            line-height: 1.3;
             font-size: 14px;
         }
     }
