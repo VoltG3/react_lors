@@ -17,19 +17,11 @@ export const ListContainer = css`
 
       & > div {
         display: flex;
-        align-items: center;
+        align-items: stretch;
         width: 100%;
         min-height: var(--list--line--height);
-        padding: 8px 0;
+        padding: 0;
         box-sizing: border-box;
-
-        @media only screen and (min-width: 1024px) {
-          padding: 12px 0;
-        }
-
-        @media only screen and (max-width: 700px) {
-          padding: 6px 0;
-        }
       }
     
       & > div:nth-child(even) {
