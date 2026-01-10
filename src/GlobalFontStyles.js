@@ -81,7 +81,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--h0--fontsize);
-        line-height: var(--textContent--h0--lineheight);!important;
+        line-height: var(--textContent--h0--lineheight) !important;
         white-space: pre-wrap;
         opacity: var(--font--opacity);
         color: var(--color--secondary);
@@ -92,7 +92,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--h0--rus--fontsize);
-        line-height: var(--textContent--h0--rus--lineheight);!important;
+        line-height: var(--textContent--h0--rus--lineheight) !important;
         text-transform: uppercase;
         opacity: var(--font--opacity);
         color: var(--color--secondary);
@@ -119,7 +119,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--h1--fontsize);
-        line-height: var(--textContent--h1--lineheight)!important;
+        line-height: var(--textContent--h1--lineheight) !important;
         white-space: pre-wrap;
         opacity: var(--font--opacity);
         color: var(--color--secondary);
@@ -130,7 +130,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--h1--rus--fontsize);
-        line-height: var(--textContent--h1--rus--lineheight);!important;
+        line-height: var(--textContent--h1--rus--lineheight) !important;
         text-transform: uppercase;
         opacity: var(--font--opacity);
         color: var(--color--secondary);

@@ -25,7 +25,7 @@ const TILES_LV = {
             part_04 : "Ir bērnu pārtinamā virsma",
             part_05 : "Ir uzgaidāmā telpa un sēdvietas",
             part_06 : "Ir lifts",
-            part_07 : "Auto  var parkot Brīvī bas ielā",
+            part_07 : "Auto var parkot Brīvības ielā",
             part_08 : "Pieņemam norēķinu kartes",
         }
     },

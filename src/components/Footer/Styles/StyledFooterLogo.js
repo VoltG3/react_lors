@@ -14,26 +14,39 @@ export const StyledFooterLogo = styled.div`
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: flex-start;
         gap: 32px;
         max-width: 1400px;
         margin: 0 auto;
-        flex-wrap: wrap; /* ļaujam blokiem pārliekt jaunā rindā, ja nepietiek vietas */
+        flex-wrap: wrap;
+
+        @media (max-width: 1024px) {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            gap: 24px;
+        }
     }
 
     .text-block {
-        max-width: 600px;
+        flex: 1;
         text-align: left;
         color: #bcbcbc;
         font-size: 14px;
         line-height: 1.6;
+        border-left: solid 2px lightgray;
+        padding-left: 25px;
+
+        @media (max-width: 1024px) {
+            border-left: none;
+            padding-left: 0;
+            width: 100%;
+        }
     }
 
     .inner-footer-logo-logo-container {
-        padding-right: 0;
-
-        @media (max-width: 768px) {
-            padding-right: 0;
-        }
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
     }
 
     .inner-footer-logo-logo-row {
@@ -48,41 +61,11 @@ export const StyledFooterLogo = styled.div`
         @media (max-width: 768px) {
             flex-direction: row;
             gap: 16px;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
         }
     }
     
-    .inner-footer-logo-text-container {
-        display: flex;
-        height: 100%;
-        max-width: 600px;
-        border-left: solid 2px lightgray;
-        
-        p {
-            padding-left: 25px;
-            text-align: left;
-            color: #bcbcbc;
-            font-size: 14px;
-            line-height: 1.6;
-        }
-    }
-
     /* Kad kļūst šaurāk, logotipu bloks un teksts iet katrs savā rindā */
     @media (max-width: 900px) {
-        .inner-footer-logo-logo-container,
-        .inner-footer-logo-text-container {
-            flex: 1 1 100%;
-        }
-
-        .inner-footer-logo-text-container {
-            border-left: none;
-            border-top: 2px solid lightgray;
-            margin-top: 16px;
-
-            p {
-                padding-left: 0;
-                padding-top: 16px;
-            }
-        }
     }
 `

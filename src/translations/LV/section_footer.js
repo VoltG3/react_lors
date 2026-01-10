@@ -19,5 +19,6 @@ export const SECTION_FOOTER_LV = {
         part_03 : "Tālrunis",
         part_04 : "Reģistratūrā:  +371 67186950",
         part_05 : "Praksē: +371 67223546",
-    }
+    },
+    insurance_text: "Pieņemam Balta, BTA, Ergo, Gjensidige, Seesam veselības apdrošināšanas polises, tajā skaitā līgumsaistības ar valsti."
 }

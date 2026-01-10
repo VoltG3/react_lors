@@ -102,10 +102,9 @@ function Footer() {
                                 mobileMaxHeight="25px"
                             />
                         </div>
-
-                        <div className={"text-block"}>
-
-                        </div>
+                    </div>
+                    <div className={"text-block"}>
+                        <p>{ t("section_footer:insurance_text") }</p>
                     </div>
                 </div>
             </FooterLogo>
