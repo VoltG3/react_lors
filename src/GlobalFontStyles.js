@@ -6,7 +6,6 @@ export const GlobalFontStyles = createGlobalStyle`
       --font--Montserrat: "Montserrat", sans-serif;
       --font--OpenSans: "Open Sans", sans-serif;
       --font--Roboto: "Roboto", sans-serif;
-      --font--GTWalsheimLight: "GTWalsheimLight", sans-serif;
       --font--opacity: 0.7;
         
     // [ BUTTON ] ------------------------------------------------
@@ -77,9 +76,9 @@ export const GlobalFontStyles = createGlobalStyle`
     --textContent--h0--rus--lineheight: min(max(3.056vw, 24px), 44px);    
         
     .textContent--h0 {
-        font-family: var(--font--GTWalsheimMedium),sans-serif;
+        font-family: var(--font--Montserrat),sans-serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         font-size: var(--textContent--h0--fontsize);
         line-height: var(--textContent--h0--lineheight) !important;
         white-space: pre-wrap;
@@ -115,9 +114,9 @@ export const GlobalFontStyles = createGlobalStyle`
    --textContent--paragraph--rus--lineheight: 1.6;
         
     .textContent--h1 {
-        font-family: var(--font--GTWalsheimMedium),sans-serif;
+        font-family: var(--font--Montserrat),sans-serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         font-size: var(--textContent--h1--fontsize);
         line-height: var(--textContent--h1--lineheight) !important;
         white-space: pre-wrap;
@@ -137,9 +136,9 @@ export const GlobalFontStyles = createGlobalStyle`
     }
 
     .textContent--paragraph {
-        font-family: var(--font--GTWalsheimLight),sans-serif;
+        font-family: var(--font--Montserrat),sans-serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         font-size: var(--textContent--paragraph--fontsize);
         line-height: var(--textContent--paragraph--lineheight);
         opacity: var(--font--opacity);
@@ -157,9 +156,9 @@ export const GlobalFontStyles = createGlobalStyle`
     }
 
     .textContent--h2 {
-        font-family: var( --font--GTWalsheimMedium),sans-serif;
+        font-family: var( --font--Montserrat),sans-serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         font-size: var(--textContent--h2--fontsize);
         line-height: var(--textContent--h2--lineheight);
         text-transform: uppercase;
@@ -190,9 +189,9 @@ export const GlobalFontStyles = createGlobalStyle`
     // [ TABLEDATA ] ---------------------------------------------
 
     .textContent--tabledata--header {
-        font-family: var(--font--GTWalsheimMedium),sans-serif;
+        font-family: var(--font--Montserrat),sans-serif;
         font-size: 22px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1.4;
         text-transform: uppercase;
         color: var(--color--tabledata);
@@ -203,9 +202,9 @@ export const GlobalFontStyles = createGlobalStyle`
     }
 
     .textContent--tabledata--item--small {
-        font-family: var(--font--GTWalsheimLight),sans-serif;
+        font-family: var(--font--Montserrat),sans-serif;
         font-size: 15px;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.6;
         color: var(--color--button--v1);
 

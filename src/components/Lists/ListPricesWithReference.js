@@ -9,8 +9,7 @@ export const ListPricesWithReference = () => {
     const currencySign = config.common.currencySign
 
     return (
-        <div style={{ width: '100%', paddingBottom: 'var(--size--padding30)' }}>
-            <Container>
+        <Container>
                 <Header>
                     <p className={"textContent--list--header"}>{ t("list_prices_with_reference.list_header") }</p>
                 </Header>
@@ -34,6 +33,5 @@ export const ListPricesWithReference = () => {
                 ))}
 
             </Container>
-        </div>
     )
 }

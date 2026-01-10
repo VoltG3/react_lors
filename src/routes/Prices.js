@@ -50,6 +50,7 @@ export default function Prices() {
             </span>
 
             <ListPricesWithReference />
+            <div style={{ height: 'var(--size--padding40)' }} />
             <ListPricesWithoutReference />
             <ImageController variant={"office"} />
         </PageContainer>

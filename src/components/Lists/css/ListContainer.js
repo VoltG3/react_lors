@@ -18,8 +18,18 @@ export const ListContainer = css`
       & > div {
         display: flex;
         align-items: center;
-            width: 100%;
+        width: 100%;
         min-height: var(--list--line--height);
+        padding: 8px 0;
+        box-sizing: border-box;
+
+        @media only screen and (min-width: 1024px) {
+          padding: 12px 0;
+        }
+
+        @media only screen and (max-width: 700px) {
+          padding: 6px 0;
+        }
       }
     
       & > div:nth-child(even) {
@@ -36,14 +46,14 @@ export const ListContainer = css`
       }
     
       & p {
-        margin: 8px var(--list--margin);
+        margin: 0 var(--list--margin);
         
         @media only screen and (min-width: 1024px) {
-          margin: 12px 45px;
+          margin: 0 45px;
         }
 
         @media only screen and (max-width: 700px) {
-          margin: 6px var(--list--margin);
+          margin: 0 var(--list--margin);
         }
       }
 `
