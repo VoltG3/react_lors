@@ -4,8 +4,8 @@ export const GlobalColorStyles = createGlobalStyle`
   :root {
 
     --color--list--header: #2d3436;
-    --color--list--even: #F4F4F4;
-    --color--list--odd: var(--color--none);
+    --color--list--even: #F9F9F9;
+    --color--list--odd: #FFFFFF;
 
     --color--primary: #112734;
     --color--secondary: #152F3F;

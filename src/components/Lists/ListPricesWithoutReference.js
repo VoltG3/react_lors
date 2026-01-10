@@ -21,11 +21,11 @@ export const ListPricesWithoutReference = () => {
                     </span>
 
                     <span className={"productItemPrice"}>
-                        <div className={"line"}>
+                        <div>
                             <p className={"textContent--list--item"}>{ listItem.price }</p>
                         </div>
 
-                        <div className={"line"}>
+                        <div>
                             <p className={"textContent--list--item"}>{ currencySign }</p>
                         </div>
                     </span>

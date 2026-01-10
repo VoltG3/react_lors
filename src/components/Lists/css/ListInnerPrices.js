@@ -8,38 +8,44 @@ export const ListInnerPrices = css`
   .productItemPrice {
     display: flex;
     flex-direction: row;
-      max-width: 180px;
-          width: auto; 
-          height: auto;
-    margin-right: var(--list--margin);
+    align-items: center;
+    max-width: 180px;
+    width: 100%;
+    min-height: inherit;
+    height: 100%;
+    margin-right: 0;
+    border-left: 1px solid rgba(0,0,0,0.08);
+    background-color: rgba(0,0,0,0.02);
+    padding-left: 20px;
+    padding-right: var(--list--margin);
     
     @media only screen and (max-width: 700px) { 
-      max-width: 90px; 
+      max-width: 100px;
+      padding-left: 10px;
+      padding-right: var(--list--margin);
     }
     
     & div:nth-child(1) {
       display: flex;
       justify-content: flex-end;
-        max-width: 90px;
-            width: 100%;
+      width: 60px;
       
       @media only screen and (max-width: 700px) {
-        max-width: 45px; 
+        width: 45px; 
       }
       
       & p {
-        margin: 0 10px 0 0;
+        margin: 0 5px 0 0;
       }
     }
 
     & div:nth-child(2) {
       display: flex;
       justify-content: flex-start;
-        max-width: 90px;
-            width: 100%;
+      width: 20px;
       
       @media only screen and (max-width: 700px) { 
-        max-width: 45px; 
+        width: 15px; 
       }
       
       & p {
@@ -47,17 +53,4 @@ export const ListInnerPrices = css`
       }
     }
   }
-
-  .line {
-    height: auto;
-    min-height: var(--list--line--height);
-  }
-
-    & div:nth-child(even) .line {
-      background: var(--color--list--even);
-    }
-  
-    & div:nth-child(odd) .line {
-      background: var(--color--list--odd);
-    }
 `
