@@ -12,11 +12,13 @@ const ImgContainer = css`
   & img {
     border-radius: var(--border--radius);
     box-shadow: var(--box--shadow);
-    opacity: 0.95;
+    opacity: 1;
+
+    transition: all .3s ease;
 
     &:hover {
-      transition: box-shadow .3s linear;
       box-shadow: var(--box--hover);
+      transform: translateY(-2px);
     }
 
     @media only screen and (max-width: 922px) {

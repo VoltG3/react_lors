@@ -14,14 +14,14 @@ const TileContainer = css`
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding: 60px 40px 44px;
+    padding: 60px 40px;
 
     @media (max-width: 922px) {
-      padding: 40px 30px 30px;
+      padding: 40px 30px;
     }
 
     @media (max-width: 480px) {
-      padding: 30px 20px 25px;
+      padding: 30px 20px;
     }
   }
 `

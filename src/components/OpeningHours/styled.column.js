@@ -32,6 +32,12 @@ export const StyledOpeningHoursColumn = styled.div`
       align-items: center;
         width: 100%;
         height: 60px;
+        
+        @media only screen and (max-width: 700px) {
+            height: auto;
+            min-height: 50px;
+            padding: 8px 0;
+        }
     }
     
     .cell--dobble {

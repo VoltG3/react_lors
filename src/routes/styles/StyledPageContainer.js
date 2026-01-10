@@ -4,20 +4,24 @@ export const StyledPageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1440px;
+  max-width: var(--page--width);
   width: 100%;
   height: auto;
   box-sizing: border-box;
-  padding: 70px 40px 80px;
+  padding: 80px 40px;
 
   @media only screen and (max-width: 700px) {
-    padding: 30px 20px;
+    padding: 40px 20px;
   }
 
   & h1,
   & h2 {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    
+    @media only screen and (max-width: 700px) {
+        margin-bottom: 24px;
+    }
   }
 
   & h2 {
@@ -28,7 +32,11 @@ export const StyledPageContainer = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 32px;
+    
+    @media only screen and (max-width: 700px) {
+        gap: 20px;
+    }
 
     & p:last-child {
       margin-bottom: 0;

@@ -141,7 +141,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--paragraph--fontsize);
-        line-height: var(--textContent--paragraph--lineheight);
+        line-height: 1.6;
         opacity: var(--font--opacity);
         color: var(--color--default);
     }
@@ -151,7 +151,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--paragraph--rus--fontsize);
-        line-height: var(--textContent--paragraph--rus--lineheight);
+        line-height: 1.6;
         opacity: var(--font--opacity);
         color: var(--color--default);
     }

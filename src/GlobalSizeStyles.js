@@ -17,32 +17,45 @@ export const GlobalSizeStyles = createGlobalStyle`
 
       --desktop--navigation--height: 75px;
       
-          @media only screen and (max-width: 1500px) { :root { --page--width100: calc(100% - calc(var(--size--padding40) * 2)); }}
-          @media only screen and (max-width: 700px)  { :root { --page--width100: calc(100% - calc(var(--size--padding10) * 2)); }}
+      --spacing--xs: 0.5rem;
+      --spacing--sm: 1rem;
+      --spacing--md: 2rem;
+      --spacing--lg: 4rem;
+      --spacing--xl: 8rem;
       
-      --tile--margin: var(--size--padding40);
+      @media only screen and (max-width: 1500px) {
+        --page--width100: calc(100% - 80px);
+      }
+      @media only screen and (max-width: 700px)  {
+        --page--width100: calc(100% - 40px);
+      }
       
-          @media only screen and (max-width: 700px)  { :root { --tile--margin: var(--size--padding10); }}
+      --tile--margin: 40px;
+      
+      @media only screen and (max-width: 700px)  {
+        --tile--margin: 20px;
+      }
 
-      --list--margin: var(--size--padding30);
+      --list--margin: 30px;
 
-          @media only screen and (max-width: 700px)  { :root { --list--margin: var(--size--padding10); }}
+      @media only screen and (max-width: 700px)  {
+        --list--margin: 20px;
+      }
       
       --list--line--height: 40px;
       
-      --box--shadow:      rgba(176, 176, 176, 0.3) 0px 2px 15px 0px;
-      --box--hover:       0 2px 15px 0 hsla(0,0%,69%,.5);
+      --box--shadow:      rgba(0, 0, 0, 0.08) 0px 4px 12px;
+      --box--hover:       rgba(0, 0, 0, 0.15) 0px 8px 24px;
 
-      --border--radius: 4px;
+      --border--radius: 8px;
       
       --media--desktop: flex;
       --media--mobile: none;
 
-        @media only screen and (max-width: 700px) { 
-          :root {
-            --media--desktop: none;
-            --media--mobile: flex; 
-          }}
+      @media only screen and (max-width: 700px) { 
+        --media--desktop: none;
+        --media--mobile: flex; 
+      }
       
     }
 `

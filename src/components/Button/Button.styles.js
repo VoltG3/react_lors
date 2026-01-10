@@ -31,14 +31,11 @@ const Container = css`
     box-sizing: border-box;
     //padding: 15px 0 15px 0;
 
-    border-radius: 5px;
+    border-radius: var(--border--radius);
     border: 1px solid ${({ theme }) => theme.colors.borderColor };
     background: ${({ theme }) => theme.colors.backgroundColor };
 
-    transition:
-        background .5s linear,
-        border-color ease-in .5s,
-        padding-left ease-in .5s;
+    transition: all .3s ease;
     & p {
       display: inline-block;
       margin-left: ${({ theme }) => theme.sizes.paragraphMarginLeft };
@@ -49,11 +46,8 @@ const Container = css`
       cursor: pointer;
       background-color: ${({ theme }) => theme.colors.backgroundHover };
       border-color: ${({ theme }) => theme.colors.backgroundHover };
-      padding-left: 30px;
-      transition:
-          background .2s linear,
-          border-color ease-out .2s,
-          padding-left ease-out .2s;
+      padding-left: 20px;
+      box-shadow: var(--box--hover);
     }
   }
 `
