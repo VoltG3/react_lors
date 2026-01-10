@@ -3,7 +3,7 @@ import { DAYS_EN } from './days'
 const TILES_EN = {
     openingHours : {
         head : "Working hours",
-        text : "Attendance for face-to-face or remote consultations only by appointment sign up by phone +371 67186950 or",
+        text : "Attendance for face-to-face or remote consultations only by appointment sign up by phone +371 67186950 or +371 67223546",
         item : {
             day_01 : DAYS_EN.list_days[0].item,
             day_02 : DAYS_EN.list_days[1].item,

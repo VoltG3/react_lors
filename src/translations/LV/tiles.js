@@ -3,7 +3,7 @@ import { DAYS_LV } from './days'
 const TILES_LV = {
     openingHours : {
         head : "Darba laiki",
-        text : "Apmeklējums klātienes vai attālinātajām konsultācijām tikai pēc iepriekšēja pieraksta pa telefonu +371 67186950 vai",
+        text : "Apmeklējums klātienes vai attālinātajām konsultācijām tikai pēc iepriekšēja pieraksta pa telefonu +371 67186950 vai +371 67223546",
         item : {
             day_01 : DAYS_LV.list_days[0].item,
             day_02 : DAYS_LV.list_days[1].item,

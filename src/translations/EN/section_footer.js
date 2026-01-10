@@ -26,6 +26,6 @@ export const SECTION_FOOTER_EN = {
         part_02 : "E-mail: info@lors.lv",
         part_03 : "Phone",
         part_04 : "At the reception: +371 67186950",
-        part_05 : "In practice: +371 6722354"
+        part_05 : "In practice: +371 67223546"
     }
 }

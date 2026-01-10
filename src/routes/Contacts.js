@@ -23,21 +23,6 @@ export default function Contacts() {
     const introHeader = config.common.introHeader
     const URL_01 = config.external_url.URL_01
 
-    const ShowDataWithtReference = showWithReference
-    const ShowDataWithoutReference = showWithoutReference
-    const IfBothFalseContent = openingDate
-
-    function isBothFalse() {
-        if(ShowDataWithtReference === false && ShowDataWithoutReference === false) {
-            return "false"
-        } else {
-            return "true"
-        }
-    }
-
-    const ShowDataWithoutReferenceContent = <p style={{ color: 'var(--color--paragraph--highlight)'}} className={ paragraph }>{ t("chapter_contacts.part_03") }</p>
-    const ShowDataBothFalseContent = <p style={{ color: 'var(--color--paragraph--highlight)'}} className={ paragraph }>{ t("chapter_contacts.part_04") + IfBothFalseContent }</p>
-
     return (
         <>
             <PageContainer style={{ paddingBottom: '0'}}>
@@ -49,12 +34,6 @@ export default function Contacts() {
                     <span>
                         <p style={{ color: 'var(--color--paragraph--highlight)'}} className={ paragraph }>{ t("chapter_contacts.part_01") }</p>
                         <p className={ paragraph }>{ t("chapter_contacts.part_02") }</p>
-
-                        {
-                            isBothFalse() === "false"
-                                ? ShowDataBothFalseContent
-                                : ShowDataWithoutReference === false ? ShowDataWithoutReferenceContent : ''
-                        }
 
                         <a href={ `${URL_01}` } target={"_blank"} rel={"noopener noreferrer"}>
                            <ButtonController variant={"contacts"} />

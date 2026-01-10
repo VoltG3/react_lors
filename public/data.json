@@ -10,8 +10,8 @@
     ],
     "private" : [
       {
-        "line_01" : "",
-        "line_02" : "15 - 17"
+        "line_01" : "10 - 11",
+        "line_02" : ""
       }
     ],
     "personal_public" : [
@@ -22,7 +22,7 @@
     ],
     "personal_private" : [
       {
-        "line_01" : "",
+        "line_01" : "J. Liepiņa",
         "line_02" : ""
       }
     ]
@@ -50,7 +50,7 @@
     ],
     "personal_private" : [
       {
-        "line_01" : "J. Liepiņa",
+        "line_01" : "-",
         "line_02" : ""
       }
     ]
@@ -66,7 +66,7 @@
     ],
     "private": [
       {
-        "line_01": "9 - 11",
+        "line_01": "14 - 15",
         "line_02": ""
       }
     ],
@@ -94,7 +94,7 @@
     ],
     "private": [
       {
-        "line_01": "",
+        "line_01": "13 - 14",
         "line_02": ""
       }
     ],
@@ -134,7 +134,7 @@
     ],
     "personal_private" : [
       {
-        "line_01" : "E. Eliasa - Vīgante",
+        "line_01" : "-",
         "line_02" : ""
       }
     ]
