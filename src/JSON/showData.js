@@ -10,7 +10,7 @@ export const useShowData = () => {
         const fetchData = async () => {
             try {
                 setLoading(true)
-                const response = await axios.get("./showData.json")
+                const response = await axios.get("/showData.json")
                 setData(response.data)
                 setError(null)
             } catch (err) {
