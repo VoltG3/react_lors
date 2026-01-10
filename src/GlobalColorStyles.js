@@ -13,11 +13,11 @@ export const GlobalColorStyles = createGlobalStyle`
     --color--paragraph--footer: #828181;
     --color--paragraph--highlight: #F31850;
 
-    --color--button--v1--background: #ffb81c;
-    --color--button--v1--hover: rgb(255, 208, 105);
+    --color--button--v1--background: #FFB81C;
+    --color--button--v1--hover: #FFC94D;
     /*   --color--button--v1: #262626;*/
     --color--button--v2--background: #EF5DA8;
-    --color--button--v2--hover: #f587bf;
+    --color--button--v2--hover: #F482BC;
     --color--m: #112734;
 
     --color--line--variant--v1: #EDAE0E;

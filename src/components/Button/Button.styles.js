@@ -35,19 +35,22 @@ const Container = css`
     border: 1px solid ${({ theme }) => theme.colors.borderColor };
     background: ${({ theme }) => theme.colors.backgroundColor };
 
-    transition: all .3s ease;
+    transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
     & p {
       display: inline-block;
       margin-left: ${({ theme }) => theme.sizes.paragraphMarginLeft };
-      color: ${({ theme }) => theme.colors.color }!important; /**/
+      color: ${({ theme }) => theme.colors.color }!important;
+      font-weight: 500;
+      letter-spacing: 0.5px;
     }
 
     &:hover {
       cursor: pointer;
       background-color: ${({ theme }) => theme.colors.backgroundHover };
       border-color: ${({ theme }) => theme.colors.backgroundHover };
-      padding-left: 20px;
+      padding-left: 10px;
       box-shadow: var(--box--hover);
+      transform: translateY(-2px);
     }
   }
 `
@@ -84,24 +87,15 @@ const After = css`
     bottom: 0;
     width: 40px;
     background: ${({ theme }) => theme.colors.backgroundColor};
-    -webkit-transform-origin: bottom left;
-    -moz-transform-origin: bottom left;
     transform-origin: bottom left;
-    -webkit-transform: skew(-25deg);
-    -ms-transform: skew(-25deg);
     transform: skew(-25deg);
     z-index: -1;
-    transition:
-        background .5s linear,
-        border-color ease-in .5s;
+    transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .button:hover::after {
     background: ${({ theme }) => theme.colors.backgroundHover };
     border-color: ${({ theme }) => theme.colors.backgroundHover };
-    transition:
-        background .2s linear,
-        border-color ease-out .2s;
   }
 `
 
