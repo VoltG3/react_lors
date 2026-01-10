@@ -29,7 +29,7 @@ export const StyledFooterLogo = styled.div`
     }
 
     .inner-footer-logo-logo-container {
-        padding-right: 50px;
+        padding-right: 0;
 
         @media (max-width: 768px) {
             padding-right: 0;
@@ -38,7 +38,7 @@ export const StyledFooterLogo = styled.div`
 
     .inner-footer-logo-logo-row {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         gap: 40px;
         flex-wrap: wrap;

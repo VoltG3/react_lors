@@ -271,7 +271,7 @@ const MenuItem = styled(Link)`
   font-size: 18px;
   letter-spacing: 1px;
   transition: color 0.2s;
-  border-radius: 4px;
+  border-radius: 0;
 
   &:hover {
     color: white;
@@ -301,7 +301,7 @@ const LangButton = styled.button`
   font-weight: ${props => props.$active ? 'bold' : 'normal'};
   padding: 8px 12px;
   transition: all 0.2s;
-  border-radius: 4px;
+  border-radius: 0;
 
   &:hover {
     color: var(--clr--accent--base, #007bff);

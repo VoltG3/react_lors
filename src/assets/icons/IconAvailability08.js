@@ -12,36 +12,31 @@ import React from 'react'
  * @param {Object} [props.style] - Additional inline styles
  */
 const IconAvailability08 = ({
-    size,
-    width,
-    height,
-    bgColor = '#3F3F3F',
-    stripeColor = 'white',
+    size = 40,
+    circleColor = '#3F3F3F',
+    iconColor = 'white',
     className = '',
     style = {},
     ...props
 }) => {
-    // Calculate dimensions: if size is provided, scale proportionally (43:27 ratio)
-    // Otherwise use individual width/height or defaults
-    const finalWidth = width || (size ? size : 43)
-    const finalHeight = height || (size ? (size * 27 / 43) : 27)
-
     return (
         <svg
-            width={finalWidth}
-            height={finalHeight}
-            viewBox="0 0 43 27"
+            width={size}
+            height={size}
+            viewBox="0 0 40 40"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className={className}
             style={style}
             {...props}
         >
-            <path
-                d="M0 3.25301C0 1.45642 1.35576 0 3.02817 0H39.9718C41.6442 0 43 1.45642 43 3.25301V23.747C43 25.5436 41.6442 27 39.9718 27H3.02817C1.35576 27 0 25.5436 0 23.747V3.25301Z"
-                fill={bgColor}
-            />
-            <rect y="5.53012" width="43" height="6.50602" fill={stripeColor} />
+            <circle cx="20" cy="20" r="20" fill={circleColor} />
+            {/* Karte */}
+            <rect x="9" y="14" width="22" height="15" rx="2" fill={iconColor} />
+            {/* Magnētiskā josla */}
+            <rect x="9" y="17" width="22" height="3" fill={circleColor} />
+            {/* Mikroshēma */}
+            <rect x="12" y="22" width="4" height="3" rx="0.5" fill={circleColor} opacity="0.8" />
         </svg>
     )
 }

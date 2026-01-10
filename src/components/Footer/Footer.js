@@ -103,7 +103,7 @@ function Footer() {
                             />
                         </div>
 
-                        <div className={"text/block"}>
+                        <div className={"text-block"}>
 
                         </div>
                     </div>

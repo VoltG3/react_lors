@@ -21,17 +21,7 @@ const TileHours = () => {
                 <LineTiny color={"colorFirst"}/>
 
                 <div className={"timetable"}>
-                    <div className={"timetableSquareFirstColumn"}>
-                        <div className={"cell"}><p className={ tableParagraph }>{ t("openingHours.item.day_01") }</p></div>
-                        <div className={"cell"}><p className={ tableParagraph }>{ t("openingHours.item.day_02") }</p></div>
-                        <div className={"cell"}><p className={ tableParagraph }>{ t("openingHours.item.day_03") }</p></div>
-                        <div className={"cell"}><p className={ tableParagraph }>{ t("openingHours.item.day_04") }</p></div>
-                        <div className={"cell"}><p className={ tableParagraph }>{ t("openingHours.item.day_05") }</p></div>
-                    </div>
-
-                    <div className={"timetableSquareSecondColumn"}>
-                        <TileHoursJSON />
-                    </div>
+                    <TileHoursJSON />
                 </div>
 
                 <p className={ paragraph } style={{ paddingTop: '44px', paddingBottom: '22px'}}>{ t("openingHours.text") }</p>

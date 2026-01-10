@@ -29,37 +29,9 @@ const TileContainer = css`
 const Hours = css`
   .timetable {
     display: flex;
-    flex-direction: row;
-      width: auto;
-      height: auto;
-  }
-
-  .timetableSquareFirstColumn {
-    display: flex;
     flex-direction: column;
-    max-width: 180px;
     width: 100%;
     height: auto;
-
-        & p { padding: 0 25px 0 25px; }
-        & div:nth-child(even) { background: var(--color--list--even); }
-        & div:nth-child(odd) { background: var(--color--list--odd); }
-  }
-
-  .timetableSquareSecondTable {
-    display: flex;
-    flex-direction: column;
-    max-width: 200px;
-      width: 100%;
-      height: auto;
-  }
-
-  .cell {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-      width: auto;
-      height: 40px;
   }
 `
 

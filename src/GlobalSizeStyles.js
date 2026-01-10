@@ -47,7 +47,7 @@ export const GlobalSizeStyles = createGlobalStyle`
       --box--shadow:      rgba(0, 0, 0, 0.08) 0px 4px 12px;
       --box--hover:       rgba(0, 0, 0, 0.15) 0px 8px 24px;
 
-      --border--radius: 8px;
+      --border--radius: 0;
       
       --media--desktop: flex;
       --media--mobile: none;

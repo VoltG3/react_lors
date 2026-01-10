@@ -63,7 +63,7 @@ const InfoBox = styled.div`
   gap: 10px;
   padding: 10px 20px;
   border: 2px solid rgba(55, 58, 71, 0.3);
-  border-radius: 8px;
+  border-radius: 0;
   background: transparent;
   transition: all 0.3s ease;
 

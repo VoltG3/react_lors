@@ -79,7 +79,7 @@ const NavLink = styled(Link)`
   text-decoration: none;
   letter-spacing: 0.5px;
   border: 1px solid ${props => props.$isActive ? '#d97706' : '#373a47'};
-  border-radius: 8px;
+  border-radius: 0;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   background: transparent;
   white-space: nowrap;

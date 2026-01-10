@@ -6,7 +6,7 @@ export const StyledFooterButton = styled.a`
   color: white !important;
   text-decoration: none;
   border: 2px solid white;
-  border-radius: 4px;
+  border-radius: 0;
   transition: background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
   font-size: 16px;
