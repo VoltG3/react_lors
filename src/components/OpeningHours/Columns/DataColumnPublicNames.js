@@ -1,7 +1,7 @@
-import { useFetchData } from '../../../JSON/fetchData'
+import { useProjectData } from '../../../utils/DataContext'
 
 const DataColumnPublicNames = () => {
-    const { data: jsonData, loading, error } = useFetchData()
+    const { data: jsonData, loading, error } = useProjectData()
     const paragraph = "textContent--tabledata--item--small"
 
     if (loading) return <div>Loading...</div>

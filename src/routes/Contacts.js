@@ -10,13 +10,13 @@ import { ImageController } from '../components/Image/image.controller'
 import OpeningHoursController from '../components/OpeningHours/OpeningHours.controller'
 import LineLang from '../components/line.lang'
 import { ButtonController } from '../components/Button/Button.controller'
-import { useShowData } from "../JSON/showData";
+import { useProjectData } from "../utils/DataContext";
 
 const GoogleMap = lazy(() => import('../components/GoogleMap'));
 
 export default function Contacts() {
     const [t] = useTranslation(["chapter_pages", "chapters"])
-    const { showWithReference, showWithoutReference, openingDate, loading } = useShowData()
+    const { showWithReference, showWithoutReference, openingDate, loading } = useProjectData()
     const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
     const h = i18n.language === 'ru' ? 'textContent--h1--rus' : 'textContent--h1'
 

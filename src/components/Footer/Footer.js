@@ -29,8 +29,6 @@ function Footer() {
         : config.external_url.URL_00
 
     const buttonText = t("navigation_secondary.e_appointment")
-    console.log("Button text:", buttonText)
-    console.log("Language:", i18n.language)
 
     return (
         <FooterContainer>

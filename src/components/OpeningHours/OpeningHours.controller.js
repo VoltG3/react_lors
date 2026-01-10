@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { useShowData } from '../../JSON/showData'
+import { useProjectData } from '../../utils/DataContext'
 
 import { StyledOpeningHoursContainer as Container } from './styled.container'
 import { StyledOpeningHoursHeader as Header} from './styled.header'
@@ -16,7 +16,7 @@ import DataColumnPrivateHours from './Columns/DataColumnPrivateHours'
 
 const OpeningHoursController = () => {
     const [t] = useTranslation(["tiles"])
-    const { showWithReference, showWithoutReference, loading } = useShowData()
+    const { showWithReference, showWithoutReference, loading } = useProjectData()
     const HeaderPublic = <Header><p className={"textContent--list--header"}>{ t("admissionTimes")}</p></Header>
     const HeaderPrivate = <Header><p className={"textContent--list--header"}>{ t("payingTimes")}</p></Header>
 

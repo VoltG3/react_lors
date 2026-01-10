@@ -274,7 +274,7 @@ export const GlobalFontStyles = createGlobalStyle`
         text-transform: uppercase;
         color: var(--color--paragraph--footer);
 
-        & :hover {
+        &:hover {
             color: var(--color--none);
         }
     }

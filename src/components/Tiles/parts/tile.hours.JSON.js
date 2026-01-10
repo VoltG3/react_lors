@@ -2,12 +2,12 @@ import styled from 'styled-components'
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
 
-import { useFetchData } from '../../../JSON/fetchData'
+import { useProjectData } from '../../../utils/DataContext'
 import TransformData from '../../../JSON/transformData'
 import TransformFormat from '../../../JSON/transformFormat'
 
 const TileHoursJSON = () => {
-    const { data: jsonData, loading, error } = useFetchData()
+    const { data: jsonData, loading, error } = useProjectData()
     const [t] = useTranslation(["tiles"])
 
     if (loading) return <div>Loading...</div>

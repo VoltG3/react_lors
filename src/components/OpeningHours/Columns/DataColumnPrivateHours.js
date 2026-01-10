@@ -1,10 +1,10 @@
 import i18n from 'i18next'
-import { useFetchData } from '../../../JSON/fetchData'
+import { useProjectData } from '../../../utils/DataContext'
 import TransformFormat from '../../../JSON/transformFormat'
 import { TransformArray } from '../../../JSON/transformArray'
 
 const DataColumnPrivateHours = () => {
-    const { data: jsonData, loading, error } = useFetchData()
+    const { data: jsonData, loading, error } = useProjectData()
 
     if (loading) return <div>Loading...</div>
     if (error) return <div>Error loading data</div>

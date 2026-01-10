@@ -8,25 +8,29 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Cookie from './components/Cookie'
 
+import { DataProvider } from './utils/DataContext'
+
 export default function App() {
 
     return (
-        <div style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-                width: '100vw',
-                height: 'auto'
-        }}>
-            <GlobalSizeStyles />
-            <GlobalColorStyles />
-            <GlobalFontStyles />
-                <Header />
-                <Outlet />
-                <Footer />
-            <Cookie />
-        </div>
+        <DataProvider>
+            <div style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                    width: '100vw',
+                    height: 'auto'
+            }}>
+                <GlobalSizeStyles />
+                <GlobalColorStyles />
+                <GlobalFontStyles />
+                    <Header />
+                    <Outlet />
+                    <Footer />
+                <Cookie />
+            </div>
+        </DataProvider>
   )
 }
