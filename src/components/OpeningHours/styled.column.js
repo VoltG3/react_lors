@@ -25,7 +25,7 @@ export const StyledOpeningHoursColumn = styled.div`
 
     .cell {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       width: 100%;
       height: auto;

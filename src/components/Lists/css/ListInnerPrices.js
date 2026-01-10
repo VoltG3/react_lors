@@ -4,7 +4,9 @@ export const ListInnerPrices = css`
   .productItemDescribe {
     flex: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
 
     & p {
       padding: 8px 0;

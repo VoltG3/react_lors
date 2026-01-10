@@ -18,7 +18,7 @@ const DataColumnPrivateNames = () => {
                     <div key={ id } className="cell">
                         {
                             jsonData && personal_private.map((item, i) => (
-                                <div key={ i } className={"cell--dobble"} style={{ width: '100%', alignItems: 'center'}}>
+                                <div key={ i } className={"cell--dobble"} style={{ width: '100%', alignItems: 'flex-start'}}>
                                     <p className={ paragraph }>{ isNameArrayEmpty(item.line_01) }</p>
                                     <p className={ paragraph }>{ isNameArrayEmpty(item.line_02) }</p>
                                 </div>

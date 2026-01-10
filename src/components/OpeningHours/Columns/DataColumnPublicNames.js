@@ -18,7 +18,7 @@ const DataColumnPublicNames = () => {
                     <div key={ id } className="cell">
                         {
                             jsonData && personal_public.map((item, i) => (
-                                <div key={ i } className={"cell--dobble"} style={{ width: '100%', alignItems: 'center'}}>
+                                <div key={ i } className={"cell--dobble"} style={{ width: '100%', alignItems: 'flex-start'}}>
                                     <div style={{ maxWidth: '180px', width: '100%' }}>
                                         <p className={ paragraph }>{ isNameArrayEmpty(item.line_01) }</p>
                                         <p className={ paragraph }>{ isNameArrayEmpty(item.line_02) }</p>
