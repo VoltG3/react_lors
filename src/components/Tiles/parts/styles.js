@@ -44,52 +44,24 @@ const Contracts = css`
     align-items: center;
     gap: 30px 40px;
     width: 100%;
-    max-width: 600px;
     margin: 0 auto;
     padding-top: 44px;
     padding-bottom: 44px;
 
     @media (max-width: 768px) {
-      gap: 25px 30px;
-      max-width: 100%;
+      gap: 20px 30px;
     }
 
-    .logoSquareRow {
-      display: contents;
-    }
+    & > img {
+      filter: grayscale(1);
+      opacity: 0.7;
+      transition: all 0.3s ease;
 
-    .logoSquareCell {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex: 0 0 auto;
-
-      img {
-        display: block;
-        max-width: 100%;
-        height: auto;
+      &:hover {
+        filter: grayscale(0);
+        opacity: 1;
+        transform: scale(1.05);
       }
-    }
-
-    .r1c1 {
-      width: 80px;
-      @media (max-width: 768px) { width: 60px; }
-    }
-    .r1c2 {
-      width: 100px;
-      @media (max-width: 768px) { width: 80px; }
-    }
-    .r1c3 {
-      width: 100px;
-      @media (max-width: 768px) { width: 80px; }
-    }
-    .r2c1 {
-      width: 140px;
-      @media (max-width: 768px) { width: 110px; }
-    }
-    .r2c2 {
-      width: 120px;
-      @media (max-width: 768px) { width: 90px; }
     }
   }
 `

@@ -38,6 +38,10 @@ export const ListContainer = css`
       & p {
         margin: 8px var(--list--margin);
         
+        @media only screen and (min-width: 1024px) {
+          margin: 12px 45px;
+        }
+
         @media only screen and (max-width: 700px) {
           margin: 6px var(--list--margin);
         }

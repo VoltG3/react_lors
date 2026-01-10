@@ -33,6 +33,10 @@ export const StyledOpeningHoursColumn = styled.div`
       box-sizing: border-box;
       padding: 8px 15px;
 
+      @media only screen and (min-width: 1024px) {
+        padding: 12px 30px;
+      }
+
       @media only screen and (max-width: 700px) {
         min-height: 50px;
         padding: 6px 10px;
