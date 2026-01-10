@@ -227,18 +227,21 @@ export const GlobalFontStyles = createGlobalStyle`
     // [ LIST ] --------------------------------------------------
 
     --textContent--list--header--fontsize: min(max(1.389vw, 16px), 20px);
-    --textContent--list--item--fontsize: min(max(1.250vw, 14px), 18px);
+    --textContent--list--item--fontsize: min(max(1.250vw, 14px), 16px);
+    --textContent--list--item--lineheight: 1.6;
         
     .textContent--list--header {
         font-family: var(--font--Montserrat),sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: var(--textContent--list--header--fontsize);
+        line-height: 1.4;
         text-transform: uppercase;
         color: var(--color--none);
 
         @media only screen and (max-width: 700px) {
             font-weight: 400;
+            line-height: 1.3;
         }
     }
 
@@ -247,6 +250,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-style: normal;
         font-weight: 400;
         font-size: var(--textContent--list--item--fontsize);
+        line-height: var(--textContent--list--item--lineheight);
         opacity: var(--font--opacity);
         color: var(--color--secondary);
     }  

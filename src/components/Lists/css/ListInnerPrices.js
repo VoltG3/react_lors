@@ -28,7 +28,7 @@ export const ListInnerPrices = css`
     & div:nth-child(1) {
       display: flex;
       justify-content: flex-end;
-      width: 60px;
+      width: 50px;
       
       @media only screen and (max-width: 700px) {
         width: 45px; 

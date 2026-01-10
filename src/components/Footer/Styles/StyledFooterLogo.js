@@ -2,12 +2,11 @@ import styled from "styled-components"
 
 export const StyledFooterLogo = styled.div`
     background: #21232e;
-    padding: 72px 32px 64px;
+    width: 100%;
     box-sizing: border-box;
 
     @media (max-width: 768px) {
         gap: 32px;
-        padding: 56px 24px 48px;
     }
 
     .inner-footer-logo {
@@ -18,12 +17,19 @@ export const StyledFooterLogo = styled.div`
         gap: 32px;
         max-width: 1400px;
         margin: 0 auto;
+        padding: 72px 32px 64px;
+        width: 100%;
+        box-sizing: border-box;
         flex-wrap: wrap;
 
         @media (max-width: 1024px) {
             flex-direction: column-reverse;
             align-items: flex-start;
             gap: 24px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 56px 24px 48px;
         }
     }
 

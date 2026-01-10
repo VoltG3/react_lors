@@ -36,6 +36,10 @@ export const ListContainer = css`
       }
     
       & p {
-        margin: 5px var(--list--margin);
+        margin: 8px var(--list--margin);
+        
+        @media only screen and (max-width: 700px) {
+          margin: 6px var(--list--margin);
+        }
       }
 `
