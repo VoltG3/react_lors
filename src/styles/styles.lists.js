@@ -144,19 +144,19 @@ export const StyledListContainer = styled.div`
         display: flex;
         flex-direction: row;
         align-items: center;
-        max-width: 180px;
+        max-width: 130px;
         width: 100%;
         height: auto;
         background-color: #F9F9F9;
-        padding-left: 20px;
-        padding-right: 30px;
+        padding-left: 10px;
+        padding-right: 15px;
         @media only screen and (min-width: 1024px) {
-          padding-right: 45px;
+          padding-right: 20px;
         }
         @media only screen and (max-width: 700px) {
-          max-width: 100px;
-          padding-left: 10px;
-          padding-right: 20px;
+          max-width: 90px;
+          padding-left: 5px;
+          padding-right: 10px;
         }
         & div:nth-child(1) {
           display: flex;
