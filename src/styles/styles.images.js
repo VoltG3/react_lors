@@ -9,11 +9,11 @@ const ImgContainer = css`
     width: 100%;
     height: auto;
 
-  & img {
-    border-radius: 0;
+  & div {
+    display: flex;
+    width: auto;
+    height: auto;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-    opacity: 1;
-
     transition: all .3s ease;
 
     &:hover {
@@ -23,6 +23,17 @@ const ImgContainer = css`
 
     @media only screen and (max-width: 922px) {
       box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    }
+  }
+
+  & img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    opacity: 1;
+
+    @media only screen and (max-width: 922px) {
       opacity: 0.95;
     }
   }
@@ -30,14 +41,12 @@ const ImgContainer = css`
 
 const ImgResponsiveVertical = css`
   & div {
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: auto;
     
     & img {
-      display: flex;
+      display: block;
     }
   }
 `
@@ -46,7 +55,7 @@ const MediaCollective4 = css`
   padding-top: 30px;
   padding-bottom: 30px;
 
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 768px) {
     & {
       padding-top: 30px;
       padding-bottom: 30px;
@@ -55,7 +64,7 @@ const MediaCollective4 = css`
 `
 
 const MediaCollective3 = css`
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 768px) {
     & {
       padding-top: 30px;
     }
@@ -63,7 +72,7 @@ const MediaCollective3 = css`
 `
 
 const MediaEachPerson = css`
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     & {
       flex-direction: column;
     }
@@ -71,7 +80,7 @@ const MediaEachPerson = css`
 `
 
 const MediaEquipment = css`
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     & {
       flex-direction: column;
     }
@@ -81,16 +90,16 @@ const MediaEquipment = css`
 const MediaContacts = css`
   gap: 30px;
   
-  & img:nth-child(1) { max-width: calc( 55% - calc(30px / 2)); }
-  & img:nth-child(2) { max-width: calc( 45% - calc(30px / 2)); }
+  & div:nth-child(1) { max-width: calc( 55% - calc(30px / 2)); }
+  & div:nth-child(2) { max-width: calc( 45% - calc(30px / 2)); }
   
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 768px) {
     & {
       flex-direction: column;
       gap: 30px;
       
-      & img:nth-child(1) { max-width: 100%; }
-      & img:nth-child(2) { max-width: 100%; }
+      & div:nth-child(1) { max-width: 100%; }
+      & div:nth-child(2) { max-width: 100%; }
     }
   }
 `

@@ -110,8 +110,9 @@ const Hours = ({ variant }) => {
         <S.ColumnSet showContent={showWithoutReference}>
             {HeaderPrivate}
             <S.ColumnWrapper>
-                <DataColumnNames type="personal_private" className="roundedBorderLeft" />
-                <DataColumnHours type="private" className="roundedBorderRight" />
+                <DataColumnDays className="roundedBorderLeft" />
+                <DataColumnHours type="private" />
+                <DataColumnNames type="personal_private" className="roundedBorderRight" />
             </S.ColumnWrapper>
         </S.ColumnSet>
     )

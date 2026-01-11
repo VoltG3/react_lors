@@ -50,16 +50,16 @@ const ListContainerBase = css`
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: min(max(1.250vw, 14px), 16px);
+    font-size: 16px;
     line-height: 1.6;
-    opacity: 0.7;
-    color: #152F3F;
+    color: #262626;
 
     @media only screen and (min-width: 1024px) {
       margin: 0 45px;
     }
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 768px) {
       margin: 0 20px;
+      font-size: 14px;
     }
   }
 `
@@ -91,11 +91,12 @@ export const StyledHeader = styled.div`
       margin-right: 45px;
     }
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 768px) {
         margin-left: 20px;
         margin-right: 20px;
         font-weight: 400;
         line-height: 1.3;
+        font-size: 16px;
     }
   }
 
@@ -119,7 +120,7 @@ export const StyledListContainer = styled.div`
         @media only screen and (min-width: 1024px) {
           padding: 12px 0;
         }
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: 768px) {
           padding: 6px 0;
         }
       }
@@ -143,7 +144,7 @@ export const StyledListContainer = styled.div`
             margin-left: 45px;
             margin-right: 20px !important;
           }
-          @media only screen and (max-width: 700px) {
+          @media only screen and (max-width: 768px) {
             padding: 6px 0;
             margin-left: 20px;
             margin-right: 10px !important;
@@ -162,7 +163,7 @@ export const StyledListContainer = styled.div`
         @media only screen and (min-width: 1024px) {
           padding-right: 20px;
         }
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: 768px) {
           max-width: 90px;
           padding-left: 5px;
           padding-right: 10px;
@@ -171,7 +172,7 @@ export const StyledListContainer = styled.div`
           display: flex;
           justify-content: flex-end;
           width: 50px;
-          @media only screen and (max-width: 700px) {
+          @media only screen and (max-width: 768px) {
             width: 45px;
           }
           & p {
@@ -182,7 +183,7 @@ export const StyledListContainer = styled.div`
           display: flex;
           justify-content: flex-start;
           width: 20px;
-          @media only screen and (max-width: 700px) {
+          @media only screen and (max-width: 768px) {
             width: 15px;
           }
           & p {

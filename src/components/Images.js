@@ -13,7 +13,9 @@ const URL_SET_3 = [config.images.URL_img09, config.images.URL_img02]
 
 const SingleImage = ({ Container, src }) => (
     <Container>
-        <img src={src} width="100%" height="auto" alt="img" loading="lazy" />
+        <div>
+            <img src={src} width="100%" height="auto" alt="img" loading="lazy" />
+        </div>
     </Container>
 )
 
@@ -42,8 +44,8 @@ export const Images = (props) => {
         case 'contacts':
             return (
                 <S.StyledContacts>
-                    <img src={URL_SET_3[1]} width="auto" height="auto" alt="img" loading="lazy" />
-                    <img src={URL_SET_3[0]} width="auto" height="auto" alt="img" loading="lazy" />
+                    <div><img src={URL_SET_3[1]} width="auto" height="auto" alt="img" loading="lazy" /></div>
+                    <div><img src={URL_SET_3[0]} width="auto" height="auto" alt="img" loading="lazy" /></div>
                 </S.StyledContacts>
             )
         case 'building':

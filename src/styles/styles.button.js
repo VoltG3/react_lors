@@ -30,9 +30,9 @@ export const themes = {
         paragraphMarginLeft: '-45%',
         color: '#FFFFFF',
         arrowColor: '#030303',
-        borderColor: '#FFB81C',
-        backgroundColor: '#FFB81C',
-        backgroundHover: '#FFC94D'
+        borderColor: '#EDAE0E',
+        backgroundColor: '#EDAE0E',
+        backgroundHover: '#FFB81C'
     },
     sliderMobile: {
         justifyContent: 'flex-start',
@@ -52,9 +52,9 @@ export const themes = {
         paragraphMarginLeft: '-25%',
         color: '#FFFFFF',
         arrowColor: '#030303',
-        borderColor: '#FFB81C',
-        backgroundColor: '#FFB81C',
-        backgroundHover: '#FFC94D'
+        borderColor: '#EDAE0E',
+        backgroundColor: '#EDAE0E',
+        backgroundHover: '#FFB81C'
     },
     contacts: {
         justifyContent: 'flex-start',
@@ -63,9 +63,9 @@ export const themes = {
         paragraphMarginLeft: '-35%',
         color: '#FFFFFF',
         arrowColor: '#030303',
-        borderColor: '#FFB81C',
-        backgroundColor: '#FFB81C',
-        backgroundHover: '#FFC94D'
+        borderColor: '#EDAE0E',
+        backgroundColor: '#EDAE0E',
+        backgroundHover: '#FFB81C'
     },
     info: {
         justifyContent: 'flex-start',

@@ -5,7 +5,7 @@ export const StyledTiles = styled.div`
   flex-direction: row;
   gap: 30px;
   box-sizing: border-box;
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 922px) {
     flex-direction: column;
     align-items: center;
   }
@@ -20,7 +20,7 @@ export const StyledTiles = styled.div`
     background-color: #FFFFFF;
     border-radius: 0;
 
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 922px) {
       max-width: 1440px;
     }
     &:hover {
@@ -54,20 +54,20 @@ const TileContainer = css`
         color: #373A36;
         margin: 0;
 
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: 768px) {
             font-size: 18px;
         }
     }
 
     .tile-paragraph {
         font-family: "Montserrat", sans-serif;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 300;
         line-height: 1.6;
         color: #262626;
         margin: 0;
 
-        @media only screen and (max-width: 700px) {  
+        @media only screen and (max-width: 768px) {  
             font-size: 14px;
         }
     }
@@ -167,13 +167,13 @@ export const StyledHoursList = styled.div`
 
   & p {
     font-family: "Montserrat", sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.6;
     color: #262626;
     margin: 0;
 
-    @media only screen and (max-width: 700px) {  
+    @media only screen and (max-width: 768px) {  
         font-size: 14px;
     }
   }
@@ -239,7 +239,7 @@ export const StyledHoursList = styled.div`
     background: #EFEFEF;
   }
 
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 768px) {
     .dayCell { padding-left: 15px; }
     .hoursWrapper div:nth-child(1),
     .hoursWrapper div:nth-child(3) { width: 45px; }

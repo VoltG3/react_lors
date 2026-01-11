@@ -10,7 +10,7 @@ export const Container = styled.div`
   padding-top: 40px;
   padding-bottom: 40px;
 
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 768px) {
     gap: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -36,13 +36,13 @@ export const Header = styled.div`
     opacity: 1 !important;
     margin: 0;
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 768px) {
         font-weight: 400;
         line-height: 1.3;
     }
   }
 
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 768px) {
     min-height: 40px;
   }
 `
@@ -105,13 +105,13 @@ export const ColumnWrapper = styled.div`
 
       & p {
         font-family: "Montserrat", sans-serif;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 300;
         line-height: 1.6;
         color: #262626;
         margin: 0;
 
-        @media only screen and (max-width: 700px) {  
+        @media only screen and (max-width: 768px) {  
             font-size: 14px;
         }
       }
@@ -119,7 +119,7 @@ export const ColumnWrapper = styled.div`
       @media only screen and (min-width: 1024px) {
         padding: 12px 30px;
       }
-      @media only screen and (max-width: 700px) {
+      @media only screen and (max-width: 768px) {
         min-height: 50px;
         padding: 6px 10px;
       }
@@ -156,7 +156,7 @@ export const ColumnWrapper = styled.div`
         width: 50px;
       }
 
-      @media only screen and (max-width: 700px) {
+      @media only screen and (max-width: 768px) {
         & div:nth-child(1) { width: 45px; }
         & div:nth-child(2) { width: 15px; }
         & div:nth-child(3) { width: 45px; }

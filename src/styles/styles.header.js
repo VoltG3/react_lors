@@ -470,10 +470,16 @@ export const SlideWrapper = styled.div`
   opacity: 0.4;
 
   @media only screen and (max-width: 922px) {
-    opacity: 0.7;
+    opacity: 0.4;
     min-height: 250px;
     max-height: 280px;
     height: 280px;
+  }
+
+  @media only screen and (max-height: 500px) and (orientation: landscape) {
+    min-height: 200px;
+    max-height: 240px;
+    height: 240px;
   }
 `
 
@@ -534,7 +540,6 @@ export const SliderTextWrapper = styled.div`
     line-height: min(max(3.056vw, 24px), 44px) !important;
     text-transform: ${props => props.$lang === 'ru' ? 'uppercase' : 'none'};
     white-space: pre-wrap;
-    opacity: 0.7;
     color: #152F3F;
     margin: 0;
   }
@@ -545,8 +550,7 @@ export const SliderTextWrapper = styled.div`
     font-weight: ${props => props.$lang === 'ru' ? '400' : '300'};
     font-size: min(max(1.2vw, 16px), 18px);
     line-height: 1.6;
-    opacity: 0.7;
-    color: #030303;
+    color: #262626;
     margin: 0;
   }
 
@@ -602,7 +606,6 @@ export const SliderMobileTextWrapper = styled.div`
     line-height: min(max(3.056vw, 24px), 44px) !important;
     text-transform: ${props => props.$lang === 'ru' ? 'uppercase' : 'none'};
     white-space: pre-wrap;
-    opacity: 0.7;
     color: #152F3F;
     margin: 0;
   }
@@ -613,14 +616,18 @@ export const SliderMobileTextWrapper = styled.div`
     font-weight: ${props => props.$lang === 'ru' ? '400' : '300'};
     font-size: min(max(1.2vw, 16px), 18px);
     line-height: 1.6;
-    opacity: 0.7;
-    color: #030303;
+    color: #262626;
     margin: 0;
   }
 
   @media (max-width: 480px) {
     margin-bottom: 20px;
     gap: 10px;
+  }
+
+  @media only screen and (max-height: 500px) and (orientation: landscape) {
+    margin-bottom: 10px;
+    gap: 5px;
   }
 `
 

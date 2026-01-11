@@ -10,8 +10,11 @@ export const StyledPageContainer = styled.div`
   height: auto;
   box-sizing: border-box;
   padding: 80px 40px;
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 768px) {
     padding: 40px 20px;
+  }
+  @media only screen and (max-height: 500px) and (orientation: landscape) {
+    padding: 20px 40px;
   }
   & h1 {
     width: 100%;
@@ -23,11 +26,11 @@ export const StyledPageContainer = styled.div`
     line-height: 1.4 !important;
     text-transform: ${props => props.$lang === 'ru' ? 'uppercase' : 'none'};
     white-space: pre-wrap;
-    opacity: 0.7;
     color: #152F3F;
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 768px) {
         margin-bottom: 24px;
+        font-size: 24px;
     }
   }
   & h2 {
@@ -40,22 +43,23 @@ export const StyledPageContainer = styled.div`
     font-size: min(max(1.8vw, 18px), 24px);
     line-height: 1.5;
     text-transform: uppercase;
-    opacity: 0.7;
     color: #152F3F;
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 768px) {
         margin-bottom: 24px;
-        display: none;
     }
   }
   & h3 {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.5;
-    opacity: 0.7;
-    color: inherit;
+    color: #152F3F;
+    
+    @media only screen and (max-width: 768px) {
+        font-size: 18px;
+    }
   }
   & span {
     width: 100%;
@@ -63,7 +67,7 @@ export const StyledPageContainer = styled.div`
     flex-direction: column;
     gap: 16px;
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 768px) {
         gap: 12px;
     }
     & p {
@@ -72,8 +76,7 @@ export const StyledPageContainer = styled.div`
       font-weight: ${props => props.$lang === 'ru' ? '400' : '300'};
       font-size: min(max(1.2vw, 16px), 18px);
       line-height: 1.6;
-      opacity: 0.7;
-      color: #030303;
+      color: #262626;
       margin: 0;
     }
     & p:last-child {
@@ -97,7 +100,7 @@ export const StyledInlineParagraphContainer = styled.div`
   & p:nth-last-child(-n +2) {
     padding-left: 10px;
   }
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 768px) {
     flex-direction: column;
 
     & p:nth-last-child(-n +2) {
@@ -119,7 +122,7 @@ export const StyledInlineParagraphWithImageContainer = styled.div`
     width: 100%;
   }
 
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 768px) {
     flex-direction: column;
     & span {
       width: 100%;
@@ -141,7 +144,7 @@ const thisContainer = css`
         justify-content: flex-start;
     }
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 768px) {
       flex-direction: column;
       & div { width: 100%; }
     }

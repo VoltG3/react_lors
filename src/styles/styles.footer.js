@@ -49,7 +49,7 @@ export const StyledFooterCredentials = styled.div`
         font-weight: 600;
         font-size: 14px;
         line-height: 20px;
-        color: #828181;
+        color: #a8a8a8;
         margin-bottom: 3px;
     }
 `
@@ -90,7 +90,7 @@ export const StyledFooterLogo = styled.div`
     .text-block {
         flex: 1;
         text-align: left;
-        color: #bcbcbc;
+        color: #a8a8a8;
         font-size: 14px;
         line-height: 1.6;
         border-left: solid 2px lightgray;
