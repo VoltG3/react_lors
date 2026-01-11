@@ -11,7 +11,7 @@ export const ButtonController = ({ variant }) => {
         if (variant === "sliderDesktop" || variant === "sliderMobile") {
             return t("navigation_buttons.btn_variant_04")
         }
-        if (variant === "appointment" || variant === "contacts") {
+        if (variant === "appointment" || variant === "contacts" || variant === "mobile") {
             return t("navigation_buttons.btn_variant_01")
         }
         return t("navigation_buttons.btn_variant_02")

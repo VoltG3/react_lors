@@ -239,7 +239,7 @@ export const NavMobileContainer = styled.div`
   @media only screen and (max-width: 922px) {
     display: flex;
     justify-content: center;
-    background: rgb(244, 244, 244);
+    background: #FFFFFF;
   }
 `
 
@@ -249,7 +249,7 @@ export const NavMobileTopBar = styled.div`
   justify-content: space-between;
   width: 100%;
   max-width: 1440px;
-  height: 90px;
+  height: 70px;
   padding: 0 40px;
   box-sizing: border-box;
   background: transparent;
@@ -266,12 +266,34 @@ export const NavMobileTopBar = styled.div`
 
   @media only screen and (max-width: 700px) {
     padding: 0 20px;
-    height: 85px;
+    height: 60px;
 
     & > div:first-child {
       max-width: 240px;
       min-width: 210px;
     }
+  }
+`
+
+export const MobileTopBarRightSection = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+`
+
+export const MobileTopBarLangButton = styled.button`
+  background: transparent;
+  border: none;
+  color: ${props => props.$active ? '#EDAE0E' : '#4a5568'};
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: ${props => props.$active ? '700' : '500'};
+  padding: 4px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+
+  &:hover {
+    color: #EDAE0E;
   }
 `
 

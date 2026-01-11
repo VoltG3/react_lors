@@ -14,9 +14,9 @@ export const themes = {
     },
     mobile: {
         justifyContent: 'flex-start',
-        minWidth: '350px',
-        paddingVertical: '5px',
-        paragraphMarginLeft: '-70%',
+        minWidth: '280px',
+        paddingVertical: '8px',
+        paragraphMarginLeft: '-45%',
         color: '#FFFFFF',
         arrowColor: '#FFFFFF',
         borderColor: '#FFFFFF',
@@ -59,7 +59,7 @@ export const themes = {
     contacts: {
         justifyContent: 'flex-start',
         minWidth: '218px',
-        paddingVertical: '12px',
+        paddingVertical: '8px',
         paragraphMarginLeft: '-35%',
         color: '#FFFFFF',
         arrowColor: '#030303',

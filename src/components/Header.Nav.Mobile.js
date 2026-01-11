@@ -2,13 +2,15 @@ import React, { useState } from 'react'
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { AnimatePresence } from 'framer-motion'
+import config from '../config'
 import * as S from '../styles/styles.header'
 import Logo from './Logo'
 import logoColoredLors from '../assets/logo/colored_logo_00.svg'
+import { ButtonController } from './Button'
 
 const MobileMenu = () => {
     const [isOpen, setIsOpen] = useState(false)
-    const { t } = useTranslation(['chapters'])
+    const { t } = useTranslation(['chapters', 'navigation'])
 
     const toggleMenu = () => setIsOpen(!isOpen)
     const closeMenu = () => setIsOpen(false)
@@ -16,6 +18,10 @@ const MobileMenu = () => {
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang)
     }
+
+    const appointmentUrl = i18n.language === 'lv'
+        ? config.external_url.URL_01
+        : config.external_url.URL_00
 
     const menuItems = [
         { to: 'home', label: t('chapters:home') },
@@ -86,6 +92,12 @@ const MobileMenu = () => {
                             </S.MobileLangSelector>
 
                             <S.MobileDivider />
+
+                            <div style={{ display: 'flex', justifyContent: 'flex-end', paddingRight: '10px' }}>
+                                <a href={appointmentUrl} target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
+                                    <ButtonController variant="mobile" />
+                                </a>
+                            </div>
                         </S.MobileMenuContainer>
                     </>
                 )}
@@ -95,15 +107,31 @@ const MobileMenu = () => {
 }
 
 const HeaderNavMobile = () => {
+    const changeLanguage = (lang) => {
+        i18n.changeLanguage(lang)
+    }
+
     return (
         <S.NavMobileContainer>
             <S.NavMobileTopBar>
                 <Logo
                     src={logoColoredLors}
                     alt="Lors"
-                    maxHeight="70px"
+                    maxHeight="55px"
+                    mobileMaxHeight="45px"
                 />
-                <MobileMenu />
+                <S.MobileTopBarRightSection>
+                    {['lv', 'en', 'ru'].map((lang) => (
+                        <S.MobileTopBarLangButton
+                            key={lang}
+                            onClick={() => changeLanguage(lang)}
+                            $active={i18n.language === lang}
+                        >
+                            {lang}
+                        </S.MobileTopBarLangButton>
+                    ))}
+                    <MobileMenu />
+                </S.MobileTopBarRightSection>
             </S.NavMobileTopBar>
         </S.NavMobileContainer>
     )
