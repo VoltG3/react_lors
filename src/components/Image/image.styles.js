@@ -108,12 +108,19 @@ export const StylesEachPerson = styled.div`
   ${ ImgContainer }
   ${ ImgResponsiveVertical }
   ${ MediaEachPerson }
+  
+  gap: var(--size--padding30);
+  padding-top: var(--size--padding60);
+  padding-bottom: var(--size--padding30);
 `
 
-export const StyledEquipement = styled.div`
+export const StyledEquipment = styled.div`
   ${ ImgContainer }
   ${ ImgResponsiveVertical }
   ${ MediaEquipment }
+  
+  gap: var(--size--padding30);
+  padding-top: var(--size--padding30);
 `
 
 export const StyledOffice = styled.div`
