@@ -18,7 +18,6 @@ const GoogleMap = lazy(() => import('../components/./Map'));
 
 export default function Contacts() {
     const [t] = useTranslation(["chapter_pages", "chapters"])
-    const { showWithReference, showWithoutReference, openingDate, loading } = useProjectData()
     const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
     const h = i18n.language === 'ru' ? 'textContent--h1--rus' : 'textContent--h1'
 
