@@ -522,9 +522,9 @@ export const SliderTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin-top: 140px;
-  padding-bottom: 10%;
+  padding-bottom: 30px;
 
   & p:first-child {
     font-family: "Montserrat", sans-serif;
