@@ -6,7 +6,7 @@ import config from '../../../config'
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
 
-import { ButtonController } from '../../Button/Button.controller'
+import { ButtonController } from '../../Button'
 
 function SliderTextContentMobile(props) {
     const [t] = useTranslation(["chapter_header"])

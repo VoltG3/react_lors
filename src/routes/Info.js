@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { Images } from '../components/Images'
 import { LineLang } from '../components/Lines'
-import { ButtonController } from '../components/Button/Button.controller'
+import { ButtonController } from '../components/Button'
 import { ListInformation } from '../components/Lists'
 
 export default function Info() {

@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next'
 import { Images } from '../components/Images'
 import Hours from '../components/Hours'
 import { LineLang } from '../components/Lines'
-import { ButtonController } from '../components/Button/Button.controller'
+import { ButtonController } from '../components/Button'
 import { useProjectData } from "../DataContext";
 
 const GoogleMap = lazy(() => import('../components/./Map'));

@@ -5,7 +5,7 @@ import config from '../config'
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { Images } from '../components/Images'
-import { ButtonController } from '../components/Button/Button.controller'
+import { ButtonController } from '../components/Button'
 import { LineLang } from '../components/Lines'
 import { ListPricesWithReference, ListPricesWithoutReference } from "../components/Lists"
 
