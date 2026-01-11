@@ -147,7 +147,6 @@ export const StyledListContainer = styled.div`
         max-width: 180px;
         width: 100%;
         height: auto;
-        border-left: 1px solid rgba(0, 0, 0, 0.1);
         background-color: #F9F9F9;
         padding-left: 20px;
         padding-right: 30px;
