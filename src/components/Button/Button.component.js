@@ -6,7 +6,7 @@ import { Tcovid, Tmobile, TsliderDesktop, TsliderMobile, Tappointment, Tcontacts
 import { useTranslation } from 'react-i18next'
 
 export const ButtonComponent = (props) => {
-    const [t] = useTranslation(["navigation", "common", "sections"])
+    const [t] = useTranslation(["navigation"])
 
     const btn_contacts = <p className={"textContent--button"}>{ t("navigation_buttons.btn_variant_04") }</p>
     const btn_appointment = <p className={"textContent--button"}>{ t("navigation_buttons.btn_variant_01") }</p>

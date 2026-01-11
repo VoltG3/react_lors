@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next'
 import { ButtonController } from '../../Button/Button.controller'
 
 function SliderTextContentDesktop(props) {
-    const [t] = useTranslation(["chapter_header", "common"])
+    const [t] = useTranslation(["chapter_header"])
     const introHeader = config.common.introHeader
 
     const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
