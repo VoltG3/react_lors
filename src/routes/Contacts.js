@@ -3,10 +3,10 @@ import {
     StyledPageContainer as PageContainer,
     StyledInlineParagraphContainer as InlineParagraph,
     StyledInlineParagraphWithImageContainer as InlineParagraphWithImage,
-    ContactDesktopMedia,
     ContactMobileMedia,
     ContactTile,
-    ContactImageTile
+    ContactImageTile,
+    ContactGrid
 } from '../styles/styles.pages'
 import config from '../config'
 import '../translations/i18n'
@@ -34,7 +34,7 @@ export default function Contacts() {
 
                 <LineLang />
 
-                <ContactDesktopMedia>
+                <ContactGrid>
                     <ContactTile>
                         <p style={{ color: '#F31850', fontWeight: '600'}}>{ t("chapter_contacts.part_01") }</p>
                         <p>{ t("chapter_contacts.part_02") }</p>
@@ -47,7 +47,9 @@ export default function Contacts() {
                     <ContactImageTile>
                         <img src={imgBuilding} alt="Building" />
                     </ContactImageTile>
-                </ContactDesktopMedia>
+
+                    <Hours variant="desktop-grid" />
+                </ContactGrid>
 
                 <ContactMobileMedia>
                     <InlineParagraphWithImage>
@@ -64,9 +66,10 @@ export default function Contacts() {
                             <Images variant={"building"} />
                         </div>
                     </InlineParagraphWithImage>
+
+                    <Hours />
                 </ContactMobileMedia>
 
-                <Hours />
                 <Images variant={"contacts"} />
 
                 <InlineParagraph>

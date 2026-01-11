@@ -82,7 +82,7 @@ const DataColumnNames = ({ type, className = "" }) => {
     )
 }
 
-const Hours = () => {
+const Hours = ({ variant }) => {
     const { t } = useTranslation(["tiles"])
     const { showWithReference, showWithoutReference, loading } = useProjectData()
 
@@ -99,37 +99,53 @@ const Hours = () => {
         </S.ColumnWrapper>
     )
 
+    const PublicHours = (
+        <S.ColumnSet showContent={showWithReference}>
+            {HeaderPublic}
+            {renderPublicColumns()}
+        </S.ColumnSet>
+    )
+
+    const PrivateHoursDesktop = (
+        <S.ColumnSet showContent={showWithoutReference}>
+            {HeaderPrivate}
+            <S.ColumnWrapper>
+                <DataColumnNames type="personal_private" className="roundedBorderLeft" />
+                <DataColumnHours type="private" className="roundedBorderRight" />
+            </S.ColumnWrapper>
+        </S.ColumnSet>
+    )
+
+    const PrivateHoursMobile = (
+        <S.ColumnSet showContent={showWithoutReference}>
+            {HeaderPrivate}
+            <S.ColumnWrapper>
+                <DataColumnDays className="roundedBorderLeft" />
+                <DataColumnHours type="private" />
+                <DataColumnNames type="personal_private" className="roundedBorderRight" />
+            </S.ColumnWrapper>
+        </S.ColumnSet>
+    )
+
+    if (variant === 'desktop-grid') {
+        return (
+            <>
+                {PublicHours}
+                {PrivateHoursDesktop}
+            </>
+        )
+    }
+
     return (
         <S.Container>
             <S.DesktopMedia>
-                <S.ColumnSet showContent={showWithReference}>
-                    {HeaderPublic}
-                    {renderPublicColumns()}
-                </S.ColumnSet>
-
-                <S.ColumnSet showContent={showWithoutReference}>
-                    {HeaderPrivate}
-                    <S.ColumnWrapper>
-                        <DataColumnNames type="personal_private" className="roundedBorderLeft" />
-                        <DataColumnHours type="private" className="roundedBorderRight" />
-                    </S.ColumnWrapper>
-                </S.ColumnSet>
+                {PublicHours}
+                {PrivateHoursDesktop}
             </S.DesktopMedia>
 
             <S.MobileMedia>
-                <S.ColumnSet showContent={showWithReference}>
-                    {HeaderPublic}
-                    {renderPublicColumns()}
-                </S.ColumnSet>
-
-                <S.ColumnSet showContent={showWithoutReference}>
-                    {HeaderPrivate}
-                    <S.ColumnWrapper>
-                        <DataColumnDays className="roundedBorderLeft" />
-                        <DataColumnHours type="private" />
-                        <DataColumnNames type="personal_private" className="roundedBorderRight" />
-                    </S.ColumnWrapper>
-                </S.ColumnSet>
+                {PublicHours}
+                {PrivateHoursMobile}
             </S.MobileMedia>
         </S.Container>
     )

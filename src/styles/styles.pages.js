@@ -174,6 +174,22 @@ export const StyledInlineParagraphWithButtonContainer = styled.div`
 
 // [ CONTACTS SPECIFIC ] -------------------------------------------------------
 
+export const ContactGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 100%;
+  margin-bottom: 40px;
+
+  @media (max-width: 1100px) {
+    gap: 30px;
+  }
+
+  @media (max-width: 922px) {
+    display: none;
+  }
+`
+
 export const ContactDesktopMedia = styled.div`
   display: flex !important;
   flex-direction: row;
