@@ -37,7 +37,7 @@ export const themes = {
     sliderMobile: {
         justifyContent: 'flex-start',
         minWidth: '350px',
-        paddingVertical: '2px',
+        paddingVertical: '8px',
         paragraphMarginLeft: '-40%',
         color: '#FFFFFF',
         arrowColor: '#030303',
@@ -59,7 +59,7 @@ export const themes = {
     contacts: {
         justifyContent: 'flex-start',
         minWidth: '218px',
-        paddingVertical: '15px',
+        paddingVertical: '12px',
         paragraphMarginLeft: '-35%',
         color: '#FFFFFF',
         arrowColor: '#030303',

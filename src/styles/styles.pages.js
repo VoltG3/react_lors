@@ -61,10 +61,10 @@ export const StyledPageContainer = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 16px;
 
     @media only screen and (max-width: 700px) {
-        gap: 20px;
+        gap: 12px;
     }
     & p {
       font-family: "Montserrat", sans-serif;

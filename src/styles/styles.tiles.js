@@ -137,18 +137,18 @@ export const TileAvailability = styled.div`
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 20px;
+      gap: 30px;
       width: 100%;
       @media (max-width: 768px) {
-        gap: 15px;
+        gap: 20px;
       }
       & svg, & img {
         flex-shrink: 0;
-        width: 32px;
-        height: 32px;
+        width: 40px;
+        height: 40px;
         @media (max-width: 768px) {
-          width: 28px;
-          height: 28px;
+          width: 32px;
+          height: 32px;
         }
       }
       & p {

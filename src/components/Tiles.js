@@ -139,7 +139,7 @@ const TileAvailability = () => {
                 <div className={"availabilitySquare"}>
                     {availabilityItems.map(({ Icon, key }) => (
                         <div key={key}>
-                            <Icon size={32} />
+                            <Icon size={40} />
                             <p className="tile-paragraph">{t(object_item + key)}</p>
                         </div>
                     ))}
