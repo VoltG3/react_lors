@@ -1,8 +1,641 @@
-./node_modules/.cache/babel-loader/daa0351f4e2955c5dc938bc312a0d9219815bb54cef4c719539007a4ff806042.json:{"ast":null,"code":"var _jsxFileName = \"/home/l470/Projects/lors/src/components/Button.js\",\n  _s = $RefreshSig$();\nimport React from 'react';\nimport { useTranslation } from 'react-i18next';\nimport * as S from '../../styles/button.styles';\nimport { jsxDEV as _jsxDEV } from \"react/jsx-dev-runtime\";\nexport const ButtonController = _ref => {\n  _s();\n  let {\n    variant\n  } = _ref;\n  const {\n    t\n  } = useTranslation([\"navigation\"]);\n  const theme = S.themes[variant] || S.themes.default;\n  const getButtonLabel = () => {\n    if (variant === \"sliderDesktop\" || variant === \"sliderMobile\") {\n      return t(\"navigation_buttons.btn_variant_04\");\n    }\n    if (variant === \"appointment\" || variant === \"contacts\") {\n      return t(\"navigation_buttons.btn_variant_01\");\n    }\n    return t(\"navigation_buttons.btn_variant_02\");\n  };\n  return /*#__PURE__*/_jsxDEV(S.StyledButtonContainer, {\n    $theme: theme,\n    children: /*#__PURE__*/_jsxDEV(\"div\", {\n      id: \"button\",\n      children: /*#__PURE__*/_jsxDEV(\"button\", {\n        className: \"button\",\n        children: /*#__PURE__*/_jsxDEV(\"p\", {\n          className: \"textContent--button\",\n          children: getButtonLabel()\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 24,\n          columnNumber: 21\n        }, this)\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 23,\n        columnNumber: 17\n      }, this)\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 22,\n      columnNumber: 13\n    }, this)\n  }, void 0, false, {\n    fileName: _jsxFileName,\n    lineNumber: 21,\n    columnNumber: 9\n  }, this);\n};\n_s(ButtonController, \"zlIdU9EjM2llFt74AbE2KsUJXyM=\", false, function () {\n  return [useTranslation];\n});\n_c = ButtonController;\nvar _c;\n$RefreshReg$(_c, \"ButtonController\");","map":{"version":3,"names":["React","useTranslation","S","jsxDEV","_jsxDEV","ButtonController","_ref","_s","variant","t","theme","themes","default","getButtonLabel","StyledButtonContainer","$theme","children","id","className","fileName","_jsxFileName","lineNumber","columnNumber","_c","$RefreshReg$"],"sources":["/home/l470/Projects/lors/src/components/Button.js"],"sourcesContent":["import React from 'react'\nimport { useTranslation } from 'react-i18next'\nimport * as S from '../../styles/button.styles'\n\nexport const ButtonController = ({ variant }) => {\n    const { t } = useTranslation([\"navigation\"])\n    \n    const theme = S.themes[variant] || S.themes.default\n\n    const getButtonLabel = () => {\n        if (variant === \"sliderDesktop\" || variant === \"sliderMobile\") {\n            return t(\"navigation_buttons.btn_variant_04\")\n        }\n        if (variant === \"appointment\" || variant === \"contacts\") {\n            return t(\"navigation_buttons.btn_variant_01\")\n        }\n        return t(\"navigation_buttons.btn_variant_02\")\n    }\n\n    return (\n        <S.StyledButtonContainer $theme={theme}>\n            <div id=\"button\">\n                <button className=\"button\">\n                    <p className=\"textContent--button\">{getButtonLabel()}</p>\n                </button>\n            </div>\n        </S.StyledButtonContainer>\n    )\n}\n"],"mappings":";;AAAA,OAAOA,KAAK,MAAM,OAAO;AACzB,SAASC,cAAc,QAAQ,eAAe;AAC9C,OAAO,KAAKC,CAAC,MAAM,4BAA4B;AAAA,SAAAC,MAAA,IAAAC,OAAA;AAE/C,OAAO,MAAMC,gBAAgB,GAAGC,IAAA,IAAiB;EAAAC,EAAA;EAAA,IAAhB;IAAEC;EAAQ,CAAC,GAAAF,IAAA;EACxC,MAAM;IAAEG;EAAE,CAAC,GAAGR,cAAc,CAAC,CAAC,YAAY,CAAC,CAAC;EAE5C,MAAMS,KAAK,GAAGR,CAAC,CAACS,MAAM,CAACH,OAAO,CAAC,IAAIN,CAAC,CAACS,MAAM,CAACC,OAAO;EAEnD,MAAMC,cAAc,GAAGA,CAAA,KAAM;IACzB,IAAIL,OAAO,KAAK,eAAe,IAAIA,OAAO,KAAK,cAAc,EAAE;MAC3D,OAAOC,CAAC,CAAC,mCAAmC,CAAC;IACjD;IACA,IAAID,OAAO,KAAK,aAAa,IAAIA,OAAO,KAAK,UAAU,EAAE;MACrD,OAAOC,CAAC,CAAC,mCAAmC,CAAC;IACjD;IACA,OAAOA,CAAC,CAAC,mCAAmC,CAAC;EACjD,CAAC;EAED,oBACIL,OAAA,CAACF,CAAC,CAACY,qBAAqB;IAACC,MAAM,EAAEL,KAAM;IAAAM,QAAA,eACnCZ,OAAA;MAAKa,EAAE,EAAC,QAAQ;MAAAD,QAAA,eACZZ,OAAA;QAAQc,SAAS,EAAC,QAAQ;QAAAF,QAAA,eACtBZ,OAAA;UAAGc,SAAS,EAAC,qBAAqB;UAAAF,QAAA,EAAEH,cAAc;QAAE;UAAAM,QAAA,EAAAC,YAAA;UAAAC,UAAA;UAAAC,YAAA;QAAA;MAAK;QAAAH,QAAA,EAAAC,YAAA;QAAAC,UAAA;QAAAC,YAAA;MAAA;IACpD;MAAAH,QAAA,EAAAC,YAAA;MAAAC,UAAA;MAAAC,YAAA;IAAA;EACP;IAAAH,QAAA,EAAAC,YAAA;IAAAC,UAAA;IAAAC,YAAA;EAAA,QACgB;AAElC,CAAC;AAAAf,EAAA,CAxBYF,gBAAgB;EAAA,QACXJ,cAAc;AAAA;AAAAsB,EAAA,GADnBlB,gBAAgB;AAAA,IAAAkB,EAAA;AAAAC,YAAA,CAAAD,EAAA"},"metadata":{},"sourceType":"module","externalDependencies":[]}
-./node_modules/.cache/babel-loader/4e5bb455a578f333ae67d8a9be7de9120292d681b748ec2d03d7e837c4239091.json:{"ast":null,"code":"var _jsxFileName = \"/home/l470/Projects/lors/src/components/Lists/Lists.js\",\n  _s = $RefreshSig$(),\n  _s2 = $RefreshSig$(),\n  _s3 = $RefreshSig$();\nimport React from 'react';\nimport { useTranslation } from 'react-i18next';\nimport config from '../../config';\nimport * as S from '../../styles/lists.styles';\nimport { jsxDEV as _jsxDEV } from \"react/jsx-dev-runtime\";\nexport const ListInformation = () => {\n  _s();\n  const {\n    t\n  } = useTranslation(['list_information']);\n  const items = t('list_information.list_items', {\n    returnObjects: true\n  });\n  return /*#__PURE__*/_jsxDEV(S.StyledListContainer, {\n    variant: \"information\",\n    children: [/*#__PURE__*/_jsxDEV(S.StyledHeader, {\n      children: /*#__PURE__*/_jsxDEV(\"p\", {\n        className: \"textContent--list--header\",\n        children: t('list_information.list_header')\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 13,\n        columnNumber: 9\n      }, this)\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 12,\n      columnNumber: 7\n    }, this), Array.isArray(items) && items.map((listItem, key) => /*#__PURE__*/_jsxDEV(\"div\", {\n      children: /*#__PURE__*/_jsxDEV(\"p\", {\n        className: \"textContent--list--item\",\n        children: listItem.item\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 18,\n        columnNumber: 13\n      }, this)\n    }, key, false, {\n      fileName: _jsxFileName,\n      lineNumber: 17,\n      columnNumber: 11\n    }, this))]\n  }, void 0, true, {\n    fileName: _jsxFileName,\n    lineNumber: 11,\n    columnNumber: 5\n  }, this);\n};\n_s(ListInformation, \"zlIdU9EjM2llFt74AbE2KsUJXyM=\", false, function () {\n  return [useTranslation];\n});\n_c = ListInformation;\nexport const ListServices = () => {\n  _s2();\n  const {\n    t\n  } = useTranslation(['list_services']);\n  const items = t('list_services.list_items', {\n    returnObjects: true\n  });\n  return /*#__PURE__*/_jsxDEV(S.StyledListContainer, {\n    variant: \"services\",\n    children: [/*#__PURE__*/_jsxDEV(S.StyledHeader, {\n      children: /*#__PURE__*/_jsxDEV(\"p\", {\n        className: \"textContent--list--header\",\n        children: t('list_services.list_header')\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 32,\n        columnNumber: 9\n      }, this)\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 31,\n      columnNumber: 7\n    }, this), Array.isArray(items) && items.map((listItem, key) => /*#__PURE__*/_jsxDEV(\"div\", {\n      children: /*#__PURE__*/_jsxDEV(\"p\", {\n        className: \"textContent--list--item\",\n        children: listItem.item\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 37,\n        columnNumber: 13\n      }, this)\n    }, key, false, {\n      fileName: _jsxFileName,\n      lineNumber: 36,\n      columnNumber: 11\n    }, this))]\n  }, void 0, true, {\n    fileName: _jsxFileName,\n    lineNumber: 30,\n    columnNumber: 5\n  }, this);\n};\n_s2(ListServices, \"zlIdU9EjM2llFt74AbE2KsUJXyM=\", false, function () {\n  return [useTranslation];\n});\n_c2 = ListServices;\nconst PriceList = _ref => {\n  _s3();\n  let {\n    translationKey\n  } = _ref;\n  const {\n    t\n  } = useTranslation(['list_prices']);\n  const currencySign = config.common.currencySign;\n  const items = t(`${translationKey}.list_items`, {\n    returnObjects: true\n  });\n  return /*#__PURE__*/_jsxDEV(S.StyledListContainer, {\n    variant: \"prices\",\n    children: [/*#__PURE__*/_jsxDEV(S.StyledHeader, {\n      children: /*#__PURE__*/_jsxDEV(\"p\", {\n        className: \"textContent--list--header\",\n        children: t(`${translationKey}.list_header`)\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 52,\n        columnNumber: 9\n      }, this)\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 51,\n      columnNumber: 7\n    }, this), Array.isArray(items) && items.map((listItem, key) => /*#__PURE__*/_jsxDEV(\"div\", {\n      children: [/*#__PURE__*/_jsxDEV(\"span\", {\n        className: \"productItemDescribe\",\n        children: /*#__PURE__*/_jsxDEV(\"p\", {\n          className: \"textContent--list--item\",\n          children: listItem.item\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 58,\n          columnNumber: 15\n        }, this)\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 57,\n        columnNumber: 13\n      }, this), /*#__PURE__*/_jsxDEV(\"span\", {\n        className: \"productItemPrice\",\n        children: [/*#__PURE__*/_jsxDEV(\"div\", {\n          children: /*#__PURE__*/_jsxDEV(\"p\", {\n            className: \"textContent--list--item\",\n            children: listItem.price\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 62,\n            columnNumber: 17\n          }, this)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 61,\n          columnNumber: 15\n        }, this), /*#__PURE__*/_jsxDEV(\"div\", {\n          children: /*#__PURE__*/_jsxDEV(\"p\", {\n            className: \"textContent--list--item\",\n            children: currencySign\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 65,\n            columnNumber: 17\n          }, this)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 64,\n          columnNumber: 15\n        }, this)]\n      }, void 0, true, {\n        fileName: _jsxFileName,\n        lineNumber: 60,\n        columnNumber: 13\n      }, this)]\n    }, listItem.id || key, true, {\n      fileName: _jsxFileName,\n      lineNumber: 56,\n      columnNumber: 11\n    }, this))]\n  }, void 0, true, {\n    fileName: _jsxFileName,\n    lineNumber: 50,\n    columnNumber: 5\n  }, this);\n};\n_s3(PriceList, \"zlIdU9EjM2llFt74AbE2KsUJXyM=\", false, function () {\n  return [useTranslation];\n});\n_c3 = PriceList;\nexport const ListPricesWithReference = () => /*#__PURE__*/_jsxDEV(PriceList, {\n  translationKey: \"list_prices_with_reference\"\n}, void 0, false, {\n  fileName: _jsxFileName,\n  lineNumber: 74,\n  columnNumber: 46\n}, this);\n_c4 = ListPricesWithReference;\nexport const ListPricesWithoutReference = () => /*#__PURE__*/_jsxDEV(PriceList, {\n  translationKey: \"list_prices_without_reference\"\n}, void 0, false, {\n  fileName: _jsxFileName,\n  lineNumber: 76,\n  columnNumber: 3\n}, this);\n_c5 = ListPricesWithoutReference;\nvar _c, _c2, _c3, _c4, _c5;\n$RefreshReg$(_c, \"ListInformation\");\n$RefreshReg$(_c2, \"ListServices\");\n$RefreshReg$(_c3, \"PriceList\");\n$RefreshReg$(_c4, \"ListPricesWithReference\");\n$RefreshReg$(_c5, \"ListPricesWithoutReference\");","map":{"version":3,"names":["React","useTranslation","config","S","jsxDEV","_jsxDEV","ListInformation","_s","t","items","returnObjects","StyledListContainer","variant","children","StyledHeader","className","fileName","_jsxFileName","lineNumber","columnNumber","Array","isArray","map","listItem","key","item","_c","ListServices","_s2","_c2","PriceList","_ref","_s3","translationKey","currencySign","common","price","id","_c3","ListPricesWithReference","_c4","ListPricesWithoutReference","_c5","$RefreshReg$"],"sources":["/home/l470/Projects/lors/src/components/Lists/Lists.js"],"sourcesContent":["import React from 'react'\nimport { useTranslation } from 'react-i18next'\nimport config from '../../config'\nimport * as S from '../../styles/lists.styles'\n\nexport const ListInformation = () => {\n  const { t } = useTranslation(['list_information'])\n  const items = t('list_information.list_items', { returnObjects: true })\n\n  return (\n    <S.StyledListContainer variant=\"information\">\n      <S.StyledHeader>\n        <p className=\"textContent--list--header\">{t('list_information.list_header')}</p>\n      </S.StyledHeader>\n      {Array.isArray(items) &&\n        items.map((listItem, key) => (\n          <div key={key}>\n            <p className=\"textContent--list--item\">{listItem.item}</p>\n          </div>\n        ))}\n    </S.StyledListContainer>\n  )\n}\n\nexport const ListServices = () => {\n  const { t } = useTranslation(['list_services'])\n  const items = t('list_services.list_items', { returnObjects: true })\n\n  return (\n    <S.StyledListContainer variant=\"services\">\n      <S.StyledHeader>\n        <p className=\"textContent--list--header\">{t('list_services.list_header')}</p>\n      </S.StyledHeader>\n      {Array.isArray(items) &&\n        items.map((listItem, key) => (\n          <div key={key}>\n            <p className=\"textContent--list--item\">{listItem.item}</p>\n          </div>\n        ))}\n    </S.StyledListContainer>\n  )\n}\n\nconst PriceList = ({ translationKey }) => {\n  const { t } = useTranslation(['list_prices'])\n  const currencySign = config.common.currencySign\n  const items = t(`${translationKey}.list_items`, { returnObjects: true })\n\n  return (\n    <S.StyledListContainer variant=\"prices\">\n      <S.StyledHeader>\n        <p className=\"textContent--list--header\">{t(`${translationKey}.list_header`)}</p>\n      </S.StyledHeader>\n      {Array.isArray(items) &&\n        items.map((listItem, key) => (\n          <div key={listItem.id || key}>\n            <span className=\"productItemDescribe\">\n              <p className=\"textContent--list--item\">{listItem.item}</p>\n            </span>\n            <span className=\"productItemPrice\">\n              <div>\n                <p className=\"textContent--list--item\">{listItem.price}</p>\n              </div>\n              <div>\n                <p className=\"textContent--list--item\">{currencySign}</p>\n              </div>\n            </span>\n          </div>\n        ))}\n    </S.StyledListContainer>\n  )\n}\n\nexport const ListPricesWithReference = () => <PriceList translationKey=\"list_prices_with_reference\" />\nexport const ListPricesWithoutReference = () => (\n  <PriceList translationKey=\"list_prices_without_reference\" />\n)\n"],"mappings":"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"},"metadata":{},"sourceType":"module","externalDependencies":[]}
-grep: ./node_modules/.cache/default-development/index.pack: binary file matches
-grep: ./node_modules/.cache/default-development/13.pack: binary file matches
-grep: ./node_modules/.cache/default-development/10.pack: binary file matches
-grep: ./node_modules/.cache/default-development/2.pack: binary file matches
-grep: ./node_modules/.cache/default-development/20.pack: binary file matches
-grep: ./node_modules/.cache/default-development/index.pack.old: binary file matches
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { motion, AnimatePresence } from 'framer-motion'
+import styled from 'styled-components'
+import { useTranslation } from 'react-i18next'
+import i18n from 'i18next'
+const DesktopMenu = () => {
+  const [isOpen, setIsOpen] = useState(false)
+  const { t } = useTranslation(['chapters'])
+  const toggleMenu = () => setIsOpen(!isOpen)
+  const closeMenu = () => setIsOpen(false)
+  const menuVariants = {
+    closed: {
+      x: '100%',
+      transition: {
+        type: 'tween',
+        duration: 0.3,
+        ease: 'easeInOut'
+      }
+    },
+    open: {
+      x: 0,
+      transition: {
+        type: 'tween',
+        duration: 0.3,
+        ease: 'easeInOut'
+      }
+    }
+  }
+  const overlayVariants = {
+    closed: {
+      opacity: 0,
+      transition: { duration: 0.3 }
+    },
+    open: {
+      opacity: 1,
+      transition: { duration: 0.3 }
+    }
+  }
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang)
+  }
+  return (
+    <>
+      <MenuButton
+        onClick={toggleMenu}
+        aria-label={isOpen ? "Close menu" : "Open menu"}
+        aria-expanded={isOpen}
+        $isOpen={isOpen}
+      >
+        <BurgerLine $isOpen={isOpen} $index={0} />
+        <BurgerLine $isOpen={isOpen} $index={1} />
+        <BurgerLine $isOpen={isOpen} $index={2} />
+      </MenuButton>
+      <AnimatePresence>
+        {isOpen && (
+          <>
+            <Overlay
+              initial="closed"
+              animate="open"
+              exit="closed"
+              variants={overlayVariants}
+              onClick={closeMenu}
+            />
+            <MenuPanel
+              initial="closed"
+              animate="open"
+              exit="closed"
+              variants={menuVariants}
+            >
+              <MenuHeader>
+                <MenuTitle>Menu</MenuTitle>
+              </MenuHeader>
+              <Divider />
+              <MenuNav>
+                <MenuItem to="home" onClick={closeMenu}>
+                  {t('chapters:home')}
+                </MenuItem>
+                <MenuItem to="about" onClick={closeMenu}>
+                  {t('chapters:about')}
+                </MenuItem>
+                <MenuItem to="services" onClick={closeMenu}>
+                  {t('chapters:services')}
+                </MenuItem>
+                <MenuItem to="prices" onClick={closeMenu}>
+                  {t('chapters:prices')}
+                </MenuItem>
+                <MenuItem to="info" onClick={closeMenu}>
+                  {t('chapters:info')}
+                </MenuItem>
+                <MenuItem to="contacts" onClick={closeMenu}>
+                  {t('chapters:contacts')}
+                </MenuItem>
+              </MenuNav>
+              <Divider />
+              <LanguageSelector>
+                <LangButton
+                  onClick={() => changeLanguage('lv')}
+                  $active={i18n.language === 'lv'}
+                >
+                  LV
+                </LangButton>
+                <LangSeparator>/</LangSeparator>
+                <LangButton
+                  onClick={() => changeLanguage('en')}
+                  $active={i18n.language === 'en'}
+                >
+                  EN
+                </LangButton>
+                <LangSeparator>/</LangSeparator>
+                <LangButton
+                  onClick={() => changeLanguage('ru')}
+                  $active={i18n.language === 'ru'}
+                >
+                  RU
+                </LangButton>
+              </LanguageSelector>
+              <Divider />
+            </MenuPanel>
+          </>
+        )}
+      </AnimatePresence>
+    </>
+  )
+}
+// Styled Components
+const MenuButton = styled.button`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 50px;
+  height: 45px;
+  background: transparent;
+  border: 1px solid ${props => props.$isOpen ? 'white' : '#4a5568'};
+  cursor: pointer;
+  padding: 10px;
+  z-index: 101;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  &:hover {
+    border-color: ${props => props.$isOpen ? 'white' : '#2c3e50'};
+    background: ${props => props.$isOpen ? 'transparent' : 'rgba(0, 0, 0, 0.08)'};
+  }
+  &:focus-visible {
+    outline: 2px solid ${props => props.$isOpen ? 'white' : '#2c3e50'};
+    outline-offset: 2px;
+  }
+  @media only screen and (max-width: 922px) {
+    display: flex;
+  }
+`
+const BurgerLine = styled.span`
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: ${props => props.$isOpen ? 'white' : '#4a5568'};
+  border-radius: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+  ${props => props.$isOpen && props.$index === 0 && `
+    transform: translateY(7px) rotate(45deg);
+  `}
+  ${props => props.$isOpen && props.$index === 1 && `
+    opacity: 0;
+    transform: translateX(-10px);
+  `}
+  ${props => props.$isOpen && props.$index === 2 && `
+    transform: translateY(-7px) rotate(-45deg);
+  `}
+`
+const Overlay = styled(motion.div)`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 98;
+  backdrop-filter: blur(2px);
+`
+const MenuPanel = styled(motion.aside)`
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 450px;
+  height: 100vh;
+  background: #112734;
+  z-index: 99;
+  padding: 60px 50px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  @media (max-width: 480px) {
+    max-width: 100%;
+    padding: 40px 30px;
+  }
+`
+const MenuHeader = styled.div`
+  margin-bottom: 20px;
+`
+const MenuTitle = styled.h2`
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 1px;
+`
+const Divider = styled.div`
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 30px 0;
+`
+const MenuNav = styled.nav`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+`
+const MenuItem = styled(Link)`
+  color: #d1d1d1;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: all 0.2s;
+  border-radius: 0;
+  &:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateX(5px);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--clr--accent--base, #007bff);
+    outline-offset: 2px;
+  }
+`
+const LanguageSelector = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+`
+const LangButton = styled.button`
+  background: ${props => props.$active ? 'rgba(255, 255, 255, 0.1)' : 'transparent'};
+  border: ${props => props.$active ? '1px solid var(--clr--accent--base, #007bff)' : '1px solid transparent'};
+  color: ${props => props.$active ? 'var(--clr--accent--base, #007bff)' : 'white'};
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: ${props => props.$active ? '600' : '400'};
+  padding: 10px 18px;
+  transition: all 0.2s;
+  border-radius: 0;
+  letter-spacing: 0.5px;
+  &:hover {
+    color: var(--clr--accent--base, #007bff);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--clr--accent--base, #007bff);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--clr--accent--base, #007bff);
+    outline-offset: 2px;
+  }
+`
+const LangSeparator = styled.span`
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+`
+export default DesktopMenu
+import React from 'react'
+import styled from 'styled-components'
+import i18n from 'i18next'
+function Languages() {
+    const [currentLang, setCurrentLang] = React.useState(i18n.language)
+    const changeLanguage = (lang) => {
+        i18n.changeLanguage(lang)
+        setCurrentLang(lang)
+    }
+    return (
+        <LanguageContainer>
+            <LanguageButton
+                $isActive={currentLang === 'lv'}
+                onClick={() => changeLanguage('lv')}
+            >
+                LV
+            </LanguageButton>
+            <LanguageButton
+                $isActive={currentLang === 'en'}
+                onClick={() => changeLanguage('en')}
+            >
+                EN
+            </LanguageButton>
+            <LanguageButton
+                $isActive={currentLang === 'ru'}
+                onClick={() => changeLanguage('ru')}
+            >
+                RU
+            </LanguageButton>
+        </LanguageContainer>
+    )
+}
+const LanguageContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+`
+const LanguageButton = styled.button`
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: ${props => props.$isActive ? '#2c3e50' : '#4a5568'};
+    background: ${props => props.$isActive ? 'rgba(0, 0, 0, 0.15)' : 'transparent'};
+    border: 1px solid #4a5568;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    min-width: 55px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    &:hover {
+        color: #2c3e50;
+        background: rgba(0, 0, 0, 0.08);
+        border-color: #2c3e50;
+    }
+    @media only screen and (max-width: 1220px) {
+        padding: 8px 16px;
+        font-size: 13px;
+        min-width: 50px;
+    }
+`
+export default Languagesimport React from 'react'
+import ResponsiveLogo from '../../Logo'
+import logoColoredLors from '../../../assets/logo/colored_logo_00.svg'
+import logoTransparentLors from '../../../assets/logo/transparent_logo_00.svg'
+export default function Logo({ variant, maxHeight }) {
+    const isColored = variant === "colored"
+    const logoSrc = isColored ? logoColoredLors : logoTransparentLors
+    return (
+        <ResponsiveLogo
+            src={logoSrc}
+            alt="Lors"
+            maxHeight={maxHeight || "45px"}
+        />
+    )
+}import React from 'react'
+import styled from 'styled-components'
+import Logo from './Logo'
+import TopBar from './TopBar'
+import Languages from './Languages'
+import DesktopMenu from './DesktopMenu'
+function HeaderNavDesktop() {
+  return (
+    <Container>
+      <Grid>
+        <LogoSection>
+          <Logo variant="colored" />
+        </LogoSection>
+        <InfoSection>
+          <TopBar />
+          <Languages />
+          <DesktopMenu />
+        </InfoSection>
+      </Grid>
+    </Container>
+  )
+}
+const Container = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: transparent;
+  transition: all 0.3s ease;
+  @media (max-width: 922px) {
+    display: none;
+  }
+`
+const Grid = styled.nav`
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 100%;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  grid-template-areas: 'logo info';
+  @media (max-width: 1220px) {
+    padding: 12px 16px;
+    gap: 15px;
+  }
+`
+const LogoSection = styled.div`
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+`
+const InfoSection = styled.div`
+  grid-area: info;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  @media (max-width: 1220px) {
+    gap: 12px;
+  }
+`
+export default HeaderNavDesktop
+import React from 'react'
+import styled from 'styled-components'
+import { Link, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+function SecondaryNav() {
+    const { t } = useTranslation(['navigation'])
+    const location = useLocation()
+    const currentPath = location.pathname.replace('/', '')
+    return (
+        <OuterContainer>
+            <InnerContainer>
+                <NavLink to="home" $isActive={currentPath === 'home' || currentPath === ''}>
+                    {t('navigation_primary.home')}
+                </NavLink>
+                <NavLink to="about" $isActive={currentPath === 'about'}>
+                    {t('navigation_primary.about')}
+                </NavLink>
+                <NavLink to="services" $isActive={currentPath === 'services'}>
+                    {t('navigation_primary.services')}
+                </NavLink>
+                <NavLink to="prices" $isActive={currentPath === 'prices'}>
+                    {t('navigation_primary.prices')}
+                </NavLink>
+                <NavLink to="info" $isActive={currentPath === 'info'}>
+                    {t('navigation_primary.info')}
+                </NavLink>
+                <NavLink to="contacts" $isActive={currentPath === 'contacts'}>
+                    {t('navigation_primary.contacts')}
+                </NavLink>
+            </InnerContainer>
+        </OuterContainer>
+    )
+}
+const OuterContainer = styled.nav`
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background: transparent;
+  box-shadow: none;
+`
+const InnerContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 1440px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  @media (max-width: 1220px) {
+    padding: 15px 30px;
+    gap: 12px;
+  }
+  @media (max-width: 922px) {
+    display: none;
+  }
+  @media (max-width: 700px) {
+    padding: 15px 20px;
+  }
+`
+const NavLink = styled(Link)`
+  position: relative;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: ${props => props.$isActive ? '#d97706' : '#373a47'};
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  border: 1px solid ${props => props.$isActive ? '#d97706' : '#373a47'};
+  border-radius: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: transparent;
+  white-space: nowrap;
+  &:hover {
+    color: #d97706;
+    border-color: #d97706;
+    background: transparent;
+    transform: translateY(-2px);
+  }
+  &:active {
+    transform: translateY(0);
+  }
+  &:focus-visible {
+    outline: 2px solid #d97706;
+    outline-offset: 3px;
+  }
+  @media (max-width: 1220px) {
+    padding: 10px 18px;
+    font-size: 15px;
+  }
+`
+export default SecondaryNav
+import React from 'react'
+import styled from 'styled-components'
+import config from '../../../config'
+import i18n from 'i18next'
+import { useTranslation } from 'react-i18next'
+import {
+    IconNavigation01,
+    IconNavigation02,
+    IconNavigation03
+} from '../../../assets/icons'
+function TopBar() {
+    const [t] = useTranslation(["navigation"])
+    const appointmentUrl = i18n.language === 'lv'
+        ? config.external_url.URL_01
+        : config.external_url.URL_00
+    return (
+        <TopBarContainer>
+            {/* <InfoBox>
+                <IconNavigation01 size={16} />
+                <InfoText>{ t("navigation_secondary.telephone") }</InfoText>
+            </InfoBox>
+            <InfoBox>
+                <IconNavigation02 size={20} />
+                <InfoText>{ t("navigation_secondary.email") }</InfoText>
+            </InfoBox> */}
+            <AppointmentButton
+                href={appointmentUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                {/* <IconNavigation03 size={20} /> */}
+                <ButtonText>{ t("navigation_secondary.e_appointment") }</ButtonText>
+            </AppointmentButton>
+        </TopBarContainer>
+    )
+}
+const TopBarContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  @media only screen and (max-width: 1220px) {
+    gap: 16px;
+  }
+  @media only screen and (max-width: 922px) {
+    display: none;
+  }
+`
+const InfoBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border: 2px solid rgba(55, 58, 71, 0.3);
+  border-radius: 0;
+  background: transparent;
+  transition: all 0.3s ease;
+  & svg {
+    color: #373a47;
+    flex-shrink: 0;
+  }
+  &:hover {
+    border-color: var(--clr--accent--base, #007bff);
+    background: rgba(0, 123, 255, 0.05);
+    & svg {
+      color: var(--clr--accent--base, #007bff);
+    }
+  }
+  @media only screen and (max-width: 1220px) {
+    padding: 8px 16px;
+  }
+`
+const InfoText = styled.p`
+  margin: 0;
+  font-size: 14px;
+  color: #373a47;
+  white-space: nowrap;
+  font-weight: 400;
+  @media only screen and (max-width: 1220px) {
+    font-size: 13px;
+  }
+`
+const AppointmentButton = styled.a`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border: 1px solid #4a5568;
+  border-radius: 0;
+  background: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  & svg {
+    color: #4a5568;
+    transition: color 0.3s ease;
+    flex-shrink: 0;
+  }
+  &:hover {
+    background: rgba(0, 0, 0, 0.08);
+    border-color: #2c3e50;
+    & p {
+      color: #2c3e50;
+    }
+    & svg {
+      color: #2c3e50;
+    }
+  }
+  @media only screen and (max-width: 1220px) {
+    padding: 8px 16px;
+  }
+  @media only screen and (max-width: 922px) {
+    display: none;
+  }
+`
+const ButtonText = styled.p`
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4a5568;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  @media only screen and (max-width: 1220px) {
+    font-size: 13px;
+  }
+`
+export default TopBar
