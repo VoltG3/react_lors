@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import i18n from 'i18next'
 import { useProjectData } from '../DataContext'
-import { TransformFormat, TransformArray } from '../json/json'
+import { TransformFormat, TransformArray } from '../json'
 
 import * as S from '../styles/styles.hours'
 
