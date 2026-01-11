@@ -127,6 +127,7 @@ export const StyledButtonContainer = styled.div`
       display: inline-block;
       margin-left: ${({ $theme }) => $theme.paragraphMarginLeft};
       color: ${({ $theme }) => $theme.color}!important;
+      opacity: 1 !important;
       font-family: "Roboto", sans-serif;
       font-style: normal;
       font-weight: 500;

@@ -137,14 +137,16 @@ export const StyledListContainer = styled.div`
         & p {
           padding: 8px 0;
           margin-left: 30px;
-          margin-right: 0 !important;
+          margin-right: 15px !important;
           @media only screen and (min-width: 1024px) {
             padding: 12px 0;
             margin-left: 45px;
+            margin-right: 20px !important;
           }
           @media only screen and (max-width: 700px) {
             padding: 6px 0;
             margin-left: 20px;
+            margin-right: 10px !important;
           }
         }
       }
