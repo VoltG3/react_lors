@@ -1,6 +1,6 @@
-import { StyledResponsiveLogo } from './StyledResponsiveLogo'
+import { StylesLogo } from '../styles/styles.logo'
 
-export default function ResponsiveLogo({
+export default function Logo({
         src,
         alt = '',
         maxWidth = '170px',
@@ -15,7 +15,7 @@ export default function ResponsiveLogo({
     }) {
 
     return (
-        <StyledResponsiveLogo
+        <StylesLogo
             src={src}
             alt={alt}
             $maxWidth={maxWidth}

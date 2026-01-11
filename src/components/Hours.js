@@ -1,11 +1,11 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import i18n from 'i18next'
-import { useProjectData } from '../../utils/DataContext'
-import TransformFormat from '../../json/transformFormat'
-import { TransformArray } from '../../json/transformArray'
+import { useProjectData } from '../utils/DataContext'
+import TransformFormat from '../json/transformFormat'
+import { TransformArray } from '../json/transformArray'
 
-import * as S from './opening-hours.styles'
+import * as S from '../styles/styles.hours'
 
 const paragraph = "textContent--tabledata--item--small"
 
@@ -85,7 +85,7 @@ const DataColumnNames = ({ type, className = "" }) => {
     )
 }
 
-const OpeningHours = () => {
+const Hours = () => {
     const { t } = useTranslation(["tiles"])
     const { showWithReference, showWithoutReference, loading } = useProjectData()
 
@@ -138,4 +138,4 @@ const OpeningHours = () => {
     )
 }
 
-export default OpeningHours
+export default Hours

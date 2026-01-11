@@ -1,14 +1,14 @@
 import React from 'react'
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
-import config from '../../config'
-import * as S from './tiles.styles'
-import { LineTiny } from '../Lines/Lines'
-import { ButtonController } from '../Button/Button.controller'
-import ResponsiveLogo from '../ResponsiveLogo/responsiveLogo'
-import { useProjectData } from '../../utils/DataContext'
-import TransformData from '../../json/transformData'
-import TransformFormat from '../../json/transformFormat'
+import config from '../config'
+import * as S from '../styles/styles.tiles'
+import { LineTiny } from './Lines'
+import { ButtonController } from './Button/Button.controller'
+import ResponsiveLogo from './Logo'
+import { useProjectData } from '../utils/DataContext'
+import TransformData from '../json/transformData'
+import TransformFormat from '../json/transformFormat'
 
 // Import icons
 import {
@@ -20,14 +20,14 @@ import {
     IconAvailability06,
     IconAvailability07,
     IconAvailability08
-} from '../../assets/icons'
+} from '../assets/icons'
 
 // Import colored logos
-import logoColoredBalta from '../../assets/logo/colored_logo_01.png'
-import logoColoredBTA from '../../assets/logo/colored_logo_02.png'
-import logoColoredErgo from '../../assets/logo/colored_logo_03.png'
-import logoColoredGjensidige from '../../assets/logo/colored_logo_04.png'
-import logoColoredSeesam from '../../assets/logo/colored_logo_05.png'
+import logoColoredBalta from '../assets/logo/colored_logo_01.png'
+import logoColoredBTA from '../assets/logo/colored_logo_02.png'
+import logoColoredErgo from '../assets/logo/colored_logo_03.png'
+import logoColoredGjensidige from '../assets/logo/colored_logo_04.png'
+import logoColoredSeesam from '../assets/logo/colored_logo_05.png'
 
 const TileHoursJSON = () => {
     const { data: jsonData, loading, error } = useProjectData()

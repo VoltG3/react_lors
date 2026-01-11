@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const StyledResponsiveLogo = styled.img`
+export const StylesLogo = styled.img`
     max-width: ${({ $maxWidth }) => $maxWidth || '170px'};
     max-height: ${({ $maxHeight }) => $maxHeight || 'none'};
     width: auto;

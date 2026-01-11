@@ -1,6 +1,6 @@
 import React from 'react'
-import config from '../../config'
-import * as S from './image.styles'
+import config from '../config'
+import * as S from '../styles/styles.images'
 
 const URL_img01 = config.images.URL_img01
 const URL_img02 = config.images.URL_img02
@@ -17,7 +17,7 @@ const SingleImage = ({ Container, src }) => (
     </Container>
 )
 
-export const ImageController = (props) => {
+export const Images = (props) => {
     switch (props.variant) {
         case 'collective4':
             return <SingleImage Container={S.StyledCollective4} src={URL_img01} />

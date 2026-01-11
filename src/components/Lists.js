@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import config from '../../config'
-import * as S from './lists.styles'
+import config from '../config'
+import * as S from '../styles/styles.lists'
 
 export const ListInformation = () => {
   const { t } = useTranslation(['list_information'])

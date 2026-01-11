@@ -1,18 +1,18 @@
 import React from "react"
 import { useTranslation } from 'react-i18next'
-import '../../translations/i18n'
+import '../translations/i18n'
 import i18n from 'i18next'
-import config from '../../config'
+import config from '../config'
 
-import * as S from './footer.styles'
-import ResponsiveLogo from "../ResponsiveLogo/responsiveLogo"
+import * as S from '../styles/styles.footer'
+import ResponsiveLogo from "./Logo"
 
 // Import logo sources
-import logoTransparentBalta from '../../assets/logo/transparent_logo_01.svg'
-import logoTransparentBTA from '../../assets/logo/transparent_logo_02.svg'
-import logoTransparentErgo from '../../assets/logo/transparent_logo_03.svg'
-import logoTransparentGjensidige from '../../assets/logo/transparent_logo_04.svg'
-import logoTransparentSeesam from '../../assets/logo/transparent_logo_05.svg'
+import logoTransparentBalta from '../assets/logo/transparent_logo_01.svg'
+import logoTransparentBTA from '../assets/logo/transparent_logo_02.svg'
+import logoTransparentErgo from '../assets/logo/transparent_logo_03.svg'
+import logoTransparentGjensidige from '../assets/logo/transparent_logo_04.svg'
+import logoTransparentSeesam from '../assets/logo/transparent_logo_05.svg'
 
 function Footer() {
     const { t } = useTranslation(["navigation", "section_footer"])

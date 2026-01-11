@@ -3,10 +3,10 @@ import { StyledPageContainer as PageContainer } from './styles/StyledPageContain
 
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
-import { ListServices } from '../components/Lists/Lists'
-import { ImageController } from '../components/Image/image.controller'
+import { ListServices } from '../components/Lists'
+import { Images } from '../components/Images'
 
-import { LineLang } from '../components/Lines/Lines'
+import { LineLang } from '../components/Lines'
 
 export default function Services() {
     const [t] = useTranslation(["chapters"])
@@ -19,7 +19,7 @@ export default function Services() {
             <LineLang />
 
            <ListServices />
-           <ImageController variant={"equipment"} />
+           <Images variant={"equipment"} />
         </PageContainer>
     )
 }

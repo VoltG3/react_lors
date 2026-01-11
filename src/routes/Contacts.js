@@ -6,13 +6,13 @@ import config from '../config'
 import '../translations/i18n'
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
-import { ImageController } from '../components/Image/image.controller'
-import OpeningHours from '../components/OpeningHours/OpeningHours'
-import { LineLang } from '../components/Lines/Lines'
+import { Images } from '../components/Images'
+import Hours from '../components/Hours'
+import { LineLang } from '../components/Lines'
 import { ButtonController } from '../components/Button/Button.controller'
 import { useProjectData } from "../utils/DataContext";
 
-const GoogleMap = lazy(() => import('../components/GoogleMap'));
+const GoogleMap = lazy(() => import('../components/./Map'));
 
 export default function Contacts() {
     const [t] = useTranslation(["chapter_pages", "chapters"])
@@ -42,12 +42,12 @@ export default function Contacts() {
                     </span>
 
                     <div className={"inlineParagraphWithImage"}>
-                        <ImageController variant={"building"} />
+                        <Images variant={"building"} />
                     </div>
                 </InlineParagraphWithImage>
 
-                <OpeningHours />
-                <ImageController variant={"contacts"} />
+                <Hours />
+                <Images variant={"contacts"} />
 
                 <InlineParagraph>
                     <p className={"textContent--h3"}>{ introHeader }</p>

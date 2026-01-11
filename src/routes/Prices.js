@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 import config from '../config'
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
-import { ImageController } from '../components/Image/image.controller'
+import { Images } from '../components/Images'
 import { ButtonController } from '../components/Button/Button.controller'
-import { LineLang } from '../components/Lines/Lines'
-import { ListPricesWithReference, ListPricesWithoutReference } from "../components/Lists/Lists"
+import { LineLang } from '../components/Lines'
+import { ListPricesWithReference, ListPricesWithoutReference } from "../components/Lists"
 
 export default function Prices() {
     const [t] = useTranslation(["chapter_pages", "chapters"])
@@ -51,7 +51,7 @@ export default function Prices() {
             <ListPricesWithReference />
             <div style={{ height: 'var(--size--padding40)' }} />
             <ListPricesWithoutReference />
-            <ImageController variant={"office"} />
+            <Images variant={"office"} />
         </PageContainer>
     )
 }

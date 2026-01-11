@@ -2,9 +2,9 @@ import React from 'react'
 import { StyledPageContainer as PageContainer } from './styles/StyledPageContainer'
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
-import { ImageController } from '../components/Image/image.controller'
-import { LineLang } from '../components/Lines/Lines'
-import Tiles from '../components/Tiles/tiles'
+import { Images } from '../components/Images'
+import { LineLang } from '../components/Lines'
+import Tiles from '../components/Tiles'
 
 export default function Home() {
     const [t] = useTranslation(["chapter_pages"])
@@ -23,7 +23,7 @@ export default function Home() {
                  <p className={ paragraph }>{ t("chapter_home.part_04") }</p>
             </span>
 
-            <ImageController variant={"collective4"} />
+            <Images variant={"collective4"} />
 
             <Tiles />
         </PageContainer>

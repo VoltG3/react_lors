@@ -1,5 +1,5 @@
 import React from 'react'
-import ResponsiveLogo from '../../ResponsiveLogo/responsiveLogo'
+import ResponsiveLogo from '../../Logo'
 import logoColoredLors from '../../../assets/logo/colored_logo_00.svg'
 import logoTransparentLors from '../../../assets/logo/transparent_logo_00.svg'
 

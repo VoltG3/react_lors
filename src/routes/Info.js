@@ -5,10 +5,10 @@ import config from '../config'
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import { ImageController } from '../components/Image/image.controller'
-import { LineLang } from '../components/Lines/Lines'
+import { Images } from '../components/Images'
+import { LineLang } from '../components/Lines'
 import { ButtonController } from '../components/Button/Button.controller'
-import { ListInformation } from '../components/Lists/Lists'
+import { ListInformation } from '../components/Lists'
 
 export default function Info() {
     const [t] = useTranslation(["chapter_pages", "chapters"])
@@ -62,7 +62,7 @@ export default function Info() {
                     <li><p className={ paragraph }>{ t(list_02 + "part_04") }</p></li>
                 </ul>
             </span>
-            <ImageController variant={"collective3"} />
+            <Images variant={"collective3"} />
 
             <ListInformation />
         </PageContainer>

@@ -1,5 +1,5 @@
 import React from 'react'
-import * as S from './lines.styles'
+import * as S from '../styles/styles.lines'
 
 export const LineLang = () => <S.StyledLineLang />
 
