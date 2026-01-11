@@ -304,13 +304,13 @@ export const BurgerButton = styled.button`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
-  width: 50px;
-  height: 45px;
+  gap: 4px;
+  width: 40px;
+  height: 34px;
   background: transparent;
   border: 1px solid ${props => props.$isOpen ? 'white' : '#4a5568'};
   cursor: pointer;
-  padding: 10px;
+  padding: 5px;
   z-index: 101;
   transition: all 0.3s ease;
 
@@ -322,14 +322,14 @@ export const BurgerButton = styled.button`
 
 export const BurgerLine = styled.span`
   display: block;
-  width: 28px;
+  width: 22px;
   height: 2px;
   background: ${props => props.$isOpen ? 'white' : '#4a5568'};
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: center;
 
   ${props => props.$isOpen && props.$index === 0 && `
-    transform: translateY(7px) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
   `}
 
   ${props => props.$isOpen && props.$index === 1 && `
@@ -338,7 +338,7 @@ export const BurgerLine = styled.span`
   `}
 
   ${props => props.$isOpen && props.$index === 2 && `
-    transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-6px) rotate(-45deg);
   `}
 `
 
