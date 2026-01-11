@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const StyledLineLang = styled.div`
   width: 100%;
   height: 2px;
-  margin-bottom: var(--size--padding40);
+  margin-bottom: 40px;
   background: var(--color--line--lang);
 `
 

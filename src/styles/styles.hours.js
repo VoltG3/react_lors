@@ -6,14 +6,14 @@ export const Container = styled.div`
   box-sizing: border-box;
   width: 100%;
   height: auto;
-  gap: var(--size--padding40);
-  padding-top: var(--size--padding40);
-  padding-bottom: var(--size--padding40);
+  gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   @media only screen and (max-width: 700px) {
-    gap: var(--size--padding30);
-    padding-top: var(--size--padding30);
-    padding-bottom: var(--size--padding30);
+    gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 `
 
@@ -36,14 +36,14 @@ export const ColumnSet = styled.div`
   box-sizing: border-box;
   width: 100%;
   height: auto;
-  box-shadow: var(--box--shadow);
-  border-radius: var(--border--radius);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  border-radius: 0;
   background-color: var(--color--none);
   overflow: hidden;
   transition: all .3s ease;
 
   &:hover {
-    box-shadow: var(--box--hover);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 24px;
     transform: translateY(-2px);
   }
 `
@@ -76,7 +76,7 @@ export const ColumnWrapper = styled.div`
       align-items: center;
       width: 100%;
       height: auto;
-      min-height: var(--list--line--height);
+      min-height: 40px;
       box-sizing: border-box;
       padding: 8px 15px;
 
@@ -132,7 +132,7 @@ export const ColumnWrapper = styled.div`
 export const DesktopMedia = styled.div`
   display: flex !important;
   flex-direction: row;
-  gap: var(--size--padding40);
+  gap: 40px;
 
   @media only screen and (max-width: 1100px) {
     flex-direction: column;
@@ -148,6 +148,6 @@ export const MobileMedia = styled.div`
   @media only screen and (max-width: 922px) {
     display: flex !important;
     flex-direction: column;
-    gap: var(--size--padding40);
+    gap: 40px;
   }
 `

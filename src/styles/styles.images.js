@@ -10,19 +10,19 @@ const ImgContainer = css`
     height: auto;
 
   & img {
-    border-radius: var(--border--radius);
-    box-shadow: var(--box--shadow);
+    border-radius: 0;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
     opacity: 1;
 
     transition: all .3s ease;
 
     &:hover {
-      box-shadow: var(--box--hover);
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 24px;
       transform: translateY(-2px);
     }
 
     @media only screen and (max-width: 922px) {
-      box-shadow: var(--box--shadow);
+      box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
       opacity: 0.95;
     }
   }
@@ -43,13 +43,13 @@ const ImgResponsiveVertical = css`
 `
 
 const MediaCollective4 = css`
-  padding-top: var(--size--padding30);
-  padding-bottom: var(--size--padding30);
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   @media only screen and (max-width: 700px) {
     & {
-      padding-top: var(--size--padding30);
-      padding-bottom: var(--size--padding30);
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
   }
 `
@@ -57,7 +57,7 @@ const MediaCollective4 = css`
 const MediaCollective3 = css`
   @media only screen and (max-width: 700px) {
     & {
-      padding-top: var(--size--padding30);
+      padding-top: 30px;
     }
   }
 `
@@ -81,13 +81,13 @@ const MediaEquipment = css`
 const MediaContacts = css`
   gap: 30px;
   
-  & img:nth-child(1) { max-width: calc( 55% - calc(var(--size--padding30) / 2)); }
-  & img:nth-child(2) { max-width: calc( 45% - calc(var(--size--padding30) / 2)); }
+  & img:nth-child(1) { max-width: calc( 55% - calc(30px / 2)); }
+  & img:nth-child(2) { max-width: calc( 45% - calc(30px / 2)); }
   
   @media only screen and (max-width: 700px) {
     & {
       flex-direction: column;
-      gap: var(--size--padding30);
+      gap: 30px;
       
       & img:nth-child(1) { max-width: 100%; }
       & img:nth-child(2) { max-width: 100%; }
@@ -109,9 +109,9 @@ export const StylesEachPerson = styled.div`
   ${ ImgResponsiveVertical }
   ${ MediaEachPerson }
   
-  gap: var(--size--padding30);
-  padding-top: var(--size--padding60);
-  padding-bottom: var(--size--padding30);
+  gap: 30px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 `
 
 export const StyledEquipment = styled.div`
@@ -119,8 +119,8 @@ export const StyledEquipment = styled.div`
   ${ ImgResponsiveVertical }
   ${ MediaEquipment }
   
-  gap: var(--size--padding30);
-  padding-top: var(--size--padding30);
+  gap: 30px;
+  padding-top: 30px;
 `
 
 export const StyledOffice = styled.div`

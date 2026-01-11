@@ -6,14 +6,14 @@ import config from '../config'
 import * as S from '../styles/styles.header'
 import { ButtonController } from './Button'
 
-const SliderTextContentDesktop = ({ media }) => {
+const SliderTextContentDesktop = () => {
     const { t } = useTranslation(["chapter_header"])
     const introHeader = config.common.introHeader
     const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
     const h1 = i18n.language === 'ru' ? 'textContent--h0--rus' : 'textContent--h0'
 
     return (
-        <S.SliderContentDesktop $media={media}>
+        <S.SliderContentDesktop>
             <S.SliderTextWrapper>
                 <p className={h1}>{introHeader}</p>
                 <p className={paragraph}>{t("part_01")}</p>
@@ -25,14 +25,14 @@ const SliderTextContentDesktop = ({ media }) => {
     )
 }
 
-const SliderTextContentMobile = ({ media }) => {
+const SliderTextContentMobile = () => {
     const { t } = useTranslation(["chapter_header"])
     const introHeader = config.common.introHeader
     const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
     const h1 = i18n.language === 'ru' ? 'textContent--h0--rus' : 'textContent--h0'
 
     return (
-        <S.SliderContentMobile $display={media}>
+        <S.SliderContentMobile>
             <S.SliderMobileTextWrapper>
                 <p className={h1}>{introHeader}</p>
                 <p className={paragraph}>{t("part_01")}</p>
@@ -66,7 +66,7 @@ const HeaderSlider = () => {
     return (
         <>
             <S.SliderMainContainer>
-                <SliderTextContentDesktop media={"var(--media--desktop)"} />
+                <SliderTextContentDesktop />
                 <S.SlideWrapper>
                     {slides.map((slide, index) => (
                         <S.SlideImage
@@ -82,7 +82,7 @@ const HeaderSlider = () => {
                     ))}
                 </S.SlideWrapper>
             </S.SliderMainContainer>
-            <SliderTextContentMobile media={"var(--media--mobile)"} />
+            <SliderTextContentMobile />
         </>
     )
 }

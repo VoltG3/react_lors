@@ -48,7 +48,7 @@ export default function Prices() {
             </span>
 
             <ListPricesWithReference />
-            <div style={{ height: 'var(--size--padding40)' }} />
+            <div style={{ height: '40px' }} />
             <ListPricesWithoutReference />
             <Images variant={"office"} />
         </PageContainer>

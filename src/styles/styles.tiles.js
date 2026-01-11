@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 export const StyledTiles = styled.div`
   display: flex;
   flex-direction: row;
-  gap: var(--size--padding30);
+  gap: 30px;
   box-sizing: border-box;
   @media only screen and (max-width: 992px) {
     flex-direction: column;
@@ -11,21 +11,21 @@ export const StyledTiles = styled.div`
   }
 
   .tableContentContainer {
-    max-width: calc(var(--page--width) / 3);
+    max-width: calc(1440px / 3);
     width: 100%;
     height: auto;
     box-sizing: border-box;
     overflow: hidden;
-    box-shadow: var(--box--shadow);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
     background-color: var(--color--none);
-    border-radius: var(--border--radius);
+    border-radius: 0;
 
     @media only screen and (max-width: 992px) {
-      max-width: var(--page--width);
+      max-width: 1440px;
     }
     &:hover {
       transition: box-shadow .3s linear;
-      box-shadow: var(--box--hover);
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 24px;
     }
   }
 `

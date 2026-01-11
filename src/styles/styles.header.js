@@ -475,13 +475,17 @@ export const SlideImage = styled.img`
 export const SliderContentDesktop = styled.div`
   position: absolute;
   z-index: 3;
-  display: ${props => props.$media};
+  display: flex;
   flex-direction: column;
   max-width: 1440px;
   width: 100%;
   height: inherit;
   padding: 0 40px;
   box-sizing: border-box;
+
+  @media only screen and (max-width: 922px) {
+    display: none;
+  }
 
   @media only screen and (max-width: 1220px) {
     padding: 0 30px;
@@ -510,12 +514,16 @@ export const SliderTextWrapper = styled.div`
 `
 
 export const SliderContentMobile = styled.div`
-  display: ${props => props.$display || 'flex'};
+  display: none;
   flex-direction: column;
   width: 100%;
   max-width: 1440px;
   padding: 0 40px;
   box-sizing: border-box;
+
+  @media only screen and (max-width: 922px) {
+    display: flex;
+  }
 
   @media only screen and (max-width: 1220px) {
     padding: 0 30px;

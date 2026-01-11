@@ -5,7 +5,7 @@ export const StyledPageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: var(--page--width);
+  max-width: 1440px;
   width: 100%;
   height: auto;
   box-sizing: border-box;
@@ -23,7 +23,10 @@ export const StyledPageContainer = styled.div`
     }
   }
   & h2 {
-    display: var(--media--desktop);
+    display: flex;
+    @media only screen and (max-width: 700px) {
+        display: none;
+    }
   }
   & span {
     width: 100%;
@@ -47,8 +50,8 @@ export const StyledInlineParagraphContainer = styled.div`
   justify-content: center;
     width: 100%;
     height: auto;
-  padding-top: var(--size--padding30);
-  padding-bottom: var(--size--padding30);
+  padding-top: 30px;
+  padding-bottom: 30px;
   & p:nth-last-child(-n +1) {
     color: var(--color--paragraph--highlight);
   }

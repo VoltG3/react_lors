@@ -7,19 +7,19 @@ const ListContainerBase = css`
   width: 100%;
   height: auto;
   white-space: pre-wrap;
-  border-radius: var(--border--radius);
-  box-shadow: var(--box--shadow);
+  border-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 
   &:hover {
     transition: box-shadow 0.3s linear;
-    box-shadow: var(--box--hover);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 24px;
   }
 
   & > div {
     display: flex;
     align-items: stretch;
     width: 100%;
-    min-height: var(--list--line--height);
+    min-height: 40px;
     padding: 0;
     box-sizing: border-box;
   }
@@ -33,18 +33,18 @@ const ListContainerBase = css`
   }
 
   & > div:nth-last-child(-n + 1) {
-    border-bottom-left-radius: var(--border--radius);
-    border-bottom-right-radius: var(--border--radius);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   & p {
-    margin: 0 var(--list--margin);
+    margin: 0 30px;
 
     @media only screen and (min-width: 1024px) {
       margin: 0 45px;
     }
     @media only screen and (max-width: 700px) {
-      margin: 0 var(--list--margin);
+      margin: 0 20px;
     }
   }
 `
@@ -53,8 +53,8 @@ export const StyledHeader = styled.div`
   display: flex;
   align-items: center;
   background: var(--color--list--header) !important;
-  border-top-left-radius: var(--border--radius);
-  border-top-right-radius: var(--border--radius);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 
   & p {
     margin-top: 15px !important;
@@ -70,7 +70,7 @@ export const StyledListContainer = styled.div`
   ${(props) =>
     props.variant === 'information' &&
     css`
-      margin-top: var(--size--padding30);
+      margin-top: 30px;
     `}
 
   ${(props) =>
@@ -117,10 +117,11 @@ export const StyledListContainer = styled.div`
         border-left: 1px solid rgba(0, 0, 0, 0.08);
         background-color: rgba(0, 0, 0, 0.02);
         padding-left: 20px;
-        padding-right: var(--list--margin);
+        padding-right: 30px;
         @media only screen and (max-width: 700px) {
           max-width: 100px;
           padding-left: 10px;
+          padding-right: 20px;
         }
         & div:nth-child(1) {
           display: flex;

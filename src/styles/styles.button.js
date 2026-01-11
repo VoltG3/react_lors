@@ -102,7 +102,7 @@ export const StyledButtonContainer = styled.div`
     display: flex;
     width: ${({ $theme }) => $theme.minWidth};
     height: auto;
-    margin-right: var(--size--padding30);
+    margin-right: 30px;
     @media only screen and (max-width: 700px) {
       min-width: 190px;
     }
@@ -117,7 +117,7 @@ export const StyledButtonContainer = styled.div`
     box-sizing: border-box;
     padding-top: ${({ $theme }) => $theme.paddingVertical};
     padding-bottom: ${({ $theme }) => $theme.paddingVertical};
-    border-radius: var(--border--radius);
+    border-radius: 0;
     border: 1px solid ${({ $theme }) => $theme.borderColor};
     background: ${({ $theme }) => $theme.backgroundColor};
     transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -137,7 +137,7 @@ export const StyledButtonContainer = styled.div`
       background-color: ${({ $theme }) => $theme.backgroundHover};
       border-color: ${({ $theme }) => $theme.backgroundHover};
       padding-left: 10px;
-      box-shadow: var(--box--hover);
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 24px;
       transform: translateY(-2px);
     }
 

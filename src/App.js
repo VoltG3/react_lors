@@ -1,6 +1,5 @@
 import { GlobalFontStyles } from './GlobalFontStyles'
 import { GlobalColorStyles } from './GlobalColorStyles'
-import { GlobalSizeStyles } from './GlobalSizeStyles'
 
 import { Outlet } from 'react-router-dom'
 
@@ -23,7 +22,6 @@ export default function App() {
                     width: '100vw',
                     height: 'auto'
             }}>
-                <GlobalSizeStyles />
                 <GlobalColorStyles />
                 <GlobalFontStyles />
                     <Header />
