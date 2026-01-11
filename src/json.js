@@ -7,6 +7,12 @@ export function TransformData(target) {
     if (!target || typeof target !== 'string') {
         return ['', '']
     }
+
+    // Check if it's just a placeholder dash
+    if (target.trim() === '-') {
+        return ['-', '']
+    }
+
     // Split by dash and clean up spaces
     const [start = '', end = ''] = target
         .split('-')

@@ -57,7 +57,7 @@ const TileHoursJSON = () => {
                     <div className={"hoursCell"}>
                         <div className={"hoursWrapper"}>
                             <div><p>{array[0]}</p></div>
-                            <div><p>-</p></div>
+                            <div style={{ display: array[1] === "" ? 'none' : 'flex' }}><p>-</p></div>
                             <div><p>{array[1]}</p></div>
                         </div>
                     </div>

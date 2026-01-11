@@ -35,9 +35,9 @@ const DataColumnHours = ({ type, className = "" }) => {
     const arrayHours = i18n.language === 'en' ? arrayHoursUS : arrayHoursEU
 
     const renderTimeRow = (target_1, target_2) => (
-        <div style={{ display: target_1 === "" ? 'none' : 'flex' }} className={"cell--tripple"}>
+        <div style={{ display: (target_1 === "" && target_2 === "") ? 'none' : 'flex' }} className={"cell--tripple"}>
             <div><p>{target_1}</p></div>
-            <div><p>-</p></div>
+            <div style={{ display: target_2 === "" ? 'none' : 'flex' }}><p>-</p></div>
             <div><p>{target_2}</p></div>
         </div>
     )
