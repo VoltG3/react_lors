@@ -141,7 +141,7 @@ export const StyledFooterButton = styled.a`
 
   &:hover {
     background-color: white;
-    color: var(--color--primary) !important;
+    color: #112734 !important;
   }
 
   @media only screen and (max-width: 700px) {

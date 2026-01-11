@@ -16,7 +16,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-weight: 400;
         font-size: 15px;
         line-height: 1.5;
-        color: var(--color--button--v1);
+        color: #262626;
     }
         
     // [ HEADER ] ------------------------------------------------
@@ -30,7 +30,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-style: normal;
         font-weight: 300;
         font-size: var(--textContent--header--navigation--languages--fontsize);
-        color: var(--color--default);
+        color: #030303;
     }
 
     .textContent--header--desktop--infoline {
@@ -38,7 +38,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-style: normal;
         font-weight: 300;
         font-size: var(--textContent--header--navigation--infoline--fontsize);
-        color: var(--color--default);
+        color: #030303;
     }
 
     .textContent--header--desktop--navigation {
@@ -48,7 +48,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-size: var(--textContent--header--desktop--navigation--fontsize);
         text-transform: uppercase;
         opacity: var(--font--opacity);
-        color: var(--clr--primary--base);
+        color: #132743;
     }
 
     .textContent--header--mobile--navigation {
@@ -83,7 +83,7 @@ export const GlobalFontStyles = createGlobalStyle`
         line-height: var(--textContent--h0--lineheight) !important;
         white-space: pre-wrap;
         opacity: var(--font--opacity);
-        color: var(--color--secondary);
+        color: #152F3F;
     }
 
     .textContent--h0--rus {
@@ -94,7 +94,7 @@ export const GlobalFontStyles = createGlobalStyle`
         line-height: var(--textContent--h0--rus--lineheight) !important;
         text-transform: uppercase;
         opacity: var(--font--opacity);
-        color: var(--color--secondary);
+        color: #152F3F;
     }
 
     // [ TEXTCONTENT ] -------------------------------------------
@@ -121,7 +121,7 @@ export const GlobalFontStyles = createGlobalStyle`
         line-height: var(--textContent--h1--lineheight) !important;
         white-space: pre-wrap;
         opacity: var(--font--opacity);
-        color: var(--color--secondary);
+        color: #152F3F;
     }
 
     .textContent--h1--rus {
@@ -132,7 +132,7 @@ export const GlobalFontStyles = createGlobalStyle`
         line-height: var(--textContent--h1--rus--lineheight) !important;
         text-transform: uppercase;
         opacity: var(--font--opacity);
-        color: var(--color--secondary);
+        color: #152F3F;
     }
 
     .textContent--paragraph {
@@ -142,7 +142,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-size: var(--textContent--paragraph--fontsize);
         line-height: var(--textContent--paragraph--lineheight);
         opacity: var(--font--opacity);
-        color: var(--color--default);
+        color: #030303;
     }
 
     .textContent--paragraph--rus {
@@ -152,7 +152,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-size: var(--textContent--paragraph--rus--fontsize);
         line-height: var(--textContent--paragraph--rus--lineheight);
         opacity: var(--font--opacity);
-        color: var(--color--default);
+        color: #030303;
     }
 
     .textContent--h2 {
@@ -163,7 +163,7 @@ export const GlobalFontStyles = createGlobalStyle`
         line-height: var(--textContent--h2--lineheight);
         text-transform: uppercase;
         opacity: var(--font--opacity);
-        color: var(--color--secondary);
+        color: #152F3F;
     }
 
     .textContent--h2--rus {
@@ -174,7 +174,7 @@ export const GlobalFontStyles = createGlobalStyle`
         line-height: var(--textContent--h2--rus--lineheight);
         text-transform: uppercase;
         opacity: var(--font--opacity);
-        color: var(--color--secondary);
+        color: #152F3F;
     }
 
     .textContent--h3 {
@@ -194,7 +194,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-weight: 500;
         line-height: 1.4;
         text-transform: uppercase;
-        color: var(--color--tabledata);
+        color: #373A36;
 
         @media only screen and (max-width: 700px) {
             font-size: 18px;
@@ -206,7 +206,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-size: 15px;
         font-weight: 300;
         line-height: 1.6;
-        color: var(--color--button--v1);
+        color: #262626;
 
         @media only screen and (max-width: 700px) {  
             font-size: 14px;
@@ -218,7 +218,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-size: 12px;
         font-weight: 600;
         opacity: var(--font--opacity);
-        color: var(--color--button--v1);
+        color: #262626;
 
         @media only screen and (max-width: 700px) {
             font-size: 10px;
@@ -238,7 +238,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-size: var(--textContent--list--header--fontsize);
         line-height: 1.4;
         text-transform: uppercase;
-        color: var(--color--none);
+        color: #FFFFFF;
 
         @media only screen and (max-width: 700px) {
             font-weight: 400;
@@ -253,7 +253,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-size: var(--textContent--list--item--fontsize);
         line-height: var(--textContent--list--item--lineheight);
         opacity: var(--font--opacity);
-        color: var(--color--secondary);
+        color: #152F3F;
     }  
 
     // [ FOOTER ] ------------------------------------------------
@@ -272,10 +272,10 @@ export const GlobalFontStyles = createGlobalStyle`
         font-size: var(--textContent--footer--navigation--fontsize);
         line-height: var(--textContent--footer--navigation--lineheight);
         text-transform: uppercase;
-        color: var(--color--paragraph--footer);
+        color: #828181;
 
         &:hover {
-            color: var(--color--none);
+            color: #FFFFFF;
         }
     }
                
@@ -285,7 +285,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-weight: 600;
         font-size: var(--textContent--footer--header--fontsize);
         line-height: var(--textContent--footer--header--lineheight);
-        color: var(--color--none);
+        color: #FFFFFF;
     }
 
     .textContent--footer--item {
@@ -294,7 +294,7 @@ export const GlobalFontStyles = createGlobalStyle`
         font-weight: 600;
         font-size: var(--textContent--footer--item--fontsize);
         line-height: var(--textContent--footer--item--lineheight);
-        color: var(--color--paragraph--footer);
+        color: #828181;
     }
   }
 `

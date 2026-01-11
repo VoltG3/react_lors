@@ -17,7 +17,7 @@ export const StyledTiles = styled.div`
     box-sizing: border-box;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-    background-color: var(--color--none);
+    background-color: #FFFFFF;
     border-radius: 0;
 
     @media only screen and (max-width: 992px) {
@@ -183,11 +183,11 @@ export const StyledHoursList = styled.div`
   }
   
   & .row:nth-child(even) {
-    background: var(--color--list--even);
+    background: #F9F9F9;
   }
 
   & .row:nth-child(odd) {
-    background: var(--color--list--odd);
+    background: #FFFFFF;
   }
 
   @media only screen and (max-width: 700px) {

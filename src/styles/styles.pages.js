@@ -53,7 +53,7 @@ export const StyledInlineParagraphContainer = styled.div`
   padding-top: 30px;
   padding-bottom: 30px;
   & p:nth-last-child(-n +1) {
-    color: var(--color--paragraph--highlight);
+    color: #F31850;
   }
   & p:nth-last-child(-n +2) {
     padding-left: 10px;

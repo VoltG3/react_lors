@@ -6,77 +6,77 @@ export const themes = {
         minWidth: '250px',
         paddingVertical: '15px',
         paragraphMarginLeft: '-40%',
-        color: 'var(--color--none)',
-        arrowColor: 'var(--color--default)',
-        borderColor: 'var(--color--button--v2--background)',
-        backgroundColor: 'var(--color--button--v2--background)',
-        backgroundHover: 'var(--color--button--v2--hover)'
+        color: '#FFFFFF',
+        arrowColor: '#030303',
+        borderColor: '#EF5DA8',
+        backgroundColor: '#EF5DA8',
+        backgroundHover: '#F482BC'
     },
     mobile: {
         justifyContent: 'flex-start',
         minWidth: '350px',
         paddingVertical: '5px',
         paragraphMarginLeft: '-70%',
-        color: 'var(--color--none)',
-        arrowColor: 'var(--color--none)',
-        borderColor: 'var(--color--none)',
-        backgroundColor: 'var(--color--m)',
-        backgroundHover: 'var(--color--button--v2--hover)'
+        color: '#FFFFFF',
+        arrowColor: '#FFFFFF',
+        borderColor: '#FFFFFF',
+        backgroundColor: '#112734',
+        backgroundHover: '#F482BC'
     },
     sliderDesktop: {
         justifyContent: 'flex-start',
         minWidth: '390px',
         paddingVertical: '10px',
         paragraphMarginLeft: '-45%',
-        color: 'var(--color--none)',
-        arrowColor: 'var(--color--default)',
-        borderColor: 'var(--color--button--v1--background)',
-        backgroundColor: 'var(--color--button--v1--background)',
-        backgroundHover: 'var(--color--button--v1--hover)'
+        color: '#FFFFFF',
+        arrowColor: '#030303',
+        borderColor: '#FFB81C',
+        backgroundColor: '#FFB81C',
+        backgroundHover: '#FFC94D'
     },
     sliderMobile: {
         justifyContent: 'flex-start',
         minWidth: '350px',
         paddingVertical: '2px',
         paragraphMarginLeft: '-40%',
-        color: 'var(--color--none)',
-        arrowColor: 'var(--color--default)',
-        borderColor: 'var(--color--none)',
-        backgroundColor: 'var(--color--button--v2--background)',
-        backgroundHover: 'var(--color--button--v2--hover)'
+        color: '#FFFFFF',
+        arrowColor: '#030303',
+        borderColor: '#FFFFFF',
+        backgroundColor: '#EF5DA8',
+        backgroundHover: '#F482BC'
     },
     appointment: {
         justifyContent: 'flex-end',
         minWidth: '190px',
         paddingVertical: '5px',
         paragraphMarginLeft: '-25%',
-        color: 'var(--color--none)',
-        arrowColor: 'var(--color--default)',
-        borderColor: 'var(--color--button--v1--background)',
-        backgroundColor: 'var(--color--button--v1--background)',
-        backgroundHover: 'var(--color--button--v1--hover)'
+        color: '#FFFFFF',
+        arrowColor: '#030303',
+        borderColor: '#FFB81C',
+        backgroundColor: '#FFB81C',
+        backgroundHover: '#FFC94D'
     },
     contacts: {
         justifyContent: 'flex-start',
         minWidth: '218px',
         paddingVertical: '15px',
         paragraphMarginLeft: '-35%',
-        color: 'var(--color--none)',
-        arrowColor: 'var(--color--default)',
-        borderColor: 'var(--color--button--v1--background)',
-        backgroundColor: 'var(--color--button--v1--background)',
-        backgroundHover: 'var(--color--button--v1--hover)'
+        color: '#FFFFFF',
+        arrowColor: '#030303',
+        borderColor: '#FFB81C',
+        backgroundColor: '#FFB81C',
+        backgroundHover: '#FFC94D'
     },
     info: {
         justifyContent: 'flex-start',
         minWidth: '150px',
         paddingVertical: '2px',
         paragraphMarginLeft: '-40%',
-        color: 'var(--color--none)',
-        arrowColor: 'var(--color--default)',
-        borderColor: 'var(--color--button--v2--background)',
-        backgroundColor: 'var(--color--button--v2--background)',
-        backgroundHover: 'var(--color--button--v2--hover)'
+        color: '#FFFFFF',
+        arrowColor: '#030303',
+        borderColor: '#EF5DA8',
+        backgroundColor: '#EF5DA8',
+        backgroundHover: '#F482BC'
     },
     default: {
         justifyContent: 'flex-start',

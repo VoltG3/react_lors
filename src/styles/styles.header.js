@@ -408,7 +408,7 @@ export const MobileLangSelector = styled.div`
 export const MobileLangButton = styled.button`
   background: transparent;
   border: none;
-  color: ${props => props.$active ? 'var(--clr--accent--base, #EDAE0E)' : 'white'};
+  color: ${props => props.$active ? '#EDAE0E' : 'white'};
   cursor: pointer;
   font-size: 16px;
   font-weight: ${props => props.$active ? 'bold' : 'normal'};
@@ -416,7 +416,7 @@ export const MobileLangButton = styled.button`
   transition: all 0.2s;
 
   &:hover {
-    color: var(--clr--accent--base, #EDAE0E);
+    color: #EDAE0E;
     background: rgba(255, 255, 255, 0.05);
   }
 `

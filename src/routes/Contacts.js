@@ -32,7 +32,7 @@ export default function Contacts() {
 
                 <InlineParagraphWithImage>
                     <span>
-                        <p style={{ color: 'var(--color--paragraph--highlight)'}} className={ paragraph }>{ t("chapter_contacts.part_01") }</p>
+                        <p style={{ color: '#F31850'}} className={ paragraph }>{ t("chapter_contacts.part_01") }</p>
                         <p className={ paragraph }>{ t("chapter_contacts.part_02") }</p>
 
                         <a href={ `${URL_01}` } target={"_blank"} rel={"noopener noreferrer"}>

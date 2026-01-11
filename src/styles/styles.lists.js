@@ -25,11 +25,11 @@ const ListContainerBase = css`
   }
 
   & > div:nth-child(even) {
-    background: var(--color--list--even);
+    background: #F9F9F9;
   }
 
   & > div:nth-child(odd) {
-    background: var(--color--list--odd);
+    background: #FFFFFF;
   }
 
   & > div:nth-last-child(-n + 1) {
@@ -52,7 +52,7 @@ const ListContainerBase = css`
 export const StyledHeader = styled.div`
   display: flex;
   align-items: center;
-  background: var(--color--list--header) !important;
+  background: #2d3436 !important;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 

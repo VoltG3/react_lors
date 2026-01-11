@@ -23,7 +23,7 @@ export const Header = styled.div`
   align-items: center;
   width: 100%;
   min-height: 50px;
-  background-color: var(--color--list--header);
+  background-color: #2d3436;
 
   @media only screen and (max-width: 700px) {
     min-height: 40px;
@@ -38,7 +38,7 @@ export const ColumnSet = styled.div`
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
   border-radius: 0;
-  background-color: var(--color--none);
+  background-color: #FFFFFF;
   overflow: hidden;
   transition: all .3s ease;
 
@@ -64,10 +64,10 @@ export const ColumnWrapper = styled.div`
     height: auto;
 
     & > div:nth-child(odd) {
-      background: var(--color--list--odd);
+      background: #FFFFFF;
     }
     & > div:nth-child(even) {
-      background: var(--color--list--even);
+      background: #F9F9F9;
     }
 
     .cell {

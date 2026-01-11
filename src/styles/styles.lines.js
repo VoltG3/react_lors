@@ -4,7 +4,7 @@ export const StyledLineLang = styled.div`
   width: 100%;
   height: 2px;
   margin-bottom: 40px;
-  background: var(--color--line--lang);
+  background: rgb(214, 214, 214);
 `
 
 export const StyledLineTiny = styled.div`
@@ -14,9 +14,9 @@ export const StyledLineTiny = styled.div`
   margin-bottom: 44px;
   background: ${props => {
     switch (props.color) {
-      case 'colorFirst': return 'var(--color--line--variant--v1)';
-      case 'colorSecond': return 'var(--color--line--variant--v2)';
-      case 'colorThird': return 'var(--color--line--variant--v3)';
+      case 'colorFirst': return '#EDAE0E';
+      case 'colorSecond': return '#EF5DA8';
+      case 'colorThird': return '#C20031';
       default: return 'transparent';
     }
   }};
