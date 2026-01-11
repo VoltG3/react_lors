@@ -171,3 +171,74 @@ export const StyledInlineParagraphWithButtonContainer = styled.div`
   ${ thisContainer }
   ${ thisContainerParagraph }
 `
+
+// [ CONTACTS SPECIFIC ] -------------------------------------------------------
+
+export const ContactDesktopMedia = styled.div`
+  display: flex !important;
+  flex-direction: row;
+  gap: 40px;
+  width: 100%;
+
+  @media only screen and (max-width: 1100px) {
+    flex-direction: column;
+  }
+  @media only screen and (max-width: 922px) {
+    display: none !important;
+  }
+`
+
+export const ContactMobileMedia = styled.div`
+  display: none !important;
+
+  @media only screen and (max-width: 922px) {
+    display: flex !important;
+    flex-direction: column;
+  }
+`
+
+export const ContactTile = styled.div`
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  background-color: #FFFFFF;
+  padding: 40px;
+  justify-content: center;
+  transition: all .3s ease;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 24px;
+    transform: translateY(-2px);
+  }
+
+  & p {
+      margin-bottom: 20px !important;
+  }
+`
+
+export const ContactImageTile = styled.div`
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  transition: all .3s ease;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 24px;
+    transform: translateY(-2px);
+  }
+
+  & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+  }
+`
