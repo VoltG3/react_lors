@@ -80,11 +80,17 @@ export const ColumnWrapper = styled.div`
     width: 100%;
     height: auto;
 
-    & > div:nth-child(odd) {
+    & > div:nth-child(4n + 1) {
       background: #FFFFFF;
     }
-    & > div:nth-child(even) {
+    & > div:nth-child(4n + 2) {
       background: #F9F9F9;
+    }
+    & > div:nth-child(4n + 3) {
+      background: #F4F4F4;
+    }
+    & > div:nth-child(4n + 4) {
+      background: #EFEFEF;
     }
 
     .cell {

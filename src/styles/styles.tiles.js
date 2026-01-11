@@ -223,12 +223,20 @@ export const StyledHoursList = styled.div`
     }
   }
   
-  & .row:nth-child(even) {
+  & .row:nth-child(4n + 1) {
+    background: #FFFFFF;
+  }
+
+  & .row:nth-child(4n + 2) {
     background: #F9F9F9;
   }
 
-  & .row:nth-child(odd) {
-    background: #FFFFFF;
+  & .row:nth-child(4n + 3) {
+    background: #F4F4F4;
+  }
+
+  & .row:nth-child(4n + 4) {
+    background: #EFEFEF;
   }
 
   @media only screen and (max-width: 700px) {

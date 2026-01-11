@@ -24,12 +24,20 @@ const ListContainerBase = css`
     box-sizing: border-box;
   }
 
-  & > div:nth-child(even) {
+  & > div:nth-child(4n + 2) {
+    background: #FFFFFF;
+  }
+
+  & > div:nth-child(4n + 3) {
     background: #F9F9F9;
   }
 
-  & > div:nth-child(odd) {
-    background: #FFFFFF;
+  & > div:nth-child(4n + 4) {
+    background: #F4F4F4;
+  }
+
+  & > div:nth-child(4n + 5) {
+    background: #EFEFEF;
   }
 
   & > div:nth-last-child(-n + 1) {
@@ -147,7 +155,6 @@ export const StyledListContainer = styled.div`
         max-width: 130px;
         width: 100%;
         height: auto;
-        background-color: #F9F9F9;
         padding-left: 10px;
         padding-right: 15px;
         @media only screen and (min-width: 1024px) {
@@ -182,8 +189,17 @@ export const StyledListContainer = styled.div`
         }
       }
 
-      & > div:nth-child(even) .productItemPrice {
+      & > div:nth-child(4n + 2) .productItemPrice {
+        background-color: #F9F9F9;
+      }
+      & > div:nth-child(4n + 3) .productItemPrice {
         background-color: #FFFFFF;
+      }
+      & > div:nth-child(4n + 4) .productItemPrice {
+        background-color: #EFEFEF;
+      }
+      & > div:nth-child(4n + 5) .productItemPrice {
+        background-color: #F4F4F4;
       }
     `}
 `
