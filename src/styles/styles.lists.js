@@ -147,8 +147,8 @@ export const StyledListContainer = styled.div`
         max-width: 180px;
         width: 100%;
         height: auto;
-        border-left: 1px solid rgba(0, 0, 0, 0.08);
-        background-color: rgba(0, 0, 0, 0.02);
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: #F9F9F9;
         padding-left: 20px;
         padding-right: 30px;
         @media only screen and (min-width: 1024px) {
@@ -181,6 +181,10 @@ export const StyledListContainer = styled.div`
             margin: 0 !important;
           }
         }
+      }
+
+      & > div:nth-child(even) .productItemPrice {
+        background-color: #FFFFFF;
       }
     `}
 `
