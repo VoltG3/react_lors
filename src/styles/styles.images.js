@@ -100,6 +100,7 @@ export const StyledCollective4 = styled.div`
   ${ MediaCollective4 }
 `
 export const StyledCollective3 = styled.div`
+  padding-top: 40px;
   ${ ImgContainer }
   ${ MediaCollective3 }
 `
@@ -124,6 +125,7 @@ export const StyledEquipment = styled.div`
 `
 
 export const StyledOffice = styled.div`
+  padding-top: 40px;
   ${ ImgContainer }
 `
 
