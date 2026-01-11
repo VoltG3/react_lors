@@ -7,7 +7,7 @@ import '../translations/i18n'
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { ImageController } from '../components/Image/image.controller'
-import OpeningHoursController from '../components/OpeningHours/OpeningHours.controller'
+import OpeningHours from '../components/OpeningHours/OpeningHours'
 import LineLang from '../components/line.lang'
 import { ButtonController } from '../components/Button/Button.controller'
 import { useProjectData } from "../utils/DataContext";
@@ -46,7 +46,7 @@ export default function Contacts() {
                     </div>
                 </InlineParagraphWithImage>
 
-                <OpeningHoursController />
+                <OpeningHours />
                 <ImageController variant={"contacts"} />
 
                 <InlineParagraph>

@@ -4,11 +4,7 @@ import '../../translations/i18n'
 import i18n from 'i18next'
 import config from '../../config'
 
-import { StyledFooterContainer as FooterContainer } from './Styles/StyledFooterContainer'
-import { StyledFooterCredentials as FooterCredentials } from './Styles/StyledFooterCredentials'
-import { StyledFooterLogo as FooterLogo } from './Styles/StyledFooterLogo'
-import { StyledFooterDeveloper as FooterDeveloper } from './Styles/StyledFooterDeveloper'
-import { StyledFooterButton as FooterButton } from './Styles/StyledFooterButton'
+import * as S from './footer.styles'
 import ResponsiveLogo from "../ResponsiveLogo/responsiveLogo"
 
 // Import logo sources
@@ -19,7 +15,7 @@ import logoTransparentGjensidige from '../../assets/logo/transparent_logo_04.svg
 import logoTransparentSeesam from '../../assets/logo/transparent_logo_05.svg'
 
 function Footer() {
-    const [t] = useTranslation(["navigation", "section_footer"])
+    const { t } = useTranslation(["navigation", "section_footer"])
     const object01 = "footer_tile_01."
     const object02 = "footer_tile_02."
     const object03 = "footer_tile_03."
@@ -30,87 +26,73 @@ function Footer() {
 
     const buttonText = t("navigation_secondary.e_appointment")
 
+    const insuranceLogos = [
+        { src: logoTransparentBalta, alt: "Balta" },
+        { src: logoTransparentBTA, alt: "BTA" },
+        { src: logoTransparentErgo, alt: "ERGO" },
+        { src: logoTransparentGjensidige, alt: "Gjensidige" },
+        { src: logoTransparentSeesam, alt: "Seesam" },
+    ]
+
+    const renderParts = (obj, parts) => parts.map(part => (
+        <p key={part} className="textContent--footer--item">
+            {t(`section_footer:${obj}part_${part}`)}
+        </p>
+    ))
+
     return (
-        <FooterContainer>
-            <FooterCredentials>
-                <div className={"footer-column"}>
-                    <p className={"textContent--footer--head"}>{ t("section_footer:" + object01 + "part_01") }</p>
-                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object01 + "part_02") }</p>
-                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object01 + "part_03") }</p>
-                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object01 + "part_04") }</p>
-                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object01 + "part_05") }</p>
+        <S.StyledFooterContainer>
+            <S.StyledFooterCredentials>
+                <div className="footer-column">
+                    <p className="textContent--footer--head">{t(`section_footer:${object01}part_01`)}</p>
+                    {renderParts(object01, ["02", "03", "04", "05"])}
                 </div>
 
-                <div className={"footer-column"}>
-                    <p className={"textContent--footer--head"}>{ t("section_footer:" + object02 + "part_01") }</p>
-                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object02 + "part_02") }</p>
-                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object02 + "part_03") }</p>
-                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object02 + "part_04") }</p>
-                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object02 + "part_05") }</p>
+                <div className="footer-column">
+                    <p className="textContent--footer--head">{t(`section_footer:${object02}part_01`)}</p>
+                    {renderParts(object02, ["02", "03", "04", "05"])}
                 </div>
 
-                <div className={"footer-column"}>
-                    <p className={"textContent--footer--head"}>{ t("section_footer:" + object03 + "part_01") }</p>
-                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object03 + "part_02") }</p>
+                <div className="footer-column">
+                    <p className="textContent--footer--head">{t(`section_footer:${object03}part_01`)}</p>
+                    {renderParts(object03, ["02"])}
                 </div>
 
-                <div className={"footer-column"}>
-                    <p className={"textContent--footer--head"}>{ t("section_footer:" + object03 + "part_03") }</p>
-                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object03 + "part_04") }</p>
-                    <p className={"textContent--footer--item"}>{ t("section_footer:" + object03 + "part_05") }</p>
+                <div className="footer-column">
+                    <p className="textContent--footer--head">{t(`section_footer:${object03}part_03`)}</p>
+                    {renderParts(object03, ["04", "05"])}
 
-                    <FooterButton href={appointmentUrl} target="_blank" rel="noopener noreferrer">
-                        { buttonText }
-                    </FooterButton>
+                    <S.StyledFooterButton href={appointmentUrl} target="_blank" rel="noopener noreferrer">
+                        {buttonText}
+                    </S.StyledFooterButton>
                 </div>
-            </FooterCredentials>
+            </S.StyledFooterCredentials>
 
-            <FooterLogo>
-                <div className={"inner-footer-logo"}>
-                    <div className={"inner-footer-logo-logo-container"}>
-                        <div className={"inner-footer-logo-logo-row"}>
-                            <ResponsiveLogo
-                                src={logoTransparentBalta}
-                                alt="Balta"
-                                maxHeight="40px"
-                                mobileMaxHeight="25px"
-                            />
-                            <ResponsiveLogo
-                                src={logoTransparentBTA}
-                                alt="BTA"
-                                maxHeight="40px"
-                                mobileMaxHeight="25px"
-                            />
-                            <ResponsiveLogo
-                                src={logoTransparentErgo}
-                                alt="ERGO"
-                                maxHeight="40px"
-                                mobileMaxHeight="25px"
-                            />
-                            <ResponsiveLogo
-                                src={logoTransparentGjensidige}
-                                alt="Gjensidige"
-                                maxHeight="40px"
-                                mobileMaxHeight="25px"
-                            />
-                            <ResponsiveLogo
-                                src={logoTransparentSeesam}
-                                alt="Seesam"
-                                maxHeight="40px"
-                                mobileMaxHeight="25px"
-                            />
+            <S.StyledFooterLogo>
+                <div className="inner-footer-logo">
+                    <div className="inner-footer-logo-logo-container">
+                        <div className="inner-footer-logo-logo-row">
+                            {insuranceLogos.map((logo, index) => (
+                                <ResponsiveLogo
+                                    key={index}
+                                    src={logo.src}
+                                    alt={logo.alt}
+                                    maxHeight="40px"
+                                    mobileMaxHeight="25px"
+                                />
+                            ))}
                         </div>
                     </div>
-                    <div className={"text-block"}>
-                        <p>{ t("section_footer:insurance_text") }</p>
+                    <div className="text-block">
+                        <p>{t("section_footer:insurance_text")}</p>
                     </div>
                 </div>
-            </FooterLogo>
+            </S.StyledFooterLogo>
 
-            <FooterDeveloper>
+            <S.StyledFooterDeveloper>
                 <p>LORS.LV © {new Date().getFullYear()} SIA "Jautrītes Liepiņas ārsta prakse otorinolaringoloģijā"</p>
-            </FooterDeveloper>
-        </FooterContainer>
+            </S.StyledFooterDeveloper>
+        </S.StyledFooterContainer>
     )
 }
 

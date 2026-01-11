@@ -3,7 +3,7 @@ import { StyledPageContainer as PageContainer } from './styles/StyledPageContain
 
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
-import { ListServices } from '../components/Lists/ListServices'
+import { ListServices } from '../components/Lists/Lists'
 import { ImageController } from '../components/Image/image.controller'
 
 import LineLang from '../components/line.lang'

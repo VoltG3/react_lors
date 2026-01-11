@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import { ImageController } from '../components/Image/image.controller'
 import LineLang from '../components/line.lang'
 import { ButtonController } from '../components/Button/Button.controller'
-import { ListInformation } from '../components/Lists/ListInformation'
+import { ListInformation } from '../components/Lists/Lists'
 
 export default function Info() {
     const [t] = useTranslation(["chapter_pages", "chapters"])
