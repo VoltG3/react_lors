@@ -569,6 +569,13 @@ export const SliderContentMobile = styled.div`
 
   @media only screen and (max-width: 922px) {
     display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    justify-content: center;
   }
 
   @media only screen and (max-width: 1220px) {
@@ -585,7 +592,6 @@ export const SliderMobileTextWrapper = styled.div`
   flex-direction: column;
   gap: 15px;
   width: 100%;
-  margin-top: 30px;
   margin-bottom: 25px;
 
   & p:first-child {
@@ -613,7 +619,6 @@ export const SliderMobileTextWrapper = styled.div`
   }
 
   @media (max-width: 480px) {
-    margin-top: 20px;
     margin-bottom: 20px;
     gap: 10px;
   }

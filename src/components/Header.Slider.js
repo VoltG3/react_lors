@@ -62,26 +62,24 @@ const HeaderSlider = () => {
     }, [slides.length])
 
     return (
-        <>
-            <S.SliderMainContainer>
-                <SliderTextContentDesktop />
-                <S.SlideWrapper>
-                    {slides.map((slide, index) => (
-                        <S.SlideImage
-                            key={index}
-                            src={slide}
-                            alt={`slider ${index + 1}`}
-                            $isActive={index === currentSlide}
-                            $isPrevious={index === (currentSlide - 1 + slides.length) % slides.length}
-                            $objectPositionDesktop={objectPositionDesktop}
-                            $objectPositionMobile={objectPositionMobile}
-                            loading="lazy"
-                        />
-                    ))}
-                </S.SlideWrapper>
-            </S.SliderMainContainer>
+        <S.SliderMainContainer>
+            <SliderTextContentDesktop />
             <SliderTextContentMobile />
-        </>
+            <S.SlideWrapper>
+                {slides.map((slide, index) => (
+                    <S.SlideImage
+                        key={index}
+                        src={slide}
+                        alt={`slider ${index + 1}`}
+                        $isActive={index === currentSlide}
+                        $isPrevious={index === (currentSlide - 1 + slides.length) % slides.length}
+                        $objectPositionDesktop={objectPositionDesktop}
+                        $objectPositionMobile={objectPositionMobile}
+                        loading="lazy"
+                    />
+                ))}
+            </S.SlideWrapper>
+        </S.SliderMainContainer>
     )
 }
 
