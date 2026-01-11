@@ -64,6 +64,9 @@ export const StyledHeader = styled.div`
   border-top-right-radius: 0;
 
   & p {
+    padding: 0 !important;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-top: 15px !important;
     margin-bottom: 15px !important;
     font-family: "Montserrat", sans-serif;
@@ -72,10 +75,17 @@ export const StyledHeader = styled.div`
     font-size: min(max(1.389vw, 16px), 20px);
     line-height: 1.4;
     text-transform: uppercase;
-    color: #FFFFFF;
-    opacity: 1;
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+
+    @media only screen and (min-width: 1024px) {
+      margin-left: 45px;
+      margin-right: 45px;
+    }
 
     @media only screen and (max-width: 700px) {
+        margin-left: 20px;
+        margin-right: 20px;
         font-weight: 400;
         line-height: 1.3;
     }
@@ -118,12 +128,15 @@ export const StyledListContainer = styled.div`
         text-align: left;
         & p {
           padding: 8px 0;
+          margin-left: 30px;
           margin-right: 0 !important;
           @media only screen and (min-width: 1024px) {
             padding: 12px 0;
+            margin-left: 45px;
           }
           @media only screen and (max-width: 700px) {
             padding: 6px 0;
+            margin-left: 20px;
           }
         }
       }
@@ -138,6 +151,9 @@ export const StyledListContainer = styled.div`
         background-color: rgba(0, 0, 0, 0.02);
         padding-left: 20px;
         padding-right: 30px;
+        @media only screen and (min-width: 1024px) {
+          padding-right: 45px;
+        }
         @media only screen and (max-width: 700px) {
           max-width: 100px;
           padding-left: 10px;

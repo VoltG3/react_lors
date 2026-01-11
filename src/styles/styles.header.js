@@ -641,6 +641,16 @@ export const DropdownMenu = styled(motion.div)`
   border: 1px solid #e2e8f0;
   z-index: 1001;
   padding: 10px 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: transparent;
+  }
 `
 
 export const DropdownItem = styled(Link)`

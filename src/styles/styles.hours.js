@@ -32,7 +32,8 @@ export const Header = styled.div`
     font-size: min(max(1.389vw, 16px), 20px);
     line-height: 1.4;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
+    opacity: 1 !important;
     margin: 0;
 
     @media only screen and (max-width: 700px) {
