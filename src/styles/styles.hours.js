@@ -81,16 +81,16 @@ export const ColumnWrapper = styled.div`
     height: auto;
 
     & > div:nth-child(4n + 1) {
-      background: #FFFFFF;
-    }
-    & > div:nth-child(4n + 2) {
       background: #F9F9F9;
     }
-    & > div:nth-child(4n + 3) {
+    & > div:nth-child(4n + 2) {
       background: #F4F4F4;
     }
-    & > div:nth-child(4n + 4) {
+    & > div:nth-child(4n + 3) {
       background: #EFEFEF;
+    }
+    & > div:nth-child(4n + 4) {
+      background: #EAEAEA;
     }
 
     .cell {

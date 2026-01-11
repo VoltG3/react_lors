@@ -224,19 +224,19 @@ export const StyledHoursList = styled.div`
   }
   
   & .row:nth-child(4n + 1) {
-    background: #FFFFFF;
-  }
-
-  & .row:nth-child(4n + 2) {
     background: #F9F9F9;
   }
 
-  & .row:nth-child(4n + 3) {
+  & .row:nth-child(4n + 2) {
     background: #F4F4F4;
   }
 
-  & .row:nth-child(4n + 4) {
+  & .row:nth-child(4n + 3) {
     background: #EFEFEF;
+  }
+
+  & .row:nth-child(4n + 4) {
+    background: #EAEAEA;
   }
 
   @media only screen and (max-width: 768px) {
