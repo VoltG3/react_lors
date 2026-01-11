@@ -19,23 +19,8 @@ const config = {
         URL_img10: process.env.PUBLIC_URL + '/assets/images/10.jpg',
         URL_img11: process.env.PUBLIC_URL + '/assets/images/11.jpg'
     },
-    logo_transparent: {
-        logoTransparent00: process.env.PUBLIC_URL + '/assets/logo_transparent/Lors_transparent.svg',
-
-    },
-    logo_colored: {
-        logoColored00: process.env.PUBLIC_URL + '/assets/logo_colored/Lors_colored.svg',
-
-    },
-    names: {
-        name_01: 'Dace Sidorova',
-        name_02: 'Elīna Mežzīle',
-        name_03: 'Jautrīte Liepiņa',
-        name_04: 'Elīna Eliasa-Vīgante'
-    },
     common : {
         introHeader: 'SIA "Jautrītes Liepiņas ārsta prakse otorinolaringoloģijā"',
-        introFooter: "SIA \"Jautrītes Liepiņas ārsta prakse\notorinolaringoloģijā\"",
         repeatSign: '-',
         currencySign: '€'
     },
@@ -43,8 +28,7 @@ const config = {
         URL_00: 'https://www.piearsta.lv/en/',
         URL_01: 'https://www.piearsta.lv/lv/',
         URL_02: 'https://m.likumi.lv/doc.php?id=301399',
-        URL_03: 'https://www.vmnvd.gov.lv/lv/no-pacienta-lidzmaksajumiem-atbrivotas-iedzivotaju-grupas?utm_source=https%3A%2F%2Fwww.google.com%2F',
-        URL_04: 'https://covid19.gov.lv/aktualites/spkc-aicinam-rupigi-ieverot-covid-19-un-citu-elpcelu-infekcijas-slimibu-profilakses'
+        URL_03: 'https://www.vmnvd.gov.lv/lv/no-pacienta-lidzmaksajumiem-atbrivotas-iedzivotaju-grupas?utm_source=https%3A%2F%2Fwww.google.com%2F'
     }
 }
 

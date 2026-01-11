@@ -7,8 +7,7 @@ import { LineTiny } from './Lines'
 import { ButtonController } from './Button/Button.controller'
 import ResponsiveLogo from './Logo'
 import { useProjectData } from '../DataContext'
-import TransformData from '../json/transformData'
-import TransformFormat from '../json/transformFormat'
+import { TransformData, TransformFormat } from '../json/json'
 
 // Import icons
 import {
