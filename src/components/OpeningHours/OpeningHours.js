@@ -2,8 +2,8 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import i18n from 'i18next'
 import { useProjectData } from '../../utils/DataContext'
-import TransformFormat from '../../JSON/transformFormat'
-import { TransformArray } from '../../JSON/transformArray'
+import TransformFormat from '../../json/transformFormat'
+import { TransformArray } from '../../json/transformArray'
 
 import * as S from './opening-hours.styles'
 

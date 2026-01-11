@@ -7,7 +7,7 @@ import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { ImageController } from '../components/Image/image.controller'
 import { ButtonController } from '../components/Button/Button.controller'
-import LineLang from '../components/line.lang'
+import { LineLang } from '../components/Lines/Lines'
 import { ListPricesWithReference, ListPricesWithoutReference } from "../components/Lists/Lists"
 
 export default function Prices() {

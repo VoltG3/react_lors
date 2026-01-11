@@ -8,7 +8,7 @@ import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { ImageController } from '../components/Image/image.controller'
 import OpeningHours from '../components/OpeningHours/OpeningHours'
-import LineLang from '../components/line.lang'
+import { LineLang } from '../components/Lines/Lines'
 import { ButtonController } from '../components/Button/Button.controller'
 import { useProjectData } from "../utils/DataContext";
 

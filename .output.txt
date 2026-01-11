@@ -1,0 +1,224 @@
+import React from 'react'
+import { TileHours as StyledTileHours } from './styles'
+import config from '../../../config'
+import { useTranslation } from 'react-i18next'
+import LineTiny from '../../line.short'
+import TileHoursJSON from './tile.hours.JSON'
+import { ButtonController } from '../../Button/Button.controller'
+const TileHours = () => {
+    const [t] = useTranslation(["tiles"])
+    const URL_01 = config.external_url.URL_01
+    const header = "textContent--tabledata--header"
+    const paragraph = "textContent--tabledata--item"
+    const tableParagraph = "textContent--tabledata--item--small"
+    return (
+        <StyledTileHours>
+            <div className={"innerTile"}>
+                <p className={ header }>{ t("openingHours.head") }</p>
+                <LineTiny color={"colorFirst"}/>
+                <div className={"timetable"}>
+                    <TileHoursJSON />
+                </div>
+                <p className={ paragraph } style={{ paddingTop: '44px', paddingBottom: '22px'}}>{ t("openingHours.text") }</p>
+                <a  style={{ paddingBottom: '22px' }} href={ `${URL_01}` } target="_blank" rel="noopener noreferrer">
+                    <ButtonController variant={"appointment"} />
+                </a>
+            </div>
+        </StyledTileHours>
+    )
+}
+export default TileHoursimport { TileContracts as StyledTileContracts } from './styles'
+import { useTranslation } from 'react-i18next'
+import LineTiny from '../../line.short'
+import ResponsiveLogo from '../../ResponsiveLogo/responsiveLogo'
+// Import colored logos
+import logoColoredBalta from '../../../assets/logo/colored_logo_01.png'
+import logoColoredBTA from '../../../assets/logo/colored_logo_02.png'
+import logoColoredErgo from '../../../assets/logo/colored_logo_03.png'
+import logoColoredGjensidige from '../../../assets/logo/colored_logo_04.png'
+import logoColoredSeesam from '../../../assets/logo/colored_logo_05.png'
+function TileContracts() {
+    const [t] = useTranslation(["tiles"])
+    const header = "textContent--tabledata--header"
+    const paragraph = "textContent--tabledata--item"
+    return (
+        <StyledTileContracts>
+            <div className={"innerTile"}>
+                <p className={ header }>{ t("contracts.head") }</p>
+                <LineTiny color={"colorSecond"}/>
+                <p className={ paragraph }>{ t("contracts.text") }</p>
+                <div className={"logoSquare"}>
+                    <ResponsiveLogo src={logoColoredBalta} alt="Balta" maxHeight="35px" mobileMaxHeight="25px" />
+                    <ResponsiveLogo src={logoColoredBTA} alt="BTA" maxHeight="35px" mobileMaxHeight="25px" />
+                    <ResponsiveLogo src={logoColoredErgo} alt="ERGO" maxHeight="35px" mobileMaxHeight="25px" />
+                    <ResponsiveLogo src={logoColoredGjensidige} alt="Gjensidige" maxHeight="35px" mobileMaxHeight="25px" />
+                    <ResponsiveLogo src={logoColoredSeesam} alt="Seesam" maxHeight="35px" mobileMaxHeight="25px" />
+                </div>
+            </div>
+        </StyledTileContracts>
+    )
+}
+export default TileContractsimport React from 'react'
+import { TileAvailability as StyledTileAvailability } from './styles'
+import { useTranslation } from 'react-i18next'
+import LineTiny from '../../line.short'
+import {
+    IconAvailability01,
+    IconAvailability02,
+    IconAvailability03,
+    IconAvailability04,
+    IconAvailability05,
+    IconAvailability06,
+    IconAvailability07,
+    IconAvailability08
+} from '../../../assets/icons'
+function TileAvailability() {
+    const [t] = useTranslation(["tiles"])
+    const header = "textContent--tabledata--header"
+    const paragraph = "textContent--tabledata--item--small"
+    const object_head = "availability."
+    const object_item = "availability.item."
+    return (
+        <StyledTileAvailability>
+            <div className={"innerTile"}>
+                <p className={ header }>{ t(object_head + "head") }</p>
+                <LineTiny color={"colorThird"}/>
+                <div className={"availabilitySquare"}>
+                    <div>
+                        <IconAvailability01 size={32} />
+                        <p className={ paragraph }>{ t(object_item + "part_01") }</p>
+                    </div>
+                    <div>
+                        <IconAvailability02 size={32} />
+                        <p className={ paragraph }>{ t(object_item + "part_02") }</p>
+                    </div>
+                    <div>
+                        <IconAvailability03 size={32} />
+                        <p className={ paragraph }>{ t(object_item + "part_03") }</p>
+                    </div>
+                    <div>
+                        <IconAvailability04 size={32} />
+                        <p className={ paragraph }>{ t(object_item + "part_04") }</p>
+                    </div>
+                    <div>
+                        <IconAvailability05 size={32} />
+                        <p className={ paragraph }>{ t(object_item + "part_05") }</p>
+                    </div>
+                    <div>
+                        <IconAvailability06 size={32} />
+                        <p className={ paragraph }>{ t(object_item + "part_06") }</p>
+                    </div>
+                    <div>
+                        <IconAvailability07 size={32} />
+                        <p className={ paragraph }>{ t(object_item + "part_07") }</p>
+                    </div>
+                    <div>
+                        <IconAvailability08 size={32} />
+                        <p className={ paragraph }>{ t(object_item + "part_08") }</p>
+                    </div>
+                </div>
+            </div>
+        </StyledTileAvailability>
+    )
+}
+export default TileAvailabilityimport styled from 'styled-components'
+import i18n from 'i18next'
+import { useTranslation } from 'react-i18next'
+import { useProjectData } from '../../../utils/DataContext'
+import TransformData from '../../../JSON/transformData'
+import TransformFormat from '../../../JSON/transformFormat'
+const TileHoursJSON = () => {
+    const { data: jsonData, loading, error } = useProjectData()
+    const [t] = useTranslation(["tiles"])
+    if (loading) return <div>Loading...</div>
+    if (error) return <div>Error loading data</div>
+    const arrayOpeningHoursEU = jsonData.map(obj => TransformData(obj.open))
+    const arrayOpeningHoursUS = TransformFormat(jsonData.map(obj => TransformData(obj.open)))
+    const arrayOpeningHours = i18n.language === 'en' ? arrayOpeningHoursUS : arrayOpeningHoursEU
+    const tableParagraph = "textContent--tabledata--item--small"
+    const days = [
+        t("openingHours.item.day_01"),
+        t("openingHours.item.day_02"),
+        t("openingHours.item.day_03"),
+        t("openingHours.item.day_04"),
+        t("openingHours.item.day_05")
+    ]
+    return (
+        <StyledHoursList>
+            { arrayOpeningHours.map(( array, index ) => (
+                <div key={ index } className={"row line"}>
+                    <div className={"dayCell"}>
+                        <p className={ tableParagraph }>{ days[index] }</p>
+                    </div>
+                    <div className={"hoursCell"}>
+                        <div className={"hoursWrapper"}>
+                            <div><p className={ tableParagraph }>{ array[0] }</p></div>
+                            <div><p className={ tableParagraph }>-</p></div>
+                            <div><p className={ tableParagraph }>{ array[1] }</p></div>
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </StyledHoursList>
+    )
+}
+const StyledHoursList = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+  }
+  .dayCell {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+  }
+  .hoursCell {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .hoursWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & div:nth-child(1) {
+      display: flex;
+      justify-content: flex-end;
+      width: 50px;
+    }
+
+    & div:nth-child(2) {
+      display: flex;
+      justify-content: center;
+      width: 20px;
+    }
+    & div:nth-child(3) {
+      display: flex;
+      justify-content: flex-start;
+      width: 50px;
+    }
+  }
+
+  & .row:nth-child(even) {
+    background: var(--color--list--even);
+  }
+  & .row:nth-child(odd) {
+    background: var(--color--list--odd);
+  }
+  @media only screen and (max-width: 700px) {
+    .dayCell { padding-left: 15px; }
+    .hoursWrapper div:nth-child(1),
+    .hoursWrapper div:nth-child(3) { width: 45px; }
+  }
+`
+export default TileHoursJSON

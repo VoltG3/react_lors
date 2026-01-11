@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 import { ListServices } from '../components/Lists/Lists'
 import { ImageController } from '../components/Image/image.controller'
 
-import LineLang from '../components/line.lang'
+import { LineLang } from '../components/Lines/Lines'
 
 export default function Services() {
     const [t] = useTranslation(["chapters"])

@@ -4,7 +4,7 @@ import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { ListServices } from '../components/Lists/Lists'
 import { ImageController } from '../components/Image/image.controller'
-import LineLang from '../components/line.lang'
+import { LineLang } from '../components/Lines/Lines'
 
 export default function About() {
     const [t] = useTranslation(["chapter_pages", "chapters"])

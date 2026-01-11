@@ -1,0 +1,198 @@
+import styled, { css } from 'styled-components'
+
+export const StyledTiles = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: var(--size--padding30);
+  box-sizing: border-box;
+  @media only screen and (max-width: 992px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tableContentContainer {
+    max-width: calc(var(--page--width) / 3);
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: var(--box--shadow);
+    background-color: var(--color--none);
+    border-radius: var(--border--radius);
+
+    @media only screen and (max-width: 992px) {
+      max-width: var(--page--width);
+    }
+    &:hover {
+      transition: box-shadow .3s linear;
+      box-shadow: var(--box--hover);
+    }
+  }
+`
+
+const TileContainer = css`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  
+  .innerTile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 60px 40px;
+    @media (max-width: 922px) {
+      padding: 40px 30px;
+    }
+    @media (max-width: 480px) {
+      padding: 30px 20px;
+    }
+  }
+`
+
+export const TileHours = styled.div`
+  ${TileContainer}
+  
+  .timetable {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+`
+
+export const TileContracts = styled.div`
+  ${TileContainer}
+  
+  .logoSquare {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 40px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    @media (max-width: 768px) {
+      gap: 20px 30px;
+    }
+    & > img {
+      filter: grayscale(1);
+      opacity: 0.7;
+      transition: all 0.3s ease;
+      &:hover {
+        filter: grayscale(0);
+        opacity: 1;
+        transform: scale(1.05);
+      }
+    }
+  }
+`
+
+export const TileAvailability = styled.div`
+  ${TileContainer}
+  
+  .availabilitySquare {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+    @media (max-width: 768px) {
+      gap: 18px;
+      padding-top: 20px;
+    }
+    & > div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      @media (max-width: 768px) {
+        gap: 15px;
+      }
+      & svg, & img {
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        @media (max-width: 768px) {
+          width: 28px;
+          height: 28px;
+        }
+      }
+      & p {
+        flex: 1;
+        margin: 0;
+      }
+    }
+  }
+`
+
+export const StyledHoursList = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+  }
+
+  .dayCell {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+  }
+
+  .hoursCell {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hoursWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    & div:nth-child(1) {
+      display: flex;
+      justify-content: flex-end;
+      width: 50px;
+    }
+    
+    & div:nth-child(2) {
+      display: flex;
+      justify-content: center;
+      width: 20px;
+    }
+
+    & div:nth-child(3) {
+      display: flex;
+      justify-content: flex-start;
+      width: 50px;
+    }
+  }
+  
+  & .row:nth-child(even) {
+    background: var(--color--list--even);
+  }
+
+  & .row:nth-child(odd) {
+    background: var(--color--list--odd);
+  }
+
+  @media only screen and (max-width: 700px) {
+    .dayCell { padding-left: 15px; }
+    .hoursWrapper div:nth-child(1),
+    .hoursWrapper div:nth-child(3) { width: 45px; }
+  }
+`
