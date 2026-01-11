@@ -1,7 +1,9 @@
 import React, { lazy, Suspense } from 'react'
-import { StyledPageContainer as PageContainer } from './styles/StyledPageContainer'
-import { StyledInlineParagraphContainer as InlineParagraph } from './styles/styled.inline.paragraph'
-import { StyledInlineParagraphWithImageContainer as InlineParagraphWithImage } from './styles/styled.inline.paragraph.image'
+import {
+    StyledPageContainer as PageContainer,
+    StyledInlineParagraphContainer as InlineParagraph,
+    StyledInlineParagraphWithImageContainer as InlineParagraphWithImage
+} from '../styles/styles.pages'
 import config from '../config'
 import '../translations/i18n'
 import i18n from 'i18next'
@@ -10,7 +12,7 @@ import { Images } from '../components/Images'
 import Hours from '../components/Hours'
 import { LineLang } from '../components/Lines'
 import { ButtonController } from '../components/Button/Button.controller'
-import { useProjectData } from "../utils/DataContext";
+import { useProjectData } from "../DataContext";
 
 const GoogleMap = lazy(() => import('../components/./Map'));
 

@@ -3,7 +3,6 @@ const config = {
     slider: {
         URL_slider01: process.env.PUBLIC_URL + '/assets/slider/slider01.png',
         URL_slider02: process.env.PUBLIC_URL + '/assets/slider/slider02.png',
-        // Object position for slider images - format: "horizontal vertical" (e.g., "center center", "left 30%")
         objectPosition_desktop: 'center center',
         objectPosition_mobile: 'left 0%'
     },

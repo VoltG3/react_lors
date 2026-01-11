@@ -1,6 +1,5 @@
 import React from 'react'
-import { StyledPageContainer as PageContainer } from './styles/StyledPageContainer'
-import { StyledInlineParagraphWithButtonContainer as InlineParagraphWithButton } from './styles/styled.inline.paragraph.button'
+import { StyledPageContainer as PageContainer, StyledInlineParagraphWithButtonContainer as InlineParagraphWithButton } from '../styles/styles.pages'
 import config from '../config'
 import i18n from 'i18next'
 import { useTranslation } from 'react-i18next'

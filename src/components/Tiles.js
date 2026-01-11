@@ -6,7 +6,7 @@ import * as S from '../styles/styles.tiles'
 import { LineTiny } from './Lines'
 import { ButtonController } from './Button/Button.controller'
 import ResponsiveLogo from './Logo'
-import { useProjectData } from '../utils/DataContext'
+import { useProjectData } from '../DataContext'
 import TransformData from '../json/transformData'
 import TransformFormat from '../json/transformFormat'
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import i18n from 'i18next'
-import { useProjectData } from '../utils/DataContext'
+import { useProjectData } from '../DataContext'
 import TransformFormat from '../json/transformFormat'
 import { TransformArray } from '../json/transformArray'
 

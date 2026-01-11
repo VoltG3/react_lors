@@ -8,7 +8,7 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer'
 import Cookie from './components/Cookie'
 
-import { DataProvider } from './utils/DataContext'
+import { DataProvider } from './DataContext'
 
 export default function App() {
 
