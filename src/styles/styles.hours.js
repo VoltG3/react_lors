@@ -25,6 +25,22 @@ export const Header = styled.div`
   min-height: 50px;
   background-color: #2d3436;
 
+  & p {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: min(max(1.389vw, 16px), 20px);
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+
+    @media only screen and (max-width: 700px) {
+        font-weight: 400;
+        line-height: 1.3;
+    }
+  }
+
   @media only screen and (max-width: 700px) {
     min-height: 40px;
   }
@@ -79,6 +95,19 @@ export const ColumnWrapper = styled.div`
       min-height: 40px;
       box-sizing: border-box;
       padding: 8px 15px;
+
+      & p {
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.6;
+        color: #262626;
+        margin: 0;
+
+        @media only screen and (max-width: 700px) {  
+            font-size: 14px;
+        }
+      }
 
       @media only screen and (min-width: 1024px) {
         padding: 12px 30px;

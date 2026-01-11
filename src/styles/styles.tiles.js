@@ -44,6 +44,34 @@ const TileContainer = css`
     height: 100%;
     box-sizing: border-box;
     padding: 60px 40px;
+
+    .tile-header {
+        font-family: "Montserrat", sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.4;
+        text-transform: uppercase;
+        color: #373A36;
+        margin: 0;
+
+        @media only screen and (max-width: 700px) {
+            font-size: 18px;
+        }
+    }
+
+    .tile-paragraph {
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.6;
+        color: #262626;
+        margin: 0;
+
+        @media only screen and (max-width: 700px) {  
+            font-size: 14px;
+        }
+    }
+
     @media (max-width: 922px) {
       padding: 40px 30px;
     }
@@ -136,6 +164,19 @@ export const StyledHoursList = styled.div`
   flex-direction: column;
   width: 100%;
   height: auto;
+
+  & p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #262626;
+    margin: 0;
+
+    @media only screen and (max-width: 700px) {  
+        font-size: 14px;
+    }
+  }
   
   .row {
     display: flex;

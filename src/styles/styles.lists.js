@@ -39,6 +39,13 @@ const ListContainerBase = css`
 
   & p {
     margin: 0 30px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: min(max(1.250vw, 14px), 16px);
+    line-height: 1.6;
+    opacity: 0.7;
+    color: #152F3F;
 
     @media only screen and (min-width: 1024px) {
       margin: 0 45px;
@@ -59,6 +66,19 @@ export const StyledHeader = styled.div`
   & p {
     margin-top: 15px !important;
     margin-bottom: 15px !important;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: min(max(1.389vw, 16px), 20px);
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 1;
+
+    @media only screen and (max-width: 700px) {
+        font-weight: 400;
+        line-height: 1.3;
+    }
   }
 
   white-space: pre-wrap;

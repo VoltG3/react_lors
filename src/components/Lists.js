@@ -10,12 +10,12 @@ export const ListInformation = () => {
   return (
     <S.StyledListContainer variant="information">
       <S.StyledHeader>
-        <p className="textContent--list--header">{t('list_information.list_header')}</p>
+        <p>{t('list_information.list_header')}</p>
       </S.StyledHeader>
       {Array.isArray(items) &&
         items.map((listItem, key) => (
           <div key={key}>
-            <p className="textContent--list--item">{listItem.item}</p>
+            <p>{listItem.item}</p>
           </div>
         ))}
     </S.StyledListContainer>
@@ -29,12 +29,12 @@ export const ListServices = () => {
   return (
     <S.StyledListContainer variant="services">
       <S.StyledHeader>
-        <p className="textContent--list--header">{t('list_services.list_header')}</p>
+        <p>{t('list_services.list_header')}</p>
       </S.StyledHeader>
       {Array.isArray(items) &&
         items.map((listItem, key) => (
           <div key={key}>
-            <p className="textContent--list--item">{listItem.item}</p>
+            <p>{listItem.item}</p>
           </div>
         ))}
     </S.StyledListContainer>
@@ -49,20 +49,20 @@ const PriceList = ({ translationKey }) => {
   return (
     <S.StyledListContainer variant="prices">
       <S.StyledHeader>
-        <p className="textContent--list--header">{t(`${translationKey}.list_header`)}</p>
+        <p>{t(`${translationKey}.list_header`)}</p>
       </S.StyledHeader>
       {Array.isArray(items) &&
         items.map((listItem, key) => (
           <div key={listItem.id || key}>
             <span className="productItemDescribe">
-              <p className="textContent--list--item">{listItem.item}</p>
+              <p>{listItem.item}</p>
             </span>
             <span className="productItemPrice">
               <div>
-                <p className="textContent--list--item">{listItem.price}</p>
+                <p>{listItem.price}</p>
               </div>
               <div>
-                <p className="textContent--list--item">{currencySign}</p>
+                <p>{currencySign}</p>
               </div>
             </span>
           </div>

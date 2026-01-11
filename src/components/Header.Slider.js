@@ -9,14 +9,13 @@ import { ButtonController } from './Button'
 const SliderTextContentDesktop = () => {
     const { t } = useTranslation(["chapter_header"])
     const introHeader = config.common.introHeader
-    const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
-    const h1 = i18n.language === 'ru' ? 'textContent--h0--rus' : 'textContent--h0'
+    const lang = i18n.language
 
     return (
         <S.SliderContentDesktop>
-            <S.SliderTextWrapper>
-                <p className={h1}>{introHeader}</p>
-                <p className={paragraph}>{t("part_01")}</p>
+            <S.SliderTextWrapper $lang={lang}>
+                <p>{introHeader}</p>
+                <p>{t("part_01")}</p>
             </S.SliderTextWrapper>
             <Link to={"contacts"}>
                 <ButtonController variant={"sliderDesktop"} />
@@ -28,14 +27,13 @@ const SliderTextContentDesktop = () => {
 const SliderTextContentMobile = () => {
     const { t } = useTranslation(["chapter_header"])
     const introHeader = config.common.introHeader
-    const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
-    const h1 = i18n.language === 'ru' ? 'textContent--h0--rus' : 'textContent--h0'
+    const lang = i18n.language
 
     return (
         <S.SliderContentMobile>
-            <S.SliderMobileTextWrapper>
-                <p className={h1}>{introHeader}</p>
-                <p className={paragraph}>{t("part_01")}</p>
+            <S.SliderMobileTextWrapper $lang={lang}>
+                <p>{introHeader}</p>
+                <p>{t("part_01")}</p>
             </S.SliderMobileTextWrapper>
             <Link to={"contacts"}>
                 <ButtonController variant={"sliderMobile"} />

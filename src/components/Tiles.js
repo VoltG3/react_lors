@@ -39,7 +39,6 @@ const TileHoursJSON = () => {
     const arrayOpeningHoursUS = TransformFormat(jsonData.map(obj => TransformData(obj.open)))
     const arrayOpeningHours = i18n.language === 'en' ? arrayOpeningHoursUS : arrayOpeningHoursEU
 
-    const tableParagraph = "textContent--tabledata--item--small"
     const days = [
         t("openingHours.item.day_01"),
         t("openingHours.item.day_02"),
@@ -53,13 +52,13 @@ const TileHoursJSON = () => {
             {arrayOpeningHours.map((array, index) => (
                 <div key={index} className={"row line"}>
                     <div className={"dayCell"}>
-                        <p className={tableParagraph}>{days[index]}</p>
+                        <p>{days[index]}</p>
                     </div>
                     <div className={"hoursCell"}>
                         <div className={"hoursWrapper"}>
-                            <div><p className={tableParagraph}>{array[0]}</p></div>
-                            <div><p className={tableParagraph}>-</p></div>
-                            <div><p className={tableParagraph}>{array[1]}</p></div>
+                            <div><p>{array[0]}</p></div>
+                            <div><p>-</p></div>
+                            <div><p>{array[1]}</p></div>
                         </div>
                     </div>
                 </div>
@@ -71,18 +70,16 @@ const TileHoursJSON = () => {
 const TileHours = () => {
     const [t] = useTranslation(["tiles"])
     const URL_01 = config.external_url.URL_01
-    const header = "textContent--tabledata--header"
-    const paragraph = "textContent--tabledata--item"
 
     return (
         <S.TileHours>
             <div className={"innerTile"}>
-                <p className={header}>{t("openingHours.head")}</p>
+                <p className="tile-header">{t("openingHours.head")}</p>
                 <LineTiny color={"colorFirst"} />
                 <div className={"timetable"}>
                     <TileHoursJSON />
                 </div>
-                <p className={paragraph} style={{ paddingTop: '44px', paddingBottom: '22px' }}>{t("openingHours.text")}</p>
+                <p className="tile-paragraph" style={{ paddingTop: '44px', paddingBottom: '22px' }}>{t("openingHours.text")}</p>
                 <a style={{ paddingBottom: '22px' }} href={`${URL_01}`} target="_blank" rel="noopener noreferrer">
                     <ButtonController variant={"appointment"} />
                 </a>
@@ -93,8 +90,6 @@ const TileHours = () => {
 
 const TileContracts = () => {
     const [t] = useTranslation(["tiles"])
-    const header = "textContent--tabledata--header"
-    const paragraph = "textContent--tabledata--item"
 
     const insuranceLogos = [
         { src: logoColoredBalta, alt: "Balta" },
@@ -107,9 +102,9 @@ const TileContracts = () => {
     return (
         <S.TileContracts>
             <div className={"innerTile"}>
-                <p className={header}>{t("contracts.head")}</p>
+                <p className="tile-header">{t("contracts.head")}</p>
                 <LineTiny color={"colorSecond"} />
-                <p className={paragraph}>{t("contracts.text")}</p>
+                <p className="tile-paragraph">{t("contracts.text")}</p>
                 <div className={"logoSquare"}>
                     {insuranceLogos.map((logo, index) => (
                         <ResponsiveLogo key={index} src={logo.src} alt={logo.alt} maxHeight="35px" mobileMaxHeight="25px" />
@@ -122,8 +117,6 @@ const TileContracts = () => {
 
 const TileAvailability = () => {
     const [t] = useTranslation(["tiles"])
-    const header = "textContent--tabledata--header"
-    const paragraph = "textContent--tabledata--item--small"
     const object_head = "availability."
     const object_item = "availability.item."
 
@@ -141,13 +134,13 @@ const TileAvailability = () => {
     return (
         <S.TileAvailability>
             <div className={"innerTile"}>
-                <p className={header}>{t(object_head + "head")}</p>
+                <p className="tile-header">{t(object_head + "head")}</p>
                 <LineTiny color={"colorThird"} />
                 <div className={"availabilitySquare"}>
                     {availabilityItems.map(({ Icon, key }) => (
                         <div key={key}>
                             <Icon size={32} />
-                            <p className={paragraph}>{t(object_item + key)}</p>
+                            <p className="tile-paragraph">{t(object_item + key)}</p>
                         </div>
                     ))}
                 </div>

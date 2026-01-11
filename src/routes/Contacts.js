@@ -17,23 +17,22 @@ const GoogleMap = lazy(() => import('../components/./Map'));
 
 export default function Contacts() {
     const [t] = useTranslation(["chapter_pages", "chapters"])
-    const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
-    const h = i18n.language === 'ru' ? 'textContent--h1--rus' : 'textContent--h1'
+    const lang = i18n.language
 
     const introHeader = config.common.introHeader
     const URL_01 = config.external_url.URL_01
 
     return (
         <>
-            <PageContainer style={{ paddingBottom: '0'}}>
-                <h2 className={ h }>{ t("chapters:contacts") }</h2>
+            <PageContainer $lang={lang} style={{ paddingBottom: '0'}}>
+                <h2>{ t("chapters:contacts") }</h2>
 
                 <LineLang />
 
                 <InlineParagraphWithImage>
                     <span>
-                        <p style={{ color: '#F31850'}} className={ paragraph }>{ t("chapter_contacts.part_01") }</p>
-                        <p className={ paragraph }>{ t("chapter_contacts.part_02") }</p>
+                        <p style={{ color: '#F31850'}}>{ t("chapter_contacts.part_01") }</p>
+                        <p>{ t("chapter_contacts.part_02") }</p>
 
                         <a href={ `${URL_01}` } target={"_blank"} rel={"noopener noreferrer"}>
                            <ButtonController variant={"contacts"} />
@@ -50,9 +49,9 @@ export default function Contacts() {
                 <Images variant={"contacts"} />
 
                 <InlineParagraph>
-                    <p className={"textContent--h3"}>{ introHeader }</p>
-                    <p className={"textContent--h3"}>{ t("chapter_contacts.part_05") }</p>
-                    <p className={"textContent--h3"}>{ t("chapter_contacts.part_06") }</p>
+                    <h3>{ introHeader }</h3>
+                    <h3>{ t("chapter_contacts.part_05") }</h3>
+                    <h3>{ t("chapter_contacts.part_06") }</h3>
                 </InlineParagraph>
 
             </PageContainer>

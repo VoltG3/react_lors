@@ -13,20 +13,49 @@ export const StyledPageContainer = styled.div`
   @media only screen and (max-width: 700px) {
     padding: 40px 20px;
   }
-  & h1,
-  & h2 {
+  & h1 {
     width: 100%;
     margin-bottom: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: ${props => props.$lang === 'ru' ? '400' : '500'};
+    font-size: min(max(2.5vw, 20px), 36px);
+    line-height: 1.4 !important;
+    text-transform: ${props => props.$lang === 'ru' ? 'uppercase' : 'none'};
+    white-space: pre-wrap;
+    opacity: 0.7;
+    color: #152F3F;
 
     @media only screen and (max-width: 700px) {
         margin-bottom: 24px;
     }
   }
   & h2 {
+    width: 100%;
+    margin-bottom: 40px;
     display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: ${props => props.$lang === 'ru' ? '400' : '500'};
+    font-size: min(max(1.8vw, 18px), 24px);
+    line-height: 1.5;
+    text-transform: uppercase;
+    opacity: 0.7;
+    color: #152F3F;
+
     @media only screen and (max-width: 700px) {
+        margin-bottom: 24px;
         display: none;
     }
+  }
+  & h3 {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    opacity: 0.7;
+    color: inherit;
   }
   & span {
     width: 100%;
@@ -36,6 +65,16 @@ export const StyledPageContainer = styled.div`
 
     @media only screen and (max-width: 700px) {
         gap: 20px;
+    }
+    & p {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: ${props => props.$lang === 'ru' ? '400' : '300'};
+      font-size: min(max(1.2vw, 16px), 18px);
+      line-height: 1.6;
+      opacity: 0.7;
+      color: #030303;
+      margin: 0;
     }
     & p:last-child {
       margin-bottom: 0;

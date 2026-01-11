@@ -35,7 +35,7 @@ function Footer() {
     ]
 
     const renderParts = (obj, parts) => parts.map(part => (
-        <p key={part} className="textContent--footer--item">
+        <p key={part} className="footer-item">
             {t(`section_footer:${obj}part_${part}`)}
         </p>
     ))
@@ -44,22 +44,22 @@ function Footer() {
         <S.StyledFooterContainer>
             <S.StyledFooterCredentials>
                 <div className="footer-column">
-                    <p className="textContent--footer--head">{t(`section_footer:${object01}part_01`)}</p>
+                    <p className="footer-head">{t(`section_footer:${object01}part_01`)}</p>
                     {renderParts(object01, ["02", "03", "04", "05"])}
                 </div>
 
                 <div className="footer-column">
-                    <p className="textContent--footer--head">{t(`section_footer:${object02}part_01`)}</p>
+                    <p className="footer-head">{t(`section_footer:${object02}part_01`)}</p>
                     {renderParts(object02, ["02", "03", "04", "05"])}
                 </div>
 
                 <div className="footer-column">
-                    <p className="textContent--footer--head">{t(`section_footer:${object03}part_01`)}</p>
+                    <p className="footer-head">{t(`section_footer:${object03}part_01`)}</p>
                     {renderParts(object03, ["02"])}
                 </div>
 
                 <div className="footer-column">
-                    <p className="textContent--footer--head">{t(`section_footer:${object03}part_03`)}</p>
+                    <p className="footer-head">{t(`section_footer:${object03}part_03`)}</p>
                     {renderParts(object03, ["04", "05"])}
 
                     <S.StyledFooterButton href={appointmentUrl} target="_blank" rel="noopener noreferrer">

@@ -8,19 +8,18 @@ import Tiles from '../components/Tiles'
 
 export default function Home() {
     const [t] = useTranslation(["chapter_pages"])
-    const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
-    const h = i18n.language === 'ru' ? 'textContent--h1--rus' : 'textContent--h1'
+    const lang = i18n.language
 
     return (
-        <PageContainer>
-            <h1 className={ h }>{ t("chapter_home.part_01") }</h1>
+        <PageContainer $lang={lang}>
+            <h1>{ t("chapter_home.part_01") }</h1>
 
             <LineLang />
 
             <span>
-                 <p className={ paragraph }>{ t("chapter_home.part_02") }</p>
-                 <p className={ paragraph }>{ t("chapter_home.part_03") }</p>
-                 <p className={ paragraph }>{ t("chapter_home.part_04") }</p>
+                 <p>{ t("chapter_home.part_02") }</p>
+                 <p>{ t("chapter_home.part_03") }</p>
+                 <p>{ t("chapter_home.part_04") }</p>
             </span>
 
             <Images variant={"collective4"} />

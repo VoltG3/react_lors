@@ -10,11 +10,11 @@ import { LineLang } from '../components/Lines'
 
 export default function Services() {
     const [t] = useTranslation(["chapters"])
-    const h = i18n.language === 'ru' ? 'textContent--h1--rus' : 'textContent--h1'
+    const lang = i18n.language
 
     return (
-        <PageContainer>
-           <h2 className={ h }>{ t("chapters:services") }</h2>
+        <PageContainer $lang={lang}>
+           <h2>{ t("chapters:services") }</h2>
 
             <LineLang />
 

@@ -8,21 +8,20 @@ import { LineLang } from '../components/Lines'
 
 export default function About() {
     const [t] = useTranslation(["chapter_pages", "chapters"])
-    const paragraph = i18n.language === 'ru' ? 'textContent--paragraph--rus' : 'textContent--paragraph'
-    const h = i18n.language === 'ru' ? 'textContent--h1--rus' : 'textContent--h1'
+    const lang = i18n.language
 
     return (
-        <PageContainer>
-            <h2 className={ h }>{ t("chapters:about") }</h2>
+        <PageContainer $lang={lang}>
+            <h2>{ t("chapters:about") }</h2>
 
             <LineLang />
 
             <span>
-                <p className={ paragraph }>{ t("chapter_about.part_01") }</p>
-                <p className={ paragraph }>{ t("chapter_about.part_02") }</p>
-                <p className={ paragraph }>{ t("chapter_about.part_03") }</p>
-                <p className={ paragraph }>{ t("chapter_about.part_04") }</p>
-                <p className={ paragraph }>{ t("chapter_about.part_05") }</p>
+                <p>{ t("chapter_about.part_01") }</p>
+                <p>{ t("chapter_about.part_02") }</p>
+                <p>{ t("chapter_about.part_03") }</p>
+                <p>{ t("chapter_about.part_04") }</p>
+                <p>{ t("chapter_about.part_05") }</p>
             </span>
 
             <Images variant={"eachPerson"} />

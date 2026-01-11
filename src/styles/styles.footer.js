@@ -33,11 +33,23 @@ export const StyledFooterCredentials = styled.div`
         align-items: flex-start;
     }
 
-    .textContent--footer--head {
+    .footer-head {
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
         margin-bottom: 16px;
     }
 
-    .textContent--footer--item {
+    .footer-item {
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #828181;
         margin-bottom: 3px;
     }
 `

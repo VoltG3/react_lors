@@ -504,6 +504,30 @@ export const SliderTextWrapper = styled.div`
   margin-top: 140px;
   padding-bottom: 10%;
 
+  & p:first-child {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: ${props => props.$lang === 'ru' ? '400' : '500'};
+    font-size: min(max(2.5vw, 22px), 36px);
+    line-height: min(max(3.056vw, 24px), 44px) !important;
+    text-transform: ${props => props.$lang === 'ru' ? 'uppercase' : 'none'};
+    white-space: pre-wrap;
+    opacity: 0.7;
+    color: #152F3F;
+    margin: 0;
+  }
+
+  & p:last-child {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: ${props => props.$lang === 'ru' ? '400' : '300'};
+    font-size: min(max(1.2vw, 16px), 18px);
+    line-height: 1.6;
+    opacity: 0.7;
+    color: #030303;
+    margin: 0;
+  }
+
   @media only screen and (max-width: 900px) {
     margin-top: 40px;
 
@@ -541,6 +565,30 @@ export const SliderMobileTextWrapper = styled.div`
   width: 100%;
   margin-top: 30px;
   margin-bottom: 25px;
+
+  & p:first-child {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: ${props => props.$lang === 'ru' ? '400' : '500'};
+    font-size: min(max(2.5vw, 22px), 36px);
+    line-height: min(max(3.056vw, 24px), 44px) !important;
+    text-transform: ${props => props.$lang === 'ru' ? 'uppercase' : 'none'};
+    white-space: pre-wrap;
+    opacity: 0.7;
+    color: #152F3F;
+    margin: 0;
+  }
+
+  & p:last-child {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: ${props => props.$lang === 'ru' ? '400' : '300'};
+    font-size: min(max(1.2vw, 16px), 18px);
+    line-height: 1.6;
+    opacity: 0.7;
+    color: #030303;
+    margin: 0;
+  }
 
   @media (max-width: 480px) {
     margin-top: 20px;

@@ -21,7 +21,7 @@ export const ButtonController = ({ variant }) => {
         <S.StyledButtonContainer $theme={theme}>
             <div id="button">
                 <button className="button">
-                    <p className="textContent--button">{getButtonLabel()}</p>
+                    <p>{getButtonLabel()}</p>
                 </button>
             </div>
         </S.StyledButtonContainer>

@@ -6,8 +6,6 @@ import { TransformFormat, TransformArray } from '../json'
 
 import * as S from '../styles/styles.hours'
 
-const paragraph = "textContent--tabledata--item--small"
-
 const DataColumnDays = ({ className = "" }) => {
     const { t } = useTranslation(["days"])
     const days = t('days:list_days', { returnObjects: true })
@@ -18,7 +16,7 @@ const DataColumnDays = ({ className = "" }) => {
         <div className={`column ${className}`}>
             {days.map((list_days, key) => (
                 <div key={key} className={"cell"}>
-                    <p className={paragraph}>{t(list_days.item)}</p>
+                    <p>{t(list_days.item)}</p>
                 </div>
             ))}
         </div>
@@ -38,9 +36,9 @@ const DataColumnHours = ({ type, className = "" }) => {
 
     const renderTimeRow = (target_1, target_2) => (
         <div style={{ display: target_1 === "" ? 'none' : 'flex' }} className={"cell--tripple"}>
-            <div><p className={paragraph}>{target_1}</p></div>
-            <div><p className={paragraph}>-</p></div>
-            <div><p className={paragraph}>{target_2}</p></div>
+            <div><p>{target_1}</p></div>
+            <div><p>-</p></div>
+            <div><p>{target_2}</p></div>
         </div>
     )
 
@@ -73,8 +71,8 @@ const DataColumnNames = ({ type, className = "" }) => {
                     {person[type] && person[type].map((item, i) => (
                         <div key={i} className={"cell--dobble"} style={{ width: '100%', alignItems: 'flex-start' }}>
                             <div style={type === 'personal_public' ? { maxWidth: '180px', width: '100%' } : { width: '100%' }}>
-                                <p className={paragraph}>{isNameArrayEmpty(item.line_01)}</p>
-                                <p className={paragraph}>{isNameArrayEmpty(item.line_02)}</p>
+                                <p>{isNameArrayEmpty(item.line_01)}</p>
+                                <p>{isNameArrayEmpty(item.line_02)}</p>
                             </div>
                         </div>
                     ))}
@@ -90,8 +88,8 @@ const Hours = () => {
 
     if (loading) return <div>Loading...</div>
 
-    const HeaderPublic = <S.Header><p className="textContent--list--header">{t("admissionTimes")}</p></S.Header>
-    const HeaderPrivate = <S.Header><p className="textContent--list--header">{t("payingTimes")}</p></S.Header>
+    const HeaderPublic = <S.Header><p>{t("admissionTimes")}</p></S.Header>
+    const HeaderPrivate = <S.Header><p>{t("payingTimes")}</p></S.Header>
 
     const renderPublicColumns = () => (
         <S.ColumnWrapper>
